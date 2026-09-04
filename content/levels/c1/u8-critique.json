@@ -1,0 +1,228 @@
+{
+  "id": "c1-u8",
+  "goal": {
+    "en": "Take an argument apart fairly: what is claimed, what is shown, and what is merely assumed.",
+    "ar": "أن تفكّك الحجّة بإنصاف: ما المُدّعى، وما المُثبَت، وما المفترض دون دليل."
+  },
+  "passages": {
+    "column": {
+      "title": "An opinion column",
+      "text": "Cities that introduced cycle lanes have seen a fall in traffic accidents. The conclusion is obvious: cycle lanes make roads safer, and every city should build them.\n\nCritics complain about the cost. But you cannot put a price on a human life, and anyone who argues otherwise has misunderstood what a city is for. Either we accept a few weeks of roadworks, or we accept that people will continue to die on our streets. The choice could not be clearer.\n\nMy own street was rebuilt last year, and I have not seen a single accident since. That, more than any study, is what convinced me."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.critique.claims",
+      "title": { "en": "Claim, evidence, assumption", "ar": "الدعوى والدليل والافتراض" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Every argument has three layers. The claim is what you are asked to accept; the evidence is what is offered; the assumption is the unstated step that connects them — and it is usually where the weakness lives.",
+          "ar": "لكل حجّة ثلاث طبقات: الدعوى وهي ما يُطلب منك قبوله، والدليل وهو ما يُقدَّم، والافتراض وهو الخطوة غير المعلنة التي تربط بينهما — وفيها يكمن الضعف عادةً." } },
+        { "type": "table", "head": ["Layer", "Question to ask"], "rows": [
+          ["Claim", "What exactly am I being asked to believe?"],
+          ["Evidence", "What is offered, and how strong is it?"],
+          ["Assumption", "What must be true for the evidence to support the claim?"],
+          ["Scope", "How far does the claim reach beyond the evidence?"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "The most useful critique names the assumption. Attacking the evidence invites a data argument; naming the assumption changes the conversation.",
+          "ar": "أنفع نقدٍ هو الذي يسمّي الافتراض. فمهاجمة الدليل تجرّك إلى جدال في الأرقام، أما تسمية الافتراض فتغيّر مسار النقاش." } }
+      ]
+    },
+    {
+      "id": "c1.critique.reasoning",
+      "title": { "en": "Moves that look like arguments", "ar": "حركات تبدو حجّة وليست كذلك" },
+      "teach": [
+        { "type": "table", "head": ["Move", "What it does", "Signal phrase"], "rows": [
+          ["correlation as cause", "assumes A caused B", "cities that did X have seen Y"],
+          ["false dilemma", "offers only two options", "either we accept … or …"],
+          ["anecdote as proof", "one case stands for all", "my own street …"],
+          ["appeal to feeling", "makes disagreement look heartless", "you cannot put a price on …"],
+          ["poisoning the well", "discredits the objector in advance", "anyone who argues otherwise …"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "None of these makes a conclusion false. They make it unsupported — which is a different and more precise criticism.",
+          "ar": "لا شيء من هذه يجعل النتيجة خاطئة، بل يجعلها غير مسنودة، وهذا نقد مختلف وأدقّ." } },
+        { "type": "warn", "text": {
+          "en": "Naming a fallacy is not itself an argument. Say what the writer would need to show, not merely what they failed to show.",
+          "ar": "تسمية المغالطة ليست حجّة بذاتها. فقل ما كان على الكاتب أن يُثبته، لا ما أخفق في إثباته فحسب." } }
+      ]
+    },
+    {
+      "id": "c1.critique.writing",
+      "title": { "en": "Writing a critique people accept", "ar": "كتابة نقد يُقبل" },
+      "teach": [
+        { "type": "table", "head": ["Move", "Language"], "rows": [
+          ["Describe fairly", "The argument holds that …"],
+          ["Grant what is sound", "The evidence on X is convincing."],
+          ["Name the gap", "The difficulty is that this assumes …"],
+          ["Say what would settle it", "A comparison with cities that did not … would help."],
+          ["Keep the door open", "None of this shows the conclusion is wrong."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A critique that describes the argument accurately before attacking it is far harder to dismiss — and forces you to check you understood it.",
+          "ar": "النقد الذي يصف الحجّة بدقة قبل مهاجمتها أصعب على الرفض بكثير، ويُلزمك بالتأكد من أنك فهمتها." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u8-01", "concept": "c1.critique.claims", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "What assumption connects the evidence to the conclusion in paragraph one?",
+        "ar": "ما الافتراض الذي يربط الدليل بالنتيجة في الفقرة الأولى؟" },
+      "options": ["That the lanes caused the fall, and nothing else did.",
+                  "That accidents were counted accurately in each city.",
+                  "That cyclists prefer to ride in a marked lane.",
+                  "That every city has the same amount of traffic."],
+      "answer": 0,
+      "explanation": { "en": "The cities may have changed speed limits, enforcement or traffic volume at the same time.",
+        "ar": "قد تكون تلك المدن غيّرت في الوقت نفسه حدود السرعة أو التطبيق أو كثافة المرور." } },
+
+    { "id": "c1u8-02", "concept": "c1.critique.claims", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which question best targets an argument's assumption?",
+        "ar": "أي سؤال يستهدف افتراض الحجّة على نحو أفضل؟" },
+      "options": ["What has to be true for this evidence to support this claim?",
+                  "Who exactly funded the study that produced this evidence?",
+                  "How many people currently agree with this conclusion?",
+                  "When was the data behind this argument first collected?"],
+      "answer": 0,
+      "explanation": { "en": "That question exposes the hidden step; the others question the source or the age of the evidence.",
+        "ar": "هذا السؤال يكشف الخطوة الخفية، أما البقية فتسائل مصدر الدليل أو قِدَمه." } },
+
+    { "id": "c1u8-03", "concept": "c1.critique.claims", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "The column says the conclusion is “obvious”. What does that word do here?",
+        "ar": "ماذا تفعل كلمة obvious هنا؟" },
+      "options": ["It substitutes confidence for the missing step in the argument.",
+                  "It signals that a detailed proof follows immediately.",
+                  "It concedes that other explanations are possible.",
+                  "It limits the claim to the cities already studied."],
+      "answer": 0,
+      "explanation": { "en": "“Obvious”, “clearly” and “of course” often mark the exact point where the reasoning was skipped.",
+        "ar": "كلمات مثل obvious وclearly تشير غالباً إلى الموضع الذي قُفز فيه عن الاستدلال." } },
+
+    { "id": "c1u8-04", "concept": "c1.critique.reasoning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "“Either we accept roadworks, or people continue to die.” What is wrong with this?",
+        "ar": "ما الخطأ في هذه الجملة؟" },
+      "options": ["It presents two options as though no others exist.",
+                  "It uses a tense that does not fit the meaning.",
+                  "It quotes a study without naming its authors.",
+                  "It repeats a point made in the first paragraph."],
+      "answer": 0,
+      "explanation": { "en": "Enforcement, junction design and speed limits are among the options the sentence hides.",
+        "ar": "تطبيق القانون وتصميم التقاطعات وحدود السرعة من الخيارات التي تخفيها الجملة." } },
+
+    { "id": "c1u8-05", "concept": "c1.critique.reasoning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "What is the problem with “anyone who argues otherwise has misunderstood”?",
+        "ar": "ما مشكلة عبارة anyone who argues otherwise has misunderstood؟" },
+      "options": ["It discredits objectors instead of answering them.",
+                  "It concedes too much ground to the critics.",
+                  "It states the cost of the scheme inaccurately.",
+                  "It introduces evidence from another country."],
+      "answer": 0,
+      "explanation": { "en": "It makes disagreement a sign of stupidity, which removes the need to engage with it.",
+        "ar": "تجعل الاعتراض دليل قصور في الفهم، فتُعفي الكاتب من الردّ عليه." } },
+
+    { "id": "c1u8-06", "concept": "c1.critique.reasoning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "Why is the last paragraph the weakest evidence in the column?",
+        "ar": "لماذا تُعدّ الفقرة الأخيرة أضعف دليل في المقال؟" },
+      "options": ["One street over one year cannot establish a general effect.",
+                  "The writer does not say which city the street is in.",
+                  "It repeats the statistics given in the first paragraph.",
+                  "It contradicts the claim made about cycle lanes."],
+      "answer": 0,
+      "explanation": { "en": "The writer even ranks it above the studies — which is precisely the error.",
+        "ar": "بل إن الكاتب يفضّلها على الدراسات، وهذا بعينه هو الخطأ." } },
+
+    { "id": "c1u8-07", "concept": "c1.critique.reasoning", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the move with its description.", "ar": "صِل الحركة بوصفها." },
+      "pairs": [["either … or …", "a false dilemma"], ["my own street", "an anecdote as proof"],
+                ["cities that did X saw Y", "correlation read as cause"],
+                ["anyone who disagrees", "discrediting the objector"]],
+      "explanation": { "en": "Each is a shortcut past the step the argument actually needed.",
+        "ar": "كل واحدة منها قفزة فوق الخطوة التي كانت الحجّة تحتاجها فعلاً." } },
+
+    { "id": "c1u8-08", "concept": "c1.critique.reasoning", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "If an argument commits a fallacy, what follows?", "ar": "إذا وقعت حجّة في مغالطة، فماذا يترتب على ذلك؟" },
+      "options": ["Its conclusion is unsupported, not necessarily false.",
+                  "Its conclusion has been proved false by the fallacy.",
+                  "Its evidence must have been fabricated deliberately.",
+                  "Its author cannot be trusted on any subject at all."],
+      "answer": 0,
+      "explanation": { "en": "A bad argument for a claim is not a disproof of it — a distinction careless critics lose.",
+        "ar": "الحجّة الرديئة على دعوى ليست دحضاً لها، وهو تمييز يفقده النقاد المتعجّلون." } },
+
+    { "id": "c1u8-09", "concept": "c1.critique.writing", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which opening line of a critique is most likely to be taken seriously?",
+        "ar": "أي افتتاحية نقدية أرجح أن تؤخذ بجدية؟" },
+      "options": ["The argument holds that cycle lanes reduce accidents, and the correlation is real.",
+                  "This column is a mess of fallacies from its first line to its very last.",
+                  "I completely disagree with every single thing written in this column.",
+                  "The writer clearly knows nothing at all about road safety in any city."],
+      "answer": 0,
+      "explanation": { "en": "Describing the argument accurately first proves you understood it — and earns the right to criticise.",
+        "ar": "وصف الحجّة بدقة أولاً يثبت أنك فهمتها، ويمنحك حق نقدها." } },
+
+    { "id": "c1u8-10", "concept": "c1.critique.writing", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence names the gap most usefully?", "ar": "أي جملة تسمّي الثغرة بأنفع صورة؟" },
+      "options": ["The difficulty is that this assumes nothing else changed at the same time.",
+                  "The difficulty is that the writer is obviously biased about cycling.",
+                  "The difficulty is that I have never seen a cycle lane work well.",
+                  "The difficulty is that the column is far too short to be useful."],
+      "answer": 0,
+      "explanation": { "en": "It states what must be true for the argument to work — a criticism the writer can actually answer.",
+        "ar": "تذكر ما يجب أن يصحّ لتستقيم الحجّة، وهو نقد يستطيع الكاتب الردّ عليه فعلاً." } },
+
+    { "id": "c1u8-11", "concept": "c1.critique.writing", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence says what would settle the question?", "ar": "أي جملة تبيّن ما يحسم المسألة؟" },
+      "options": ["A comparison with similar cities that built no lanes would help.",
+                  "More people should write about this important subject.",
+                  "The writer should have been more polite to the critics.",
+                  "Somebody ought to check whether the numbers are correct."],
+      "answer": 0,
+      "explanation": { "en": "Naming the missing comparison turns a complaint into a research question.",
+        "ar": "تسمية المقارنة الغائبة تحوّل الشكوى إلى سؤال بحثي." } },
+
+    { "id": "c1u8-12", "concept": "c1.critique.writing", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which closing sentence keeps a critique fair?", "ar": "أي خاتمة تُبقي النقد منصفاً؟" },
+      "options": ["None of this shows the conclusion is wrong — only that it is unproven.",
+                  "The column therefore has no value whatsoever to any reader.",
+                  "It is clear that cycle lanes make no difference to safety.",
+                  "The writer should retract the article and apologise for it."],
+      "answer": 0,
+      "explanation": { "en": "Separating “unproven” from “false” is the whole discipline of critique in one sentence.",
+        "ar": "التفريق بين «غير مُثبَت» و«خاطئ» هو جوهر النقد كله في جملة واحدة." } },
+
+    { "id": "c1u8-13", "concept": "c1.critique.claims", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "column",
+      "prompt": { "en": "What claim does the column actually establish?", "ar": "ما الدعوى التي يثبتها المقال فعلاً؟" },
+      "options": ["That accidents fell in cities which built lanes.",
+                  "That cycle lanes are the cause of the fall.",
+                  "That every city would benefit from lanes.",
+                  "That the cost of the lanes is irrelevant."],
+      "answer": 0,
+      "explanation": { "en": "The association is established; the cause and the general recommendation are not.",
+        "ar": "الاقتران ثابت، أما السببية والتوصية العامة فغير ثابتتين." } },
+
+    { "id": "c1u8-14", "concept": "c1.critique.reasoning", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“You cannot put a price on a human life.” Why is this hard to answer?",
+        "ar": "لماذا يصعب الردّ على هذه العبارة؟" },
+      "options": ["Disagreeing appears heartless, whatever the point being made.",
+                  "It contains a statistic that cannot easily be checked.",
+                  "It is written in a register that is far too formal.",
+                  "It refers to a study that was apparently never published."],
+      "answer": 0,
+      "explanation": { "en": "It converts a budgeting question into a moral test, which is exactly its function.",
+        "ar": "تحوّل مسألة الميزانية إلى اختبار أخلاقي، وهذه وظيفتها بالضبط." } },
+
+    { "id": "c1u8-15", "concept": "c1.critique.writing", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Complete the fair critique: “The evidence shows an association. The difficulty is that it ___ nothing else changed.”",
+        "ar": "أكمل النقد المنصف: The difficulty is that it ___ nothing else changed." },
+      "answer": "assumes", "accept": ["presumes", "takes for granted that"],
+      "explanation": { "en": "Naming the assumption is the move that makes a critique constructive rather than dismissive.",
+        "ar": "تسمية الافتراض هي الحركة التي تجعل النقد بنّاءً لا رافضاً." } }
+  ]
+}

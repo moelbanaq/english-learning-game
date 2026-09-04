@@ -1,0 +1,215 @@
+{
+  "id": "c1-u2",
+  "goal": {
+    "en": "Report other people's ideas while making your own position on them unmistakable.",
+    "ar": "أن تنقل أفكار الآخرين وتُبيّن في الوقت نفسه موقفك منها بلا لبس."
+  },
+  "passages": {
+    "lit": {
+      "title": "From a literature review",
+      "text": "Early work in the field assumed that motivation was largely fixed. Ryan and Deci (2000) challenged this, arguing that motivation varies with the degree of autonomy a learner is granted. Their framework has since been applied widely, though it has also been criticised for being difficult to operationalise. Wong (2018) claims that the model explains classroom behaviour better than any alternative; this seems overstated, given that his study drew on a single institution. What is not in dispute is that autonomy matters. The question is how much, and under what conditions."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.stance.reporting",
+      "title": { "en": "Reporting verbs carry an opinion", "ar": "أفعال النقل تحمل موقفاً" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Choosing how to report a claim is how academic writing takes a side without ever saying \"I disagree\".",
+          "ar": "اختيار فعل النقل هو الطريقة التي تتخذ بها الكتابة الأكاديمية موقفاً دون أن تقول «أنا لا أوافق» صراحة." } },
+        { "type": "table", "head": ["Verb", "Signals", "Your position"] , "rows": [
+          ["notes / observes", "neutral report", "no stance taken"],
+          ["argues / contends", "a reasoned case", "treated as serious"],
+          ["claims / asserts", "an unproven statement", "quietly doubted"],
+          ["demonstrates / shows", "proof accepted", "endorsed"],
+          ["concedes / acknowledges", "a point against themselves", "credited for honesty"],
+          ["fails to consider", "an omission", "criticised"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Says” and “tells us” read as informal in academic prose. And “tells” needs an object: he tells us, never “he tells that”.",
+          "ar": "فعلا says وtells us يبدوان غير رسميين في الكتابة الأكاديمية. كما أن tells يحتاج مفعولاً: he tells us ولا نقول he tells that." } }
+      ]
+    },
+    {
+      "id": "c1.stance.impersonal",
+      "title": { "en": "Taking yourself out of the sentence", "ar": "إخراج الذات من الجملة" },
+      "teach": [
+        { "type": "table", "head": ["Personal", "Impersonal"], "rows": [
+          ["I think this is a weakness.", "This appears to be a weakness."],
+          ["I found that costs rose.", "The data indicate that costs rose."],
+          ["Everyone knows that …", "It is widely accepted that …"],
+          ["I will now discuss …", "The following section discusses …"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Impersonal structures put the evidence in the subject position, which makes the claim look like it comes from the data rather than from you.",
+          "ar": "التراكيب غير الشخصية تضع الدليل في موضع الفاعل، فيبدو الادعاء صادراً عن البيانات لا عنك." } },
+        { "type": "tip", "text": {
+          "en": "Some fields now accept “I” in research writing. The point is not to ban it, but to notice that impersonal phrasing shifts where authority appears to come from.",
+          "ar": "بعض التخصصات تقبل اليوم استخدام I في البحث. والمقصود ليس منعها، بل ملاحظة أن الصيغة غير الشخصية تنقل مصدر السلطة الظاهري." } }
+      ]
+    },
+    {
+      "id": "c1.stance.generalising",
+      "title": { "en": "Generalising safely", "ar": "التعميم الآمن" },
+      "teach": [
+        { "type": "table", "head": ["Overclaimed", "Defensible"], "rows": [
+          ["Students always prefer group work.", "Students tend to prefer group work."],
+          ["This proves the theory.", "This lends support to the theory."],
+          ["Everyone agrees that …", "There is broad agreement that …"],
+          ["The results show no effect.", "The results show no measurable effect."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A claim is only as strong as the evidence behind it. Adding a limit (“in this sample”, “under these conditions”) protects the claim rather than weakening it.",
+          "ar": "قوة الادعاء من قوة دليله. وإضافة قيد مثل «في هذه العينة» أو «في هذه الظروف» تحمي الادعاء ولا تُضعفه." } },
+        { "type": "warn", "text": {
+          "en": "Absolute words — always, never, all, proves, obviously — are the easiest thing for a reader to refute. One counter-example destroys them.",
+          "ar": "الكلمات المطلقة مثل always وnever وproves أسهل ما يدحضه القارئ، إذ يكفي مثال مضاد واحد لإسقاطها." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u2-01", "concept": "c1.stance.reporting", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which reporting verb signals that the writer doubts the claim?",
+        "ar": "أي فعل نقل يدل على شك الكاتب في الادعاء؟" },
+      "options": ["claims", "demonstrates", "observes", "acknowledges"],
+      "answer": 0,
+      "explanation": { "en": "“Claims” marks a statement as unproven; “demonstrates” accepts it as proven.",
+        "ar": "claims تصف الكلام بأنه غير مثبت، أما demonstrates فتقبله مثبتاً." } },
+
+    { "id": "c1u2-02", "concept": "c1.stance.reporting", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Habib concedes that the sample was small.” What does “concedes” add?",
+        "ar": "ماذا تضيف كلمة concedes في هذه الجملة؟" },
+      "options": ["He admitted a weakness in his own work.",
+                  "He proved that the sample was adequate.",
+                  "He rejected the criticism made by others.",
+                  "He repeated a point made by someone else."],
+      "answer": 0,
+      "explanation": { "en": "“Concede” means accepting something that works against your own case.",
+        "ar": "concede تعني الإقرار بما يضرّ بموقفك أنت." } },
+
+    { "id": "c1u2-03", "concept": "c1.stance.reporting", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which sentence suits an academic paper?", "ar": "أي جملة تناسب ورقة أكاديمية؟" },
+      "options": ["Ahmed (2021) argues that the effect is temporary.",
+                  "Ahmed (2021) tells that the effect is temporary.",
+                  "Ahmed (2021) says the effect is only temporary.",
+                  "Ahmed (2021) is telling us the effect is temporary."],
+      "answer": 0,
+      "explanation": { "en": "“Argues” is the standard academic verb; “tells that” is ungrammatical and “says” is informal here.",
+        "ar": "argues هو الفعل الأكاديمي المعتاد، أما tells that فخطأ نحوي، وsays غير رسمية هنا." } },
+
+    { "id": "c1u2-04", "concept": "c1.stance.reporting", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the verb with the stance it signals.", "ar": "صِل الفعل بالموقف الذي يشير إليه." },
+      "pairs": [["notes", "neutral reporting"], ["claims", "quiet scepticism"],
+                ["demonstrates", "acceptance of proof"], ["fails to consider", "explicit criticism"]],
+      "explanation": { "en": "The verb is where the writer's judgement lives, long before any explicit comment.",
+        "ar": "الفعل هو موضع حكم الكاتب، قبل أي تعليق صريح بكثير." } },
+
+    { "id": "c1u2-05", "concept": "c1.stance.reporting", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "lit",
+      "prompt": { "en": "What is the writer's view of Wong (2018)?", "ar": "ما رأي الكاتب في دراسة Wong؟" },
+      "options": ["The conclusion goes beyond what the evidence supports.",
+                  "The conclusion is the strongest in the whole field.",
+                  "The study has been ignored by other researchers.",
+                  "The study contradicts the framework it applies."],
+      "answer": 0,
+      "explanation": { "en": "“Claims” plus “this seems overstated, given that …” is a judgement delivered politely.",
+        "ar": "استخدام claims مع عبارة «يبدو هذا مبالغاً فيه، بالنظر إلى…» حكمٌ مصوغ بلطف." } },
+
+    { "id": "c1u2-06", "concept": "c1.stance.impersonal", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which version is more typical of a research report?",
+        "ar": "أي صيغة أقرب إلى تقرير بحثي؟" },
+      "options": ["The data indicate a decline after 2019.",
+                  "I found out that things declined after 2019.",
+                  "You can see there was a decline after 2019.",
+                  "Everybody noticed the decline after 2019."],
+      "answer": 0,
+      "explanation": { "en": "Putting the evidence in the subject position makes the claim look data-driven.",
+        "ar": "وضع الدليل في موضع الفاعل يجعل الادعاء يبدو صادراً عن البيانات." } },
+
+    { "id": "c1u2-07", "concept": "c1.stance.impersonal", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence introduces a section most appropriately?",
+        "ar": "أي جملة تقدّم القسم بأنسب صورة؟" },
+      "options": ["The following section examines the three main objections.",
+                  "Now I am going to talk about the three main objections.",
+                  "Let us look together at the three main objections here.",
+                  "In this part you will read about three main objections."],
+      "answer": 0,
+      "explanation": { "en": "Academic signposting is impersonal and states what the text does, not what the author intends.",
+        "ar": "الإشارات الأكاديمية غير شخصية، وتذكر ما يفعله النص لا ما ينوي الكاتب فعله." } },
+
+    { "id": "c1u2-08", "concept": "c1.stance.impersonal", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Make it impersonal: “I think this is a serious weakness.” → “This ___ to be a serious weakness.”",
+        "ar": "اجعلها غير شخصية: This ___ to be a serious weakness." },
+      "answer": "appears", "accept": ["seems"],
+      "explanation": { "en": "“Appears to be” keeps the judgement but removes the personal subject.",
+        "ar": "appears to be تُبقي الحكم وتزيل الفاعل الشخصي." } },
+
+    { "id": "c1u2-09", "concept": "c1.stance.generalising", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which generalisation is defensible?", "ar": "أي تعميم يمكن الدفاع عنه؟" },
+      "options": ["Learners tend to overestimate their own fluency.",
+                  "Learners always overestimate their own fluency.",
+                  "Every learner overestimates their fluency badly.",
+                  "All learners obviously overestimate their fluency."],
+      "answer": 0,
+      "explanation": { "en": "“Tend to” allows exceptions; the absolute versions fall to a single counter-example.",
+        "ar": "tend to تسمح بالاستثناء، أما الصيغ المطلقة فيُسقطها مثال مضاد واحد." } },
+
+    { "id": "c1u2-10", "concept": "c1.stance.generalising", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why write “no measurable effect” rather than “no effect”?",
+        "ar": "لماذا نكتب no measurable effect بدل no effect؟" },
+      "options": ["It limits the claim to what the method could detect.",
+                  "It means the effect was extremely large indeed.",
+                  "It is simply a longer and more formal phrasing.",
+                  "It shows that the researchers made an error."],
+      "answer": 0,
+      "explanation": { "en": "An undetected effect is not the same as an absent one, and the wording protects the claim.",
+        "ar": "الأثر الذي لم يُرصد ليس أثراً معدوماً، والصياغة تحمي الادعاء." } },
+
+    { "id": "c1u2-11", "concept": "c1.stance.generalising", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence overclaims most seriously?", "ar": "أي جملة تبالغ في الادعاء أكثر من غيرها؟" },
+      "options": ["These findings prove that the method works everywhere.",
+                  "These findings suggest the method may work more widely.",
+                  "These findings are consistent with the earlier research.",
+                  "These findings support the argument made in chapter two."],
+      "answer": 0,
+      "explanation": { "en": "“Prove” plus “everywhere” claims universality from one set of findings.",
+        "ar": "الجمع بين prove وeverywhere يدّعي شمولاً انطلاقاً من نتائج واحدة." } },
+
+    { "id": "c1u2-12", "concept": "c1.stance.reporting", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "lit",
+      "prompt": { "en": "How does the writer treat Ryan and Deci?", "ar": "كيف يتعامل الكاتب مع دراسة Ryan وDeci؟" },
+      "options": ["As a serious contribution with a known limitation.",
+                  "As an outdated view that has been fully replaced.",
+                  "As an unproven claim that should be dismissed.",
+                  "As identical in value to the Wong study."],
+      "answer": 0,
+      "explanation": { "en": "“Arguing that …” is respectful; “though it has also been criticised” adds the limit fairly.",
+        "ar": "استخدام arguing يدل على الاحترام، وعبارة «رغم أنه انتُقد» تضيف الحدّ بإنصاف." } },
+
+    { "id": "c1u2-13", "concept": "c1.stance.generalising", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "lit",
+      "prompt": { "en": "What does “What is not in dispute is that autonomy matters” do?",
+        "ar": "ما وظيفة هذه الجملة في النص؟" },
+      "options": ["It separates the settled point from the open question.",
+                  "It rejects everything argued in the paragraph.",
+                  "It introduces a new author into the discussion.",
+                  "It concedes that the whole field is mistaken."],
+      "answer": 0,
+      "explanation": { "en": "Naming what is agreed narrows the argument to what is genuinely contested — a strong reviewing move.",
+        "ar": "تحديد المتفق عليه يحصر الخلاف فيما هو موضع نزاع فعلاً، وهي حركة قوية في المراجعة." } },
+
+    { "id": "c1u2-14", "concept": "c1.stance.impersonal", "type": "choice", "format": "collocation", "difficulty": 5,
+      "sentence": "It is widely ___ that early exposure benefits pronunciation.",
+      "options": ["accepted", "agreed by", "believing", "thinking"], "answer": 0,
+      "explanation": { "en": "“It is widely accepted that …” is the fixed impersonal formula.",
+        "ar": "عبارة It is widely accepted that صيغة ثابتة غير شخصية." } },
+
+    { "id": "c1u2-15", "concept": "c1.stance.reporting", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Report this with doubt in one word: “Hassan states the model is complete.” → “Hassan ___ the model is complete.”",
+        "ar": "انقلها بنبرة تشكيك بكلمة واحدة: Hassan ___ the model is complete." },
+      "answer": "claims", "accept": ["asserts", "maintains"],
+      "explanation": { "en": "Swapping the reporting verb changes your stance without adding a single word of comment.",
+        "ar": "تغيير فعل النقل وحده يغيّر موقفك دون إضافة كلمة تعليق واحدة." } }
+  ]
+}

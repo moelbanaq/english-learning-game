@@ -105,7 +105,7 @@ function validateQuestion(q, where, opts = {}) {
   // learner sees says "Find the mistake", so a prompt asking for the correct sentence
   // contradicts it.
   if (q.format === 'error_id') {
-    const asks = /mistake|wrong|unnatural|incorrect|not English|weakest|does not fit|repeats itself|did not mean/i;
+    const asks = /mistake|wrong|unnatural|incorrect|inaccurat|not English|weakest|does not fit|repeats itself|did not mean|overclaim|padded|dangling|too heavily loaded|goes wrong/i;
     if (!q.prompt || !asks.test(String(q.prompt.en || ''))) {
       warn(at, 'format is "error_id" but the prompt does not ask the learner to find a fault');
     }

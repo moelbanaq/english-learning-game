@@ -1,0 +1,196 @@
+{
+  "id": "c1-u4",
+  "goal": {
+    "en": "Pack information into noun phrases and participle clauses the way professional prose does — without losing the reader.",
+    "ar": "أن تكثّف المعلومات في العبارات الاسمية وجمل اسم الفاعل كما يفعل النثر المهني، دون أن تُضيع القارئ."
+  },
+  "concepts": [
+    {
+      "id": "c1.np.premod",
+      "title": { "en": "Stacked modifiers before the noun", "ar": "تراكم الوصف قبل الاسم" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English can load several words in front of a noun where Arabic would use a chain after it: “a three-year government-funded pilot scheme”.",
+          "ar": "تستطيع الإنجليزية تكديس عدة كلمات قبل الاسم، بينما تضعها العربية سلسلةً بعده: «مشروع تجريبي ممول حكومياً مدته ثلاث سنوات»." } },
+        { "type": "table", "head": ["Unpacked", "Packed"], "rows": [
+          ["a scheme that lasts three years", "a three-year scheme"],
+          ["a policy on the safety of food", "a food safety policy"],
+          ["a decision taken at the last minute", "a last-minute decision"],
+          ["results that were unexpected", "unexpected results"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A number used as a modifier stays singular and takes a hyphen: “a three-year scheme”, not “a three years scheme”.",
+          "ar": "العدد المستخدم صفةً يبقى مفرداً ويأخذ شرطة: a three-year scheme ولا نقول a three years scheme." } },
+        { "type": "warn", "text": {
+          "en": "Two or three modifiers read well; five do not. “A newly revised regional customer data protection procedure” is a sentence pretending to be a noun.",
+          "ar": "وصفان أو ثلاثة تُقرأ بسلاسة، أما خمسة فلا. فعبارة مثل a newly revised regional customer data protection procedure جملة متنكّرة في هيئة اسم." } }
+      ]
+    },
+    {
+      "id": "c1.np.reduced",
+      "title": { "en": "Reduced relative clauses", "ar": "الجمل الموصولة المختصرة" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Drop the relative pronoun and the verb “be”: “the report which was submitted last week” → “the report submitted last week”.",
+          "ar": "نحذف الاسم الموصول وفعل الكون: the report which was submitted last week تصير the report submitted last week." } },
+        { "type": "table", "head": ["Full", "Reduced", "Form"], "rows": [
+          ["the man who is waiting outside", "the man waiting outside", "-ing = active"],
+          ["the letter that was sent on Monday", "the letter sent on Monday", "-ed = passive"],
+          ["the option which is available now", "the option available now", "adjective phrase"],
+          ["anyone who wishes to attend", "anyone wishing to attend", "-ing, formal"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The -ing form must belong to the noun it follows. “Walking through the door, the smell hit me” says the smell was walking. Fix the subject, not the comma.",
+          "ar": "يجب أن ينتمي اسم الفاعل إلى الاسم الذي يليه. فجملة Walking through the door, the smell hit me تجعل الرائحة هي التي تمشي، والعلاج تصحيح الفاعل لا الفاصلة." } }
+      ]
+    },
+    {
+      "id": "c1.np.participle",
+      "title": { "en": "Participle clauses that open a sentence", "ar": "جمل اسم الفاعل في مطلع الجملة" },
+      "teach": [
+        { "type": "table", "head": ["Meaning", "Example"], "rows": [
+          ["time / sequence", "Having reviewed the data, we revised the estimate."],
+          ["reason", "Faced with rising costs, the firm cut its plans."],
+          ["condition", "Taken together, the results are encouraging."],
+          ["result", "Sales fell sharply, forcing a rethink."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The subject of the participle must be the subject of the main clause. “Having reviewed the data, we revised …” works because “we” did both.",
+          "ar": "يجب أن يكون فاعل اسم الفاعل هو فاعل الجملة الرئيسية. فجملة Having reviewed the data, we revised صحيحة لأن «نحن» فعلنا الأمرين." } },
+        { "type": "tip", "text": {
+          "en": "These clauses are compact and formal. Two in a paragraph tighten your prose; five make it airless.",
+          "ar": "هذه الجمل مكثّفة ورسمية. اثنتان في الفقرة تشدّان نصّك، وخمس تخنقه." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u4-01", "concept": "c1.np.premod", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The council approved a ___ pilot scheme for the district.",
+      "options": ["three-year", "three years", "three-years", "three year's"], "answer": 0,
+      "explanation": { "en": "A number modifying a noun is singular and hyphenated: a three-year scheme.",
+        "ar": "العدد حين يصف اسماً يبقى مفرداً ويأخذ شرطة: a three-year scheme." } },
+
+    { "id": "c1u4-02", "concept": "c1.np.premod", "type": "choice", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Pack this into a noun phrase: “a policy dealing with the safety of food”",
+        "ar": "كثّف العبارة في صيغة اسمية: سياسة تتعلق بسلامة الغذاء" },
+      "options": ["a food safety policy", "a policy of food safety",
+                  "a safety-of-food policy", "a policy for food safe"],
+      "answer": 0,
+      "explanation": { "en": "Modifiers stack in front of the head noun, in the order general to specific.",
+        "ar": "تتراكم الأوصاف أمام الاسم الرئيسي، من العام إلى الخاص." } },
+
+    { "id": "c1u4-03", "concept": "c1.np.premod", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which noun phrase is too heavily loaded to read easily?",
+        "ar": "أي عبارة اسمية محمّلة أكثر مما تُقرأ بسهولة؟" },
+      "options": ["a newly revised regional customer data protection procedure",
+                  "a revised procedure for protecting customer data",
+                  "the regional data protection procedure, recently revised",
+                  "a new procedure covering regional customer data"],
+      "answer": 0,
+      "explanation": { "en": "Six modifiers before the head noun force the reader to hold everything in suspense.",
+        "ar": "ستة أوصاف قبل الاسم الرئيسي تُجبر القارئ على تعليق المعنى كله في ذهنه." } },
+
+    { "id": "c1u4-04", "concept": "c1.np.premod", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which phrase has a mistake?", "ar": "أي عبارة بها خطأ؟" },
+      "options": ["a ten-days delay in the schedule", "a ten-day delay in the schedule",
+                  "a last-minute change to the plan", "a five-star review of the hotel"],
+      "answer": 0,
+      "explanation": { "en": "The number-plus-noun modifier is singular: a ten-day delay.",
+        "ar": "صيغة العدد مع الاسم وصفاً تبقى مفردة: a ten-day delay." } },
+
+    { "id": "c1u4-05", "concept": "c1.np.reduced", "type": "choice", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Reduce the clause: “the report which was submitted last week”",
+        "ar": "اختصر الجملة الموصولة: the report which was submitted last week" },
+      "options": ["the report submitted last week", "the report submitting last week",
+                  "the report was submitted last week", "the report it submitted last week"],
+      "answer": 0,
+      "explanation": { "en": "Drop “which was”; the past participle carries the passive meaning.",
+        "ar": "نحذف which was، ويحمل التصريف الثالث المعنى المبني للمجهول." } },
+
+    { "id": "c1u4-06", "concept": "c1.np.reduced", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Anyone ___ to attend should register before Thursday.",
+      "options": ["wishing", "wished", "who wish", "wishes"], "answer": 0,
+      "explanation": { "en": "“Anyone wishing to attend” reduces “anyone who wishes”; the -ing form is active.",
+        "ar": "عبارة anyone wishing to attend اختصار لـ anyone who wishes، وصيغة ing هنا للمبني للمعلوم." } },
+
+    { "id": "c1u4-07", "concept": "c1.np.reduced", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which pair means the same as “the students taught by Dr Nasr”?",
+        "ar": "أي عبارة تعادل the students taught by Dr Nasr؟" },
+      "options": ["the students whom Dr Nasr teaches", "the students who teach Dr Nasr",
+                  "the students teaching with Dr Nasr", "the students and Dr Nasr together"],
+      "answer": 0,
+      "explanation": { "en": "The -ed form is passive: the students receive the teaching.",
+        "ar": "صيغة التصريف الثالث مبنية للمجهول، فالطلاب هم من يتلقّون التدريس." } },
+
+    { "id": "c1u4-08", "concept": "c1.np.reduced", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence says something the writer did not mean?",
+        "ar": "أي جملة تقول غير ما قصده الكاتب؟" },
+      "options": ["Walking through the door, the smell hit me immediately.",
+                  "As I walked through the door, the smell hit me immediately.",
+                  "Walking through the door, I noticed the smell immediately.",
+                  "The smell hit me as soon as I walked through the door."],
+      "answer": 0,
+      "explanation": { "en": "The participle attaches to the nearest subject, so this sentence has the smell walking.",
+        "ar": "يرتبط اسم الفاعل بأقرب فاعل، فتصير الرائحة في هذه الجملة هي التي تمشي." } },
+
+    { "id": "c1u4-09", "concept": "c1.np.participle", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "___ the data, the team revised its estimate downwards.",
+      "options": ["Having reviewed", "Reviewed", "To have reviewed", "Having been reviewed"], "answer": 0,
+      "explanation": { "en": "“Having reviewed” shows the team completed one action before the next.",
+        "ar": "having reviewed تدل على أن الفريق أنهى فعلاً قبل الآخر." } },
+
+    { "id": "c1u4-10", "concept": "c1.np.participle", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Faced with falling demand, the firm closed two sites.” What does the opening clause give?",
+        "ar": "ماذا تفيد الجملة الافتتاحية هنا؟" },
+      "options": ["The reason for the decision.", "The time the sites closed.",
+                  "A condition that was never met.", "The result of the closures."],
+      "answer": 0,
+      "explanation": { "en": "A participle clause can carry reason as well as time — context decides which.",
+        "ar": "جملة اسم الفاعل قد تحمل السبب كما تحمل الزمن، والسياق هو الفاصل." } },
+
+    { "id": "c1u4-11", "concept": "c1.np.participle", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a dangling participle?", "ar": "أي جملة فيها اسم فاعل معلّق بلا فاعل صحيح؟" },
+      "options": ["Having finished the audit, the report was filed at once.",
+                  "Having finished the audit, we filed the report at once.",
+                  "After we finished the audit, the report was filed at once.",
+                  "The report was filed as soon as we finished the audit."],
+      "answer": 0,
+      "explanation": { "en": "The report did not finish the audit. The participle's subject must match the main clause's.",
+        "ar": "التقرير لم يُنهِ المراجعة. فيجب أن يطابق فاعل اسم الفاعل فاعل الجملة الرئيسية." } },
+
+    { "id": "c1u4-12", "concept": "c1.np.participle", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Taken", "together", "these", "findings", "suggest", "a", "clear", "pattern"],
+      "answer": "Taken together these findings suggest a clear pattern",
+      "explanation": { "en": "“Taken together” is a fixed opening participle phrase in research writing.",
+        "ar": "عبارة Taken together افتتاحية ثابتة في الكتابة البحثية." } },
+
+    { "id": "c1u4-13", "concept": "c1.np.reduced", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Reduce it: “the passengers who are waiting at gate four” → “the passengers ___ at gate four”",
+        "ar": "اختصرها: the passengers ___ at gate four" },
+      "answer": "waiting",
+      "explanation": { "en": "Drop “who are” and keep the -ing form for an active meaning.",
+        "ar": "نحذف who are ونبقي صيغة ing للدلالة على المعلوم." } },
+
+    { "id": "c1u4-14", "concept": "c1.np.premod", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which version reads best in a report?", "ar": "أي صيغة أنسب لتقرير؟" },
+      "options": ["We have introduced a revised customer complaints procedure.",
+                  "We have introduced a procedure of complaints of customers revised.",
+                  "We have introduced a revised procedure of the complaints customer.",
+                  "We have introduced a customer of complaints revised new procedure."],
+      "answer": 0,
+      "explanation": { "en": "Three modifiers, in a natural order, ahead of the head noun.",
+        "ar": "ثلاثة أوصاف بترتيب طبيعي أمام الاسم الرئيسي." } },
+
+    { "id": "c1u4-15", "concept": "c1.np.participle", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence uses a participle clause most effectively?",
+        "ar": "أي جملة تستخدم جملة اسم الفاعل بأفضل صورة؟" },
+      "options": ["Costs rose sharply, forcing the board to delay the launch.",
+                  "Costs rose sharply, and forcing the board to delay the launch.",
+                  "Costs rose sharply, the board forcing to delay the launch.",
+                  "Costs rising sharply, forcing the board delaying the launch."],
+      "answer": 0,
+      "explanation": { "en": "The -ing clause expresses the result of the main clause, with no conjunction needed.",
+        "ar": "جملة ing تعبّر عن نتيجة الجملة الرئيسية دون حاجة إلى أداة ربط." } }
+  ]
+}

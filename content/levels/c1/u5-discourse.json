@@ -1,0 +1,206 @@
+{
+  "id": "c1-u5",
+  "goal": {
+    "en": "Guide a reader through a long argument so they always know where they are and what is coming.",
+    "ar": "أن تقود القارئ عبر حجّة طويلة فيعرف دائماً أين هو وما القادم."
+  },
+  "passages": {
+    "policy": {
+      "title": "From a policy briefing",
+      "text": "The case for extending the scheme rests on three claims: that it reduces waiting times, that it is cost-neutral, and that providers support it. The first is well evidenced. The second is more contested; savings appear only when administrative costs are excluded, which is not how the department normally reports them. The third, admittedly, is difficult to test, since providers were consulted through the same body that designed the scheme.\n\nNone of this is fatal to the proposal. Waiting times matter, and a measure that reduces them has value even if the savings prove illusory. That said, the briefing would be stronger if it presented the cost claim as an aspiration rather than a finding. As things stand, a reader who checks the appendix will find a weaker case than the summary suggests — and that discovery does more damage than an honest caveat would have done."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.discourse.signpost",
+      "title": { "en": "Telling the reader what is coming", "ar": "إخبار القارئ بما هو آت" },
+      "teach": [
+        { "type": "table", "head": ["Marker", "Prepares the reader for"], "rows": [
+          ["The case rests on three claims", "a list they should count"],
+          ["Admittedly, …", "a concession before a criticism"],
+          ["That said, …", "a turn against what was just granted"],
+          ["As things stand, …", "a judgement about the current version"],
+          ["It follows that …", "a conclusion drawn from the above"],
+          ["To be clear, …", "a correction of a likely misreading"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A signpost is a promise. If you write “three claims”, the reader counts them; if only two appear, they lose trust in everything else.",
+          "ar": "الإشارة وعدٌ للقارئ. فإذا كتبت «ثلاث دعاوى» عدّها القارئ، فإن ظهرت اثنتان فقط فقد ثقته بكل ما سواها." } }
+      ]
+    },
+    {
+      "id": "c1.discourse.concession",
+      "title": { "en": "Conceding without surrendering", "ar": "التنازل دون استسلام" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Advanced argument concedes early and precisely. Granting the strongest point on the other side makes the rest of your case harder to dismiss.",
+          "ar": "الحجّة المتقدمة تُقرّ مبكراً وبدقة. فمنح الطرف الآخر أقوى نقاطه يجعل بقية حجّتك أصعب على الرفض." } },
+        { "type": "table", "head": ["Concede", "Then turn"], "rows": [
+          ["Admittedly, the data are limited.", "Even so, the pattern is consistent."],
+          ["It is true that costs would rise.", "That said, the alternative costs more."],
+          ["Granted, the sample was small.", "Nevertheless, the effect was large."],
+          ["There is something in this.", "The difficulty is that …"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "A concession with no turn is just agreement. If you write “Admittedly …” you owe the reader a “but” — otherwise you have argued against yourself.",
+          "ar": "التنازل بلا انعطاف موافقةٌ لا أكثر. فإذا كتبت Admittedly فأنت مدين للقارئ بـ«لكن»، وإلا كنت قد حاججت ضد نفسك." } }
+      ]
+    },
+    {
+      "id": "c1.discourse.hedgeScope",
+      "title": { "en": "Limiting a claim precisely", "ar": "تحديد نطاق الادعاء بدقة" },
+      "teach": [
+        { "type": "table", "head": ["Phrase", "What it limits"], "rows": [
+          ["insofar as", "the extent of the claim"],
+          ["in this respect", "the aspect being discussed"],
+          ["for present purposes", "the scope of the discussion"],
+          ["all else being equal", "the conditions assumed"],
+          ["on the available evidence", "the basis of the claim"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A limit placed deliberately is strength; vagueness spread everywhere is weakness. Say exactly what your claim does not cover.",
+          "ar": "القيد الموضوع عن قصد قوة، أما الغموض المنثور في كل مكان فضعف. فبيّن بدقة ما لا يشمله ادعاؤك." } },
+        { "type": "tip", "text": {
+          "en": "Compare “the policy works” with “on the available evidence, the policy works in urban areas”. The second is harder to attack and more useful.",
+          "ar": "قارن بين «السياسة ناجحة» و«بحسب الأدلة المتاحة، السياسة ناجحة في المناطق الحضرية». الثانية أصعب على النقض وأنفع." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u5-01", "concept": "c1.discourse.signpost", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which phrase warns the reader that a criticism is coming next?",
+        "ar": "أي عبارة تنبّه القارئ إلى نقد قادم؟" },
+      "options": ["That said, …", "It follows that …", "In addition, …", "For example, …"],
+      "answer": 0,
+      "explanation": { "en": "“That said” turns against what was just granted; the others add, conclude or illustrate.",
+        "ar": "That said تنعطف ضد ما مُنح للتو، أما البقية فتضيف أو تستنتج أو تمثّل." } },
+
+    { "id": "c1u5-02", "concept": "c1.discourse.signpost", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What does “To be clear, …” usually introduce?", "ar": "ماذا تُدخل عبارة To be clear عادةً؟" },
+      "options": ["A correction of something the reader might have misread.",
+                  "A summary of the entire argument presented so far.",
+                  "An example supporting the claim made just before it.",
+                  "A completely new topic unrelated to the argument."],
+      "answer": 0,
+      "explanation": { "en": "It pre-empts a misreading the writer expects — often the one they fear most.",
+        "ar": "تستبق سوء فهم يتوقعه الكاتب، وغالباً ما يكون أكثر ما يخشاه." } },
+
+    { "id": "c1u5-03", "concept": "c1.discourse.signpost", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "policy",
+      "prompt": { "en": "How many claims does the briefing say the case rests on?", "ar": "على كم دعوى يقول الملخّص إن الحجّة تقوم؟" },
+      "options": ["Three, and each is then assessed in turn.", "Two, with a third added later on.",
+                  "One, repeated in three different ways.", "Four, though only three are named."],
+      "answer": 0,
+      "explanation": { "en": "The signpost promises three and the paragraph delivers three, in order.",
+        "ar": "الإشارة تعد بثلاث، والفقرة تفي بها بالترتيب." } },
+
+    { "id": "c1u5-04", "concept": "c1.discourse.signpost", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the marker with what it prepares the reader for.", "ar": "صِل الإشارة بما تهيّئ القارئ له." },
+      "pairs": [["Admittedly", "a concession"], ["That said", "a turn against it"],
+                ["It follows that", "a conclusion"], ["To be clear", "a correction"]],
+      "explanation": { "en": "Readers navigate long texts by these words; a wrong one sends them the wrong way.",
+        "ar": "يهتدي القارئ في النصوص الطويلة بهذه الكلمات، والخطأ فيها يرسله في الاتجاه المعاكس." } },
+
+    { "id": "c1u5-05", "concept": "c1.discourse.concession", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "___ , the sample was small. Even so, the effect was too large to ignore.",
+      "options": ["Granted", "Therefore", "Similarly", "Consequently"], "answer": 0,
+      "explanation": { "en": "“Granted” concedes a point; “Even so” then turns. The pair works together.",
+        "ar": "Granted تُقرّ بنقطة، وEven so تنعطف بعدها، والعبارتان تعملان معاً." } },
+
+    { "id": "c1u5-06", "concept": "c1.discourse.concession", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "In which pair does the concession go wrong, leaving the writer agreeing with the objection?",
+        "ar": "في أي زوج يقع الخطأ في التنازل فيصير الكاتب موافقاً للاعتراض؟" },
+      "options": ["Admittedly, the method is flawed. The results are therefore unreliable.",
+                  "Admittedly, the method is flawed. Even so, the pattern is consistent.",
+                  "Granted, the sample was small. Nevertheless, the effect was large.",
+                  "It is true that costs rise. That said, the alternative costs more."],
+      "answer": 0,
+      "explanation": { "en": "A concession that is followed by agreement is not a concession — the writer has conceded the whole case.",
+        "ar": "التنازل الذي تليه موافقة ليس تنازلاً، فالكاتب سلّم بالقضية كلها." } },
+
+    { "id": "c1u5-07", "concept": "c1.discourse.concession", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "policy",
+      "prompt": { "en": "Why does the writer say “None of this is fatal to the proposal”?",
+        "ar": "لماذا قال الكاتب إن شيئاً من هذا لا يقتل المقترح؟" },
+      "options": ["To limit the criticism before making the real recommendation.",
+                  "To withdraw the objections raised in the first paragraph.",
+                  "To state that the proposal has already been approved.",
+                  "To introduce a fourth claim not mentioned earlier."],
+      "answer": 0,
+      "explanation": { "en": "It bounds the criticism so the recommendation that follows reads as constructive, not hostile.",
+        "ar": "تحدّ من النقد ليبدو ما يليه من توصية بنّاءً لا عدائياً." } },
+
+    { "id": "c1u5-08", "concept": "c1.discourse.concession", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "policy",
+      "prompt": { "en": "What does the writer actually recommend?", "ar": "بماذا يوصي الكاتب فعلاً؟" },
+      "options": ["Presenting the cost claim as an aim rather than a result.",
+                  "Withdrawing the proposal until new evidence appears.",
+                  "Removing the section on waiting times entirely.",
+                  "Consulting a different group of providers first."],
+      "answer": 0,
+      "explanation": { "en": "“Would be stronger if it presented the cost claim as an aspiration rather than a finding.”",
+        "ar": "«سيكون أقوى لو عرض دعوى التكلفة بوصفها طموحاً لا نتيجة»." } },
+
+    { "id": "c1u5-09", "concept": "c1.discourse.concession", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "policy",
+      "prompt": { "en": "Why does the writer mention the appendix?", "ar": "لماذا ذكر الكاتب الملحق؟" },
+      "options": ["To warn that the summary oversells what the evidence shows.",
+                  "To praise the thoroughness of the supporting data.",
+                  "To suggest the appendix should be deleted entirely.",
+                  "To show that providers were consulted independently."],
+      "answer": 0,
+      "explanation": { "en": "A reader who checks will find a weaker case than the summary promised — that gap is the criticism.",
+        "ar": "من يراجع الملحق سيجد حجّة أضعف مما وعد به الملخّص، وهذه الفجوة هي موضع النقد." } },
+
+    { "id": "c1u5-10", "concept": "c1.discourse.hedgeScope", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "___ the available evidence, the scheme works best in urban districts.",
+      "options": ["On", "In", "By", "With"], "answer": 0,
+      "explanation": { "en": "“On the available evidence” is the fixed phrase for naming the basis of a claim.",
+        "ar": "on the available evidence عبارة ثابتة لبيان أساس الادعاء." } },
+
+    { "id": "c1u5-11", "concept": "c1.discourse.hedgeScope", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which claim is both cautious and useful?", "ar": "أي ادعاء متحفّظ ونافع في آنٍ؟" },
+      "options": ["On the available evidence, the policy works in urban areas.",
+                  "The policy might possibly work somewhere, perhaps sometimes.",
+                  "The policy works, and anyone who disagrees is simply wrong.",
+                  "It is hard to say anything at all about this policy yet."],
+      "answer": 0,
+      "explanation": { "en": "It names the basis and the scope. Vagueness everywhere is not caution — it is emptiness.",
+        "ar": "تُسمّي الأساس والنطاق. أما الغموض الشامل فليس تحفّظاً بل خواء." } },
+
+    { "id": "c1u5-12", "concept": "c1.discourse.hedgeScope", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What does “all else being equal” tell the reader?", "ar": "ماذا تخبر عبارة all else being equal القارئ؟" },
+      "options": ["The claim assumes other factors do not change.",
+                  "The claim applies to every case without exception.",
+                  "The evidence for the claim is unusually strong.",
+                  "The writer is uncertain what the claim means."],
+      "answer": 0,
+      "explanation": { "en": "It states the condition under which the claim holds — a limit, not a doubt.",
+        "ar": "تذكر الشرط الذي يصحّ فيه الادعاء، فهي قيد لا شكّ." } },
+
+    { "id": "c1u5-13", "concept": "c1.discourse.hedgeScope", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the phrase with what it limits.", "ar": "صِل العبارة بما تقيّده." },
+      "pairs": [["insofar as", "how far the claim goes"], ["for present purposes", "the scope of discussion"],
+                ["all else being equal", "the conditions assumed"], ["on the available evidence", "the basis of the claim"]],
+      "explanation": { "en": "Each names a different kind of limit; using the wrong one blurs what you actually claimed.",
+        "ar": "كل عبارة تسمّي نوعاً مختلفاً من القيد، واستعمال الخطأ منها يُضبّب ما ادّعيته فعلاً." } },
+
+    { "id": "c1u5-14", "concept": "c1.discourse.signpost", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which opening sets up a critical review most effectively?",
+        "ar": "أي افتتاحية تهيّئ لمراجعة نقدية بأفضل صورة؟" },
+      "options": ["The argument rests on three claims, only one of which survives scrutiny.",
+                  "This paper has some good things and also some bad things in it.",
+                  "I will now discuss whether or not this paper is any good at all.",
+                  "There are various points that could be made about this paper."],
+      "answer": 0,
+      "explanation": { "en": "It promises a structure and states the verdict — the reader knows exactly what is coming.",
+        "ar": "تعد ببنية وتذكر الحكم، فيعرف القارئ تماماً ما ينتظره." } },
+
+    { "id": "c1u5-15", "concept": "c1.discourse.concession", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Add the turn: “Admittedly, the data are limited. ___ , the pattern is consistent across all four sites.”",
+        "ar": "أضف الانعطاف: Admittedly, the data are limited. ___ , the pattern is consistent." },
+      "answer": "even so", "accept": ["nevertheless", "that said", "nonetheless", "still"],
+      "explanation": { "en": "A concession needs its turn; without one you have simply agreed with the objection.",
+        "ar": "التنازل يحتاج انعطافه، وبدونه تكون قد وافقت الاعتراض ببساطة." } }
+  ]
+}

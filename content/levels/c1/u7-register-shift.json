@@ -1,0 +1,212 @@
+{
+  "id": "c1-u7",
+  "goal": {
+    "en": "Say the same thing three ways, and know exactly which room each version belongs in.",
+    "ar": "أن تقول الشيء نفسه بثلاث صيغ، وتعرف تماماً أين تصلح كل صيغة."
+  },
+  "concepts": [
+    {
+      "id": "c1.register.shift",
+      "title": { "en": "One message, three registers", "ar": "رسالة واحدة بثلاثة مستويات" },
+      "teach": [
+        { "type": "table", "head": ["Register", "Same message"], "rows": [
+          ["Informal", "We messed up the dates — sorry, let's redo it."],
+          ["Neutral", "We got the dates wrong. I'll send a corrected version today."],
+          ["Formal", "An error occurred in the scheduling. A corrected version will follow today."],
+          ["Legalistic", "The scheduling discrepancy is acknowledged. A revised document will be issued."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Register is chosen by the relationship and the setting, not by how important you want to sound. Formality above the situation reads as distance or evasion.",
+          "ar": "يُختار مستوى اللغة بحسب العلاقة والسياق، لا بحسب رغبتك في الظهور بمظهر مهم. والرسمية الزائدة عن الموقف تُقرأ تباعداً أو تهرّباً." } },
+        { "type": "warn", "text": {
+          "en": "Notice what the formal versions above lose: the word “we”. As register rises, the agent disappears — which is sometimes precisely the point.",
+          "ar": "لاحظ ما تفقده الصيغ الرسمية أعلاه: كلمة «نحن». فكلما ارتفع المستوى اختفى الفاعل، وهذا أحياناً هو المقصود بالضبط." } }
+      ]
+    },
+    {
+      "id": "c1.register.euphemism",
+      "title": { "en": "Euphemism: kindness and evasion", "ar": "التلطيف بين المراعاة والتهرّب" },
+      "teach": [
+        { "type": "table", "head": ["Euphemism", "Plain meaning", "Fair?"], "rows": [
+          ["passed away", "died", "yes — kindness"],
+          ["let go / made redundant", "dismissed", "usually fair"],
+          ["a challenging quarter", "a bad quarter", "borderline"],
+          ["a negative growth trend", "a decline", "evasive"],
+          ["mistakes were made", "we made mistakes", "evasive"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A euphemism is fair when it spares feelings and unfair when it hides responsibility. The test is whether the plain version names someone the soft version does not.",
+          "ar": "التلطيف مقبول حين يراعي المشاعر، ومرفوض حين يخفي المسؤولية. والاختبار: هل تُسمّي الصيغة الصريحة فاعلاً تُغفله الصيغة اللطيفة؟" } }
+      ]
+    },
+    {
+      "id": "c1.register.directness",
+      "title": { "en": "Calibrating directness", "ar": "معايرة الصراحة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English-speaking workplaces vary, but professional English generally softens instructions and sharpens facts. Softening a fact and sharpening an instruction is the wrong way round.",
+          "ar": "تختلف بيئات العمل الناطقة بالإنجليزية، لكن الإنجليزية المهنية عموماً تُليّن التوجيهات وتُحدّد الوقائع. أما تليين الواقعة وتشديد التوجيه فعكس الصواب." } },
+        { "type": "table", "head": ["Too soft", "Calibrated", "Too blunt"], "rows": [
+          ["Maybe we could possibly look at it?", "Could you review this by Thursday?", "Review this today."],
+          ["There may be some small issues.", "There are two errors on page four.", "Your work is full of errors."],
+          ["It might be slightly late perhaps.", "It will be two days late.", "You made us late."]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Vagueness is not politeness. “There may be some issues” forces the reader to guess; “there are two errors on page four” is both polite and useful.",
+          "ar": "الغموض ليس تهذيباً. فعبارة «قد تكون هناك بعض المشكلات» تُجبر القارئ على التخمين، أما «هناك خطآن في الصفحة الرابعة» فمهذبة ونافعة معاً." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u7-01", "concept": "c1.register.shift", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "You are emailing a close colleague about your own scheduling error. Which fits?",
+        "ar": "تراسل زميلاً مقرباً بشأن خطأ منك في المواعيد. أي صيغة تناسب؟" },
+      "options": ["I got the dates wrong — sorry. Corrected version coming today.",
+                  "An error occurred in the scheduling of the aforementioned tasks.",
+                  "The scheduling discrepancy is acknowledged and will be rectified.",
+                  "It has been determined that the dates were recorded incorrectly."],
+      "answer": 0,
+      "explanation": { "en": "With a close colleague, plain ownership is right; the formal versions all remove the person responsible.",
+        "ar": "مع زميل مقرب تصلح الصراحة وتحمّل المسؤولية، أما الصيغ الرسمية فتحذف المسؤول جميعاً." } },
+
+    { "id": "c1u7-02", "concept": "c1.register.shift", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "The same error, now in a formal notice to a client. Which fits?",
+        "ar": "الخطأ نفسه، لكن في إشعار رسمي لعميل. أي صيغة تناسب؟" },
+      "options": ["We made an error in the schedule and will issue a corrected version today.",
+                  "We messed up the dates, sorry about that, we'll sort it out today.",
+                  "The scheduling discrepancy is acknowledged by the relevant parties.",
+                  "Errors of this kind are known to occur in scheduling processes."],
+      "answer": 0,
+      "explanation": { "en": "Formal but accountable. The last two use formality to avoid saying who was responsible.",
+        "ar": "رسمية مع تحمّل المسؤولية. أما الأخيرتان فتستخدمان الرسمية للتهرب من ذكر المسؤول." } },
+
+    { "id": "c1u7-03", "concept": "c1.register.shift", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What is usually lost as register rises?", "ar": "ما الذي يُفقد عادةً كلما ارتفع مستوى اللغة؟" },
+      "options": ["The person who did the action.", "The date the action happened.",
+                  "The seriousness of the problem.", "The name of the document."],
+      "answer": 0,
+      "explanation": { "en": "Formal English favours passives and nominalisations, both of which can drop the agent.",
+        "ar": "تفضّل الإنجليزية الرسمية المبني للمجهول والصيغ الاسمية، وكلاهما قد يُسقط الفاعل." } },
+
+    { "id": "c1u7-04", "concept": "c1.register.shift", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the setting with the phrasing that fits it.", "ar": "صِل الموقف بالصيغة المناسبة له." },
+      "pairs": [["a message to a friend", "Sorry, my mistake!"],
+                ["an email to your manager", "Apologies — that was my error."],
+                ["a client-facing notice", "We apologise for the error."],
+                ["a contract amendment", "The error is hereby corrected."]],
+      "explanation": { "en": "The content is identical in all four; only the relationship changes.",
+        "ar": "المضمون واحد في الأربع، والمتغيّر هو العلاقة فقط." } },
+
+    { "id": "c1u7-05", "concept": "c1.register.euphemism", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which euphemism is evasive rather than kind?", "ar": "أي تلطيف يُعدّ تهرباً لا مراعاة؟" },
+      "options": ["Mistakes were made in the handling of the account.",
+                  "Her grandfather passed away earlier this year.",
+                  "Forty staff were made redundant in March.",
+                  "The team had a challenging final quarter."],
+      "answer": 0,
+      "explanation": { "en": "It hides who made them. The others soften a fact without removing anyone from it.",
+        "ar": "تخفي من ارتكبها. أما البقية فتُلطّف الواقعة دون حذف أحد منها." } },
+
+    { "id": "c1u7-06", "concept": "c1.register.euphemism", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "A company reports “a period of negative growth”. What has happened?",
+        "ar": "أعلنت شركة عن a period of negative growth. ماذا حدث؟" },
+      "options": ["Its revenue fell during that period.",
+                  "Its revenue grew more slowly than hoped.",
+                  "Its revenue stayed exactly the same.",
+                  "Its revenue grew in a different market."],
+      "answer": 0,
+      "explanation": { "en": "“Negative growth” is a decline wearing a better coat. Recognising it protects you as a reader.",
+        "ar": "«النمو السالب» انخفاضٌ في ثوب أجمل، والتعرّف عليه يحمي القارئ." } },
+
+    { "id": "c1u7-07", "concept": "c1.register.euphemism", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You must tell a team their project is cancelled. Which is right?",
+        "ar": "عليك إبلاغ فريق بإلغاء مشروعه. أي صيغة صحيحة؟" },
+      "options": ["I'm sorry to say the project has been cancelled. Here is why.",
+                  "The project has entered a period of indefinite strategic pause.",
+                  "There have been some developments regarding the project's future.",
+                  "The project is being reconceptualised in line with new priorities."],
+      "answer": 0,
+      "explanation": { "en": "People forgive bad news; they do not forgive being managed. The euphemisms delay the same blow.",
+        "ar": "يتقبّل الناس الخبر السيئ، ولا يتقبّلون المراوغة. والصيغ الملطّفة تؤجّل الضربة نفسها." } },
+
+    { "id": "c1u7-08", "concept": "c1.register.euphemism", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the euphemism with its plain meaning.", "ar": "صِل التلطيف بمعناه الصريح." },
+      "pairs": [["let go", "dismissed"], ["a challenging quarter", "a bad quarter"],
+                ["negative growth", "a decline"], ["mistakes were made", "we made mistakes"]],
+      "explanation": { "en": "Translating back into plain terms is how you check what you are actually being told.",
+        "ar": "إعادة الترجمة إلى اللغة الصريحة هي وسيلتك للتحقق مما يُقال لك فعلاً." } },
+
+    { "id": "c1u7-09", "concept": "c1.register.directness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You need a colleague to review a document by Thursday. Which is best?",
+        "ar": "تحتاج مراجعة زميل لمستند بحلول الخميس. ما الأفضل؟" },
+      "options": ["Could you review this by Thursday? Happy to talk it through first.",
+                  "Maybe at some point we could possibly look at this together?",
+                  "Review this and get it back to me before Thursday morning.",
+                  "It would be great if someone reviewed this at some stage."],
+      "answer": 0,
+      "explanation": { "en": "A softened instruction with a hard deadline. The vague versions produce no action; the blunt one produces resentment.",
+        "ar": "توجيه ملطّف مع موعد حاسم. أما الصيغ المبهمة فلا تُنتج فعلاً، والفظّة تُنتج امتعاضاً." } },
+
+    { "id": "c1u7-10", "concept": "c1.register.directness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You found two errors in a colleague's report. How do you say it?",
+        "ar": "وجدت خطأين في تقرير زميل. كيف تقول ذلك؟" },
+      "options": ["There are two errors on page four — the totals in the second table.",
+                  "There may possibly be some small issues somewhere in the report.",
+                  "Your report is full of errors and needs to be done again.",
+                  "I noticed some things that perhaps might need another look."],
+      "answer": 0,
+      "explanation": { "en": "Sharpen the fact, soften the instruction. Vagueness here is not kindness — it wastes their time.",
+        "ar": "حدّد الواقعة وليّن التوجيه. والغموض هنا ليس لطفاً بل إهدار لوقت زميلك." } },
+
+    { "id": "c1u7-11", "concept": "c1.register.directness", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why is “There may be some issues” a poor way to report a fault?",
+        "ar": "لماذا تُعدّ عبارة There may be some issues طريقة ضعيفة للإبلاغ عن خلل؟" },
+      "options": ["It leaves the reader guessing what and where.",
+                  "It is grammatically incorrect in written English.",
+                  "It is too formal for a workplace message.",
+                  "It accuses the reader of making the errors."],
+      "answer": 0,
+      "explanation": { "en": "Politeness belongs in how you ask, not in whether the reader can find the problem.",
+        "ar": "التهذيب محلّه أسلوب الطلب، لا قدرة القارئ على العثور على المشكلة." } },
+
+    { "id": "c1u7-12", "concept": "c1.register.directness", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which reply declines a request clearly but without damage?",
+        "ar": "أي رد يرفض الطلب بوضوح ودون ضرر؟" },
+      "options": ["I can't take this on this week, but I could start on Monday.",
+                  "I'll try to fit it in somewhere if I possibly get a chance.",
+                  "No. I have far too much other work to do right now.",
+                  "That is really not my responsibility, as you well know."],
+      "answer": 0,
+      "explanation": { "en": "A clear no with an alternative. “I'll try” without capacity is a yes that fails later.",
+        "ar": "رفض واضح مع بديل. أما «سأحاول» بلا قدرة فهي موافقة تفشل لاحقاً." } },
+
+    { "id": "c1u7-13", "concept": "c1.register.shift", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is too formal for a message to a teammate?",
+        "ar": "أي جملة أرسم من اللازم في رسالة إلى زميل في الفريق؟" },
+      "options": ["Kindly be advised that the aforementioned file has been transmitted.",
+                  "I've sent the file over — let me know if anything looks off.",
+                  "I've sent you the file. Shout if you spot any problems.",
+                  "The file is with you now; tell me if something is missing."],
+      "answer": 0,
+      "explanation": { "en": "“Kindly be advised” and “aforementioned” belong to legal notices, not to a teammate.",
+        "ar": "عبارتا kindly be advised وaforementioned من لغة الإشعارات القانونية لا من مخاطبة زميل." } },
+
+    { "id": "c1u7-14", "concept": "c1.register.euphemism", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Put it plainly in one word: “The department experienced a period of negative growth.” → “Revenue ___ .”",
+        "ar": "قلها بصراحة بكلمة واحدة: Revenue ___" },
+      "answer": "fell", "accept": ["declined", "dropped", "decreased"],
+      "explanation": { "en": "If a plain word exists, the long version is doing work other than describing.",
+        "ar": "إذا وُجدت كلمة صريحة فإن الصيغة الطويلة تؤدي عملاً غير الوصف." } },
+
+    { "id": "c1u7-15", "concept": "c1.register.directness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence gets the balance right in a performance conversation?",
+        "ar": "أي جملة تحقق التوازن في حديث عن الأداء؟" },
+      "options": ["Your analysis is strong; the writing needs work, and here's what I mean.",
+                  "Everything is fine, though maybe one or two things could be better.",
+                  "The writing is bad and I don't understand what you were thinking.",
+                  "There are aspects of the work that some people might question."],
+      "answer": 0,
+      "explanation": { "en": "Specific on both the strength and the problem, with an offer to explain — that is what makes feedback usable.",
+        "ar": "تحديد نقطة القوة والمشكلة معاً مع عرض التوضيح، وهذا ما يجعل الملاحظات قابلة للاستعمال." } }
+  ]
+}

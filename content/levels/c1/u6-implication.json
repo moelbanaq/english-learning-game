@@ -1,0 +1,239 @@
+{
+  "id": "c1-u6",
+  "goal": {
+    "en": "Hear what a text assumes and implies, not only what it states.",
+    "ar": "أن تسمع ما يفترضه النص ويُلمح إليه، لا ما يقوله فحسب."
+  },
+  "passages": {
+    "reference": {
+      "title": "A reference for a job applicant",
+      "text": "Ms Karim worked in my department for two years. She was always punctual, and her written English is of a good standard. She completed the tasks assigned to her and left on good terms with her colleagues. I am sure she will be an asset to any organisation prepared to invest in her development.\n\nI should add that the role she held was largely administrative, and I am not in a position to comment on her experience of managing budgets, which I understand is central to the post she has applied for."
+    },
+    "notice": {
+      "title": "A notice to residents",
+      "text": "Following feedback from residents, the bin collection will move to Tuesdays from 1 October. We appreciate that this change will not suit everyone. Residents who are unable to present bins on Tuesdays may wish to make arrangements with a neighbour. The council is unable to provide individual collections."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.implication.damning",
+      "title": { "en": "Praise that is not praise", "ar": "مدحٌ ليس بمدح" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "In references and reviews, what is left out speaks louder than what is said. Praising someone for punctuality suggests there was nothing stronger to praise.",
+          "ar": "في خطابات التزكية والمراجعات يتكلم المسكوت عنه أعلى من المذكور. فالثناء على الالتزام بالمواعيد يوحي بأنه لم يكن هناك ما هو أقوى للثناء عليه." } },
+        { "type": "table", "head": ["Written", "Understood as"], "rows": [
+          ["She was always punctual.", "There is little else to say."],
+          ["He completed the tasks assigned.", "He showed no initiative."],
+          ["An asset to any organisation prepared to invest in her development.", "She needs training."],
+          ["I am not in a position to comment on X.", "There is no evidence she can do X."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Ask of any recommendation: what would a genuinely enthusiastic version say that this one does not?",
+          "ar": "اسأل عن أي تزكية: ماذا كانت ستقول النسخة المتحمسة حقاً مما لم تقله هذه؟" } }
+      ]
+    },
+    {
+      "id": "c1.implication.presupposition",
+      "title": { "en": "What a sentence takes for granted", "ar": "ما تفترضه الجملة سلفاً" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Some words smuggle in an assumption that survives even when the sentence is denied. “He has stopped missing deadlines” assumes he used to miss them — and so does “He hasn't stopped missing deadlines.”",
+          "ar": "بعض الكلمات تُهرّب افتراضاً يبقى قائماً حتى لو نُفيت الجملة. فجملة He has stopped missing deadlines تفترض أنه كان يفوّتها، وكذلك نفيها." } },
+        { "type": "table", "head": ["Trigger", "It assumes"], "rows": [
+          ["stop / continue / resume", "the action was happening before"],
+          ["again", "it happened at least once already"],
+          ["even", "this case is surprising or extreme"],
+          ["only", "others were expected but did not apply"],
+          ["realise / discover", "the fact is true"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Presupposition is how a loaded question works. “Have you fixed the errors in your report?” assumes there are errors — answering yes or no accepts that.",
+          "ar": "على هذا المبدأ يقوم السؤال المُلغَّم. فسؤال «هل صحّحت الأخطاء في تقريرك؟» يفترض وجود أخطاء، والإجابة بنعم أو لا تُقرّ بها." } }
+      ]
+    },
+    {
+      "id": "c1.implication.institutional",
+      "title": { "en": "The language of institutions", "ar": "لغة المؤسسات" },
+      "teach": [
+        { "type": "table", "head": ["Written", "Means"], "rows": [
+          ["Following feedback from residents", "we had complaints, or we had already decided"],
+          ["We appreciate that this will not suit everyone", "we know you will object, and we are proceeding"],
+          ["Residents may wish to make arrangements", "this is now your problem"],
+          ["The council is unable to …", "the council will not, and there is no appeal"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“Unable to” usually means unwilling; a real inability is normally explained. Notice which one you are being offered.",
+          "ar": "عبارة unable to تعني غالباً «غير راغب»، إذ العجز الحقيقي يُفسَّر عادةً. فانتبه أيّهما يُعرض عليك." } },
+        { "type": "tip", "text": {
+          "en": "This is not dishonesty so much as convention. Reading it accurately saves you from arguing with a wall — or from missing a real offer.",
+          "ar": "هذا عرف أكثر منه خداعاً. وقراءته بدقة تجنّبك مجادلة الجدار، أو تفويت عرضٍ حقيقي." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u6-01", "concept": "c1.implication.damning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reference",
+      "prompt": { "en": "How enthusiastic is this reference?", "ar": "ما درجة حماس هذه التزكية؟" },
+      "options": ["Lukewarm: it praises only basic reliability.",
+                  "Strong: it recommends her without reservation.",
+                  "Hostile: it accuses her of poor performance.",
+                  "Neutral: it gives only dates and job titles."],
+      "answer": 0,
+      "explanation": { "en": "Punctuality, completing assigned tasks and leaving on good terms are the minimum, not a recommendation.",
+        "ar": "الالتزام بالمواعيد وإنجاز المهام المكلّف بها وحسن المغادرة هي الحد الأدنى، لا تزكية." } },
+
+    { "id": "c1u6-02", "concept": "c1.implication.damning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reference",
+      "prompt": { "en": "What does “an asset to any organisation prepared to invest in her development” imply?",
+        "ar": "ماذا تُلمح هذه العبارة؟" },
+      "options": ["She will need significant training first.",
+                  "She is ready for a senior role immediately.",
+                  "She has already been fully trained by the writer.",
+                  "She invests her own money in her training."],
+      "answer": 0,
+      "explanation": { "en": "The condition attached to the praise is the message: the praise applies only if you train her.",
+        "ar": "الشرط الملحق بالمدح هو الرسالة: المدح لا يصحّ إلا إذا تولّيت تدريبها." } },
+
+    { "id": "c1u6-03", "concept": "c1.implication.damning", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reference",
+      "prompt": { "en": "Why does the second paragraph mention budgets?", "ar": "لماذا ذُكرت الميزانيات في الفقرة الثانية؟" },
+      "options": ["To signal she has no track record in the job's core duty.",
+                  "To confirm she managed large budgets successfully.",
+                  "To praise her financial skills indirectly.",
+                  "To explain why she left the department."],
+      "answer": 0,
+      "explanation": { "en": "Naming the skill and declining to comment is a warning delivered without a single negative word.",
+        "ar": "ذكر المهارة مع الامتناع عن التعليق تحذيرٌ بلا كلمة سلبية واحدة." } },
+
+    { "id": "c1u6-04", "concept": "c1.implication.damning", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence belongs in a genuinely strong reference?",
+        "ar": "أي جملة تنتمي إلى تزكية قوية فعلاً؟" },
+      "options": ["She rebuilt our reporting process and trained the team herself.",
+                  "She was always punctual and completed the tasks assigned.",
+                  "She left on good terms with everyone in the department.",
+                  "She has a good standard of written and spoken English."],
+      "answer": 0,
+      "explanation": { "en": "Specific achievement beyond the job description is what a real recommendation contains.",
+        "ar": "الإنجاز المحدد الذي يتجاوز وصف الوظيفة هو ما تحتويه التزكية الحقيقية." } },
+
+    { "id": "c1u6-05", "concept": "c1.implication.presupposition", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "“Has the team stopped missing deadlines?” What does the question assume?",
+        "ar": "ماذا يفترض هذا السؤال؟" },
+      "options": ["The team was missing deadlines before.",
+                  "The team has never missed a deadline.",
+                  "The team will miss deadlines in future.",
+                  "The team has no deadlines to meet."],
+      "answer": 0,
+      "explanation": { "en": "“Stop” presupposes the action was happening — and the assumption survives a “no”.",
+        "ar": "فعل stop يفترض أن الأمر كان يحدث، والافتراض يبقى حتى مع الإجابة بـ«لا»." } },
+
+    { "id": "c1u6-06", "concept": "c1.implication.presupposition", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Even the finance team approved it.” What does “even” signal?",
+        "ar": "ماذا تشير إليه كلمة even هنا؟" },
+      "options": ["Their approval was the least expected.",
+                  "They approved it before anyone else did.",
+                  "They were the only team to approve it.",
+                  "They approved it without reading it."],
+      "answer": 0,
+      "explanation": { "en": "“Even” marks the case as surprising, which tells you what the writer expected.",
+        "ar": "even تصف الحالة بأنها مفاجئة، وهذا يكشف ما كان يتوقعه الكاتب." } },
+
+    { "id": "c1u6-07", "concept": "c1.implication.presupposition", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "“We have again postponed the launch.” What is assumed?",
+        "ar": "ما المفترض في هذه الجملة؟" },
+      "options": ["The launch has been postponed before.",
+                  "The launch will definitely happen soon.",
+                  "This is the first delay to the launch.",
+                  "The launch was cancelled permanently."],
+      "answer": 0,
+      "explanation": { "en": "“Again” presupposes at least one earlier occurrence — a small word carrying a history.",
+        "ar": "كلمة again تفترض وقوعاً سابقاً واحداً على الأقل، وهي كلمة صغيرة تحمل تاريخاً." } },
+
+    { "id": "c1u6-08", "concept": "c1.implication.presupposition", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why is “Have you fixed the errors in your report?” a difficult question to answer?",
+        "ar": "لماذا يصعب الرد على هذا السؤال؟" },
+      "options": ["Yes and no both accept that there are errors.",
+                  "It contains a grammatical mistake of its own.",
+                  "It can only be answered by the report's author.",
+                  "It uses a tense that has no clear meaning."],
+      "answer": 0,
+      "explanation": { "en": "The presupposition sits outside the yes/no choice, so answering at all concedes it.",
+        "ar": "الافتراض خارج خيار نعم/لا، فمجرد الإجابة إقرارٌ به." } },
+
+    { "id": "c1u6-09", "concept": "c1.implication.presupposition", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the word with what it assumes.", "ar": "صِل الكلمة بما تفترضه." },
+      "pairs": [["again", "it happened before"], ["even", "this case is surprising"],
+                ["only", "others were expected"], ["stopped", "it was happening until now"]],
+      "explanation": { "en": "These words carry assumptions that a reader accepts without noticing.",
+        "ar": "هذه الكلمات تحمل افتراضات يقبلها القارئ دون أن ينتبه." } },
+
+    { "id": "c1u6-10", "concept": "c1.implication.institutional", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "notice",
+      "prompt": { "en": "What does “Following feedback from residents” most likely mean here?",
+        "ar": "ماذا تعني عبارة Following feedback from residents هنا على الأرجح؟" },
+      "options": ["The council is presenting its decision as responsive.",
+                  "Residents voted directly on the new collection day.",
+                  "Every resident asked for a Tuesday collection.",
+                  "The change was requested by the bin contractors."],
+      "answer": 0,
+      "explanation": { "en": "The phrase frames a decision as a response, without saying what the feedback actually asked for.",
+        "ar": "تُصوّر العبارة القرار استجابةً، دون أن تذكر ما طلبته تلك الملاحظات فعلاً." } },
+
+    { "id": "c1u6-11", "concept": "c1.implication.institutional", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "notice",
+      "prompt": { "en": "What is the practical message of the last two sentences?",
+        "ar": "ما الرسالة العملية للجملتين الأخيرتين؟" },
+      "options": ["If Tuesday does not work for you, solve it yourself.",
+                  "The council will arrange collections on request.",
+                  "Residents may choose their own collection day.",
+                  "The change will be reversed if people object."],
+      "answer": 0,
+      "explanation": { "en": "“May wish to make arrangements with a neighbour” plus “unable to provide individual collections” closes the door politely.",
+        "ar": "عبارتا «قد ترغب في الترتيب مع جار» و«غير قادر على توفير جمع فردي» تغلقان الباب بلطف." } },
+
+    { "id": "c1u6-12", "concept": "c1.implication.institutional", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "An organisation writes “we are unable to offer a refund”. What is usually true?",
+        "ar": "كتبت مؤسسة we are unable to offer a refund. ما الصحيح غالباً؟" },
+      "options": ["It is a policy choice presented as an impossibility.",
+                  "A law prevents them from issuing any refund.",
+                  "Their payment system has broken down.",
+                  "They will refund you if you ask twice."],
+      "answer": 0,
+      "explanation": { "en": "Genuine inability is normally explained; “unable to” without a reason is usually “will not”.",
+        "ar": "العجز الحقيقي يُفسَّر عادةً، وunable to بلا سبب تعني غالباً «لن نفعل»." } },
+
+    { "id": "c1u6-13", "concept": "c1.implication.institutional", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You must refuse a customer's request but keep the relationship. Which is best?",
+        "ar": "عليك رفض طلب عميل مع الحفاظ على العلاقة. ما الأفضل؟" },
+      "options": ["We can't refund this order, but I can offer a credit for your next one.",
+                  "We are unable to assist you with this matter at the present time.",
+                  "Unfortunately our policy does not permit us to do what you ask.",
+                  "This is not something that we would ever be able to consider."],
+      "answer": 0,
+      "explanation": { "en": "A clear refusal with a real alternative respects the reader; the others hide behind institutional phrasing.",
+        "ar": "الرفض الواضح مع بديل حقيقي يحترم المتلقي، أما البقية فتختبئ خلف صيغ مؤسسية." } },
+
+    { "id": "c1u6-14", "concept": "c1.implication.damning", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A reviewer writes: “The book is competently organised.” What is implied?",
+        "ar": "كتب ناقد: The book is competently organised. ما المعنى الضمني؟" },
+      "options": ["The organisation is adequate and nothing more.",
+                  "The book is outstanding in every respect.",
+                  "The book is disorganised and hard to follow.",
+                  "The reviewer did not finish reading it."],
+      "answer": 0,
+      "explanation": { "en": "“Competently” praises the floor, not the ceiling — faint praise is a judgement in disguise.",
+        "ar": "كلمة competently تمدح الحد الأدنى لا الأعلى، والمدح الفاتر حكمٌ متنكّر." } },
+
+    { "id": "c1u6-15", "concept": "c1.implication.presupposition", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "“I was surprised that the report was finished on time.” What is assumed?",
+        "ar": "ما المفترض في هذه الجملة؟" },
+      "options": ["The report was in fact finished on time.",
+                  "The report was submitted several days late.",
+                  "The speaker wrote the report themselves.",
+                  "Nobody expected the report to be written."],
+      "answer": 0,
+      "explanation": { "en": "“Surprised that” presupposes the fact is true; the surprise is about expectation, not fact.",
+        "ar": "عبارة surprised that تفترض صحة الواقعة، والدهشة تتعلق بالتوقع لا بالحقيقة." } }
+  ]
+}

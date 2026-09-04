@@ -42,28 +42,31 @@ and reference, word formation and confusable pairs, emphasis through clefts and 
 focus, reading a longer argument for attitude and evidence, and writing emails and
 reports that are formal without being padded.
 
+### Phase 8 — C1 completion ✅
+Seven more units taking C1 to eight: academic stance through reporting verbs and
+impersonal structures, lexical precision (support verbs, fixed intensifiers, and
+near-synonyms that describe different events), complex noun phrases and participle
+clauses, signposting and concession across a long argument, implication and
+presupposition — what a text assumes rather than states — register shifting with the
+line between kind euphemism and evasive euphemism, and taking an argument apart fairly.
+
 | Level | Units | Concepts | Questions |
 | --- | --- | --- | --- |
 | A1 | 8 | 23 | 141 |
 | A2 | 8 | 24 | 127 |
 | B1 | 8 | 24 | 120 |
 | B2 | 8 | 26 | 120 |
-| C1 | 1 | 4 | 15 |
+| C1 | 8 | 25 | 120 |
 | C2 | 1 | 4 | 15 |
-| **Total** | **34** | **105** | **538** |
+| **Total** | **41** | **126** | **643** |
 
 Plus a 24-question placement test spanning all six levels.
 
-Four complete levels. A learner can go from no English to confident upper-intermediate
-competence entirely inside the app, unlocking each level by finishing 75% of the one
-below. The B2 units deliberately shift the question away from "is this grammatical?"
-towards "is this the right choice here?" — the step C1 then builds on.
+Five complete levels. The C1 units are built on the distinction that separates advanced
+from upper-intermediate: not whether a sentence is correct, but what it commits you to,
+what it assumes, and who it is addressed to.
 
 ## Next
-
-### Phase 8 — C1 completion (next up)
-6–8 units: academic and professional precision, collocation depth, hedging and stance,
-inference, and register control across longer texts.
 
 ### Phase 9 — C2 depth
 6–8 units: naturalness judgement, idiom in register, tone and irony, rhetorical

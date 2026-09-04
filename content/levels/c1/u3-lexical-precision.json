@@ -1,0 +1,181 @@
+{
+  "id": "c1-u3",
+  "goal": {
+    "en": "Choose the exact word, and the exact partner for it — where advanced English is actually won or lost.",
+    "ar": "أن تختار الكلمة الدقيقة وقرينها الصحيح — وهنا تُكسب الإنجليزية المتقدمة أو تُخسر."
+  },
+  "concepts": [
+    {
+      "id": "c1.lex.support",
+      "title": { "en": "Support verbs in formal use", "ar": "الأفعال المساندة في السياق الرسمي" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "In formal writing the verb often carries little meaning; the noun does the work. Choosing the wrong support verb is the fastest way to sound translated.",
+          "ar": "في الكتابة الرسمية يكاد الفعل يخلو من المعنى، والاسم هو الذي يحمله. واختيار الفعل المساند الخطأ أسرع ما يجعل نصّك يبدو مترجماً." } },
+        { "type": "table", "head": ["Natural", "Not English"], "rows": [
+          ["draw a distinction", "make a distinction between them"],
+          ["pose a question", "put a question to the air"],
+          ["reach a conclusion", "arrive a conclusion"],
+          ["conduct a review", "make a review"],
+          ["raise an objection", "lift an objection"],
+          ["lend support to", "give support at"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Several of these have a common alternative — you can also “make a distinction” or “carry out a review”. What matters is that the pairing exists, not that only one does.",
+          "ar": "لبعضها بديل شائع أيضاً، فيصح make a distinction وcarry out a review. والمهم أن يكون الاقتران موجوداً في الاستعمال، لا أن يكون واحداً فقط." } }
+      ]
+    },
+    {
+      "id": "c1.lex.intensifier",
+      "title": { "en": "Intensifiers are not interchangeable", "ar": "أدوات التوكيد ليست متبادلة" },
+      "teach": [
+        { "type": "table", "head": ["Fixed pairing", "Meaning"], "rows": [
+          ["deeply concerned", "serious worry"],
+          ["highly unlikely", "very improbable"],
+          ["bitterly disappointed", "painfully let down"],
+          ["widely regarded", "generally seen as"],
+          ["utterly meaningless", "completely without sense"],
+          ["strongly opposed", "firmly against"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Very unlikely” is fine, but “highly unlikely” is what a proficient writer reaches for. “Strongly disappointed” and “deeply unlikely” are not wrong by rule — they are simply not said.",
+          "ar": "تصح very unlikely، لكن المتمكّن يكتب highly unlikely. أما strongly disappointed وdeeply unlikely فليستا مخالفتين لقاعدة، لكنها ببساطة لا تُقال." } },
+        { "type": "rule", "text": {
+          "en": "Record the adverb with its adjective, as one item. Learning them separately guarantees the wrong pairing later.",
+          "ar": "احفظ الظرف مع صفته كوحدة واحدة، فحفظهما منفصلين يضمن الاقتران الخاطئ لاحقاً." } }
+      ]
+    },
+    {
+      "id": "c1.lex.precision",
+      "title": { "en": "Near-synonyms carry different pictures", "ar": "المترادفات تحمل صوراً مختلفة" },
+      "teach": [
+        { "type": "table", "head": ["Word", "The picture it gives"], "rows": [
+          ["decline", "a steady, gradual fall"],
+          ["plummet", "a sudden, steep fall"],
+          ["dwindle", "shrinking slowly to almost nothing"],
+          ["fluctuate", "moving up and down repeatedly"],
+          ["stagnate", "not moving at all, and that is bad"],
+          ["level off", "stopping after a rise or fall"]
+        ] },
+        { "type": "p", "text": {
+          "en": "At this level, a wrong synonym is not a vocabulary gap — it is a factual error. “Sales plummeted” and “sales declined” describe different events.",
+          "ar": "في هذا المستوى لا يكون المرادف الخطأ نقصاً في المفردات بل خطأً في الوقائع. فجملة sales plummeted تصف حدثاً مختلفاً عن sales declined." } },
+        { "type": "tip", "text": {
+          "en": "Before choosing a word from a thesaurus, ask what shape of movement, size or speed it implies. If you cannot picture it, do not use it.",
+          "ar": "قبل أن تأخذ كلمة من معجم المترادفات، اسأل: أي شكل من الحركة أو الحجم أو السرعة تُلمح إليه؟ فإن لم تستطع تصوّرها فلا تستخدمها." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u3-01", "concept": "c1.lex.support", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "The author ___ a careful distinction between cause and correlation.",
+      "options": ["draws", "pulls", "takes out", "brings up"], "answer": 0,
+      "explanation": { "en": "“Draw a distinction” is the standard academic pairing (“make” is also used).",
+        "ar": "draw a distinction هو الاقتران الأكاديمي المعتاد، ويصح أيضاً make a distinction." } },
+
+    { "id": "c1u3-02", "concept": "c1.lex.support", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "The findings ___ support to the second hypothesis.",
+      "options": ["lend", "give in", "put", "hold"], "answer": 0,
+      "explanation": { "en": "Evidence “lends support to” a claim — a fixed formal pairing.",
+        "ar": "الدليل يقترن بـ lends support to، وهو اقتران رسمي ثابت." } },
+
+    { "id": "c1u3-03", "concept": "c1.lex.support", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence contains an unnatural pairing?", "ar": "أي جملة فيها اقتران غير طبيعي؟" },
+      "options": ["The paper arrives a conclusion in its final section.",
+                  "The paper reaches a conclusion in its final section.",
+                  "The paper raises an objection in its second section.",
+                  "The paper poses a question that it never answers."],
+      "answer": 0,
+      "explanation": { "en": "You reach or come to a conclusion; “arrive” needs “at”, and even then “reach” is preferred here.",
+        "ar": "نقول reach a conclusion أو come to a conclusion، وarrive تحتاج at، والمفضّل هنا reach." } },
+
+    { "id": "c1u3-04", "concept": "c1.lex.support", "type": "match", "format": "collocation", "difficulty": 5,
+      "prompt": { "en": "Which verb goes with each noun?", "ar": "أي فعل يناسب كل اسم؟" },
+      "pairs": [["___ a conclusion", "reach"], ["___ a question", "pose"],
+                ["___ support to", "lend"], ["___ an objection", "raise"]],
+      "explanation": { "en": "These are the pairings a reader expects; anything else stops them mid-sentence.",
+        "ar": "هذه هي الأزواج التي يتوقعها القارئ، وأي غيرها يوقفه في منتصف الجملة." } },
+
+    { "id": "c1u3-05", "concept": "c1.lex.intensifier", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "It is ___ unlikely that the deadline will be met.",
+      "options": ["highly", "deeply", "strongly", "bitterly"], "answer": 0,
+      "explanation": { "en": "“Highly unlikely” is the fixed pairing; the others attach to different adjectives.",
+        "ar": "highly unlikely اقتران ثابت، وبقية الظروف تلازم صفات أخرى." } },
+
+    { "id": "c1u3-06", "concept": "c1.lex.intensifier", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "The committee was ___ concerned by the audit findings.",
+      "options": ["deeply", "highly", "widely", "utterly"], "answer": 0,
+      "explanation": { "en": "“Deeply concerned” is the standard pairing for serious worry.",
+        "ar": "deeply concerned هو الاقتران المعتاد للتعبير عن قلق جدي." } },
+
+    { "id": "c1u3-07", "concept": "c1.lex.intensifier", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence sounds like a proficient writer?", "ar": "أي جملة تبدو من كاتب متمكّن؟" },
+      "options": ["She was bitterly disappointed by the decision.",
+                  "She was strongly disappointed by the decision.",
+                  "She was deeply disappointed at the decision made.",
+                  "She was highly disappointed with the decision."],
+      "answer": 0,
+      "explanation": { "en": "“Bitterly disappointed” is the established pairing. The others are understandable but not idiomatic.",
+        "ar": "bitterly disappointed هو الاقتران المستقر، والبقية مفهومة لكنها ليست اصطلاحية." } },
+
+    { "id": "c1u3-08", "concept": "c1.lex.intensifier", "type": "match", "format": "collocation", "difficulty": 5,
+      "prompt": { "en": "Match the adverb with the adjective it partners.", "ar": "صِل الظرف بالصفة التي يلازمها." },
+      "pairs": [["deeply", "concerned"], ["highly", "unlikely"], ["bitterly", "disappointed"], ["widely", "regarded"]],
+      "explanation": { "en": "Nothing about the meanings predicts these pairs — usage alone fixes them.",
+        "ar": "لا شيء في المعاني يتنبأ بهذه الأزواج، فالاستعمال وحده هو الذي ثبّتها." } },
+
+    { "id": "c1u3-09", "concept": "c1.lex.precision", "type": "choice", "format": "synonym", "difficulty": 5,
+      "sentence": "After the announcement, the share price ___ from 90 to 31 in a single morning.",
+      "options": ["plummeted", "declined", "dwindled", "fluctuated"], "answer": 0,
+      "explanation": { "en": "A sudden, steep fall is “plummeted”. “Declined” would suggest something gradual.",
+        "ar": "السقوط المفاجئ الحاد يُعبَّر عنه بـ plummeted، أما declined فتوحي بانخفاض تدريجي." } },
+
+    { "id": "c1u3-10", "concept": "c1.lex.precision", "type": "choice", "format": "synonym", "difficulty": 5,
+      "sentence": "Membership has ___ from four hundred to barely thirty over two decades.",
+      "options": ["dwindled", "plummeted", "stagnated", "levelled off"], "answer": 0,
+      "explanation": { "en": "“Dwindled” is a long slow shrinking to almost nothing — exactly what two decades implies.",
+        "ar": "dwindled تعني تضاؤلاً بطيئاً طويلاً حتى الاقتراب من العدم، وهو ما يوحي به عقدان من الزمن." } },
+
+    { "id": "c1u3-11", "concept": "c1.lex.precision", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which word says the figure stayed the same, and that this is a problem?",
+        "ar": "أي كلمة تعني أن الرقم ظل ثابتاً وأن ذلك مشكلة؟" },
+      "options": ["stagnated", "levelled off", "fluctuated", "held steady"],
+      "answer": 0,
+      "explanation": { "en": "“Stagnate” carries a negative judgement; “levelled off” and “held steady” are neutral.",
+        "ar": "stagnate تحمل حكماً سلبياً، أما levelled off وheld steady فمحايدتان." } },
+
+    { "id": "c1u3-12", "concept": "c1.lex.precision", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence describes the data inaccurately?", "ar": "أي جملة تصف البيانات وصفاً غير دقيق؟" },
+      "options": ["Revenue plummeted steadily across the whole decade.",
+                  "Revenue declined steadily across the whole decade.",
+                  "Revenue fluctuated sharply throughout the decade.",
+                  "Revenue levelled off in the second half of the decade."],
+      "answer": 0,
+      "explanation": { "en": "“Plummet” is sudden by definition, so it cannot happen “steadily” over ten years.",
+        "ar": "فعل plummet مفاجئ بطبيعته، فلا يمكن أن يقع «باطراد» على مدى عشر سنوات." } },
+
+    { "id": "c1u3-13", "concept": "c1.lex.precision", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the verb with the movement it describes.", "ar": "صِل الفعل بالحركة التي يصفها." },
+      "pairs": [["plummet", "a sudden steep fall"], ["dwindle", "a slow shrinking"],
+                ["fluctuate", "repeated ups and downs"], ["level off", "stopping after a change"]],
+      "explanation": { "en": "Choosing between these is a factual decision, not a stylistic one.",
+        "ar": "الاختيار بينها قرار يتعلق بالوقائع لا بالأسلوب." } },
+
+    { "id": "c1u3-14", "concept": "c1.lex.support", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": { "en": "Complete with one verb: “The study ___ a question that previous work had ignored.”",
+        "ar": "أكمل بفعل واحد: The study ___ a question that previous work had ignored." },
+      "answer": "poses", "accept": ["raises", "asks"],
+      "explanation": { "en": "“Poses” or “raises” a question; both are standard in academic prose.",
+        "ar": "نقول poses a question أو raises a question، وكلاهما معتاد في النثر الأكاديمي." } },
+
+    { "id": "c1u3-15", "concept": "c1.lex.intensifier", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence would an editor leave untouched?", "ar": "أي جملة يتركها المحرّر كما هي؟" },
+      "options": ["The theory is widely regarded as the most convincing account.",
+                  "The theory is deeply regarded as the most convincing account.",
+                  "The theory is highly regarded like the most convincing account.",
+                  "The theory is strongly regarded to be the most convincing one."],
+      "answer": 0,
+      "explanation": { "en": "“Widely regarded as” is the fixed phrase, including the preposition “as”.",
+        "ar": "widely regarded as عبارة ثابتة بحرف الجر as." } }
+  ]
+}
