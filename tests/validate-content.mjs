@@ -50,6 +50,11 @@ function validateQuestion(q, where, opts = {}) {
       const set = new Set(q.options.map(norm));
       if (set.size !== q.options.length) err(at, 'duplicate options');
       if (q.options.some((o) => String(o).trim() === '')) err(at, 'empty option');
+      // The UI shuffles options, so nothing may refer to a position or to another option.
+      const positional = /\b(all|none|both) of the (above|below)\b|\b(a|b|c|d) and (b|c|d)\b|\bthe (first|second|third|last) (option|answer)\b/i;
+      if (q.options.some((o) => positional.test(String(o)))) {
+        err(at, 'option refers to a position — options are displayed in a random order');
+      }
       break;
     }
     case 'text': {

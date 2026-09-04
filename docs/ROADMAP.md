@@ -23,26 +23,30 @@ lightweight spaced-repetition schedule, and adaptive question selection that pus
 and overdue concepts forward.
 
 ### Phase 4 — Content foundation ✅
+
+### Phase 5 — A2 completion ✅
+Four more units taking A2 to eight: future forms (will vs going to vs arrangements),
+-ed/-ing adjectives with adverbs and word order, the make/do/have/take/get collocation
+set, and a reading-led unit built on real notices and message threads.
+
 | Level | Units | Concepts | Questions |
 | --- | --- | --- | --- |
 | A1 | 8 | 23 | 141 |
-| A2 | 4 | 12 | 63 |
+| A2 | 8 | 24 | 127 |
 | B1 | 2 | 6 | 30 |
 | B2 | 1 | 4 | 15 |
 | C1 | 1 | 4 | 15 |
 | C2 | 1 | 4 | 15 |
-| **Total** | **17** | **53** | **279** |
+| **Total** | **21** | **65** | **343** |
 
 Plus a 24-question placement test spanning all six levels.
 
+A1 and A2 are now complete levels: a learner can go from no English to solid elementary
+competence entirely inside the app, and unlocking B1 by finishing 75% of A2 is reachable.
+
 ## Next
 
-### Phase 5 — A2 completion (next up)
-Target 8 units: future forms (will vs going to), present perfect vs past simple at A2
-depth, adverbs and word order, everyday collocations, and two reading-led units. Bring A2
-to ~150 questions so the level stands on its own.
-
-### Phase 6 — B1 completion
+### Phase 6 — B1 completion (next up)
 8 units: the full tense system, passive introduction, relative clauses, linking words,
 opinion and argument language, phrasal verbs in context, longer reading passages.
 

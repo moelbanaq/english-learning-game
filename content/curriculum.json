@@ -44,7 +44,15 @@
         { "id": "a2-u3", "file": "levels/a2/u3-modals-advice.json", "title": { "en": "Obligation & advice", "ar": "الواجب والنصيحة" }, "questions": 15,
           "concepts": ["a2.modal.mustHaveTo", "a2.modal.should", "a2.modal.permission"] },
         { "id": "a2-u4", "file": "levels/a2/u4-present-perfect.json", "title": { "en": "Present perfect & phrasal verbs", "ar": "المضارع التام والأفعال المركّبة" }, "questions": 16,
-          "concepts": ["a2.perfect.experience", "a2.perfect.everYet", "a2.phrasal.common"] }
+          "concepts": ["a2.perfect.experience", "a2.perfect.everYet", "a2.phrasal.common"] },
+        { "id": "a2-u5", "file": "levels/a2/u5-future.json", "title": { "en": "Talking about the future", "ar": "الحديث عن المستقبل" }, "questions": 16,
+          "concepts": ["a2.future.will", "a2.future.willVsGoingTo", "a2.future.arrangements"] },
+        { "id": "a2-u6", "file": "levels/a2/u6-describing.json", "title": { "en": "Describing things & actions", "ar": "وصف الأشياء والأفعال" }, "questions": 16,
+          "concepts": ["a2.adjectives.edIng", "a2.adverbs.manner", "a2.word.order"] },
+        { "id": "a2-u7", "file": "levels/a2/u7-word-partners.json", "title": { "en": "Word partners: make, do, have, get", "ar": "التلازم اللفظي: make وdo وhave وget" }, "questions": 16,
+          "concepts": ["a2.collocation.makeDo", "a2.collocation.haveTake", "a2.collocation.get"] },
+        { "id": "a2-u8", "file": "levels/a2/u8-everyday-reading.json", "title": { "en": "Everyday reading & replies", "ar": "قراءة يومية وردود مناسبة" }, "questions": 16,
+          "concepts": ["a2.reading.everyday", "a2.functions.social", "a2.connectors.basic"] }
       ]
     },
     {

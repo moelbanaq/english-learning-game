@@ -90,6 +90,9 @@ Rules the validator enforces:
   ignored when grading).
 - `match` pairs must have unique left **and** right items, otherwise matching is ambiguous.
 - Every declared concept needs at least 2 questions; every unit needs at least 8.
+- **Options are shuffled when displayed**, so where you put the correct answer does not
+  matter — but no option may refer to a position (`all of the above`, `both A and B`).
+  The validator rejects those.
 
 ### Reading questions
 

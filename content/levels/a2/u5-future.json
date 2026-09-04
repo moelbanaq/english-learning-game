@@ -1,0 +1,169 @@
+{
+  "id": "a2-u5",
+  "goal": {
+    "en": "Talk about the future accurately: decisions, plans, predictions, arrangements and timetables.",
+    "ar": "أن تتحدث عن المستقبل بدقة: القرارات، والخطط، والتوقعات، والمواعيد المرتّبة، والجداول الثابتة."
+  },
+  "concepts": [
+    {
+      "id": "a2.future.will",
+      "title": { "en": "will: decisions, offers, predictions", "ar": "will للقرار والعرض والتوقع" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "will + base verb, the same for every subject. Short form: I'll, he'll. Negative: won't.",
+          "ar": "will مع الفعل المجرد، ولا تتغير مع الفاعل. والمختصر I'll وhe'll، والنفي won't." } },
+        { "type": "p", "text": {
+          "en": "Use “will” for a decision made at the moment of speaking, for an offer or promise, and for an opinion about the future (I think, probably, maybe).",
+          "ar": "نستخدم will للقرار الذي يُتخذ في لحظة الكلام، وللعرض والوعد، ولإبداء رأي في المستقبل مع I think وprobably وmaybe." } },
+        { "type": "examples", "items": [
+          { "en": "The phone is ringing. — I'll answer it.", "ar": "الهاتف يرن. — سأرد أنا." },
+          { "en": "Don't worry, I won't tell anyone.", "ar": "لا تقلق، لن أخبر أحداً." },
+          { "en": "I think prices will rise next year.", "ar": "أظن أن الأسعار سترتفع العام القادم." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Never put a second verb marker after will: “I will to go” and “I will going” are wrong. Just: I will go.",
+          "ar": "لا تضع علامة فعل أخرى بعد will. فلا تقل I will to go ولا I will going، بل I will go." } }
+      ]
+    },
+    {
+      "id": "a2.future.willVsGoingTo",
+      "title": { "en": "will or going to?", "ar": "will أم going to؟" },
+      "teach": [
+        { "type": "table", "head": ["Situation", "Use", "Example"], "rows": [
+          ["Decided before now (a plan)", "going to", "I'm going to study medicine."],
+          ["Decided right now", "will", "OK, I'll help you."],
+          ["Prediction with evidence you can see", "going to", "Look at the sky — it's going to rain."],
+          ["Prediction from opinion", "will", "I think it will rain tomorrow."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Ask yourself one question: did the plan exist before I started speaking? If yes → going to. If it was born in this second → will.",
+          "ar": "اسأل نفسك سؤالاً واحداً: هل كانت الخطة موجودة قبل أن أتكلم؟ إن كانت موجودة فاستخدم going to، وإن وُلدت في هذه اللحظة فاستخدم will." } },
+        { "type": "warn", "text": {
+          "en": "Arabic uses «سـ / سوف» for all of these, so the difference has to be learned as an English distinction, not translated.",
+          "ar": "العربية تستخدم «سـ/سوف» في كل هذه الحالات، لذلك لا يمكن الوصول إلى الفرق بالترجمة، بل يُتعلَّم كتمييز إنجليزي خاص." } }
+      ]
+    },
+    {
+      "id": "a2.future.arrangements",
+      "title": { "en": "Arrangements & timetables", "ar": "المواعيد المرتّبة والجداول" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Present continuous = a fixed arrangement with another person or place: I'm meeting the doctor at four. Present simple = a timetable: The train leaves at six.",
+          "ar": "المضارع المستمر يعبّر عن موعد مرتّب مع طرف آخر: I'm meeting the doctor at four. والمضارع البسيط يعبّر عن جدول ثابت: The train leaves at six." } },
+        { "type": "examples", "items": [
+          { "en": "We're flying to Cairo on Sunday. (tickets booked)", "ar": "سنسافر إلى القاهرة الأحد — التذاكر محجوزة." },
+          { "en": "The meeting starts at nine. (timetable)", "ar": "يبدأ الاجتماع في التاسعة — موعد ثابت في الجدول." },
+          { "en": "What are you doing this evening?", "ar": "ماذا ستفعل هذا المساء؟" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "“What are you doing tonight?” asks about arrangements. “What will you do?” sounds like you are asking someone to decide.",
+          "ar": "سؤال What are you doing tonight؟ يسأل عن مواعيد مرتّبة، أما What will you do؟ فيبدو كأنك تطلب منه أن يقرّر الآن." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u5-01", "concept": "a2.future.will", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "That bag looks heavy. I ___ carry it for you.", "options": ["'ll", "'m going to", "will to", "am will"], "answer": 0,
+      "explanation": { "en": "An offer made at the moment of speaking → will.",
+        "ar": "عرض المساعدة يُتخذ في لحظة الكلام، فنستخدم will." } },
+
+    { "id": "a2u5-02", "concept": "a2.future.will", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I will call you tonight.", "She will to travel next week.", "They won't be late.", "Will you help me?"],
+      "answer": 1,
+      "explanation": { "en": "No “to” after will: She will travel next week.",
+        "ar": "لا نضع to بعد will. الصواب She will travel next week." } },
+
+    { "id": "a2u5-03", "concept": "a2.future.will", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I think the exam ___ be difficult.", "options": ["will", "is going", "going to", "will to"], "answer": 0,
+      "explanation": { "en": "“I think” signals an opinion about the future → will.",
+        "ar": "عبارة I think تدل على رأي في المستقبل، فنستخدم will." } },
+
+    { "id": "a2u5-04", "concept": "a2.future.will", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["I", "won't", "forget", "your", "birthday"], "answer": "I won't forget your birthday",
+      "explanation": { "en": "won't + base verb makes a promise.", "ar": "won't مع الفعل المجرد تُستخدم للوعد." } },
+
+    { "id": "a2u5-05", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "We ___ move to a bigger flat — we signed the contract yesterday.",
+      "options": ["are going to", "will", "are will", "go to"], "answer": 0,
+      "explanation": { "en": "The decision existed before the conversation → going to.",
+        "ar": "القرار كان موجوداً قبل الحديث، فنستخدم going to." } },
+
+    { "id": "a2u5-06", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "— We need milk. — Oh, I ___ get some on my way home.",
+      "options": ["'ll", "'m going to", "get", "will getting"], "answer": 0,
+      "explanation": { "en": "The decision is made in this second, as a response → will.",
+        "ar": "القرار يُتخذ في هذه اللحظة رداً على الكلام، فنستخدم will." } },
+
+    { "id": "a2u5-07", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence shows a prediction based on something you can SEE right now?",
+        "ar": "أي جملة تعبّر عن توقّع مبني على دليل تراه الآن؟" },
+      "options": ["Watch out — you're going to drop it!", "I think you will drop it one day.", "You will drop it.", "You drop it."],
+      "answer": 0,
+      "explanation": { "en": "Present evidence → going to. Opinion without evidence → will.",
+        "ar": "الدليل الحاضر يقتضي going to، أما الرأي المجرد فيقتضي will." } },
+
+    { "id": "a2u5-08", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I'm going to visit my aunt on Friday.", "I will visit my aunt — I decided last week.", "Look, the bus is going to leave!", "Maybe I'll call her later."],
+      "answer": 1,
+      "explanation": { "en": "A decision made last week is a plan, so it needs “going to”: I'm going to visit my aunt.",
+        "ar": "القرار المتخذ الأسبوع الماضي خطة، فيلزمه going to لا will." } },
+
+    { "id": "a2u5-09", "concept": "a2.future.arrangements", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I can't come on Thursday — I ___ the dentist at five.",
+      "options": ["'m seeing", "see", "will see", "am see"], "answer": 0,
+      "explanation": { "en": "A fixed appointment with someone else → present continuous.",
+        "ar": "موعد مرتّب مع طرف آخر، فنستخدم المضارع المستمر." } },
+
+    { "id": "a2u5-10", "concept": "a2.future.arrangements", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Hurry up! The film ___ at 7:30.", "options": ["starts", "is starting to", "will starting", "start"], "answer": 0,
+      "explanation": { "en": "A published timetable → present simple.",
+        "ar": "الجدول المعلن يأخذ المضارع البسيط." } },
+
+    { "id": "a2u5-11", "concept": "a2.future.arrangements", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "You want to know your friend's plans for tonight. What sounds most natural?",
+        "ar": "تريد معرفة خطط صديقك الليلة. ما الأكثر طبيعية؟" },
+      "options": ["What are you doing tonight?", "What will you do tonight?", "What do you do tonight?", "What are you going to doing tonight?"],
+      "answer": 0,
+      "explanation": { "en": "Asking about existing arrangements uses the present continuous. “What will you do?” asks the person to decide now.",
+        "ar": "السؤال عن مواعيد قائمة يستخدم المضارع المستمر، أما What will you do؟ فيطلب منه أن يقرّر الآن." } },
+
+    { "id": "a2u5-12", "concept": "a2.future.arrangements", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the situation with the right future form.", "ar": "صِل الموقف بالصيغة المستقبلية المناسبة." },
+      "pairs": [
+        ["a decision made right now", "I'll get it."],
+        ["a plan made earlier", "I'm going to study tonight."],
+        ["a booked appointment", "I'm meeting him at six."],
+        ["a fixed timetable", "The train leaves at nine."]
+      ],
+      "explanation": { "en": "English chooses the form by how the future was decided, not by how far away it is.",
+        "ar": "الإنجليزية تختار الصيغة بحسب طريقة اتخاذ القرار لا بحسب بُعد الزمن." } },
+
+    { "id": "a2u5-13", "concept": "a2.future.will", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Make it negative using the short form: “I will tell him.”", "ar": "حوّلها إلى النفي بالصيغة المختصرة." },
+      "answer": "i won't tell him", "accept": ["i will not tell him"],
+      "explanation": { "en": "will + not → won't.", "ar": "will مع not تصير won't." } },
+
+    { "id": "a2u5-14", "concept": "a2.future.willVsGoingTo", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["What", "are", "you", "going", "to", "study", "at", "university"],
+      "answer": "What are you going to study at university",
+      "explanation": { "en": "Question word + be + subject + going to + base verb.",
+        "ar": "أداة السؤال ثم فعل الكون ثم الفاعل ثم going to ثم الفعل المجرد." } },
+
+    { "id": "a2u5-15", "concept": "a2.future.arrangements", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "I ___ my brother at the airport tomorrow — his plane ___ at 6 a.m.",
+      "options": ["'m meeting / lands", "will meet / is landing", "meet / will land", "'m going to meeting / lands"], "answer": 0,
+      "explanation": { "en": "A personal arrangement takes the continuous; a flight schedule takes the present simple.",
+        "ar": "الموعد الشخصي يأخذ المستمر، وجدول الطيران يأخذ المضارع البسيط." } },
+
+    { "id": "a2u5-16", "concept": "a2.future.will", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which reply is a promise rather than a plan?", "ar": "أي رد يعبّر عن وعد لا عن خطة؟" },
+      "options": ["I'll pay you back on Friday, I promise.", "I'm going to the bank on Friday.", "I'm paying the rent on Friday.", "The bank opens on Friday."],
+      "answer": 0,
+      "explanation": { "en": "“Will” carries promises and offers; the other three describe plans or schedules.",
+        "ar": "will تحمل الوعد والعرض، أما البقية فتصف خططاً أو جداول." } }
+  ]
+}

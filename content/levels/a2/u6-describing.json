@@ -1,0 +1,185 @@
+{
+  "id": "a2-u6",
+  "goal": {
+    "en": "Describe people, things and actions precisely: -ed vs -ing adjectives, adverbs of manner, and where words go in a sentence.",
+    "ar": "أن تصف الأشخاص والأشياء والأفعال بدقة: الفرق بين صفات ed وing، وظروف الحال، وموضع الكلمات في الجملة."
+  },
+  "concepts": [
+    {
+      "id": "a2.adjectives.edIng",
+      "title": { "en": "bored or boring?", "ar": "bored أم boring؟" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "-ed describes how a person FEELS. -ing describes what CAUSES the feeling.",
+          "ar": "صيغة ed تصف شعور الشخص، وصيغة ing تصف الشيء الذي يسبّب هذا الشعور." } },
+        { "type": "table", "head": ["Feeling (-ed)", "Cause (-ing)"], "rows": [
+          ["I am bored.", "The lesson is boring."],
+          ["She was surprised.", "The news was surprising."],
+          ["We are interested.", "The book is interesting."],
+          ["He looks tired.", "The journey was tiring."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“I am boring” means you make other people bored — a real and very common accident. Say “I am bored.”",
+          "ar": "جملة I am boring تعني أنك تُشعر الآخرين بالملل، وهو خطأ شائع ومحرج. الصواب I am bored أي «أشعر بالملل»." } },
+        { "type": "tip", "text": {
+          "en": "Ask: am I talking about a person's feeling, or about the thing that made them feel it?",
+          "ar": "اسأل نفسك: هل أتحدث عن شعور شخص، أم عن الشيء الذي سبّب الشعور؟" } }
+      ]
+    },
+    {
+      "id": "a2.adverbs.manner",
+      "title": { "en": "Adverbs of manner", "ar": "ظروف الحال (كيف؟)" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Adjectives describe nouns; adverbs describe verbs. Most adverbs = adjective + -ly: careful → carefully, quick → quickly.",
+          "ar": "الصفة تصف الاسم، والظرف يصف الفعل. وأغلب الظروف = الصفة + ly مثل carefully وquickly." } },
+        { "type": "table", "head": ["Adjective", "Adverb", "Note"], "rows": [
+          ["slow", "slowly", "regular"],
+          ["easy", "easily", "-y → -ily"],
+          ["good", "well", "irregular"],
+          ["fast", "fast", "no change"],
+          ["hard", "hard", "“hardly” means almost not!"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "He is a careful driver. → He drives carefully.", "ar": "هو سائق حذر. ← يقود بحذر." },
+          { "en": "Her English is good. → She speaks English well.", "ar": "إنجليزيتها جيدة. ← تتحدث الإنجليزية جيداً." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "“He works hard” = he works a lot. “He hardly works” = he almost never works. One letter, opposite meanings.",
+          "ar": "جملة He works hard تعني أنه يعمل بجد، أما He hardly works فتعني أنه لا يكاد يعمل. حرف واحد يقلب المعنى." } }
+      ]
+    },
+    {
+      "id": "a2.word.order",
+      "title": { "en": "Where words go", "ar": "ترتيب الكلمات في الجملة" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Keep the verb and its object together. Say “I speak English well”, never “I speak well English”.",
+          "ar": "لا تفصل بين الفعل ومفعوله. نقول I speak English well ولا نقول I speak well English." } },
+        { "type": "rule", "text": {
+          "en": "Normal order: subject + verb + object + how + where + when. “She read the letter carefully at home yesterday.”",
+          "ar": "الترتيب المعتاد: فاعل + فعل + مفعول + كيف + أين + متى. مثل: She read the letter carefully at home yesterday." } },
+        { "type": "tip", "text": {
+          "en": "Adjectives come before the noun in English: a big red car — never “a car big”.",
+          "ar": "الصفة تسبق الاسم في الإنجليزية: a big red car، ولا نقول a car big كما في العربية «سيارة كبيرة»." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u6-01", "concept": "a2.adjectives.edIng", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "This film is really ___ . I want to watch it again.",
+      "options": ["interesting", "interested", "interest", "interestly"], "answer": 0,
+      "explanation": { "en": "The film causes the feeling → -ing.", "ar": "الفيلم هو سبب الشعور، فنستخدم صيغة ing." } },
+
+    { "id": "a2u6-02", "concept": "a2.adjectives.edIng", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I'm ___ in learning Spanish next year.",
+      "options": ["interested", "interesting", "interest", "interests"], "answer": 0,
+      "explanation": { "en": "The person feels it → -ed. Note the fixed pairing: interested IN something.",
+        "ar": "الشخص هو من يشعر، فنستخدم ed. ولاحظ التلازم الثابت: interested in." } },
+
+    { "id": "a2u6-03", "concept": "a2.adjectives.edIng", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence probably says something the speaker did not mean?",
+        "ar": "أي جملة تقول على الأرجح غير ما قصده المتكلم؟" },
+      "options": ["I'm boring in this class.", "I'm bored in this class.", "This class is boring.", "The teacher is interesting."],
+      "answer": 0,
+      "explanation": { "en": "“I'm boring” claims that you bore other people. To describe your own feeling: I'm bored.",
+        "ar": "جملة I'm boring تعني أنك تُمِل الآخرين. وللتعبير عن شعورك قل I'm bored." } },
+
+    { "id": "a2u6-04", "concept": "a2.adjectives.edIng", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match each sentence half.", "ar": "صِل بين نصفي الجملة." },
+      "pairs": [
+        ["The journey was", "tiring."],
+        ["After the journey we were", "tired."],
+        ["The results were", "surprising."],
+        ["Everyone was", "surprised."]
+      ],
+      "explanation": { "en": "Things are -ing; people are -ed.", "ar": "الأشياء توصف بـ ing، والأشخاص بـ ed." } },
+
+    { "id": "a2u6-05", "concept": "a2.adjectives.edIng", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The match was ___ , and the fans went home ___ .",
+      "options": ["disappointing / disappointed", "disappointed / disappointing", "disappointing / disappointing", "disappointed / disappointed"],
+      "answer": 0,
+      "explanation": { "en": "The match caused the feeling (-ing); the fans felt it (-ed).",
+        "ar": "المباراة سبّبت الشعور فتأخذ ing، والمشجعون شعروا به فيأخذون ed." } },
+
+    { "id": "a2u6-06", "concept": "a2.adverbs.manner", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Please drive ___ — the road is wet.",
+      "options": ["slowly", "slow", "slowlly", "more slow"], "answer": 0,
+      "explanation": { "en": "It describes how he drives (a verb) → adverb.",
+        "ar": "الكلمة تصف طريقة القيادة أي الفعل، فنستخدم الظرف." } },
+
+    { "id": "a2u6-07", "concept": "a2.adverbs.manner", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "She speaks English very ___ .",
+      "options": ["well", "good", "goodly", "better"], "answer": 0,
+      "explanation": { "en": "“Good” is an adjective; the adverb of “good” is “well”.",
+        "ar": "كلمة good صفة، وظرفها الشاذ هو well." },
+      "commonMistake": { "en": "“She speaks English good” is one of the most recognisable learner errors.",
+        "ar": "جملة She speaks English good من أشهر أخطاء المتعلمين وأسرعها ملاحظة." } },
+
+    { "id": "a2u6-08", "concept": "a2.adverbs.manner", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "Write the adverb from the adjective “easy”.", "ar": "اكتب الظرف من الصفة easy." },
+      "answer": "easily",
+      "explanation": { "en": "Consonant + y → -ily: easily.", "ar": "y المسبوقة بساكن تصير ily فتكون easily." } },
+
+    { "id": "a2u6-09", "concept": "a2.adverbs.manner", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“He hardly speaks in meetings.” What does it mean?", "ar": "ماذا تعني He hardly speaks in meetings؟" },
+      "options": ["He almost never speaks.", "He speaks a lot.", "He speaks with difficulty.", "He speaks loudly."],
+      "answer": 0,
+      "explanation": { "en": "“Hardly” means almost not. “Hard” as an adverb means with effort: He works hard.",
+        "ar": "hardly تعني «يكاد لا»، أما hard كظرف فتعني «بجد» مثل He works hard." } },
+
+    { "id": "a2u6-10", "concept": "a2.adverbs.manner", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["He answered the question correctly.", "She sings beautiful.", "They arrived late.", "He runs fast."],
+      "answer": 1,
+      "explanation": { "en": "The verb “sings” needs an adverb: She sings beautifully.",
+        "ar": "الفعل sings يحتاج ظرفاً: She sings beautifully." } },
+
+    { "id": "a2u6-11", "concept": "a2.word.order", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["I speak English well.", "I speak well English.", "I well speak English.", "I speak English good well."],
+      "answer": 0,
+      "explanation": { "en": "Nothing separates a verb from its object; the adverb follows the object.",
+        "ar": "لا يُفصل بين الفعل ومفعوله، ويأتي الظرف بعد المفعول." } },
+
+    { "id": "a2u6-12", "concept": "a2.word.order", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["She", "read", "the", "message", "carefully", "yesterday"],
+      "answer": "She read the message carefully yesterday",
+      "explanation": { "en": "Subject + verb + object + how + when.", "ar": "فاعل ثم فعل ثم مفعول ثم كيف ثم متى." } },
+
+    { "id": "a2u6-13", "concept": "a2.word.order", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["We bought a new red car.", "We bought a car new red.", "She has long dark hair.", "It was a difficult exam."],
+      "answer": 1,
+      "explanation": { "en": "Adjectives come before the noun in English: a new red car.",
+        "ar": "الصفات تسبق الاسم في الإنجليزية: a new red car." } },
+
+    { "id": "a2u6-14", "concept": "a2.word.order", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["He", "explained", "the", "problem", "clearly", "to", "the", "class"],
+      "answer": "He explained the problem clearly to the class",
+      "explanation": { "en": "Keep verb + object together, then how, then to whom.",
+        "ar": "أبقِ الفعل ومفعوله معاً، ثم الكيفية، ثم لمن." } },
+
+    { "id": "a2u6-15", "concept": "a2.adverbs.manner", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Rewrite with an adverb: “He is a careful worker.” → “He works ___ .”",
+        "ar": "أعد الصياغة بظرف: He is a careful worker ← He works ___" },
+      "answer": "carefully",
+      "explanation": { "en": "The adjective describing the person becomes an adverb describing the action.",
+        "ar": "الصفة التي تصف الشخص تتحول إلى ظرف يصف الفعل." } },
+
+    { "id": "a2u6-16", "concept": "a2.adjectives.edIng", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Your friend asks how the lecture was. Which reply is natural?",
+        "ar": "سألك صديقك عن المحاضرة. أي رد طبيعي؟" },
+      "options": [
+        "Honestly, it was a bit confusing — I got lost halfway through.",
+        "Honestly, it was a bit confused — I got lost halfway through.",
+        "Honestly, I was very confusing in the lecture.",
+        "Honestly, the lecture felt confused about me."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The lecture caused the confusion (-ing); if you describe yourself you say “I was confused”.",
+        "ar": "المحاضرة سبّبت الحيرة فتأخذ ing، ولو وصفت نفسك لقلت I was confused." } }
+  ]
+}

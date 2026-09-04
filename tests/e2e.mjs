@@ -25,9 +25,13 @@ const check = (name, ok, detail = '') => {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/** Answer whatever question is on screen, then press Check. */
-async function answerCurrent(page) {
-  const opt = page.locator('.opt:not([disabled])').first();
+/**
+ * Answer whatever question is on screen, then press Check.
+ * `wrongly` picks the last option instead of the first: options are shuffled, so this is
+ * the reliable way to generate mistakes and exercise the review path.
+ */
+async function answerCurrent(page, wrongly = false) {
+  const opt = wrongly ? page.locator('.opt:not([disabled])').last() : page.locator('.opt:not([disabled])').first();
   const field = page.locator('input.field:not([disabled])').first();
   const slot = page.locator('.answer-slot:not(.is-correct):not(.is-wrong)').first();
 
@@ -67,7 +71,7 @@ async function answerCurrent(page) {
 }
 
 /** Play a whole session through to the results screen. */
-async function playSession(page, max = 40) {
+async function playSession(page, max = 40, wrongly = false) {
   for (let i = 0; i < max; i++) {
     if (await page.locator('.result-hero').isVisible().catch(() => false)) return true;
     if (await page.locator('.feedback').isVisible().catch(() => false)) {
@@ -76,7 +80,7 @@ async function playSession(page, max = 40) {
       await sleep(80);
       continue;
     }
-    await answerCurrent(page);
+    await answerCurrent(page, wrongly);
     await sleep(80);
   }
   return page.locator('.result-hero').isVisible();
@@ -136,7 +140,7 @@ try {
   check('answering shows immediate feedback with an explanation', fb.length > 30);
   check('feedback includes an Arabic explanation', (await page.locator('.feedback [lang="ar"]').count()) > 0);
 
-  const finished = await playSession(page);
+  const finished = await playSession(page, 40, true);
   check('session reaches the results screen', finished);
   const resultText = await page.locator('.page').innerText();
   check('results explain performance, not just a score', /%/.test(resultText) && resultText.length > 120);
@@ -157,13 +161,11 @@ try {
   await sleep(400);
   const reviewText = await page.locator('.page').innerText();
   check('review page renders', reviewText.length > 20, reviewText.slice(0, 60));
-  if (mistakes > 0) {
-    check('mistakes are stored for review', mistakes > 0, `${mistakes} saved`);
-    await page.locator('a[href="#/session/review"]').first().click();
-    await page.waitForSelector('.runner', { timeout: 5000 });
-    check('a review session can be started', await page.locator('.qcard').isVisible());
-    await page.goto(base + '#/', { waitUntil: 'networkidle' });
-  }
+  check('wrong answers are saved as mistakes', mistakes > 0, `${mistakes} saved`);
+  await page.locator('a[href="#/session/review"]').first().click();
+  await page.waitForSelector('.runner', { timeout: 5000 });
+  check('a review session can be started', await page.locator('.qcard').isVisible());
+  await page.goto(base + '#/', { waitUntil: 'networkidle' });
 
   /* ---------- 7. Mini test + stats ---------- */
   await page.goto(base + '#/session/test/a1-u1', { waitUntil: 'networkidle' });
@@ -194,7 +196,58 @@ try {
   await page.waitForSelector('.runner');
   check('placement test produces a recommended level', await playSession(page, 60));
 
-  /* ---------- 10. Desktop layout ---------- */
+  /* ---------- 10. Shuffled options still grade correctly ---------- */
+  // Authors naturally put the correct answer first, so the UI shuffles options. This
+  // proves the shuffle does not break the mapping back to the content file, and that
+  // the correct answer really does move around.
+  {
+    const norm = (x) => String(x).replace(/\s+/g, ' ').trim().toLowerCase();
+    const keyOf = (stem, opts) => norm(stem || '') + ' || ' + opts.map(norm).sort().join('|');
+    const truth = new Map();
+    for (const f of ['levels/a1/u1-be.json', 'levels/a2/u7-word-partners.json']) {
+      const unit = await (await fetch(base + 'content/' + f)).json();
+      for (const q of unit.questions) {
+        if (q.type !== 'choice') continue;
+        truth.set(keyOf(q.sentence || (q.prompt && q.prompt.en) || '', q.options), norm(q.options[q.answer]));
+      }
+    }
+
+    const positions = new Set();
+    const wrong = [];
+    let seen = 0;
+    for (const unitId of ['a1-u1', 'a2-u7']) {
+      for (let run = 0; run < 2; run++) {
+        const c = await browser.newContext();
+        const p2 = await c.newPage();
+        await p2.goto(base + `#/session/practice/${unitId}`, { waitUntil: 'networkidle' });
+        await p2.waitForSelector('.runner');
+        for (let i = 0; i < 12; i++) {
+          if (await p2.locator('.result-hero').isVisible().catch(() => false)) break;
+          if (await p2.locator('.opt').count() === 0) break;
+          const shown = (await p2.locator('.opt .opt__text').allInnerTexts()).map(norm);
+          const stem = (await p2.locator('.sentence').innerText().catch(() => ''))
+            || (await p2.locator('.qcard__prompt').first().innerText().catch(() => ''));
+          await p2.locator('.opt').last().click();
+          await p2.locator('.runner__footer button:not(.hidden)').first().click();
+          await p2.waitForSelector('.feedback');
+          const marked = norm(await p2.locator('.opt.is-correct .opt__text').innerText());
+          positions.add(await p2.locator('.opt.is-correct').evaluate((n) => [...n.parentElement.children].indexOf(n)));
+          // The rendered gap shows "?" where the content file has "___".
+          const expect = truth.get(keyOf(stem.replace('?', '___'), shown)) || truth.get(keyOf(stem, shown));
+          if (expect) { seen++; if (expect !== marked) wrong.push(`${stem}: marked "${marked}", content says "${expect}"`); }
+          await p2.locator('.runner__footer button:not(.hidden)').last().click();
+          await sleep(70);
+        }
+        await c.close();
+      }
+    }
+    check('shuffled options still grade against the content file', seen > 15 && wrong.length === 0,
+      wrong.slice(0, 2).join(' | ') || `only ${seen} questions compared`);
+    check('the correct answer is not always in the same position', positions.size >= 3,
+      `appeared in ${positions.size} distinct positions`);
+  }
+
+  /* ---------- 11. Desktop layout ---------- */
   const wide = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const desk = await wide.newPage();
   await desk.goto(base, { waitUntil: 'networkidle' });

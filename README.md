@@ -67,6 +67,10 @@ npm run test:e2e # real browser run-through (needs Playwright installed)
 valid answer, unique ids, non-ambiguous options, matching order-tokens, an English
 explanation, and full concept coverage.
 
+Answer options are shuffled when displayed, so a learner cannot score by always tapping
+the first option — the browser test verifies both that the shuffle keeps grading correct
+and that the right answer really does move around.
+
 ## Adding content
 
 You do not need to touch application code. See **[docs/CONTENT.md](docs/CONTENT.md)** —

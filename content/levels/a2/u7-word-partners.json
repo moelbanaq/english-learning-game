@@ -1,0 +1,176 @@
+{
+  "id": "a2-u7",
+  "goal": {
+    "en": "Use the verbs English actually pairs with everyday nouns: make, do, have, take and get.",
+    "ar": "أن تستخدم الأفعال التي تقترن فعلاً بالأسماء اليومية في الإنجليزية: make وdo وhave وtake وget."
+  },
+  "concepts": [
+    {
+      "id": "a2.collocation.makeDo",
+      "title": { "en": "make or do?", "ar": "make أم do؟" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Arabic uses «يعمل / يفعل» for both, so this pair has to be learned as English word partnership, not translated.",
+          "ar": "العربية تستخدم «يعمل/يفعل» للاثنين، لذلك يُتعلَّم هذا الفرق بوصفه تلازماً إنجليزياً لا بالترجمة." } },
+        { "type": "rule", "text": {
+          "en": "make = create or produce something new. do = perform work, a task or an activity.",
+          "ar": "make للإنشاء وإنتاج شيء جديد، وdo لأداء عمل أو مهمة أو نشاط." } },
+        { "type": "table", "head": ["make", "do"], "rows": [
+          ["make a mistake", "do your homework"],
+          ["make a decision", "do the shopping"],
+          ["make a noise", "do the washing-up"],
+          ["make friends", "do business"],
+          ["make an effort", "do exercise"],
+          ["make money", "do a job"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Make your homework” and “do a mistake” are both wrong, and both are extremely common. Learn the pair, not the verb.",
+          "ar": "جملتا make your homework وdo a mistake خطأ، وهما شائعتان جداً. احفظ الزوج كاملاً لا الفعل وحده." } }
+      ]
+    },
+    {
+      "id": "a2.collocation.haveTake",
+      "title": { "en": "have & take", "ar": "have و take" },
+      "teach": [
+        { "type": "table", "head": ["have", "take"], "rows": [
+          ["have breakfast", "take a shower"],
+          ["have a shower (UK)", "take a photo"],
+          ["have a rest", "take a break"],
+          ["have a problem", "take a taxi"],
+          ["have a good time", "take an exam"],
+          ["have a look", "take medicine"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Both “have a shower” (British) and “take a shower” (American) are correct. Pick one and stay consistent.",
+          "ar": "كلٌّ من have a shower البريطانية وtake a shower الأمريكية صحيحة. اختر واحدة والتزم بها." } },
+        { "type": "warn", "text": {
+          "en": "You take an exam when you sit it; you pass an exam when you succeed. “I passed the exam yesterday but failed” makes no sense in English.",
+          "ar": "نقول take an exam بمعنى «أدّى الامتحان»، وpass an exam بمعنى «نجح فيه». فالخلط بينهما يقلب المعنى تماماً." } }
+      ]
+    },
+    {
+      "id": "a2.collocation.get",
+      "title": { "en": "the many jobs of “get”", "ar": "استعمالات الفعل get" },
+      "teach": [
+        { "type": "table", "head": ["Pattern", "Meaning", "Example"], "rows": [
+          ["get + noun", "receive / obtain", "I got a message."],
+          ["get + adjective", "become", "It's getting cold."],
+          ["get + place", "arrive", "I got home late."],
+          ["get up / get on with", "phrasal verbs", "I get up at six."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "With a place, “get to” means arrive — but home, here and there take no “to”: I got home, not “I got to home”.",
+          "ar": "مع الأماكن تعني get to «يصل»، لكن كلمات home وhere وthere لا تأخذ to، فنقول I got home لا I got to home." } },
+        { "type": "examples", "items": [
+          { "en": "I get tired in the afternoon.", "ar": "أشعر بالتعب بعد الظهر." },
+          { "en": "She got a new job last month.", "ar": "حصلت على وظيفة جديدة الشهر الماضي." },
+          { "en": "What time do you get to the office?", "ar": "متى تصل إلى المكتب؟" }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u7-01", "concept": "a2.collocation.makeDo", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "Be careful — don't ___ the same mistake again.",
+      "options": ["make", "do", "take", "have"], "answer": 0,
+      "explanation": { "en": "The fixed pair is “make a mistake”.", "ar": "التلازم الثابت هو make a mistake." } },
+
+    { "id": "a2u7-02", "concept": "a2.collocation.makeDo", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "She has to ___ her homework before dinner.",
+      "options": ["do", "make", "take", "get"], "answer": 0,
+      "explanation": { "en": "Homework is a task you perform → do.", "ar": "الواجب مهمة تُؤدَّى، فنستخدم do." } },
+
+    { "id": "a2u7-03", "concept": "a2.collocation.makeDo", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "The manager will ___ a decision on Monday.",
+      "options": ["make", "do", "give", "put"], "answer": 0,
+      "explanation": { "en": "A decision is created, not performed → make a decision.",
+        "ar": "القرار يُصنع لا يُؤدَّى، فنقول make a decision." } },
+
+    { "id": "a2u7-04", "concept": "a2.collocation.makeDo", "type": "match", "format": "collocation", "difficulty": 3,
+      "prompt": { "en": "Which verb goes with each phrase?", "ar": "أي فعل يناسب كل عبارة؟" },
+      "pairs": [["___ a decision", "make"], ["___ the shopping", "do"], ["___ a photo", "take"], ["___ breakfast", "have"]],
+      "explanation": { "en": "make = produce something new · do = carry out an activity · take a photo and have breakfast are fixed pairs.",
+        "ar": "make لإنتاج شيء جديد، وdo لأداء نشاط، أما take a photo وhave breakfast فتلازمان ثابتان." } },
+
+    { "id": "a2u7-05", "concept": "a2.collocation.makeDo", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["He makes a lot of noise.", "They do business in Egypt.", "I must make my homework tonight.", "She made an important decision."],
+      "answer": 2,
+      "explanation": { "en": "Homework takes “do”: I must do my homework tonight.",
+        "ar": "الواجب يأخذ do. الصواب I must do my homework tonight." } },
+
+    { "id": "a2u7-06", "concept": "a2.collocation.haveTake", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "Let's ___ a break for ten minutes.",
+      "options": ["take", "make", "do", "get"], "answer": 0,
+      "explanation": { "en": "The fixed pair is “take a break”.", "ar": "التلازم الثابت هو take a break." } },
+
+    { "id": "a2u7-07", "concept": "a2.collocation.haveTake", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "We usually ___ breakfast at seven.",
+      "options": ["have", "take", "make", "do"], "answer": 0,
+      "explanation": { "en": "Meals go with “have”: have breakfast, have lunch, have dinner.",
+        "ar": "الوجبات تأخذ have مثل have breakfast وhave lunch." } },
+
+    { "id": "a2u7-08", "concept": "a2.collocation.haveTake", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "Can I ___ a photo of you?",
+      "options": ["take", "make", "do", "have got"], "answer": 0,
+      "explanation": { "en": "English takes photos; it does not make them.",
+        "ar": "الإنجليزية تقول take a photo ولا تقول make a photo." } },
+
+    { "id": "a2u7-09", "concept": "a2.collocation.haveTake", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“I took the exam but I didn't pass.” What happened?", "ar": "ماذا حدث في هذه الجملة؟" },
+      "options": ["He sat the exam and failed it.", "He refused to sit the exam.", "He passed easily.", "He stole the exam paper."],
+      "answer": 0,
+      "explanation": { "en": "“Take an exam” = sit it. “Pass an exam” = succeed. They are not the same verb.",
+        "ar": "take an exam تعني أداء الامتحان، وpass an exam تعني النجاح فيه. وهما فعلان مختلفان." } },
+
+    { "id": "a2u7-10", "concept": "a2.collocation.haveTake", "type": "match", "format": "collocation", "difficulty": 3,
+      "prompt": { "en": "Which verb goes with each phrase?", "ar": "أي فعل يناسب كل عبارة؟" },
+      "pairs": [["___ a break", "take"], ["___ a good time", "have"], ["___ an effort", "make"], ["___ exercise", "do"]],
+      "explanation": { "en": "These pairings are fixed: take a break, have a good time, make an effort, do exercise.",
+        "ar": "هذه تلازمات ثابتة: take a break وhave a good time وmake an effort وdo exercise." } },
+
+    { "id": "a2u7-11", "concept": "a2.collocation.get", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Close the window — it's ___ cold in here.",
+      "options": ["getting", "taking", "making", "having"], "answer": 0,
+      "explanation": { "en": "get + adjective = become.", "ar": "get مع الصفة تعني «يصبح»." } },
+
+    { "id": "a2u7-12", "concept": "a2.collocation.get", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I got to the station at eight.", "I got to home very late.", "She gets up at six.", "We got a letter yesterday."],
+      "answer": 1,
+      "explanation": { "en": "“Home” takes no preposition: I got home very late.",
+        "ar": "كلمة home لا تأخذ حرف جر. الصواب I got home very late." } },
+
+    { "id": "a2u7-13", "concept": "a2.collocation.get", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "In which sentence does “get” mean “become”?", "ar": "في أي جملة تعني get «يصبح»؟" },
+      "options": ["The children get tired after school.", "I get the bus at eight.", "She got a present.", "We get to work by nine."],
+      "answer": 0,
+      "explanation": { "en": "get + adjective = become. The others mean take, receive and arrive.",
+        "ar": "get مع الصفة تعني «يصبح»، أما البقية فتعني يستقل، ويستلم، ويصل." } },
+
+    { "id": "a2u7-14", "concept": "a2.collocation.get", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["What", "time", "do", "you", "get", "home"], "answer": "What time do you get home",
+      "explanation": { "en": "get home — no “to” before home.", "ar": "get home بلا حرف جر قبل home." } },
+
+    { "id": "a2u7-15", "concept": "a2.collocation.makeDo", "type": "text", "format": "write", "difficulty": 4,
+      "prompt": { "en": "Complete with make or do: “Could you ___ me a favour?”",
+        "ar": "أكمل بـ make أو do: Could you ___ me a favour?" },
+      "answer": "do",
+      "explanation": { "en": "“Do someone a favour” is fixed — a favour is something you perform for another person.",
+        "ar": "العبارة الثابتة هي do someone a favour، لأن المعروف شيء تؤديه لغيرك." } },
+
+    { "id": "a2u7-16", "concept": "a2.collocation.haveTake", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You want your colleague to look at a document. What sounds most natural?",
+        "ar": "تريد من زميلك أن ينظر في مستند. ما الأكثر طبيعية؟" },
+      "options": [
+        "Could you have a look at this when you get a chance?",
+        "Could you make a look at this when you take a chance?",
+        "Could you do a look on this when you have chance?",
+        "Could you take a look on this when you get chance?"
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Have a look at” and “get a chance” are the fixed pairings. (“Take a look at” is also correct — but not “take a look on”.)",
+        "ar": "التلازم الصحيح هو have a look at وget a chance. وتصح أيضاً take a look at، لكن لا تصح take a look on." } }
+  ]
+}

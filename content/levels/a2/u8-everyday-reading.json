@@ -1,0 +1,233 @@
+{
+  "id": "a2-u8",
+  "goal": {
+    "en": "Understand the short English texts you actually meet — notices, messages, adverts — and reply appropriately.",
+    "ar": "أن تفهم النصوص الإنجليزية القصيرة التي تصادفها فعلاً — اللافتات والرسائل والإعلانات — وأن تردّ بشكل مناسب."
+  },
+  "passages": {
+    "notice": {
+      "title": "Notice at a city library",
+      "text": "OPENING HOURS  ·  Monday to Thursday 9:00–20:00  ·  Friday 9:00–13:00  ·  Saturday 10:00–17:00  ·  Closed on Sunday.\nMembership is free for residents. Bring proof of address to the front desk.\nBooks may be borrowed for three weeks. You can renew online once, unless another member has reserved the book.\nPlease do not eat in the reading rooms. Drinks are allowed in closed bottles only.\nThe computer room closes 30 minutes before the library."
+    },
+    "messages": {
+      "title": "Messages between two friends",
+      "text": "NOURA: Hi! Are we still meeting tomorrow?\nSAMI: Yes, but I finish work at 6 instead of 5. Sorry — my manager asked me to stay.\nNOURA: No problem. Shall we say 6:30 at the café near the station?\nSAMI: That works. Could you book a table? It gets really busy on Thursdays.\nNOURA: Sure. I'll book for 6:30 and text you if there's a problem.\nSAMI: Thanks! See you tomorrow."
+    }
+  },
+  "concepts": [
+    {
+      "id": "a2.reading.everyday",
+      "title": { "en": "Reading real-world texts", "ar": "قراءة النصوص الواقعية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "You do not need every word to understand a notice or a message. Read for the information you actually need, then check the small words that change it: only, unless, except, before, instead of.",
+          "ar": "لا تحتاج فهم كل كلمة لتفهم لافتة أو رسالة. اقرأ بحثاً عن المعلومة التي تريدها، ثم تحقق من الكلمات الصغيرة التي تقلب المعنى: only وunless وexcept وbefore وinstead of." } },
+        { "type": "table", "head": ["Word", "It tells you"], "rows": [
+          ["only", "a limit — nothing else is included"],
+          ["unless", "an exception — the rule changes in this case"],
+          ["except", "one item is outside the rule"],
+          ["before", "the order of two events"],
+          ["instead of", "a replacement, not an addition"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "In notices, look for numbers and negatives first — they carry most of the meaning.",
+          "ar": "في اللافتات ابحث أولاً عن الأرقام وأدوات النفي، فهي تحمل معظم المعنى." } }
+      ]
+    },
+    {
+      "id": "a2.functions.social",
+      "title": { "en": "Requests, apologies, suggestions", "ar": "الطلب والاعتذار والاقتراح" },
+      "teach": [
+        { "type": "table", "head": ["Function", "Useful phrases"], "rows": [
+          ["Request", "Could you…? / Would you mind…? / Can you…?"],
+          ["Suggestion", "Shall we…? / How about…? / Why don't we…?"],
+          ["Apology", "Sorry about… / I'm afraid I can't… / Apologies for…"],
+          ["Agreement", "That works. / Sounds good. / Sure, no problem."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“Shall we…?” and “How about…?” make a suggestion; “Could you…?” asks someone else to act. Mixing them makes a request sound like an order.",
+          "ar": "Shall we وHow about للاقتراح، أما Could you فهي طلب من الطرف الآخر. والخلط بينهما يجعل الطلب يبدو أمراً." } },
+        { "type": "warn", "text": {
+          "en": "“How about” is followed by -ing or a noun: How about meeting at six? — not “How about to meet”.",
+          "ar": "بعد How about يأتي الفعل بـ ing أو اسم: How about meeting at six? ولا نقول How about to meet." } }
+      ]
+    },
+    {
+      "id": "a2.connectors.basic",
+      "title": { "en": "Joining ideas: so, because, but", "ar": "ربط الأفكار" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Shows", "Example"], "rows": [
+          ["because", "the reason", "I stayed late because my manager asked me."],
+          ["so", "the result", "My manager asked me, so I stayed late."],
+          ["but", "a contrast", "I finished the work, but I was tired."],
+          ["although", "a contrast, at the start", "Although I was tired, I finished the work."],
+          ["then / after that", "sequence", "I finished, then I went home."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“Because” introduces the cause; “so” introduces the effect. They point in opposite directions, so they are never interchangeable.",
+          "ar": "because تُدخل السبب، وso تُدخل النتيجة. وهما في اتجاهين متعاكسين، فلا يصح تبادلهما." } },
+        { "type": "warn", "text": {
+          "en": "Do not use both in one sentence. “Because it was late, so I left” is wrong — choose one.",
+          "ar": "لا تجمع بينهما في جملة واحدة. فجملة Because it was late, so I left خطأ شائع نقلاً عن العربية، والصواب اختيار واحدة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u8-01", "concept": "a2.reading.everyday", "type": "choice", "format": "comprehension", "difficulty": 2,
+      "passageId": "notice",
+      "prompt": { "en": "When is the library closed all day?", "ar": "متى تُغلق المكتبة طوال اليوم؟" },
+      "options": ["Sunday", "Friday", "Saturday", "Monday"],
+      "answer": 0,
+      "explanation": { "en": "The notice says “Closed on Sunday”. Friday is short hours, not closed.",
+        "ar": "تقول اللافتة إنها مغلقة يوم الأحد، أما الجمعة فساعاتها قصيرة وليست مغلقة." } },
+
+    { "id": "a2u8-02", "concept": "a2.reading.everyday", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "notice",
+      "prompt": { "en": "You borrowed a book two weeks ago. Can you renew it online?",
+        "ar": "استعرت كتاباً قبل أسبوعين. هل يمكنك تجديده عبر الإنترنت؟" },
+      "options": [
+        "Yes, once — unless someone else has reserved it.",
+        "No, renewal is never possible online.",
+        "Yes, as many times as you like.",
+        "Only if you visit the front desk."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Once, unless another member has reserved the book” — the word “unless” sets the exception.",
+        "ar": "النص يقول مرة واحدة «ما لم» يكن عضو آخر قد حجز الكتاب، وكلمة unless هي التي تضع الاستثناء." } },
+
+    { "id": "a2u8-03", "concept": "a2.reading.everyday", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "notice",
+      "prompt": { "en": "It is Wednesday. What is the latest you can use the computer room?",
+        "ar": "اليوم الأربعاء. ما آخر وقت لاستخدام غرفة الحاسوب؟" },
+      "options": ["19:30", "20:00", "17:00", "13:00"],
+      "answer": 0,
+      "explanation": { "en": "The library closes at 20:00 on Wednesday and the computer room closes 30 minutes earlier.",
+        "ar": "تغلق المكتبة الساعة ٢٠:٠٠ يوم الأربعاء، وتغلق غرفة الحاسوب قبلها بثلاثين دقيقة." } },
+
+    { "id": "a2u8-04", "concept": "a2.reading.everyday", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "notice",
+      "prompt": { "en": "You want to take a coffee into the reading room. What does the notice allow?",
+        "ar": "تريد إدخال قهوة إلى قاعة المطالعة. ماذا تسمح به اللافتة؟" },
+      "options": [
+        "Only drinks in closed bottles.",
+        "Any drink, but no food.",
+        "Coffee is fine in an open cup.",
+        "Nothing at all may be carried in."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Drinks are allowed in closed bottles only.” The word “only” is the whole rule.",
+        "ar": "النص يسمح بالمشروبات في زجاجات مغلقة «فقط»، وكلمة only هي جوهر القاعدة." } },
+
+    { "id": "a2u8-05", "concept": "a2.reading.everyday", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "messages",
+      "prompt": { "en": "Why did the meeting time change?", "ar": "لماذا تغيّر موعد اللقاء؟" },
+      "options": [
+        "Sami has to work an extra hour.",
+        "Noura is busy at five.",
+        "The café opens late.",
+        "They changed the day."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“I finish work at 6 instead of 5 … my manager asked me to stay.”",
+        "ar": "قال سامي إنه ينتهي في السادسة بدل الخامسة لأن مديره طلب منه البقاء." } },
+
+    { "id": "a2u8-06", "concept": "a2.reading.everyday", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "messages",
+      "prompt": { "en": "Who is going to book the table?", "ar": "من سيحجز الطاولة؟" },
+      "options": ["Noura", "Sami", "Sami's manager", "Nobody — they will just arrive"],
+      "answer": 0,
+      "explanation": { "en": "Sami asks (“Could you book a table?”) and Noura agrees (“Sure. I'll book for 6:30”).",
+        "ar": "سامي طلب الحجز، ونورا وافقت وقالت إنها ستحجز للسادسة والنصف." } },
+
+    { "id": "a2u8-07", "concept": "a2.functions.social", "type": "choice", "format": "register", "difficulty": 3,
+      "prompt": { "en": "You want to suggest meeting at seven. Which is a suggestion, not an order?",
+        "ar": "تريد اقتراح اللقاء في السابعة. أي جملة اقتراح لا أمر؟" },
+      "options": ["Shall we meet at seven?", "Meet me at seven.", "You will meet at seven.", "Come at seven."],
+      "answer": 0,
+      "explanation": { "en": "“Shall we…?” invites the other person to agree; the rest are instructions.",
+        "ar": "صيغة Shall we تدعو الطرف الآخر للموافقة، أما البقية فأوامر." } },
+
+    { "id": "a2u8-08", "concept": "a2.functions.social", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["How about meeting at the station?", "How about to meet at the station?", "Why don't we meet at the station?", "Shall we meet at the station?"],
+      "answer": 1,
+      "explanation": { "en": "“How about” is followed by -ing: How about meeting…",
+        "ar": "بعد How about يأتي الفعل بـ ing: How about meeting." } },
+
+    { "id": "a2u8-09", "concept": "a2.functions.social", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "You must cancel a meeting an hour before it starts. What do you write?",
+        "ar": "عليك إلغاء موعد قبل ساعة من بدئه. ماذا تكتب؟" },
+      "options": [
+        "I'm really sorry — something has come up and I can't make it today. Could we move it to tomorrow?",
+        "I cancel. Tomorrow.",
+        "I am not coming because I don't want.",
+        "Sorry I will not come, it is your problem now."
+      ],
+      "answer": 0,
+      "explanation": { "en": "Apologise, give a short reason, and offer an alternative. That three-part shape works in almost every cancellation.",
+        "ar": "اعتذر، واذكر سبباً موجزاً، واعرض بديلاً. هذا الترتيب الثلاثي يصلح لأي اعتذار عن موعد." } },
+
+    { "id": "a2u8-10", "concept": "a2.functions.social", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the function with the phrase.", "ar": "صِل الوظيفة بالعبارة." },
+      "pairs": [
+        ["making a request", "Could you send it today?"],
+        ["making a suggestion", "How about Thursday?"],
+        ["apologising", "I'm afraid I can't make it."],
+        ["agreeing", "That works for me."]
+      ],
+      "explanation": { "en": "Learn these as whole phrases — they cover most everyday exchanges.",
+        "ar": "احفظ هذه العبارات كاملة، فهي تغطي معظم التعاملات اليومية." } },
+
+    { "id": "a2u8-11", "concept": "a2.connectors.basic", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I stayed at home ___ the weather was terrible.",
+      "options": ["because", "so", "but", "although"], "answer": 0,
+      "explanation": { "en": "The second half gives the reason → because.",
+        "ar": "النصف الثاني يعطي السبب، فنستخدم because." } },
+
+    { "id": "a2u8-12", "concept": "a2.connectors.basic", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The weather was terrible, ___ I stayed at home.",
+      "options": ["so", "because", "although", "unless"], "answer": 0,
+      "explanation": { "en": "Here the second half is the result → so. Same facts, opposite connector.",
+        "ar": "هنا النصف الثاني نتيجة، فنستخدم so. الحقائق نفسها لكن أداة الربط معكوسة." } },
+
+    { "id": "a2u8-13", "concept": "a2.connectors.basic", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": [
+        "Because it was raining, I took a taxi.",
+        "Because it was raining, so I took a taxi.",
+        "It was raining, so I took a taxi.",
+        "Although it was raining, I walked."
+      ],
+      "answer": 1,
+      "explanation": { "en": "English uses one connector, not two. Keep “because” or keep “so”.",
+        "ar": "الإنجليزية تستخدم أداة ربط واحدة لا اثنتين. أبقِ because أو so، ولا تجمعهما كما في العربية." } },
+
+    { "id": "a2u8-14", "concept": "a2.connectors.basic", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Although", "the", "café", "was", "busy", "we", "found", "a", "table"],
+      "answer": "Although the café was busy we found a table",
+      "explanation": { "en": "“Although” opens the contrast clause; the main clause follows.",
+        "ar": "although تفتتح جملة التضاد، ثم تأتي الجملة الرئيسية." } },
+
+    { "id": "a2u8-15", "concept": "a2.connectors.basic", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Join with “so”: “The train was late. I missed the meeting.”",
+        "ar": "اربط الجملتين بـ so: The train was late. I missed the meeting." },
+      "answer": "the train was late so i missed the meeting",
+      "accept": ["the train was late, so i missed the meeting"],
+      "explanation": { "en": "Cause first, then “so”, then the result.",
+        "ar": "السبب أولاً ثم so ثم النتيجة." } },
+
+    { "id": "a2u8-16", "concept": "a2.functions.social", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "messages",
+      "prompt": { "en": "Sami writes “That works.” What does he mean?", "ar": "ماذا يعني سامي بقوله That works؟" },
+      "options": [
+        "He agrees with the new time.",
+        "He is asking about his job.",
+        "He cannot come after all.",
+        "The café is open."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“That works (for me)” is a common, casual way of agreeing to a proposed time.",
+        "ar": "عبارة That works (for me) طريقة شائعة وغير رسمية للموافقة على موعد مقترح." } }
+  ]
+}

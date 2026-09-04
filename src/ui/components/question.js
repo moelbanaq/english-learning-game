@@ -32,6 +32,9 @@ const FORMAT_LABEL = {
 
 const KEYS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
+// Re-rolled each page load, so the same question is not always laid out the same way.
+const POSITION_SALT = Math.floor(Math.random() * 1e6);
+
 /**
  * @param {object} opts { question, index, total, kind, onCheck, onNext }
  * @returns {{node: HTMLElement, destroy: Function}}
@@ -160,25 +163,31 @@ function buildInteraction(q, setResponse) {
 function buildChoice(q, setResponse) {
   const long = q.options.some((o) => String(o).length > 22);
   const wrap = el(`div.options${long ? '.options--wide' : '.options--compact'}`, { role: 'group' });
-  const buttons = q.options.map((opt, i) => el('button.opt', {
+
+  // Options are shown in a shuffled order. Authors naturally write the correct
+  // answer first, and without this a learner could score well by always tapping
+  // the top option; it also stops position being memorised on a repeat.
+  const order = shuffle(q.options.map((_, i) => i), hashId(q.id) + POSITION_SALT);
+
+  const buttons = order.map((original, pos) => el('button.opt', {
     type: 'button',
     onClick: () => {
       buttons.forEach((b) => b.classList.remove('is-selected'));
-      buttons[i].classList.add('is-selected');
-      setResponse(i);
+      buttons[pos].classList.add('is-selected');
+      setResponse(original);
     },
   }, [
-    el('span.opt__key', { 'aria-hidden': 'true' }, KEYS[i] || String(i + 1)),
-    el('span.opt__text', { lang: 'en' }, String(opt)),
+    el('span.opt__key', { 'aria-hidden': 'true' }, KEYS[pos] || String(pos + 1)),
+    el('span.opt__text', { lang: 'en' }, String(q.options[original])),
   ]));
   buttons.forEach((b) => wrap.append(b));
 
   return {
     node: wrap,
     lock(correct) {
-      buttons.forEach((b, i) => {
+      buttons.forEach((b, pos) => {
         b.disabled = true;
-        if (i === q.answer) { b.classList.add('is-correct'); b.append(el('span.opt__mark', '✓')); }
+        if (order[pos] === q.answer) { b.classList.add('is-correct'); b.append(el('span.opt__mark', '✓')); }
         else if (b.classList.contains('is-selected')) { b.classList.add('is-wrong'); b.append(el('span.opt__mark', '✕')); }
         else b.classList.add('is-dim');
       });
