@@ -50,6 +50,11 @@ clauses, signposting and concession across a long argument, implication and
 presupposition — what a text assumes rather than states — register shifting with the
 line between kind euphemism and evasive euphemism, and taking an argument apart fairly.
 
+### Phase 9 — C2 depth ✅
+Seven more units taking C2 to eight: connotation and framing, irony and understatement,
+ambiguity (chosen and accidental), rhythm and rhetoric, idiom and cliché, voice and
+authorial distance, and editing your own prose as a stranger would read it.
+
 | Level | Units | Concepts | Questions |
 | --- | --- | --- | --- |
 | A1 | 8 | 23 | 141 |
@@ -57,22 +62,19 @@ line between kind euphemism and evasive euphemism, and taking an argument apart 
 | B1 | 8 | 24 | 120 |
 | B2 | 8 | 26 | 120 |
 | C1 | 8 | 25 | 120 |
-| C2 | 1 | 4 | 15 |
-| **Total** | **41** | **126** | **643** |
+| C2 | 8 | 25 | 120 |
+| **Total** | **48** | **147** | **748** |
 
 Plus a 24-question placement test spanning all six levels.
 
-Five complete levels. The C1 units are built on the distinction that separates advanced
-from upper-intermediate: not whether a sentence is correct, but what it commits you to,
-what it assumes, and who it is addressed to.
+**All six CEFR levels are now complete at eight units each.** A learner can start from no
+English and work through to C2 without leaving the app. The levels are deliberately
+different in kind, not just in difficulty: A1–A2 build form, B1–B2 build control, C1 asks
+what a sentence commits you to, and C2 asks what it does to a reader who did not write it.
 
 ## Next
 
-### Phase 9 — C2 depth
-6–8 units: naturalness judgement, idiom in register, tone and irony, rhetorical
-structure, and discourse management.
-
-### Phase 10 — Content and pedagogy expansion
+### Phase 10 — Content and pedagogy expansion (next up)
 - A vocabulary track (word families, collocations, phrasal verbs) alongside grammar.
 - More reading passages per level, with graded difficulty.
 - Optional writing prompts with self-assessment checklists (no AI needed).

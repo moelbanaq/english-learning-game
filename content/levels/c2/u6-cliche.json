@@ -1,0 +1,214 @@
+{
+  "id": "c2-u6",
+  "goal": {
+    "en": "Know when a ready-made phrase is doing work and when it is standing in for thought.",
+    "ar": "أن تعرف متى تؤدي العبارة الجاهزة عملاً، ومتى تحلّ محلّ التفكير."
+  },
+  "concepts": [
+    {
+      "id": "c2.cliche.dead",
+      "title": { "en": "Dead metaphors", "ar": "الاستعارات الميتة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Most idioms began as pictures and stopped being seen. Nobody visualises a table when they “table a motion”. A dead metaphor is not a fault — it is simply vocabulary now.",
+          "ar": "بدأت أغلب التعبيرات الاصطلاحية صوراً ثم كفّ الناس عن رؤيتها. فلا أحد يتخيّل طاولةً حين يقول table a motion. والاستعارة الميتة ليست عيباً، بل صارت مفردةً لا أكثر." } },
+        { "type": "table", "head": ["Phrase", "Original picture", "Now"], "rows": [
+          ["grasp an idea", "seizing with the hand", "invisible"],
+          ["a deadline", "a line prisoners could not cross", "invisible"],
+          ["run out of time", "a container emptying", "invisible"],
+          ["the tip of the iceberg", "an iceberg", "half alive"],
+          ["a level playing field", "a sports pitch", "half alive"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The danger is the half-alive metaphor: alive enough to clash with the next one, dead enough that the writer never noticed.",
+          "ar": "الخطر في الاستعارة نصف الحية: حيةٌ بما يكفي لتصطدم بما بعدها، وميتةٌ بما يكفي ألّا ينتبه الكاتب." } }
+      ]
+    },
+    {
+      "id": "c2.cliche.mixed",
+      "title": { "en": "Mixed metaphors", "ar": "خلط الاستعارات" },
+      "teach": [
+        { "type": "table", "head": ["Mixed", "Why it fails"], "rows": [
+          ["We must nip it in the bud before it snowballs.", "a plant cannot roll downhill"],
+          ["Let's not put the cart before the horse until we've tested the water.", "two unrelated pictures"],
+          ["This opens a can of worms that we'll have to iron out.", "worms cannot be ironed"],
+          ["He's a loose cannon we need to rein in.", "cannons have no reins"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Test any idiom by picturing it literally. If the picture is absurd or fights the next one, the reader will see it even if you did not.",
+          "ar": "اختبر أي تعبير بتخيّله حرفياً. فإن كانت الصورة عبثية أو تصادم ما بعدها فسيراها القارئ وإن غابت عنك." } },
+        { "type": "tip", "text": {
+          "en": "Mixed metaphors are funny, and being accidentally funny in a serious document costs you the reader's confidence for the next paragraph.",
+          "ar": "خلط الاستعارات مضحك، والإضحاك غير المقصود في وثيقة جادّة يكلّفك ثقة القارئ في الفقرة التالية." } }
+      ]
+    },
+    {
+      "id": "c2.cliche.freshness",
+      "title": { "en": "When a cliché is the right choice", "ar": "متى يكون المبتذل هو الصواب" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Originality is not always a virtue. In a safety notice, a legal clause or a condolence message, the familiar phrase is understood instantly and carries no ego with it.",
+          "ar": "الأصالة ليست فضيلةً دائماً. ففي لافتة سلامة أو بند قانوني أو رسالة تعزية تُفهم العبارة المألوفة فوراً ولا تحمل معها أنا الكاتب." } },
+        { "type": "table", "head": ["Context", "Prefer"], "rows": [
+          ["safety and legal text", "the familiar phrase"],
+          ["condolences", "the conventional words"],
+          ["an argument you want believed", "plain, specific language"],
+          ["persuasive or literary writing", "the fresh image"],
+          ["a job application", "specifics, not stock phrases"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The cliché to avoid is the one that replaces a fact: “passionate about excellence” and “results-driven team player” say nothing a reader can check.",
+          "ar": "المبتذل الذي يجب تجنّبه هو ما يحلّ محلّ الواقعة: فعبارات مثل passionate about excellence وresults-driven team player لا تقول شيئاً يستطيع القارئ التحقق منه." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u6-01", "concept": "c2.cliche.dead", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why is “grasp an idea” not a problem in serious writing?",
+        "ar": "لماذا لا تُعدّ عبارة grasp an idea مشكلة في الكتابة الجادّة؟" },
+      "options": ["The metaphor is dead, so no picture is triggered.",
+                  "The metaphor is fresh, so it catches attention.",
+                  "It only appears in spoken English, never written.",
+                  "It is a technical term with a precise meaning."],
+      "answer": 0,
+      "explanation": { "en": "Nobody sees a hand. Dead metaphors have become ordinary vocabulary and cause no clash.",
+        "ar": "لا أحد يرى يداً هنا. فالاستعارات الميتة صارت مفردات عادية ولا تُحدث تصادماً." } },
+
+    { "id": "c2u6-02", "concept": "c2.cliche.dead", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which phrase is a half-alive metaphor, still able to clash?",
+        "ar": "أي عبارة استعارة نصف حية لا تزال قادرة على التصادم؟" },
+      "options": ["the tip of the iceberg", "to run out of time",
+                  "to grasp an idea", "to meet a deadline"],
+      "answer": 0,
+      "explanation": { "en": "The iceberg is still visible, so what follows it must not melt, sink or catch fire.",
+        "ar": "جبل الجليد ما زال مرئياً، فما يليه يجب ألّا يذوب أو يغرق أو يشتعل." } },
+
+    { "id": "c2u6-03", "concept": "c2.cliche.dead", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the phrase with the picture it came from.", "ar": "صِل العبارة بالصورة التي جاءت منها." },
+      "pairs": [["a deadline", "a line prisoners could not cross"],
+                ["run out of time", "a container emptying"],
+                ["a level playing field", "a sports pitch"],
+                ["grasp an idea", "seizing with the hand"]],
+      "explanation": { "en": "Knowing the picture tells you how alive the metaphor still is, and therefore how carefully to handle it.",
+        "ar": "معرفة الصورة تخبرك بمقدار ما بقي من حياة الاستعارة، ومن ثمّ بمقدار الحذر اللازم." } },
+
+    { "id": "c2u6-04", "concept": "c2.cliche.mixed", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence mixes its metaphors?", "ar": "أي جملة تخلط استعاراتها؟" },
+      "options": ["We must nip this in the bud before it snowballs.",
+                  "We must deal with this before it grows any further.",
+                  "We must stop this before it becomes a real problem.",
+                  "We must act now rather than wait for it to spread."],
+      "answer": 0,
+      "explanation": { "en": "A bud belongs to a plant; a snowball rolls downhill. The reader sees both and neither survives.",
+        "ar": "البرعم من النبات، وكرة الثلج تتدحرج، فيرى القارئ الصورتين ولا تنجو واحدة منهما." } },
+
+    { "id": "c2u6-05", "concept": "c2.cliche.mixed", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence produces an absurd picture?", "ar": "أي جملة تنتج صورة عبثية؟" },
+      "options": ["This opens a can of worms that we will have to iron out.",
+                  "This raises questions that we will have to resolve.",
+                  "This creates complications we will need to work through.",
+                  "This uncovers problems that will take time to settle."],
+      "answer": 0,
+      "explanation": { "en": "Worms cannot be ironed. Two idioms, each fine alone, destroy each other here.",
+        "ar": "لا تُكوى الديدان. تعبيران كلٌّ منهما سليم منفرداً، ويُفسد أحدهما الآخر هنا." } },
+
+    { "id": "c2u6-06", "concept": "c2.cliche.mixed", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "How do you test an idiom before using it?", "ar": "كيف تختبر تعبيراً اصطلاحياً قبل استعماله؟" },
+      "options": ["Picture it literally and see whether the image holds.",
+                  "Count how many words the whole phrase contains.",
+                  "Check whether it appears in a dictionary at all.",
+                  "Replace it with a longer and more formal phrase."],
+      "answer": 0,
+      "explanation": { "en": "The literal picture is exactly what a reader half-sees, which is why clashes are noticed.",
+        "ar": "الصورة الحرفية هي ما يراه القارئ نصف رؤية، ولذلك تُلاحظ التصادمات." } },
+
+    { "id": "c2u6-07", "concept": "c2.cliche.mixed", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mixed metaphor?", "ar": "أي جملة فيها خلط استعارات؟" },
+      "options": ["He is a loose cannon and we need to rein him in.",
+                  "He is unpredictable and we need to control him.",
+                  "He is a loose cannon and we need to watch him.",
+                  "He acts without warning and needs closer supervision."],
+      "answer": 0,
+      "explanation": { "en": "Cannons have no reins. The third keeps the cannon and drops the horse, which is why it survives.",
+        "ar": "المدافع لا أعنّة لها. والجملة الثالثة تُبقي المدفع وتُسقط الحصان، ولهذا تنجو." } },
+
+    { "id": "c2u6-08", "concept": "c2.cliche.freshness", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Where is a conventional phrase the better choice?", "ar": "أين تكون العبارة التقليدية هي الخيار الأفضل؟" },
+      "options": ["A message of condolence to a colleague.",
+                  "The opening line of a magazine feature.",
+                  "A description of your own work in an application.",
+                  "A slogan for a new product launch."],
+      "answer": 0,
+      "explanation": { "en": "Condolence is not the place for originality; the familiar words carry no ego and are understood instantly.",
+        "ar": "ليست التعزية موضع أصالة، فالعبارات المألوفة لا تحمل أنا الكاتب وتُفهم فوراً." } },
+
+    { "id": "c2u6-09", "concept": "c2.cliche.freshness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which line belongs in a job application?", "ar": "أي سطر يصلح لطلب وظيفة؟" },
+      "options": ["I rebuilt the reporting process and cut month-end from nine days to three.",
+                  "I am passionate about excellence and driven by outstanding results.",
+                  "I am a results-driven team player with a can-do attitude to work.",
+                  "I always go the extra mile and think outside the box every day."],
+      "answer": 0,
+      "explanation": { "en": "One checkable fact beats four stock phrases. The clichés here are not ugly; they are empty.",
+        "ar": "واقعة واحدة قابلة للتحقق تتفوق على أربع عبارات جاهزة. والمبتذل هنا ليس قبيحاً بل فارغاً." } },
+
+    { "id": "c2u6-10", "concept": "c2.cliche.freshness", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which kind of cliché is the one to eliminate?", "ar": "أي نوع من المبتذل هو الذي يجب حذفه؟" },
+      "options": ["The one that replaces a fact the reader could check.",
+                  "The one that has been in the language for centuries.",
+                  "The one that began life as a visual metaphor.",
+                  "The one that appears in more than one language."],
+      "answer": 0,
+      "explanation": { "en": "Age is not the problem. Emptiness is: “passionate about excellence” cannot be true or false.",
+        "ar": "القِدم ليس المشكلة بل الخواء: فعبارة passionate about excellence لا تحتمل صدقاً ولا كذباً." } },
+
+    { "id": "c2u6-11", "concept": "c2.cliche.freshness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence opens a feature article most freshly?",
+        "ar": "أي جملة تفتتح مقالاً صحفياً بأكثر طزاجة؟" },
+      "options": ["The bakery has been closing at noon for forty years, and nobody has asked why.",
+                  "Since time immemorial, bakeries have played a vital role in our communities.",
+                  "At the end of the day, a bakery is the beating heart of any neighbourhood.",
+                  "It goes without saying that bakeries are an important part of local life."],
+      "answer": 0,
+      "explanation": { "en": "A specific oddity earns attention. The others reach for phrases the reader has skimmed a thousand times.",
+        "ar": "الغرابة المحددة تكسب الانتباه، أما البقية فتلجأ إلى عبارات مرّ عليها القارئ ألف مرة." } },
+
+    { "id": "c2u6-12", "concept": "c2.cliche.dead", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why does “the tip of the iceberg that we must nip in the bud” fail?",
+        "ar": "لماذا تفشل عبارة the tip of the iceberg that we must nip in the bud؟" },
+      "options": ["Both metaphors are alive enough to be seen at once.",
+                  "Both metaphors are completely dead and invisible.",
+                  "The sentence contains a grammatical error as well.",
+                  "Icebergs and buds are both associated with cold."],
+      "answer": 0,
+      "explanation": { "en": "If both pictures are visible, the reader sees a gardener pruning an iceberg.",
+        "ar": "إذا كانت الصورتان مرئيتين رأى القارئ بستانياً يقلّم جبل جليد." } },
+
+    { "id": "c2u6-13", "concept": "c2.cliche.mixed", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Fix the mixture in one word: “We must nip this in the bud before it ___ .” (something a plant can do)",
+        "ar": "أصلح الخلط بكلمة واحدة مما يفعله النبات: We must nip this in the bud before it ___" },
+      "answer": "grows", "accept": ["spreads", "takes root"],
+      "explanation": { "en": "Keep one picture and let it finish. Growing, spreading and taking root all belong to the plant.",
+        "ar": "أبقِ صورة واحدة ودعها تكتمل، فالنمو والانتشار والتجذّر كلها من عالم النبات." } },
+
+    { "id": "c2u6-14", "concept": "c2.cliche.freshness", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "A safety notice needs a warning about wet floors. What is right?",
+        "ar": "تحتاج لافتة سلامة تحذيراً من الأرضية المبللة. ما الصواب؟" },
+      "options": ["Caution: wet floor.", "Beware: slippery slope.",
+                  "Danger lurks below.", "Tread very carefully."],
+      "answer": 0,
+      "explanation": { "en": "The conventional phrase is read at a glance. Originality here costs seconds a reader may not have.",
+        "ar": "العبارة التقليدية تُقرأ بلمحة، والأصالة هنا تكلّف ثوانٍ قد لا يملكها القارئ." } },
+
+    { "id": "c2u6-15", "concept": "c2.cliche.freshness", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A report says the team is “committed to delivering value”. What have you learned?",
+        "ar": "قال تقرير إن الفريق committed to delivering value. ماذا عرفت؟" },
+      "options": ["Nothing that could be confirmed or contradicted.",
+                  "That the team met its targets for the year.",
+                  "That the team has changed its priorities.",
+                  "That the team is smaller than it once was."],
+      "answer": 0,
+      "explanation": { "en": "No team ever claims the opposite, which is how you know the sentence carries no information.",
+        "ar": "لا فريق يدّعي العكس، وبهذا تعرف أن الجملة لا تحمل معلومة." } }
+  ]
+}

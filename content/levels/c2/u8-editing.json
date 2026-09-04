@@ -1,0 +1,229 @@
+{
+  "id": "c2-u8",
+  "goal": {
+    "en": "Read your own writing as a stranger would, and cut until only what you meant is left.",
+    "ar": "أن تقرأ كتابتك كما يقرأها غريب، وأن تحذف حتى لا يبقى إلا ما قصدته."
+  },
+  "passages": {
+    "draft": {
+      "title": "A first draft",
+      "text": "It is important to note that the process of onboarding new members of staff is something that has been identified as an area where there may be room for potential improvement. Feedback that was gathered from a number of recent joiners has indicated that there were some issues in relation to the provision of equipment, and it was also felt by some that the induction sessions could perhaps have been better structured than they were.\n\nGoing forward, it is our intention to undertake a review of the onboarding process with a view to implementing improvements in due course."
+    },
+    "edited": {
+      "title": "The same paragraph, edited",
+      "text": "Our onboarding needs work. Recent joiners told us that equipment arrived late and that the induction sessions were poorly structured.\n\nWe will review onboarding this quarter and report back in April."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.edit.cutting",
+      "title": { "en": "What to cut first", "ar": "ما تحذفه أولاً" },
+      "teach": [
+        { "type": "table", "head": ["Cut", "Because"], "rows": [
+          ["It is important to note that", "if it were not important you would not write it"],
+          ["the process of", "the noun already implies it"],
+          ["is something that has been identified as", "a verb is hiding in here"],
+          ["there may be room for potential improvement", "two hedges doing one job"],
+          ["going forward / in due course", "vague time is worse than none"],
+          ["it was felt by some that", "who felt it, and did they say so?"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Cut anything that survives its own deletion. Read the sentence without the phrase: if nothing is lost, the phrase was never carrying anything.",
+          "ar": "احذف كل ما يبقى المعنى بعد حذفه. اقرأ الجملة بدون العبارة، فإن لم يُفقد شيء فالعبارة لم تكن تحمل شيئاً." } },
+        { "type": "tip", "text": {
+          "en": "Aim to cut a third of a first draft. Almost every first draft has that much in it, and the cut version says more, not less.",
+          "ar": "استهدف حذف ثلث المسوّدة الأولى، فأغلبها يحتمل ذلك، والنسخة المحذوفة تقول أكثر لا أقل." } }
+      ]
+    },
+    {
+      "id": "c2.edit.precision",
+      "title": { "en": "Vagueness is the real enemy", "ar": "الغموض هو العدو الحقيقي" },
+      "teach": [
+        { "type": "table", "head": ["Vague", "Precise"], "rows": [
+          ["some issues in relation to equipment", "laptops arrived two weeks late"],
+          ["a number of recent joiners", "seven of the eleven who joined since March"],
+          ["improvements in due course", "a revised process by April"],
+          ["it could have been better structured", "three sessions covered the same material"],
+          ["we will look into it", "I will report back on Friday"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Every vague phrase is a decision the writer declined to make, handed to the reader. Precision is not a style; it is the work.",
+          "ar": "كل عبارة غامضة قرارٌ امتنع الكاتب عن اتخاذه فأحاله إلى القارئ. والدقة ليست أسلوباً بل هي العمل نفسه." } },
+        { "type": "warn", "text": {
+          "en": "Vagueness often survives editing because it feels safe. It is not safe: it guarantees that nobody can hold you to anything, including a promise you wanted credit for.",
+          "ar": "يبقى الغموض بعد التحرير لأنه يبدو آمناً، وليس كذلك: فهو يضمن ألّا يُحاسبك أحد على شيء، بما في ذلك وعدٌ أردت أن يُحسب لك." } }
+      ]
+    },
+    {
+      "id": "c2.edit.stranger",
+      "title": { "en": "Reading it as a stranger", "ar": "أن تقرأه كغريب" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "You cannot edit properly while you still remember what you meant. The techniques below all work by making the text unfamiliar again.",
+          "ar": "لا يمكنك التحرير بحق وأنت لا تزال تذكر ما قصدت. والأساليب الآتية تعمل جميعها بجعل النص غريباً عليك من جديد." } },
+        { "type": "table", "head": ["Technique", "What it catches"], "rows": [
+          ["leave it overnight", "almost everything"],
+          ["read it aloud", "rhythm, length, unsayable sentences"],
+          ["read the last sentence first", "weak endings and repetition"],
+          ["ask what each paragraph is for", "paragraphs that are for nothing"],
+          ["hunt for the wrong reading", "ambiguity you cannot otherwise see"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The final question is not “is this correct?” but “can this be misread, and would I mind?” At C2, that is the whole discipline.",
+          "ar": "السؤال الأخير ليس «أهذا صحيح؟» بل «أيمكن أن يُساء فهمه، وهل يهمّني ذلك؟». وفي هذا المستوى، هذا هو الفنّ كله." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u8-01", "concept": "c2.edit.cutting", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "draft",
+      "prompt": { "en": "What does the first draft actually say?", "ar": "ماذا تقول المسوّدة فعلاً؟" },
+      "options": ["Onboarding has problems with equipment and induction; a review is planned.",
+                  "New staff have complained formally about the managers who recruited them.",
+                  "The onboarding process was reviewed last year and found to be adequate.",
+                  "Equipment has now been ordered for all new members of staff who asked."],
+      "answer": 0,
+      "explanation": { "en": "Ninety words carry two facts and one intention. That gap is what editing closes.",
+        "ar": "تسعون كلمة تحمل واقعتين ونيّة واحدة، وهذه الفجوة هي ما يسدّه التحرير." } },
+
+    { "id": "c2u8-02", "concept": "c2.edit.cutting", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why cut “It is important to note that”?", "ar": "لماذا نحذف عبارة It is important to note that؟" },
+      "options": ["Everything you choose to write is already claimed to be worth noting.",
+                  "It is grammatically incorrect when placed at the start of a sentence.",
+                  "It is far too informal for a professional document of this kind.",
+                  "It should always be replaced by the phrase “It should be noted that”."],
+      "answer": 0,
+      "explanation": { "en": "The phrase asserts importance instead of demonstrating it, and costs six words doing so.",
+        "ar": "تدّعي العبارة الأهمية بدل أن تُظهرها، وتكلّف ست كلمات في سبيل ذلك." } },
+
+    { "id": "c2u8-03", "concept": "c2.edit.cutting", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence has nothing left to cut?", "ar": "أي جملة لم يبقَ فيها ما يُحذف؟" },
+      "options": ["Recent joiners said their laptops arrived two weeks late.",
+                  "It has been reported by recent joiners that there were delays.",
+                  "Feedback indicates that some equipment issues may have occurred.",
+                  "There appear to have been some delays in relation to equipment."],
+      "answer": 0,
+      "explanation": { "en": "Subject, verb, fact. Every word in it would be missed if removed.",
+        "ar": "فاعل وفعل وواقعة، وكل كلمة فيها يُفتقد معناها لو حُذفت." } },
+
+    { "id": "c2u8-04", "concept": "c2.edit.cutting", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the padded phrase with what it should become.", "ar": "صِل العبارة الحشوية بما ينبغي أن تصير إليه." },
+      "pairs": [["it is important to note that", "(delete it)"],
+                ["the process of onboarding", "onboarding"],
+                ["in due course", "by April"],
+                ["it was felt by some that", "three joiners said"]],
+      "explanation": { "en": "Two of these are deletions and two are replacements with something checkable.",
+        "ar": "اثنتان من هذه حذف، واثنتان استبدال بشيء قابل للتحقق." } },
+
+    { "id": "c2u8-05", "concept": "c2.edit.precision", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "edited",
+      "prompt": { "en": "What did the edit add that the draft lacked?", "ar": "ماذا أضاف التحرير ولم يكن في المسوّدة؟" },
+      "options": ["A date, a named problem and a commitment.",
+                  "A longer and more formal opening sentence.",
+                  "An apology to the staff who complained.",
+                  "The names of the joiners who gave feedback."],
+      "answer": 0,
+      "explanation": { "en": "It is shorter and says more: equipment arrived late, sessions were poorly structured, report in April.",
+        "ar": "أقصر وتقول أكثر: المعدات وصلت متأخرة، والجلسات سيّئة البناء، والتقرير في أبريل." } },
+
+    { "id": "c2u8-06", "concept": "c2.edit.precision", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which commitment can you be held to?", "ar": "أي تعهّد يمكن محاسبتك عليه؟" },
+      "options": ["I will send the revised process by 18 April.",
+                  "We will implement improvements in due course.",
+                  "This will be looked at as a matter of priority.",
+                  "We intend to address this going forward."],
+      "answer": 0,
+      "explanation": { "en": "A person, an action and a date. The others are designed, consciously or not, to be unenforceable.",
+        "ar": "شخص وفعل وتاريخ. أما البقية فمصوغة، بوعي أو بغيره، بحيث لا يمكن إلزام أحد بها." } },
+
+    { "id": "c2u8-07", "concept": "c2.edit.precision", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why is vagueness not actually safe?", "ar": "لماذا لا يكون الغموض آمناً في الحقيقة؟" },
+      "options": ["It also prevents you claiming credit for what you did.",
+                  "It always makes a document noticeably longer.",
+                  "It is considered grammatically incorrect in reports.",
+                  "It can only be used in informal writing."],
+      "answer": 0,
+      "explanation": { "en": "A promise nobody can hold you to is also a promise nobody remembers you kept.",
+        "ar": "الوعد الذي لا يُحاسَب عليه أحد هو وعد لا يذكر أحد أنك أوفيت به." } },
+
+    { "id": "c2u8-08", "concept": "c2.edit.precision", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Make it checkable: “Some equipment issues were reported.” → “Laptops arrived ___ weeks late.” (write the sentence's missing word as a number word)",
+        "ar": "اجعلها قابلة للتحقق: Laptops arrived ___ weeks late." },
+      "answer": "two", "accept": ["three", "several"],
+      "explanation": { "en": "Any specific quantity beats “some issues”, because it can be confirmed or corrected.",
+        "ar": "أي كمية محددة تتفوق على «بعض المشكلات»، لأنها تحتمل التأكيد أو التصحيح." } },
+
+    { "id": "c2u8-09", "concept": "c2.edit.stranger", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why does reading aloud catch faults that reading silently misses?",
+        "ar": "لماذا تكشف القراءة الجهرية عيوباً تفوتها القراءة الصامتة؟" },
+      "options": ["A sentence you cannot say comfortably is badly built.",
+                  "Reading aloud is slower and so more careful.",
+                  "Speaking corrects spelling errors automatically.",
+                  "The ear notices grammar the eye cannot see."],
+      "answer": 0,
+      "explanation": { "en": "Breath is a structural test. If you run out of air, the sentence has too many clauses.",
+        "ar": "النَّفَس اختبار بنيوي: فإذا انقطع فالجملة تحمل جملاً فرعية أكثر مما ينبغي." } },
+
+    { "id": "c2u8-10", "concept": "c2.edit.stranger", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why leave a draft overnight before editing?", "ar": "لماذا نترك المسوّدة ليلةً قبل تحريرها؟" },
+      "options": ["You stop remembering what you meant and start reading what you wrote.",
+                  "New vocabulary tends to occur to you while you are asleep.",
+                  "Editing is far more accurate in the morning than late at night.",
+                  "It gives colleagues time to send their own comments on the draft."],
+      "answer": 0,
+      "explanation": { "en": "Every editing technique is a way of buying back the ignorance your reader has.",
+        "ar": "كل أسلوب في التحرير وسيلة لاستعادة الجهل الذي يملكه قارئك." } },
+
+    { "id": "c2u8-11", "concept": "c2.edit.stranger", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the technique with what it catches.", "ar": "صِل الأسلوب بما يكشفه." },
+      "pairs": [["read it aloud", "sentences that cannot be said"],
+                ["leave it overnight", "assumptions you forgot you made"],
+                ["read the last line first", "weak endings and repetition"],
+                ["hunt for the wrong reading", "unintended ambiguity"]],
+      "explanation": { "en": "Each one attacks a different blind spot; none of them is optional on important writing.",
+        "ar": "كل أسلوب يهاجم نقطة عمياء مختلفة، ولا يُستغنى عن أيها في كتابة مهمة." } },
+
+    { "id": "c2u8-12", "concept": "c2.edit.stranger", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "What is the last question to ask before sending?", "ar": "ما آخر سؤال تسأله قبل الإرسال؟" },
+      "options": ["Can any sentence here be read in a way I would not want?",
+                  "Have I used enough formal vocabulary throughout?",
+                  "Is every sentence grammatically correct in isolation?",
+                  "Is the document long enough to look thorough?"],
+      "answer": 0,
+      "explanation": { "en": "Correctness is assumed at this level. What remains is what a stranger, or an opponent, could make of it.",
+        "ar": "الصحة مفترضة في هذا المستوى، والباقي هو ما قد يصنعه بها غريب أو خصم." } },
+
+    { "id": "c2u8-13", "concept": "c2.edit.cutting", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which opening sentence would survive a hard edit?", "ar": "أي جملة افتتاحية تنجو من تحرير صارم؟" },
+      "options": ["Our onboarding needs work.",
+                  "Onboarding may need some work.",
+                  "Onboarding could be improved.",
+                  "Onboarding is a concern area."],
+      "answer": 0,
+      "explanation": { "en": "Four words, one claim, no hedge. It also commits the writer, which is why the others exist.",
+        "ar": "أربع كلمات ودعوى واحدة بلا تحفّظ. وهي تُلزم الكاتب أيضاً، ولهذا وُجدت البدائل." } },
+
+    { "id": "c2u8-14", "concept": "c2.edit.precision", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "draft",
+      "prompt": { "en": "“It was also felt by some that…” What is this construction avoiding?",
+        "ar": "ماذا يتجنب هذا التركيب؟" },
+      "options": ["Saying who said it and how many of them there were.",
+                  "Repeating a word that appeared earlier in the sentence.",
+                  "Using a tense that would date the document.",
+                  "Naming the department responsible for induction."],
+      "answer": 0,
+      "explanation": { "en": "The passive plus “some” removes both the number and the people — and with them, the evidence.",
+        "ar": "المبني للمجهول مع some يحذف العدد والأشخاص معاً، ومعهما يذهب الدليل." } },
+
+    { "id": "c2u8-15", "concept": "c2.edit.stranger", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What does a good editor do that a proofreader does not?",
+        "ar": "ما الذي يفعله المحرّر الجيد ولا يفعله المدقق اللغوي؟" },
+      "options": ["Ask whether each sentence earns its place at all.",
+                  "Correct spelling, punctuation and agreement errors.",
+                  "Check that the formatting is applied consistently.",
+                  "Confirm that names and dates are spelled correctly."],
+      "answer": 0,
+      "explanation": { "en": "Proofreading makes a sentence correct. Editing decides whether it should exist.",
+        "ar": "التدقيق يجعل الجملة صحيحة، أما التحرير فيقرر ما إذا كانت تستحق الوجود." } }
+  ]
+}

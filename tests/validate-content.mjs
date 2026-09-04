@@ -101,13 +101,13 @@ function validateQuestion(q, where, opts = {}) {
     default: break;
   }
 
-  // An "error_id" question must actually ask the learner to find a fault — the chip the
-  // learner sees says "Find the mistake", so a prompt asking for the correct sentence
-  // contradicts it.
-  if (q.format === 'error_id') {
-    const asks = /mistake|wrong|unnatural|incorrect|inaccurat|not English|weakest|does not fit|repeats itself|did not mean|overclaim|padded|dangling|too heavily loaded|goes wrong/i;
-    if (!q.prompt || !asks.test(String(q.prompt.en || ''))) {
-      warn(at, 'format is "error_id" but the prompt does not ask the learner to find a fault');
+  // The learner sees a chip reading "Find the mistake" on an error_id question, so the
+  // prompt must not ask for the correct or best option instead. Listing every word for
+  // "fault" proved endless; the failure worth catching is the direct contradiction.
+  if (q.format === 'error_id' && q.prompt) {
+    const asksForTheGoodOne = /which .{0,40}\b(is correct|is right|is best|works best|is most natural|is appropriate|fits)\b/i;
+    if (asksForTheGoodOne.test(String(q.prompt.en || ''))) {
+      err(at, 'format is "error_id" but the prompt asks for the correct option, which contradicts the label the learner sees');
     }
   }
 

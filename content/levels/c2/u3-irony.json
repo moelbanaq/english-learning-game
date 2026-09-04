@@ -1,0 +1,231 @@
+{
+  "id": "c2-u3",
+  "goal": {
+    "en": "Recognise irony, understatement and deadpan — and know when they will not survive the journey.",
+    "ar": "أن تتعرّف على السخرية والتهوين والدعابة الجافة، وأن تعرف متى لا تصل هذه الأساليب سالمة."
+  },
+  "passages": {
+    "thread": {
+      "title": "A message thread between colleagues",
+      "text": "RANIA: Just seen the new deadline. The 14th.\nTOM: Ah. Well, that's ambitious.\nRANIA: Ambitious is one word for it.\nTOM: I mean, we could always skip testing entirely. That's never gone wrong before.\nRANIA: Ha. Shall I put it to Maha, or will you?\nTOM: You do it. She likes you.\nRANIA: She likes you too. She just doesn't like the schedule."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.irony.understatement",
+      "title": { "en": "Saying less to mean more", "ar": "أن تقول أقل لتعني أكثر" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Understatement is a default setting in much English, especially British English. The gap between the mildness of the words and the size of the situation is where the meaning lives.",
+          "ar": "التهوين إعداد افتراضي في كثير من الإنجليزية، ولا سيما البريطانية. والمعنى يسكن في الفجوة بين خفّة الكلمات وضخامة الموقف." } },
+        { "type": "table", "head": ["Said", "Meant"], "rows": [
+          ["That's ambitious.", "That is impossible."],
+          ["It's not ideal.", "It is a serious problem."],
+          ["I have one or two concerns.", "I object to most of this."],
+          ["That went about as well as expected.", "It was a disaster."],
+          ["He's not the most organised person.", "He is chaotic."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Understatement fails with a reader who does not share the convention. In writing that crosses cultures, state the problem plainly and save the understatement for the tone around it.",
+          "ar": "يخفق التهوين مع قارئ لا يشاركك العرف نفسه. ففي الكتابة العابرة للثقافات اذكر المشكلة صراحةً، واحفظ التهوين للنبرة المحيطة بها." } }
+      ]
+    },
+    {
+      "id": "c2.irony.markers",
+      "title": { "en": "How irony announces itself", "ar": "كيف تُعلن السخرية عن نفسها" },
+      "teach": [
+        { "type": "table", "head": ["Signal", "Example"], "rows": [
+          ["exaggerated agreement", "Oh, absolutely. Let's do that."],
+          ["an obviously false reason", "That's never gone wrong before."],
+          ["formal words for a trivial thing", "I shall be lodging a formal complaint about the biscuits."],
+          ["repeating the other person's word", "Ambitious is one word for it."],
+          ["stating the obvious as insight", "Turns out you need time to do things."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Irony depends on shared knowledge: the listener must already know the statement is false. Without that, it is simply misinformation delivered confidently.",
+          "ar": "تعتمد السخرية على معرفة مشتركة: على السامع أن يعلم سلفاً أن العبارة غير صحيحة. وبدون ذلك تكون مجرد معلومة خاطئة تُقال بثقة." } },
+        { "type": "tip", "text": {
+          "en": "In writing, irony has no tone of voice to carry it. If a sentence would be damaging when read straight, do not risk it in an email.",
+          "ar": "في الكتابة لا تجد السخرية نبرةَ صوت تحملها. فإن كانت الجملة ضارّة لو قُرئت على ظاهرها فلا تغامر بها في بريد إلكتروني." } }
+      ]
+    },
+    {
+      "id": "c2.irony.deadpan",
+      "title": { "en": "Deadpan and the risks it carries", "ar": "الدعابة الجافة ومخاطرها" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Deadpan delivers something absurd in a flat, serious register and leaves the audience to notice. It builds rapport quickly — and misfires expensively.",
+          "ar": "تقدّم الدعابة الجافة أمراً عبثياً بنبرة جادّة مسطّحة وتترك للمتلقي أن ينتبه. وهي تبني الألفة سريعاً، لكن إخفاقها مكلف." } },
+        { "type": "table", "head": ["Context", "Deadpan is"], "rows": [
+          ["among colleagues who know you", "a bond"],
+          ["in a first meeting with a client", "a gamble"],
+          ["in writing to a large group", "usually a mistake"],
+          ["about someone else's error", "cruel, however funny"],
+          ["about your own error", "usually safe"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The safest joke points at yourself or at the situation. The moment it points at a person who did not choose to be in it, it stops being a joke to them.",
+          "ar": "أسلم النكات ما وُجّه إلى النفس أو إلى الموقف. فما إن يُوجَّه إلى شخص لم يختر أن يكون طرفاً فيها حتى تكفّ عن كونها نكتة في نظره." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u3-01", "concept": "c2.irony.understatement", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "thread",
+      "prompt": { "en": "What does Tom mean by “that's ambitious”?", "ar": "ماذا يقصد توم بقوله that's ambitious؟" },
+      "options": ["The deadline cannot realistically be met.",
+                  "The deadline is challenging but achievable.",
+                  "The team should aim higher than this.",
+                  "The plan shows admirable confidence."],
+      "answer": 0,
+      "explanation": { "en": "Praise-shaped words for a bad plan. Rania's reply confirms both of them read it that way.",
+        "ar": "كلمات في هيئة مدح لخطة سيئة، وردّ رانيا يؤكد أن كليهما فهمها كذلك." } },
+
+    { "id": "c2u3-02", "concept": "c2.irony.understatement", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "thread",
+      "prompt": { "en": "“Ambitious is one word for it.” What is Rania doing?",
+        "ar": "ماذا تفعل رانيا بهذه العبارة؟" },
+      "options": ["Agreeing while hinting at a blunter word she has not used.",
+                  "Correcting Tom's choice of vocabulary rather politely.",
+                  "Saying that ambition is exactly what this project needs.",
+                  "Asking Tom to explain what he actually meant by the word."],
+      "answer": 0,
+      "explanation": { "en": "The formula points at the word she is declining to say — and everyone hears it anyway.",
+        "ar": "الصيغة تشير إلى الكلمة التي امتنعت عن قولها، ومع ذلك يسمعها الجميع." } },
+
+    { "id": "c2u3-03", "concept": "c2.irony.understatement", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "A manager writes “I have one or two concerns about the draft.” What is likely true?",
+        "ar": "كتب مدير: I have one or two concerns about the draft. ما المرجّح؟" },
+      "options": ["There are many concerns, and the draft needs real work.",
+                  "There are exactly two small points to fix quickly.",
+                  "The draft is essentially finished and ready to go.",
+                  "The manager has not actually read the draft yet."],
+      "answer": 0,
+      "explanation": { "en": "“One or two” is a quantity chosen for politeness, not for accuracy.",
+        "ar": "عبارة one or two كمية اختيرت للتهذيب لا للدقة." } },
+
+    { "id": "c2u3-04", "concept": "c2.irony.understatement", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the understatement with its meaning.", "ar": "صِل التهوين بمعناه." },
+      "pairs": [["It's not ideal.", "this is a serious problem"],
+                ["That's ambitious.", "that is impossible"],
+                ["He's not the most organised.", "he is chaotic"],
+                ["It went as well as expected.", "it was a disaster"]],
+      "explanation": { "en": "Each pair is a fixed convention, not a creative choice — which is why they can be learned.",
+        "ar": "كل زوج عرف ثابت لا اختيار إبداعي، ولهذا يمكن تعلّمها." } },
+
+    { "id": "c2u3-05", "concept": "c2.irony.markers", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "thread",
+      "prompt": { "en": "“We could always skip testing. That's never gone wrong before.” What is Tom doing?",
+        "ar": "ماذا يفعل توم بهاتين الجملتين؟" },
+      "options": ["Using an obviously false claim to show the idea is absurd.",
+                  "Genuinely proposing that the team skip the testing phase.",
+                  "Reporting that skipping testing worked well previously.",
+                  "Asking Rania whether testing has ever caused problems."],
+      "answer": 0,
+      "explanation": { "en": "Both know skipping testing has gone wrong. The shared knowledge is what makes it irony rather than error.",
+        "ar": "كلاهما يعلم أن تخطي الاختبار أخفق من قبل، والمعرفة المشتركة هي ما يجعلها سخرية لا خطأ." } },
+
+    { "id": "c2u3-06", "concept": "c2.irony.markers", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which signal most reliably marks irony in writing?", "ar": "أي إشارة تدل على السخرية في الكتابة بأكبر قدر من الوثوق؟" },
+      "options": ["A claim both writer and reader know to be false.",
+                  "An exclamation mark at the end of the sentence.",
+                  "A sentence that is noticeably longer than usual.",
+                  "A formal word placed in an informal message."],
+      "answer": 0,
+      "explanation": { "en": "Irony runs on shared knowledge. Punctuation and register are hints; the shared falsehood is the mechanism.",
+        "ar": "تقوم السخرية على المعرفة المشتركة. فعلامات الترقيم والمستوى إشارات، أما الآلية فهي الكذب المعروف للطرفين." } },
+
+    { "id": "c2u3-07", "concept": "c2.irony.markers", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence is safe to send to a client you have never met?",
+        "ar": "أي جملة يمكن إرسالها بأمان إلى عميل لم تلتقه من قبل؟" },
+      "options": ["The timeline is tight; I'd suggest we review it before committing.",
+                  "Well, that timeline is certainly an ambitious one, isn't it.",
+                  "We could just skip the testing. That always works out fine.",
+                  "Sure, four days. What could possibly go wrong with that."],
+      "answer": 0,
+      "explanation": { "en": "The other three rely on a shared reading you have no reason to assume. Read straight, two of them are agreement.",
+        "ar": "الثلاث الأخرى تعتمد على فهم مشترك لا مبرّر لافتراضه، وقراءةً على الظاهر تبدو اثنتان منها موافقة." } },
+
+    { "id": "c2u3-08", "concept": "c2.irony.markers", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A message says: “Great, another meeting about meetings.” What is the writer's attitude?",
+        "ar": "ما موقف كاتب هذه الرسالة؟" },
+      "options": ["Frustration, expressed through false enthusiasm.",
+                  "Genuine pleasure at the scheduled meeting.",
+                  "Neutral confirmation that a meeting exists.",
+                  "Confusion about what the meeting is for."],
+      "answer": 0,
+      "explanation": { "en": "“Great” plus a self-evidently tedious noun phrase is the standard shape of this complaint.",
+        "ar": "كلمة Great مع عبارة اسمية مملّة بداهةً هي الشكل المعتاد لهذه الشكوى." } },
+
+    { "id": "c2u3-09", "concept": "c2.irony.deadpan", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "When is deadpan humour most likely to misfire?", "ar": "متى يُرجَّح إخفاق الدعابة الجافة؟" },
+      "options": ["In writing, to a large group who do not know you.",
+                  "In conversation with colleagues you work with daily.",
+                  "In a message to a friend of many years.",
+                  "In a story you are telling about yourself."],
+      "answer": 0,
+      "explanation": { "en": "No tone of voice, no shared history, and many readers — every safeguard is missing at once.",
+        "ar": "لا نبرة صوت، ولا تاريخ مشترك، وقراء كثيرون — تغيب كل الضمانات دفعةً واحدة." } },
+
+    { "id": "c2u3-10", "concept": "c2.irony.deadpan", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which joke is safest in a work context?", "ar": "أي دعابة أسلم في سياق العمل؟" },
+      "options": ["I've read my own draft twice and understood it once.",
+                  "I've read Sami's draft twice and understood it once.",
+                  "Whoever wrote this draft should try writing in English.",
+                  "This draft reads like it was written in a hurry, Sami."],
+      "answer": 0,
+      "explanation": { "en": "Pointing the joke at yourself costs nothing. The same joke aimed at a colleague is a public judgement.",
+        "ar": "توجيه النكتة إلى نفسك لا يكلّف شيئاً، أما توجيهها إلى زميل فحكم علني عليه." } },
+
+    { "id": "c2u3-11", "concept": "c2.irony.deadpan", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "thread",
+      "prompt": { "en": "What does the exchange tell you about Rania and Tom's relationship?",
+        "ar": "ماذا تخبرك المحادثة عن علاقة رانيا وتوم؟" },
+      "options": ["They know each other well enough for irony to be safe.",
+                  "They are meeting for the first time on this project.",
+                  "They disagree sharply about the value of testing.",
+                  "They are both senior to Maha in the organisation."],
+      "answer": 0,
+      "explanation": { "en": "Neither has to explain the joke, and each picks up the other's tone immediately.",
+        "ar": "لا أحد منهما مضطر لشرح النكتة، وكلٌّ يلتقط نبرة الآخر فوراً." } },
+
+    { "id": "c2u3-12", "concept": "c2.irony.deadpan", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "thread",
+      "prompt": { "en": "“She likes you too. She just doesn't like the schedule.” What is Rania saying?",
+        "ar": "ماذا تقول رانيا بهاتين الجملتين؟" },
+      "options": ["The problem is the plan, so Tom cannot avoid raising it.",
+                  "Maha dislikes Tom and he should therefore stay away.",
+                  "The schedule was designed by Maha and cannot change.",
+                  "She will raise the issue with Maha herself after all."],
+      "answer": 0,
+      "explanation": { "en": "She removes his excuse gently: the objection is not personal, so his reluctance has no cover.",
+        "ar": "تنزع عذره بلطف: الاعتراض ليس شخصياً، فلم يبقَ لتردّده غطاء." } },
+
+    { "id": "c2u3-13", "concept": "c2.irony.understatement", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Say it plainly: “The launch went about as well as expected.” → “The launch ___ badly.”",
+        "ar": "قلها صراحةً: The launch ___ badly." },
+      "answer": "went",
+      "explanation": { "en": "The understatement and the plain version carry the same information; only the social cost differs.",
+        "ar": "التهوين والصيغة الصريحة يحملان المعلومة نفسها، والفارق في الكلفة الاجتماعية فقط." } },
+
+    { "id": "c2u3-14", "concept": "c2.irony.markers", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which reply signals disagreement without irony?", "ar": "أي رد يُظهر الاعتراض دون سخرية؟" },
+      "options": ["I don't think the 14th is achievable — here's what worries me.",
+                  "Sure, the 14th. That's a completely reasonable request.",
+                  "Oh, the 14th! Why not the 12th while we're at it?",
+                  "The 14th. Of course. Nothing could go wrong there."],
+      "answer": 0,
+      "explanation": { "en": "Irony makes a point at a cost; plain disagreement makes the same point and can be answered.",
+        "ar": "السخرية توصل الفكرة بكلفة، أما الاعتراض الصريح فيوصلها ويمكن الردّ عليه." } },
+
+    { "id": "c2u3-15", "concept": "c2.irony.deadpan", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why is “I was only joking” a poor repair?", "ar": "لماذا تُعدّ عبارة I was only joking اعتذاراً ضعيفاً؟" },
+      "options": ["It denies the effect rather than addressing it.",
+                  "It uses a tense that is wrong in this context.",
+                  "It is too formal for most workplace exchanges.",
+                  "It repeats the joke that caused the problem."],
+      "answer": 0,
+      "explanation": { "en": "The listener's response is the fact in question; intent does not undo it. “That came out wrong — I'm sorry” does.",
+        "ar": "رد فعل المتلقي هو الواقعة محل النظر، والنيّة لا تلغيها. أما عبارة «خرج كلامي على غير ما أردت، آسف» فتفعل." } }
+  ]
+}

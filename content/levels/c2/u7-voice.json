@@ -1,0 +1,239 @@
+{
+  "id": "c2-u7",
+  "goal": {
+    "en": "Track whose words and whose judgement you are reading — and control it in your own writing.",
+    "ar": "أن تتتبّع كلامَ مَن وحُكمَ مَن تقرأ، وأن تتحكم في ذلك في كتابتك."
+  },
+  "passages": {
+    "story": {
+      "title": "From a short story",
+      "text": "Hana put the letter down and looked at the window. Obviously they had never meant to keep her on. Two years of covering for people who took holidays whenever they liked, and this was the thanks. She would not give them the satisfaction of an argument.\n\nHer manager had explained, at some length, that the decision was purely structural. He had used the word restructuring four times. Hana had counted."
+    },
+    "minutes": {
+      "title": "From meeting minutes",
+      "text": "The finance director reported that the overspend was largely attributable to currency movements. Members noted that a similar explanation had been offered in March. It was agreed that a written breakdown would be circulated before the next meeting.\n\nThe head of operations said that the delivery date remained achievable. No supporting timeline was provided."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.voice.free",
+      "title": { "en": "Whose thought is this?", "ar": "فكرةُ مَن هذه؟" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A narrator can slide into a character's mind without any “she thought”. The words stay in third person and past tense, but the judgement belongs to the character. This is free indirect style.",
+          "ar": "قد ينزلق الراوي إلى ذهن الشخصية دون أن يقول «فكّرت». تبقى الكلمات بضمير الغائب وبصيغة الماضي، لكن الحكم للشخصية. وهذا هو الأسلوب غير المباشر الحر." } },
+        { "type": "table", "head": ["Form", "Example"], "rows": [
+          ["direct", "“They never meant to keep me,” she thought."],
+          ["reported", "She thought that they had never meant to keep her."],
+          ["free indirect", "Obviously they had never meant to keep her on."],
+          ["narrator's own", "The company had in fact decided in March."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Words like obviously, of course, surely and typically are the giveaway. A neutral narrator does not find things obvious; a character does.",
+          "ar": "كلمات مثل obviously وof course وsurely هي الدليل. فالراوي المحايد لا يجد الأشياء بديهية، أما الشخصية فتفعل." } }
+      ]
+    },
+    {
+      "id": "c2.voice.attribution",
+      "title": { "en": "Reporting without endorsing", "ar": "النقل دون تبنٍّ" },
+      "teach": [
+        { "type": "table", "head": ["Written", "Commits the writer to"], "rows": [
+          ["The overspend was caused by currency movements.", "the explanation being true"],
+          ["The director reported that it was caused by currency movements.", "only that he said it"],
+          ["The director claimed it was caused by currency movements.", "doubt about it"],
+          ["The overspend was, he said, unavoidable.", "distance, with a hint of doubt"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "In minutes, reports and journalism, attribution is a shield. Dropping it makes you the author of every claim in the room.",
+          "ar": "في المحاضر والتقارير والصحافة تكون نسبة القول درعاً. وإسقاطها يجعلك مؤلف كل دعوى قيلت في الغرفة." } },
+        { "type": "warn", "text": {
+          "en": "The most quietly powerful sentence in minutes is the one with no attribution at all: “No supporting timeline was provided.” Nobody said it; the record says it.",
+          "ar": "أقوى جملة في المحاضر وأهدؤها هي التي بلا نسبة: «لم يُقدَّم جدول زمني داعم». لم يقلها أحد، بل قالها السجل نفسه." } }
+      ]
+    },
+    {
+      "id": "c2.voice.distance",
+      "title": { "en": "Authorial distance", "ar": "مسافة الكاتب" },
+      "teach": [
+        { "type": "table", "head": ["Device", "Effect"], "rows": [
+          ["scare quotes: his “restructuring”", "the writer rejects the word"],
+          ["so-called", "open scepticism"],
+          ["what he described as", "neutral distance"],
+          ["reportedly / allegedly", "legal and evidential caution"],
+          ["a bare fact after a claim", "silent contradiction"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Placing an unadorned fact immediately after a claim is the strongest form of doubt available, because the writer never has to say anything.",
+          "ar": "وضع واقعة مجردة مباشرةً بعد دعوى أقوى صور التشكيك، لأن الكاتب لا يضطر إلى قول شيء." } },
+        { "type": "warn", "text": {
+          "en": "Scare quotes are loud. Used once, they are a judgement; used four times on a page, they are a tantrum.",
+          "ar": "علامات التنصيص الساخرة صاخبة. مرةً واحدة تكون حكماً، وأربع مرات في الصفحة تكون نوبة غضب." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u7-01", "concept": "c2.voice.free", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "story",
+      "prompt": { "en": "“Obviously they had never meant to keep her on.” Whose judgement is this?",
+        "ar": "«Obviously they had never meant to keep her on» حكم مَن هذا؟" },
+      "options": ["Hana's, expressed in the narrator's grammar.",
+                  "The narrator's, stated as established fact.",
+                  "The manager's, quoted from the letter.",
+                  "The company's, taken from its written policy."],
+      "answer": 0,
+      "explanation": { "en": "“Obviously” is a character's certainty; a neutral narrator would have no reason to find it obvious.",
+        "ar": "كلمة obviously يقين شخصية، فالراوي المحايد لا سبب لديه ليجد الأمر بديهياً." } },
+
+    { "id": "c2u7-02", "concept": "c2.voice.free", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence is free indirect style?", "ar": "أي جملة على الأسلوب غير المباشر الحر؟" },
+      "options": ["Of course the train would be late. It always was.",
+                  "“The train will be late again,” she thought bitterly.",
+                  "She thought that the train would probably be late.",
+                  "The train was in fact eleven minutes behind schedule."],
+      "answer": 0,
+      "explanation": { "en": "Third person and past tense, but the exasperation is hers, not the narrator's.",
+        "ar": "ضمير الغائب وصيغة الماضي، لكن الضجر ضجرها هي لا ضجر الراوي." } },
+
+    { "id": "c2u7-03", "concept": "c2.voice.free", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the form with its example.", "ar": "صِل الصيغة بمثالها." },
+      "pairs": [["direct speech", "“They lied to me,” she said."],
+                ["reported speech", "She said that they had lied to her."],
+                ["free indirect style", "They had lied to her, of course."],
+                ["narrator's own voice", "The company had lied in March."]],
+      "explanation": { "en": "Only the last commits the narrator to the truth of the claim.",
+        "ar": "الأخيرة وحدها تُلزم الراوي بصحة الدعوى." } },
+
+    { "id": "c2u7-04", "concept": "c2.voice.free", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "story",
+      "prompt": { "en": "“Two years of covering for people who took holidays whenever they liked.” What is this?",
+        "ar": "ما هذه الجملة؟" },
+      "options": ["Hana's grievance, not a statement of fact by the narrator.",
+                  "A factual summary of her colleagues' behaviour.",
+                  "A line quoted directly from her manager's letter.",
+                  "The narrator's own criticism of the company."],
+      "answer": 0,
+      "explanation": { "en": "It has no verb of its own and no attribution; it is the shape of a complaint being rehearsed in her head.",
+        "ar": "لا فعل لها ولا نسبة، وهي على هيئة شكوى تُعاد في رأسها." } },
+
+    { "id": "c2u7-05", "concept": "c2.voice.free", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "story",
+      "prompt": { "en": "“He had used the word restructuring four times. Hana had counted.” What does the second sentence add?",
+        "ar": "ماذا تضيف الجملة الثانية؟" },
+      "options": ["That her attention had left the content for the performance.",
+                  "That the manager had been speaking for a long time.",
+                  "That the restructuring affected exactly four departments.",
+                  "That she agreed with the explanation she was given."],
+      "answer": 0,
+      "explanation": { "en": "Counting a word is what you do when you have stopped believing the speaker. The narrator never says so.",
+        "ar": "عدّ الكلمة ما تفعله حين تكفّ عن تصديق المتحدث، والراوي لا يقول ذلك أبداً." } },
+
+    { "id": "c2u7-06", "concept": "c2.voice.attribution", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence commits the writer to the explanation being true?",
+        "ar": "أي جملة تُلزم الكاتب بصحة التفسير؟" },
+      "options": ["The overspend was caused by currency movements.",
+                  "The director reported that currency movements were the cause.",
+                  "The director claimed currency movements were the cause.",
+                  "The overspend was, according to the director, unavoidable."],
+      "answer": 0,
+      "explanation": { "en": "With no attribution, the writer is the source. The other three name someone else.",
+        "ar": "بلا نسبة يصير الكاتب هو المصدر، أما الثلاث الأخرى فتسمّي غيره." } },
+
+    { "id": "c2u7-07", "concept": "c2.voice.attribution", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "minutes",
+      "prompt": { "en": "“Members noted that a similar explanation had been offered in March.” What is this doing?",
+        "ar": "ما وظيفة هذه الجملة؟" },
+      "options": ["Recording scepticism without anyone having to voice it.",
+                  "Confirming that the March explanation was correct.",
+                  "Praising the finance director's consistency.",
+                  "Introducing an unrelated item of business."],
+      "answer": 0,
+      "explanation": { "en": "The minute records a fact whose relevance is the doubt it implies — and attributes it to nobody in particular.",
+        "ar": "يسجّل المحضر واقعة تكمن أهميتها في الشك الذي تُلمح إليه، ولا ينسبها إلى أحد بعينه." } },
+
+    { "id": "c2u7-08", "concept": "c2.voice.attribution", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "minutes",
+      "prompt": { "en": "“No supporting timeline was provided.” Why is this sentence powerful?",
+        "ar": "لماذا هذه الجملة قوية؟" },
+      "options": ["It is a bare fact that undermines the claim before it.",
+                  "It names the person responsible for the omission.",
+                  "It accuses the head of operations of dishonesty.",
+                  "It commits the committee to a course of action."],
+      "answer": 0,
+      "explanation": { "en": "Nobody is accused of anything, and the claim is left standing next to its own missing evidence.",
+        "ar": "لا أحد يُتَّهم بشيء، وتُترك الدعوى قائمة إلى جوار دليلها الغائب." } },
+
+    { "id": "c2u7-09", "concept": "c2.voice.attribution", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You are minuting a claim you doubt but cannot disprove. What do you write?",
+        "ar": "تدوّن في المحضر دعوى تشكّ فيها ولا تستطيع دحضها. ماذا تكتب؟" },
+      "options": ["The manager said the date was achievable. No timeline was provided.",
+                  "The manager wrongly claimed that the date was still achievable.",
+                  "The manager, who is often over-optimistic, said it was achievable.",
+                  "The date is achievable, according to the manager, apparently."],
+      "answer": 0,
+      "explanation": { "en": "Attribution plus a bare fact. The others editorialise, which is not a minute-taker's job.",
+        "ar": "نسبة القول ثم واقعة مجردة. أما البقية فتُبدي رأياً، وليس ذلك عمل كاتب المحضر." } },
+
+    { "id": "c2u7-10", "concept": "c2.voice.distance", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "A journalist writes: his “restructuring” programme. What do the quotation marks do?",
+        "ar": "ماذا تفعل علامتا التنصيص هنا؟" },
+      "options": ["Reject the word while still using it.",
+                  "Indicate a direct quotation from a document.",
+                  "Show that the term is a technical one.",
+                  "Mark the word as foreign or unfamiliar."],
+      "answer": 0,
+      "explanation": { "en": "Scare quotes let a writer refuse a word without arguing against it — cheap, effective and easily overused.",
+        "ar": "تتيح هذه العلامات للكاتب رفض الكلمة دون مجادلتها، وهي رخيصة وفعّالة ويسهل الإفراط فيها." } },
+
+    { "id": "c2u7-11", "concept": "c2.voice.distance", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which phrase gives neutral distance rather than open scepticism?",
+        "ar": "أي عبارة تمنح مسافة محايدة لا تشكيكاً صريحاً؟" },
+      "options": ["what he described as a restructuring",
+                  "his so-called restructuring programme",
+                  "his “restructuring” programme, as he puts it",
+                  "the restructuring he supposedly carried out"],
+      "answer": 0,
+      "explanation": { "en": "“What he described as” attributes the word without judging it; the rest signal disbelief.",
+        "ar": "عبارة what he described as تنسب الكلمة دون حكم عليها، أما البقية فتُظهر عدم التصديق." } },
+
+    { "id": "c2u7-12", "concept": "c2.voice.distance", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence overuses distancing devices to the point of tantrum?",
+        "ar": "أي جملة تُفرط في أدوات التباعد حتى تبدو نوبة غضب؟" },
+      "options": ["His so-called “reforms” were allegedly designed to help these “stakeholders”.",
+                  "His reforms were, he said, designed to help local businesses.",
+                  "The reforms he described were intended to help local businesses.",
+                  "He said the reforms would help local businesses. None have opened since."],
+      "answer": 0,
+      "explanation": { "en": "Four distancing devices in one sentence tell the reader about the writer, not the subject.",
+        "ar": "أربع أدوات تباعد في جملة واحدة تخبر القارئ عن الكاتب لا عن الموضوع." } },
+
+    { "id": "c2u7-13", "concept": "c2.voice.distance", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which pairing casts the strongest doubt with the least comment?",
+        "ar": "أي زوج يُلقي أشدّ الشك بأقل تعليق؟" },
+      "options": ["He said the fund was fully independent. Its chair is his brother.",
+                  "He said the fund was supposedly fully and totally independent.",
+                  "He made the frankly incredible claim that the fund was independent.",
+                  "He said the fund was “independent”, which is obviously untrue."],
+      "answer": 0,
+      "explanation": { "en": "Claim, then fact, then silence. The reader draws the conclusion and therefore believes it.",
+        "ar": "دعوى ثم واقعة ثم صمت. يستنتج القارئ بنفسه، ولذلك يصدّق استنتاجه." } },
+
+    { "id": "c2u7-14", "concept": "c2.voice.free", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Turn reported into free indirect: “She thought that they had never trusted her.” → “They had never trusted her, ___ .” (one word)",
+        "ar": "حوّلها إلى الأسلوب غير المباشر الحر بكلمة واحدة: They had never trusted her, ___" },
+      "answer": "obviously", "accept": ["of course", "clearly", "evidently"],
+      "explanation": { "en": "Removing “she thought” and adding a certainty word moves the judgement into her head without saying so.",
+        "ar": "حذف she thought وإضافة كلمة يقين ينقل الحكم إلى ذهنها دون تصريح." } },
+
+    { "id": "c2u7-15", "concept": "c2.voice.attribution", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "minutes",
+      "prompt": { "en": "What overall impression do these minutes leave, without stating it?",
+        "ar": "أي انطباع عام يتركه هذا المحضر دون أن يذكره؟" },
+      "options": ["That both explanations were received with quiet doubt.",
+                  "That the committee accepted both explanations fully.",
+                  "That the finance director was formally reprimanded.",
+                  "That the delivery date has already been abandoned."],
+      "answer": 0,
+      "explanation": { "en": "A repeated explanation, a demand for a breakdown, and a claim with no evidence — the record is doing the arguing.",
+        "ar": "تفسير مكرر، وطلب بيان تفصيلي، ودعوى بلا دليل — فالسجل هو الذي يحاجج." } }
+  ]
+}

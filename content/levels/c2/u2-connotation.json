@@ -1,0 +1,228 @@
+{
+  "id": "c2-u2",
+  "goal": {
+    "en": "Notice the argument hidden inside a word choice — in what you read, and in what you write.",
+    "ar": "أن تلمح الحجّة الكامنة في اختيار الكلمة — فيما تقرأ وفيما تكتب."
+  },
+  "passages": {
+    "reports": {
+      "title": "Two reports of the same event",
+      "text": "A: A crowd of some two thousand demonstrators gathered outside the ministry on Tuesday. Police moved in shortly after midday and the square was cleared within the hour. Twelve people were treated for minor injuries.\n\nB: A mob of around two thousand rioters descended on the ministry on Tuesday. Officers were forced to intervene shortly after midday, and order was restored within the hour. Twelve people sustained minor injuries in the disturbance."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.connotation.loaded",
+      "title": { "en": "The same fact, a different word", "ar": "الحقيقة ذاتها بكلمة مختلفة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Two words can point at the identical thing and take opposite attitudes towards it. Choosing between them is not a stylistic decision; it is an argument made without stating one.",
+          "ar": "قد تشير كلمتان إلى الشيء نفسه وتحملان موقفين متضادين منه. والاختيار بينهما ليس قراراً أسلوبياً بل حجّة تُطرح دون أن تُعلَن." } },
+        { "type": "table", "head": ["Neutral", "Approving", "Disapproving"], "rows": [
+          ["group", "movement", "mob"],
+          ["government", "administration", "regime"],
+          ["protest", "demonstration", "riot"],
+          ["thrifty", "careful with money", "mean"],
+          ["confident", "assured", "arrogant"],
+          ["persistent", "determined", "obstinate"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Ask of any charged word: could I substitute the neutral one and keep every fact? If yes, the extra meaning came from the writer, not the event.",
+          "ar": "اسأل عن أي كلمة محمّلة: هل يمكن استبدال المحايدة بها مع بقاء كل الوقائع؟ فإن أمكن فالمعنى الزائد جاء من الكاتب لا من الحدث." } }
+      ]
+    },
+    {
+      "id": "c2.connotation.agency",
+      "title": { "en": "Who is doing what to whom", "ar": "من يفعل بمن" },
+      "teach": [
+        { "type": "table", "head": ["Version", "What it implies"], "rows": [
+          ["Police cleared the square.", "the police acted"],
+          ["The square was cleared.", "somebody acted; we are not saying who"],
+          ["Order was restored.", "the action was necessary and good"],
+          ["Officers were forced to intervene.", "they had no choice; blame lies elsewhere"],
+          ["Twelve people were injured.", "no cause given"],
+          ["Police injured twelve people.", "cause and responsibility named"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Grammar distributes responsibility. The passive, nominalisation and “was forced to” all move an agent out of view — each is a choice with a consequence.",
+          "ar": "النحو يوزّع المسؤولية. فالمبني للمجهول والصيغ الاسمية وعبارة «اضطُر إلى» كلها تُخرج الفاعل من الصورة، وكل منها اختيار له أثره." } },
+        { "type": "warn", "text": {
+          "en": "This is not a claim that the passive is dishonest. It is a claim that you should know which version you are choosing, and why.",
+          "ar": "ليست هذه دعوى بأن المبني للمجهول خداع، بل دعوى بأن تعرف أي صيغة تختار ولماذا." } }
+      ]
+    },
+    {
+      "id": "c2.connotation.numbers",
+      "title": { "en": "Framing without adjectives", "ar": "التأطير بلا صفات" },
+      "teach": [
+        { "type": "table", "head": ["Framing", "Effect"], "rows": [
+          ["a 5% rise in fees", "sounds modest"],
+          ["fees up by a third since 2020", "sounds severe"],
+          ["nine in ten passed", "success is the story"],
+          ["one in ten failed", "failure is the story"],
+          ["only 200 attended", "a judgement, not a count"],
+          ["as many as 200 attended", "the opposite judgement"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The same number frames itself differently depending on the baseline, the period and the word in front of it. “Only” and “as many as” are arguments disguised as measurement.",
+          "ar": "العدد نفسه يتأطّر تأطيراً مختلفاً بحسب نقطة المقارنة والفترة والكلمة التي تسبقه. فكلمتا only وas many as حجّتان في ثوب قياس." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u2-01", "concept": "c2.connotation.loaded", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reports",
+      "prompt": { "en": "What is the factual difference between report A and report B?",
+        "ar": "ما الفرق الوقائعي بين التقريرين؟" },
+      "options": ["There is none; the facts are identical and only the wording differs.",
+                  "Report B describes a much larger crowd than report A does.",
+                  "Report A says nobody was injured during the incident.",
+                  "Report B reports events that happened on a different day."],
+      "answer": 0,
+      "explanation": { "en": "Same number, same time, same injuries. Every difference is in the connotation of the words chosen.",
+        "ar": "العدد نفسه والوقت نفسه والإصابات نفسها، وكل الفرق في دلالات الكلمات المختارة." } },
+
+    { "id": "c2u2-02", "concept": "c2.connotation.loaded", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reports",
+      "prompt": { "en": "Which pair shows the sharpest shift in attitude?", "ar": "أي زوج يُظهر أحدّ تحوّل في الموقف؟" },
+      "options": ["“demonstrators” against “rioters”", "“Tuesday” against “Tuesday”",
+                  "“midday” against “shortly after midday”", "“twelve” against “twelve people”"],
+      "answer": 0,
+      "explanation": { "en": "“Demonstrator” describes a role; “rioter” convicts the person in a single noun.",
+        "ar": "كلمة demonstrator تصف دوراً، أما rioter فتُدين الشخص بكلمة واحدة." } },
+
+    { "id": "c2u2-03", "concept": "c2.connotation.loaded", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "A writer calls a government a “regime”. What has been done?",
+        "ar": "وصف كاتب حكومةً بأنها regime. ماذا فعل؟" },
+      "options": ["Its legitimacy has been questioned without argument.",
+                  "Its exact form of government has been specified.",
+                  "Its policies have been described in detail.",
+                  "Its age and history have been indicated."],
+      "answer": 0,
+      "explanation": { "en": "“Regime” carries illegitimacy as part of its meaning — the claim arrives already made.",
+        "ar": "كلمة regime تحمل نزع الشرعية في معناها، فتصل الدعوى مصنوعة سلفاً." } },
+
+    { "id": "c2u2-04", "concept": "c2.connotation.loaded", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the neutral word with its disapproving twin.", "ar": "صِل الكلمة المحايدة بتوأمها الحامل للذم." },
+      "pairs": [["thrifty", "mean"], ["confident", "arrogant"],
+                ["persistent", "obstinate"], ["group", "mob"]],
+      "explanation": { "en": "Each pair describes identical behaviour and judges it differently.",
+        "ar": "كل زوج يصف السلوك نفسه ويحكم عليه حكماً مختلفاً." } },
+
+    { "id": "c2u2-05", "concept": "c2.connotation.agency", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reports",
+      "prompt": { "en": "“Officers were forced to intervene.” What does this construction achieve?",
+        "ar": "ماذا يحقق هذا التركيب؟" },
+      "options": ["It removes the choice from the officers and the blame with it.",
+                  "It states precisely how many officers were present that day.",
+                  "It shows the officers acted against the orders they were given.",
+                  "It indicates the intervention happened much later than reported."],
+      "answer": 0,
+      "explanation": { "en": "“Forced to” presents the action as inevitable, which means nobody decided on it.",
+        "ar": "عبارة forced to تعرض الفعل حتمياً، ومعنى ذلك أن لا أحد قرّره." } },
+
+    { "id": "c2u2-06", "concept": "c2.connotation.agency", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence assigns responsibility most clearly?", "ar": "أي جملة تُسند المسؤولية بأوضح صورة؟" },
+      "options": ["Police injured twelve people during the operation.",
+                  "Twelve people were injured during the operation.",
+                  "Twelve people sustained injuries in the disturbance.",
+                  "There were twelve injuries during the operation."],
+      "answer": 0,
+      "explanation": { "en": "Only the first names an agent. The others are true and complete-sounding, and answer no question of cause.",
+        "ar": "الأولى وحدها تسمّي الفاعل، والبقية صحيحة وتبدو تامة لكنها لا تجيب عن سؤال السبب." } },
+
+    { "id": "c2u2-07", "concept": "c2.connotation.agency", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Order was restored.” What does the noun “order” do here?",
+        "ar": "ماذا تفعل كلمة order في هذه الجملة؟" },
+      "options": ["It frames the outcome as good without arguing for it.",
+                  "It specifies which laws were being enforced.",
+                  "It tells us how long the operation lasted.",
+                  "It identifies who gave the original instruction."],
+      "answer": 0,
+      "explanation": { "en": "“Restore” presupposes that what existed before was order and that returning to it is right.",
+        "ar": "فعل restore يفترض أن ما كان قبل هو النظام، وأن العودة إليه صواب." } },
+
+    { "id": "c2u2-08", "concept": "c2.connotation.agency", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You are writing a neutral news report. Which sentence fits?",
+        "ar": "تكتب تقريراً إخبارياً محايداً. أي جملة تناسب؟" },
+      "options": ["Police cleared the square at about one o'clock.",
+                  "Officers heroically restored order to the square.",
+                  "Police finally crushed the protest in the square.",
+                  "The square was cleared, as it had to be, by one."],
+      "answer": 0,
+      "explanation": { "en": "Agent, action, time. The others smuggle in approval or condemnation.",
+        "ar": "فاعل وفعل ووقت. أما البقية فتُهرّب استحساناً أو إدانة." } },
+
+    { "id": "c2u2-09", "concept": "c2.connotation.numbers", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Only 200 people attended.” What has the writer added to the number?",
+        "ar": "ماذا أضاف الكاتب إلى العدد؟" },
+      "options": ["A judgement that 200 is disappointingly few.",
+                  "A margin of error around the figure.",
+                  "The method used to count the crowd.",
+                  "The time at which the count was made."],
+      "answer": 0,
+      "explanation": { "en": "“Only” compares the figure with an expectation the reader is never shown.",
+        "ar": "كلمة only تقارن العدد بتوقّع لا يُعرض على القارئ أبداً." } },
+
+    { "id": "c2u2-10", "concept": "c2.connotation.numbers", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "Fees rose 5% this year, and by a third since 2020. Which framing suits a campaign against the rise?",
+        "ar": "ارتفعت الرسوم ٥٪ هذا العام، والثلث منذ ٢٠٢٠. أي تأطير يناسب حملة ضد الزيادة؟" },
+      "options": ["Fees have risen by a third in five years.",
+                  "Fees have risen by five per cent this year.",
+                  "Fees rose slightly again this academic year.",
+                  "Fees have changed since the 2020 academic year."],
+      "answer": 0,
+      "explanation": { "en": "Both figures are true. The baseline you choose is the argument you are making.",
+        "ar": "كلا الرقمين صحيح، ونقطة المقارنة التي تختارها هي الحجّة التي تسوقها." } },
+
+    { "id": "c2u2-11", "concept": "c2.connotation.numbers", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which pair describes the same result?", "ar": "أي زوج يصف النتيجة نفسها؟" },
+      "options": ["Nine in ten passed / one in ten failed.",
+                  "Nine in ten passed / nine in ten failed.",
+                  "One in ten failed / most candidates failed.",
+                  "Nine in ten passed / the pass rate fell."],
+      "answer": 0,
+      "explanation": { "en": "Identical data, opposite emphasis — which is what a headline writer is choosing between.",
+        "ar": "البيانات نفسها والتركيز معكوس، وهذا ما يختار بينه كاتب العنوان." } },
+
+    { "id": "c2u2-12", "concept": "c2.connotation.loaded", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence describes a colleague without judging them?",
+        "ar": "أي جملة تصف زميلاً دون أن تحكم عليه؟" },
+      "options": ["She raised the same objection at three separate meetings.",
+                  "She kept obstinately raising the same tired objection.",
+                  "She courageously stood up for her objection three times.",
+                  "She would not let her objection go, meeting after meeting."],
+      "answer": 0,
+      "explanation": { "en": "The first reports behaviour; the rest report the writer's opinion of it.",
+        "ar": "الأولى تنقل سلوكاً، والبقية تنقل رأي الكاتب فيه." } },
+
+    { "id": "c2u2-13", "concept": "c2.connotation.agency", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Restore the agent: “Mistakes were made in the handling of the account.” → “We ___ mistakes in handling the account.”",
+        "ar": "أعِد الفاعل: We ___ mistakes in handling the account." },
+      "answer": "made",
+      "explanation": { "en": "One word turns an event that happened to nobody into something someone did.",
+        "ar": "كلمة واحدة تحوّل حدثاً بلا فاعل إلى فعلٍ قام به أحد." } },
+
+    { "id": "c2u2-14", "concept": "c2.connotation.loaded", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "reports",
+      "prompt": { "en": "Which report would you rather read to find out what happened?",
+        "ar": "أي تقرير تفضّل قراءته لتعرف ما حدث؟" },
+      "options": ["A, because it reports actions and leaves the judgement to you.",
+                  "B, because it explains why the police had to act.",
+                  "Neither, since both contain identical wording throughout.",
+                  "B, because it uses more precise and specific vocabulary."],
+      "answer": 0,
+      "explanation": { "en": "A is not neutral by accident — it names agents and avoids words that decide for the reader.",
+        "ar": "حياد التقرير A ليس مصادفة: فهو يسمّي الفاعلين ويتجنّب الكلمات التي تقرّر نيابة عن القارئ." } },
+
+    { "id": "c2u2-15", "concept": "c2.connotation.numbers", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence reports the figure most honestly?", "ar": "أي جملة تنقل الرقم بأمانة أكبر؟" },
+      "options": ["Attendance was 200, down from 260 last year.",
+                  "Only 200 people bothered to attend this year.",
+                  "As many as 200 people attended this year.",
+                  "Attendance was disappointing again this year."],
+      "answer": 0,
+      "explanation": { "en": "It gives the figure and the comparison, and lets the reader judge — which is what honesty costs.",
+        "ar": "تعطي الرقم والمقارنة وتترك الحكم للقارئ، وهذا هو ثمن الأمانة." } }
+  ]
+}

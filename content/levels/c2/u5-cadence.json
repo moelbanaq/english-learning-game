@@ -1,0 +1,202 @@
+{
+  "id": "c2-u5",
+  "goal": {
+    "en": "Use rhythm, repetition and contrast so a sentence lands rather than merely informs.",
+    "ar": "أن توظّف الإيقاع والتكرار والتقابل لتصل الجملة إلى القارئ لا لتخبره فحسب."
+  },
+  "concepts": [
+    {
+      "id": "c2.rhetoric.parallel",
+      "title": { "en": "Parallel structure", "ar": "التوازي في البناء" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Items in a list should share a grammatical shape. When they do, the reader stops noticing the sentence and starts noticing the argument.",
+          "ar": "ينبغي أن تتشارك عناصر القائمة الشكل النحوي نفسه. فإذا فعلت، كفّ القارئ عن ملاحظة الجملة وبدأ يلاحظ الحجّة." } },
+        { "type": "table", "head": ["Broken", "Parallel"], "rows": [
+          ["We need to cut costs, hiring staff and a new system.", "We need to cut costs, hire staff and buy a system."],
+          ["She is clever, hard-working and gets on with people.", "She is clever, hard-working and personable."],
+          ["The plan is bold, it is cheap, and risky too.", "The plan is bold, cheap and risky."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Three is the number that sounds finished. Two feels like a comparison; four begins to feel like a list you are enduring.",
+          "ar": "الثلاثة عدد يوحي بالاكتمال. فالاثنان يبدوان مقارنة، والأربعة تبدأ في الإحساس بأنها قائمة تُحتمل." } }
+      ]
+    },
+    {
+      "id": "c2.rhetoric.antithesis",
+      "title": { "en": "Contrast that sharpens", "ar": "التقابل الذي يُحدّ المعنى" },
+      "teach": [
+        { "type": "table", "head": ["Pattern", "Example"], "rows": [
+          ["not X but Y", "The problem is not the cost but the delay."],
+          ["X, whereas Y", "One team shipped early, whereas the other is still planning."],
+          ["less X than Y", "It is less a policy than an aspiration."],
+          ["X without Y", "Ambition without a timetable is a wish."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Antithesis works because the two halves are built the same way. Break the symmetry and the contrast blurs.",
+          "ar": "ينجح التقابل لأن الشطرين مبنيان على النسق نفسه، فإذا كُسر التماثل تلاشى التضاد." } },
+        { "type": "warn", "text": {
+          "en": "Do not force it. A false antithesis — “this is not a cost, it is an investment” — sounds clever and often hides that both are true.",
+          "ar": "لا تتكلّفه. فالتقابل الزائف مثل «هذه ليست تكلفة بل استثمار» يبدو ذكياً ويُخفي غالباً أن الأمرين صحيحان معاً." } }
+      ]
+    },
+    {
+      "id": "c2.rhetoric.cadence",
+      "title": { "en": "Sentence length as rhythm", "ar": "طول الجملة إيقاعاً" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A page of sentences all the same length reads as a drone, however correct each one is. Vary the length, and put the short sentence where you want the reader to stop.",
+          "ar": "الصفحة التي تتساوى فيها أطوال الجمل تُقرأ رتيبة مهما كانت كل جملة صحيحة. فنوّع الأطوال، وضع الجملة القصيرة حيث تريد أن يتوقف القارئ." } },
+        { "type": "examples", "items": [
+          { "en": "We spent four months rebuilding the process, retraining the staff and rewriting every template we had. None of it worked.",
+            "ar": "أمضينا أربعة أشهر في إعادة بناء العملية وتدريب الموظفين وإعادة كتابة كل نموذج لدينا. لم ينفع شيء من ذلك." },
+          { "en": "It is late, over budget and badly documented. But it works.",
+            "ar": "إنه متأخر ومتجاوز للميزانية وسيّئ التوثيق. لكنه يعمل." }
+        ] },
+        { "type": "rule", "text": {
+          "en": "The short sentence gets its force from the long one before it. Two short sentences in a row spend the effect; a page of them is a different problem.",
+          "ar": "الجملة القصيرة تستمد قوّتها من الطويلة قبلها. فجملتان قصيرتان متتاليتان تستنفدان الأثر، وصفحة كاملة منهما مشكلة أخرى." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u5-01", "concept": "c2.rhetoric.parallel", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence breaks parallel structure?", "ar": "أي جملة تكسر التوازي في البناء؟" },
+      "options": ["We need to cut costs, hiring staff and a new system.",
+                  "We need to cut costs, hire staff and buy a new system.",
+                  "We need lower costs, more staff and a better system.",
+                  "We need to reduce costs, recruit staff and upgrade systems."],
+      "answer": 0,
+      "explanation": { "en": "An infinitive, a gerund and a noun phrase cannot share one list.",
+        "ar": "لا يجتمع في قائمة واحدة مصدرٌ صريح واسم فاعل وعبارة اسمية." } },
+
+    { "id": "c2u5-02", "concept": "c2.rhetoric.parallel", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which description of a candidate is best built?", "ar": "أي وصف لمرشح أفضل بناءً؟" },
+      "options": ["She is clever, hard-working and easy to work with.",
+                  "She is clever, hard-working and gets on with people.",
+                  "She is clever, a hard worker and works well with others.",
+                  "She is clever and hard-working, also good with people."],
+      "answer": 0,
+      "explanation": { "en": "Three adjectival phrases in the same shape; the others mix adjectives with clauses.",
+        "ar": "ثلاث عبارات وصفية على نسق واحد، أما البقية فتخلط الصفات بالجمل." } },
+
+    { "id": "c2u5-03", "concept": "c2.rhetoric.parallel", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why do three parallel items sound finished?", "ar": "لماذا توحي العناصر الثلاثة المتوازية بالاكتمال؟" },
+      "options": ["Two reads as a comparison and four as an unfinished list.",
+                  "Three is the maximum a reader can remember at once.",
+                  "Three items are always more accurate than two.",
+                  "English grammar requires lists of three or more."],
+      "answer": 0,
+      "explanation": { "en": "It is a rhythmic convention, not a rule — but it is a convention readers feel.",
+        "ar": "إنه عرف إيقاعي لا قاعدة، لكنه عرف يحسّه القارئ." } },
+
+    { "id": "c2u5-04", "concept": "c2.rhetoric.parallel", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Make it parallel: “The plan is bold, it is cheap, and risky too.” → “The plan is bold, cheap and ___ .”",
+        "ar": "اجعلها متوازية: The plan is bold, cheap and ___" },
+      "answer": "risky",
+      "explanation": { "en": "Three adjectives, one shape, no repeated verb. The sentence loses four words and gains force.",
+        "ar": "ثلاث صفات بنسق واحد بلا تكرار للفعل. تفقد الجملة أربع كلمات وتكسب قوة." } },
+
+    { "id": "c2u5-05", "concept": "c2.rhetoric.antithesis", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The problem is ___ the cost but the delay.",
+      "options": ["not", "no", "neither", "hardly"], "answer": 0,
+      "explanation": { "en": "“Not X but Y” is the standard antithesis frame, and both halves must be built alike.",
+        "ar": "تركيب not X but Y هو الإطار المعتاد للتقابل، ويجب أن يُبنى الشطران على نسق واحد." } },
+
+    { "id": "c2u5-06", "concept": "c2.rhetoric.antithesis", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which contrast is built symmetrically?", "ar": "أي تقابل مبني بتماثل؟" },
+      "options": ["Ambition without a timetable is only a wish.",
+                  "Ambition, if you have no timetable, is a wish really.",
+                  "Ambition is a wish when a timetable is not there.",
+                  "Having ambition but no timetable means it is a wish."],
+      "answer": 0,
+      "explanation": { "en": "Short, balanced, and the weight falls on the last word — which is where English puts it.",
+        "ar": "قصيرة متوازنة، ويقع الثقل على الكلمة الأخيرة، وهناك تضعه الإنجليزية." } },
+
+    { "id": "c2u5-07", "concept": "c2.rhetoric.antithesis", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "“This is not a cost, it is an investment.” What does this construction hide?",
+        "ar": "ماذا يخفي هذا التركيب؟" },
+      "options": ["That it can be both at the same time.",
+                  "That the amount of money is very small.",
+                  "That the speaker opposes the spending.",
+                  "That the investment has already failed."],
+      "answer": 0,
+      "explanation": { "en": "A false antithesis presents two compatible things as alternatives, and the symmetry does the persuading.",
+        "ar": "التقابل الزائف يعرض أمرين متوافقين على أنهما بديلان، والتماثل هو ما يقوم بالإقناع." } },
+
+    { "id": "c2u5-08", "concept": "c2.rhetoric.antithesis", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the pattern with an example.", "ar": "صِل النمط بمثاله." },
+      "pairs": [["not X but Y", "Not the cost, but the delay."],
+                ["less X than Y", "Less a policy than a hope."],
+                ["X, whereas Y", "One shipped; the other planned."],
+                ["X without Y", "Ambition without a timetable."]],
+      "explanation": { "en": "Each frame sharpens a contrast the reader might otherwise skim past.",
+        "ar": "كل إطار يُحدّ تقابلاً كان القارئ سيمرّ عليه مروراً." } },
+
+    { "id": "c2u5-09", "concept": "c2.rhetoric.cadence", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which pair uses sentence length to best effect?", "ar": "أي زوج يوظّف طول الجملة بأفضل أثر؟" },
+      "options": ["We rebuilt the process, retrained the staff and rewrote every template. None of it worked.",
+                  "We rebuilt the process. We retrained the staff. We rewrote every template. It failed.",
+                  "We rebuilt the process and retrained the staff and rewrote every template and it failed.",
+                  "Having rebuilt the process and retrained the staff, the templates were rewritten in vain."],
+      "answer": 0,
+      "explanation": { "en": "The long sentence builds the effort; the short one demolishes it. That contrast is the point.",
+        "ar": "الجملة الطويلة تبني الجهد، والقصيرة تهدمه، وهذا التقابل هو المقصود." } },
+
+    { "id": "c2u5-10", "concept": "c2.rhetoric.cadence", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Where does a short sentence get its force from?", "ar": "من أين تستمد الجملة القصيرة قوّتها؟" },
+      "options": ["From the longer sentence immediately before it.",
+                  "From the number of syllables it contains.",
+                  "From being placed at the start of a paragraph.",
+                  "From using only words of one syllable."],
+      "answer": 0,
+      "explanation": { "en": "Force is relative. A page of short sentences has no short sentences in the rhetorical sense.",
+        "ar": "القوة نسبية. فصفحةٌ كلها جمل قصيرة لا تحوي جملة قصيرة بالمعنى البلاغي." } },
+
+    { "id": "c2u5-11", "concept": "c2.rhetoric.cadence", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which passage is weakest in rhythm?", "ar": "أي مقطع أضعف إيقاعاً؟" },
+      "options": ["The bid was late. The costing was wrong. The team was tired. We lost it.",
+                  "The bid was late and badly costed, and the team was exhausted. We lost.",
+                  "We lost the bid. It was late, badly costed, and the team was exhausted.",
+                  "Late, badly costed and written by an exhausted team, the bid lost."],
+      "answer": 0,
+      "explanation": { "en": "Four identical short sentences flatten into a drone — the same fault as four identical long ones.",
+        "ar": "أربع جمل قصيرة متطابقة تتحول إلى رتابة، وهو عيب الجمل الطويلة المتطابقة نفسه." } },
+
+    { "id": "c2u5-12", "concept": "c2.rhetoric.cadence", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "All four are short. Which closing lands hardest after a long paragraph?",
+        "ar": "الأربع قصيرة. أي خاتمة أشدّ وقعاً بعد فقرة طويلة؟" },
+      "options": ["It changed nothing.",
+                  "Nothing was changed.",
+                  "No change occurred.",
+                  "Change did not occur."],
+      "answer": 0,
+      "explanation": { "en": "Length is equal, so the work is done by the verb: an active clause with a real subject beats a passive and two nominalisations.",
+        "ar": "الأطوال متساوية، فالعمل هنا للفعل: جملة مبنية للمعلوم بفاعل حقيقي تتفوق على المجهول وعلى صيغتين اسميتين." } },
+
+    { "id": "c2u5-13", "concept": "c2.rhetoric.parallel", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["We", "came", "we", "listened", "and", "we", "changed", "nothing"],
+      "answer": "We came we listened and we changed nothing",
+      "explanation": { "en": "Three parallel clauses, and the last one turns — the shape sets up the sting.",
+        "ar": "ثلاث جمل متوازية تنعطف الأخيرة منها، والبناء هو ما يُعدّ للّسعة." } },
+
+    { "id": "c2u5-14", "concept": "c2.rhetoric.antithesis", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Sharpen the contrast: “The delay is the problem, not the cost.” Begin: “The problem is ___ the cost but the delay.”",
+        "ar": "حدّ التقابل: The problem is ___ the cost but the delay." },
+      "answer": "not",
+      "explanation": { "en": "“Not X but Y” puts the real subject last, where the emphasis falls.",
+        "ar": "تركيب not X but Y يضع الموضوع الحقيقي في الآخر حيث يقع التركيز." } },
+
+    { "id": "c2u5-15", "concept": "c2.rhetoric.cadence", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What is the risk of writing rhetorically in a technical report?",
+        "ar": "ما خطر الكتابة البلاغية في تقرير تقني؟" },
+      "options": ["A neat phrase can carry a claim the evidence does not support.",
+                  "Readers cannot understand parallel structures in reports.",
+                  "Short sentences are not permitted in technical writing.",
+                  "Contrast structures always make a report longer to read."],
+      "answer": 0,
+      "explanation": { "en": "Rhythm persuades independently of evidence, which is exactly why a careful reader distrusts it.",
+        "ar": "الإيقاع يُقنع بمعزل عن الدليل، ولهذا بالذات يرتاب منه القارئ المتأني." } }
+  ]
+}

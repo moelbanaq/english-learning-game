@@ -142,7 +142,21 @@
       },
       "units": [
         { "id": "c2-u1", "file": "levels/c2/u1-naturalness.json", "title": { "en": "Naturalness & tone", "ar": "الطبيعية والنبرة" }, "questions": 15,
-          "concepts": ["c2.naturalness", "c2.idiom", "c2.tone", "c2.discourse"] }
+          "concepts": ["c2.naturalness", "c2.idiom", "c2.tone", "c2.discourse"] },
+        { "id": "c2-u2", "file": "levels/c2/u2-connotation.json", "title": { "en": "Connotation & framing", "ar": "الدلالة الإيحائية والتأطير" }, "questions": 15,
+          "concepts": ["c2.connotation.loaded", "c2.connotation.agency", "c2.connotation.numbers"] },
+        { "id": "c2-u3", "file": "levels/c2/u3-irony.json", "title": { "en": "Irony & understatement", "ar": "السخرية والتهوين" }, "questions": 15,
+          "concepts": ["c2.irony.understatement", "c2.irony.markers", "c2.irony.deadpan"] },
+        { "id": "c2-u4", "file": "levels/c2/u4-ambiguity.json", "title": { "en": "Ambiguity, chosen and not", "ar": "اللبس المقصود وغير المقصود" }, "questions": 15,
+          "concepts": ["c2.ambiguity.structural", "c2.ambiguity.scope", "c2.ambiguity.deliberate"] },
+        { "id": "c2-u5", "file": "levels/c2/u5-cadence.json", "title": { "en": "Rhythm & rhetoric", "ar": "الإيقاع والبلاغة" }, "questions": 15,
+          "concepts": ["c2.rhetoric.parallel", "c2.rhetoric.antithesis", "c2.rhetoric.cadence"] },
+        { "id": "c2-u6", "file": "levels/c2/u6-cliche.json", "title": { "en": "Idiom, metaphor & cliché", "ar": "التعبير والاستعارة والمبتذل" }, "questions": 15,
+          "concepts": ["c2.cliche.dead", "c2.cliche.mixed", "c2.cliche.freshness"] },
+        { "id": "c2-u7", "file": "levels/c2/u7-voice.json", "title": { "en": "Voice & distance", "ar": "الصوت والمسافة" }, "questions": 15,
+          "concepts": ["c2.voice.free", "c2.voice.attribution", "c2.voice.distance"] },
+        { "id": "c2-u8", "file": "levels/c2/u8-editing.json", "title": { "en": "Editing your own prose", "ar": "تحرير نصّك بنفسك" }, "questions": 15,
+          "concepts": ["c2.edit.cutting", "c2.edit.precision", "c2.edit.stranger"] }
       ]
     }
   ]

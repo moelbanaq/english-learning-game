@@ -1,0 +1,216 @@
+{
+  "id": "c2-u4",
+  "goal": {
+    "en": "Spot the second reading of your own sentence before a reader does — and know when to keep it.",
+    "ar": "أن تلمح القراءة الثانية لجملتك قبل أن يلمحها القارئ، وأن تعرف متى تُبقيها."
+  },
+  "concepts": [
+    {
+      "id": "c2.ambiguity.structural",
+      "title": { "en": "Sentences that mean two things", "ar": "جمل تحتمل معنيين" },
+      "teach": [
+        { "type": "table", "head": ["Sentence", "Second reading"], "rows": [
+          ["We discussed the plan to close the site.", "we discussed it in order to close the site"],
+          ["She saw the man with the telescope.", "the man was holding the telescope"],
+          ["Visiting relatives can be tiring.", "relatives who visit are tiring"],
+          ["He told her he had lied on Tuesday.", "the lie happened on Tuesday"],
+          ["The report criticises the manager and the auditor.", "one criticism, two targets — or two reports?"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Ambiguity almost always comes from attachment: which word does this phrase belong to? The cure is to move the phrase, not to add words.",
+          "ar": "ينشأ اللبس غالباً من الارتباط: بأي كلمة تتصل هذه العبارة؟ والعلاج نقل العبارة لا إضافة كلمات." } },
+        { "type": "warn", "text": {
+          "en": "You cannot detect this by rereading your own sentence — you already know what you meant. Read it looking deliberately for the wrong meaning.",
+          "ar": "لن تكتشف هذا بإعادة قراءة جملتك، فأنت تعرف مرادك سلفاً. اقرأها متعمّداً البحث عن المعنى الخاطئ." } }
+      ]
+    },
+    {
+      "id": "c2.ambiguity.scope",
+      "title": { "en": "What “only” and “not” cover", "ar": "مدى كلمتي only و not" },
+      "teach": [
+        { "type": "table", "head": ["Position of only", "Meaning"], "rows": [
+          ["Only I told him the truth.", "nobody else told him"],
+          ["I only told him the truth.", "I did nothing else, or told nobody else"],
+          ["I told only him the truth.", "I told nobody else"],
+          ["I told him only the truth.", "I said nothing false"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“Only” attaches to whatever follows it. In speech, stress fixes the meaning; in writing, position is all you have.",
+          "ar": "ترتبط only بما يليها. وفي الكلام تحدّد النبرةُ المعنى، أما في الكتابة فليس لديك سوى الموضع." } },
+        { "type": "p", "text": {
+          "en": "Negation has the same problem. “All that glitters is not gold” is understood, but it literally says nothing that glitters is gold. Convention rescues the proverb; it will not rescue your report.",
+          "ar": "وللنفي المشكلة نفسها. فجملة All that glitters is not gold مفهومة، لكنها حرفياً تعني أن لا شيء لامع ذهب. والعرف ينقذ المثل، ولن ينقذ تقريرك." } }
+      ]
+    },
+    {
+      "id": "c2.ambiguity.deliberate",
+      "title": { "en": "When ambiguity is the point", "ar": "حين يكون اللبس مقصوداً" },
+      "teach": [
+        { "type": "table", "head": ["Context", "Ambiguity is"], "rows": [
+          ["a contract or a safety notice", "a defect to be removed"],
+          ["a diplomatic communiqué", "a tool for agreeing without agreeing"],
+          ["a job reference", "a way to warn without writing it"],
+          ["a joke", "the mechanism itself"],
+          ["a poem or a headline", "a way to hold two meanings at once"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The question is never whether a sentence is ambiguous, but whether you chose the ambiguity. Unchosen ambiguity is always a fault.",
+          "ar": "السؤال ليس أفي الجملة لبس، بل أأنت اخترت هذا اللبس. فاللبس غير المختار عيبٌ دائماً." } },
+        { "type": "tip", "text": {
+          "en": "“We agree on the need for further discussion” commits both sides to nothing. That is not sloppy writing; it is precisely engineered.",
+          "ar": "عبارة «نتفق على الحاجة إلى مزيد من النقاش» لا تُلزم أحداً بشيء، وليست كتابة رخوة بل هندسة دقيقة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u4-01", "concept": "c2.ambiguity.structural", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“She saw the man with the telescope.” What is the second reading?",
+        "ar": "ما القراءة الثانية لهذه الجملة؟" },
+      "options": ["The man was carrying the telescope.",
+                  "She used a telescope to see the man.",
+                  "The man was standing near a telescope.",
+                  "She bought a telescope from the man."],
+      "answer": 0,
+      "explanation": { "en": "“With the telescope” can attach to “saw” or to “the man” — classic attachment ambiguity.",
+        "ar": "عبارة with the telescope قد تتصل بالفعل saw أو بالاسم the man، وهو لبس ارتباط كلاسيكي." } },
+
+    { "id": "c2u4-02", "concept": "c2.ambiguity.structural", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence is ambiguous in a way the writer probably did not intend?",
+        "ar": "أي جملة فيها لبس لم يقصده الكاتب على الأرجح؟" },
+      "options": ["The board discussed the plan to close the northern site.",
+                  "The board met to discuss closing the northern site.",
+                  "The board discussed a proposal for closing the site.",
+                  "The board considered whether to close the northern site."],
+      "answer": 0,
+      "explanation": { "en": "It can mean they discussed a closure plan, or met in order to close the site. The others fix the reading.",
+        "ar": "قد تعني أنهم ناقشوا خطة الإغلاق، أو أنهم اجتمعوا كي يُغلقوا الموقع. والبقية تُثبّت المعنى." } },
+
+    { "id": "c2u4-03", "concept": "c2.ambiguity.structural", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "How do you fix “He told her he had lied on Tuesday”?", "ar": "كيف تعالج هذا اللبس؟" },
+      "options": ["Move the time phrase: “On Tuesday he told her he had lied.”",
+                  "Add a comma: “He told her, he had lied on Tuesday.”",
+                  "Change the tense: “He tells her he lied on Tuesday.”",
+                  "Add a word: “He definitely told her he had lied on Tuesday.”"],
+      "answer": 0,
+      "explanation": { "en": "Ambiguity of attachment is cured by moving the phrase, not by punctuation or emphasis.",
+        "ar": "لبس الارتباط يُعالَج بنقل العبارة لا بعلامات الترقيم ولا بالتوكيد." } },
+
+    { "id": "c2u4-04", "concept": "c2.ambiguity.structural", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Visiting relatives can be tiring.” Which pair of readings is right?",
+        "ar": "أي زوج من القراءات صحيح لهذه الجملة؟" },
+      "options": ["Going to see them is tiring / they are tiring when they visit.",
+                  "They are always tiring / they are never tiring at all.",
+                  "They travel a long way / they arrive without warning.",
+                  "They are tired themselves / they make the journey often."],
+      "answer": 0,
+      "explanation": { "en": "“Visiting” can be a gerund (the act) or a participle modifying “relatives” (the people).",
+        "ar": "كلمة visiting قد تكون مصدراً يدل على الفعل، أو اسم فاعل يصف relatives أي الأشخاص." } },
+
+    { "id": "c2u4-05", "concept": "c2.ambiguity.scope", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence means “I said nothing false to him”?", "ar": "أي جملة تعني «لم أقل له شيئاً كاذباً»؟" },
+      "options": ["I told him only the truth.", "Only I told him the truth.",
+                  "I only told him the truth.", "I told only him the truth."],
+      "answer": 0,
+      "explanation": { "en": "“Only” attaches to what follows it, so it must sit directly before “the truth”.",
+        "ar": "ترتبط only بما يليها، فيجب أن تسبق the truth مباشرة." } },
+
+    { "id": "c2u4-06", "concept": "c2.ambiguity.scope", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence means “nobody else told him”?", "ar": "أي جملة تعني «لم يخبره أحد غيري»؟" },
+      "options": ["Only I told him the truth.", "I told him only the truth.",
+                  "I only told him the truth.", "I told the truth only to him."],
+      "answer": 0,
+      "explanation": { "en": "Placing “only” before “I” restricts the subject rather than the object or the action.",
+        "ar": "وضع only قبل I يقصر الحصر على الفاعل لا على المفعول ولا على الفعل." } },
+
+    { "id": "c2u4-07", "concept": "c2.ambiguity.scope", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "“All that glitters is not gold.” What is the literal reading?",
+        "ar": "ما القراءة الحرفية لهذا المثل؟" },
+      "options": ["Nothing that glitters is gold.",
+                  "Some glittering things are not gold.",
+                  "Everything that is gold glitters.",
+                  "Gold is the only thing that glitters."],
+      "answer": 0,
+      "explanation": { "en": "The negation scopes over “all”. Convention gives us the intended sense; the grammar does not.",
+        "ar": "النفي هنا يشمل all. والعرف هو الذي يمنحنا المعنى المقصود، لا القواعد." } },
+
+    { "id": "c2u4-08", "concept": "c2.ambiguity.scope", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which version states the intended meaning unambiguously?",
+        "ar": "أي صيغة تذكر المعنى المقصود بلا لبس؟" },
+      "options": ["Not everything that glitters is gold.",
+                  "All that glitters is not gold at all.",
+                  "Nothing that glitters is really gold.",
+                  "Everything glittering may not be gold."],
+      "answer": 0,
+      "explanation": { "en": "Moving the negation in front of “everything” makes the scope explicit.",
+        "ar": "تقديم النفي على everything يجعل مدى النفي صريحاً." } },
+
+    { "id": "c2u4-09", "concept": "c2.ambiguity.scope", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match each placement of “only” with its meaning.", "ar": "صِل كل موضع لكلمة only بمعناه." },
+      "pairs": [["Only I told him.", "nobody else told him"],
+                ["I told only him.", "I told nobody else"],
+                ["I told him only the truth.", "I said nothing false"],
+                ["I only told him.", "I did nothing more than tell"]],
+      "explanation": { "en": "Four positions, four meanings — and in writing, position is the only signal you have.",
+        "ar": "أربعة مواضع بأربعة معانٍ، وفي الكتابة لا إشارة لديك سوى الموضع." } },
+
+    { "id": "c2u4-10", "concept": "c2.ambiguity.deliberate", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "Two governments announce: “We agree on the need for further discussion.” What has been agreed?",
+        "ar": "أعلنت حكومتان: «نتفق على الحاجة إلى مزيد من النقاش». على ماذا اتُّفق؟" },
+      "options": ["Nothing of substance; only that talking will continue.",
+                  "A detailed timetable for resolving the dispute.",
+                  "That one side has accepted the other's position.",
+                  "That the discussions have now been concluded."],
+      "answer": 0,
+      "explanation": { "en": "The sentence is engineered to let both sides sign it. That is diplomacy, not vagueness.",
+        "ar": "صيغت الجملة لتمكّن الطرفين من التوقيع عليها، وهذه دبلوماسية لا غموض." } },
+
+    { "id": "c2u4-11", "concept": "c2.ambiguity.deliberate", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "In which context is ambiguity always a defect?", "ar": "في أي سياق يكون اللبس عيباً دائماً؟" },
+      "options": ["A safety instruction on a machine.",
+                  "A newspaper headline about a scandal.",
+                  "A poem about a childhood memory.",
+                  "A joke told among close friends."],
+      "answer": 0,
+      "explanation": { "en": "Where a misreading has physical consequences, a second meaning is a hazard, not a texture.",
+        "ar": "حيث تكون لسوء الفهم عواقب مادية، يصير المعنى الثاني خطراً لا ثراءً." } },
+
+    { "id": "c2u4-12", "concept": "c2.ambiguity.deliberate", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A reference says: “You would be lucky to get him to work for you.” Why is this dangerous to write?",
+        "ar": "لماذا تُعدّ هذه الجملة خطرة في خطاب تزكية؟" },
+      "options": ["It can be read as high praise or as a warning.",
+                  "It uses a conditional where a past tense is needed.",
+                  "It is far too informal for a written reference.",
+                  "It names the candidate directly rather than by role."],
+      "answer": 0,
+      "explanation": { "en": "“Lucky to get him to work” — fortunate to employ him, or unlikely to get any work out of him.",
+        "ar": "قد تعني أنك محظوظ بتوظيفه، وقد تعني أنك بالكاد ستنتزع منه عملاً." } },
+
+    { "id": "c2u4-13", "concept": "c2.ambiguity.structural", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence has only one possible reading?", "ar": "أي جملة لا تحتمل إلا قراءة واحدة؟" },
+      "options": ["Using a telescope, she saw the man on the hill.",
+                  "She saw the man on the hill with the telescope.",
+                  "She saw with the telescope the man on the hill.",
+                  "The man on the hill with the telescope was seen."],
+      "answer": 0,
+      "explanation": { "en": "Fronting the participle clause fixes the instrument to the seeing and leaves nothing to attach elsewhere.",
+        "ar": "تقديم جملة اسم الفاعل يربط الأداة بفعل الرؤية ولا يترك ما يتصل بغيره." } },
+
+    { "id": "c2u4-14", "concept": "c2.ambiguity.structural", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Remove the ambiguity by moving one phrase: “He told her he had resigned on Friday.” Begin: “On Friday ___”",
+        "ar": "أزل اللبس بنقل عبارة واحدة، وابدأ بـ On Friday" },
+      "answer": "he told her he had resigned",
+      "explanation": { "en": "Fronting the time phrase attaches it to the telling, which is presumably what was meant.",
+        "ar": "تقديم عبارة الزمن يربطها بفعل الإخبار، وهو المقصود على الأرجح." } },
+
+    { "id": "c2u4-15", "concept": "c2.ambiguity.deliberate", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You are drafting a safety notice. Which version is right?",
+        "ar": "تكتب لافتة سلامة. أي صيغة صحيحة؟" },
+      "options": ["Do not operate this machine unless a supervisor is present.",
+                  "Do not operate this machine without supervision being present.",
+                  "This machine should not be operated when unsupervised by staff.",
+                  "Operating this machine unsupervised is not to be undertaken."],
+      "answer": 0,
+      "explanation": { "en": "Short, active, one reading. On a safety notice, elegance is worth nothing and clarity is worth everything.",
+        "ar": "قصيرة ومبنية للمعلوم وبقراءة واحدة. وعلى لافتة السلامة لا قيمة للأناقة، والقيمة كلها للوضوح." } }
+  ]
+}
