@@ -1,0 +1,165 @@
+{
+  "id": "a1-u2",
+  "goal": {
+    "en": "Name people and things correctly: pronouns, a/an, and singular vs plural.",
+    "ar": "أن تسمّي الأشخاص والأشياء بدقة: الضمائر، أداة النكرة a/an، والمفرد والجمع."
+  },
+  "concepts": [
+    {
+      "id": "a1.pronouns.subject",
+      "title": { "en": "Subject pronouns", "ar": "ضمائر الفاعل" },
+      "teach": [
+        { "type": "table", "head": ["Pronoun", "Use it for", "Example"], "rows": [
+          ["I", "yourself", "I work here."],
+          ["you", "the person you speak to", "You are right."],
+          ["he / she", "one man / one woman", "She works at a bank."],
+          ["it", "a thing, an animal, the weather", "It is a big city."],
+          ["we", "you + others", "We live in Cairo."],
+          ["they", "more than one person or thing", "They are new."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "English always needs a subject. Even when nothing is really doing anything, we use “it”: It is raining. It is late.",
+          "ar": "الجملة الإنجليزية لا بد لها من فاعل ظاهر. وحتى حين لا يوجد فاعل حقيقي نستخدم it مثل: It is raining. وهذا يختلف عن العربية التي تقول «تمطر» بلا فاعل." } },
+        { "type": "warn", "text": {
+          "en": "Do not repeat the subject: “My father he is a doctor” is wrong. Say “My father is a doctor.”",
+          "ar": "لا تكرّر الفاعل: My father he is a doctor خطأ شائع نقلاً عن العربية «أبي هو طبيب». الصواب My father is a doctor." } }
+      ]
+    },
+    {
+      "id": "a1.articles.aan",
+      "title": { "en": "a / an", "ar": "أداة النكرة a / an" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Use “a” before a consonant sound and “an” before a vowel sound: a book, an apple, an hour, a university.",
+          "ar": "نستخدم a قبل الصوت الساكن وan قبل الصوت المتحرك. والعبرة بالصوت لا بالحرف: an hour لأن H لا تُنطق، وa university لأنها تُنطق «يو»." } },
+        { "type": "p", "text": {
+          "en": "Arabic has no separate word for “a”. In English, a singular countable noun almost never stands alone.",
+          "ar": "العربية تعبّر عن التنكير بغياب «الـ»، أما الإنجليزية فتضع كلمة مستقلة. لذلك لا يصح ترك الاسم المفرد المعدود بلا أداة." } },
+        { "type": "examples", "items": [
+          { "en": "I have a car.", "ar": "عندي سيارة." },
+          { "en": "She is an engineer.", "ar": "هي مهندسة." },
+          { "en": "It is an old house.", "ar": "إنه بيت قديم." }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.nouns.plural",
+      "title": { "en": "Singular & plural", "ar": "المفرد والجمع" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Most nouns add -s. Add -es after s, sh, ch, x (boxes, watches). A consonant + y becomes -ies (city → cities).",
+          "ar": "الأغلب يأخذ s. ونضيف es بعد s وsh وch وx مثل boxes. وإذا سُبقت y بحرف ساكن صارت ies مثل city → cities." } },
+        { "type": "table", "head": ["Singular", "Plural"], "rows": [
+          ["book", "books"], ["box", "boxes"], ["city", "cities"],
+          ["child", "children"], ["man", "men"], ["woman", "women"], ["person", "people"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "There is no dual form in English. Two of anything is simply plural: two brothers, two hours.",
+          "ar": "لا يوجد مثنى في الإنجليزية. الاثنان يعاملان معاملة الجمع: two brothers وليس صيغة خاصة للمثنى." } },
+        { "type": "tip", "text": {
+          "en": "Numbers and “many” do not change the noun's need for a plural: five books, many students.",
+          "ar": "بعد الأعداد وmany يبقى الاسم جمعاً: five books وليس five book." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u2-01", "concept": "a1.pronouns.subject", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "My sister is a nurse. ___ works at the hospital.", "options": ["She", "He", "It", "They"], "answer": 0,
+      "explanation": { "en": "“My sister” is one woman → she.", "ar": "«أختي» مؤنث مفرد، فالضمير هو she." } },
+
+    { "id": "a1u2-02", "concept": "a1.pronouns.subject", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "Cairo is big. ___ is very crowded.", "options": ["It", "He", "She", "They"], "answer": 0,
+      "explanation": { "en": "Cities and things take “it”.", "ar": "الأشياء والمدن تأخذ الضمير it." } },
+
+    { "id": "a1u2-03", "concept": "a1.pronouns.subject", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["My father is a teacher.", "My father he is a teacher.", "He is a teacher.", "My father works at a school."],
+      "answer": 1,
+      "explanation": { "en": "“My father” is already the subject, so “he” is repeated and must be deleted.",
+        "ar": "«My father» هو الفاعل، فوجود he بعده تكرار. الصواب حذف الضمير." },
+      "commonMistake": { "en": "Arabic often adds a pronoun for emphasis (أبي هو طبيب). English does not allow it in a plain statement.",
+        "ar": "العربية تضيف ضمير الفصل للتوكيد، لكن الإنجليزية لا تقبله في الجملة العادية." } },
+
+    { "id": "a1u2-04", "concept": "a1.pronouns.subject", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ is raining, so take an umbrella.", "options": ["It", "There", "He", "This"], "answer": 0,
+      "explanation": { "en": "Weather sentences always start with “it”.", "ar": "جمل الطقس تبدأ دائماً بـ it لأن الإنجليزية تحتاج فاعلاً ظاهراً." } },
+
+    { "id": "a1u2-05", "concept": "a1.articles.aan", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "She has ___ orange in her bag.", "options": ["an", "a", "the", "—"], "answer": 0,
+      "explanation": { "en": "“Orange” starts with a vowel sound → an.", "ar": "كلمة orange تبدأ بصوت متحرك، فنستخدم an." } },
+
+    { "id": "a1u2-06", "concept": "a1.articles.aan", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I waited for ___ hour.", "options": ["an", "a", "the", "—"], "answer": 0,
+      "explanation": { "en": "The “h” in hour is silent, so the word begins with a vowel sound: an hour.",
+        "ar": "حرف الـ h في hour لا يُنطق، فالكلمة تبدأ بصوت متحرك: an hour. القاعدة على الصوت لا على الحرف." } },
+
+    { "id": "a1u2-07", "concept": "a1.articles.aan", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "He studies at ___ university in Amman.", "options": ["a", "an", "the", "—"], "answer": 0,
+      "explanation": { "en": "“University” begins with the sound “you”, a consonant sound → a university.",
+        "ar": "كلمة university تبدأ بصوت «يو» وهو صوت ساكن، فنقول a university رغم أن أولها حرف متحرك." } },
+
+    { "id": "a1u2-08", "concept": "a1.articles.aan", "type": "choice", "format": "choose_sentence", "difficulty": 2,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["He is engineer.", "He is an engineer.", "He is a engineer.", "He is the engineer of."],
+      "answer": 1,
+      "explanation": { "en": "Jobs need an article in English, and “engineer” takes “an”.",
+        "ar": "المهن في الإنجليزية تحتاج أداة نكرة، وengineer تبدأ بصوت متحرك فتأخذ an." } },
+
+    { "id": "a1u2-09", "concept": "a1.nouns.plural", "type": "text", "format": "write", "difficulty": 1,
+      "prompt": { "en": "Write the plural of “box”.", "ar": "اكتب جمع كلمة box." },
+      "answer": "boxes",
+      "explanation": { "en": "Nouns ending in -x add -es.", "ar": "الأسماء المنتهية بـ x تأخذ es." } },
+
+    { "id": "a1u2-10", "concept": "a1.nouns.plural", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Write the plural of “city”.", "ar": "اكتب جمع كلمة city." },
+      "answer": "cities",
+      "explanation": { "en": "Consonant + y → -ies.", "ar": "إذا سبق y حرف ساكن نحذفها ونضيف ies." } },
+
+    { "id": "a1u2-11", "concept": "a1.nouns.plural", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "There are three ___ in the room.", "options": ["children", "childs", "childrens", "child"], "answer": 0,
+      "explanation": { "en": "“Child” has an irregular plural: children (no extra -s).",
+        "ar": "جمع child شاذ وهو children، ولا نضيف إليه s أخرى." } },
+
+    { "id": "a1u2-12", "concept": "a1.nouns.plural", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I have two ___ and one sister.", "options": ["brothers", "brother", "brothren", "brothers'"], "answer": 0,
+      "explanation": { "en": "English has no dual: two brothers is plural like any other number above one.",
+        "ar": "لا مثنى في الإنجليزية، فالاثنان جمع: two brothers." } },
+
+    { "id": "a1u2-13", "concept": "a1.nouns.plural", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the singular with its plural.", "ar": "صِل المفرد بجمعه." },
+      "pairs": [["man", "men"], ["watch", "watches"], ["baby", "babies"], ["person", "people"]],
+      "explanation": { "en": "Some plurals are regular (-es, -ies) and some are irregular (men, people).",
+        "ar": "بعض الجموع قياسية مثل watches وbabies، وبعضها شاذ مثل men وpeople." } },
+
+    { "id": "a1u2-14", "concept": "a1.nouns.plural", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["There are many students here.", "I bought five book yesterday.", "She has two cats.", "We met three people."],
+      "answer": 1,
+      "explanation": { "en": "After a number greater than one, the noun must be plural: five books.",
+        "ar": "بعد العدد الأكبر من واحد يجب جمع الاسم: five books." } },
+
+    { "id": "a1u2-15", "concept": "a1.articles.aan", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["She", "is", "a", "student", "at", "school"], "answer": "She is a student at school",
+      "explanation": { "en": "Subject + be + a + noun + place.", "ar": "الفاعل ثم فعل الكون ثم أداة النكرة ثم الاسم ثم المكان." } },
+
+    { "id": "a1u2-16", "concept": "a1.pronouns.subject", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["They", "are", "my", "new", "neighbours"], "answer": "They are my new neighbours",
+      "accept": ["They are my new neighbors"],
+      "explanation": { "en": "Adjectives come before the noun in English: my new neighbours.",
+        "ar": "الصفة في الإنجليزية تسبق الاسم: my new neighbours، بعكس العربية «جيراني الجدد»." } },
+
+    { "id": "a1u2-17", "concept": "a1.articles.aan", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Would you like ___ apple or ___ banana?", "options": ["an / a", "a / an", "an / an", "a / a"], "answer": 0,
+      "explanation": { "en": "Apple starts with a vowel sound (an), banana with a consonant sound (a).",
+        "ar": "apple تبدأ بصوت متحرك فتأخذ an، وbanana تبدأ بصوت ساكن فتأخذ a." } },
+
+    { "id": "a1u2-18", "concept": "a1.nouns.plural", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "Choose the correct sentence.", "ar": "اختر الجملة الصحيحة." },
+      "options": ["The people is waiting outside.", "The people are waiting outside.", "The peoples are waiting outside.", "The person are waiting outside."],
+      "answer": 1,
+      "explanation": { "en": "“People” is already plural, so it takes “are”. “Peoples” means nations, not persons.",
+        "ar": "كلمة people جمع في ذاتها فتأخذ are. أما peoples فتعني «شعوباً» وليس أشخاصاً." } }
+  ]
+}

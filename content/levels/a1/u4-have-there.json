@@ -1,0 +1,147 @@
+{
+  "id": "a1-u4",
+  "goal": {
+    "en": "Say what you own and what exists around you: have / have got, there is / there are, some and any.",
+    "ar": "أن تعبّر عمّا تملك وعمّا يوجد حولك: have got، وthere is/are، وsome وany."
+  },
+  "concepts": [
+    {
+      "id": "a1.have.got",
+      "title": { "en": "have / have got", "ar": "التعبير عن الملكية" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "I/you/we/they have. He/she/it has. British English often adds “got”: I've got a car = I have a car.",
+          "ar": "نستخدم have مع I/you/we/they وhas مع he/she/it. والإنجليزية البريطانية تضيف got: I've got a car بنفس معنى I have a car." } },
+        { "type": "examples", "items": [
+          { "en": "I have two brothers.", "ar": "لديّ أخوان." },
+          { "en": "She has a new phone.", "ar": "لديها هاتف جديد." },
+          { "en": "We don't have time.", "ar": "ليس لدينا وقت." },
+          { "en": "Do you have a pen?", "ar": "هل معك قلم؟" }
+        ] },
+        { "type": "warn", "text": {
+          "en": "English says “I have a headache”, “I am 20 years old”, “I am hungry” — not “I have 20 years” or “I have hunger”.",
+          "ar": "انتبه للفرق عن العربية: نقول I am 20 years old لا I have 20 years، ونقول I am hungry لا I have hunger. لكن نقول I have a headache." } }
+      ]
+    },
+    {
+      "id": "a1.there.isare",
+      "title": { "en": "there is / there are", "ar": "there is و there are" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Use “there is” + singular, “there are” + plural, to say that something exists: There is a bank near here. There are two banks.",
+          "ar": "نستخدم there is مع المفرد وthere are مع الجمع للدلالة على الوجود: هناك بنك قريب / هناك بنكان." } },
+        { "type": "p", "text": {
+          "en": "“There” here does not mean “in that place”. It is a grammar word that introduces existence — like «يوجد» in Arabic.",
+          "ar": "كلمة there هنا ليست ظرف مكان، بل أداة تُستخدم للدلالة على الوجود، وتقابل «يوجد» في العربية." } },
+        { "type": "examples", "items": [
+          { "en": "There is a problem with the car.", "ar": "توجد مشكلة في السيارة." },
+          { "en": "There are many people outside.", "ar": "يوجد أشخاص كثيرون في الخارج." },
+          { "en": "Is there a pharmacy near here?", "ar": "هل يوجد صيدلية قريبة؟" }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.some.any",
+      "title": { "en": "some / any", "ar": "some و any" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Use “some” in positive sentences and “any” in negatives and questions: I have some money. I don't have any money. Do you have any money?",
+          "ar": "نستخدم some في الإثبات، وany في النفي والسؤال: لديّ بعض المال / ليس لديّ مال / هل لديك مال؟" } },
+        { "type": "tip", "text": {
+          "en": "Use “some” in a question when you offer or request something: Would you like some tea?",
+          "ar": "نستخدم some في السؤال عند العرض أو الطلب: Would you like some tea? لأن المتوقع هو القبول." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u4-01", "concept": "a1.have.got", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "She ___ a big family.", "options": ["has", "have", "is", "haves"], "answer": 0,
+      "explanation": { "en": "he/she/it → has.", "ar": "مع he/she/it نستخدم has." } },
+
+    { "id": "a1u4-02", "concept": "a1.have.got", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "They ___ two cars.", "options": ["have", "has", "are", "having"], "answer": 0,
+      "explanation": { "en": "they → have.", "ar": "مع they نستخدم have." } },
+
+    { "id": "a1u4-03", "concept": "a1.have.got", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My sister is 24. She ___ 24 years old.", "options": ["is", "has", "have", "was"], "answer": 0,
+      "explanation": { "en": "English uses “be” for age, not “have”.",
+        "ar": "الإنجليزية تعبّر عن العمر بفعل الكون: She is 24 years old، خلافاً للعربية التي تقول «عمرها ٢٤»." },
+      "commonMistake": { "en": "“She has 24 years” is a direct translation and sounds wrong in English.",
+        "ar": "جملة She has 24 years ترجمة حرفية خاطئة." } },
+
+    { "id": "a1u4-04", "concept": "a1.have.got", "type": "choice", "format": "choose_sentence", "difficulty": 2,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["He doesn't has a job.", "He doesn't have a job.", "He don't have a job.", "He not have a job."],
+      "answer": 1,
+      "explanation": { "en": "After doesn't, use the base form: have.", "ar": "بعد doesn't يأتي الفعل مجرداً: have." } },
+
+    { "id": "a1u4-05", "concept": "a1.have.got", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Rewrite with “have got”: “I have a bicycle.”", "ar": "أعد الكتابة باستخدام have got." },
+      "answer": "i've got a bicycle", "accept": ["i have got a bicycle"],
+      "explanation": { "en": "have got = have (possession). The short form I've got is the most natural in speech.",
+        "ar": "have got تعني have في الملكية، والأشيع في الحديث هو I've got." } },
+
+    { "id": "a1u4-06", "concept": "a1.there.isare", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "___ a good restaurant on this street.", "options": ["There is", "There are", "It is", "There have"], "answer": 0,
+      "explanation": { "en": "One restaurant → there is.", "ar": "مطعم واحد، فنستخدم there is." } },
+
+    { "id": "a1u4-07", "concept": "a1.there.isare", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ thirty students in my class.", "options": ["There are", "There is", "They are", "It has"], "answer": 0,
+      "explanation": { "en": "Thirty students is plural → there are.", "ar": "ثلاثون طالباً جمع، فنستخدم there are." } },
+
+    { "id": "a1u4-08", "concept": "a1.there.isare", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["There is a museum in the city.", "There are some shops near my house.", "It has a museum in the city.", "There isn't a hospital here."],
+      "answer": 2,
+      "explanation": { "en": "To say something exists, English uses “there is/are”, not “it has”.",
+        "ar": "للدلالة على الوجود نستخدم there is/are ولا نقول it has، وهي ترجمة حرفية عن لغات أخرى." } },
+
+    { "id": "a1u4-09", "concept": "a1.there.isare", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["Is", "there", "a", "bank", "near", "here"], "answer": "Is there a bank near here",
+      "explanation": { "en": "In questions, “is” comes before “there”.", "ar": "في السؤال يتقدّم is على there." } },
+
+    { "id": "a1u4-10", "concept": "a1.there.isare", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "___ any milk in the fridge?", "options": ["Is there", "Are there", "Have there", "Is it"], "answer": 0,
+      "explanation": { "en": "“Milk” is uncountable, so it is treated as singular: Is there any milk?",
+        "ar": "كلمة milk غير معدودة فتعامل معاملة المفرد: Is there any milk?" } },
+
+    { "id": "a1u4-11", "concept": "a1.some.any", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I have ___ questions about the lesson.", "options": ["some", "any", "a", "much"], "answer": 0,
+      "explanation": { "en": "Positive sentence → some.", "ar": "الجملة مثبتة، فنستخدم some." } },
+
+    { "id": "a1u4-12", "concept": "a1.some.any", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "We don't have ___ sugar at home.", "options": ["any", "some", "a", "the"], "answer": 0,
+      "explanation": { "en": "Negative sentence → any.", "ar": "الجملة منفية، فنستخدم any." } },
+
+    { "id": "a1u4-13", "concept": "a1.some.any", "type": "choice", "format": "mcq", "difficulty": 3,
+      "prompt": { "en": "You are offering tea to a guest. What do you say?", "ar": "تعرض الشاي على ضيف. ماذا تقول؟" },
+      "options": ["Would you like some tea?", "Would you like any tea?", "Do you like any tea?", "You want tea?"],
+      "answer": 0,
+      "explanation": { "en": "In offers and requests we use “some”, and “Would you like…?” is the polite form.",
+        "ar": "في العرض والطلب نستخدم some، وصيغة Would you like هي المهذبة." } },
+
+    { "id": "a1u4-14", "concept": "a1.some.any", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["There aren't any chairs.", "Do you have some information?", "I need some help.", "She doesn't want any coffee."],
+      "answer": 1,
+      "explanation": { "en": "A neutral question uses “any”: Do you have any information? (“some” is only for offers/requests.)",
+        "ar": "السؤال المحايد يستخدم any: Do you have any information? أما some فتُستخدم في العرض والطلب." } },
+
+    { "id": "a1u4-15", "concept": "a1.have.got", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the two halves.", "ar": "صِل بين نصفي الجملة." },
+      "pairs": [["I have", "a headache today."], ["She has", "long hair."], ["We don't have", "enough time."], ["Do you have", "an appointment?"]],
+      "explanation": { "en": "have/has for possession, don't/doesn't have for the negative, do/does have for questions.",
+        "ar": "have/has للملكية، والنفي بـ don't/doesn't have، والسؤال بـ do/does have." } },
+
+    { "id": "a1u4-16", "concept": "a1.there.isare", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "___ a table, four chairs and a lamp in the room.", "options": ["There is", "There are", "It is", "There has"], "answer": 0,
+      "explanation": { "en": "With a list, English matches the verb to the FIRST item: “a table” is singular → there is.",
+        "ar": "عند تعداد أشياء، يوافق الفعل أول عنصر في القائمة، و«a table» مفرد فنستخدم there is." } },
+
+    { "id": "a1u4-17", "concept": "a1.some.any", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["There", "aren't", "any", "buses", "after", "midnight"], "answer": "There aren't any buses after midnight",
+      "explanation": { "en": "Negative existence + any + plural noun.", "ar": "نفي الوجود مع any واسم جمع." } }
+  ]
+}

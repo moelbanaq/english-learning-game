@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://masar-english/schema/unit.schema.json",
+  "title": "Masar English unit",
+  "type": "object",
+  "required": ["id", "concepts", "questions"],
+  "properties": {
+    "id": { "type": "string", "description": "Must match the id in curriculum.json" },
+    "goal": { "$ref": "#/$defs/bilingual", "description": "What the learner will be able to do" },
+    "passages": {
+      "type": "object",
+      "description": "Reading texts, referenced by questions through passageId",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["text"],
+        "properties": { "title": { "type": "string" }, "text": { "type": "string" } }
+      }
+    },
+    "concepts": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "teach"],
+        "properties": {
+          "id": { "type": "string", "description": "Globally unique, e.g. a1.present.negative" },
+          "title": { "$ref": "#/$defs/bilingual" },
+          "teach": {
+            "type": "array", "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["type"],
+              "properties": {
+                "type": { "enum": ["p", "rule", "tip", "warn", "examples", "table"] },
+                "text": { "$ref": "#/$defs/bilingual" },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["en"],
+                    "properties": { "en": { "type": "string" }, "ar": { "type": "string" }, "note": { "type": "string" } }
+                  }
+                },
+                "head": { "type": "array", "items": { "type": "string" } },
+                "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "questions": { "type": "array", "minItems": 8, "items": { "$ref": "question.schema.json" } }
+  },
+  "$defs": {
+    "bilingual": {
+      "type": "object",
+      "properties": { "en": { "type": "string" }, "ar": { "type": "string" } },
+      "required": ["en"]
+    }
+  }
+}

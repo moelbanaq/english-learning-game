@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://masar-english/schema/question.schema.json",
+  "title": "Masar English question",
+  "type": "object",
+  "required": ["id", "concept", "type", "difficulty", "explanation"],
+  "properties": {
+    "id": { "type": "string", "description": "Globally unique, e.g. a1u1-07" },
+    "concept": { "type": "string", "description": "Concept id declared by the unit, e.g. a1.be.negative" },
+    "type": {
+      "enum": ["choice", "text", "order", "match"],
+      "description": "How the learner interacts with the question"
+    },
+    "format": {
+      "enum": ["mcq", "fill_blank", "choose_sentence", "error_id", "meaning", "synonym", "collocation",
+               "phrasal", "natural", "register", "transform", "order", "match", "comprehension", "write", "inference"],
+      "description": "Pedagogical label shown as a chip above the question"
+    },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "sentence": { "type": "string", "description": "Sentence with ___ marking the gap" },
+    "prompt": { "$ref": "#/$defs/bilingual" },
+    "passageId": { "type": "string", "description": "Key into the unit's `passages` map" },
+    "options": { "type": "array", "items": { "type": "string" }, "minItems": 2, "description": "choice only" },
+    "answer": {
+      "description": "choice: index of the correct option · text/order: the correct string",
+      "oneOf": [{ "type": "integer" }, { "type": "string" }]
+    },
+    "accept": { "type": "array", "items": { "type": "string" }, "description": "Other answers counted as correct" },
+    "tokens": { "type": "array", "items": { "type": "string" }, "description": "order only: the words to arrange" },
+    "pairs": {
+      "type": "array", "description": "match only: [left, right] pairs; right-hand items must be unique",
+      "items": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 }
+    },
+    "explanation": { "$ref": "#/$defs/bilingual", "description": "Why the answer is right — required" },
+    "commonMistake": { "$ref": "#/$defs/bilingual", "description": "The Arabic-speaker trap this question targets" },
+    "hint": { "type": "string" },
+    "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"], "description": "Placement test only" }
+  },
+  "$defs": {
+    "bilingual": {
+      "type": "object",
+      "properties": { "en": { "type": "string" }, "ar": { "type": "string" } },
+      "required": ["en"]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "a1-u1",
+  "goal": {
+    "en": "Say who you are, where you are and how you feel — the sentence pattern almost every English conversation starts with.",
+    "ar": "أن تقول من أنت وأين أنت وكيف حالك — وهو النمط الذي تبدأ به معظم المحادثات الإنجليزية."
+  },
+  "concepts": [
+    {
+      "id": "a1.be.affirmative",
+      "title": { "en": "am · is · are", "ar": "am و is و are" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English sentences need a verb. When you describe someone or something, that verb is “be”: am, is, are.",
+          "ar": "كل جملة إنجليزية تحتاج فعلاً. وعند الوصف يكون الفعل هو «be» بصوره: am / is / are." } },
+        { "type": "table", "head": ["Subject", "be", "Example"], "rows": [
+          ["I", "am", "I am a teacher."],
+          ["he / she / it", "is", "She is at home."],
+          ["you / we / they", "are", "They are Egyptian."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "I → am. He, she, it (one thing) → is. You, we, they (more than one) → are.",
+          "ar": "مع I نستخدم am، ومع المفرد he/she/it نستخدم is، ومع you/we/they نستخدم are." } },
+        { "type": "warn", "text": {
+          "en": "In Arabic you can say “هو طالب” with no verb. English cannot: “He student” is wrong — you must say “He is a student.”",
+          "ar": "في العربية تصح الجملة الاسمية بلا فعل: «هو طالب». أما الإنجليزية فلا تقبل ذلك، فلا تقل He student بل He is a student. هذا أكثر خطأ شائع عند المبتدئين العرب." } },
+        { "type": "examples", "items": [
+          { "en": "I am from Cairo.", "ar": "أنا من القاهرة." },
+          { "en": "She is a doctor.", "ar": "هي طبيبة." },
+          { "en": "We are ready.", "ar": "نحن جاهزون." },
+          { "en": "It is cold today.", "ar": "الجو بارد اليوم." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "In speech we shorten: I'm, he's, she's, it's, you're, we're, they're.",
+          "ar": "في الكلام نختصر: I'm و he's و she's و it's و you're و we're و they're. الاختصار هو الشائع في الحديث اليومي." } }
+      ]
+    },
+    {
+      "id": "a1.be.negative",
+      "title": { "en": "Making it negative", "ar": "النفي مع be" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Add “not” after am / is / are. Short forms: isn't, aren't. (There is no “amn't” — use “I'm not”.)",
+          "ar": "نضع not بعد am/is/are. والمختصر: isn't و aren't. ولا يوجد amn't، فنقول I'm not." } },
+        { "type": "examples", "items": [
+          { "en": "I am not tired.  →  I'm not tired.", "ar": "لست متعباً." },
+          { "en": "He is not here.  →  He isn't here.", "ar": "هو ليس هنا." },
+          { "en": "They are not students.  →  They aren't students.", "ar": "هم ليسوا طلاباً." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Do not use “don't” with be. “He doesn't be tired” is wrong; say “He isn't tired.”",
+          "ar": "لا تستخدم don't/doesn't مع فعل الكون. الصواب He isn't tired وليس He doesn't be tired." } }
+      ]
+    },
+    {
+      "id": "a1.be.questions",
+      "title": { "en": "Asking questions", "ar": "السؤال بـ be" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "To ask, put be first: Are you ready? Is she a nurse? Am I late?",
+          "ar": "لتكوين السؤال نُقدّم فعل الكون على الفاعل: Are you ready? / Is she a nurse? / Am I late?" } },
+        { "type": "examples", "items": [
+          { "en": "Are you from Morocco? — Yes, I am.", "ar": "هل أنت من المغرب؟ — نعم." },
+          { "en": "Is he your brother? — No, he isn't.", "ar": "هل هو أخوك؟ — لا." },
+          { "en": "Where are you from?", "ar": "من أين أنت؟" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Short answers keep the verb: “Yes, I am.” not “Yes, I'm.” Never contract at the end of a short answer.",
+          "ar": "في الإجابة القصيرة نُبقي الفعل كاملاً: نقول Yes, I am ولا نقول Yes, I'm. الاختصار لا يأتي في نهاية الإجابة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u1-01", "concept": "a1.be.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I ___ a student.", "options": ["am", "is", "are", "be"], "answer": 0,
+      "explanation": { "en": "“I” always takes “am”.", "ar": "الضمير I يأخذ am دائماً." } },
+
+    { "id": "a1u1-02", "concept": "a1.be.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "She ___ my sister.", "options": ["is", "am", "are", "be"], "answer": 0,
+      "explanation": { "en": "he / she / it take “is”.", "ar": "الضمائر المفردة he/she/it تأخذ is." } },
+
+    { "id": "a1u1-03", "concept": "a1.be.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "We ___ at the office.", "options": ["are", "is", "am", "be"], "answer": 0,
+      "explanation": { "en": "we / you / they take “are”.", "ar": "we/you/they تأخذ are." } },
+
+    { "id": "a1u1-04", "concept": "a1.be.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My parents ___ from Alexandria.", "options": ["are", "is", "am", "be"], "answer": 0,
+      "explanation": { "en": "“My parents” = they, so use “are”.", "ar": "«My parents» بمعنى they، أي جمع، فنستخدم are." },
+      "commonMistake": { "en": "Learners often say “My parents is…” because the subject is not a pronoun. Ask yourself: one or more than one?",
+        "ar": "كثيرون يقولون My parents is لأن الفاعل ليس ضميراً. اسأل نفسك: مفرد أم جمع؟" } },
+
+    { "id": "a1u1-05", "concept": "a1.be.affirmative", "type": "choice", "format": "choose_sentence", "difficulty": 2,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["He teacher in a school.", "He is a teacher in a school.", "He is teacher in a school.", "He a teacher in a school."],
+      "answer": 1,
+      "explanation": { "en": "English needs the verb “is” AND the article “a” before a job.",
+        "ar": "الإنجليزية تحتاج الفعل is، وتحتاج أيضاً أداة النكرة a قبل المهنة." },
+      "commonMistake": { "en": "Arabic has no “is” in this sentence type, so it is easy to drop it. Say it aloud with “is” until it feels normal.",
+        "ar": "الجملة الاسمية العربية بلا فعل، فيسهل نسيان is. كرّرها بصوت عالٍ مع is حتى تعتاد عليها." } },
+
+    { "id": "a1u1-06", "concept": "a1.be.affirmative", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Write the short form: “It is” →", "ar": "اكتب الصيغة المختصرة لـ It is" },
+      "answer": "it's", "accept": ["its", "it is"],
+      "explanation": { "en": "It is → it's. The apostrophe replaces the missing “i”.",
+        "ar": "It is تُختصر إلى it's، والفاصلة العليا تحلّ محل الحرف المحذوف." } },
+
+    { "id": "a1u1-07", "concept": "a1.be.affirmative", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Ahmed", "is", "my", "best", "friend"], "answer": "Ahmed is my best friend",
+      "explanation": { "en": "English word order: subject + be + description.",
+        "ar": "ترتيب الجملة الإنجليزية: الفاعل ثم فعل الكون ثم الوصف." } },
+
+    { "id": "a1u1-08", "concept": "a1.be.negative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "He ___ at home. He is at work.", "options": ["isn't", "aren't", "am not", "not is"], "answer": 0,
+      "explanation": { "en": "he → is → isn't.", "ar": "مع he نستخدم is، ونفيها isn't." } },
+
+    { "id": "a1u1-09", "concept": "a1.be.negative", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ hungry, thank you.", "options": ["'m not", "amn't", "don't", "isn't"], "answer": 0,
+      "explanation": { "en": "With “I” the only correct short form is “I'm not”. “Amn't” does not exist in standard English.",
+        "ar": "مع I الصيغة الصحيحة هي I'm not فقط. وكلمة amn't غير موجودة في الإنجليزية الفصيحة." } },
+
+    { "id": "a1u1-10", "concept": "a1.be.negative", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["She isn't ready.", "They aren't at school.", "He doesn't be happy.", "I'm not late."],
+      "answer": 2,
+      "explanation": { "en": "“Be” never uses do/does. The negative of “He is happy” is “He isn't happy.”",
+        "ar": "فعل الكون لا يُنفى بـ do/does. نفي He is happy هو He isn't happy." },
+      "commonMistake": { "en": "Learners mix the two negative systems: do/does for normal verbs, not for be.",
+        "ar": "الخلط بين نظامي النفي: do/does للأفعال العادية، بينما be يُنفى بـ not مباشرة." } },
+
+    { "id": "a1u1-11", "concept": "a1.be.negative", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Make it negative (use the short form): “They are ready.”", "ar": "حوّلها إلى النفي بالصيغة المختصرة: They are ready." },
+      "answer": "they aren't ready", "accept": ["they are not ready", "they're not ready"],
+      "explanation": { "en": "are + not → aren't. “They're not ready” is also natural.",
+        "ar": "are + not تصبح aren't، ويصح أيضاً They're not ready." } },
+
+    { "id": "a1u1-12", "concept": "a1.be.questions", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "___ you a doctor?", "options": ["Are", "Is", "Am", "Do"], "answer": 0,
+      "explanation": { "en": "Questions with “you” start with “Are”.", "ar": "السؤال مع you يبدأ بـ Are." } },
+
+    { "id": "a1u1-13", "concept": "a1.be.questions", "type": "choice", "format": "choose_sentence", "difficulty": 2,
+      "prompt": { "en": "Which question is correct?", "ar": "أي سؤال صحيح؟" },
+      "options": ["Is she your teacher?", "She is your teacher?", "Does she be your teacher?", "Is your teacher she?"],
+      "answer": 0,
+      "explanation": { "en": "In a question, “be” moves in front of the subject: Is + she + …?",
+        "ar": "في السؤال يتقدّم فعل الكون على الفاعل: Is + she + …؟" } },
+
+    { "id": "a1u1-14", "concept": "a1.be.questions", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "“Are you tired?” — Choose the correct short answer.", "ar": "«Are you tired?» — اختر الإجابة القصيرة الصحيحة." },
+      "options": ["Yes, I am.", "Yes, I'm.", "Yes, I do.", "Yes, am I."],
+      "answer": 0,
+      "explanation": { "en": "Short answers never end with a contraction: “Yes, I am.”",
+        "ar": "الإجابة القصيرة لا تنتهي باختصار، فنقول Yes, I am." } },
+
+    { "id": "a1u1-15", "concept": "a1.be.questions", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["Where", "are", "your", "friends"], "answer": "Where are your friends",
+      "explanation": { "en": "Question word + be + subject: Where are your friends?",
+        "ar": "أداة السؤال ثم فعل الكون ثم الفاعل: Where are your friends?" } },
+
+    { "id": "a1u1-16", "concept": "a1.be.questions", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "___ your brothers at university?", "options": ["Are", "Is", "Am", "Be"], "answer": 0,
+      "explanation": { "en": "“Your brothers” is plural → Are.", "ar": "«your brothers» جمع، فنستخدم Are." } },
+
+    { "id": "a1u1-17", "concept": "a1.be.affirmative", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match each subject with a natural sentence ending.", "ar": "صِل كل ضمير بنهاية الجملة المناسبة." },
+      "pairs": [["I", "am from Jordan."], ["She", "is a nurse."], ["They", "are in class now."], ["It", "is very hot today."]],
+      "explanation": { "en": "Each subject takes its own form of “be”.", "ar": "كل ضمير يأخذ صورته من فعل الكون." } },
+
+    { "id": "a1u1-18", "concept": "a1.be.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "My name ___ Layla and I ___ nineteen.", "options": ["is / am", "am / is", "is / is", "are / am"], "answer": 0,
+      "explanation": { "en": "“My name” = it → is. “I” → am. Note that English uses “be” for age: I am nineteen.",
+        "ar": "«My name» بمعنى it فتأخذ is، وI تأخذ am. ولاحظ أن الإنجليزية تعبّر عن العمر بفعل الكون: I am nineteen وليس I have nineteen." },
+      "commonMistake": { "en": "Do not say “I have 19 years”. English: “I am 19 (years old).”",
+        "ar": "لا تقل I have 19 years؛ الصواب I am 19 years old." } }
+  ]
+}

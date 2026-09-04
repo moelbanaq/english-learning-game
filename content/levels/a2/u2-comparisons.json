@@ -1,0 +1,148 @@
+{
+  "id": "a2-u2",
+  "goal": {
+    "en": "Compare people, places and choices, and talk about quantity accurately.",
+    "ar": "أن تقارن بين الأشخاص والأماكن والخيارات، وأن تعبّر عن الكمية بدقة."
+  },
+  "concepts": [
+    {
+      "id": "a2.comparatives",
+      "title": { "en": "Comparatives", "ar": "اسم التفضيل (المقارنة)" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Short adjectives add -er + than (cheaper than). Long adjectives use more + adjective + than (more expensive than).",
+          "ar": "الصفات القصيرة تأخذ er مع than مثل cheaper than، والصفات الطويلة تأخذ more قبلها مثل more expensive than." } },
+        { "type": "table", "head": ["Adjective", "Comparative", "Note"], "rows": [
+          ["cheap", "cheaper", "one syllable"],
+          ["big", "bigger", "double the consonant"],
+          ["easy", "easier", "-y → -ier"],
+          ["expensive", "more expensive", "three syllables"],
+          ["good", "better", "irregular"],
+          ["bad", "worse", "irregular"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Never combine both: “more cheaper” is wrong. And the word after a comparison is “than”, not “from” or “that”.",
+          "ar": "لا تجمع بين الطريقتين فتقول more cheaper. والكلمة بعد المقارنة هي than لا from ولا that، فالعربية تقول «أرخص من» فيقع الخلط." } }
+      ]
+    },
+    {
+      "id": "a2.superlatives",
+      "title": { "en": "Superlatives", "ar": "صيغة التفضيل العليا" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "the + adjective-est (the cheapest) or the most + adjective (the most expensive). The word “the” is required.",
+          "ar": "نستخدم the مع est مثل the cheapest، أو the most مع الصفة الطويلة. ووجود the ضروري." } },
+        { "type": "examples", "items": [
+          { "en": "It is the biggest city in Egypt.", "ar": "إنها أكبر مدينة في مصر." },
+          { "en": "This is the most useful app I have.", "ar": "هذا أنفع تطبيق لديّ." },
+          { "en": "He is the best player in the team.", "ar": "هو أفضل لاعب في الفريق." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Use “in” for places and groups (the tallest building in Cairo), and “of” for periods (the best day of my life).",
+          "ar": "نستخدم in مع الأماكن والمجموعات، وof مع الفترات الزمنية." } }
+      ]
+    },
+    {
+      "id": "a2.quantifiers",
+      "title": { "en": "much, many, a lot of, a few", "ar": "ألفاظ الكمية" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Use with", "Example"], "rows": [
+          ["many / a few", "countable plural", "many books, a few friends"],
+          ["much / a little", "uncountable", "much time, a little sugar"],
+          ["a lot of", "both", "a lot of people, a lot of money"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "In positive statements “a lot of” is the natural choice; “much” mostly appears in questions and negatives: I don't have much time.",
+          "ar": "في الإثبات الأطبع هو a lot of، أما much فتكثر في النفي والسؤال: I don't have much time." } },
+        { "type": "warn", "text": {
+          "en": "Uncountable nouns have no plural: information, advice, furniture, money, news. Say “some information”, never “informations”.",
+          "ar": "الأسماء غير المعدودة لا تُجمع: information وadvice وfurniture وmoney وnews. فنقول some information ولا نقول informations." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u2-01", "concept": "a2.comparatives", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "This bag is ___ than that one.", "options": ["cheaper", "more cheap", "cheapest", "cheap"], "answer": 0,
+      "explanation": { "en": "Short adjective → -er.", "ar": "الصفة القصيرة تأخذ er." } },
+
+    { "id": "a2u2-02", "concept": "a2.comparatives", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Cairo is ___ than Aswan.", "options": ["more crowded", "crowdeder", "most crowded", "crowded more"], "answer": 0,
+      "explanation": { "en": "Longer adjectives take “more”.", "ar": "الصفات الطويلة تأخذ more." } },
+
+    { "id": "a2u2-03", "concept": "a2.comparatives", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["My phone is better than yours.", "This road is more longer than that one.", "Today is hotter than yesterday.", "She is taller than her brother."],
+      "answer": 1,
+      "explanation": { "en": "Use either -er or more, never both: longer than.",
+        "ar": "نستخدم er أو more، ولا نجمع بينهما. الصواب longer than." } },
+
+    { "id": "a2u2-04", "concept": "a2.comparatives", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Her English is much ___ than mine.", "options": ["better", "gooder", "more good", "best"], "answer": 0,
+      "explanation": { "en": "good → better (irregular). “Much” before a comparative means “a lot”.",
+        "ar": "صيغة المقارنة من good هي better، وكلمة much قبلها تعني «بكثير»." } },
+
+    { "id": "a2u2-05", "concept": "a2.comparatives", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Complete: “A car is ___ (expensive) than a bike.”", "ar": "أكمل: A car is ___ (expensive) than a bike." },
+      "answer": "more expensive",
+      "explanation": { "en": "Three-syllable adjective → more expensive.", "ar": "الصفة الطويلة تأخذ more expensive." } },
+
+    { "id": "a2u2-06", "concept": "a2.superlatives", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "It was ___ day of my life.", "options": ["the happiest", "happiest", "the most happy", "more happy"], "answer": 0,
+      "explanation": { "en": "Superlatives need “the”, and “happy” → happiest.",
+        "ar": "صيغة التفضيل العليا تحتاج the، وhappy تصير happiest." } },
+
+    { "id": "a2u2-07", "concept": "a2.superlatives", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "This is ___ restaurant in the city.", "options": ["the most expensive", "the expensivest", "most expensive", "more expensive"], "answer": 0,
+      "explanation": { "en": "Long adjective → the most + adjective.", "ar": "الصفة الطويلة تأخذ the most." } },
+
+    { "id": "a2u2-08", "concept": "a2.superlatives", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "He is the best student ___ the class.", "options": ["in", "of", "from", "at"], "answer": 0,
+      "explanation": { "en": "Use “in” with places and groups.", "ar": "نستخدم in مع الأماكن والمجموعات." } },
+
+    { "id": "a2u2-09", "concept": "a2.superlatives", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["This", "is", "the", "most", "difficult", "question"], "answer": "This is the most difficult question",
+      "explanation": { "en": "the + most + adjective + noun.", "ar": "the ثم most ثم الصفة ثم الاسم." } },
+
+    { "id": "a2u2-10", "concept": "a2.quantifiers", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "There aren't ___ people here today.", "options": ["many", "much", "a little", "any much"], "answer": 0,
+      "explanation": { "en": "People is countable plural → many.", "ar": "كلمة people معدودة جمع، فنستخدم many." } },
+
+    { "id": "a2u2-11", "concept": "a2.quantifiers", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I don't have ___ time this week.", "options": ["much", "many", "a few", "a lot"], "answer": 0,
+      "explanation": { "en": "Time is uncountable → much (typical in negatives).",
+        "ar": "كلمة time غير معدودة فنستخدم much، وهي شائعة في النفي." } },
+
+    { "id": "a2u2-12", "concept": "a2.quantifiers", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["He gave me some good advice.", "I need more informations about the course.", "We bought new furniture.", "The news was surprising."],
+      "answer": 1,
+      "explanation": { "en": "“Information” is uncountable and has no plural: more information.",
+        "ar": "كلمة information غير معدودة ولا تُجمع، فالصواب more information." } },
+
+    { "id": "a2u2-13", "concept": "a2.quantifiers", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I have ___ friends in Doha — about three.", "options": ["a few", "a little", "much", "few of"], "answer": 0,
+      "explanation": { "en": "“A few” = a small number of countable things. “A little” is for uncountable amounts.",
+        "ar": "a few للعدد القليل من المعدود، وa little للكمية القليلة من غير المعدود." } },
+
+    { "id": "a2u2-14", "concept": "a2.quantifiers", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the quantifier with the noun it fits.", "ar": "صِل لفظ الكمية بالاسم المناسب." },
+      "pairs": [["many", "students"], ["much", "money"], ["a few", "days"], ["a little", "salt"]],
+      "explanation": { "en": "many/a few → countable; much/a little → uncountable.",
+        "ar": "many وa few مع المعدود، وmuch وa little مع غير المعدود." } },
+
+    { "id": "a2u2-15", "concept": "a2.comparatives", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence means the two things are equal?", "ar": "أي جملة تعني أن الشيئين متساويان؟" },
+      "options": ["My car is as fast as yours.", "My car is faster than yours.", "My car is the fastest.", "My car is not so fast."],
+      "answer": 0,
+      "explanation": { "en": "“as + adjective + as” expresses equality; “-er than” expresses difference.",
+        "ar": "تركيب as…as يدل على التساوي، بينما er than يدل على التفاضل." } },
+
+    { "id": "a2u2-16", "concept": "a2.superlatives", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["She is the youngest in her family.", "It is most beautiful beach here.", "That was the worst film of the year.", "He is the most careful driver I know."],
+      "answer": 1,
+      "explanation": { "en": "A superlative needs “the”: the most beautiful beach.",
+        "ar": "صيغة التفضيل العليا تحتاج the: the most beautiful beach." } }
+  ]
+}

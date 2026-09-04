@@ -1,0 +1,147 @@
+{
+  "id": "a1-u7",
+  "goal": {
+    "en": "Place events in time and things in space, and say how often you do something.",
+    "ar": "أن تحدد الزمان والمكان، وأن تعبّر عن تكرار الأفعال."
+  },
+  "concepts": [
+    {
+      "id": "a1.prep.time",
+      "title": { "en": "in / on / at — time", "ar": "حروف الجر مع الزمن" },
+      "teach": [
+        { "type": "table", "head": ["Preposition", "Use with", "Example"], "rows": [
+          ["at", "clock times, night", "at 7 o'clock, at night"],
+          ["on", "days and dates", "on Monday, on 3 May"],
+          ["in", "months, years, seasons, parts of the day", "in July, in 2026, in the morning"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Think of it as zooming out: at = a point, on = a day, in = a longer period.",
+          "ar": "تخيّلها تدرجاً من الأضيق إلى الأوسع: at لنقطة زمنية، وon ليوم، وin لمدة أطول." } },
+        { "type": "warn", "text": {
+          "en": "“In the morning” but “at night”. This pair is irregular — memorise it.",
+          "ar": "نقول in the morning لكن at night. هذه الحالة شاذة فاحفظها كما هي." } }
+      ]
+    },
+    {
+      "id": "a1.prep.place",
+      "title": { "en": "in / on / at — place", "ar": "حروف الجر مع المكان" },
+      "teach": [
+        { "type": "table", "head": ["Preposition", "Meaning", "Example"], "rows": [
+          ["in", "inside something", "in the box, in Cairo"],
+          ["on", "on a surface", "on the table, on the wall"],
+          ["at", "at a point or an event", "at the door, at school, at a party"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "The keys are on the table.", "ar": "المفاتيح على الطاولة." },
+          { "en": "She lives in Riyadh.", "ar": "تسكن في الرياض." },
+          { "en": "I am at the bus stop.", "ar": "أنا عند موقف الحافلة." }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.adverbs.frequency",
+      "title": { "en": "always, usually, never", "ar": "ظروف التكرار" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Frequency adverbs go BEFORE the main verb but AFTER “be”: She always arrives early. She is always early.",
+          "ar": "ظرف التكرار يأتي قبل الفعل الرئيسي، لكنه يأتي بعد فعل الكون: She always arrives early وShe is always early." } },
+        { "type": "table", "head": ["Adverb", "How often"], "rows": [
+          ["always", "100%"], ["usually", "80%"], ["often", "60%"],
+          ["sometimes", "40%"], ["rarely", "10%"], ["never", "0%"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Never” is already negative: say “I never eat meat”, not “I don't never eat meat”.",
+          "ar": "كلمة never منفية في ذاتها، فلا نجمعها مع نفي آخر. نقول I never eat meat." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u7-01", "concept": "a1.prep.time", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "The class starts ___ 9 o'clock.", "options": ["at", "in", "on", "to"], "answer": 0,
+      "explanation": { "en": "Clock times take “at”.", "ar": "الساعات تأخذ at." } },
+
+    { "id": "a1u7-02", "concept": "a1.prep.time", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "We have a meeting ___ Monday.", "options": ["on", "in", "at", "by"], "answer": 0,
+      "explanation": { "en": "Days take “on”.", "ar": "أيام الأسبوع تأخذ on." } },
+
+    { "id": "a1u7-03", "concept": "a1.prep.time", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My birthday is ___ March.", "options": ["in", "on", "at", "from"], "answer": 0,
+      "explanation": { "en": "Months take “in”.", "ar": "الشهور تأخذ in." } },
+
+    { "id": "a1u7-04", "concept": "a1.prep.time", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I study ___ the morning and work ___ night.", "options": ["in / at", "at / in", "in / in", "on / at"], "answer": 0,
+      "explanation": { "en": "“In the morning” but “at night” — an irregular pair worth memorising.",
+        "ar": "نقول in the morning وat night، وهي حالة شاذة تُحفظ." } },
+
+    { "id": "a1u7-05", "concept": "a1.prep.time", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match each type of time word with a correct example.", "ar": "صِل كل نوع من التعبيرات الزمنية بمثاله الصحيح." },
+      "pairs": [["clock times", "at 6:30"], ["days", "on Friday"], ["months and years", "in July"], ["night", "at night"]],
+      "explanation": { "en": "at = point, on = day, in = longer period.", "ar": "at لنقطة، وon ليوم، وin لمدة أطول." } },
+
+    { "id": "a1u7-06", "concept": "a1.prep.place", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "Your book is ___ the table.", "options": ["on", "in", "at", "to"], "answer": 0,
+      "explanation": { "en": "A surface takes “on”.", "ar": "السطح يأخذ on." } },
+
+    { "id": "a1u7-07", "concept": "a1.prep.place", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "There is milk ___ the fridge.", "options": ["in", "on", "at", "by"], "answer": 0,
+      "explanation": { "en": "Inside a container → in.", "ar": "الداخل في شيء يأخذ in." } },
+
+    { "id": "a1u7-08", "concept": "a1.prep.place", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "My children are ___ school until three.", "options": ["at", "in", "on", "to"], "answer": 0,
+      "explanation": { "en": "“At school” means there for its purpose (studying). “In the school” means physically inside the building.",
+        "ar": "at school تعني وجودهم للدراسة، أما in the school فتعني وجودهم داخل المبنى فعلياً." } },
+
+    { "id": "a1u7-09", "concept": "a1.prep.place", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["She lives in Jeddah.", "He is at the door.", "The picture is in the wall.", "We are at a party."],
+      "answer": 2,
+      "explanation": { "en": "A picture hangs on a surface: on the wall.",
+        "ar": "الصورة معلقة على سطح، فنقول on the wall." } },
+
+    { "id": "a1u7-10", "concept": "a1.prep.place", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "bank", "is", "next", "to", "the", "pharmacy"], "answer": "The bank is next to the pharmacy",
+      "explanation": { "en": "“Next to” is a two-word preposition of place.", "ar": "next to حرف جر مركّب يدل على المجاورة." } },
+
+    { "id": "a1u7-11", "concept": "a1.adverbs.frequency", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "He ___ drinks coffee in the evening.", "options": ["never", "not", "no", "not never"], "answer": 0,
+      "explanation": { "en": "“Never” goes before the main verb and already makes the sentence negative.",
+        "ar": "never تسبق الفعل الرئيسي وتجعل الجملة منفية بذاتها." } },
+
+    { "id": "a1u7-12", "concept": "a1.adverbs.frequency", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["She always is late.", "She is always late.", "Always she is late.", "She is late always."],
+      "answer": 1,
+      "explanation": { "en": "With “be”, the adverb comes after the verb: She is always late.",
+        "ar": "مع فعل الكون يأتي ظرف التكرار بعده: She is always late." } },
+
+    { "id": "a1u7-13", "concept": "a1.adverbs.frequency", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["I go usually to the gym on Sundays.", "I usually go to the gym on Sundays.", "Usually I go to the gym on Sundays too loudly.", "I go to the gym usually on Sundays."],
+      "answer": 1,
+      "explanation": { "en": "With a normal verb, the adverb comes just before it: I usually go.",
+        "ar": "مع الفعل العادي يسبقه ظرف التكرار مباشرة: I usually go." } },
+
+    { "id": "a1u7-14", "concept": "a1.adverbs.frequency", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": { "en": "Which word means about 40% of the time?", "ar": "أي كلمة تعني نحو ٤٠٪ من الوقت؟" },
+      "options": ["sometimes", "always", "never", "usually"],
+      "answer": 0,
+      "explanation": { "en": "always 100% > usually 80% > often 60% > sometimes 40% > rarely 10% > never 0%.",
+        "ar": "الترتيب: always ثم usually ثم often ثم sometimes ثم rarely ثم never." } },
+
+    { "id": "a1u7-15", "concept": "a1.adverbs.frequency", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Add “often” in the right place: “I visit my grandmother.”", "ar": "أضف often في موضعها الصحيح: I visit my grandmother." },
+      "answer": "i often visit my grandmother",
+      "explanation": { "en": "Frequency adverbs sit between the subject and the main verb.",
+        "ar": "ظرف التكرار يقع بين الفاعل والفعل الرئيسي." } },
+
+    { "id": "a1u7-16", "concept": "a1.prep.time", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The shop opens ___ 8 a.m. ___ weekdays.", "options": ["at / on", "on / at", "in / on", "at / in"], "answer": 0,
+      "explanation": { "en": "Clock time → at; days → on.", "ar": "الساعة تأخذ at، والأيام تأخذ on." } },
+
+    { "id": "a1u7-17", "concept": "a1.prep.place", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I met him ___ the airport ___ my way to Dubai.", "options": ["at / on", "in / in", "at / in", "on / at"], "answer": 0,
+      "explanation": { "en": "“At the airport” (a point/place of activity) and the fixed phrase “on my way”.",
+        "ar": "نقول at the airport لأنها نقطة نشاط، وon my way تعبير ثابت بمعنى «في طريقي»." } }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "b1-u1",
+  "goal": {
+    "en": "Choose confidently between the past simple, present perfect and present perfect continuous.",
+    "ar": "أن تختار بثقة بين الماضي البسيط والمضارع التام والمضارع التام المستمر."
+  },
+  "passages": {
+    "job": {
+      "title": "From a job application",
+      "text": "I graduated from Cairo University in 2019 and have worked in digital marketing ever since. For the last two years I have been managing a small team at a start-up, where I have designed campaigns for clients across the Gulf. Last spring I completed a certificate in data analytics, and I have recently started studying for a second one. I am now looking for a role where I can take on more responsibility."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b1.perfect.vs.past",
+      "title": { "en": "Present perfect or past simple?", "ar": "المضارع التام أم الماضي البسيط؟" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Past simple = a finished time, and often a specific one (yesterday, in 2019, last spring). Present perfect = a time period that includes now (today, this year, ever, so far).",
+          "ar": "الماضي البسيط لزمن منتهٍ ومحدد غالباً مثل in 2019، والمضارع التام لفترة ما زالت مفتوحة تشمل الآن مثل this year وso far." } },
+        { "type": "examples", "items": [
+          { "en": "I lived in Doha for five years. (I don't live there now.)", "ar": "عشت في الدوحة خمس سنوات — ولم أعد أعيش هناك." },
+          { "en": "I have lived in Doha for five years. (I still live there.)", "ar": "أعيش في الدوحة منذ خمس سنوات — وما زلت." },
+          { "en": "Did you see the news this morning? (the morning is over)", "ar": "هل رأيت الأخبار هذا الصباح؟ — الصباح انتهى." },
+          { "en": "Have you seen the news today? (today is still going)", "ar": "هل رأيت الأخبار اليوم؟ — اليوم لم ينتهِ بعد." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "News is often announced in the present perfect, then the details continue in the past simple: “A fire has broken out… It started at 3 a.m.”",
+          "ar": "تُعلن الأخبار غالباً بالمضارع التام ثم تُروى تفاصيلها بالماضي البسيط: A fire has broken out… It started at 3 a.m." } }
+      ]
+    },
+    {
+      "id": "b1.sinceFor",
+      "title": { "en": "since & for", "ar": "since و for" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "for + a length of time (for three years, for ten minutes). since + a starting point (since 2019, since Monday, since I moved here).",
+          "ar": "for مع مدة زمنية مثل for three years، وsince مع نقطة بداية مثل since 2019." } },
+        { "type": "warn", "text": {
+          "en": "“I am here since Monday” is wrong. A situation that started in the past and continues needs the perfect: “I have been here since Monday.”",
+          "ar": "لا نقول I am here since Monday. الوضع الذي بدأ في الماضي واستمر يحتاج المضارع التام: I have been here since Monday." } }
+      ]
+    },
+    {
+      "id": "b1.perfect.continuous",
+      "title": { "en": "have been + -ing", "ar": "المضارع التام المستمر" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "have/has been + -ing emphasises the activity and its duration; the simple perfect emphasises the completed result.",
+          "ar": "have been + ing تركّز على النشاط ومدته، بينما المضارع التام البسيط يركّز على النتيجة المكتملة." } },
+        { "type": "examples", "items": [
+          { "en": "I have been reading this book. (activity, maybe not finished)", "ar": "ظللت أقرأ هذا الكتاب — نشاط قد لا يكون انتهى." },
+          { "en": "I have read this book. (finished — I know it)", "ar": "قرأت هذا الكتاب — انتهى وأعرف محتواه." },
+          { "en": "She's been working here since March.", "ar": "تعمل هنا منذ مارس." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "State verbs (know, be, own, believe) stay simple: “I have known him for years”, not “have been knowing”.",
+          "ar": "أفعال الحالة مثل know وown تبقى في الصيغة البسيطة: I have known him for years." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u1-01", "concept": "b1.perfect.vs.past", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ my degree in 2019.", "options": ["finished", "have finished", "have been finishing", "finish"], "answer": 0,
+      "explanation": { "en": "A specific finished year → past simple.", "ar": "سنة محددة منتهية، فنستخدم الماضي البسيط." } },
+
+    { "id": "b1u1-02", "concept": "b1.perfect.vs.past", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "We ___ three meetings so far this week.", "options": ["have had", "had", "have been having", "are having"], "answer": 0,
+      "explanation": { "en": "“So far this week” is an unfinished period → present perfect.",
+        "ar": "«حتى الآن هذا الأسبوع» فترة لم تنتهِ، فنستخدم المضارع التام." } },
+
+    { "id": "b1u1-03", "concept": "b1.perfect.vs.past", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence suggests the person no longer works there?", "ar": "أي جملة توحي بأن الشخص لم يعد يعمل هناك؟" },
+      "options": ["He worked at the bank for ten years.", "He has worked at the bank for ten years.", "He has been working at the bank for ten years.", "He has worked there since 2016."],
+      "answer": 0,
+      "explanation": { "en": "The past simple closes the period; the perfect forms keep it open to now.",
+        "ar": "الماضي البسيط يُغلق الفترة، أما صيغ التام فتُبقيها متصلة بالحاضر." } },
+
+    { "id": "b1u1-04", "concept": "b1.perfect.vs.past", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have visited Petra in 2021.", "I visited Petra in 2021.", "I have visited Petra twice.", "Have you ever visited Petra?"],
+      "answer": 0,
+      "explanation": { "en": "A specific past date cannot go with the present perfect.",
+        "ar": "لا يجتمع تاريخ ماضٍ محدد مع المضارع التام." } },
+
+    { "id": "b1u1-05", "concept": "b1.sinceFor", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "She has been ill ___ Tuesday.", "options": ["since", "for", "from", "during"], "answer": 0,
+      "explanation": { "en": "Tuesday is a starting point → since.", "ar": "الثلاثاء نقطة بداية، فنستخدم since." } },
+
+    { "id": "b1u1-06", "concept": "b1.sinceFor", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "They have known each other ___ many years.", "options": ["for", "since", "from", "ago"], "answer": 0,
+      "explanation": { "en": "“Many years” is a length of time → for.", "ar": "«سنوات كثيرة» مدة زمنية، فنستخدم for." } },
+
+    { "id": "b1u1-07", "concept": "b1.sinceFor", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have worked here since 2020.", "I am working here since 2020.", "I have been working here since 2020.", "I started working here in 2020."],
+      "answer": 1,
+      "explanation": { "en": "A situation running from the past to now needs a perfect form, not the present continuous.",
+        "ar": "الوضع الممتد من الماضي إلى الآن يحتاج صيغة التام لا المضارع المستمر." },
+      "commonMistake": { "en": "Arabic uses the present with «منذ», so “I am here since…” feels natural — but English requires the perfect.",
+        "ar": "العربية تستخدم المضارع مع «منذ»، فيسهل الوقوع في I am here since. الإنجليزية توجب صيغة التام." } },
+
+    { "id": "b1u1-08", "concept": "b1.perfect.continuous", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Your eyes are red. ___ you ___ ?", "options": ["Have / been crying", "Did / cry", "Have / cried", "Are / crying"], "answer": 0,
+      "explanation": { "en": "Present evidence of a recent, continuing activity → present perfect continuous.",
+        "ar": "أثر حاضر لنشاط قريب ممتد، فنستخدم المضارع التام المستمر." } },
+
+    { "id": "b1u1-09", "concept": "b1.perfect.continuous", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence tells you the book is finished?", "ar": "أي جملة تدل على أن الكتاب انتهى؟" },
+      "options": ["I have read that book.", "I have been reading that book.", "I was reading that book.", "I read that book for an hour."],
+      "answer": 0,
+      "explanation": { "en": "The simple perfect focuses on the completed result; the continuous focuses on the activity.",
+        "ar": "التام البسيط يركّز على النتيجة المكتملة، والمستمر يركّز على النشاط نفسه." } },
+
+    { "id": "b1u1-10", "concept": "b1.perfect.continuous", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have been waiting for an hour.", "I have been knowing him for years.", "She has been studying all day.", "They have known each other since school."],
+      "answer": 1,
+      "explanation": { "en": "“Know” is a state verb and has no continuous form: I have known him for years.",
+        "ar": "know من أفعال الحالة فلا تأتي في المستمر. الصواب I have known him for years." } },
+
+    { "id": "b1u1-11", "concept": "b1.perfect.vs.past", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "job",
+      "prompt": { "en": "Which statement is true about the writer?", "ar": "أي عبارة صحيحة عن الكاتب؟" },
+      "options": [
+        "They still work in digital marketing.",
+        "They left digital marketing in 2019.",
+        "They have never worked with Gulf clients.",
+        "They finished the analytics certificate this month."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Have worked … ever since” connects 2019 to now, so the work continues.",
+        "ar": "عبارة have worked… ever since تصل ٢٠١٩ بالحاضر، فالعمل مستمر." } },
+
+    { "id": "b1u1-12", "concept": "b1.perfect.continuous", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "job",
+      "prompt": { "en": "Why does the writer use “have been managing” rather than “managed”?", "ar": "لماذا استخدم الكاتب have been managing بدل managed؟" },
+      "options": [
+        "The role is ongoing and its duration matters.",
+        "The role finished two years ago.",
+        "It is more formal than the past simple.",
+        "Because “manage” has no past form."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The perfect continuous keeps the activity open and stresses “for the last two years”.",
+        "ar": "التام المستمر يُبقي النشاط مفتوحاً ويُبرز المدة «خلال العامين الماضيين»." } },
+
+    { "id": "b1u1-13", "concept": "b1.perfect.vs.past", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "job",
+      "prompt": { "en": "Why is “completed” in the past simple?", "ar": "لماذا جاء الفعل completed في الماضي البسيط؟" },
+      "options": [
+        "“Last spring” is a finished time.",
+        "The certificate is not important.",
+        "The action is still continuing.",
+        "The writer is being modest."
+      ],
+      "answer": 0,
+      "explanation": { "en": "A specific finished time (“last spring”) forces the past simple, even in a paragraph full of perfects.",
+        "ar": "الزمن المحدد المنتهي «الربيع الماضي» يفرض الماضي البسيط، حتى في فقرة تكثر فيها صيغ التام." } },
+
+    { "id": "b1u1-14", "concept": "b1.sinceFor", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Rewrite with “for”: “I have been here since 9 o'clock.” (It is now 11 o'clock.)",
+        "ar": "أعد الصياغة باستخدام for: I have been here since 9 o'clock والساعة الآن ١١." },
+      "answer": "i have been here for two hours", "accept": ["i've been here for two hours", "i have been here for 2 hours", "i've been here for 2 hours"],
+      "explanation": { "en": "“Since” takes the starting point; “for” takes the length: two hours.",
+        "ar": "since تأخذ نقطة البداية، وfor تأخذ المدة: ساعتان." } },
+
+    { "id": "b1u1-15", "concept": "b1.perfect.vs.past", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["How", "long", "have", "you", "been", "learning", "English"], "answer": "How long have you been learning English",
+      "explanation": { "en": "“How long” + present perfect continuous asks about duration up to now.",
+        "ar": "How long مع التام المستمر تسأل عن المدة حتى اللحظة." } }
+  ]
+}

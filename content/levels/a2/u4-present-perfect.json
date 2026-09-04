@@ -1,0 +1,147 @@
+{
+  "id": "a2-u4",
+  "goal": {
+    "en": "Talk about life experience with the present perfect, and use the phrasal verbs English speakers really use.",
+    "ar": "أن تتحدث عن خبراتك بالمضارع التام، وأن تستخدم الأفعال المركّبة الشائعة فعلاً."
+  },
+  "concepts": [
+    {
+      "id": "a2.perfect.experience",
+      "title": { "en": "have / has + past participle", "ar": "تكوين المضارع التام" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "have/has + past participle (the third form): I have visited Rome. She has finished her work.",
+          "ar": "have/has مع التصريف الثالث للفعل: I have visited Rome / She has finished her work." } },
+        { "type": "p", "text": {
+          "en": "It links the past to now: the action happened at some time before now, and the exact time is not important.",
+          "ar": "يربط الماضي بالحاضر: وقع الفعل في وقت ما قبل الآن، ولا يهمّنا تحديد وقته." } },
+        { "type": "table", "head": ["Base", "Past", "Past participle"], "rows": [
+          ["go", "went", "gone / been"], ["see", "saw", "seen"], ["do", "did", "done"],
+          ["write", "wrote", "written"], ["eat", "ate", "eaten"], ["visit", "visited", "visited"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "With a finished past time (yesterday, in 2020, last week) you must use the past simple: “I saw him yesterday”, not “I have seen him yesterday”.",
+          "ar": "إذا ذُكر زمن ماضٍ منتهٍ مثل yesterday أو last week وجب استخدام الماضي البسيط: I saw him yesterday وليس I have seen him yesterday." } }
+      ]
+    },
+    {
+      "id": "a2.perfect.everYet",
+      "title": { "en": "ever, never, already, yet", "ar": "ever و never و already و yet" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Use", "Example"], "rows": [
+          ["ever", "questions", "Have you ever been to Turkey?"],
+          ["never", "negative experience", "I have never eaten sushi."],
+          ["already", "sooner than expected", "She has already left."],
+          ["yet", "questions and negatives, at the end", "Have you finished yet? / I haven't finished yet."]
+        ] },
+        { "type": "tip", "text": {
+          "en": "“Been to” = went and came back. “Gone to” = went and is still there.",
+          "ar": "been to تعني أنه ذهب وعاد، أما gone to فتعني أنه ذهب ولا يزال هناك." } }
+      ]
+    },
+    {
+      "id": "a2.phrasal.common",
+      "title": { "en": "Everyday phrasal verbs", "ar": "الأفعال المركّبة الشائعة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A phrasal verb is a verb + a small word that together mean something new. Guessing from the parts rarely works — learn them as units.",
+          "ar": "الفعل المركّب هو فعل مع حرف صغير يكوّنان معاً معنى جديداً. ونادراً ما ينفع تخمين المعنى من الأجزاء، فاحفظه كوحدة." } },
+        { "type": "table", "head": ["Phrasal verb", "Meaning", "Example"], "rows": [
+          ["get up", "leave your bed", "I get up at six."],
+          ["look for", "search", "I'm looking for my keys."],
+          ["turn off", "stop a machine", "Turn off the light."],
+          ["give up", "stop trying", "Don't give up!"],
+          ["find out", "discover", "I found out the truth."],
+          ["look after", "take care of", "She looks after her mother."]
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u4-01", "concept": "a2.perfect.experience", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ finished my homework.", "options": ["have", "has", "am", "did"], "answer": 0,
+      "explanation": { "en": "I → have + past participle.", "ar": "مع I نستخدم have مع التصريف الثالث." } },
+
+    { "id": "a2u4-02", "concept": "a2.perfect.experience", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "She ___ never been to Europe.", "options": ["has", "have", "is", "was"], "answer": 0,
+      "explanation": { "en": "she → has.", "ar": "مع she نستخدم has." } },
+
+    { "id": "a2u4-03", "concept": "a2.perfect.experience", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have seen that film twice.", "I have seen him yesterday.", "She has just arrived.", "We have lived here since 2019."],
+      "answer": 1,
+      "explanation": { "en": "“Yesterday” is a finished past time, so the past simple is required: I saw him yesterday.",
+        "ar": "كلمة yesterday زمن ماضٍ منتهٍ، فيلزم الماضي البسيط: I saw him yesterday." },
+      "commonMistake": { "en": "The present perfect cannot appear with a specific finished time. That single rule prevents most errors.",
+        "ar": "المضارع التام لا يجتمع مع زمن ماضٍ محدد منتهٍ، وهذه القاعدة وحدها تمنع أغلب الأخطاء." } },
+
+    { "id": "a2u4-04", "concept": "a2.perfect.experience", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "Write the past participle of “write”.", "ar": "اكتب التصريف الثالث من write." },
+      "answer": "written",
+      "explanation": { "en": "write → wrote → written.", "ar": "تصريفات الفعل: write ثم wrote ثم written." } },
+
+    { "id": "a2u4-05", "concept": "a2.perfect.experience", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "They ___ the new office in Dubai.", "options": ["have opened", "has opened", "have open", "are opened"], "answer": 0,
+      "explanation": { "en": "they → have + opened.", "ar": "مع they نستخدم have مع التصريف الثالث opened." } },
+
+    { "id": "a2u4-06", "concept": "a2.perfect.everYet", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Have you ___ tried Japanese food?", "options": ["ever", "yet", "already", "never"], "answer": 0,
+      "explanation": { "en": "“Ever” asks about any time in your life.", "ar": "ever تسأل عن أي وقت في حياتك." } },
+
+    { "id": "a2u4-07", "concept": "a2.perfect.everYet", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I haven't sent the report ___ .", "options": ["yet", "already", "ever", "still"], "answer": 0,
+      "explanation": { "en": "“Yet” goes at the end of negatives and questions.",
+        "ar": "تأتي yet في نهاية الجملة المنفية أو السؤال." } },
+
+    { "id": "a2u4-08", "concept": "a2.perfect.everYet", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Don't cook for me — I've ___ eaten.", "options": ["already", "yet", "ever", "never"], "answer": 0,
+      "explanation": { "en": "“Already” means sooner than expected, and sits before the participle.",
+        "ar": "already تعني «سلفاً/قبل الموعد المتوقع»، وموضعها قبل التصريف الثالث." } },
+
+    { "id": "a2u4-09", "concept": "a2.perfect.everYet", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“He has gone to the bank.” Where is he now?", "ar": "«He has gone to the bank» أين هو الآن؟" },
+      "options": ["At the bank.", "Back at the office.", "At home.", "We cannot know at all."],
+      "answer": 0,
+      "explanation": { "en": "“Has gone” = he went and is still there. “Has been” would mean he went and came back.",
+        "ar": "has gone تعني أنه ذهب ولا يزال هناك، ولو قلنا has been لدلّت على أنه ذهب وعاد." } },
+
+    { "id": "a2u4-10", "concept": "a2.perfect.experience", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["Have", "you", "ever", "worked", "abroad"], "answer": "Have you ever worked abroad",
+      "explanation": { "en": "Have + subject + ever + past participle.", "ar": "Have ثم الفاعل ثم ever ثم التصريف الثالث." } },
+
+    { "id": "a2u4-11", "concept": "a2.phrasal.common", "type": "choice", "format": "phrasal", "difficulty": 2,
+      "sentence": "Please ___ the TV — I'm trying to study.", "options": ["turn off", "turn on", "look after", "give up"], "answer": 0,
+      "explanation": { "en": "turn off = stop a machine.", "ar": "turn off تعني إطفاء الجهاز." } },
+
+    { "id": "a2u4-12", "concept": "a2.phrasal.common", "type": "choice", "format": "phrasal", "difficulty": 3,
+      "sentence": "I've been ___ my passport all morning.", "options": ["looking for", "looking after", "looking at", "finding out"], "answer": 0,
+      "explanation": { "en": "look for = search for. “Look after” means take care of.",
+        "ar": "look for تعني البحث عن، أما look after فتعني الاعتناء بـ." } },
+
+    { "id": "a2u4-13", "concept": "a2.phrasal.common", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the phrasal verb with its meaning.", "ar": "صِل الفعل المركّب بمعناه." },
+      "pairs": [["get up", "leave your bed"], ["give up", "stop trying"], ["find out", "discover"], ["look after", "take care of"]],
+      "explanation": { "en": "The particle changes the meaning completely — always learn the pair together.",
+        "ar": "الحرف التابع يغيّر المعنى تماماً، فاحفظ الفعل مع حرفه." } },
+
+    { "id": "a2u4-14", "concept": "a2.phrasal.common", "type": "choice", "format": "phrasal", "difficulty": 4,
+      "prompt": { "en": "Choose the natural sentence.", "ar": "اختر الجملة الطبيعية." },
+      "options": ["Don't give up — you're nearly there.", "Don't give up you.", "Don't up give.", "Don't give up it the exam."],
+      "answer": 0,
+      "explanation": { "en": "“Give up” here has no object and cannot be split.",
+        "ar": "الفعل give up هنا بلا مفعول، ولا يجوز الفصل بين جزأيه." } },
+
+    { "id": "a2u4-15", "concept": "a2.perfect.experience", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ in Kuwait for two years, and I'm still here.", "options": ["have lived", "lived", "live", "was living"], "answer": 0,
+      "explanation": { "en": "The situation started in the past and continues now → present perfect.",
+        "ar": "الوضع بدأ في الماضي وما زال مستمراً حتى الآن، فنستخدم المضارع التام." } },
+
+    { "id": "a2u4-16", "concept": "a2.perfect.everYet", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Have you finished yet?", "I have already yet finished.", "She hasn't called yet.", "We've already paid."],
+      "answer": 1,
+      "explanation": { "en": "“Already” and “yet” cannot be used together: “I have already finished.”",
+        "ar": "لا تجتمع already مع yet في جملة واحدة. الصواب I have already finished." } }
+  ]
+}

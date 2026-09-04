@@ -1,0 +1,202 @@
+{
+  "id": "b2-u1",
+  "goal": {
+    "en": "Handle the structures that make writing sound controlled: passive, advanced conditionals, linking and register.",
+    "ar": "أن تتقن التراكيب التي تمنح كتابتك انضباطاً: المبني للمجهول، والشرط المتقدم، وأدوات الربط، ومستوى اللغة."
+  },
+  "passages": {
+    "report": {
+      "title": "From a company report",
+      "text": "Although sales rose by 12% in the third quarter, the increase was largely driven by a single client, whose contract is due for renewal in March. Had the renewal been agreed earlier, the forecast would have been considerably more stable. The board has therefore asked that alternative revenue streams be identified before the end of the year. While the outlook remains positive, it would be unwise to treat the current growth as a long-term trend."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b2.passive",
+      "title": { "en": "The passive and why it exists", "ar": "المبني للمجهول ولماذا نستخدمه" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "be + past participle. Use it when the action matters more than the doer, when the doer is obvious or unknown, or to sound impersonal in formal writing.",
+          "ar": "التركيب: be مع التصريف الثالث. نستخدمه حين يكون الحدث أهم من فاعله، أو يكون الفاعل مجهولاً أو بديهياً، أو لإضفاء طابع موضوعي في الكتابة الرسمية." } },
+        { "type": "examples", "items": [
+          { "en": "The results will be announced on Monday.", "ar": "ستُعلن النتائج يوم الاثنين." },
+          { "en": "The office is being renovated.", "ar": "يجري تجديد المكتب." },
+          { "en": "Mistakes were made. (no one is blamed)", "ar": "وقعت أخطاء — دون تحديد المسؤول." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Do not overuse it. In most sentences an active verb is clearer and stronger; the passive is a choice, not a decoration.",
+          "ar": "لا تُفرط فيه. الجملة المبنية للمعلوم أوضح وأقوى في الغالب، والمجهول اختيار لغرض لا زينة." } }
+      ]
+    },
+    {
+      "id": "b2.conditional.mixed",
+      "title": { "en": "Third & mixed conditionals", "ar": "الشرط الثالث والمختلط" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Third conditional (past regret): If + had + participle, would have + participle. Mixed: a past condition with a present result — If I had studied medicine, I would be a doctor now.",
+          "ar": "الشرط الثالث للندم على الماضي: If + had + التصريف الثالث ثم would have + التصريف الثالث. والمختلط: شرط في الماضي ونتيجة في الحاضر مثل If I had studied medicine, I would be a doctor now." } },
+        { "type": "tip", "text": {
+          "en": "Formal English can drop “if” by inverting: Had the renewal been agreed earlier, … This is common in reports and journalism.",
+          "ar": "يمكن في الإنجليزية الرسمية حذف if بالقلب: Had the renewal been agreed earlier… وهذا شائع في التقارير والصحافة." } }
+      ]
+    },
+    {
+      "id": "b2.linking",
+      "title": { "en": "Linking ideas precisely", "ar": "الربط الدقيق بين الأفكار" },
+      "teach": [
+        { "type": "table", "head": ["Linker", "Followed by", "Meaning"], "rows": [
+          ["although / while", "a clause", "contrast: Although sales rose, …"],
+          ["despite / in spite of", "a noun or -ing", "contrast: Despite the increase, …"],
+          ["however", "a new sentence", "contrast: … . However, …"],
+          ["therefore / consequently", "a new sentence", "result"],
+          ["whereas", "a clause", "direct comparison of two facts"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Despite” is never followed by “of” a clause: “Despite of the rain” and “Despite it was raining” are both wrong. Say “Despite the rain” or “Although it was raining”.",
+          "ar": "لا نقول Despite of ولا نُتبِع despite بجملة كاملة. الصواب Despite the rain أو Although it was raining." } }
+      ]
+    },
+    {
+      "id": "b2.register",
+      "title": { "en": "Register: formal vs informal", "ar": "مستوى اللغة: رسمي وغير رسمي" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Register is not about being correct; it is about fitting the situation. The same idea has a different shape in an email to a manager and a message to a friend.",
+          "ar": "مستوى اللغة ليس مسألة صواب وخطأ، بل مسألة ملاءمة للموقف. الفكرة نفسها تُصاغ بشكل مختلف في رسالة للمدير وأخرى لصديق." } },
+        { "type": "table", "head": ["Informal", "Neutral / formal"], "rows": [
+          ["get in touch", "contact"],
+          ["sorry about the delay", "we apologise for the delay"],
+          ["find out", "determine / establish"],
+          ["a lot of problems", "a number of issues"],
+          ["I need it ASAP", "I would appreciate it by Friday"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Formal English prefers full forms (do not, we are), fewer phrasal verbs, and cautious wording.",
+          "ar": "الإنجليزية الرسمية تفضّل الصيغ الكاملة بلا اختصار، وتقلّل الأفعال المركّبة، وتميل إلى التحفّظ في الصياغة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u1-01", "concept": "b2.passive", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The bridge ___ in 1998 and is still in use.", "options": ["was built", "built", "has built", "was build"], "answer": 0,
+      "explanation": { "en": "The bridge receives the action → was + past participle.",
+        "ar": "الجسر متلقٍّ للفعل، فنستخدم was مع التصريف الثالث." } },
+
+    { "id": "b2u1-02", "concept": "b2.passive", "type": "choice", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Make it passive: “Someone is cleaning the room.”", "ar": "حوّلها إلى المجهول: Someone is cleaning the room." },
+      "options": ["The room is being cleaned.", "The room is cleaned being.", "The room has cleaned.", "The room is cleaning."],
+      "answer": 0,
+      "explanation": { "en": "Present continuous passive = is/are being + participle.",
+        "ar": "مجهول المضارع المستمر: is/are being مع التصريف الثالث." } },
+
+    { "id": "b2u1-03", "concept": "b2.passive", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Why would a writer choose “Mistakes were made” over “We made mistakes”?", "ar": "لماذا يختار الكاتب Mistakes were made بدل We made mistakes؟" },
+      "options": ["To avoid naming who is responsible.", "Because the passive is more correct.", "Because the past simple is informal.", "To make the sentence longer."],
+      "answer": 0,
+      "explanation": { "en": "The passive lets the writer omit the agent — useful, and sometimes evasive. Good readers notice it.",
+        "ar": "المبني للمجهول يتيح حذف الفاعل، وهو أسلوب مفيد وقد يكون تهرباً من المسؤولية. والقارئ اليقظ ينتبه لذلك." } },
+
+    { "id": "b2u1-04", "concept": "b2.passive", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The report was written by a consultant.", "The report was wrote by a consultant.", "The results have been published.", "The decision will be made tomorrow."],
+      "answer": 1,
+      "explanation": { "en": "The passive needs the past participle: written, not wrote.",
+        "ar": "المجهول يحتاج التصريف الثالث written لا الماضي wrote." } },
+
+    { "id": "b2u1-05", "concept": "b2.conditional.mixed", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "If we ___ the deadline, we ___ the contract.", "options": ["had met / would have kept", "met / would keep", "had met / would keep", "would meet / had kept"], "answer": 0,
+      "explanation": { "en": "A completed past situation with a past result → third conditional.",
+        "ar": "موقف ماضٍ منتهٍ ونتيجة ماضية، فنستخدم الشرط الثالث." } },
+
+    { "id": "b2u1-06", "concept": "b2.conditional.mixed", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“If I had taken that job, I would be living in Berlin now.” What is true?", "ar": "ما الصحيح في هذه الجملة؟" },
+      "options": ["I did not take the job and I do not live in Berlin.", "I took the job and I live in Berlin.", "I will take the job soon.", "I lived in Berlin in the past."],
+      "answer": 0,
+      "explanation": { "en": "A mixed conditional: an unreal past condition with an unreal present result.",
+        "ar": "شرط مختلط: شرط غير واقعي في الماضي، ونتيجة غير واقعية في الحاضر." } },
+
+    { "id": "b2u1-07", "concept": "b2.conditional.mixed", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "report",
+      "prompt": { "en": "What does “Had the renewal been agreed earlier…” tell you?", "ar": "ماذا تفيد عبارة Had the renewal been agreed earlier؟" },
+      "options": ["The renewal was not agreed earlier.", "The renewal was agreed early.", "The renewal will be agreed in March.", "The forecast was stable."],
+      "answer": 0,
+      "explanation": { "en": "Inverted third conditional = the opposite of what actually happened.",
+        "ar": "الشرط الثالث بصيغة القلب يفيد أن الواقع خلاف ذلك، أي أن التجديد لم يُتفق عليه مبكراً." } },
+
+    { "id": "b2u1-08", "concept": "b2.linking", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "___ the heavy traffic, we arrived on time.", "options": ["Despite", "Although", "However", "Whereas"], "answer": 0,
+      "explanation": { "en": "“Despite” is followed by a noun phrase; “although” would need a clause.",
+        "ar": "despite يليها اسم، أما although فيليها جملة كاملة." } },
+
+    { "id": "b2u1-09", "concept": "b2.linking", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Despite of the delay, the event was a success.", "Although it rained, we enjoyed the day.", "The talks failed; therefore, the deal collapsed.", "She is calm, whereas her brother worries a lot."],
+      "answer": 0,
+      "explanation": { "en": "“Despite” never takes “of”: Despite the delay, …",
+        "ar": "لا نضع of بعد despite. الصواب Despite the delay." } },
+
+    { "id": "b2u1-10", "concept": "b2.linking", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence links the two ideas most precisely?", "ar": "أي جملة تربط الفكرتين بدقة أكبر؟" },
+      "options": [
+        "Sales rose, whereas profits fell.",
+        "Sales rose, however profits fell.",
+        "Sales rose, despite profits fell.",
+        "Sales rose, therefore profits fell."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Whereas” compares two contrasting facts inside one sentence. “However” needs its own sentence or a semicolon, and “therefore” would wrongly claim cause.",
+        "ar": "whereas تقارن حقيقتين متضادتين داخل جملة واحدة. أما however فتحتاج جملة مستقلة أو فاصلة منقوطة، وtherefore تدّعي سببية غير موجودة." } },
+
+    { "id": "b2u1-11", "concept": "b2.register", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "You are emailing a client about a late delivery. Which is appropriate?", "ar": "ترسل بريداً لعميل بشأن تأخر التسليم. أيها مناسب؟" },
+      "options": [
+        "We apologise for the delay and will confirm a new delivery date by Thursday.",
+        "Sorry, stuff got delayed. Will let you know.",
+        "The delay is not our fault at all.",
+        "Hi! Delivery is late lol, sorry about that."
+      ],
+      "answer": 0,
+      "explanation": { "en": "Formal, specific and accountable. The others are too casual, defensive, or vague.",
+        "ar": "الخيار الأول رسمي ومحدد ويتحمّل المسؤولية، والبقية إما عامية أو دفاعية أو مبهمة." } },
+
+    { "id": "b2u1-12", "concept": "b2.register", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which phrase is the most formal way to say “find out the reason”?", "ar": "ما أكثر الصيغ رسميةً للتعبير عن find out the reason؟" },
+      "options": ["establish the cause", "check out why", "figure out the reason", "get to the bottom of it"],
+      "answer": 0,
+      "explanation": { "en": "Formal registers prefer single-word Latinate verbs over phrasal verbs and idioms.",
+        "ar": "المستوى الرسمي يفضّل الأفعال المفردة ذات الأصل اللاتيني على الأفعال المركّبة والتعبيرات الاصطلاحية." } },
+
+    { "id": "b2u1-13", "concept": "b2.register", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "report",
+      "prompt": { "en": "What is the writer's real message about the 12% rise?", "ar": "ما الرسالة الحقيقية للكاتب بشأن ارتفاع ١٢٪؟" },
+      "options": [
+        "It looks good but is fragile because it depends on one client.",
+        "It proves the company is growing steadily.",
+        "It was caused by many new clients.",
+        "It will certainly continue next year."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Largely driven by a single client” plus “it would be unwise to treat … as a long-term trend” is a warning wrapped in careful language.",
+        "ar": "عبارتا «مدفوع أساساً بعميل واحد» و«ليس من الحكمة اعتباره اتجاهاً طويل الأمد» تحذير مغلَّف بلغة متحفظة." } },
+
+    { "id": "b2u1-14", "concept": "b2.passive", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "report",
+      "prompt": { "en": "“The board has asked that alternative revenue streams be identified.” Why “be identified”?", "ar": "لماذا جاءت be identified في هذه الجملة؟" },
+      "options": [
+        "It is a formal subjunctive after a verb of request.",
+        "It is a spelling mistake for “are identified”.",
+        "It shows the action already happened.",
+        "It is the past passive."
+      ],
+      "answer": 0,
+      "explanation": { "en": "After ask/require/suggest that…, formal English uses the base form: that it be identified. It is standard in reports and legal writing.",
+        "ar": "بعد أفعال الطلب مثل ask وrequire وsuggest تستخدم الإنجليزية الرسمية الفعل المجرد: that it be identified، وهي صيغة معتادة في التقارير والصياغات القانونية." } },
+
+    { "id": "b2u1-15", "concept": "b2.linking", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Rewrite with “although”: “Despite the cost, we accepted the offer.”", "ar": "أعد الصياغة باستخدام although." },
+      "answer": "although it was expensive we accepted the offer",
+      "accept": ["although it was expensive, we accepted the offer", "although the cost was high we accepted the offer", "although the cost was high, we accepted the offer"],
+      "explanation": { "en": "“Although” must be followed by a full clause (subject + verb), not a noun.",
+        "ar": "يجب أن يلي although جملة كاملة فيها فاعل وفعل، لا اسم مجرد." } }
+  ]
+}

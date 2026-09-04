@@ -1,0 +1,255 @@
+{
+  "id": "c2-u1",
+  "goal": {
+    "en": "Move beyond correctness: choose what a proficient speaker would actually say, with the right tone and rhythm.",
+    "ar": "أن تتجاوز الصحة النحوية إلى ما يقوله المتحدث المتمكّن فعلاً، بالنبرة والإيقاع المناسبين."
+  },
+  "passages": {
+    "email": {
+      "title": "An email between colleagues",
+      "text": "Thanks for sending the draft over. I've had a quick look and, broadly speaking, I think it works. One thing I'd flag: the section on pricing reads as rather more confident than the numbers strictly allow, and I suspect Legal will pick up on it. Nothing that a bit of rewording wouldn't fix. Happy to talk it through if that's easier — I'm around most of Thursday."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.naturalness",
+      "title": { "en": "Correct is not the same as natural", "ar": "الصحيح ليس بالضرورة طبيعياً" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "At C2 the question changes. It is no longer “is this grammatical?” but “would anyone actually say it this way?” Many perfectly grammatical sentences are simply not English.",
+          "ar": "في هذا المستوى يتغيّر السؤال: لم يعد «هل هذه الجملة صحيحة نحوياً؟» بل «هل يقولها أحد فعلاً هكذا؟». فكثير من الجمل السليمة نحوياً لا تُقال في الواقع." } },
+        { "type": "table", "head": ["Natural", "Grammatical but odd"], "rows": [
+          ["I'd rather not, if that's all right.", "I prefer to not do this, if it is all right."],
+          ["It's not really my call.", "The decision does not belong to me."],
+          ["Let me get back to you.", "I will return to you with the answer later."],
+          ["That's easier said than done.", "Saying that is easier than doing that."]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Naturalness lives in short, familiar chunks. Fluent speakers reuse ready-made phrases rather than building every sentence from scratch.",
+          "ar": "الطبيعية تسكن في العبارات القصيرة المألوفة. المتحدث الطليق يعيد استخدام تراكيب جاهزة بدل بناء كل جملة من الصفر." } }
+      ]
+    },
+    {
+      "id": "c2.idiom",
+      "title": { "en": "Idiom used well — and badly", "ar": "استخدام التعبير الاصطلاحي" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Idioms make you sound fluent only when they fit the register. An idiom dropped into a formal report often sounds worse than a plain phrase.",
+          "ar": "لا تمنحك التعبيرات الاصطلاحية طلاقة إلا إذا لاءمت مستوى اللغة. ووضع تعبير عامي في تقرير رسمي يبدو أسوأ من عبارة بسيطة." } },
+        { "type": "table", "head": ["Idiom", "Meaning", "Fits"], "rows": [
+          ["a grey area", "unclear, not covered by rules", "work, neutral"],
+          ["to play devil's advocate", "argue the opposite to test an idea", "meetings"],
+          ["to move the goalposts", "unfairly change the criteria", "informal-neutral"],
+          ["to touch base", "make brief contact", "business, can sound clichéd"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "A mixed or half-remembered idiom is more damaging than none: “that ship has sailed away” or “the ball is in your field” immediately marks a non-native writer.",
+          "ar": "التعبير المشوّه أسوأ من عدمه: عبارات مثل that ship has sailed away أو the ball is in your field تكشف فوراً أن الكاتب غير أصلي." } }
+      ]
+    },
+    {
+      "id": "c2.tone",
+      "title": { "en": "Tone: distance, hedging and irony", "ar": "النبرة: المسافة والتحفظ والسخرية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English signals attitude through small words. “I suspect”, “rather”, “strictly”, “broadly speaking” are not decoration: they position the speaker.",
+          "ar": "تُظهر الإنجليزية الموقف بكلمات صغيرة. عبارات مثل I suspect وrather وstrictly وbroadly speaking ليست زينة، بل تحدد موقع المتكلم من كلامه." } },
+        { "type": "examples", "items": [
+          { "en": "That's an interesting choice. (often means: I disagree)", "ar": "«اختيار مثير للاهتمام» — غالباً تعني ضمناً: لا أوافق." },
+          { "en": "I'm not entirely convinced. (a firm objection, politely)", "ar": "«لست مقتنعاً تماماً» — اعتراض حازم بصياغة مهذبة." },
+          { "en": "With respect, that isn't quite what the data shows. (a strong disagreement)", "ar": "«مع احترامي، ليس هذا تماماً ما تقوله البيانات» — خلاف قوي رغم لطف العبارة." }
+        ] }
+      ]
+    },
+    {
+      "id": "c2.discourse",
+      "title": { "en": "Shaping a paragraph", "ar": "بناء الفقرة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Proficient writing manages the reader's expectations: it concedes before it objects, and it puts new information at the end of the sentence, where the emphasis falls.",
+          "ar": "الكتابة المتمكّنة تدير توقّع القارئ: تُقرّ قبل أن تعترض، وتضع المعلومة الجديدة في آخر الجملة حيث يقع التركيز." } },
+        { "type": "rule", "text": {
+          "en": "Old information first, new information last. Compare: “The delay was caused by a supplier problem.” vs “A supplier problem caused the delay.” — the emphasis is different.",
+          "ar": "المعلوم أولاً والجديد آخراً. قارن بين الجملتين، فالتركيز يختلف بحسب موضع المعلومة الجديدة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2u1-01", "concept": "c2.naturalness", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "Which sentence sounds most natural?", "ar": "أي جملة تبدو أكثر طبيعية؟" },
+      "options": [
+        "I'd rather not say, if you don't mind.",
+        "I prefer to not say this, if you do not mind it.",
+        "I have no desire of saying, if that is acceptable.",
+        "It is preferred by me not to say."
+      ],
+      "answer": 0,
+      "explanation": { "en": "All four are grammatical; only the first is what a proficient speaker would actually say.",
+        "ar": "الجمل الأربع صحيحة نحوياً، لكن الأولى وحدها هي ما يقوله المتحدث المتمكّن فعلاً." } },
+
+    { "id": "c2u1-02", "concept": "c2.naturalness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "A colleague asks for a decision you cannot make. Which reply is most natural?", "ar": "طلب زميل قراراً ليس من صلاحيتك. أي رد أكثر طبيعية؟" },
+      "options": [
+        "That's not really my call, I'm afraid.",
+        "This decision does not belong to my person.",
+        "I am not the owner of this decision.",
+        "The call is not mine to be made."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Not my call” is the idiomatic phrase; “I'm afraid” softens it. The others are literal translations of the idea.",
+        "ar": "not my call تعبير اصطلاحي شائع، وI'm afraid تلطّفه. أما البقية فترجمات حرفية للفكرة." } },
+
+    { "id": "c2u1-03", "concept": "c2.naturalness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which version reads best in a professional email?", "ar": "أي صياغة أنسب لبريد مهني؟" },
+      "options": [
+        "Let me look into it and get back to you tomorrow.",
+        "I will make a research about it and return to you tomorrow.",
+        "I shall investigate the matter and revert tomorrow to you.",
+        "I go to check and after I answer you tomorrow."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Look into it” and “get back to you” are the standard business collocations. “Revert” for “reply” is a well-known non-native habit.",
+        "ar": "look into it وget back to you هما التعبيران المعتادان في بيئة العمل. أما استخدام revert بمعنى «أرد عليك» فمن العادات المعروفة لغير الناطقين الأصليين." } },
+
+    { "id": "c2u1-04", "concept": "c2.idiom", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Let's not move the goalposts.” What is the speaker objecting to?", "ar": "«Let's not move the goalposts» ما الذي يعترض عليه المتكلم؟" },
+      "options": [
+        "Changing the criteria after work has started.",
+        "Postponing the meeting again.",
+        "Spending too much money.",
+        "Choosing the wrong location."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The idiom accuses someone of unfairly changing the standard mid-way.",
+        "ar": "التعبير يتهم الطرف الآخر بتغيير المعايير في منتصف الطريق دون وجه حق." } },
+
+    { "id": "c2u1-05", "concept": "c2.idiom", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which idiom is used incorrectly?", "ar": "أي تعبير اصطلاحي استُخدم بشكل خاطئ؟" },
+      "options": [
+        "The ball is in your field now.",
+        "That's a grey area in the contract.",
+        "Let me play devil's advocate for a moment.",
+        "I'm afraid that ship has sailed."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The fixed form is “the ball is in your court”. A distorted idiom is more noticeable than a plain phrase.",
+        "ar": "الصيغة الثابتة هي the ball is in your court. والتعبير المشوّه ألفت للنظر من العبارة العادية." } },
+
+    { "id": "c2u1-06", "concept": "c2.idiom", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is wrong for a formal risk report?", "ar": "أي جملة لا تناسب تقرير مخاطر رسمياً؟" },
+      "options": [
+        "If we don't act now, we'll be up the creek.",
+        "Delaying action would expose the project to significant risk.",
+        "The current timeline leaves little margin for error.",
+        "Further delay is likely to increase costs."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The idiom is far too colloquial for a formal report — correct English in the wrong register.",
+        "ar": "التعبير عامي جداً على تقرير رسمي، فهو إنجليزية صحيحة في مستوى لغوي غير مناسب." } },
+
+    { "id": "c2u1-07", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A manager says: “That's certainly one way of doing it.” What do they most likely mean?", "ar": "قال مدير: «That's certainly one way of doing it» ما مراده على الأرجح؟" },
+      "options": [
+        "They do not think it is a good approach.",
+        "They strongly approve.",
+        "They have not understood.",
+        "They want you to repeat it."
+      ],
+      "answer": 0,
+      "explanation": { "en": "Faint praise of this kind is a standard British-English way of signalling disapproval without confrontation.",
+        "ar": "هذا «المدح الفاتر» أسلوب معروف في الإنجليزية للتعبير عن عدم الرضا دون مواجهة مباشرة." } },
+
+    { "id": "c2u1-08", "concept": "c2.tone", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You must reject a proposal firmly but keep the relationship. Which is best?", "ar": "عليك رفض مقترح بحزم مع الحفاظ على العلاقة. ما الأفضل؟" },
+      "options": [
+        "I'm not convinced this is the right route for us at the moment, though I can see the thinking behind it.",
+        "No. This is a bad idea.",
+        "Maybe, I don't know, perhaps we could possibly think about it sometime.",
+        "This proposal is completely unacceptable to us."
+      ],
+      "answer": 0,
+      "explanation": { "en": "It is clear (a rejection), qualified (“at the moment”), and it acknowledges the other side. The vague option fails because it does not actually say no.",
+        "ar": "الخيار الأول واضح في الرفض، ومقيَّد بـ«في الوقت الحالي»، ويعترف بوجهة نظر الطرف الآخر. أما الخيار المبهم ففاشل لأنه لا يقول «لا» أصلاً." } },
+
+    { "id": "c2u1-09", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "email",
+      "prompt": { "en": "What is the writer actually saying about the pricing section?", "ar": "ماذا يقول الكاتب فعلاً عن قسم التسعير؟" },
+      "options": [
+        "It overstates what the numbers support and must be reworded.",
+        "It is well written and needs no change.",
+        "The numbers in it are wrong.",
+        "Legal has already rejected it."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Reads as rather more confident than the numbers strictly allow” is a polite way of saying: it overclaims.",
+        "ar": "عبارة «يبدو أكثر ثقة مما تسمح به الأرقام بدقة» طريقة مهذبة للقول إنه يبالغ في الادعاء." } },
+
+    { "id": "c2u1-10", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "email",
+      "prompt": { "en": "“Nothing that a bit of rewording wouldn't fix.” What does this do?", "ar": "ما وظيفة عبارة Nothing that a bit of rewording wouldn't fix؟" },
+      "options": [
+        "It reassures the writer that the problem is small and solvable.",
+        "It says the draft must be rewritten completely.",
+        "It withdraws the criticism entirely.",
+        "It asks for a meeting."
+      ],
+      "answer": 0,
+      "explanation": { "en": "The double negative downgrades the severity: the criticism stands, but the fix is easy.",
+        "ar": "النفي المزدوج يخفّف من حدّة المشكلة: النقد قائم لكن علاجه يسير." } },
+
+    { "id": "c2u1-11", "concept": "c2.discourse", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "The previous sentence was about the delay. Which continuation flows better?", "ar": "الجملة السابقة كانت عن التأخير. أي استمرار أكثر انسيابية؟" },
+      "options": [
+        "The delay was caused by a problem at the supplier's warehouse.",
+        "A problem at the supplier's warehouse caused the delay.",
+        "There was caused a delay by the supplier's warehouse problem.",
+        "The supplier's warehouse, it caused the delay."
+      ],
+      "answer": 0,
+      "explanation": { "en": "Known information (the delay) comes first; the new information lands at the end, where English puts its emphasis.",
+        "ar": "المعلومة المعروفة (التأخير) تأتي أولاً، والجديدة في النهاية حيث يقع تركيز الجملة في الإنجليزية." } },
+
+    { "id": "c2u1-12", "concept": "c2.discourse", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which opening best prepares the reader for a disagreement?", "ar": "أي افتتاحية تهيّئ القارئ للاعتراض؟" },
+      "options": [
+        "There is much to admire in this proposal. That said, …",
+        "This proposal is fine. So, …",
+        "I have read the proposal. Therefore, …",
+        "This proposal is excellent, and moreover, …"
+      ],
+      "answer": 0,
+      "explanation": { "en": "Concede, then pivot. “That said” tells the reader a qualification is coming; “moreover” and “therefore” promise the opposite.",
+        "ar": "أقرّ ثم انعطف. عبارة That said تنبّه القارئ إلى تحفّظ قادم، بينما moreover وtherefore تَعِدان بعكس ذلك." } },
+
+    { "id": "c2u1-13", "concept": "c2.naturalness", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence would a proficient speaker avoid?", "ar": "أي جملة يتجنبها المتحدث المتمكّن؟" },
+      "options": [
+        "I am agree with you about the deadline.",
+        "I agree with you about the deadline.",
+        "I'd agree with you there.",
+        "I'm inclined to agree."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Agree” is a verb, so “I am agree” is not English at all — a fossilised error that survives even at advanced levels.",
+        "ar": "agree فعل، فجملة I am agree ليست إنجليزية أصلاً. وهو خطأ متحجّر يبقى حتى عند المتقدمين." } },
+
+    { "id": "c2u1-14", "concept": "c2.idiom", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the expression with its meaning.", "ar": "صِل التعبير بمعناه." },
+      "pairs": [
+        ["a grey area", "not clearly covered by the rules"],
+        ["to touch base", "to make brief contact"],
+        ["to play devil's advocate", "to argue against an idea to test it"],
+        ["that ship has sailed", "the opportunity has passed"]
+      ],
+      "explanation": { "en": "Idioms are fixed: their words cannot be swapped for synonyms.",
+        "ar": "التعبيرات الاصطلاحية ثابتة، ولا يجوز استبدال كلماتها بمرادفاتها." } },
+
+    { "id": "c2u1-15", "concept": "c2.discourse", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Rewrite so the emphasis falls on the cost, not the decision: “We rejected the plan because of the cost.” Begin: “It was ___”",
+        "ar": "أعد الصياغة ليقع التركيز على التكلفة لا القرار، وابدأ بـ It was" },
+      "answer": "it was the cost that made us reject the plan",
+      "accept": ["it was the cost that led us to reject the plan", "it was because of the cost that we rejected the plan", "it was the cost that caused us to reject the plan"],
+      "explanation": { "en": "A cleft sentence (“It was X that…”) moves the spotlight onto one element — a standard tool of emphasis in written English.",
+        "ar": "الجملة المشطورة «It was X that…» تنقل الضوء إلى عنصر بعينه، وهي أداة قياسية للتركيز في الكتابة الإنجليزية." } }
+  ]
+}

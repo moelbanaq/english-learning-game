@@ -1,0 +1,216 @@
+{
+  "id": "c1-u1",
+  "goal": {
+    "en": "Say exactly what you mean: the right collocation, the right shade of meaning, the right amount of certainty.",
+    "ar": "أن تقول ما تعنيه بالضبط: التلازم اللفظي الصحيح، والدرجة الدقيقة للمعنى، والقدر المناسب من اليقين."
+  },
+  "passages": {
+    "review": {
+      "title": "From an academic book review",
+      "text": "Whatever its merits — and there are several — this study rests on a narrow evidence base. The author draws heavily on interviews conducted in a single institution, yet the conclusions are framed as though they applied to the sector as a whole. This is not to say the argument is without value; the chapter on informal networks is genuinely illuminating. It is simply that the claims outrun the data, and a more cautious framing would have served the book better."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.collocation",
+      "title": { "en": "Collocation: words that travel together", "ar": "التلازم اللفظي" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "At C1, grammar is rarely the problem — word partnership is. English says “heavy rain”, not “strong rain”; “make a decision”, not “do a decision”. Collocation is what separates correct English from natural English.",
+          "ar": "في هذا المستوى نادراً ما تكون المشكلة نحوية، بل في اقتران الكلمات. تقول الإنجليزية heavy rain لا strong rain، وmake a decision لا do a decision. والتلازم اللفظي هو الفارق بين اللغة الصحيحة واللغة الطبيعية." } },
+        { "type": "table", "head": ["Natural", "Unnatural", "Note"], "rows": [
+          ["make a decision", "do a decision", "make + abstract creation"],
+          ["do research", "make research", "do + work/activity"],
+          ["heavy traffic", "strong traffic", "heavy = dense"],
+          ["raise an issue", "lift an issue", "fixed academic pairing"],
+          ["draw a conclusion", "pull a conclusion", "fixed"],
+          ["a strong argument", "a hard argument", "strong = persuasive"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Record vocabulary in pairs, never alone: not “decision” but “make a difficult decision”.",
+          "ar": "دوّن المفردات في سياق زوجي لا مفردة: لا تكتب decision وحدها بل make a difficult decision." } }
+      ]
+    },
+    {
+      "id": "c1.nuance",
+      "title": { "en": "Near-synonyms are not equal", "ar": "المترادفات ليست متساوية" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Shade of meaning"], "rows": [
+          ["notice", "become aware of something small"],
+          ["observe", "watch carefully, often formally"],
+          ["realise", "understand something you did not grasp before"],
+          ["claim", "state something that may not be true"],
+          ["argue", "state a position with reasons"],
+          ["admit", "accept something that weakens your own case"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Choosing “claim” instead of “say” tells the reader you doubt the statement. At C1, word choice carries an attitude.",
+          "ar": "اختيارك claim بدل say يخبر القارئ أنك تشكك في الكلام. في هذا المستوى تحمل الكلمة موقفاً لا معنى فقط." } }
+      ]
+    },
+    {
+      "id": "c1.hedging",
+      "title": { "en": "Hedging: controlled certainty", "ar": "التحوّط: التحكم في درجة اليقين" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Academic and professional English rarely says “this proves”. It says “this suggests”, “it appears that”, “the data indicate”. Overclaiming damages your credibility more than caution does.",
+          "ar": "نادراً ما تقول الإنجليزية الأكاديمية «هذا يثبت»، بل تقول «يشير إلى» و«يبدو أن» و«تدل البيانات». والمبالغة في الجزم تضر بمصداقيتك أكثر مما يضر التحفّظ." } },
+        { "type": "examples", "items": [
+          { "en": "The results suggest a link between the two factors.", "ar": "تشير النتائج إلى وجود صلة بين العاملين." },
+          { "en": "This may partly explain the delay.", "ar": "قد يفسّر هذا جزئياً سبب التأخير." },
+          { "en": "It would be premature to conclude that…", "ar": "من السابق لأوانه أن نستنتج أن…" }
+        ] }
+      ]
+    },
+    {
+      "id": "c1.inference",
+      "title": { "en": "Reading what is implied", "ar": "قراءة المعنى الضمني" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Advanced writers criticise politely. “A more cautious framing would have served the book better” is a negative judgement dressed as a suggestion. Learn to hear the judgement.",
+          "ar": "الكتّاب المتقدمون ينتقدون بلطف. فجملة «كان الإطار الأكثر تحفّظاً ليخدم الكتاب أفضل» حكم سلبي في ثوب اقتراح. تدرّب على سماع الحكم خلف العبارة." } },
+        { "type": "tip", "text": {
+          "en": "Watch for “yet”, “although”, “it is simply that”, “whatever its merits” — these signal that a criticism is coming.",
+          "ar": "انتبه لعبارات مثل yet وalthough وit is simply that وwhatever its merits، فهي إشارات إلى نقد قادم." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1u1-01", "concept": "c1.collocation", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "We need to ___ a decision before Friday.", "options": ["make", "do", "take up", "give"], "answer": 0,
+      "explanation": { "en": "English “makes” decisions. (French and Arabic both prefer “take”, which is why “take a decision” slips out — though it does exist in some formal British usage.)",
+        "ar": "الإنجليزية تقول make a decision. والعربية تقول «يتخذ قراراً» فيقع الخلط، ورغم وجود take a decision في بعض الاستعمال البريطاني الرسمي، فإن make هي الأشيع والأسلم." } },
+
+    { "id": "c1u1-02", "concept": "c1.collocation", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "She has ___ extensive research into urban migration.", "options": ["conducted", "made", "performed on", "given"], "answer": 0,
+      "explanation": { "en": "Research is conducted or carried out (or simply “done”), never “made”.",
+        "ar": "البحث يُجرى: conducted أو carried out أو done، ولا نقول made research." } },
+
+    { "id": "c1u1-03", "concept": "c1.collocation", "type": "choice", "format": "collocation", "difficulty": 4,
+      "prompt": { "en": "Which combination is natural?", "ar": "أي اقتران طبيعي؟" },
+      "options": ["a heavy smoker", "a strong smoker", "a big smoker", "a hard smoker"],
+      "answer": 0,
+      "explanation": { "en": "“Heavy” collocates with smoker, drinker, traffic, rain. There is no logic to memorise — only usage.",
+        "ar": "كلمة heavy تلازم smoker وdrinker وtraffic وrain. لا منطق وراء ذلك، بل استعمال يُحفظ." } },
+
+    { "id": "c1u1-04", "concept": "c1.collocation", "type": "match", "format": "collocation", "difficulty": 4,
+      "prompt": { "en": "Match each verb with the noun it partners.", "ar": "صِل كل فعل بالاسم الذي يلازمه." },
+      "pairs": [["draw", "a conclusion"], ["raise", "an objection"], ["meet", "a deadline"], ["pose", "a risk"]],
+      "explanation": { "en": "These verb + noun pairs are fixed in formal English.",
+        "ar": "هذه الأزواج ثابتة في الإنجليزية الرسمية." } },
+
+    { "id": "c1u1-05", "concept": "c1.nuance", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“The minister claimed that costs had fallen.” What does “claimed” add?", "ar": "ماذا تضيف كلمة claimed في هذه الجملة؟" },
+      "options": ["Doubt about whether it is true.", "Certainty that it is true.", "That he said it loudly.", "That he said it in writing."],
+      "answer": 0,
+      "explanation": { "en": "“Claim” signals that the writer is not endorsing the statement — a small word with a large effect.",
+        "ar": "كلمة claim تشير إلى أن الكاتب لا يتبنى الكلام. كلمة صغيرة بأثر كبير." } },
+
+    { "id": "c1u1-06", "concept": "c1.nuance", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which verb suggests the speaker accepts something that weakens their own position?", "ar": "أي فعل يدل على أن المتكلم يعترف بما يُضعف موقفه؟" },
+      "options": ["admits", "argues", "notes", "observes"],
+      "answer": 0,
+      "explanation": { "en": "“Admit” concedes a point against yourself; “argue” defends one; “note/observe” are neutral.",
+        "ar": "admit اعتراف بما يضر بموقفك، وargue دفاع عن موقف، وnote وobserve محايدتان." } },
+
+    { "id": "c1u1-07", "concept": "c1.nuance", "type": "choice", "format": "synonym", "difficulty": 5,
+      "sentence": "The committee ___ the proposal after a long discussion, but no vote was held.",
+      "options": ["considered", "approved", "rejected", "implemented"], "answer": 0,
+      "explanation": { "en": "“No vote was held” rules out approval, rejection and implementation; only “considered” fits.",
+        "ar": "عبارة «لم يُجرَ تصويت» تستبعد الموافقة والرفض والتنفيذ، فلا يبقى إلا considered بمعنى «نظرت في»." } },
+
+    { "id": "c1u1-08", "concept": "c1.hedging", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which sentence is most appropriate in an academic paper?", "ar": "أي جملة أنسب لورقة أكاديمية؟" },
+      "options": [
+        "These findings suggest that early intervention may reduce dropout rates.",
+        "These findings prove that early intervention stops students dropping out.",
+        "Everyone knows early intervention works.",
+        "Early intervention definitely fixes the dropout problem."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Suggest” + “may” calibrates the claim to the evidence. Absolute language invites easy refutation.",
+        "ar": "suggest مع may تُعاير الادعاء بحجم الدليل، أما اللغة القاطعة فتُسهّل دحضها." } },
+
+    { "id": "c1u1-09", "concept": "c1.hedging", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You disagree with a colleague's plan in a meeting. Which is most professional?", "ar": "تختلف مع خطة زميلك في اجتماع. ما الأكثر مهنية؟" },
+      "options": [
+        "I wonder whether that timeline is realistic given the resources we have.",
+        "That timeline is impossible.",
+        "You clearly haven't thought this through.",
+        "I don't agree at all with this."
+      ],
+      "answer": 0,
+      "explanation": { "en": "Hedged disagreement attacks the plan, not the person, and leaves room for the other side to move.",
+        "ar": "الاعتراض المتحفّظ يوجّه النقد إلى الخطة لا إلى الشخص، ويترك مجالاً للتراجع دون إحراج." } },
+
+    { "id": "c1u1-10", "concept": "c1.inference", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "What is the reviewer's overall judgement?", "ar": "ما حكم الناقد الإجمالي؟" },
+      "options": [
+        "The book is worth reading but overstates its case.",
+        "The book is worthless.",
+        "The book proves its argument convincingly.",
+        "The book is only about informal networks."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“There are several merits” and “genuinely illuminating” give credit; “the claims outrun the data” is the core criticism.",
+        "ar": "الإشادة واضحة في «هناك عدة مزايا» و«مضيء حقاً»، والنقد الجوهري في «الادعاءات تتجاوز البيانات»." } },
+
+    { "id": "c1u1-11", "concept": "c1.inference", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "“A more cautious framing would have served the book better.” This is:", "ar": "هذه العبارة تُعدّ:" },
+      "options": [
+        "a criticism expressed politely",
+        "a compliment",
+        "a neutral description of the method",
+        "a request to the publisher"
+      ],
+      "answer": 0,
+      "explanation": { "en": "The third conditional implies the book did not do this — a criticism softened by form, not weakened in substance.",
+        "ar": "صيغة الشرط الثالث تفيد أن الكتاب لم يفعل ذلك، فهو نقد لُطِّف شكله دون أن يضعف مضمونه." } },
+
+    { "id": "c1u1-12", "concept": "c1.inference", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "What does “This is not to say the argument is without value” do?", "ar": "ما وظيفة عبارة This is not to say the argument is without value؟" },
+      "options": [
+        "It prevents the criticism from being read as total rejection.",
+        "It introduces a new topic.",
+        "It withdraws the earlier criticism.",
+        "It states the author's own view."
+      ],
+      "answer": 0,
+      "explanation": { "en": "It is a concession move: it limits the scope of the criticism while keeping it intact.",
+        "ar": "هي حركة تنازل بلاغية تحدّ من مدى النقد دون أن تلغيه." } },
+
+    { "id": "c1u1-13", "concept": "c1.collocation", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence contains an unnatural collocation?", "ar": "أي جملة فيها اقتران غير طبيعي؟" },
+      "options": [
+        "The study makes a strong contribution to the field.",
+        "The study does a strong contribution to the field.",
+        "The study raises important questions.",
+        "The study draws on extensive fieldwork."
+      ],
+      "answer": 1,
+      "explanation": { "en": "We “make” a contribution, not “do” one.",
+        "ar": "نقول make a contribution ولا نقول do a contribution." } },
+
+    { "id": "c1u1-14", "concept": "c1.hedging", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Soften this claim in one word: “This proves that the policy failed.” → “This ___ that the policy failed.”",
+        "ar": "خفّف حدّة هذا الادعاء بكلمة واحدة: This ___ that the policy failed." },
+      "answer": "suggests", "accept": ["indicates", "implies"],
+      "explanation": { "en": "“Suggests / indicates / implies” all reduce the strength of the claim to fit the evidence.",
+        "ar": "كلمات suggests وindicates وimplies تخفّض درجة الجزم لتناسب حجم الدليل." } },
+
+    { "id": "c1u1-15", "concept": "c1.nuance", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence is the most precise?", "ar": "أي جملة أدق؟" },
+      "options": [
+        "Participation fell sharply after the fee was introduced.",
+        "Participation went down a lot after the fee was introduced.",
+        "Participation became less after the fee was introduced.",
+        "Participation was decreasing much after the fee came."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Fell sharply” is the standard collocation for a steep decline; the others are vague or unnatural.",
+        "ar": "fell sharply هو التعبير المعتاد عن انخفاض حاد، وبقية الصيغ إما مبهمة أو غير طبيعية." } }
+  ]
+}

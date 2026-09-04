@@ -1,0 +1,141 @@
+{
+  "id": "a1-u5",
+  "goal": {
+    "en": "Describe what is happening now, and know when to use it instead of the present simple.",
+    "ar": "أن تصف ما يحدث الآن، وأن تعرف متى تستخدمه بدلاً من المضارع البسيط."
+  },
+  "concepts": [
+    {
+      "id": "a1.continuous.form",
+      "title": { "en": "am / is / are + -ing", "ar": "تكوين المضارع المستمر" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Present continuous = be (am/is/are) + verb-ing. Both parts are required: I am working (not “I working”).",
+          "ar": "المضارع المستمر = فعل الكون + الفعل مضافاً إليه ing. ولا بد من الجزأين معاً: I am working وليس I working." } },
+        { "type": "table", "head": ["Verb", "-ing form", "Rule"], "rows": [
+          ["work", "working", "just add -ing"],
+          ["write", "writing", "drop the silent -e"],
+          ["sit", "sitting", "double the final consonant"],
+          ["study", "studying", "keep the y"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "I am reading a book right now.", "ar": "أقرأ كتاباً الآن." },
+          { "en": "She isn't listening to you.", "ar": "هي لا تستمع إليك." },
+          { "en": "What are you doing?", "ar": "ماذا تفعل؟" }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.continuous.vs.simple",
+      "title": { "en": "Now or usually?", "ar": "الآن أم عادةً؟" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Present simple = usually, every day, always. Present continuous = now, at the moment, today.",
+          "ar": "المضارع البسيط للعادة (usually / every day)، والمستمر للحظة الحالية (now / at the moment)." } },
+        { "type": "examples", "items": [
+          { "en": "He usually drives to work, but today he is taking the bus.", "ar": "يقود عادةً إلى العمل، لكنه اليوم يستقل الحافلة." },
+          { "en": "I work in a bank. — I am working late tonight.", "ar": "أعمل في بنك. — أعمل لوقت متأخر الليلة." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Some verbs describe states, not actions, and are not used in the continuous: know, want, like, need, understand, believe. Say “I want water”, not “I am wanting water”.",
+          "ar": "أفعال الحالة مثل know وwant وlike وneed لا تُستخدم في المستمر. نقول I want water ولا نقول I am wanting water." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u5-01", "concept": "a1.continuous.form", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "Be quiet! The baby ___ .", "options": ["is sleeping", "sleeps", "sleep", "sleeping"], "answer": 0,
+      "explanation": { "en": "It is happening now → is + sleeping.", "ar": "الحدث يقع الآن، فنستخدم is + sleeping." } },
+
+    { "id": "a1u5-02", "concept": "a1.continuous.form", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "We ___ dinner at the moment.", "options": ["are having", "have", "has", "having"], "answer": 0,
+      "explanation": { "en": "“At the moment” signals the continuous.", "ar": "عبارة at the moment تدل على المستمر." } },
+
+    { "id": "a1u5-03", "concept": "a1.continuous.form", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Write the -ing form of “write”.", "ar": "اكتب صيغة ing من الفعل write." },
+      "answer": "writing",
+      "explanation": { "en": "Drop the silent -e before -ing: write → writing.", "ar": "نحذف الـ e الصامتة قبل ing: write → writing." } },
+
+    { "id": "a1u5-04", "concept": "a1.continuous.form", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "Write the -ing form of “sit”.", "ar": "اكتب صيغة ing من الفعل sit." },
+      "answer": "sitting",
+      "explanation": { "en": "A short vowel + single consonant doubles the consonant: sit → sitting.",
+        "ar": "إذا انتهى الفعل بحرف ساكن مسبوق بصوت متحرك قصير نضاعف الساكن: sitting." } },
+
+    { "id": "a1u5-05", "concept": "a1.continuous.form", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["They are waiting outside.", "She is cooking lunch.", "I working now.", "He isn't studying today."],
+      "answer": 2,
+      "explanation": { "en": "The verb “be” is missing: I am working now.",
+        "ar": "فعل الكون ناقص. الصواب I am working now." },
+      "commonMistake": { "en": "Arabic expresses “now” with one word (أعمل الآن), so learners drop “am”.",
+        "ar": "في العربية يكفي فعل واحد «أعمل الآن»، فينسى المتعلم am." } },
+
+    { "id": "a1u5-06", "concept": "a1.continuous.form", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["What", "are", "you", "doing", "now"], "answer": "What are you doing now",
+      "explanation": { "en": "Question word + be + subject + -ing.", "ar": "أداة السؤال ثم فعل الكون ثم الفاعل ثم الفعل بـ ing." } },
+
+    { "id": "a1u5-07", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My father ___ tea every morning.", "options": ["drinks", "is drinking", "drink", "are drinking"], "answer": 0,
+      "explanation": { "en": "“Every morning” is a habit → present simple.", "ar": "«كل صباح» عادة، فنستخدم المضارع البسيط." } },
+
+    { "id": "a1u5-08", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "She usually works in Cairo, but this week she ___ in Aswan.", "options": ["is working", "works", "work", "worked"], "answer": 0,
+      "explanation": { "en": "“This week” is a temporary situation → continuous.",
+        "ar": "«هذا الأسبوع» وضع مؤقت، فنستخدم المستمر مقابل العادة الدائمة." } },
+
+    { "id": "a1u5-09", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I am knowing the answer.", "I know the answer.", "I am learning English.", "I understand you."],
+      "answer": 0,
+      "explanation": { "en": "“Know” is a state verb: it has no continuous form. Say “I know the answer.”",
+        "ar": "فعل know من أفعال الحالة ولا يأتي في المستمر. الصواب I know the answer." } },
+
+    { "id": "a1u5-10", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "“I'm living with my aunt.” What does this suggest?", "ar": "ماذا توحي جملة I'm living with my aunt؟" },
+      "options": ["A temporary situation.", "A permanent home.", "Something in the past.", "A future plan only."],
+      "answer": 0,
+      "explanation": { "en": "The continuous suggests a temporary arrangement; “I live with my aunt” sounds permanent.",
+        "ar": "المستمر يوحي بوضع مؤقت، أما I live with my aunt فتوحي بالإقامة الدائمة." } },
+
+    { "id": "a1u5-11", "concept": "a1.continuous.form", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Look! It ___ .", "options": ["is raining", "rains", "rain", "raining"], "answer": 0,
+      "explanation": { "en": "“Look!” points to this moment → continuous.", "ar": "كلمة Look تشير إلى اللحظة الحالية، فنستخدم المستمر." } },
+
+    { "id": "a1u5-12", "concept": "a1.continuous.form", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "“Are they watching the match?” — Choose the correct short answer.", "ar": "اختر الإجابة القصيرة الصحيحة." },
+      "options": ["Yes, they are.", "Yes, they do.", "Yes, they watching.", "Yes, they're."],
+      "answer": 0,
+      "explanation": { "en": "The short answer repeats “be”, and never ends in a contraction.",
+        "ar": "الإجابة القصيرة تعيد فعل الكون كاملاً بلا اختصار." } },
+
+    { "id": "a1u5-13", "concept": "a1.continuous.vs.simple", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match each time expression with the tense it signals.", "ar": "صِل كل عبارة زمنية بالزمن الذي تدل عليه." },
+      "pairs": [["every day", "present simple"], ["right now", "present continuous"], ["usually", "habit"], ["at the moment", "action in progress"]],
+      "explanation": { "en": "Time expressions are the fastest clue to the right tense.",
+        "ar": "العبارات الزمنية أسرع دليل لاختيار الزمن الصحيح." } },
+
+    { "id": "a1u5-14", "concept": "a1.continuous.form", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Make it negative: “He is working today.”", "ar": "حوّلها إلى النفي: He is working today." },
+      "answer": "he isn't working today", "accept": ["he is not working today", "he's not working today"],
+      "explanation": { "en": "Put “not” after “is”: isn't working.", "ar": "نضع not بعد is فتصير isn't working." } },
+
+    { "id": "a1u5-15", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ English every day, and right now I ___ this exercise.",
+      "options": ["study / am doing", "am studying / do", "study / do", "am studying / am doing"], "answer": 0,
+      "explanation": { "en": "“Every day” → simple; “right now” → continuous. One sentence can contain both.",
+        "ar": "«كل يوم» يتطلب البسيط، و«الآن» يتطلب المستمر، ويمكن أن يجتمعا في جملة واحدة." } },
+
+    { "id": "a1u5-16", "concept": "a1.continuous.form", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Where ___ your friends going?", "options": ["are", "is", "do", "does"], "answer": 0,
+      "explanation": { "en": "“Your friends” is plural → are + going.", "ar": "«your friends» جمع، فنستخدم are مع going." } },
+
+    { "id": "a1u5-17", "concept": "a1.continuous.vs.simple", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence sounds natural?", "ar": "أي جملة تبدو طبيعية؟" },
+      "options": ["I am wanting a coffee.", "I want a coffee.", "I am needing help.", "I am liking this song."],
+      "answer": 1,
+      "explanation": { "en": "want, need and like are state verbs and stay in the simple form.",
+        "ar": "الأفعال want وneed وlike من أفعال الحالة فتبقى في الصيغة البسيطة." } }
+  ]
+}

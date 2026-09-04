@@ -1,0 +1,152 @@
+{
+  "id": "a1-u6",
+  "goal": {
+    "en": "Talk about finished past events: was/were, regular -ed verbs, and past questions.",
+    "ar": "أن تتحدث عن أحداث انتهت في الماضي: was/were، والأفعال المنتهية بـ ed، والسؤال في الماضي."
+  },
+  "concepts": [
+    {
+      "id": "a1.past.wasWere",
+      "title": { "en": "was / were", "ar": "was و were" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "was = I, he, she, it. were = you, we, they. Negative: wasn't / weren't.",
+          "ar": "نستخدم was مع I/he/she/it، وwere مع you/we/they. والنفي wasn't وweren't." } },
+        { "type": "examples", "items": [
+          { "en": "I was at home yesterday.", "ar": "كنت في البيت أمس." },
+          { "en": "They were very tired.", "ar": "كانوا متعبين جداً." },
+          { "en": "It wasn't easy.", "ar": "لم يكن الأمر سهلاً." },
+          { "en": "Where were you last night?", "ar": "أين كنت الليلة الماضية؟" }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.past.regular",
+      "title": { "en": "Regular past: -ed", "ar": "الماضي القياسي بـ ed" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Most verbs add -ed: worked, played, watched. Verbs ending in -e add only -d (liked). Consonant + y → -ied (studied).",
+          "ar": "أغلب الأفعال تأخذ ed مثل worked. وما ينتهي بـ e يأخذ d فقط مثل liked. وy المسبوقة بساكن تصير ied مثل studied." } },
+        { "type": "p", "text": {
+          "en": "The past form is the same for every subject: I worked, she worked, they worked. No -s, no changes.",
+          "ar": "صيغة الماضي واحدة لجميع الضمائر: I worked وshe worked وthey worked، فلا s ولا تغيير." } },
+        { "type": "tip", "text": {
+          "en": "-ed has three sounds: /t/ in worked, /d/ in played, /ɪd/ in wanted. Listen for them.",
+          "ar": "تُنطق ed بثلاث طرق: /t/ في worked، و/d/ في played، و/id/ في wanted." } }
+      ]
+    },
+    {
+      "id": "a1.past.questions",
+      "title": { "en": "did / didn't", "ar": "السؤال والنفي بـ did" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Questions and negatives use “did” + the BASE verb: Did you watch the film? I didn't watch it.",
+          "ar": "السؤال والنفي في الماضي يستخدمان did مع الفعل المجرد: Did you watch…? / I didn't watch it." } },
+        { "type": "warn", "text": {
+          "en": "The past is marked once only. “Did you watched?” and “I didn't went” are wrong — the -ed disappears after did.",
+          "ar": "علامة الماضي تظهر مرة واحدة. فلا نقول Did you watched ولا I didn't went، بل Did you watch وI didn't go." } },
+        { "type": "examples", "items": [
+          { "en": "Did she call you? — Yes, she did.", "ar": "هل اتصلت بك؟ — نعم." },
+          { "en": "We didn't finish the work.", "ar": "لم نُنهِ العمل." },
+          { "en": "Why did they leave early?", "ar": "لماذا غادروا مبكراً؟" }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u6-01", "concept": "a1.past.wasWere", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I ___ at the market yesterday.", "options": ["was", "were", "am", "is"], "answer": 0,
+      "explanation": { "en": "I → was.", "ar": "مع I نستخدم was." } },
+
+    { "id": "a1u6-02", "concept": "a1.past.wasWere", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "They ___ very happy with the result.", "options": ["were", "was", "are", "did"], "answer": 0,
+      "explanation": { "en": "they → were.", "ar": "مع they نستخدم were." } },
+
+    { "id": "a1u6-03", "concept": "a1.past.wasWere", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "The weather ___ good last week.", "options": ["wasn't", "weren't", "didn't", "isn't"], "answer": 0,
+      "explanation": { "en": "“The weather” = it → wasn't.", "ar": "«الطقس» بمعنى it، فنستخدم wasn't." } },
+
+    { "id": "a1u6-04", "concept": "a1.past.wasWere", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["Where", "were", "you", "last", "night"], "answer": "Where were you last night",
+      "explanation": { "en": "Question word + were + subject.", "ar": "أداة السؤال ثم were ثم الفاعل." } },
+
+    { "id": "a1u6-05", "concept": "a1.past.regular", "type": "text", "format": "write", "difficulty": 1,
+      "prompt": { "en": "Write the past form of “watch”.", "ar": "اكتب صيغة الماضي من watch." },
+      "answer": "watched",
+      "explanation": { "en": "Regular verb: add -ed.", "ar": "فعل قياسي، نضيف إليه ed." } },
+
+    { "id": "a1u6-06", "concept": "a1.past.regular", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Write the past form of “study”.", "ar": "اكتب صيغة الماضي من study." },
+      "answer": "studied",
+      "explanation": { "en": "Consonant + y → -ied.", "ar": "y المسبوقة بساكن تتحول إلى ied." } },
+
+    { "id": "a1u6-07", "concept": "a1.past.regular", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "She ___ the door and left.", "options": ["closed", "close", "closes", "closing"], "answer": 0,
+      "explanation": { "en": "A finished past action → closed.", "ar": "حدث منتهٍ في الماضي، فنستخدم closed." } },
+
+    { "id": "a1u6-08", "concept": "a1.past.regular", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["We watched a film last night.", "He worked late yesterday.", "They playeds football.", "I finished my homework."],
+      "answer": 2,
+      "explanation": { "en": "The past form never takes -s: they played.",
+        "ar": "صيغة الماضي لا تأخذ s أبداً. الصواب they played." } },
+
+    { "id": "a1u6-09", "concept": "a1.past.questions", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ you call me yesterday?", "options": ["Did", "Do", "Was", "Were"], "answer": 0,
+      "explanation": { "en": "Past question with an action verb → Did.", "ar": "السؤال في الماضي مع فعل عادي يبدأ بـ Did." } },
+
+    { "id": "a1u6-10", "concept": "a1.past.questions", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["I didn't watched the match.", "I didn't watch the match.", "I don't watched the match.", "I didn't watching the match."],
+      "answer": 1,
+      "explanation": { "en": "After didn't, use the base verb: didn't watch.",
+        "ar": "بعد didn't يأتي الفعل مجرداً: didn't watch." },
+      "commonMistake": { "en": "Marking the past twice (didn't watched) is the most frequent past-tense error.",
+        "ar": "تكرار علامة الماضي مرتين أشهر خطأ في هذا الزمن." } },
+
+    { "id": "a1u6-11", "concept": "a1.past.questions", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "“Did they arrive on time?” — Choose the correct short answer.", "ar": "اختر الإجابة القصيرة الصحيحة." },
+      "options": ["No, they didn't.", "No, they weren't.", "No, they don't.", "No, they not."],
+      "answer": 0,
+      "explanation": { "en": "The answer repeats the auxiliary “did”.", "ar": "الإجابة تعيد الفعل المساعد did." } },
+
+    { "id": "a1u6-12", "concept": "a1.past.questions", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["When", "did", "you", "start", "your", "job"], "answer": "When did you start your job",
+      "explanation": { "en": "Question word + did + subject + base verb.", "ar": "أداة السؤال ثم did ثم الفاعل ثم الفعل المجرد." } },
+
+    { "id": "a1u6-13", "concept": "a1.past.wasWere", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Did you were at the party?", "Were you at the party?", "Was he at the party?", "They weren't at the party."],
+      "answer": 0,
+      "explanation": { "en": "Do not use “did” with “was/were”. Ask “Were you at the party?”",
+        "ar": "لا نجمع did مع was/were. الصواب Were you at the party?" } },
+
+    { "id": "a1u6-14", "concept": "a1.past.regular", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the verb with its past form.", "ar": "صِل الفعل بصيغة ماضيه." },
+      "pairs": [["stop", "stopped"], ["like", "liked"], ["try", "tried"], ["visit", "visited"]],
+      "explanation": { "en": "Spelling rules: double the consonant (stop), add -d (like), -y → -ied (try).",
+        "ar": "قواعد الإملاء: مضاعفة الساكن في stop، وإضافة d في like، وتحويل y إلى ied في try." } },
+
+    { "id": "a1u6-15", "concept": "a1.past.regular", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Put into the past: “They live in Beirut.”", "ar": "حوّلها إلى الماضي: They live in Beirut." },
+      "answer": "they lived in beirut",
+      "explanation": { "en": "live → lived (add -d).", "ar": "الفعل live ينتهي بـ e فنضيف d فقط." } },
+
+    { "id": "a1u6-16", "concept": "a1.past.questions", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ the email, but I ___ an answer.", "options": ["sent / didn't get", "sent / didn't got", "send / didn't get", "did send / didn't got"], "answer": 0,
+      "explanation": { "en": "Positive past = past form (sent); negative = didn't + base (get).",
+        "ar": "الإثبات يأخذ صيغة الماضي sent، والنفي يأخذ didn't مع الفعل المجرد get." } },
+
+    { "id": "a1u6-17", "concept": "a1.past.wasWere", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "There ___ a lot of people at the wedding.", "options": ["were", "was", "are", "did"], "answer": 0,
+      "explanation": { "en": "“A lot of people” is plural → there were.", "ar": "«الكثير من الناس» جمع، فنستخدم there were." } },
+
+    { "id": "a1u6-18", "concept": "a1.past.regular", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Last summer we ___ in Alexandria and ___ every morning.",
+      "options": ["stayed / swam", "stay / swim", "stayed / swim", "were staying / swam"], "answer": 0,
+      "explanation": { "en": "Both actions are finished past events; “swim” is irregular (swam) — you will meet more irregular verbs in A2.",
+        "ar": "الحدثان انتهيا في الماضي. ولاحظ أن swim فعل شاذ فماضيه swam، وستدرس الأفعال الشاذة في المستوى A2." } }
+  ]
+}

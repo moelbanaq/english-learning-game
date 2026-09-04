@@ -1,0 +1,155 @@
+{
+  "id": "b1-u2",
+  "goal": {
+    "en": "Talk about possibilities and imagined situations, and report what other people said.",
+    "ar": "أن تتحدث عن الاحتمالات والمواقف المتخيَّلة، وأن تنقل كلام الآخرين."
+  },
+  "concepts": [
+    {
+      "id": "b1.conditional.first",
+      "title": { "en": "First conditional: real possibility", "ar": "الشرط الأول: احتمال واقعي" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "If + present simple, will + base verb: If it rains, we will stay at home.",
+          "ar": "if مع المضارع البسيط، ثم will مع الفعل المجرد: If it rains, we will stay at home." } },
+        { "type": "warn", "text": {
+          "en": "Never put “will” after “if”: “If it will rain” is wrong. English marks the future only once, in the main clause.",
+          "ar": "لا تضع will بعد if. فجملة If it will rain خاطئة، لأن الإنجليزية تضع علامة المستقبل في الجواب فقط." } },
+        { "type": "examples", "items": [
+          { "en": "If you study, you will pass.", "ar": "إن ذاكرت ستنجح." },
+          { "en": "We'll call you if we need help.", "ar": "سنتصل بك إن احتجنا مساعدة." },
+          { "en": "If you don't hurry, you'll miss the train.", "ar": "إن لم تُسرع ستفوتك القطار." }
+        ] }
+      ]
+    },
+    {
+      "id": "b1.conditional.second",
+      "title": { "en": "Second conditional: imagined", "ar": "الشرط الثاني: موقف متخيَّل" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "If + past simple, would + base verb — for situations that are unlikely or untrue now: If I had more time, I would travel.",
+          "ar": "if مع الماضي البسيط ثم would مع الفعل المجرد، للموقف غير الواقعي أو المستبعد: If I had more time, I would travel." } },
+        { "type": "p", "text": {
+          "en": "The past form here is not about past time; it signals distance from reality.",
+          "ar": "صيغة الماضي هنا لا تدل على الزمن الماضي، بل على البعد عن الواقع." } },
+        { "type": "tip", "text": {
+          "en": "With “be”, formal English prefers “were” for all subjects: If I were you, I'd accept the offer.",
+          "ar": "مع فعل الكون تفضّل الإنجليزية الرسمية were مع كل الضمائر: If I were you, I'd accept the offer، وهي أشهر صيغة لإسداء النصح." } }
+      ]
+    },
+    {
+      "id": "b1.reported.speech",
+      "title": { "en": "Reported speech", "ar": "الكلام المنقول" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "When the reporting verb is past, the tense usually steps back one: present → past, past → past perfect, will → would, can → could.",
+          "ar": "إذا كان فعل النقل ماضياً تراجع الزمن خطوة: المضارع يصير ماضياً، والماضي يصير ماضياً تاماً، وwill تصير would، وcan تصير could." } },
+        { "type": "table", "head": ["Direct", "Reported"], "rows": [
+          ["“I am tired.”", "He said he was tired."],
+          ["“I work here.”", "She said she worked there."],
+          ["“I will call you.”", "He said he would call me."],
+          ["“Can you help?”", "She asked if I could help."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Reported questions use statement word order and no “do”: “She asked where I lived”, not “She asked where did I live”.",
+          "ar": "السؤال المنقول يأخذ ترتيب الجملة الخبرية وبلا do: She asked where I lived وليس where did I live." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u2-01", "concept": "b1.conditional.first", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "If it ___ tomorrow, we'll cancel the trip.", "options": ["rains", "will rain", "rained", "would rain"], "answer": 0,
+      "explanation": { "en": "After “if” we use the present simple, even for future meaning.",
+        "ar": "بعد if نستخدم المضارع البسيط وإن كان المعنى مستقبلاً." } },
+
+    { "id": "b1u2-02", "concept": "b1.conditional.first", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["If you call me, I'll answer.", "If you will call me, I'll answer.", "I'll answer if you call me.", "If she comes, we'll start."],
+      "answer": 1,
+      "explanation": { "en": "“Will” cannot follow “if” in a first conditional.",
+        "ar": "لا تأتي will بعد if في الشرط الأول." } },
+
+    { "id": "b1u2-03", "concept": "b1.conditional.first", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["If", "you", "leave", "now", "you", "will", "arrive", "early"],
+      "answer": "If you leave now you will arrive early",
+      "explanation": { "en": "If-clause first, then the result clause with “will”.",
+        "ar": "جملة الشرط أولاً ثم الجواب مع will." } },
+
+    { "id": "b1u2-04", "concept": "b1.conditional.second", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "If I ___ rich, I ___ a school in my village.", "options": ["were / would build", "am / will build", "were / will build", "was / would built"], "answer": 0,
+      "explanation": { "en": "An imagined situation → if + past (were), would + base verb.",
+        "ar": "موقف متخيَّل، فنستخدم if مع الماضي ثم would مع الفعل المجرد." } },
+
+    { "id": "b1u2-05", "concept": "b1.conditional.second", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“If I knew her number, I would call her.” What is true?", "ar": "«If I knew her number, I would call her» ما الصحيح؟" },
+      "options": ["I don't know her number.", "I knew her number in the past.", "I will call her tomorrow.", "She called me."],
+      "answer": 0,
+      "explanation": { "en": "The second conditional describes something untrue now — I do not have the number.",
+        "ar": "الشرط الثاني يصف ما يخالف الواقع الآن، أي أنني لا أملك الرقم." } },
+
+    { "id": "b1u2-06", "concept": "b1.conditional.second", "type": "choice", "format": "mcq", "difficulty": 3,
+      "prompt": { "en": "Your friend cannot decide about a job offer. What is the natural way to advise?", "ar": "صديقك متردد بشأن عرض عمل. ما الأسلوب الطبيعي للنصح؟" },
+      "options": ["If I were you, I'd take it.", "If I am you, I take it.", "If I would be you, I take it.", "If I was you, I will take it."],
+      "answer": 0,
+      "explanation": { "en": "“If I were you, I'd…” is the standard advice formula.",
+        "ar": "«If I were you, I'd…» هي الصيغة المعتادة لإسداء النصيحة." } },
+
+    { "id": "b1u2-07", "concept": "b1.conditional.second", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["If I had a car, I would drive you.", "If I would have a car, I would drive you.", "If she studied more, she would pass.", "We'd move if we found a bigger flat."],
+      "answer": 1,
+      "explanation": { "en": "“Would” does not go in the if-clause: If I had a car…",
+        "ar": "لا تأتي would في جملة الشرط. الصواب If I had a car…" } },
+
+    { "id": "b1u2-08", "concept": "b1.reported.speech", "type": "choice", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "“I am busy,” he said. Report it.", "ar": "انقل الجملة: «I am busy» he said." },
+      "options": ["He said he was busy.", "He said he is busy.", "He said that he busy.", "He said he has been busy."],
+      "answer": 0,
+      "explanation": { "en": "Present → past after a past reporting verb.",
+        "ar": "المضارع يتحول إلى ماضٍ بعد فعل نقل ماضٍ." } },
+
+    { "id": "b1u2-09", "concept": "b1.reported.speech", "type": "choice", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "“I will send the file tomorrow,” she said. Report it.", "ar": "انقل: «I will send the file tomorrow» she said." },
+      "options": ["She said she would send the file the next day.", "She said she will send the file tomorrow.", "She said she sends the file tomorrow.", "She says she would send the file."],
+      "answer": 0,
+      "explanation": { "en": "will → would, and “tomorrow” becomes “the next day” when the moment of speaking has changed.",
+        "ar": "will تصير would، وtomorrow تصير the next day لأن لحظة الكلام تغيّرت." } },
+
+    { "id": "b1u2-10", "concept": "b1.reported.speech", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which reported question is correct?", "ar": "أي سؤال منقول صحيح؟" },
+      "options": ["She asked where did I live.", "She asked where I lived.", "She asked where do I live.", "She asked me where did I lived."],
+      "answer": 1,
+      "explanation": { "en": "A reported question uses statement word order and drops “do”.",
+        "ar": "السؤال المنقول يأخذ ترتيب الجملة الخبرية ويحذف do." } },
+
+    { "id": "b1u2-11", "concept": "b1.reported.speech", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "He asked me ___ I could help him.", "options": ["if", "that", "did", "what"], "answer": 0,
+      "explanation": { "en": "Yes/no questions are reported with “if” or “whether”.",
+        "ar": "السؤال الذي جوابه نعم/لا يُنقل بـ if أو whether." } },
+
+    { "id": "b1u2-12", "concept": "b1.reported.speech", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the direct form with its reported form.", "ar": "صِل الصيغة المباشرة بالمنقولة." },
+      "pairs": [["“I live here.”", "He said he lived there."], ["“I can swim.”", "He said he could swim."], ["“I saw her.”", "He said he had seen her."], ["“I will go.”", "He said he would go."]],
+      "explanation": { "en": "Each tense steps one place back, and place words shift too (here → there).",
+        "ar": "كل زمن يتراجع خطوة، وتتغير كلمات المكان أيضاً: here تصير there." } },
+
+    { "id": "b1u2-13", "concept": "b1.conditional.first", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I'll help you with the report ___ you send me the data today.", "options": ["if", "unless", "in case of", "so that"], "answer": 0,
+      "explanation": { "en": "“If” states the condition. “Unless” would mean “if you do NOT send it”.",
+        "ar": "if تضع الشرط، أما unless فتعني «إن لم ترسلها»، فيختلف المعنى تماماً." } },
+
+    { "id": "b1u2-14", "concept": "b1.conditional.second", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Complete: “If I ___ (not / be) so tired, I would go out.”", "ar": "أكمل: If I ___ (not / be) so tired, I would go out." },
+      "answer": "weren't", "accept": ["were not", "wasn't", "was not"],
+      "explanation": { "en": "The second conditional uses the past form; “weren't” is preferred in careful English.",
+        "ar": "الشرط الثاني يستخدم صيغة الماضي، وweren't هي المفضّلة في الإنجليزية المتأنية." } },
+
+    { "id": "b1u2-15", "concept": "b1.conditional.first", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence means the speaker thinks the situation is likely?", "ar": "أي جملة توحي بأن المتكلم يرى الأمر مرجّحاً؟" },
+      "options": ["If they offer me the job, I'll accept it.", "If they offered me the job, I'd accept it.", "If they had offered me the job, I'd have accepted.", "If they were to offer me the job, I would think."],
+      "answer": 0,
+      "explanation": { "en": "The first conditional presents a real possibility; the second presents a remote one.",
+        "ar": "الشرط الأول يعرض احتمالاً واقعياً، بينما الثاني يعرض احتمالاً بعيداً." } }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "updated": "2026-09-04",
+  "passMark": 75,
+  "levels": [
+    {
+      "id": "A1",
+      "name": { "en": "A1 · Beginner", "ar": "A1 · مبتدئ" },
+      "blurb": {
+        "en": "Build the foundations: be, pronouns, present simple, questions and everyday words.",
+        "ar": "أسّس قاعدتك: فعل الكون، الضمائر، المضارع البسيط، السؤال، ومفردات الحياة اليومية."
+      },
+      "units": [
+        { "id": "a1-u1", "file": "levels/a1/u1-be.json", "title": { "en": "The verb “be”", "ar": "فعل الكون be" }, "questions": 18,
+          "concepts": ["a1.be.affirmative", "a1.be.negative", "a1.be.questions"] },
+        { "id": "a1-u2", "file": "levels/a1/u2-people-things.json", "title": { "en": "People & things", "ar": "الأشخاص والأشياء" }, "questions": 18,
+          "concepts": ["a1.pronouns.subject", "a1.articles.aan", "a1.nouns.plural"] },
+        { "id": "a1-u3", "file": "levels/a1/u3-present-simple.json", "title": { "en": "Present simple: daily life", "ar": "المضارع البسيط: الحياة اليومية" }, "questions": 18,
+          "concepts": ["a1.present.affirmative", "a1.present.negative", "a1.present.questions"] },
+        { "id": "a1-u4", "file": "levels/a1/u4-have-there.json", "title": { "en": "have got · there is / are", "ar": "الامتلاك ووجود الأشياء" }, "questions": 17,
+          "concepts": ["a1.have.got", "a1.there.isare", "a1.some.any"] },
+        { "id": "a1-u5", "file": "levels/a1/u5-present-continuous.json", "title": { "en": "Present continuous: right now", "ar": "المضارع المستمر: الآن" }, "questions": 17,
+          "concepts": ["a1.continuous.form", "a1.continuous.vs.simple"] },
+        { "id": "a1-u6", "file": "levels/a1/u6-past-simple.json", "title": { "en": "Past simple: was, were & -ed", "ar": "الماضي البسيط" }, "questions": 18,
+          "concepts": ["a1.past.wasWere", "a1.past.regular", "a1.past.questions"] },
+        { "id": "a1-u7", "file": "levels/a1/u7-prepositions.json", "title": { "en": "Prepositions & how often", "ar": "حروف الجر وتكرار الأفعال" }, "questions": 17,
+          "concepts": ["a1.prep.time", "a1.prep.place", "a1.adverbs.frequency"] },
+        { "id": "a1-u8", "file": "levels/a1/u8-can-future.json", "title": { "en": "can, going to & everyday English", "ar": "القدرة والمستقبل والتعبيرات اليومية" }, "questions": 18,
+          "concepts": ["a1.modal.can", "a1.future.goingTo", "a1.everyday.phrases"] }
+      ]
+    },
+    {
+      "id": "A2",
+      "name": { "en": "A2 · Elementary", "ar": "A2 · أساسي" },
+      "blurb": {
+        "en": "Communicate about the past, compare things, give advice and start using present perfect.",
+        "ar": "تحدّث عن الماضي، قارن بين الأشياء، انصح غيرك، وابدأ استعمال المضارع التام."
+      },
+      "units": [
+        { "id": "a2-u1", "file": "levels/a2/u1-past-narrative.json", "title": { "en": "Telling a story: past tenses", "ar": "سرد القصة: أزمنة الماضي" }, "questions": 16,
+          "concepts": ["a2.past.irregular", "a2.past.continuous", "a2.past.when.while"] },
+        { "id": "a2-u2", "file": "levels/a2/u2-comparisons.json", "title": { "en": "Comparing & quantity", "ar": "المقارنة والكمية" }, "questions": 16,
+          "concepts": ["a2.comparatives", "a2.superlatives", "a2.quantifiers"] },
+        { "id": "a2-u3", "file": "levels/a2/u3-modals-advice.json", "title": { "en": "Obligation & advice", "ar": "الواجب والنصيحة" }, "questions": 15,
+          "concepts": ["a2.modal.mustHaveTo", "a2.modal.should", "a2.modal.permission"] },
+        { "id": "a2-u4", "file": "levels/a2/u4-present-perfect.json", "title": { "en": "Present perfect & phrasal verbs", "ar": "المضارع التام والأفعال المركّبة" }, "questions": 16,
+          "concepts": ["a2.perfect.experience", "a2.perfect.everYet", "a2.phrasal.common"] }
+      ]
+    },
+    {
+      "id": "B1",
+      "name": { "en": "B1 · Intermediate", "ar": "B1 · متوسط" },
+      "blurb": {
+        "en": "Handle time relationships, conditionals, reported speech and longer texts.",
+        "ar": "تحكّم في علاقات الزمن، والجمل الشرطية، والكلام المنقول، والنصوص الأطول."
+      },
+      "units": [
+        { "id": "b1-u1", "file": "levels/b1/u1-perfect-vs-past.json", "title": { "en": "Perfect vs past · since & for", "ar": "التام مقابل الماضي" }, "questions": 15,
+          "concepts": ["b1.perfect.vs.past", "b1.sinceFor", "b1.perfect.continuous"] },
+        { "id": "b1-u2", "file": "levels/b1/u2-conditionals-reported.json", "title": { "en": "Conditionals & reported speech", "ar": "الشرط والكلام المنقول" }, "questions": 15,
+          "concepts": ["b1.conditional.first", "b1.conditional.second", "b1.reported.speech"] }
+      ]
+    },
+    {
+      "id": "B2",
+      "name": { "en": "B2 · Upper intermediate", "ar": "B2 · فوق المتوسط" },
+      "blurb": {
+        "en": "Flexible, precise English: passive, advanced conditionals, linking and register.",
+        "ar": "إنجليزية مرنة ودقيقة: المبني للمجهول، الشرط المتقدم، أدوات الربط، ومستوى اللغة."
+      },
+      "units": [
+        { "id": "b2-u1", "file": "levels/b2/u1-structures.json", "title": { "en": "Complex structures & register", "ar": "التراكيب المتقدمة ومستوى اللغة" }, "questions": 15,
+          "concepts": ["b2.passive", "b2.conditional.mixed", "b2.linking", "b2.register"] }
+      ]
+    },
+    {
+      "id": "C1",
+      "name": { "en": "C1 · Advanced", "ar": "C1 · متقدم" },
+      "blurb": {
+        "en": "Precision, nuance, collocation and implication in academic and professional English.",
+        "ar": "الدقة والفروق الدقيقة والتلازم اللفظي والمعنى الضمني في الإنجليزية الأكاديمية والمهنية."
+      },
+      "units": [
+        { "id": "c1-u1", "file": "levels/c1/u1-precision.json", "title": { "en": "Precision & nuance", "ar": "الدقة والفروق الدقيقة" }, "questions": 15,
+          "concepts": ["c1.collocation", "c1.nuance", "c1.inference", "c1.hedging"] }
+      ]
+    },
+    {
+      "id": "C2",
+      "name": { "en": "C2 · Proficiency", "ar": "C2 · إتقان" },
+      "blurb": {
+        "en": "Naturalness, idiom, tone and rhetorical control — where correct is not enough.",
+        "ar": "الطبيعية والتعبير الاصطلاحي والنبرة والبلاغة — حيث لا تكفي الصحة النحوية."
+      },
+      "units": [
+        { "id": "c2-u1", "file": "levels/c2/u1-naturalness.json", "title": { "en": "Naturalness & tone", "ar": "الطبيعية والنبرة" }, "questions": 15,
+          "concepts": ["c2.naturalness", "c2.idiom", "c2.tone", "c2.discourse"] }
+      ]
+    }
+  ]
+}

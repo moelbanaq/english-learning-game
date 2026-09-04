@@ -1,0 +1,181 @@
+{
+  "id": "a1-u8",
+  "goal": {
+    "en": "Say what you can do, what you are going to do, and handle everyday situations in English.",
+    "ar": "أن تعبّر عمّا تستطيع فعله وعمّا تنوي فعله، وأن تتعامل مع مواقف الحياة اليومية بالإنجليزية."
+  },
+  "passages": {
+    "note": {
+      "title": "A message from Sara",
+      "text": "Hi Omar, I'm going to travel to Alexandria on Friday morning with my sister. We are going to stay for three days at a small hotel near the sea. I can't drive, so we are going to take the train. It leaves at 8:15, so please don't call me before nine — I am usually asleep on the train! Can you feed my cat while I am away? There is food in the kitchen. Thank you! Sara"
+    }
+  },
+  "concepts": [
+    {
+      "id": "a1.modal.can",
+      "title": { "en": "can / can't", "ar": "القدرة بـ can" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "can + base verb, for every subject: I can swim. She can swim. Never “She cans” and never “can to swim”.",
+          "ar": "can يليها الفعل مجرداً مع كل الضمائر: I can swim وShe can swim. ولا نقول cans ولا can to swim." } },
+        { "type": "examples", "items": [
+          { "en": "I can speak three languages.", "ar": "أستطيع التحدث بثلاث لغات." },
+          { "en": "He can't come today.", "ar": "لا يستطيع المجيء اليوم." },
+          { "en": "Can you help me, please?", "ar": "هل يمكنك مساعدتي من فضلك؟" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "“Can” is also how we ask politely: Can I have a coffee, please?",
+          "ar": "تُستخدم can أيضاً للطلب المهذب: Can I have a coffee, please?" } }
+      ]
+    },
+    {
+      "id": "a1.future.goingTo",
+      "title": { "en": "be going to", "ar": "المستقبل بـ going to" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "am/is/are + going to + base verb, for plans and intentions: I am going to study tonight.",
+          "ar": "فعل الكون + going to + الفعل المجرد، للتعبير عن الخطط والنوايا: I am going to study tonight." } },
+        { "type": "examples", "items": [
+          { "en": "We are going to buy a new car.", "ar": "سنشتري سيارة جديدة." },
+          { "en": "She isn't going to work tomorrow.", "ar": "لن تذهب إلى العمل غداً." },
+          { "en": "What are you going to do this weekend?", "ar": "ماذا ستفعل في نهاية الأسبوع؟" }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Do not drop “be”: “I going to travel” is wrong. And keep “to”: “I am going travel” is wrong too.",
+          "ar": "لا تحذف فعل الكون فتقول I going to travel، ولا تحذف to فتقول I am going travel. كلاهما خطأ." } }
+      ]
+    },
+    {
+      "id": "a1.everyday.phrases",
+      "title": { "en": "Everyday English", "ar": "تعبيرات الحياة اليومية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "These fixed phrases appear in almost every conversation. Learn them as whole blocks, not word by word.",
+          "ar": "هذه عبارات ثابتة تتكرر في كل محادثة تقريباً. احفظها ككتلة واحدة لا كلمةً كلمة." } },
+        { "type": "examples", "items": [
+          { "en": "Excuse me, how much is this?", "ar": "لو سمحت، بكم هذا؟" },
+          { "en": "I'd like a coffee, please.", "ar": "أريد قهوة من فضلك." },
+          { "en": "Sorry, I don't understand. Can you repeat that?", "ar": "آسف، لم أفهم. هل يمكنك الإعادة؟" },
+          { "en": "How do you say this in English?", "ar": "كيف تقول هذا بالإنجليزية؟" },
+          { "en": "See you tomorrow!", "ar": "أراك غداً!" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "“I'd like…” is more polite than “I want…”. Use it in shops, cafés and offices.",
+          "ar": "عبارة I'd like أكثر تهذيباً من I want، واستخدمها في المتاجر والمقاهي والمكاتب." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u8-01", "concept": "a1.modal.can", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "She ___ speak French very well.", "options": ["can", "cans", "can to", "is can"], "answer": 0,
+      "explanation": { "en": "“Can” never changes and is followed by the base verb.",
+        "ar": "can لا تتغير مع الفاعل، ويأتي بعدها الفعل مجرداً." } },
+
+    { "id": "a1u8-02", "concept": "a1.modal.can", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I can help you tomorrow.", "He can to drive a bus.", "Can you open the window?", "They can't come tonight."],
+      "answer": 1,
+      "explanation": { "en": "No “to” after can: He can drive a bus.", "ar": "لا نضع to بعد can. الصواب He can drive a bus." } },
+
+    { "id": "a1u8-03", "concept": "a1.modal.can", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "You want the waiter to bring water. What is the most polite?", "ar": "تريد من النادل أن يحضر ماءً. ما الأكثر تهذيباً؟" },
+      "options": ["Could I have some water, please?", "Give me water.", "I want water now.", "Water!"],
+      "answer": 0,
+      "explanation": { "en": "“Could I have…, please?” is the polite request form; “Give me” sounds like an order.",
+        "ar": "صيغة Could I have…, please؟ هي المهذبة، أما Give me فتبدو أمراً." } },
+
+    { "id": "a1u8-04", "concept": "a1.modal.can", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["Can", "you", "help", "me", "please"], "answer": "Can you help me please",
+      "explanation": { "en": "Can + subject + base verb.", "ar": "can ثم الفاعل ثم الفعل المجرد." } },
+
+    { "id": "a1u8-05", "concept": "a1.future.goingTo", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ to visit my uncle next week.", "options": ["am going", "going", "will going", "am go"], "answer": 0,
+      "explanation": { "en": "am + going to + base verb.", "ar": "نستخدم am مع going to ثم الفعل المجرد." } },
+
+    { "id": "a1u8-06", "concept": "a1.future.goingTo", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["They going to move to Doha.", "They are going to move to Doha.", "They are going move to Doha.", "They are go to move to Doha."],
+      "answer": 1,
+      "explanation": { "en": "The full pattern is are + going to + move.", "ar": "التركيب الكامل: are + going to + الفعل المجرد." } },
+
+    { "id": "a1u8-07", "concept": "a1.future.goingTo", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Make it negative: “He is going to sell his car.”", "ar": "حوّلها إلى النفي." },
+      "answer": "he isn't going to sell his car", "accept": ["he is not going to sell his car", "he's not going to sell his car"],
+      "explanation": { "en": "Put “not” after “is”.", "ar": "نضع not بعد is." } },
+
+    { "id": "a1u8-08", "concept": "a1.future.goingTo", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Look at those clouds! It ___ rain.", "options": ["is going to", "goes to", "going to", "is go to"], "answer": 0,
+      "explanation": { "en": "We also use “going to” for a prediction based on what we can see now.",
+        "ar": "نستخدم going to أيضاً للتنبؤ المبني على دليل حاضر نراه الآن." } },
+
+    { "id": "a1u8-09", "concept": "a1.everyday.phrases", "type": "choice", "format": "mcq", "difficulty": 1,
+      "prompt": { "en": "Someone says “Thank you very much.” What is the natural reply?", "ar": "قال لك أحدهم Thank you very much. ما الرد الطبيعي؟" },
+      "options": ["You're welcome.", "Yes, please.", "Never mind me.", "I am fine, thanks."],
+      "answer": 0,
+      "explanation": { "en": "“You're welcome” is the standard response to thanks.",
+        "ar": "You're welcome هو الرد المعتاد على الشكر." } },
+
+    { "id": "a1u8-10", "concept": "a1.everyday.phrases", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "You did not hear what someone said. What do you say?", "ar": "لم تسمع ما قاله المتحدث. ماذا تقول؟" },
+      "options": ["Sorry, could you repeat that?", "What you say?", "Repeat!", "I no understand."],
+      "answer": 0,
+      "explanation": { "en": "“Sorry, could you repeat that?” is polite and standard.",
+        "ar": "هذه العبارة مهذبة وشائعة، وهي أفضل من الترجمة الحرفية." } },
+
+    { "id": "a1u8-11", "concept": "a1.everyday.phrases", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the situation with the phrase.", "ar": "صِل الموقف بالعبارة المناسبة." },
+      "pairs": [["In a shop", "How much is this?"], ["Meeting someone", "Nice to meet you."], ["Leaving", "See you tomorrow!"], ["Ordering", "I'd like a tea, please."]],
+      "explanation": { "en": "Fixed phrases are learned as whole units.", "ar": "العبارات الثابتة تُحفظ كوحدة واحدة." } },
+
+    { "id": "a1u8-12", "concept": "a1.everyday.phrases", "type": "choice", "format": "comprehension", "difficulty": 2,
+      "passageId": "note",
+      "prompt": { "en": "When is Sara going to travel?", "ar": "متى ستسافر سارة؟" },
+      "options": ["On Friday morning.", "On Thursday night.", "In three days at nine.", "On Monday morning."],
+      "answer": 0,
+      "explanation": { "en": "The text says: “I'm going to travel to Alexandria on Friday morning.”",
+        "ar": "النص يقول إنها ستسافر صباح الجمعة." } },
+
+    { "id": "a1u8-13", "concept": "a1.everyday.phrases", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "note",
+      "prompt": { "en": "Why are they going to take the train?", "ar": "لماذا سيستقلان القطار؟" },
+      "options": ["Because Sara can't drive.", "Because the hotel is far.", "Because it is cheap.", "Because her sister likes trains."],
+      "answer": 0,
+      "explanation": { "en": "“I can't drive, so we are going to take the train.” The word “so” shows the result.",
+        "ar": "قالت إنها لا تستطيع القيادة، ولذلك سيستقلان القطار. وكلمة so تدل على النتيجة." } },
+
+    { "id": "a1u8-14", "concept": "a1.everyday.phrases", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "note",
+      "prompt": { "en": "What does Sara ask Omar to do?", "ar": "ماذا طلبت سارة من عمر؟" },
+      "options": ["Feed her cat.", "Drive her to the station.", "Book a hotel.", "Call her at eight."],
+      "answer": 0,
+      "explanation": { "en": "“Can you feed my cat while I am away?” is her request.",
+        "ar": "طلبها هو إطعام قطتها أثناء غيابها." } },
+
+    { "id": "a1u8-15", "concept": "a1.everyday.phrases", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "note",
+      "prompt": { "en": "Why does Sara say “don't call me before nine”?", "ar": "لماذا قالت سارة «لا تتصل بي قبل التاسعة»؟" },
+      "options": ["She is usually asleep on the train.", "Her phone is broken.", "She does not like Omar.", "The train has no signal."],
+      "answer": 0,
+      "explanation": { "en": "She explains it herself: “I am usually asleep on the train.” This is inference from the reason she gives.",
+        "ar": "هي نفسها ذكرت السبب: عادةً ما تنام في القطار. وهذا استنتاج من التعليل الذي أوردته." } },
+
+    { "id": "a1u8-16", "concept": "a1.future.goingTo", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "note",
+      "prompt": { "en": "How long are they going to stay?", "ar": "كم سيمكثان؟" },
+      "options": ["Three days.", "Three weeks.", "One night.", "Until Monday morning."],
+      "answer": 0,
+      "explanation": { "en": "“We are going to stay for three days.”", "ar": "النص يقول إنهما ستمكثان ثلاثة أيام." } },
+
+    { "id": "a1u8-17", "concept": "a1.modal.can", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ swim, but I ___ swim very fast.", "options": ["can / can't", "can't / can", "can / can", "cans / can't"], "answer": 0,
+      "explanation": { "en": "The contrast with “but” needs positive then negative: can / can't.",
+        "ar": "التقابل بـ but يقتضي إثباتاً ثم نفياً: can ثم can't." } },
+
+    { "id": "a1u8-18", "concept": "a1.future.goingTo", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["What", "are", "you", "going", "to", "do", "tomorrow"], "answer": "What are you going to do tomorrow",
+      "explanation": { "en": "Question word + be + subject + going to + base verb.",
+        "ar": "أداة السؤال ثم فعل الكون ثم الفاعل ثم going to ثم الفعل المجرد." } }
+  ]
+}

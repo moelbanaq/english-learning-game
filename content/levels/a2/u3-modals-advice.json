@@ -1,0 +1,152 @@
+{
+  "id": "a2-u3",
+  "goal": {
+    "en": "Express rules, obligations, advice and permission with the right modal verb.",
+    "ar": "أن تعبّر عن القواعد والواجب والنصيحة والإذن بالفعل الناقص المناسب."
+  },
+  "concepts": [
+    {
+      "id": "a2.modal.mustHaveTo",
+      "title": { "en": "must / have to", "ar": "الواجب: must و have to" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "must = the speaker's own strong feeling or a written rule. have to = an outside obligation (a law, a boss, a schedule).",
+          "ar": "must تعبّر عن إلزام نابع من المتكلم أو من قاعدة مكتوبة، وhave to تعبّر عن إلزام خارجي مثل القانون أو العمل." } },
+        { "type": "warn", "text": {
+          "en": "The negatives mean different things! “You mustn't smoke” = it is forbidden. “You don't have to smoke” = it is not necessary.",
+          "ar": "انتبه: نفياهما مختلفان تماماً. mustn't تعني «ممنوع»، وdon't have to تعني «غير مطلوب منك»." } },
+        { "type": "examples", "items": [
+          { "en": "I have to work on Saturday.", "ar": "عليّ العمل يوم السبت." },
+          { "en": "You must wear a seatbelt.", "ar": "يجب أن ترتدي حزام الأمان." },
+          { "en": "You mustn't park here.", "ar": "ممنوع الوقوف هنا." },
+          { "en": "You don't have to pay — it's free.", "ar": "لست مضطراً للدفع، فهي مجانية." }
+        ] }
+      ]
+    },
+    {
+      "id": "a2.modal.should",
+      "title": { "en": "should / shouldn't", "ar": "النصيحة بـ should" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "should + base verb gives advice — softer than must: You should see a doctor.",
+          "ar": "should مع الفعل المجرد للنصيحة، وهي أخف من must: You should see a doctor." } },
+        { "type": "examples", "items": [
+          { "en": "You should drink more water.", "ar": "ينبغي أن تشرب ماءً أكثر." },
+          { "en": "He shouldn't work so late.", "ar": "لا ينبغي أن يعمل إلى وقت متأخر." },
+          { "en": "Should I call her now?", "ar": "هل ينبغي أن أتصل بها الآن؟" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Modals never take -s and never take “to”: “He should to go” and “He shoulds go” are both wrong.",
+          "ar": "الأفعال الناقصة لا تأخذ s ولا to. فلا نقول He should to go ولا He shoulds go." } }
+      ]
+    },
+    {
+      "id": "a2.modal.permission",
+      "title": { "en": "can / could / may", "ar": "الإذن والطلب" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Can I…? (everyday) · Could I…? (more polite) · May I…? (formal). All are followed by the base verb.",
+          "ar": "Can I للاستخدام اليومي، وCould I أكثر تهذيباً، وMay I رسمية. ويأتي بعدها الفعل مجرداً." } },
+        { "type": "examples", "items": [
+          { "en": "Can I borrow your pen?", "ar": "هل لي أن أستعير قلمك؟" },
+          { "en": "Could you speak more slowly, please?", "ar": "هل يمكنك التحدث ببطء أكثر؟" },
+          { "en": "May I leave early today?", "ar": "هل تسمح لي بالمغادرة مبكراً اليوم؟" }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u3-01", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Passengers ___ show their tickets before boarding.", "options": ["must", "musts", "must to", "are must"], "answer": 0,
+      "explanation": { "en": "A written rule → must + base verb, no “to”, no -s.",
+        "ar": "قاعدة مكتوبة، فنستخدم must مع الفعل المجرد بلا to وبلا s." } },
+
+    { "id": "a2u3-02", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "She ___ start work at seven every day.", "options": ["has to", "must to", "have to", "should to"], "answer": 0,
+      "explanation": { "en": "External obligation with “she” → has to.",
+        "ar": "إلزام خارجي مع she، فنستخدم has to." } },
+
+    { "id": "a2u3-03", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“You don't have to come.” What does it mean?", "ar": "ماذا تعني You don't have to come؟" },
+      "options": ["It is not necessary for you to come.", "You are not allowed to come.", "You must stay away.", "You should not come."],
+      "answer": 0,
+      "explanation": { "en": "don't have to = no obligation. Forbidding is “mustn't”.",
+        "ar": "don't have to تعني عدم وجود إلزام، أما المنع فيُعبَّر عنه بـ mustn't." },
+      "commonMistake": { "en": "Learners often read “don't have to” as “forbidden”. It is the opposite: it removes the obligation.",
+        "ar": "يظن كثيرون أن don't have to تعني المنع، وهي في الحقيقة ترفع الإلزام لا أكثر." } },
+
+    { "id": "a2u3-04", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "You ___ touch that — it's very hot!", "options": ["mustn't", "don't have to", "shouldn't have", "haven't to"], "answer": 0,
+      "explanation": { "en": "A prohibition → mustn't.", "ar": "هذا منع، فنستخدم mustn't." } },
+
+    { "id": "a2u3-05", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I ___ work yesterday because it was a holiday.", "options": ["didn't have to", "mustn't", "don't have to", "hadn't to"], "answer": 0,
+      "explanation": { "en": "“Must” has no past form; use “didn't have to” for the past.",
+        "ar": "لا ماضي لـ must، فنستخدم didn't have to للتعبير عن الماضي." } },
+
+    { "id": "a2u3-06", "concept": "a2.modal.should", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "You look tired. You ___ rest.", "options": ["should", "shoulds", "should to", "must to"], "answer": 0,
+      "explanation": { "en": "Advice → should + base verb.", "ar": "النصيحة تُعبَّر عنها بـ should مع الفعل المجرد." } },
+
+    { "id": "a2u3-07", "concept": "a2.modal.should", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["You should see a doctor.", "He should to study more.", "We shouldn't be late.", "Should I bring anything?"],
+      "answer": 1,
+      "explanation": { "en": "No “to” after should: He should study more.",
+        "ar": "لا نضع to بعد should. الصواب He should study more." } },
+
+    { "id": "a2u3-08", "concept": "a2.modal.should", "type": "choice", "format": "mcq", "difficulty": 3,
+      "prompt": { "en": "Your friend has a bad headache. What is the best advice?", "ar": "صديقك يعاني صداعاً شديداً. ما أفضل نصيحة؟" },
+      "options": ["You should take a break and drink water.", "You must to sleep.", "You have to being fine.", "You should to relax."],
+      "answer": 0,
+      "explanation": { "en": "Only the first sentence is grammatical: should + base verb.",
+        "ar": "الجملة الأولى وحدها صحيحة نحوياً: should مع الفعل المجرد." } },
+
+    { "id": "a2u3-09", "concept": "a2.modal.should", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["You", "shouldn't", "eat", "so", "much", "sugar"], "answer": "You shouldn't eat so much sugar",
+      "explanation": { "en": "shouldn't + base verb.", "ar": "shouldn't متبوعة بالفعل المجرد." } },
+
+    { "id": "a2u3-10", "concept": "a2.modal.permission", "type": "choice", "format": "register", "difficulty": 3,
+      "prompt": { "en": "You are in a job interview and need to leave ten minutes early. What do you say?", "ar": "أنت في مقابلة عمل وتحتاج المغادرة مبكراً بعشر دقائق. ماذا تقول؟" },
+      "options": ["Could I leave ten minutes early, please?", "I leave early, ok?", "Can I go now?", "I want to leave early."],
+      "answer": 0,
+      "explanation": { "en": "“Could I…, please?” fits a formal situation; “Can I go now?” is too casual here.",
+        "ar": "صيغة Could I…, please؟ تناسب الموقف الرسمي، أما Can I go now؟ فعامية في هذا السياق." } },
+
+    { "id": "a2u3-11", "concept": "a2.modal.permission", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ you help me with this box, please?", "options": ["Could", "Should", "Must", "May"], "answer": 0,
+      "explanation": { "en": "“Could you…?” is the normal polite request.", "ar": "Could you…؟ هي صيغة الطلب المهذب المعتادة." } },
+
+    { "id": "a2u3-12", "concept": "a2.modal.permission", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the modal with its meaning.", "ar": "صِل الفعل الناقص بمعناه." },
+      "pairs": [["must", "strong obligation"], ["should", "advice"], ["can", "ability or permission"], ["mustn't", "prohibition"]],
+      "explanation": { "en": "Each modal carries one core meaning — learn the meaning, not just the word.",
+        "ar": "لكل فعل ناقص معنى جوهري، والأهم أن تحفظ المعنى لا الكلمة وحدها." } },
+
+    { "id": "a2u3-13", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which pair of sentences means the SAME?", "ar": "أي زوج من الجمل يحمل المعنى نفسه؟" },
+      "options": [
+        "You mustn't tell anyone. / Don't tell anyone.",
+        "You mustn't tell anyone. / You don't have to tell anyone.",
+        "You don't have to come. / You can't come.",
+        "You must come. / You can come."
+      ],
+      "answer": 0,
+      "explanation": { "en": "“Mustn't” = a prohibition, so it matches a negative imperative.",
+        "ar": "mustn't تعني المنع، فتساوي صيغة الأمر المنفي «لا تخبر أحداً»." } },
+
+    { "id": "a2u3-14", "concept": "a2.modal.should", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "It's a museum, so you ___ take photos with a flash, and you ___ speak loudly either.",
+      "options": ["mustn't / shouldn't", "don't have to / must", "shouldn't / must", "mustn't / must"], "answer": 0,
+      "explanation": { "en": "Flash photography is forbidden (mustn't); speaking loudly is impolite rather than illegal (shouldn't).",
+        "ar": "التصوير بالفلاش ممنوع فنستخدم mustn't، أما رفع الصوت فمسألة ذوق لا منع، فنستخدم shouldn't." } },
+
+    { "id": "a2u3-15", "concept": "a2.modal.permission", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Can I ask you a question?", "May I come in?", "Could you to open the door?", "Can you wait a moment?"],
+      "answer": 2,
+      "explanation": { "en": "No “to” after could: Could you open the door?",
+        "ar": "لا نضع to بعد could. الصواب Could you open the door?" } }
+  ]
+}

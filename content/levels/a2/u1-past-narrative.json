@@ -1,0 +1,145 @@
+{
+  "id": "a2-u1",
+  "goal": {
+    "en": "Tell a story in English: irregular past verbs, past continuous, and when/while.",
+    "ar": "أن تسرد قصة بالإنجليزية: الأفعال الشاذة، والماضي المستمر، واستخدام when وwhile."
+  },
+  "concepts": [
+    {
+      "id": "a2.past.irregular",
+      "title": { "en": "Irregular past verbs", "ar": "الأفعال الشاذة في الماضي" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "About 150 common English verbs do not take -ed. They must be learned as pairs, and they are the verbs you use most.",
+          "ar": "نحو ١٥٠ فعلاً شائعاً لا تأخذ ed، وتُحفظ كأزواج. والمفارقة أنها أكثر الأفعال استعمالاً." } },
+        { "type": "table", "head": ["Base", "Past", "Meaning"], "rows": [
+          ["go", "went", "ذهب"], ["see", "saw", "رأى"], ["take", "took", "أخذ"],
+          ["buy", "bought", "اشترى"], ["think", "thought", "فكّر"], ["write", "wrote", "كتب"],
+          ["eat", "ate", "أكل"], ["come", "came", "جاء"], ["give", "gave", "أعطى"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "After did / didn't the verb returns to its base form: “Did you go?” “I didn't go.” — never “didn't went”.",
+          "ar": "بعد did وdidn't يعود الفعل مجرداً: Did you go? / I didn't go، ولا نقول didn't went." } }
+      ]
+    },
+    {
+      "id": "a2.past.continuous",
+      "title": { "en": "Past continuous", "ar": "الماضي المستمر" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "was/were + -ing describes an action already in progress at a past moment: At 8 p.m. I was studying.",
+          "ar": "was/were مع ing تصف حدثاً كان جارياً في لحظة ماضية: At 8 p.m. I was studying." } },
+        { "type": "examples", "items": [
+          { "en": "They were waiting for the bus.", "ar": "كانوا ينتظرون الحافلة." },
+          { "en": "I wasn't listening, sorry.", "ar": "لم أكن أستمع، آسف." },
+          { "en": "What were you doing at midnight?", "ar": "ماذا كنت تفعل عند منتصف الليل؟" }
+        ] }
+      ]
+    },
+    {
+      "id": "a2.past.when.while",
+      "title": { "en": "when & while", "ar": "when و while" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "The long background action takes the past continuous; the short interrupting action takes the past simple: I was cooking when the phone rang.",
+          "ar": "الحدث الطويل الخلفي يأخذ الماضي المستمر، والحدث القصير المفاجئ يأخذ الماضي البسيط: I was cooking when the phone rang." } },
+        { "type": "tip", "text": {
+          "en": "“While” usually introduces the long action; “when” usually introduces the short one.",
+          "ar": "غالباً تأتي while مع الحدث الطويل، وwhen مع الحدث القصير." } },
+        { "type": "examples", "items": [
+          { "en": "While I was walking home, I met an old friend.", "ar": "بينما كنت أمشي إلى البيت قابلت صديقاً قديماً." },
+          { "en": "The lights went out while we were having dinner.", "ar": "انقطعت الكهرباء بينما كنا نتعشى." }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2u1-01", "concept": "a2.past.irregular", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Write the past simple of “buy”.", "ar": "اكتب صيغة الماضي من buy." },
+      "answer": "bought",
+      "explanation": { "en": "buy → bought (irregular).", "ar": "buy فعل شاذ وماضيه bought." } },
+
+    { "id": "a2u1-02", "concept": "a2.past.irregular", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "We ___ to the cinema last night.", "options": ["went", "goed", "gone", "did go"], "answer": 0,
+      "explanation": { "en": "go → went.", "ar": "ماضي go هو went." } },
+
+    { "id": "a2u1-03", "concept": "a2.past.irregular", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["She wrote three emails.", "He didn't took the bus.", "They came late.", "I saw him yesterday."],
+      "answer": 1,
+      "explanation": { "en": "After didn't the verb is in the base form: didn't take.",
+        "ar": "بعد didn't يأتي الفعل مجرداً: didn't take." } },
+
+    { "id": "a2u1-04", "concept": "a2.past.irregular", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the verb with its past form.", "ar": "صِل الفعل بماضيه." },
+      "pairs": [["think", "thought"], ["eat", "ate"], ["give", "gave"], ["take", "took"]],
+      "explanation": { "en": "Irregular verbs change their vowel or their whole shape.",
+        "ar": "الأفعال الشاذة تغيّر حركتها أو شكلها بالكامل." } },
+
+    { "id": "a2u1-05", "concept": "a2.past.irregular", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I ___ my keys, so I ___ get into the flat.", "options": ["lost / couldn't", "lost / can't", "lose / couldn't", "losed / couldn't"], "answer": 0,
+      "explanation": { "en": "lose → lost, and the past of can is could (negative: couldn't).",
+        "ar": "ماضي lose هو lost، وماضي can هو could ونفيها couldn't." } },
+
+    { "id": "a2u1-06", "concept": "a2.past.continuous", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "At nine o'clock last night I ___ for my exam.", "options": ["was studying", "studied", "am studying", "were studying"], "answer": 0,
+      "explanation": { "en": "An action in progress at a specific past time → past continuous.",
+        "ar": "حدث كان جارياً في وقت ماضٍ محدد، فنستخدم الماضي المستمر." } },
+
+    { "id": "a2u1-07", "concept": "a2.past.continuous", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "They ___ television when I arrived.", "options": ["were watching", "was watching", "watched", "are watching"], "answer": 0,
+      "explanation": { "en": "they → were + watching.", "ar": "مع they نستخدم were مع الفعل بـ ing." } },
+
+    { "id": "a2u1-08", "concept": "a2.past.continuous", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["What", "were", "you", "doing", "at", "six"], "answer": "What were you doing at six",
+      "explanation": { "en": "Question word + were + subject + -ing.", "ar": "أداة السؤال ثم were ثم الفاعل ثم الفعل بـ ing." } },
+
+    { "id": "a2u1-09", "concept": "a2.past.when.while", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I ___ dinner when the phone ___ .", "options": ["was cooking / rang", "cooked / was ringing", "was cooking / was ringing", "cooked / rang"], "answer": 0,
+      "explanation": { "en": "The long background action is continuous; the short interrupting one is simple.",
+        "ar": "الحدث الطويل مستمر، والحدث القصير المقاطع بسيط." } },
+
+    { "id": "a2u1-10", "concept": "a2.past.when.while", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "___ we were driving to Aswan, the car broke down.", "options": ["While", "When did", "During", "So"], "answer": 0,
+      "explanation": { "en": "“While” introduces the longer action in progress. (“During” is followed by a noun, not a clause.)",
+        "ar": "while تُدخل الحدث الطويل الجاري. أما during فيليها اسم لا جملة." } },
+
+    { "id": "a2u1-11", "concept": "a2.past.when.while", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“When I arrived, they were leaving.” What happened first?", "ar": "«When I arrived, they were leaving» أيهما بدأ أولاً؟" },
+      "options": ["Their leaving had already started.", "I arrived, then they started to leave.", "Both started together.", "They never left."],
+      "answer": 0,
+      "explanation": { "en": "The continuous shows the action was already in progress when I arrived.",
+        "ar": "المستمر يدل على أن مغادرتهم كانت قد بدأت بالفعل لحظة وصولي." } },
+
+    { "id": "a2u1-12", "concept": "a2.past.when.while", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["While I was reading, I fell asleep.", "When she called, I was working.", "While I read a book, the door was ringing suddenly.", "They were talking when the teacher came in."],
+      "answer": 2,
+      "explanation": { "en": "A sudden, short event (the door ringing) takes the past simple: “the door rang suddenly”.",
+        "ar": "الحدث المفاجئ القصير يأخذ الماضي البسيط: the door rang suddenly." } },
+
+    { "id": "a2u1-13", "concept": "a2.past.irregular", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Put into the past: “I see him at the station.”", "ar": "حوّلها إلى الماضي: I see him at the station." },
+      "answer": "i saw him at the station",
+      "explanation": { "en": "see → saw.", "ar": "ماضي see هو saw." } },
+
+    { "id": "a2u1-14", "concept": "a2.past.continuous", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ my old teacher while I ___ in the market.", "options": ["met / was shopping", "was meeting / shopped", "met / shopped", "was meeting / was shopping"], "answer": 0,
+      "explanation": { "en": "Meeting is the short event (simple); shopping is the background (continuous).",
+        "ar": "اللقاء حدث قصير فيأخذ البسيط، والتسوق خلفية مستمرة فيأخذ المستمر." } },
+
+    { "id": "a2u1-15", "concept": "a2.past.irregular", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "— Did you ___ the message? — Yes, I ___ it this morning.",
+      "options": ["get / got", "got / got", "get / get", "got / get"], "answer": 0,
+      "explanation": { "en": "After “did”, use the base form (get); in the answer, use the past form (got).",
+        "ar": "بعد did يأتي الفعل مجرداً get، وفي الإجابة نستخدم صيغة الماضي got." } },
+
+    { "id": "a2u1-16", "concept": "a2.past.continuous", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence describes a repeated past habit rather than one moment?", "ar": "أي جملة تصف عادة ماضية متكررة لا لحظة واحدة؟" },
+      "options": ["I was walking to school at 7:30.", "I walked to school every day that year.", "I was walking when I saw him.", "I was walking home yesterday evening."],
+      "answer": 1,
+      "explanation": { "en": "The past simple with “every day” expresses a repeated habit; the continuous fixes one moment.",
+        "ar": "الماضي البسيط مع every day يدل على عادة متكررة، أما المستمر فيحدد لحظة بعينها." } }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "id": "a1-u3",
+  "goal": {
+    "en": "Talk about habits, routines and facts — and get the tricky -s on he/she/it right.",
+    "ar": "أن تتحدث عن عاداتك اليومية والحقائق العامة، وأن تتقن حرف s مع he/she/it."
+  },
+  "concepts": [
+    {
+      "id": "a1.present.affirmative",
+      "title": { "en": "Present simple: I work / she works", "ar": "المضارع البسيط في الإثبات" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Use the present simple for routines, habits and permanent facts — not for what is happening at this moment.",
+          "ar": "نستخدم المضارع البسيط للعادات والروتين والحقائق الثابتة، لا لما يحدث في هذه اللحظة." } },
+        { "type": "table", "head": ["Subject", "Verb", "Example"], "rows": [
+          ["I / you / we / they", "work", "They work in Dubai."],
+          ["he / she / it", "works", "He works in Dubai."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Add -s only with he, she, it. Add -es after o, s, sh, ch, x (goes, watches). Consonant + y → -ies (study → studies).",
+          "ar": "نضيف s مع he/she/it فقط. ونضيف es بعد o وs وsh وch وx مثل goes وwatches. وإذا سُبقت y بساكن صارت ies مثل studies." } },
+        { "type": "examples", "items": [
+          { "en": "I drink coffee every morning.", "ar": "أشرب القهوة كل صباح." },
+          { "en": "My brother studies medicine.", "ar": "أخي يدرس الطب." },
+          { "en": "Water boils at 100 degrees.", "ar": "يغلي الماء عند مئة درجة." }
+        ] },
+        { "type": "warn", "text": {
+          "en": "The -s is the single most forgotten letter in English. “He work here” sounds clearly wrong to a native speaker.",
+          "ar": "حرف الـ s هو أكثر ما يُنسى. جملة He work here تبدو خاطئة تماماً لأذن المتحدث الأصلي، فانتبه لها في كل مرة." } }
+      ]
+    },
+    {
+      "id": "a1.present.negative",
+      "title": { "en": "don't / doesn't", "ar": "النفي بـ don't و doesn't" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Negative = don't / doesn't + the base verb. After doesn't, the -s disappears: He doesn't work (not “doesn't works”).",
+          "ar": "النفي: don't/doesn't متبوعاً بالفعل في صورته المجردة. وبعد doesn't تختفي الـ s فنقول He doesn't work وليس doesn't works." } },
+        { "type": "examples", "items": [
+          { "en": "I don't eat meat.", "ar": "لا آكل اللحم." },
+          { "en": "She doesn't live here.", "ar": "هي لا تسكن هنا." },
+          { "en": "They don't understand the question.", "ar": "هم لا يفهمون السؤال." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "The -s moves onto “does”. Only one word in the sentence carries it.",
+          "ar": "علامة الـ s انتقلت إلى does، ولا تحمل الجملة هذه العلامة مرتين." } }
+      ]
+    },
+    {
+      "id": "a1.present.questions",
+      "title": { "en": "Do you…? Does he…?", "ar": "السؤال بـ Do و Does" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Do + I/you/we/they + base verb? · Does + he/she/it + base verb?",
+          "ar": "Do مع I/you/we/they وDoes مع he/she/it، ويأتي بعدهما الفعل مجرداً." } },
+        { "type": "examples", "items": [
+          { "en": "Do you speak English? — Yes, I do.", "ar": "هل تتحدث الإنجليزية؟ — نعم." },
+          { "en": "Does she work on Fridays? — No, she doesn't.", "ar": "هل تعمل يوم الجمعة؟ — لا." },
+          { "en": "Where do your parents live?", "ar": "أين يسكن والداك؟" }
+        ] },
+        { "type": "warn", "text": {
+          "en": "Do not use “do” with the verb “be”: “Do you are ready?” is wrong. Say “Are you ready?”",
+          "ar": "لا تجمع do مع فعل الكون. الصواب Are you ready? وليس Do you are ready?" } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1u3-01", "concept": "a1.present.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "She ___ in a hospital.", "options": ["works", "work", "working", "is work"], "answer": 0,
+      "explanation": { "en": "With she we add -s: works.", "ar": "مع she نضيف s فيصير الفعل works." } },
+
+    { "id": "a1u3-02", "concept": "a1.present.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "We ___ football every Friday.", "options": ["play", "plays", "playing", "are play"], "answer": 0,
+      "explanation": { "en": "With we, the verb stays in its base form.", "ar": "مع we يبقى الفعل مجرداً بلا s." } },
+
+    { "id": "a1u3-03", "concept": "a1.present.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My father ___ to work by car.", "options": ["goes", "go", "gos", "going"], "answer": 0,
+      "explanation": { "en": "Verbs ending in -o take -es: goes.", "ar": "الأفعال المنتهية بـ o تأخذ es فتصير goes." } },
+
+    { "id": "a1u3-04", "concept": "a1.present.affirmative", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Complete with the correct form: “He ___ (study) every evening.”", "ar": "أكمل بالصيغة الصحيحة: He ___ (study) every evening." },
+      "answer": "studies",
+      "explanation": { "en": "Consonant + y → -ies: studies.", "ar": "y مسبوقة بساكن تتحول إلى ies فتصير studies." } },
+
+    { "id": "a1u3-05", "concept": "a1.present.affirmative", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["My mother cooks very well.", "The bus arrive at seven.", "They finish work at five.", "It rains a lot in winter."],
+      "answer": 1,
+      "explanation": { "en": "“The bus” = it, so the verb needs -s: arrives.",
+        "ar": "«The bus» بمعنى it، فيجب إضافة s للفعل: arrives." },
+      "commonMistake": { "en": "The -s is easy to forget when the subject is a noun rather than “he/she/it”.",
+        "ar": "تُنسى الـ s غالباً حين يكون الفاعل اسماً لا ضميراً. حوّل الاسم ذهنياً إلى ضمير أولاً." } },
+
+    { "id": "a1u3-06", "concept": "a1.present.affirmative", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "Which sentence describes a habit (not now)?", "ar": "أي جملة تصف عادة وليس اللحظة الحالية؟" },
+      "options": ["I am drinking tea.", "I drink tea every day.", "I drank tea.", "I will drink tea."],
+      "answer": 1,
+      "explanation": { "en": "The present simple with “every day” describes a routine; the continuous describes now.",
+        "ar": "المضارع البسيط مع every day يدل على العادة، أما المستمر فيدل على اللحظة الحالية." } },
+
+    { "id": "a1u3-07", "concept": "a1.present.negative", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I ___ like cold weather.", "options": ["don't", "doesn't", "am not", "not"], "answer": 0,
+      "explanation": { "en": "With I we use don't.", "ar": "مع I نستخدم don't." } },
+
+    { "id": "a1u3-08", "concept": "a1.present.negative", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "He ___ have a car.", "options": ["doesn't", "don't", "isn't", "not"], "answer": 0,
+      "explanation": { "en": "With he we use doesn't.", "ar": "مع he نستخدم doesn't." } },
+
+    { "id": "a1u3-09", "concept": "a1.present.negative", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["She doesn't works on Sunday.", "She doesn't work on Sunday.", "She don't work on Sunday.", "She not work on Sunday."],
+      "answer": 1,
+      "explanation": { "en": "After doesn't, the verb loses its -s: doesn't work.",
+        "ar": "بعد doesn't يعود الفعل مجرداً بلا s: doesn't work." },
+      "commonMistake": { "en": "Writing the -s twice (doesn't works) is very common. Only one word carries it.",
+        "ar": "تكرار الـ s مرتين خطأ شائع. علامة واحدة تكفي وهي في does." } },
+
+    { "id": "a1u3-10", "concept": "a1.present.negative", "type": "text", "format": "transform", "difficulty": 3,
+      "prompt": { "en": "Make it negative: “They live in Tunis.”", "ar": "حوّلها إلى النفي: They live in Tunis." },
+      "answer": "they don't live in tunis", "accept": ["they do not live in tunis"],
+      "explanation": { "en": "they + don't + base verb.", "ar": "they مع don't ثم الفعل مجرداً." } },
+
+    { "id": "a1u3-11", "concept": "a1.present.questions", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "___ you speak Arabic?", "options": ["Do", "Does", "Are", "Is"], "answer": 0,
+      "explanation": { "en": "With you we ask with Do.", "ar": "السؤال مع you يبدأ بـ Do." } },
+
+    { "id": "a1u3-12", "concept": "a1.present.questions", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ your brother work in Qatar?", "options": ["Does", "Do", "Is", "Has"], "answer": 0,
+      "explanation": { "en": "“Your brother” = he → Does.", "ar": "«your brother» بمعنى he، فالسؤال يبدأ بـ Does." } },
+
+    { "id": "a1u3-13", "concept": "a1.present.questions", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which question has a mistake?", "ar": "أي سؤال به خطأ؟" },
+      "options": ["Do you like fish?", "Does she know the answer?", "Does he plays tennis?", "Where do they live?"],
+      "answer": 2,
+      "explanation": { "en": "After “does”, use the base verb: Does he play tennis?",
+        "ar": "بعد does يأتي الفعل مجرداً: Does he play tennis?" } },
+
+    { "id": "a1u3-14", "concept": "a1.present.questions", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["What", "time", "do", "you", "start", "work"], "answer": "What time do you start work",
+      "explanation": { "en": "Question word(s) + do + subject + base verb.",
+        "ar": "أداة السؤال ثم do ثم الفاعل ثم الفعل المجرد." } },
+
+    { "id": "a1u3-15", "concept": "a1.present.questions", "type": "choice", "format": "mcq", "difficulty": 2,
+      "prompt": { "en": "“Does he live in Riyadh?” — Choose the correct short answer.", "ar": "اختر الإجابة القصيرة الصحيحة." },
+      "options": ["No, he doesn't.", "No, he don't.", "No, he isn't.", "No, he not."],
+      "answer": 0,
+      "explanation": { "en": "The short answer repeats the auxiliary: does → doesn't.",
+        "ar": "الإجابة القصيرة تعيد الفعل المساعد نفسه: does → doesn't." } },
+
+    { "id": "a1u3-16", "concept": "a1.present.affirmative", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the subject with the correct verb form.", "ar": "صِل الفاعل بالصيغة الصحيحة." },
+      "pairs": [["My sister", "watches TV at night."], ["I", "walk to school."], ["The children", "play in the garden."], ["It", "costs ten pounds."]],
+      "explanation": { "en": "Only singular he/she/it subjects take -s.", "ar": "الـ s تُضاف فقط مع الفاعل المفرد الغائب." } },
+
+    { "id": "a1u3-17", "concept": "a1.present.negative", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I don't have time today.", "He isn't a doctor.", "Do you are a student?", "She doesn't drive."],
+      "answer": 2,
+      "explanation": { "en": "Never mix “do” with “be”. Ask “Are you a student?”",
+        "ar": "لا نجمع do مع فعل الكون. الصواب Are you a student?" } },
+
+    { "id": "a1u3-18", "concept": "a1.present.affirmative", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "My friends ___ in Doha, but my cousin ___ in Kuwait.", "options": ["live / lives", "lives / live", "live / live", "lives / lives"], "answer": 0,
+      "explanation": { "en": "“My friends” is plural (live); “my cousin” is singular (lives).",
+        "ar": "«My friends» جمع فيبقى الفعل مجرداً، و«my cousin» مفرد فيأخذ s." } }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Masar English — A1 to C2",
+  "short_name": "Masar English",
+  "description": "Free English learning for Arabic speakers, from A1 to C2.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1115",
+  "theme_color": "#4f46e5",
+  "lang": "en",
+  "icons": [
+    { "src": "./assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
