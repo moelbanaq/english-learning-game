@@ -1,0 +1,205 @@
+{
+  "id": "b1-u8",
+  "goal": {
+    "en": "State an opinion, support it, disagree politely, and follow a longer argument in writing.",
+    "ar": "أن تُبدي رأياً وتدعمه، وتعترض بلباقة، وتتابع حجّة أطول في نص مكتوب."
+  },
+  "passages": {
+    "letter": {
+      "title": "A letter to a local newspaper",
+      "text": "I read last week's article on the new parking charges with some frustration. The council argues that higher charges will reduce traffic in the centre. In theory this is reasonable. In practice, however, most of the people driving into town at eight in the morning are not tourists looking for a parking space — they are nurses, teachers and shop staff who start work before the first bus arrives.\n\nI am not against charging for parking. What I object to is charging everyone at the same rate regardless of why they are there. A reduced permit for people who work in the centre would cost the council very little and would remove the main objection to the scheme. Until something like that is offered, the policy will look less like a plan for cleaner air and more like a way of raising money from those who have no alternative."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b1.opinion.language",
+      "title": { "en": "Giving an opinion", "ar": "إبداء الرأي" },
+      "teach": [
+        { "type": "table", "head": ["Strength", "Phrase"], "rows": [
+          ["Neutral", "In my opinion, … / I think …"],
+          ["Considered", "It seems to me that … / I would argue that …"],
+          ["Strong", "I am convinced that … / There is no doubt that …"],
+          ["Cautious", "I tend to think … / As far as I can see, …"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Do not stack them: “In my opinion I think that…” says the same thing twice. Choose one.",
+          "ar": "لا تجمع بينها: عبارة In my opinion I think تكرّر المعنى مرتين، فاختر واحدة." } },
+        { "type": "tip", "text": {
+          "en": "“I am agree” is not English — “agree” is already a verb: I agree, I don't agree, I completely agree.",
+          "ar": "لا تقل I am agree، فكلمة agree فعل بذاتها: I agree وI don't agree." } }
+      ]
+    },
+    {
+      "id": "b1.argument.structure",
+      "title": { "en": "Supporting and conceding", "ar": "الدعم والتنازل" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "A convincing argument states a claim, gives a reason, adds evidence, and answers the obvious objection before the reader raises it.",
+          "ar": "الحجّة المقنعة تطرح دعوى، ثم تعطي سبباً، ثم دليلاً، ثم تردّ على الاعتراض البديهي قبل أن يطرحه القارئ." } },
+        { "type": "table", "head": ["Move", "Phrase"], "rows": [
+          ["Claim", "The main problem is that …"],
+          ["Reason", "This is because … / The reason is that …"],
+          ["Evidence", "For example, … / According to …"],
+          ["Concession", "It is true that … / Admittedly, …"],
+          ["Answer", "Even so, … / That said, …"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Conceding a point makes you more convincing, not less. “It is true that costs would rise. Even so, …” disarms your opponent.",
+          "ar": "الإقرار بنقطة للطرف الآخر يزيدك إقناعاً لا العكس، لأنه ينزع سلاح خصمك قبل أن يستعمله." } }
+      ]
+    },
+    {
+      "id": "b1.opinion.disagree",
+      "title": { "en": "Disagreeing politely", "ar": "الاعتراض بلباقة" },
+      "teach": [
+        { "type": "table", "head": ["Too blunt", "Better"], "rows": [
+          ["You are wrong.", "I see it slightly differently."],
+          ["That's a bad idea.", "I'm not sure that would work in practice."],
+          ["No, impossible.", "I take your point, but there is a problem."],
+          ["I disagree completely.", "I'm afraid I can't agree with that."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Disagree with the idea, not the person: “I don't think that approach works”, rather than “You never think things through”.",
+          "ar": "اعترض على الفكرة لا على الشخص: قل I don't think that approach works ولا تقل You never think things through." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u8-01", "concept": "b1.opinion.language", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I am agree with your main point.", "I agree with your main point entirely.",
+                  "I don't agree with the second point.", "I completely agree with your point."],
+      "answer": 0,
+      "explanation": { "en": "“Agree” is a verb, so it never takes “am”.",
+        "ar": "كلمة agree فعل، فلا تُسبق بفعل الكون." } },
+
+    { "id": "b1u8-02", "concept": "b1.opinion.language", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence repeats itself unnecessarily?", "ar": "أي جملة تكرّر نفسها بلا داعٍ؟" },
+      "options": ["In my opinion I think the plan is weak.", "In my opinion the plan is rather weak.",
+                  "I think the plan is weak in several ways.", "It seems to me that the plan is weak."],
+      "answer": 0,
+      "explanation": { "en": "“In my opinion” and “I think” do the same job — using both is redundant.",
+        "ar": "عبارتا In my opinion وI think تؤديان الوظيفة نفسها، فالجمع بينهما حشو." } },
+
+    { "id": "b1u8-03", "concept": "b1.opinion.language", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which phrase signals a cautious opinion rather than a certain one?",
+        "ar": "أي عبارة تدل على رأي متحفّظ لا على يقين؟" },
+      "options": ["I tend to think that …", "There is no doubt that …",
+                  "I am convinced that …", "It is obvious that …"],
+      "answer": 0,
+      "explanation": { "en": "“Tend to think” leaves room to be wrong; the others claim certainty.",
+        "ar": "عبارة tend to think تترك مجالاً للخطأ، أما البقية فتدّعي اليقين." } },
+
+    { "id": "b1u8-04", "concept": "b1.argument.structure", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The scheme is unfair. ___ , it charges everyone the same rate.",
+      "options": ["For example", "Even so", "Admittedly", "In contrast"], "answer": 0,
+      "explanation": { "en": "The second sentence gives evidence for the claim → For example.",
+        "ar": "الجملة الثانية دليل على الدعوى، فنستخدم For example." } },
+
+    { "id": "b1u8-05", "concept": "b1.argument.structure", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "___ that the charges would raise money. Even so, the plan is unfair.",
+      "options": ["It is true", "For instance", "As a result", "In addition"], "answer": 0,
+      "explanation": { "en": "“It is true that …” concedes a point before the objection arrives.",
+        "ar": "عبارة It is true that تُقرّ بنقطة قبل أن يأتي الاعتراض." } },
+
+    { "id": "b1u8-06", "concept": "b1.argument.structure", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which paragraph opening is strongest in an argument essay?",
+        "ar": "أي افتتاحية أقوى في مقال حِجاجي؟" },
+      "options": ["The main problem with the plan is its cost to small businesses.",
+                  "This essay will talk about the plan and some things about it.",
+                  "There are many opinions about the plan and people say things.",
+                  "I will now write about the plan and what I think about it all."],
+      "answer": 0,
+      "explanation": { "en": "A topic sentence names one specific claim. Announcing what the essay will do wastes the strongest position.",
+        "ar": "الجملة الافتتاحية تطرح دعوى محددة واحدة، أما الإعلان عمّا سيفعله المقال فيهدر أقوى موضع فيه." } },
+
+    { "id": "b1u8-07", "concept": "b1.opinion.disagree", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "A colleague suggests a plan you think will fail. What is the best reply?",
+        "ar": "اقترح زميل خطة ترى أنها ستفشل. ما أفضل رد؟" },
+      "options": ["I'm not sure that would work in practice.", "That is a completely wrong idea.",
+                  "No, you have not thought about it.", "That is impossible and you know it."],
+      "answer": 0,
+      "explanation": { "en": "It rejects the plan without attacking the person, and leaves room for discussion.",
+        "ar": "يرفض الخطة دون مهاجمة الشخص، ويترك باب النقاش مفتوحاً." } },
+
+    { "id": "b1u8-08", "concept": "b1.opinion.disagree", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the move with the phrase.", "ar": "صِل الوظيفة بالعبارة." },
+      "pairs": [["conceding a point", "It is true that …"], ["disagreeing politely", "I'm afraid I can't agree."],
+                ["giving evidence", "According to the report, …"], ["answering an objection", "Even so, …"]],
+      "explanation": { "en": "These four moves are the skeleton of almost every argument.",
+        "ar": "هذه الحركات الأربع هي هيكل أي حجّة تقريباً." } },
+
+    { "id": "b1u8-09", "concept": "b1.opinion.language", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "letter",
+      "prompt": { "en": "What is the writer's main objection?", "ar": "ما اعتراض الكاتب الرئيسي؟" },
+      "options": ["Everyone is charged the same rate regardless of need.",
+                  "Parking in the town centre should always be free.",
+                  "There are too many tourists driving into the centre.",
+                  "The buses in the town start much too early."],
+      "answer": 0,
+      "explanation": { "en": "“What I object to is charging everyone at the same rate” states it directly.",
+        "ar": "يقولها الكاتب صراحة: اعتراضه على فرض السعر نفسه على الجميع." } },
+
+    { "id": "b1u8-10", "concept": "b1.argument.structure", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "letter",
+      "prompt": { "en": "Why does the writer say “I am not against charging for parking”?",
+        "ar": "لماذا قال الكاتب إنه ليس ضد فرض رسوم على الوقوف؟" },
+      "options": ["To concede a point so the real objection carries more weight.",
+                  "To show that the council's plan is completely correct.",
+                  "To change the subject to a different local issue.",
+                  "To admit that the whole letter was a mistake to write."],
+      "answer": 0,
+      "explanation": { "en": "Conceding the reasonable part makes the specific objection harder to dismiss.",
+        "ar": "الإقرار بالجزء المعقول يجعل الاعتراض المحدد أصعب على الرفض." } },
+
+    { "id": "b1u8-11", "concept": "b1.argument.structure", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "letter",
+      "prompt": { "en": "What solution does the writer propose?", "ar": "ما الحل الذي يقترحه الكاتب؟" },
+      "options": ["A cheaper permit for people who work in the centre.",
+                  "Removing all parking charges in the town centre.",
+                  "Running the first bus service an hour earlier.",
+                  "Banning private cars from the centre completely."],
+      "answer": 0,
+      "explanation": { "en": "“A reduced permit for people who work in the centre” is the proposal.",
+        "ar": "الاقتراح هو تصريح مخفّض للعاملين في وسط المدينة." } },
+
+    { "id": "b1u8-12", "concept": "b1.opinion.disagree", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "letter",
+      "prompt": { "en": "“In theory this is reasonable. In practice, however, …” What is the writer doing?",
+        "ar": "ما الذي يفعله الكاتب بهاتين الجملتين؟" },
+      "options": ["Accepting the logic, then challenging the facts behind it.",
+                  "Agreeing fully with the council's reasoning.",
+                  "Saying the council's argument is not worth reading.",
+                  "Introducing a completely unrelated new topic."],
+      "answer": 0,
+      "explanation": { "en": "The theory/practice pair is a standard way to grant the principle and attack the evidence.",
+        "ar": "المقابلة بين النظرية والتطبيق أسلوب معتاد للإقرار بالمبدأ ومهاجمة الواقع." } },
+
+    { "id": "b1u8-13", "concept": "b1.opinion.language", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["It", "seems", "to", "me", "that", "the", "plan", "is", "unfair"],
+      "answer": "It seems to me that the plan is unfair",
+      "explanation": { "en": "“It seems to me that …” introduces a considered opinion.",
+        "ar": "عبارة It seems to me that تُدخل رأياً متأنياً." } },
+
+    { "id": "b1u8-14", "concept": "b1.argument.structure", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence answers an objection rather than raising one?",
+        "ar": "أي جملة تردّ على اعتراض بدل أن تطرحه؟" },
+      "options": ["Even so, the benefits outweigh the extra cost.",
+                  "On the other hand, the cost would rise sharply.",
+                  "However, the scheme has some serious problems.",
+                  "Admittedly, the plan is expensive to run well."],
+      "answer": 0,
+      "explanation": { "en": "“Even so” pushes back after a concession; the others introduce the concession or the objection.",
+        "ar": "عبارة Even so تردّ بعد التنازل، أما البقية فتُدخل التنازل أو الاعتراض نفسه." } },
+
+    { "id": "b1u8-15", "concept": "b1.opinion.disagree", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Soften this: “You are wrong about the cost.” Start with “I'm not sure ___”",
+        "ar": "لطّف العبارة: You are wrong about the cost وابدأ بـ I'm not sure" },
+      "answer": "that's right about the cost",
+      "accept": ["you're right about the cost", "that is right about the cost", "you are right about the cost",
+                 "that's correct about the cost", "about the cost"],
+      "explanation": { "en": "Hedging turns a personal accusation into a point that can be discussed.",
+        "ar": "التلطيف يحوّل الاتهام الشخصي إلى نقطة قابلة للنقاش." } }
+  ]
+}

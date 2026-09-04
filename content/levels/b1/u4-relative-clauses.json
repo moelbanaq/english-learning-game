@@ -1,0 +1,155 @@
+{
+  "id": "b1-u4",
+  "goal": {
+    "en": "Join two ideas into one sentence with who, which, that, where and whose.",
+    "ar": "أن تدمج فكرتين في جملة واحدة باستخدام who وwhich وthat وwhere وwhose."
+  },
+  "concepts": [
+    {
+      "id": "b1.relative.defining",
+      "title": { "en": "who, which, that", "ar": "who و which و that" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Refers to", "Example"], "rows": [
+          ["who", "people", "The man who called you is here."],
+          ["which", "things", "The book which I bought is long."],
+          ["that", "people or things", "The bus that goes to town is late."],
+          ["where", "places", "The café where we met has closed."],
+          ["whose", "possession", "The student whose bag was lost."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A defining clause says WHICH one you mean. Without it the sentence is incomplete: “The man is here” — which man?",
+          "ar": "الجملة الموصولة المحدِّدة تبيّن أيَّ شيء تقصد. وبدونها تبقى الجملة ناقصة: «الرجل هنا» — أيُّ رجل؟" } },
+        { "type": "warn", "text": {
+          "en": "Do not repeat the noun as a pronoun: “The man who he called you” is wrong. The relative pronoun IS the subject.",
+          "ar": "لا تكرّر الاسم بضمير: The man who he called you خطأ، لأن الاسم الموصول نفسه هو الفاعل. والعربية تقول «الرجل الذي اتصل بك» بلا تكرار أيضاً، لكن الخطأ شائع." } }
+      ]
+    },
+    {
+      "id": "b1.relative.omit",
+      "title": { "en": "When you can leave it out", "ar": "متى يمكن حذف الاسم الموصول" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "If the relative pronoun is the OBJECT of its clause, you can drop it: “The book (that) I bought” — but not “The man who called” (there it is the subject).",
+          "ar": "إذا كان الاسم الموصول مفعولاً في جملته جاز حذفه: The book (that) I bought. أما إذا كان فاعلاً فلا يجوز: The man who called." } },
+        { "type": "examples", "items": [
+          { "en": "The film we watched was excellent.", "ar": "الفيلم الذي شاهدناه كان ممتازاً." },
+          { "en": "The person who helped me was very kind.", "ar": "الشخص الذي ساعدني كان لطيفاً جداً." },
+          { "en": "This is the house where I grew up.", "ar": "هذا هو البيت الذي نشأت فيه." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Quick test: is there already a subject after the relative word? “The book that I bought” — yes, “I”. So “that” can go.",
+          "ar": "اختبار سريع: هل يوجد فاعل بعد الاسم الموصول؟ في The book that I bought يوجد «I»، إذن يجوز حذف that." } }
+      ]
+    },
+    {
+      "id": "b1.relative.nondefining",
+      "title": { "en": "Extra information, in commas", "ar": "المعلومة الإضافية بين فاصلتين" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Commas add extra, removable information: “My brother, who lives in Doha, is a nurse.” Without commas the meaning changes: it would imply you have several brothers.",
+          "ar": "الفاصلتان تضيفان معلومة يمكن حذفها: My brother, who lives in Doha, is a nurse. وبدونهما يتغير المعنى فيوحي بأن لك إخوة عدة." } },
+        { "type": "warn", "text": {
+          "en": "“That” is never used after a comma. Write “The report, which was late, …”, never “The report, that was late, …”.",
+          "ar": "لا تُستعمل that بعد الفاصلة. نقول The report, which was late، ولا نقول The report, that was late." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u4-01", "concept": "b1.relative.defining", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "The woman ___ lives next door is a doctor.", "options": ["who", "which", "whose", "where"], "answer": 0,
+      "explanation": { "en": "The clause describes a person → who.", "ar": "الجملة تصف شخصاً، فنستخدم who." } },
+
+    { "id": "b1u4-02", "concept": "b1.relative.defining", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "This is the phone ___ I bought last week.", "options": ["that", "who", "whose", "when"], "answer": 0,
+      "explanation": { "en": "“That” works for things (and “which” would also be correct here).",
+        "ar": "that تصلح للأشياء، وتصح which أيضاً في هذا الموضع." } },
+
+    { "id": "b1u4-03", "concept": "b1.relative.defining", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "That is the hotel ___ we stayed last summer.", "options": ["where", "which", "who", "whose"], "answer": 0,
+      "explanation": { "en": "A place with an action happening in it → where. (“which we stayed in” also works.)",
+        "ar": "مكان وقع فيه الحدث، فنستخدم where. وتصح أيضاً which we stayed in." } },
+
+    { "id": "b1u4-04", "concept": "b1.relative.defining", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I met a student ___ father teaches at my school.", "options": ["whose", "who", "which", "who's"], "answer": 0,
+      "explanation": { "en": "“Whose” shows possession — the father belongs to the student. “Who's” means “who is”.",
+        "ar": "whose تدل على الملكية، فالأب يخص الطالب. أما who's فتعني who is." } },
+
+    { "id": "b1u4-05", "concept": "b1.relative.defining", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The man who he called you is waiting.", "The man who called you is waiting outside.",
+                  "The parcel that arrived is on your desk.", "The friend who helped us has left now."],
+      "answer": 0,
+      "explanation": { "en": "“Who” is already the subject, so “he” is a repeated subject and must go.",
+        "ar": "كلمة who هي الفاعل أصلاً، فوجود he تكرار للفاعل ويجب حذفه." } },
+
+    { "id": "b1u4-06", "concept": "b1.relative.omit", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "In which sentence can the relative word be left out?", "ar": "في أي جملة يجوز حذف الاسم الموصول؟" },
+      "options": ["The film that we watched was long.", "The man who owns the shop is here.",
+                  "The bus that goes to town is late.", "The woman who called is my aunt."],
+      "answer": 0,
+      "explanation": { "en": "In the first, “we” is the subject, so “that” is the object and can go. In the others the relative word is the subject.",
+        "ar": "في الأولى الفاعل هو «we»، فيكون that مفعولاً ويجوز حذفه. أما في البقية فالاسم الموصول هو الفاعل." } },
+
+    { "id": "b1u4-07", "concept": "b1.relative.omit", "type": "choice", "format": "choose_sentence", "difficulty": 3,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["The email I sent yesterday was long.", "The email sent I yesterday was long.",
+                  "The email what I sent was very long.", "The email who I sent was long."],
+      "answer": 0,
+      "explanation": { "en": "The object pronoun is dropped. Never use “what” as a relative pronoun.",
+        "ar": "حُذف الاسم الموصول لأنه مفعول. ولا تُستعمل what اسماً موصولاً أبداً." } },
+
+    { "id": "b1u4-08", "concept": "b1.relative.omit", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "song", "you", "played", "was", "beautiful"], "answer": "The song you played was beautiful",
+      "explanation": { "en": "The relative pronoun is dropped because it is the object of “played”.",
+        "ar": "حُذف الاسم الموصول لأنه مفعول للفعل played." } },
+
+    { "id": "b1u4-09", "concept": "b1.relative.omit", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Join into one sentence: “I lost the book. You lent it to me.” Start: “I lost the book ___”",
+        "ar": "ادمج الجملتين: I lost the book. You lent it to me. وابدأ بـ I lost the book" },
+      "answer": "you lent me", "accept": ["that you lent me", "which you lent me", "you lent to me", "that you lent to me"],
+      "explanation": { "en": "The relative pronoun is the object here, so it may be included or dropped — both are natural.",
+        "ar": "الاسم الموصول مفعول هنا، فيجوز ذكره أو حذفه، وكلاهما طبيعي." } },
+
+    { "id": "b1u4-10", "concept": "b1.relative.nondefining", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "My sister, ___ works in Dubai, is coming home.", "options": ["who", "that", "which", "whom she"], "answer": 0,
+      "explanation": { "en": "After a comma use “who” for people — “that” is never used in a non-defining clause.",
+        "ar": "بعد الفاصلة نستخدم who للأشخاص، ولا تُستعمل that في الجملة غير المحدِّدة." } },
+
+    { "id": "b1u4-11", "concept": "b1.relative.nondefining", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“My brother who lives in Doha is a nurse.” (no commas) What does this suggest?",
+        "ar": "«My brother who lives in Doha is a nurse» بلا فاصلتين. ماذا يوحي هذا؟" },
+      "options": ["I have more than one brother.", "I have exactly one brother.",
+                  "My brother has left Doha now.", "My brother is not really a nurse."],
+      "answer": 0,
+      "explanation": { "en": "Without commas the clause identifies which brother, implying there are others. With commas it is just extra detail.",
+        "ar": "بدون فاصلتين تحدّد الجملة أيَّ أخ، مما يوحي بوجود إخوة آخرين. ومع الفاصلتين تكون معلومة إضافية فقط." } },
+
+    { "id": "b1u4-12", "concept": "b1.relative.nondefining", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The report, that was late, cost us the deal.", "The report, which was late, cost us the deal.",
+                  "The report that arrived late was useless.", "My laptop, which is new, keeps crashing."],
+      "answer": 0,
+      "explanation": { "en": "“That” cannot follow a comma; use “which”.",
+        "ar": "لا تأتي that بعد الفاصلة، والصواب استخدام which." } },
+
+    { "id": "b1u4-13", "concept": "b1.relative.defining", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the relative word with what it refers to.", "ar": "صِل الاسم الموصول بما يشير إليه." },
+      "pairs": [["who", "a person"], ["which", "a thing"], ["where", "a place"], ["whose", "possession"]],
+      "explanation": { "en": "Choosing the right word is the first half; the second is not repeating the subject.",
+        "ar": "اختيار الكلمة الصحيحة نصف المسألة، والنصف الآخر ألا تكرّر الفاعل." } },
+
+    { "id": "b1u4-14", "concept": "b1.relative.nondefining", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "meeting", "which", "lasted", "three", "hours", "solved", "nothing"],
+      "answer": "The meeting which lasted three hours solved nothing",
+      "explanation": { "en": "The relative clause sits directly after the noun it describes.",
+        "ar": "تأتي الجملة الموصولة مباشرة بعد الاسم الذي تصفه." } },
+
+    { "id": "b1u4-15", "concept": "b1.relative.defining", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The company ___ we ordered the parts still hasn't replied.",
+      "options": ["from which", "which from", "from that", "who from"], "answer": 0,
+      "explanation": { "en": "In formal English the preposition can move in front: “from which”. Informally: “that we ordered the parts from”.",
+        "ar": "في الإنجليزية الرسمية يتقدّم حرف الجر: from which. وفي غير الرسمية نقول that we ordered the parts from." } }
+  ]
+}

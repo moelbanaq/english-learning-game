@@ -66,7 +66,19 @@
         { "id": "b1-u1", "file": "levels/b1/u1-perfect-vs-past.json", "title": { "en": "Perfect vs past · since & for", "ar": "التام مقابل الماضي" }, "questions": 15,
           "concepts": ["b1.perfect.vs.past", "b1.sinceFor", "b1.perfect.continuous"] },
         { "id": "b1-u2", "file": "levels/b1/u2-conditionals-reported.json", "title": { "en": "Conditionals & reported speech", "ar": "الشرط والكلام المنقول" }, "questions": 15,
-          "concepts": ["b1.conditional.first", "b1.conditional.second", "b1.reported.speech"] }
+          "concepts": ["b1.conditional.first", "b1.conditional.second", "b1.reported.speech"] },
+        { "id": "b1-u3", "file": "levels/b1/u3-passive.json", "title": { "en": "The passive voice", "ar": "المبني للمجهول" }, "questions": 15,
+          "concepts": ["b1.passive.present", "b1.passive.past", "b1.passive.use"] },
+        { "id": "b1-u4", "file": "levels/b1/u4-relative-clauses.json", "title": { "en": "Relative clauses", "ar": "الجمل الموصولة" }, "questions": 15,
+          "concepts": ["b1.relative.defining", "b1.relative.omit", "b1.relative.nondefining"] },
+        { "id": "b1-u5", "file": "levels/b1/u5-modals-deduction.json", "title": { "en": "Certainty & looking back", "ar": "اليقين والنظر إلى الماضي" }, "questions": 15,
+          "concepts": ["b1.modal.deduction", "b1.modal.pastDeduction", "b1.modal.regret"] },
+        { "id": "b1-u6", "file": "levels/b1/u6-linking.json", "title": { "en": "Linking ideas & paragraphs", "ar": "ربط الأفكار وبناء الفقرة" }, "questions": 15,
+          "concepts": ["b1.linking.contrast", "b1.linking.addResult", "b1.linking.paragraph"] },
+        { "id": "b1-u7", "file": "levels/b1/u7-phrasal-verbs.json", "title": { "en": "Phrasal verbs & word partners", "ar": "الأفعال المركّبة والتلازم اللفظي" }, "questions": 15,
+          "concepts": ["b1.phrasal.meaning", "b1.phrasal.separable", "b1.collocation.verbNoun"] },
+        { "id": "b1-u8", "file": "levels/b1/u8-opinion.json", "title": { "en": "Opinion & argument", "ar": "الرأي والحِجاج" }, "questions": 15,
+          "concepts": ["b1.opinion.language", "b1.argument.structure", "b1.opinion.disagree"] }
       ]
     },
     {

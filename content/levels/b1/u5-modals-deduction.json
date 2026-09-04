@@ -1,0 +1,157 @@
+{
+  "id": "b1-u5",
+  "goal": {
+    "en": "Say how certain you are, and talk about the past you cannot change.",
+    "ar": "أن تعبّر عن درجة يقينك، وأن تتحدث عن ماضٍ لا يمكن تغييره."
+  },
+  "concepts": [
+    {
+      "id": "b1.modal.deduction",
+      "title": { "en": "must be, might be, can't be", "ar": "درجات اليقين" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "These modals show how sure you are, not what is permitted: must be (I am sure it is), might/could be (possible), can't be (I am sure it is not).",
+          "ar": "هذه الأفعال تعبّر عن درجة يقينك لا عن الإذن: must be أي «متأكد أنه كذلك»، وmight/could be أي «ربما»، وcan't be أي «متأكد أنه ليس كذلك»." } },
+        { "type": "table", "head": ["Certainty", "Modal", "Example"], "rows": [
+          ["Sure it is true", "must", "He must be at work — his car has gone."],
+          ["Possible", "might / could / may", "She might be in the library."],
+          ["Sure it is not true", "can't", "That can't be Omar — he is in Cairo."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The opposite of “must be” is “can't be”, not “mustn't be”. “Mustn't” means it is forbidden.",
+          "ar": "نقيض must be هو can't be وليس mustn't be، لأن mustn't تعني المنع لا نفي اليقين." } }
+      ]
+    },
+    {
+      "id": "b1.modal.pastDeduction",
+      "title": { "en": "must have, might have, can't have", "ar": "اليقين في الماضي" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "modal + have + past participle talks about certainty in the past: “She must have left early.”",
+          "ar": "الفعل الناقص مع have والتصريف الثالث يعبّر عن اليقين في الماضي: She must have left early." } },
+        { "type": "examples", "items": [
+          { "en": "The ground is wet — it must have rained.", "ar": "الأرض مبللة، لا بد أنها أمطرت." },
+          { "en": "He might have forgotten the meeting.", "ar": "ربما نسي الاجتماع." },
+          { "en": "She can't have finished already — it's too soon.", "ar": "مستحيل أن تكون قد انتهت، فالوقت مبكر جداً." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "In speech “have” sounds like “of” — but never write “must of”. It is always “must have” or “must've”.",
+          "ar": "في النطق تشبه have كلمة of، لكن لا تكتب must of أبداً. الصواب must have أو must've." } }
+      ]
+    },
+    {
+      "id": "b1.modal.regret",
+      "title": { "en": "should have — looking back", "ar": "should have للندم والنقد" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "should have + past participle criticises or regrets a past action: “I should have studied harder.” The negative: “You shouldn't have told him.”",
+          "ar": "should have مع التصريف الثالث تعبّر عن الندم أو اللوم على فعل ماضٍ: I should have studied harder. والنفي: You shouldn't have told him." } },
+        { "type": "table", "head": ["Form", "Meaning"], "rows": [
+          ["I should have called.", "I didn't call, and I regret it."],
+          ["You shouldn't have paid.", "You paid, and that was a mistake."],
+          ["I had to leave early.", "It was necessary, and I did it."],
+          ["I didn't have to pay.", "It was not necessary, so maybe I didn't."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Must” has no past. For past obligation use “had to”: “I had to work on Saturday”, not “I musted”.",
+          "ar": "لا ماضي للفعل must. وللتعبير عن إلزام ماضٍ نستخدم had to: I had to work on Saturday." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u5-01", "concept": "b1.modal.deduction", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The lights are on, so someone ___ at home.", "options": ["must be", "can't be", "mustn't be", "should be"], "answer": 0,
+      "explanation": { "en": "Evidence points to a confident conclusion → must be.",
+        "ar": "الدليل يقود إلى استنتاج واثق، فنستخدم must be." } },
+
+    { "id": "b1u5-02", "concept": "b1.modal.deduction", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "That ___ be Sara — she flew to Amman this morning.", "options": ["can't", "mustn't", "wouldn't", "shouldn't"], "answer": 0,
+      "explanation": { "en": "Confident that it is NOT true → can't be. “Mustn't” would mean it is forbidden.",
+        "ar": "يقين بأن الأمر غير صحيح، فنستخدم can't be. أما mustn't فتعني المنع." } },
+
+    { "id": "b1u5-03", "concept": "b1.modal.deduction", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I'm not sure where he is. He ___ be in the lab.", "options": ["might", "must", "can't", "will"], "answer": 0,
+      "explanation": { "en": "“Not sure” signals possibility → might.", "ar": "عدم اليقين يقتضي احتمالاً، فنستخدم might." } },
+
+    { "id": "b1u5-04", "concept": "b1.modal.deduction", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["That mustn't be his brother at all.", "That can't be his brother — he has no brother.",
+                  "He must be tired after that long trip.", "She might be waiting for us downstairs."],
+      "answer": 0,
+      "explanation": { "en": "To say you are sure something is not true, use “can't be”. “Mustn't” expresses prohibition.",
+        "ar": "لنفي اليقين نستخدم can't be، أما mustn't فتعبّر عن المنع." } },
+
+    { "id": "b1u5-05", "concept": "b1.modal.pastDeduction", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The streets are wet. It ___ during the night.", "options": ["must have rained", "must rain", "must be raining", "must have rain"], "answer": 0,
+      "explanation": { "en": "Present evidence about a past event → must have + past participle.",
+        "ar": "دليل حاضر على حدث ماضٍ، فنستخدم must have مع التصريف الثالث." } },
+
+    { "id": "b1u5-06", "concept": "b1.modal.pastDeduction", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "She ___ my message — she never replied.", "options": ["might not have seen", "might not seeing it", "mustn't have seen it", "can't not have seen"], "answer": 0,
+      "explanation": { "en": "A possible explanation for something in the past → might not have + participle.",
+        "ar": "تفسير محتمل لحدث ماضٍ، فنستخدم might not have مع التصريف الثالث." } },
+
+    { "id": "b1u5-07", "concept": "b1.modal.pastDeduction", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["He must of left his keys at home.", "He must have left his keys at home.",
+                  "She might have missed the early train.", "They can't have arrived so quickly."],
+      "answer": 0,
+      "explanation": { "en": "“Must of” is a spelling of the spoken sound; the written form is “must have”.",
+        "ar": "عبارة must of كتابة خاطئة لصوت النطق، والصواب must have." } },
+
+    { "id": "b1u5-08", "concept": "b1.modal.pastDeduction", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“They can't have known about the change.” What does the speaker believe?",
+        "ar": "«They can't have known about the change» بماذا يعتقد المتكلم؟" },
+      "options": ["They were certainly unaware of it.", "They were forbidden from knowing it.",
+                  "They possibly knew about it already.", "They will find out about it later."],
+      "answer": 0,
+      "explanation": { "en": "“Can't have” is a confident negative conclusion about the past.",
+        "ar": "can't have استنتاج منفي واثق عن الماضي." } },
+
+    { "id": "b1u5-09", "concept": "b1.modal.regret", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I failed the test. I ___ harder.", "options": ["should have studied", "should be studying", "must have study", "had to studying"], "answer": 0,
+      "explanation": { "en": "Regret about the past → should have + past participle.",
+        "ar": "ندم على الماضي، فنستخدم should have مع التصريف الثالث." } },
+
+    { "id": "b1u5-10", "concept": "b1.modal.regret", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“You shouldn't have paid for dinner.” What happened?", "ar": "«You shouldn't have paid for dinner» ماذا حدث؟" },
+      "options": ["He paid, and the speaker thinks he needn't have.", "He didn't pay, and that was wrong of him.",
+                  "He will pay for dinner later tonight.", "He was not allowed to pay for dinner."],
+      "answer": 0,
+      "explanation": { "en": "“Shouldn't have” always describes something that DID happen and is now being judged.",
+        "ar": "shouldn't have تصف دائماً شيئاً وقع فعلاً ويُحكم عليه الآن." } },
+
+    { "id": "b1u5-11", "concept": "b1.modal.regret", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ work last Saturday because of the deadline.", "options": ["had to", "must", "should", "must have"], "answer": 0,
+      "explanation": { "en": "Past obligation that actually happened → had to. “Must” has no past form.",
+        "ar": "إلزام ماضٍ وقع فعلاً، فنستخدم had to، إذ لا ماضي لـ must." } },
+
+    { "id": "b1u5-12", "concept": "b1.modal.regret", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence says the payment was NOT necessary?", "ar": "أي جملة تفيد أن الدفع لم يكن ضرورياً؟" },
+      "options": ["We didn't have to pay for parking.", "We mustn't have paid for parking.",
+                  "We shouldn't have paid for parking.", "We had to pay for parking there."],
+      "answer": 0,
+      "explanation": { "en": "“Didn't have to” removes the obligation. “Shouldn't have” says we paid and it was a mistake.",
+        "ar": "didn't have to ترفع الإلزام، أما shouldn't have فتعني أننا دفعنا وكان ذلك خطأ." } },
+
+    { "id": "b1u5-13", "concept": "b1.modal.deduction", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the modal with the degree of certainty.", "ar": "صِل الفعل الناقص بدرجة اليقين." },
+      "pairs": [["must be", "certainly true"], ["might be", "possibly true"],
+                ["can't be", "certainly untrue"], ["mustn't", "forbidden"]],
+      "explanation": { "en": "The same modals do two jobs — certainty and obligation. Context decides which.",
+        "ar": "الأفعال نفسها تؤدي وظيفتين: اليقين والإلزام، والسياق هو الذي يحدد المقصود." } },
+
+    { "id": "b1u5-14", "concept": "b1.modal.pastDeduction", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["She", "must", "have", "forgotten", "about", "the", "meeting"],
+      "answer": "She must have forgotten about the meeting",
+      "explanation": { "en": "modal + have + past participle.", "ar": "الفعل الناقص ثم have ثم التصريف الثالث." } },
+
+    { "id": "b1u5-15", "concept": "b1.modal.regret", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Express regret: “I didn't book a table.” → “I ___ a table.”",
+        "ar": "عبّر عن الندم: I didn't book a table ← I ___ a table." },
+      "answer": "should have booked", "accept": ["should've booked"],
+      "explanation": { "en": "should have + past participle turns a past fact into a regret.",
+        "ar": "should have مع التصريف الثالث تحوّل الحقيقة الماضية إلى ندم." } }
+  ]
+}

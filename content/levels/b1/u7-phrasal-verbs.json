@@ -1,0 +1,164 @@
+{
+  "id": "b1-u7",
+  "goal": {
+    "en": "Use the phrasal verbs that appear constantly in real English, and know where the object goes.",
+    "ar": "أن تستخدم الأفعال المركّبة الشائعة في الإنجليزية الحقيقية، وأن تعرف أين يقع المفعول."
+  },
+  "concepts": [
+    {
+      "id": "b1.phrasal.meaning",
+      "title": { "en": "Phrasal verbs you cannot guess", "ar": "أفعال مركّبة لا يمكن تخمينها" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "The particle changes the meaning completely. “Look after” has nothing to do with looking, and “put off” has nothing to do with putting.",
+          "ar": "الحرف التابع يغيّر المعنى تماماً. فـ look after لا علاقة لها بالنظر، وput off لا علاقة لها بالوضع." } },
+        { "type": "table", "head": ["Phrasal verb", "Meaning", "One-word equivalent"], "rows": [
+          ["put off", "postpone", "delay"],
+          ["turn down", "reject an offer", "refuse"],
+          ["bring up", "raise a topic", "mention"],
+          ["carry out", "do as planned", "perform"],
+          ["come across", "meet or find by chance", "encounter"],
+          ["work out", "solve, or exercise", "calculate"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "Phrasal verbs are the everyday register; the single-word equivalents are the formal one. “We carried out the research” speaks; “We conducted the research” writes.",
+          "ar": "الأفعال المركّبة لغة الحديث اليومي، ومرادفاتها المفردة لغة الكتابة الرسمية. فـ carried out للحديث، وconducted للتقرير." } }
+      ]
+    },
+    {
+      "id": "b1.phrasal.separable",
+      "title": { "en": "Where does the object go?", "ar": "أين يقع المفعول؟" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Separable verbs allow both: “turn off the light” or “turn the light off”. But a PRONOUN must go in the middle: “turn it off”, never “turn off it”.",
+          "ar": "الأفعال القابلة للفصل تقبل الوضعين: turn off the light أو turn the light off. لكن الضمير يجب أن يتوسّط: turn it off ولا نقول turn off it." } },
+        { "type": "table", "head": ["Type", "Rule", "Example"], "rows": [
+          ["Separable", "object either side, pronoun in the middle", "fill in the form / fill it in"],
+          ["Inseparable", "object always after the particle", "look after the children / look after them"],
+          ["No object", "nothing follows", "The car broke down."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Turn off it” and “look the children after” are both wrong. When in doubt with a pronoun, try the middle position first.",
+          "ar": "جملتا turn off it وlook the children after خطأ. وعند الشك مع الضمير جرّب الموضع الأوسط أولاً." } }
+      ]
+    },
+    {
+      "id": "b1.collocation.verbNoun",
+      "title": { "en": "Verb + noun partnerships", "ar": "اقتران الفعل بالاسم" },
+      "teach": [
+        { "type": "table", "head": ["Natural", "Not English"], "rows": [
+          ["pay attention", "give attention"],
+          ["take responsibility", "carry responsibility"],
+          ["make progress", "do progress"],
+          ["meet a deadline", "catch a deadline"],
+          ["reach an agreement", "arrive an agreement"],
+          ["keep a promise", "hold a promise"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "These pairings are fixed by usage, not logic. Record new vocabulary inside a phrase, never as a single word.",
+          "ar": "هذه الأزواج ثابتة بحكم الاستعمال لا بالمنطق. فدوّن المفردة الجديدة داخل عبارة لا وحدها." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u7-01", "concept": "b1.phrasal.meaning", "type": "choice", "format": "phrasal", "difficulty": 3,
+      "sentence": "They had to ___ the match because of the rain.",
+      "options": ["put off", "put on", "put up", "put out"], "answer": 0,
+      "explanation": { "en": "put off = postpone.", "ar": "put off تعني تأجيل." } },
+
+    { "id": "b1u7-02", "concept": "b1.phrasal.meaning", "type": "choice", "format": "phrasal", "difficulty": 3,
+      "sentence": "She ___ the job offer because the salary was too low.",
+      "options": ["turned down", "turned up", "turned over", "turned into"], "answer": 0,
+      "explanation": { "en": "turn down = reject an offer. “Turn up” means arrive.",
+        "ar": "turn down تعني رفض العرض، أما turn up فتعني الحضور." } },
+
+    { "id": "b1u7-03", "concept": "b1.phrasal.meaning", "type": "choice", "format": "phrasal", "difficulty": 4,
+      "sentence": "I ___ an old photo of my grandfather while cleaning.",
+      "options": ["came across", "came about", "came along", "came round"], "answer": 0,
+      "explanation": { "en": "come across = find by chance.", "ar": "come across تعني العثور على الشيء مصادفة." } },
+
+    { "id": "b1u7-04", "concept": "b1.phrasal.meaning", "type": "match", "format": "phrasal", "difficulty": 4,
+      "prompt": { "en": "Match the phrasal verb with its meaning.", "ar": "صِل الفعل المركّب بمعناه." },
+      "pairs": [["bring up", "raise a topic"], ["carry out", "perform as planned"],
+                ["work out", "find a solution"], ["put off", "postpone to later"]],
+      "explanation": { "en": "None of these meanings can be guessed from the two words alone.",
+        "ar": "لا يمكن تخمين أي من هذه المعاني من الكلمتين وحدهما." } },
+
+    { "id": "b1u7-05", "concept": "b1.phrasal.meaning", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which version fits a formal report?", "ar": "أي صيغة تناسب تقريراً رسمياً؟" },
+      "options": ["The team conducted the survey in March.", "The team carried the survey out in March.",
+                  "The team did the survey thing in March.", "The team went and did a survey in March."],
+      "answer": 0,
+      "explanation": { "en": "“Carried out” is correct but conversational; formal writing prefers the single-word verb.",
+        "ar": "carried out صحيحة لكنها أقرب للحديث، والكتابة الرسمية تفضّل الفعل المفرد conducted." } },
+
+    { "id": "b1u7-06", "concept": "b1.phrasal.separable", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Please turn off it before you leave.", "Please turn it off before you leave.",
+                  "Please turn off the light before you go.", "Please turn the light off before you go."],
+      "answer": 0,
+      "explanation": { "en": "A pronoun must sit between the verb and the particle: turn it off.",
+        "ar": "يجب أن يتوسّط الضمير بين الفعل وحرفه: turn it off." } },
+
+    { "id": "b1u7-07", "concept": "b1.phrasal.separable", "type": "choice", "format": "choose_sentence", "difficulty": 4,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["She looks after them every weekend.", "She looks them after every weekend.",
+                  "She looks after they every weekend.", "She after looks them every weekend."],
+      "answer": 0,
+      "explanation": { "en": "“Look after” is inseparable, so the object always follows the particle.",
+        "ar": "الفعل look after غير قابل للفصل، فيأتي المفعول بعد الحرف دائماً." } },
+
+    { "id": "b1u7-08", "concept": "b1.phrasal.separable", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Please", "fill", "this", "form", "in", "and", "sign", "it"],
+      "answer": "Please fill this form in and sign it",
+      "explanation": { "en": "“Fill in” is separable, so the object can sit in the middle.",
+        "ar": "fill in قابل للفصل، فيجوز أن يتوسّطه المفعول." } },
+
+    { "id": "b1u7-09", "concept": "b1.phrasal.separable", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "My car broke ___ on the motorway last night.",
+      "options": ["down", "down it", "it down", "off down"], "answer": 0,
+      "explanation": { "en": "“Break down” takes no object at all, so nothing follows the particle.",
+        "ar": "الفعل break down لا يأخذ مفعولاً، فلا يأتي بعده شيء." } },
+
+    { "id": "b1u7-10", "concept": "b1.collocation.verbNoun", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "You need to ___ attention to the instructions.",
+      "options": ["pay", "give", "make", "put"], "answer": 0,
+      "explanation": { "en": "English pays attention; it does not give it.",
+        "ar": "الإنجليزية تقول pay attention ولا تقول give attention." } },
+
+    { "id": "b1u7-11", "concept": "b1.collocation.verbNoun", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "We are confident that we can ___ the deadline.",
+      "options": ["meet", "catch", "reach to", "arrive"], "answer": 0,
+      "explanation": { "en": "You meet a deadline. “Catch” goes with buses and trains.",
+        "ar": "نقول meet a deadline، أما catch فتُستعمل مع الحافلات والقطارات." } },
+
+    { "id": "b1u7-12", "concept": "b1.collocation.verbNoun", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has an unnatural word pairing?", "ar": "أي جملة فيها اقتران غير طبيعي؟" },
+      "options": ["He does good progress in his English.", "He is making good progress in English.",
+                  "She takes responsibility for the team.", "They reached an agreement on Monday."],
+      "answer": 0,
+      "explanation": { "en": "Progress is made, not done.", "ar": "التقدّم «يُصنع» بـ make ولا «يُفعل» بـ do." } },
+
+    { "id": "b1u7-13", "concept": "b1.collocation.verbNoun", "type": "match", "format": "collocation", "difficulty": 4,
+      "prompt": { "en": "Which verb goes with each noun?", "ar": "أي فعل يناسب كل اسم؟" },
+      "pairs": [["___ attention", "pay"], ["___ progress", "make"], ["___ a promise", "keep"], ["___ responsibility", "take"]],
+      "explanation": { "en": "Fixed pairings. Learning the verb separately from the noun is what causes the error.",
+        "ar": "أزواج ثابتة، وحفظ الفعل بمعزل عن الاسم هو سبب الخطأ." } },
+
+    { "id": "b1u7-14", "concept": "b1.phrasal.meaning", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“The meeting was put off until Tuesday.” What happened?", "ar": "«The meeting was put off until Tuesday» ماذا حدث؟" },
+      "options": ["It was moved to a later date.", "It was cancelled permanently.",
+                  "It finished earlier than planned.", "It was moved to a bigger room."],
+      "answer": 0,
+      "explanation": { "en": "“Put off” postpones; it does not cancel. Note the passive form as well.",
+        "ar": "put off تعني التأجيل لا الإلغاء. ولاحظ أيضاً ورودها في المبني للمجهول." } },
+
+    { "id": "b1u7-15", "concept": "b1.phrasal.separable", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Replace the noun with a pronoun: “Please switch off the computer.” → “Please ___ .”",
+        "ar": "استبدل الاسم بضمير: Please switch off the computer ← Please ___" },
+      "answer": "switch it off",
+      "explanation": { "en": "A pronoun object always goes between the verb and the particle.",
+        "ar": "المفعول الضمير يقع دائماً بين الفعل وحرفه." } }
+  ]
+}

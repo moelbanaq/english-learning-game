@@ -1,0 +1,169 @@
+{
+  "id": "b1-u3",
+  "goal": {
+    "en": "Use the passive deliberately: when the action matters more than who did it.",
+    "ar": "أن تستخدم المبني للمجهول عن قصد: حين يكون الحدث أهم من فاعله."
+  },
+  "concepts": [
+    {
+      "id": "b1.passive.present",
+      "title": { "en": "Present passive", "ar": "المجهول في المضارع" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "am / is / are + past participle. The thing receiving the action becomes the subject: “The office is cleaned every evening.”",
+          "ar": "التركيب: am/is/are مع التصريف الثالث. ويصبح المتلقي للفعل هو الفاعل النحوي: The office is cleaned every evening." } },
+        { "type": "table", "head": ["Active", "Passive"], "rows": [
+          ["Someone cleans the office.", "The office is cleaned."],
+          ["They make these shoes in Egypt.", "These shoes are made in Egypt."],
+          ["A team is testing the app.", "The app is being tested."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The main verb must be the participle, not the base form: “is made”, never “is make”. And do not drop “be”: “The office cleaned every day” is wrong.",
+          "ar": "الفعل الرئيسي يجب أن يكون التصريف الثالث لا المجرد: is made لا is make. ولا تحذف فعل الكون، فجملة The office cleaned every day خطأ." } }
+      ]
+    },
+    {
+      "id": "b1.passive.past",
+      "title": { "en": "Past passive", "ar": "المجهول في الماضي" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "was / were + past participle: “The bridge was built in 1998.” For questions, move “was/were” forward: “When was it built?”",
+          "ar": "التركيب: was/were مع التصريف الثالث: The bridge was built in 1998. وفي السؤال يتقدّم was/were: When was it built?" } },
+        { "type": "examples", "items": [
+          { "en": "My car was stolen last night.", "ar": "سُرقت سيارتي الليلة الماضية." },
+          { "en": "The letters weren't sent on time.", "ar": "لم تُرسل الرسائل في وقتها." },
+          { "en": "Were the results announced yesterday?", "ar": "هل أُعلنت النتائج أمس؟" }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Only the first verb changes tense. “The house was painted” — the participle never changes form.",
+          "ar": "الزمن يظهر في الفعل الأول فقط، أما التصريف الثالث فلا يتغير أبداً." } }
+      ]
+    },
+    {
+      "id": "b1.passive.use",
+      "title": { "en": "Why choose the passive?", "ar": "لماذا نختار المجهول؟" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "The passive is a choice, not decoration. Use it when the doer is unknown, obvious, unimportant — or when you would rather not name them.",
+          "ar": "المجهول اختيار لغرض لا زينة. نستخدمه حين يكون الفاعل مجهولاً أو بديهياً أو غير مهم، أو حين لا نريد ذكره." } },
+        { "type": "table", "head": ["Reason", "Example"], "rows": [
+          ["The doer is unknown", "My bike was stolen."],
+          ["The doer is obvious", "He was arrested last night."],
+          ["The action matters more", "The results will be published on Friday."],
+          ["Avoiding blame", "A mistake was made."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Name the doer with “by” only when it adds information: “The novel was written by a teenager.” Otherwise leave it out.",
+          "ar": "نذكر الفاعل بـ by فقط حين يضيف معلومة مفيدة: The novel was written by a teenager. وإلا فالأفضل حذفه." } },
+        { "type": "warn", "text": {
+          "en": "Do not use the passive everywhere to sound formal. An active sentence is usually clearer and shorter.",
+          "ar": "لا تُكثر من المجهول ظناً أنه أرقى. فالجملة المبنية للمعلوم أوضح وأقصر في الغالب." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u3-01", "concept": "b1.passive.present", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "These carpets ___ in Egypt.", "options": ["are made", "are make", "is made", "are making"], "answer": 0,
+      "explanation": { "en": "Plural subject + present passive: are + made.",
+        "ar": "الفاعل جمع والزمن مضارع، فنستخدم are مع التصريف الثالث." } },
+
+    { "id": "b1u3-02", "concept": "b1.passive.present", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "English ___ in more than fifty countries.", "options": ["is spoken", "speaks", "is speaking", "are spoken"], "answer": 0,
+      "explanation": { "en": "English receives the action, and it is singular → is spoken.",
+        "ar": "اللغة هنا متلقية للفعل وهي مفرد، فنقول is spoken." } },
+
+    { "id": "b1u3-03", "concept": "b1.passive.present", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The rooms are cleaned every morning.", "The report is written by the team.",
+                  "The shop is close at nine every day.", "The bills are paid at the end of the month."],
+      "answer": 2,
+      "explanation": { "en": "The passive needs the participle: the shop is closed at nine.",
+        "ar": "المجهول يحتاج التصريف الثالث: the shop is closed at nine." } },
+
+    { "id": "b1u3-04", "concept": "b1.passive.present", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Make it passive: “Someone repairs the machines every week.”",
+        "ar": "حوّلها إلى المجهول: Someone repairs the machines every week." },
+      "answer": "the machines are repaired every week",
+      "explanation": { "en": "The object becomes the subject and “someone” disappears — that is the point of the passive.",
+        "ar": "يصبح المفعول فاعلاً نحوياً ويختفي «someone»، وهذا هو الغرض من المجهول." } },
+
+    { "id": "b1u3-05", "concept": "b1.passive.past", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "The museum ___ in 1904.", "options": ["was opened", "was open", "were opened", "is opened"], "answer": 0,
+      "explanation": { "en": "Singular subject, finished past → was + opened.",
+        "ar": "الفاعل مفرد والزمن ماضٍ منتهٍ، فنستخدم was مع opened." } },
+
+    { "id": "b1u3-06", "concept": "b1.passive.past", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The keys ___ anywhere in the building.", "options": ["weren't found", "wasn't found", "didn't found", "not were found"], "answer": 0,
+      "explanation": { "en": "Plural subject in the past passive negative → weren't found.",
+        "ar": "الفاعل جمع في الماضي المجهول المنفي، فنقول weren't found." } },
+
+    { "id": "b1u3-07", "concept": "b1.passive.past", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Make a question.", "ar": "كوّن سؤالاً." },
+      "tokens": ["When", "was", "this", "photograph", "taken"], "answer": "When was this photograph taken",
+      "explanation": { "en": "Question word + was + subject + past participle.",
+        "ar": "أداة السؤال ثم was ثم الفاعل ثم التصريف الثالث." } },
+
+    { "id": "b1u3-08", "concept": "b1.passive.past", "type": "text", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Make it passive: “They cancelled the flight.”", "ar": "حوّلها إلى المجهول: They cancelled the flight." },
+      "answer": "the flight was cancelled", "accept": ["the flight was canceled"],
+      "explanation": { "en": "was + cancelled. “They” is dropped because it adds nothing.",
+        "ar": "was مع التصريف الثالث، ونحذف they لأنها لا تضيف شيئاً." } },
+
+    { "id": "b1u3-09", "concept": "b1.passive.use", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Why would a newspaper write “A decision was taken last night”?",
+        "ar": "لماذا تكتب صحيفة A decision was taken last night؟" },
+      "options": ["It avoids saying who took the decision.", "It shows the decision was a good one.",
+                  "It means the decision happened twice.", "It proves the writer was present."],
+      "answer": 0,
+      "explanation": { "en": "The passive lets the writer leave the doer out — useful, and sometimes evasive.",
+        "ar": "المجهول يتيح للكاتب حذف الفاعل، وهو أسلوب مفيد وقد يكون تهرباً." } },
+
+    { "id": "b1u3-10", "concept": "b1.passive.use", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "Which sentence is the better choice here?", "ar": "أي جملة أنسب هنا؟" },
+      "options": ["My wallet was stolen on the bus yesterday.", "Someone stole my wallet on the bus yesterday.",
+                  "A thief has stolen my wallet on the bus.", "My wallet, someone stole it on the bus."],
+      "answer": 0,
+      "explanation": { "en": "The thief is unknown, so the passive puts the focus where it belongs — on the wallet. The second sentence is correct English but weaker here.",
+        "ar": "السارق مجهول، فالمجهول يضع التركيز على المحفظة. والجملة الثانية صحيحة لكنها أضعف في هذا السياق." } },
+
+    { "id": "b1u3-11", "concept": "b1.passive.use", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The song ___ a fifteen-year-old girl from Cairo.",
+      "options": ["was written by", "was written from", "was wrote by", "written by"], "answer": 0,
+      "explanation": { "en": "Use “by” for the doer, and the participle “written”.",
+        "ar": "نستخدم by للفاعل، والتصريف الثالث written." } },
+
+    { "id": "b1u3-12", "concept": "b1.passive.use", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "In which sentence is the passive a poor choice?", "ar": "في أي جملة يكون المجهول اختياراً ضعيفاً؟" },
+      "options": ["The ball was kicked by me into the garden.", "The window was broken during the storm.",
+                  "The results will be announced on Monday.", "The building was damaged by the fire."],
+      "answer": 0,
+      "explanation": { "en": "“By me” is clumsy — when you are the doer and it matters, use the active: “I kicked the ball into the garden.”",
+        "ar": "عبارة by me ثقيلة. فإذا كنت أنت الفاعل وكان ذكره مهماً فاستخدم المعلوم: I kicked the ball." } },
+
+    { "id": "b1u3-13", "concept": "b1.passive.present", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The road ___ at the moment, so use the other entrance.",
+      "options": ["is being repaired", "is repairing", "is repaired being", "was being repair"], "answer": 0,
+      "explanation": { "en": "An action in progress now, in the passive: is being + repaired.",
+        "ar": "حدث جارٍ الآن في المجهول: is being مع التصريف الثالث." } },
+
+    { "id": "b1u3-14", "concept": "b1.passive.past", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the active sentence with its passive.", "ar": "صِل الجملة المعلومة بمجهولها." },
+      "pairs": [
+        ["They built the school in 1990.", "The school was built in 1990."],
+        ["They are building a new road.", "A new road is being built."],
+        ["They build these cars in Japan.", "These cars are built in Japan."],
+        ["They have built a new wing.", "A new wing has been built."]
+      ],
+      "explanation": { "en": "Only the “be” part carries the tense; the participle stays the same.",
+        "ar": "الزمن يظهر في فعل الكون وحده، ويبقى التصريف الثالث كما هو." } },
+
+    { "id": "b1u3-15", "concept": "b1.passive.use", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence keeps the focus on the patient, not the hospital?",
+        "ar": "أي جملة تُبقي التركيز على المريض لا على المستشفى؟" },
+      "options": ["She was taken to hospital immediately.", "The hospital admitted her immediately.",
+                  "They took her to the hospital at once.", "The staff admitted her at once."],
+      "answer": 0,
+      "explanation": { "en": "The passive puts “she” in the subject position, which is where English puts its topic.",
+        "ar": "المجهول يضع «هي» في موضع الفاعل، وهو الموضع الذي تضع فيه الإنجليزية موضوع الجملة." } }
+  ]
+}

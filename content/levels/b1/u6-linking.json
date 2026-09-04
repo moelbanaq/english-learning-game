@@ -1,0 +1,182 @@
+{
+  "id": "b1-u6",
+  "goal": {
+    "en": "Organise a paragraph so a reader can follow your thinking without effort.",
+    "ar": "أن تنظّم فقرتك بحيث يتابع القارئ أفكارك دون عناء."
+  },
+  "passages": {
+    "article": {
+      "title": "From an online article",
+      "text": "Remote work was once a rare privilege. Today, however, roughly a third of office employees in the region work from home at least two days a week. The benefits are easy to list: no commute, fewer interruptions, and lower costs for both sides. Employers, moreover, can hire outside their own city.\n\nThere is another side to it. Junior staff in particular learn a great deal by simply overhearing experienced colleagues, and that disappears at home. Managers also report that new team members take longer to settle in. As a result, many companies have settled on a hybrid arrangement rather than choosing one model outright — not because it is ideal, but because it loses the least."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b1.linking.contrast",
+      "title": { "en": "Showing contrast", "ar": "إظهار التضاد" },
+      "teach": [
+        { "type": "table", "head": ["Linker", "Followed by", "Example"], "rows": [
+          ["but", "a clause", "It rained, but we went out."],
+          ["although / though", "a clause", "Although it rained, we went out."],
+          ["however", "a new sentence", "It rained. However, we went out."],
+          ["despite / in spite of", "a noun or -ing", "Despite the rain, we went out."],
+          ["on the other hand", "a new sentence", "It is cheap. On the other hand, it is slow."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“However” is not a substitute for “but” inside one sentence. Write “It rained. However, we went out.” or “It rained, but we went out.” — not “It rained however we went out.”",
+          "ar": "لا تحلّ however محل but داخل الجملة الواحدة. اكتب جملتين مع however، أو استخدم but داخل جملة واحدة." } }
+      ]
+    },
+    {
+      "id": "b1.linking.addResult",
+      "title": { "en": "Adding and concluding", "ar": "الإضافة والنتيجة" },
+      "teach": [
+        { "type": "table", "head": ["Purpose", "Linkers"], "rows": [
+          ["Adding", "also, in addition, moreover, as well as"],
+          ["Result", "so, therefore, as a result, consequently"],
+          ["Example", "for example, for instance, such as"],
+          ["Sequence", "first, then, after that, finally"],
+          ["Summary", "in short, overall, to sum up"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Formal linkers (moreover, therefore, consequently) start a sentence and take a comma. Everyday ones (so, also) sit inside it.",
+          "ar": "أدوات الربط الرسمية مثل moreover وtherefore تبدأ الجملة وتتبعها فاصلة، أما اليومية مثل so وalso فتقع داخل الجملة." } },
+        { "type": "warn", "text": {
+          "en": "“Also” does not start a sentence in careful writing — use “In addition,” or “Moreover,”.",
+          "ar": "لا تبدأ الجملة بـ also في الكتابة المتأنية، بل استخدم In addition أو Moreover." } }
+      ]
+    },
+    {
+      "id": "b1.linking.paragraph",
+      "title": { "en": "Shaping a paragraph", "ar": "بناء الفقرة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A good paragraph has one idea. It usually opens with that idea, supports it with a reason or an example, and closes with a consequence.",
+          "ar": "الفقرة الجيدة تحمل فكرة واحدة: تبدأ بها، ثم تدعمها بسبب أو مثال، ثم تختم بنتيجة." } },
+        { "type": "examples", "items": [
+          { "en": "Working from home saves time. A daily commute can cost two hours. As a result, many people now start earlier and finish earlier.",
+            "ar": "العمل من المنزل يوفّر الوقت. فالتنقل اليومي قد يستهلك ساعتين. ونتيجة لذلك يبدأ كثيرون عملهم مبكراً وينهونه مبكراً." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "When you read, the linkers tell you what is coming next. “However” warns you the writer is about to disagree with what they just said.",
+          "ar": "عند القراءة تخبرك أدوات الربط بما سيأتي. فكلمة however تنبّهك إلى أن الكاتب سيعارض ما قاله للتو." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1u6-01", "concept": "b1.linking.contrast", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "___ the traffic was heavy, we arrived on time.", "options": ["Although", "Despite", "However", "Therefore"], "answer": 0,
+      "explanation": { "en": "A full clause follows, so “although” fits; “despite” needs a noun.",
+        "ar": "يليها جملة كاملة فتناسب although، أما despite فيليها اسم." } },
+
+    { "id": "b1u6-02", "concept": "b1.linking.contrast", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The course is expensive. ___ , it is the best one available.",
+      "options": ["However", "Although", "Despite", "Whereas"], "answer": 0,
+      "explanation": { "en": "A new sentence contrasting the last one → However, with a comma.",
+        "ar": "جملة جديدة تعارض ما قبلها، فنستخدم However وبعدها فاصلة." } },
+
+    { "id": "b1u6-03", "concept": "b1.linking.contrast", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["It rained however we went out anyway.", "It rained, but we went out anyway.",
+                  "Although it rained, we went out anyway.", "Despite the rain, we went out anyway."],
+      "answer": 0,
+      "explanation": { "en": "“However” cannot join two clauses like “but”. It needs a full stop or a semicolon before it.",
+        "ar": "لا تربط however جملتين كما تفعل but، بل تحتاج نقطة أو فاصلة منقوطة قبلها." } },
+
+    { "id": "b1u6-04", "concept": "b1.linking.addResult", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The train was cancelled. ___ , we had to take a taxi.",
+      "options": ["Therefore", "Although", "Whereas", "Moreover"], "answer": 0,
+      "explanation": { "en": "The second sentence is the result → Therefore.",
+        "ar": "الجملة الثانية نتيجة، فنستخدم Therefore." } },
+
+    { "id": "b1u6-05", "concept": "b1.linking.addResult", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The flat is close to my office. ___ , the rent is reasonable.",
+      "options": ["Moreover", "Therefore", "However", "Otherwise"], "answer": 0,
+      "explanation": { "en": "A second advantage is being added → Moreover (or In addition).",
+        "ar": "تُضاف ميزة ثانية، فنستخدم Moreover أو In addition." } },
+
+    { "id": "b1u6-06", "concept": "b1.linking.addResult", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which linker tells the reader an example is coming?", "ar": "أي أداة تنبّه القارئ إلى مثال قادم؟" },
+      "options": ["for instance", "nevertheless", "consequently", "on the contrary"],
+      "answer": 0,
+      "explanation": { "en": "“For instance” and “for example” introduce evidence, not contrast or result.",
+        "ar": "for instance وfor example تُدخلان مثالاً، لا تضاداً ولا نتيجة." } },
+
+    { "id": "b1u6-07", "concept": "b1.linking.addResult", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence is weakest in formal writing?", "ar": "أي جملة أضعف في الكتابة الرسمية؟" },
+      "options": ["Also, the price has increased this year.", "In addition, the price has increased.",
+                  "The price has also increased this year.", "Moreover, the price has increased."],
+      "answer": 0,
+      "explanation": { "en": "Starting a sentence with “Also” is informal; “In addition” or “Moreover” is preferred, or move “also” inside.",
+        "ar": "بدء الجملة بـ Also أسلوب غير رسمي، والأفضل In addition أو Moreover أو نقل also إلى داخل الجملة." } },
+
+    { "id": "b1u6-08", "concept": "b1.linking.paragraph", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "article",
+      "prompt": { "en": "What is the writer's overall position on remote work?", "ar": "ما موقف الكاتب العام من العمل عن بُعد؟" },
+      "options": ["It has real costs as well as real benefits.", "It is clearly better than working in an office.",
+                  "It is a passing habit that will soon disappear.", "It works only for very experienced staff."],
+      "answer": 0,
+      "explanation": { "en": "The first paragraph lists benefits; “There is another side to it” signals the costs. The conclusion is balanced.",
+        "ar": "الفقرة الأولى تعدّد المزايا، وعبارة There is another side to it تنبّه إلى العيوب، فالخلاصة متوازنة." } },
+
+    { "id": "b1u6-09", "concept": "b1.linking.paragraph", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "article",
+      "prompt": { "en": "What does “however” in the first paragraph tell you?", "ar": "ماذا تفيد however في الفقرة الأولى؟" },
+      "options": ["The situation has changed from what came before.", "The writer is adding another benefit.",
+                  "The writer is giving an example of a privilege.", "The writer is summarising the whole article."],
+      "answer": 0,
+      "explanation": { "en": "It contrasts “once a rare privilege” with what is true today.",
+        "ar": "تقابل بين «امتياز نادر في الماضي» وبين الحال اليوم." } },
+
+    { "id": "b1u6-10", "concept": "b1.linking.paragraph", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "article",
+      "prompt": { "en": "Why did companies choose a hybrid arrangement?", "ar": "لماذا اختارت الشركات النظام المختلط؟" },
+      "options": ["It is the least damaging compromise, not the perfect answer.",
+                  "It is the ideal model for almost every kind of company.",
+                  "Junior staff specifically asked their managers for it.",
+                  "It removes the need to hire outside the company's own city."],
+      "answer": 0,
+      "explanation": { "en": "“Not because it is ideal, but because it loses the least” states this directly.",
+        "ar": "العبارة الأخيرة تقول ذلك صراحة: ليس لأنه مثالي بل لأنه أقل الخيارات خسارة." } },
+
+    { "id": "b1u6-11", "concept": "b1.linking.paragraph", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "article",
+      "prompt": { "en": "According to the text, what do junior staff lose at home?", "ar": "بحسب النص، ماذا يفقد الموظفون الجدد في المنزل؟" },
+      "options": ["Learning by overhearing experienced colleagues.", "The chance to be promoted to a manager.",
+                  "Access to the company's computer systems.", "Any contact at all with their own team."],
+      "answer": 0,
+      "explanation": { "en": "The text says they learn “by simply overhearing experienced colleagues”, and that disappears.",
+        "ar": "يقول النص إنهم يتعلمون بمجرد سماع زملائهم الخبراء، وهذا يختفي في المنزل." } },
+
+    { "id": "b1u6-12", "concept": "b1.linking.contrast", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "___ working extra hours, they missed the deadline.",
+      "options": ["Despite", "Although", "However", "Because"], "answer": 0,
+      "explanation": { "en": "“Working” is an -ing form, not a clause, so “despite” fits and “although” does not.",
+        "ar": "كلمة working صيغة ing لا جملة، فتناسبها despite ولا تناسبها although." } },
+
+    { "id": "b1u6-13", "concept": "b1.linking.addResult", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["As", "a", "result", "the", "prices", "went", "up", "sharply"],
+      "answer": "As a result the prices went up sharply",
+      "explanation": { "en": "“As a result” opens the sentence that states the consequence.",
+        "ar": "تبدأ عبارة As a result الجملة التي تذكر النتيجة." } },
+
+    { "id": "b1u6-14", "concept": "b1.linking.paragraph", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence best opens a paragraph arguing FOR online study?",
+        "ar": "أي جملة تصلح افتتاحاً لفقرة تؤيد الدراسة عبر الإنترنت؟" },
+      "options": ["Online study suits people who are already working full time.",
+                  "In my opinion I think that online study is good for the people.",
+                  "There are many things about online study and also other things.",
+                  "Online study, it has some advantages and some disadvantages too."],
+      "answer": 0,
+      "explanation": { "en": "A topic sentence makes one clear claim. The others are vague, repetitive, or sit on the fence.",
+        "ar": "الجملة الافتتاحية تطرح ادعاءً واضحاً واحداً، أما البقية فمبهمة أو مكررة أو محايدة بلا موقف." } },
+
+    { "id": "b1u6-15", "concept": "b1.linking.addResult", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the linker with its job.", "ar": "صِل أداة الربط بوظيفتها." },
+      "pairs": [["moreover", "adding a point"], ["consequently", "showing a result"],
+                ["for instance", "giving an example"], ["nevertheless", "showing contrast"]],
+      "explanation": { "en": "Readers use these words to predict what is coming — using the wrong one misleads them.",
+        "ar": "يستعين القارئ بهذه الكلمات ليتوقع ما سيأتي، فاختيار الخاطئة يضلّله." } }
+  ]
+}

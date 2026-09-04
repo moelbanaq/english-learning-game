@@ -32,6 +32,7 @@ served over HTTP (not opened as `file://`) because it loads content with `fetch`
 | **Adaptive practice** | Weak and overdue concepts appear more often; solid ones fade out |
 | **Game layer** | XP, ranks, streaks, a daily mission and achievements — tied to learning, not to noise |
 | **Placement** | 24 real questions estimate the right starting level |
+| **Coverage** | A1, A2 and B1 complete (8 units each); B2, C1 and C2 have a unit apiece so far — 433 questions in total |
 | **Bilingual UI** | Full English and Arabic interface, with proper LTR/RTL handling |
 
 Progress lives in `localStorage`, so a learner can close the tab and come back later.

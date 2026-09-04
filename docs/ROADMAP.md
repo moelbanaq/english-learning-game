@@ -29,28 +29,32 @@ Four more units taking A2 to eight: future forms (will vs going to vs arrangemen
 -ed/-ing adjectives with adverbs and word order, the make/do/have/take/get collocation
 set, and a reading-led unit built on real notices and message threads.
 
+### Phase 6 — B1 completion ✅
+Six more units taking B1 to eight: the passive and why it exists, relative clauses,
+modals of deduction with `should have` regret, linking words and paragraph shape,
+phrasal verbs with object placement, and opinion/argument language — the last three
+built around longer reading passages with inference questions.
+
 | Level | Units | Concepts | Questions |
 | --- | --- | --- | --- |
 | A1 | 8 | 23 | 141 |
 | A2 | 8 | 24 | 127 |
-| B1 | 2 | 6 | 30 |
+| B1 | 8 | 24 | 120 |
 | B2 | 1 | 4 | 15 |
 | C1 | 1 | 4 | 15 |
 | C2 | 1 | 4 | 15 |
-| **Total** | **21** | **65** | **343** |
+| **Total** | **27** | **83** | **433** |
 
 Plus a 24-question placement test spanning all six levels.
 
-A1 and A2 are now complete levels: a learner can go from no English to solid elementary
-competence entirely inside the app, and unlocking B1 by finishing 75% of A2 is reachable.
+A1, A2 and B1 are now complete levels. A learner can go from no English to independent
+intermediate competence entirely inside the app, unlocking each level by finishing 75%
+of the one below.
 
 ## Next
 
-### Phase 6 — B1 completion (next up)
-8 units: the full tense system, passive introduction, relative clauses, linking words,
-opinion and argument language, phrasal verbs in context, longer reading passages.
+### Phase 7 — B2 completion (next up)
 
-### Phase 7 — B2 completion
 8 units: advanced conditionals and inversion, nuanced modality, cohesion, formal vs
 informal register, extended reading, structured writing prompts.
 
