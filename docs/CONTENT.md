@@ -93,6 +93,13 @@ Rules the validator enforces:
 - **Options are shuffled when displayed**, so where you put the correct answer does not
   matter — but no option may refer to a position (`all of the above`, `both A and B`).
   The validator rejects those.
+- **Length must not give the answer away.** The validator rejects a question whose correct
+  option is 6+ characters longer than every distractor *and* 20% longer, and warns when a
+  unit's answer is visibly the longest more than 45% of the time. The fix is almost always
+  to make the distractors fuller, not to trim the answer — a curt distractor is easy to
+  eliminate for the wrong reason.
+- A sentence may contain more than one `___`. Write the answer as `is / am`, matching the
+  gaps in order; both gaps are filled in when the learner checks.
 
 ### Reading questions
 

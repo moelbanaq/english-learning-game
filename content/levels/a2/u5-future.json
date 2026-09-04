@@ -161,7 +161,7 @@
 
     { "id": "a2u5-16", "concept": "a2.future.will", "type": "choice", "format": "meaning", "difficulty": 4,
       "prompt": { "en": "Which reply is a promise rather than a plan?", "ar": "أي رد يعبّر عن وعد لا عن خطة؟" },
-      "options": ["I'll pay you back on Friday, I promise.", "I'm going to the bank on Friday.", "I'm paying the rent on Friday.", "The bank opens on Friday."],
+      "options": ["I'll pay you back on Friday, I promise.", "I'm going to the bank again on Friday.", "I'm paying the rent early on Friday.", "The bank opens at nine on Friday."],
       "answer": 0,
       "explanation": { "en": "“Will” carries promises and offers; the other three describe plans or schedules.",
         "ar": "will تحمل الوعد والعرض، أما البقية فتصف خططاً أو جداول." } }

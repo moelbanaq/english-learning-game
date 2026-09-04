@@ -61,17 +61,12 @@
         "ar": "السياسة متلقية للفعل، فنستخدم المبني للمجهول في المستقبل." } },
     { "id": "pl-b2-3", "level": "B2", "concept": "placement.b2", "type": "choice", "format": "fill_blank", "difficulty": 5,
       "sentence": "If we ___ the earlier flight, we ___ the meeting.",
-      "options": ["had taken / wouldn't have missed", "took / wouldn't miss", "had taken / wouldn't miss", "take / won't miss"], "answer": 0,
+      "options": ["had taken / wouldn't have missed", "took / would not have missed", "had taken / would not miss", "take / will not miss"], "answer": 0,
       "explanation": { "en": "Third conditional: an unreal past condition and an unreal past result.",
         "ar": "الشرط الثالث: شرط ونتيجة غير واقعيين في الماضي." } },
     { "id": "pl-b2-4", "level": "B2", "concept": "placement.b2", "type": "choice", "format": "register", "difficulty": 5,
       "prompt": { "en": "Which sentence is appropriate in a formal email to a client?", "ar": "أي جملة تناسب بريداً رسمياً لعميل؟" },
-      "options": [
-        "We apologise for the delay and will confirm a new date shortly.",
-        "Sorry, things got messed up on our side.",
-        "The delay is not really our problem.",
-        "Hey, sorry about that, will fix it soon!"
-      ],
+      "options": ["We apologise for the delay and will confirm a new date shortly.", "Sorry, things got messed up on our side but we'll fix it soon.", "The delay is not really our problem, so please contact the courier.", "Hey, sorry about that, will fix it soon and let you know, ok?"],
       "answer": 0,
       "explanation": { "en": "Formal, specific and accountable.", "ar": "رسمية ومحددة وتتحمّل المسؤولية." } },
 
@@ -80,23 +75,18 @@
       "explanation": { "en": "“Make a decision” is the standard collocation.", "ar": "make a decision هو التلازم القياسي." } },
     { "id": "pl-c1-2", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "meaning", "difficulty": 5,
       "prompt": { "en": "“The report claims that costs have fallen.” What does “claims” imply?", "ar": "ماذا تُلمح كلمة claims؟" },
-      "options": ["The writer is not endorsing the statement.", "The statement is certainly true.", "The report is official.", "The costs are rising."],
+      "options": ["The writer is not endorsing the statement.", "The statement is certainly true and verified.", "The report is official and government-approved.", "The costs are rising rather than falling."],
       "answer": 0,
       "explanation": { "en": "“Claim” signals distance from the assertion.", "ar": "claim تُظهر تحفّظ الكاتب عن تبنّي الكلام." } },
     { "id": "pl-c1-3", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "register", "difficulty": 5,
       "prompt": { "en": "Which sentence is best in an academic paper?", "ar": "أي جملة أنسب لورقة أكاديمية؟" },
-      "options": [
-        "The data suggest that the effect may be smaller than previously assumed.",
-        "The data prove everyone else was wrong.",
-        "Obviously the effect is tiny.",
-        "The data show 100% that the effect is small."
-      ],
+      "options": ["The data suggest that the effect may be smaller than previously assumed.", "The data prove that everyone else in the field was simply wrong.", "Obviously the effect is tiny and nobody should be surprised.", "The data show 100% that the effect is small and unimportant."],
       "answer": 0,
       "explanation": { "en": "Hedged claims match the strength of the evidence.",
         "ar": "الصياغة المتحفظة تناسب قوة الدليل." } },
     { "id": "pl-c1-4", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "error_id", "difficulty": 5,
       "prompt": { "en": "Which sentence contains an unnatural collocation?", "ar": "أي جملة فيها اقتران غير طبيعي؟" },
-      "options": ["He did a strong contribution to the debate.", "He made a valuable contribution.", "She raised an important objection.", "They drew a firm conclusion."],
+      "options": ["He did a strong contribution to the debate.", "He made a valuable contribution to the debate.", "She raised an important objection to the plan.", "They drew a firm conclusion from the evidence."],
       "answer": 0,
       "explanation": { "en": "We “make” a contribution, not “do” one.", "ar": "نقول make a contribution لا do a contribution." } },
 
@@ -125,7 +115,7 @@
         "ar": "الصيغة الثابتة هي the ball is in your court." } },
     { "id": "pl-c2-4", "level": "C2", "concept": "placement.c2", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "Which opening best prepares a reader for an objection?", "ar": "أي افتتاحية تهيّئ القارئ لاعتراض؟" },
-      "options": ["There is much to admire here. That said, …", "This is great. Moreover, …", "I read it. Therefore, …", "It is fine. Similarly, …"],
+      "options": ["There is much to admire here. That said, …", "This is great and well argued. Moreover, …", "I read it carefully last night. Therefore, …", "It is fine and clearly written. Similarly, …"],
       "answer": 0,
       "explanation": { "en": "Concede, then pivot with “that said”.", "ar": "أقرّ أولاً ثم انعطف بـ that said." } }
   ]

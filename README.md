@@ -67,9 +67,10 @@ npm run test:e2e # real browser run-through (needs Playwright installed)
 valid answer, unique ids, non-ambiguous options, matching order-tokens, an English
 explanation, and full concept coverage.
 
-Answer options are shuffled when displayed, so a learner cannot score by always tapping
-the first option — the browser test verifies both that the shuffle keeps grading correct
-and that the right answer really does move around.
+Two guards stop a learner scoring without reading: options are shuffled when displayed, so
+the first option is never reliably right, and the validator rejects questions whose correct
+answer is visibly longer than every distractor. The browser test verifies the shuffle keeps
+grading faithful to the content file and that the answer really does move position.
 
 ## Adding content
 

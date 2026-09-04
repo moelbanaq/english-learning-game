@@ -73,10 +73,10 @@ export function renderQuestion({ question, index, total, onCheck, onNext }) {
     body.append(p);
   }
 
-  let blankEl = null;
+  let blanks = [];
   if (question.sentence) {
     const sentenceNode = renderSentence(question.sentence);
-    blankEl = sentenceNode.querySelector('.blank');
+    blanks = [...sentenceNode.querySelectorAll('.blank')];
     body.append(sentenceNode);
   }
 
@@ -107,10 +107,15 @@ export function renderQuestion({ question, index, total, onCheck, onNext }) {
     result = grade(question, response);
     interaction.lock(result.correct, question);
     // Show the sentence as it should read — seeing the finished sentence teaches more
-    // than seeing an empty gap.
-    if (blankEl) {
-      blankEl.textContent = correctText(question);
-      blankEl.classList.add('is-filled');
+    // than seeing an empty gap. Two-gap questions carry an answer like "is / am".
+    if (blanks.length) {
+      const parts = String(correctText(question)).split(/\s*\/\s*/);
+      blanks.forEach((blank, i) => {
+        const text = parts.length === blanks.length ? parts[i] : (i === 0 ? parts.join(' / ') : null);
+        if (text === null) return;
+        blank.textContent = text;
+        blank.classList.add('is-filled');
+      });
     }
     checkBtn.classList.add('hidden');
     nextBtn.classList.remove('hidden');
@@ -145,7 +150,12 @@ export function renderQuestion({ question, index, total, onCheck, onNext }) {
 function renderSentence(sentence) {
   const parts = splitBlank(sentence);
   if (parts.length === 1) return el('p.sentence', { lang: 'en' }, sentence);
-  return el('p.sentence', { lang: 'en' }, [parts[0], el('span.blank', '?'), parts[1]]);
+  const nodes = [];
+  parts.forEach((text, i) => {
+    if (i > 0) nodes.push(el('span.blank', '?'));
+    if (text) nodes.push(text);
+  });
+  return el('p.sentence', { lang: 'en' }, nodes);
 }
 
 /* ---------------- interaction builders ---------------- */

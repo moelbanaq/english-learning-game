@@ -85,12 +85,7 @@
       "passageId": "notice",
       "prompt": { "en": "You borrowed a book two weeks ago. Can you renew it online?",
         "ar": "استعرت كتاباً قبل أسبوعين. هل يمكنك تجديده عبر الإنترنت؟" },
-      "options": [
-        "Yes, once — unless someone else has reserved it.",
-        "No, renewal is never possible online.",
-        "Yes, as many times as you like.",
-        "Only if you visit the front desk."
-      ],
+      "options": ["Yes, once — unless someone else has reserved it.", "No, renewal is never possible online at all.", "Yes, as many times as you like online.", "Only if you visit the front desk in person."],
       "answer": 0,
       "explanation": { "en": "“Once, unless another member has reserved the book” — the word “unless” sets the exception.",
         "ar": "النص يقول مرة واحدة «ما لم» يكن عضو آخر قد حجز الكتاب، وكلمة unless هي التي تضع الاستثناء." } },
@@ -121,12 +116,7 @@
     { "id": "a2u8-05", "concept": "a2.reading.everyday", "type": "choice", "format": "comprehension", "difficulty": 3,
       "passageId": "messages",
       "prompt": { "en": "Why did the meeting time change?", "ar": "لماذا تغيّر موعد اللقاء؟" },
-      "options": [
-        "Sami has to work an extra hour.",
-        "Noura is busy at five.",
-        "The café opens late.",
-        "They changed the day."
-      ],
+      "options": ["Sami has to work an extra hour.", "Noura is busy until five o'clock.", "The café opens late on Thursdays.", "They changed the day to Friday."],
       "answer": 0,
       "explanation": { "en": "“I finish work at 6 instead of 5 … my manager asked me to stay.”",
         "ar": "قال سامي إنه ينتهي في السادسة بدل الخامسة لأن مديره طلب منه البقاء." } },
@@ -157,12 +147,7 @@
     { "id": "a2u8-09", "concept": "a2.functions.social", "type": "choice", "format": "natural", "difficulty": 4,
       "prompt": { "en": "You must cancel a meeting an hour before it starts. What do you write?",
         "ar": "عليك إلغاء موعد قبل ساعة من بدئه. ماذا تكتب؟" },
-      "options": [
-        "I'm really sorry — something has come up and I can't make it today. Could we move it to tomorrow?",
-        "I cancel. Tomorrow.",
-        "I am not coming because I don't want.",
-        "Sorry I will not come, it is your problem now."
-      ],
+      "options": ["I'm really sorry — something has come up and I can't make it today. Could we move it to tomorrow?", "I can't come today because I don't want to, so please arrange another time that suits me.", "Sorry, I cancel today. I will tell you another time when I am free, maybe tomorrow or later.", "I will not come today. It is not my problem if this causes difficulty for you and the team."],
       "answer": 0,
       "explanation": { "en": "Apologise, give a short reason, and offer an alternative. That three-part shape works in almost every cancellation.",
         "ar": "اعتذر، واذكر سبباً موجزاً، واعرض بديلاً. هذا الترتيب الثلاثي يصلح لأي اعتذار عن موعد." } },

@@ -127,7 +127,7 @@
 
     { "id": "a2u4-14", "concept": "a2.phrasal.common", "type": "choice", "format": "phrasal", "difficulty": 4,
       "prompt": { "en": "Choose the natural sentence.", "ar": "اختر الجملة الطبيعية." },
-      "options": ["Don't give up — you're nearly there.", "Don't give up you.", "Don't up give.", "Don't give up it the exam."],
+      "options": ["Don't give up — you're nearly there.", "Don't give up you, you are near.", "Don't up give, you are nearly there.", "Don't give up it the exam now."],
       "answer": 0,
       "explanation": { "en": "“Give up” here has no object and cannot be split.",
         "ar": "الفعل give up هنا بلا مفعول، ولا يجوز الفصل بين جزأيه." } },
@@ -139,7 +139,7 @@
 
     { "id": "a2u4-16", "concept": "a2.perfect.everYet", "type": "choice", "format": "error_id", "difficulty": 4,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["Have you finished yet?", "I have already yet finished.", "She hasn't called yet.", "We've already paid."],
+      "options": ["Have you finished the report yet?", "I have already yet finished.", "She hasn't called me back yet.", "We've already paid for everything."],
       "answer": 1,
       "explanation": { "en": "“Already” and “yet” cannot be used together: “I have already finished.”",
         "ar": "لا تجتمع already مع yet في جملة واحدة. الصواب I have already finished." } }

@@ -68,7 +68,7 @@
 
     { "id": "a2u3-03", "concept": "a2.modal.mustHaveTo", "type": "choice", "format": "meaning", "difficulty": 4,
       "prompt": { "en": "“You don't have to come.” What does it mean?", "ar": "ماذا تعني You don't have to come؟" },
-      "options": ["It is not necessary for you to come.", "You are not allowed to come.", "You must stay away.", "You should not come."],
+      "options": ["It is not necessary for you to come.", "You are not allowed to come with us.", "You must stay away from the meeting.", "You should not come to the meeting."],
       "answer": 0,
       "explanation": { "en": "don't have to = no obligation. Forbidding is “mustn't”.",
         "ar": "don't have to تعني عدم وجود إلزام، أما المنع فيُعبَّر عنه بـ mustn't." },
@@ -97,7 +97,7 @@
 
     { "id": "a2u3-08", "concept": "a2.modal.should", "type": "choice", "format": "mcq", "difficulty": 3,
       "prompt": { "en": "Your friend has a bad headache. What is the best advice?", "ar": "صديقك يعاني صداعاً شديداً. ما أفضل نصيحة؟" },
-      "options": ["You should take a break and drink water.", "You must to sleep.", "You have to being fine.", "You should to relax."],
+      "options": ["You should take a break and drink water.", "You must to sleep for a few hours now.", "You have to being fine before the exam.", "You should to relax and drink some water."],
       "answer": 0,
       "explanation": { "en": "Only the first sentence is grammatical: should + base verb.",
         "ar": "الجملة الأولى وحدها صحيحة نحوياً: should مع الفعل المجرد." } },
@@ -109,7 +109,7 @@
 
     { "id": "a2u3-10", "concept": "a2.modal.permission", "type": "choice", "format": "register", "difficulty": 3,
       "prompt": { "en": "You are in a job interview and need to leave ten minutes early. What do you say?", "ar": "أنت في مقابلة عمل وتحتاج المغادرة مبكراً بعشر دقائق. ماذا تقول؟" },
-      "options": ["Could I leave ten minutes early, please?", "I leave early, ok?", "Can I go now?", "I want to leave early."],
+      "options": ["Could I leave ten minutes early, please?", "I leave ten minutes early today, ok?", "Can I go now? I have to leave early.", "I want to leave ten minutes early."],
       "answer": 0,
       "explanation": { "en": "“Could I…, please?” fits a formal situation; “Can I go now?” is too casual here.",
         "ar": "صيغة Could I…, please؟ تناسب الموقف الرسمي، أما Can I go now؟ فعامية في هذا السياق." } },

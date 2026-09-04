@@ -133,12 +133,7 @@
 
     { "id": "c1u1-09", "concept": "c1.hedging", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "You disagree with a colleague's plan in a meeting. Which is most professional?", "ar": "تختلف مع خطة زميلك في اجتماع. ما الأكثر مهنية؟" },
-      "options": [
-        "I wonder whether that timeline is realistic given the resources we have.",
-        "That timeline is impossible.",
-        "You clearly haven't thought this through.",
-        "I don't agree at all with this."
-      ],
+      "options": ["I wonder whether that timeline is realistic given the resources we have.", "That timeline is impossible and everyone in this room knows it.", "You clearly haven't thought this through before bringing it to us.", "I don't agree at all with this, and I think we should drop it."],
       "answer": 0,
       "explanation": { "en": "Hedged disagreement attacks the plan, not the person, and leaves room for the other side to move.",
         "ar": "الاعتراض المتحفّظ يوجّه النقد إلى الخطة لا إلى الشخص، ويترك مجالاً للتراجع دون إحراج." } },
@@ -172,12 +167,7 @@
     { "id": "c1u1-12", "concept": "c1.inference", "type": "choice", "format": "inference", "difficulty": 5,
       "passageId": "review",
       "prompt": { "en": "What does “This is not to say the argument is without value” do?", "ar": "ما وظيفة عبارة This is not to say the argument is without value؟" },
-      "options": [
-        "It prevents the criticism from being read as total rejection.",
-        "It introduces a new topic.",
-        "It withdraws the earlier criticism.",
-        "It states the author's own view."
-      ],
+      "options": ["It prevents the criticism from being read as total rejection.", "It introduces a new topic for the following paragraph.", "It withdraws the earlier criticism completely and finally.", "It states the author's own view rather than the reviewer's."],
       "answer": 0,
       "explanation": { "en": "It is a concession move: it limits the scope of the criticism while keeping it intact.",
         "ar": "هي حركة تنازل بلاغية تحدّ من مدى النقد دون أن تلغيه." } },

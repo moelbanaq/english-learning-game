@@ -101,7 +101,7 @@
         "ar": "العربية تستخدم المضارع مع «منذ»، فيسهل الوقوع في I am here since. الإنجليزية توجب صيغة التام." } },
 
     { "id": "b1u1-08", "concept": "b1.perfect.continuous", "type": "choice", "format": "fill_blank", "difficulty": 3,
-      "sentence": "Your eyes are red. ___ you ___ ?", "options": ["Have / been crying", "Did / cry", "Have / cried", "Are / crying"], "answer": 0,
+      "sentence": "Your eyes are red. ___ you ___ ?", "options": ["Have / been crying", "Did / cry earlier", "Have / cried today", "Are / crying now"], "answer": 0,
       "explanation": { "en": "Present evidence of a recent, continuing activity → present perfect continuous.",
         "ar": "أثر حاضر لنشاط قريب ممتد، فنستخدم المضارع التام المستمر." } },
 

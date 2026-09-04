@@ -64,7 +64,7 @@
 
     { "id": "a1u5-05", "concept": "a1.continuous.form", "type": "choice", "format": "error_id", "difficulty": 3,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["They are waiting outside.", "She is cooking lunch.", "I working now.", "He isn't studying today."],
+      "options": ["They are waiting outside.", "She is cooking lunch now.", "I working now in my room.", "He isn't studying today."],
       "answer": 2,
       "explanation": { "en": "The verb “be” is missing: I am working now.",
         "ar": "فعل الكون ناقص. الصواب I am working now." },

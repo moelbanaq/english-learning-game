@@ -75,12 +75,12 @@ export function grade(q, response) {
   }
 }
 
-/** Split "She ___ happy." into parts so a blank can be rendered as an element. */
+/**
+ * Split "She ___ happy." into the text around its gaps, so each gap can be rendered
+ * as its own element. A sentence with two gaps yields three segments.
+ */
 export function splitBlank(sentence) {
-  const s = String(sentence || '');
-  const i = s.indexOf('___');
-  if (i === -1) return [s];
-  return [s.slice(0, i), s.slice(i + 3)];
+  return String(sentence || '').split('___');
 }
 
 /** Deterministic shuffle (seeded) so a session is stable across re-renders. */

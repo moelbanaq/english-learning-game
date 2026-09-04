@@ -237,3 +237,11 @@ test('route patterns keep parameters in order, optional ones included', async ()
   assert.deepEqual(matchRoute('/unit/:id', '/unit/a1-u2'), { id: 'a1-u2' });
   assert.equal(matchRoute('/unit/:id', '/learn'), null);
 });
+
+test('splitBlank handles none, one and two gaps', async () => {
+  const { splitBlank } = await import('../src/engine/grade.js');
+  assert.deepEqual(splitBlank('No gap here'), ['No gap here']);
+  assert.deepEqual(splitBlank('She ___ happy.'), ['She ', ' happy.']);
+  assert.deepEqual(splitBlank('My name ___ Layla and I ___ nineteen.'),
+    ['My name ', ' Layla and I ', ' nineteen.']);
+});

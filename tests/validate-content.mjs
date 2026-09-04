@@ -55,6 +55,21 @@ function validateQuestion(q, where, opts = {}) {
       if (q.options.some((o) => positional.test(String(o)))) {
         err(at, 'option refers to a position — options are displayed in a random order');
       }
+      // Length is a tell. If the correct answer is visibly the longest (or shortest)
+      // option, a learner can pick it without reading any English at all.
+      const lenOf = (o) => String(o).length;
+      const answerLen = lenOf(q.options[q.answer]);
+      const otherLens = q.options.filter((_, i) => i !== q.answer).map(lenOf);
+      const longestOther = Math.max(...otherLens);
+      const shortestOther = Math.min(...otherLens);
+      if (answerLen - longestOther >= 6 && answerLen >= longestOther * 1.2) {
+        err(at, `correct answer is ${answerLen - longestOther} characters longer than every distractor `
+          + '— lengthen the distractors so length is not a clue');
+      }
+      if (shortestOther - answerLen >= 6 && answerLen <= shortestOther * 0.8) {
+        err(at, `correct answer is ${shortestOther - answerLen} characters shorter than every distractor `
+          + '— even out the option lengths');
+      }
       break;
     }
     case 'text': {
@@ -142,6 +157,21 @@ for (const level of curriculum.levels) {
     for (const id of conceptIds) {
       const n = (unit.questions || []).filter((q) => q.concept === id).length;
       if (n < 2) err(where, `concept "${id}" has only ${n} question(s) — needs at least 2`);
+    }
+
+    // Even without individual outliers, a unit where the answer is usually the longest
+    // option is guessable. Chance is roughly 1/(number of options).
+    const choices = (unit.questions || []).filter((q) => q.type === 'choice' && Array.isArray(q.options));
+    if (choices.length >= 8) {
+      // Only count a difference a learner could actually notice: "are" beating "is" by one
+      // character is not a tell, but a whole extra clause is.
+      const visiblyLongest = choices.filter((q) => {
+        const a = String(q.options[q.answer]).length;
+        const other = Math.max(...q.options.filter((_, i) => i !== q.answer).map((o) => String(o).length));
+        return a - other >= 3 && a >= other * 1.15;
+      }).length;
+      const pct = Math.round((visiblyLongest / choices.length) * 100);
+      if (pct > 45) warn(where, `the correct answer is visibly the longest option in ${pct}% of questions — aim for about 25%`);
     }
   }
 }

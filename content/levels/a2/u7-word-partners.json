@@ -143,7 +143,7 @@
 
     { "id": "a2u7-13", "concept": "a2.collocation.get", "type": "choice", "format": "meaning", "difficulty": 4,
       "prompt": { "en": "In which sentence does “get” mean “become”?", "ar": "في أي جملة تعني get «يصبح»؟" },
-      "options": ["The children get tired after school.", "I get the bus at eight.", "She got a present.", "We get to work by nine."],
+      "options": ["The children get tired after school.", "I get the bus to work at eight.", "She got a present from her sister.", "We get to work by nine every day."],
       "answer": 0,
       "explanation": { "en": "get + adjective = become. The others mean take, receive and arrive.",
         "ar": "get مع الصفة تعني «يصبح»، أما البقية فتعني يستقل، ويستلم، ويصل." } },

@@ -79,7 +79,7 @@
 
     { "id": "a1u8-03", "concept": "a1.modal.can", "type": "choice", "format": "mcq", "difficulty": 2,
       "prompt": { "en": "You want the waiter to bring water. What is the most polite?", "ar": "تريد من النادل أن يحضر ماءً. ما الأكثر تهذيباً؟" },
-      "options": ["Could I have some water, please?", "Give me water.", "I want water now.", "Water!"],
+      "options": ["Could I have some water, please?", "Give me some water right now.", "I want water now, bring it fast.", "Water, please — hurry up!"],
       "answer": 0,
       "explanation": { "en": "“Could I have…, please?” is the polite request form; “Give me” sounds like an order.",
         "ar": "صيغة Could I have…, please؟ هي المهذبة، أما Give me فتبدو أمراً." } },
@@ -118,7 +118,7 @@
 
     { "id": "a1u8-10", "concept": "a1.everyday.phrases", "type": "choice", "format": "mcq", "difficulty": 2,
       "prompt": { "en": "You did not hear what someone said. What do you say?", "ar": "لم تسمع ما قاله المتحدث. ماذا تقول؟" },
-      "options": ["Sorry, could you repeat that?", "What you say?", "Repeat!", "I no understand."],
+      "options": ["Sorry, could you repeat that?", "What you say to me just now?", "Repeat it again for me now!", "I no understand your words."],
       "answer": 0,
       "explanation": { "en": "“Sorry, could you repeat that?” is polite and standard.",
         "ar": "هذه العبارة مهذبة وشائعة، وهي أفضل من الترجمة الحرفية." } },
@@ -155,7 +155,7 @@
     { "id": "a1u8-15", "concept": "a1.everyday.phrases", "type": "choice", "format": "inference", "difficulty": 4,
       "passageId": "note",
       "prompt": { "en": "Why does Sara say “don't call me before nine”?", "ar": "لماذا قالت سارة «لا تتصل بي قبل التاسعة»؟" },
-      "options": ["She is usually asleep on the train.", "Her phone is broken.", "She does not like Omar.", "The train has no signal."],
+      "options": ["She is usually asleep on the train.", "Her phone is broken this week.", "She does not like talking to Omar.", "The train has no signal at all."],
       "answer": 0,
       "explanation": { "en": "She explains it herself: “I am usually asleep on the train.” This is inference from the reason she gives.",
         "ar": "هي نفسها ذكرت السبب: عادةً ما تنام في القطار. وهذا استنتاج من التعليل الذي أوردته." } },

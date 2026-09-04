@@ -110,7 +110,7 @@
 
     { "id": "b2u1-06", "concept": "b2.conditional.mixed", "type": "choice", "format": "meaning", "difficulty": 5,
       "prompt": { "en": "“If I had taken that job, I would be living in Berlin now.” What is true?", "ar": "ما الصحيح في هذه الجملة؟" },
-      "options": ["I did not take the job and I do not live in Berlin.", "I took the job and I live in Berlin.", "I will take the job soon.", "I lived in Berlin in the past."],
+      "options": ["I did not take the job and I do not live in Berlin.", "I took the job and I now live in Berlin permanently.", "I will take the job and move to Berlin quite soon.", "I lived in Berlin in the past but left the job."],
       "answer": 0,
       "explanation": { "en": "A mixed conditional: an unreal past condition with an unreal present result.",
         "ar": "شرط مختلط: شرط غير واقعي في الماضي، ونتيجة غير واقعية في الحاضر." } },
@@ -149,12 +149,7 @@
 
     { "id": "b2u1-11", "concept": "b2.register", "type": "choice", "format": "register", "difficulty": 4,
       "prompt": { "en": "You are emailing a client about a late delivery. Which is appropriate?", "ar": "ترسل بريداً لعميل بشأن تأخر التسليم. أيها مناسب؟" },
-      "options": [
-        "We apologise for the delay and will confirm a new delivery date by Thursday.",
-        "Sorry, stuff got delayed. Will let you know.",
-        "The delay is not our fault at all.",
-        "Hi! Delivery is late lol, sorry about that."
-      ],
+      "options": ["We apologise for the delay and will confirm a new delivery date by Thursday.", "Sorry, stuff got delayed on our side. We'll let you know when we know more.", "The delay is not our fault at all, so please take it up with the supplier.", "Hi! Delivery is late lol, sorry about that, we'll sort it out at some point."],
       "answer": 0,
       "explanation": { "en": "Formal, specific and accountable. The others are too casual, defensive, or vague.",
         "ar": "الخيار الأول رسمي ومحدد ويتحمّل المسؤولية، والبقية إما عامية أو دفاعية أو مبهمة." } },
@@ -169,12 +164,7 @@
     { "id": "b2u1-13", "concept": "b2.register", "type": "choice", "format": "comprehension", "difficulty": 5,
       "passageId": "report",
       "prompt": { "en": "What is the writer's real message about the 12% rise?", "ar": "ما الرسالة الحقيقية للكاتب بشأن ارتفاع ١٢٪؟" },
-      "options": [
-        "It looks good but is fragile because it depends on one client.",
-        "It proves the company is growing steadily.",
-        "It was caused by many new clients.",
-        "It will certainly continue next year."
-      ],
+      "options": ["It looks good but is fragile because it depends on one client.", "It proves the company is growing steadily across all clients.", "It was caused by many new clients joining this quarter.", "It will certainly continue at the same rate next year."],
       "answer": 0,
       "explanation": { "en": "“Largely driven by a single client” plus “it would be unwise to treat … as a long-term trend” is a warning wrapped in careful language.",
         "ar": "عبارتا «مدفوع أساساً بعميل واحد» و«ليس من الحكمة اعتباره اتجاهاً طويل الأمد» تحذير مغلَّف بلغة متحفظة." } },

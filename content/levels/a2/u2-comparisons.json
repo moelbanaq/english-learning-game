@@ -71,7 +71,7 @@
 
     { "id": "a2u2-03", "concept": "a2.comparatives", "type": "choice", "format": "error_id", "difficulty": 3,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["My phone is better than yours.", "This road is more longer than that one.", "Today is hotter than yesterday.", "She is taller than her brother."],
+      "options": ["My phone is better than yours for photos.", "This road is more longer than that one.", "Today is hotter than it was yesterday.", "She is a little taller than her brother."],
       "answer": 1,
       "explanation": { "en": "Use either -er or more, never both: longer than.",
         "ar": "نستخدم er أو more، ولا نجمع بينهما. الصواب longer than." } },
@@ -115,7 +115,7 @@
 
     { "id": "a2u2-12", "concept": "a2.quantifiers", "type": "choice", "format": "error_id", "difficulty": 4,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["He gave me some good advice.", "I need more informations about the course.", "We bought new furniture.", "The news was surprising."],
+      "options": ["He gave me some very good advice today.", "I need more informations about the course.", "We bought new furniture for the office.", "The news about the results was surprising."],
       "answer": 1,
       "explanation": { "en": "“Information” is uncountable and has no plural: more information.",
         "ar": "كلمة information غير معدودة ولا تُجمع، فالصواب more information." } },

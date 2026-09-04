@@ -113,12 +113,7 @@
 
     { "id": "c2u1-04", "concept": "c2.idiom", "type": "choice", "format": "meaning", "difficulty": 5,
       "prompt": { "en": "“Let's not move the goalposts.” What is the speaker objecting to?", "ar": "«Let's not move the goalposts» ما الذي يعترض عليه المتكلم؟" },
-      "options": [
-        "Changing the criteria after work has started.",
-        "Postponing the meeting again.",
-        "Spending too much money.",
-        "Choosing the wrong location."
-      ],
+      "options": ["Changing the criteria after work has started.", "Postponing the meeting again without warning.", "Spending too much money on the project.", "Choosing the wrong location for the event."],
       "answer": 0,
       "explanation": { "en": "The idiom accuses someone of unfairly changing the standard mid-way.",
         "ar": "التعبير يتهم الطرف الآخر بتغيير المعايير في منتصف الطريق دون وجه حق." } },
@@ -149,24 +144,14 @@
 
     { "id": "c2u1-07", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
       "prompt": { "en": "A manager says: “That's certainly one way of doing it.” What do they most likely mean?", "ar": "قال مدير: «That's certainly one way of doing it» ما مراده على الأرجح؟" },
-      "options": [
-        "They do not think it is a good approach.",
-        "They strongly approve.",
-        "They have not understood.",
-        "They want you to repeat it."
-      ],
+      "options": ["They do not think it is a good approach.", "They strongly approve of the approach.", "They have not understood the question.", "They want you to repeat the explanation."],
       "answer": 0,
       "explanation": { "en": "Faint praise of this kind is a standard British-English way of signalling disapproval without confrontation.",
         "ar": "هذا «المدح الفاتر» أسلوب معروف في الإنجليزية للتعبير عن عدم الرضا دون مواجهة مباشرة." } },
 
     { "id": "c2u1-08", "concept": "c2.tone", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "You must reject a proposal firmly but keep the relationship. Which is best?", "ar": "عليك رفض مقترح بحزم مع الحفاظ على العلاقة. ما الأفضل؟" },
-      "options": [
-        "I'm not convinced this is the right route for us at the moment, though I can see the thinking behind it.",
-        "No. This is a bad idea.",
-        "Maybe, I don't know, perhaps we could possibly think about it sometime.",
-        "This proposal is completely unacceptable to us."
-      ],
+      "options": ["I'm not convinced this is the right route for us at the moment, though I can see the thinking behind it.", "No. This is a bad idea and I really don't want to spend any more time discussing it today.", "Maybe, I don't know, perhaps we could possibly think about it sometime, if that suits everyone.", "This proposal is completely unacceptable to us and I am surprised it was put forward at all."],
       "answer": 0,
       "explanation": { "en": "It is clear (a rejection), qualified (“at the moment”), and it acknowledges the other side. The vague option fails because it does not actually say no.",
         "ar": "الخيار الأول واضح في الرفض، ومقيَّد بـ«في الوقت الحالي»، ويعترف بوجهة نظر الطرف الآخر. أما الخيار المبهم ففاشل لأنه لا يقول «لا» أصلاً." } },
@@ -174,12 +159,7 @@
     { "id": "c2u1-09", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
       "passageId": "email",
       "prompt": { "en": "What is the writer actually saying about the pricing section?", "ar": "ماذا يقول الكاتب فعلاً عن قسم التسعير؟" },
-      "options": [
-        "It overstates what the numbers support and must be reworded.",
-        "It is well written and needs no change.",
-        "The numbers in it are wrong.",
-        "Legal has already rejected it."
-      ],
+      "options": ["It overstates what the numbers support and must be reworded.", "It is well written and needs no change before it goes out.", "The numbers in it are wrong and must be recalculated.", "Legal has already rejected it and asked for a rewrite."],
       "answer": 0,
       "explanation": { "en": "“Reads as rather more confident than the numbers strictly allow” is a polite way of saying: it overclaims.",
         "ar": "عبارة «يبدو أكثر ثقة مما تسمح به الأرقام بدقة» طريقة مهذبة للقول إنه يبالغ في الادعاء." } },
@@ -187,12 +167,7 @@
     { "id": "c2u1-10", "concept": "c2.tone", "type": "choice", "format": "inference", "difficulty": 5,
       "passageId": "email",
       "prompt": { "en": "“Nothing that a bit of rewording wouldn't fix.” What does this do?", "ar": "ما وظيفة عبارة Nothing that a bit of rewording wouldn't fix؟" },
-      "options": [
-        "It reassures the writer that the problem is small and solvable.",
-        "It says the draft must be rewritten completely.",
-        "It withdraws the criticism entirely.",
-        "It asks for a meeting."
-      ],
+      "options": ["It reassures the writer that the problem is small and solvable.", "It says the draft must be rewritten completely before Friday.", "It withdraws the criticism entirely and apologises for it.", "It asks for a meeting to discuss the pricing section."],
       "answer": 0,
       "explanation": { "en": "The double negative downgrades the severity: the criticism stands, but the fix is easy.",
         "ar": "النفي المزدوج يخفّف من حدّة المشكلة: النقد قائم لكن علاجه يسير." } },
@@ -211,12 +186,7 @@
 
     { "id": "c2u1-12", "concept": "c2.discourse", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "Which opening best prepares the reader for a disagreement?", "ar": "أي افتتاحية تهيّئ القارئ للاعتراض؟" },
-      "options": [
-        "There is much to admire in this proposal. That said, …",
-        "This proposal is fine. So, …",
-        "I have read the proposal. Therefore, …",
-        "This proposal is excellent, and moreover, …"
-      ],
+      "options": ["There is much to admire in this proposal. That said, …", "This proposal is fine and well argued. So, …", "I have read the proposal you sent me. Therefore, …", "This proposal is excellent throughout, and moreover, …"],
       "answer": 0,
       "explanation": { "en": "Concede, then pivot. “That said” tells the reader a qualification is coming; “moreover” and “therefore” promise the opposite.",
         "ar": "أقرّ ثم انعطف. عبارة That said تنبّه القارئ إلى تحفّظ قادم، بينما moreover وtherefore تَعِدان بعكس ذلك." } },

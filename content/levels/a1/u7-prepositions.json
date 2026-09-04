@@ -93,7 +93,7 @@
 
     { "id": "a1u7-09", "concept": "a1.prep.place", "type": "choice", "format": "error_id", "difficulty": 3,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["She lives in Jeddah.", "He is at the door.", "The picture is in the wall.", "We are at a party."],
+      "options": ["She lives in Jeddah with her family.", "He is waiting at the door for you.", "The picture is in the wall in my room.", "We are at a party in the city centre."],
       "answer": 2,
       "explanation": { "en": "A picture hangs on a surface: on the wall.",
         "ar": "الصورة معلقة على سطح، فنقول on the wall." } },
