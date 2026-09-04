@@ -104,8 +104,9 @@
       "explanation": { "en": "Present evidence → going to. Opinion without evidence → will.",
         "ar": "الدليل الحاضر يقتضي going to، أما الرأي المجرد فيقتضي will." } },
 
-    { "id": "a2u5-08", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "error_id", "difficulty": 4,
-      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+    { "id": "a2u5-08", "concept": "a2.future.willVsGoingTo", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "The decision was made last week. Which sentence does not fit that?",
+        "ar": "القرار اتُّخذ الأسبوع الماضي. أي جملة لا تناسب ذلك؟" },
       "options": ["I'm going to visit my aunt on Friday.", "I will visit my aunt — I decided last week.", "Look, the bus is going to leave!", "Maybe I'll call her later."],
       "answer": 1,
       "explanation": { "en": "A decision made last week is a plan, so it needs “going to”: I'm going to visit my aunt.",

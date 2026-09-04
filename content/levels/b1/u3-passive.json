@@ -132,7 +132,7 @@
       "explanation": { "en": "Use “by” for the doer, and the participle “written”.",
         "ar": "نستخدم by للفاعل، والتصريف الثالث written." } },
 
-    { "id": "b1u3-12", "concept": "b1.passive.use", "type": "choice", "format": "error_id", "difficulty": 5,
+    { "id": "b1u3-12", "concept": "b1.passive.use", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "In which sentence is the passive a poor choice?", "ar": "في أي جملة يكون المجهول اختياراً ضعيفاً؟" },
       "options": ["The ball was kicked by me into the garden.", "The window was broken during the storm.",
                   "The results will be announced on Monday.", "The building was damaged by the fire."],

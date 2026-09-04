@@ -101,6 +101,16 @@ function validateQuestion(q, where, opts = {}) {
     default: break;
   }
 
+  // An "error_id" question must actually ask the learner to find a fault — the chip the
+  // learner sees says "Find the mistake", so a prompt asking for the correct sentence
+  // contradicts it.
+  if (q.format === 'error_id') {
+    const asks = /mistake|wrong|unnatural|incorrect|not English|weakest|does not fit|repeats itself|did not mean/i;
+    if (!q.prompt || !asks.test(String(q.prompt.en || ''))) {
+      warn(at, 'format is "error_id" but the prompt does not ask the learner to find a fault');
+    }
+  }
+
   if (opts.conceptIds && q.concept && !opts.conceptIds.has(q.concept)) {
     err(at, `concept "${q.concept}" is not declared in this unit`);
   }

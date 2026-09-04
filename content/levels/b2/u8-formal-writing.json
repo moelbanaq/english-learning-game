@@ -1,0 +1,214 @@
+{
+  "id": "b2-u8",
+  "goal": {
+    "en": "Write emails and reports that are formal without being padded, and clear without being blunt.",
+    "ar": "أن تكتب رسائل وتقارير رسمية بلا حشو، وواضحة بلا فظاظة."
+  },
+  "passages": {
+    "draft": {
+      "title": "A draft paragraph from a report",
+      "text": "Due to the fact that there was a delay in the delivery of the components, it was not possible for the assembly team to commence work on the second batch at the time which had originally been scheduled. It is our belief that the recovery of the lost time is something that can be achieved, but only in the event that the supplier is in a position to confirm the revised dates by the end of this current week."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b2.writing.concise",
+      "title": { "en": "Formal is not the same as wordy", "ar": "الرسمية ليست إطالة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Learners often add words to sound serious. Native professional writing does the opposite: it is formal in vocabulary and lean in structure.",
+          "ar": "يظن كثير من المتعلمين أن كثرة الكلمات تُكسب النص جدية، والكتابة المهنية الأصيلة تفعل العكس: مفردات رسمية وتركيب موجز." } },
+        { "type": "table", "head": ["Padded", "Better"], "rows": [
+          ["due to the fact that", "because"],
+          ["in the event that", "if"],
+          ["at this moment in time", "now"],
+          ["it is our belief that", "we believe"],
+          ["is in a position to", "can"],
+          ["commence work on", "start"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Cut any phrase you can replace with one word without losing meaning. Formality lives in word choice, not in length.",
+          "ar": "احذف كل عبارة يمكن استبدالها بكلمة واحدة دون خسارة المعنى. فالرسمية في اختيار الكلمة لا في الطول." } }
+      ]
+    },
+    {
+      "id": "b2.writing.nominalisation",
+      "title": { "en": "Verbs beat noun phrases", "ar": "الفعل أقوى من المصدر" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Turning a verb into a noun (“decide” → “make a decision”) makes a sentence heavier. Some nominalisation is normal in reports; too much buries the action.",
+          "ar": "تحويل الفعل إلى اسم مثل decide إلى make a decision يثقل الجملة. وبعض ذلك طبيعي في التقارير، لكن الإفراط فيه يدفن الحدث." } },
+        { "type": "table", "head": ["Heavy", "Direct"], "rows": [
+          ["We carried out an investigation.", "We investigated."],
+          ["There was a reduction in costs.", "Costs fell."],
+          ["We reached a decision.", "We decided."],
+          ["The implementation of the change took place.", "We made the change."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Nominalisation also hides who did what: “a decision was reached” tells the reader nothing about who decided.",
+          "ar": "التحويل إلى الاسم يخفي الفاعل أيضاً: فجملة a decision was reached لا تخبر القارئ بمن قرّر." } }
+      ]
+    },
+    {
+      "id": "b2.writing.emailShape",
+      "title": { "en": "The shape of a professional email", "ar": "بنية البريد المهني" },
+      "teach": [
+        { "type": "table", "head": ["Part", "Job", "Example"], "rows": [
+          ["Purpose", "say why you are writing", "I'm writing about the March invoice."],
+          ["Context", "the minimum background", "It was issued on the 3rd and remains unpaid."],
+          ["Request", "one clear ask", "Could you confirm when it will be settled?"],
+          ["Close", "next step or deadline", "I'd be grateful for a reply by Friday."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "One email, one request. If you ask for three things, expect an answer to one.",
+          "ar": "بريد واحد بطلب واحد. فإن طلبت ثلاثة أشياء فتوقّع رداً على واحد منها." } },
+        { "type": "tip", "text": {
+          "en": "Put the request in its own line. A request buried in the middle of a paragraph is a request that gets missed.",
+          "ar": "اجعل الطلب في سطر مستقل، فالطلب المدفون وسط الفقرة طلب يُنسى." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u8-01", "concept": "b2.writing.concise", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which sentence says this most efficiently?", "ar": "أي جملة تقول المعنى بأوجز صورة؟" },
+      "options": ["We postponed the launch because the parts arrived late.",
+                  "We postponed the launch due to the fact that the parts were late.",
+                  "In view of the fact that the parts were late, we postponed it.",
+                  "Owing to the fact of the late parts, the launch was postponed."],
+      "answer": 0,
+      "explanation": { "en": "“Because” does the work of “due to the fact that” in one word, with no loss of formality.",
+        "ar": "كلمة because تؤدي عمل عبارة due to the fact that بكلمة واحدة دون خسارة في الرسمية." } },
+
+    { "id": "b2u8-02", "concept": "b2.writing.concise", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "Which sentence is best in a report?", "ar": "أي جملة أنسب لتقرير؟" },
+      "options": ["We cannot confirm the date until the supplier replies.",
+                  "We are not in a position to be able to confirm the date.",
+                  "It is not possible for us to be confirming the date now.",
+                  "Confirmation of the date is not something we are able to do."],
+      "answer": 0,
+      "explanation": { "en": "Same register, half the words, and it names the condition.",
+        "ar": "المستوى الرسمي نفسه بنصف الكلمات، مع ذكر الشرط." } },
+
+    { "id": "b2u8-03", "concept": "b2.writing.concise", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the padded phrase with its one-word replacement.", "ar": "صِل العبارة الحشوية ببديلها المفرد." },
+      "pairs": [["due to the fact that", "because"], ["in the event that", "if"],
+                ["at this moment in time", "now"], ["is in a position to", "can"]],
+      "explanation": { "en": "Each phrase on the left is four or five words doing one word's work.",
+        "ar": "كل عبارة على اليسار أربع أو خمس كلمات تؤدي عمل كلمة واحدة." } },
+
+    { "id": "b2u8-04", "concept": "b2.writing.concise", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "draft",
+      "prompt": { "en": "What does the draft paragraph actually say?", "ar": "ماذا تقول الفقرة فعلاً؟" },
+      "options": ["Late parts delayed the second batch; time can be made up if the supplier confirms dates this week.",
+                  "The assembly team refused to start work on the second batch until they had been paid in full.",
+                  "The supplier has already confirmed the revised delivery dates for all of the outstanding parts.",
+                  "The lost time cannot be recovered under any circumstances, whatever the supplier now does."],
+      "answer": 0,
+      "explanation": { "en": "Eighty words carry one sentence of content — which is the problem the unit is about.",
+        "ar": "ثمانون كلمة تحمل مضمون جملة واحدة، وهذه هي المشكلة التي تعالجها الوحدة." } },
+
+    { "id": "b2u8-05", "concept": "b2.writing.concise", "type": "choice", "format": "natural", "difficulty": 5,
+      "passageId": "draft",
+      "prompt": { "en": "Which rewrite keeps the register but cuts the padding?", "ar": "أي إعادة صياغة تحفظ المستوى الرسمي وتحذف الحشو؟" },
+      "options": ["Because the components arrived late, the team could not start the second batch on schedule.",
+                  "The components came late so the guys couldn't get going on batch two on time.",
+                  "Owing to the fact of the lateness, commencement was rendered impossible for the team.",
+                  "Late components. No start. Second batch delayed. Schedule missed completely."],
+      "answer": 0,
+      "explanation": { "en": "Formal vocabulary, direct structure. The second is too casual, the third is padded, the fourth is not sentences.",
+        "ar": "مفردات رسمية وتركيب مباشر. أما الثانية فعامية، والثالثة حشوية، والرابعة ليست جملاً." } },
+
+    { "id": "b2u8-06", "concept": "b2.writing.nominalisation", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "Which sentence is more direct?", "ar": "أي جملة أكثر مباشرة؟" },
+      "options": ["Costs fell by twelve per cent last quarter.",
+                  "There was a reduction in costs of twelve per cent.",
+                  "A twelve per cent cost reduction took place then.",
+                  "The occurrence of a cost reduction was observed."],
+      "answer": 0,
+      "explanation": { "en": "The verb carries the action; the noun versions bury it.",
+        "ar": "الفعل يحمل الحدث، أما الصيغ الاسمية فتدفنه." } },
+
+    { "id": "b2u8-07", "concept": "b2.writing.nominalisation", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Make it direct: “We carried out an investigation into the delay.” → “We ___ the delay.”",
+        "ar": "اجعلها مباشرة: We ___ the delay." },
+      "answer": "investigated",
+      "explanation": { "en": "One verb replaces a verb + noun phrase, with no loss of formality.",
+        "ar": "فعل واحد يحلّ محل فعل مع عبارة اسمية، دون خسارة في الرسمية." } },
+
+    { "id": "b2u8-08", "concept": "b2.writing.nominalisation", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What does “A decision was reached” hide that “The board decided” does not?",
+        "ar": "ما الذي تخفيه A decision was reached ولا تخفيه The board decided؟" },
+      "options": ["Who made the decision.", "When the decision was made.",
+                  "Whether a decision exists at all.", "What the decision was about."],
+      "answer": 0,
+      "explanation": { "en": "Nominalisation plus the passive removes the agent — sometimes useful, often evasive.",
+        "ar": "التحويل إلى الاسم مع المجهول يحذف الفاعل، وقد يكون ذلك مفيداً وقد يكون تهرباً." } },
+
+    { "id": "b2u8-09", "concept": "b2.writing.emailShape", "type": "choice", "format": "register", "difficulty": 4,
+      "prompt": { "en": "Which opening line states the purpose most usefully?", "ar": "أي سطر افتتاحي يوضح الغرض بأفضل شكل؟" },
+      "options": ["I'm writing about the invoice issued on 3 March.",
+                  "I hope this email finds you well on this fine day.",
+                  "I wanted to reach out and touch base with you today.",
+                  "Following on from our previous correspondence, hello."],
+      "answer": 0,
+      "explanation": { "en": "The reader learns the subject in the first six words. The others delay it.",
+        "ar": "يعرف القارئ الموضوع في الكلمات الست الأولى، أما البقية فتؤخّره." } },
+
+    { "id": "b2u8-10", "concept": "b2.writing.emailShape", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "You need a reply by Friday. Which close works best?", "ar": "تحتاج رداً بحلول الجمعة. أي خاتمة أفضل؟" },
+      "options": ["I'd be grateful for a reply by Friday, if that is possible.",
+                  "Please reply immediately as this is extremely urgent now.",
+                  "Let me know sometime whenever it happens to suit you.",
+                  "Awaiting your kind response at your earliest convenience."],
+      "answer": 0,
+      "explanation": { "en": "It names a deadline and stays polite. The vague version gets no answer; the urgent one costs goodwill.",
+        "ar": "تحدد موعداً وتبقى مهذبة. أما الصيغة المبهمة فلا تأتي بردّ، والملحّة تكلّفك ودّ المتلقي." } },
+
+    { "id": "b2u8-11", "concept": "b2.writing.emailShape", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Why should an email contain one main request?", "ar": "لماذا ينبغي أن يحمل البريد طلباً رئيسياً واحداً؟" },
+      "options": ["Multiple requests usually produce a reply to only one.",
+                  "Email systems reject messages with several questions.",
+                  "It is considered rude to ask for more than one thing.",
+                  "Long emails are automatically marked as spam."],
+      "answer": 0,
+      "explanation": { "en": "A practical rule, not an etiquette one: readers answer the first thing and forget the rest.",
+        "ar": "قاعدة عملية لا قاعدة آداب: يجيب القارئ عن أول طلب وينسى البقية." } },
+
+    { "id": "b2u8-12", "concept": "b2.writing.emailShape", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Could", "you", "confirm", "when", "the", "invoice", "will", "be", "settled"],
+      "answer": "Could you confirm when the invoice will be settled",
+      "explanation": { "en": "A polite request with one clear ask.", "ar": "طلب مهذب بمطلب واحد واضح." } },
+
+    { "id": "b2u8-13", "concept": "b2.writing.concise", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is padded rather than formal?", "ar": "أي جملة حشوية لا رسمية؟" },
+      "options": ["It is our belief that a resolution can be achieved by us.",
+                  "We believe the issue can be resolved before the deadline.",
+                  "We expect to resolve the issue before the end of March.",
+                  "The issue should be resolved before the deadline passes."],
+      "answer": 0,
+      "explanation": { "en": "“It is our belief that” and “can be achieved by us” both take five words to say what one verb says.",
+        "ar": "عبارتا It is our belief that وcan be achieved by us تستهلكان خمس كلمات لقول ما يقوله فعل واحد." } },
+
+    { "id": "b2u8-14", "concept": "b2.writing.nominalisation", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence would a careful editor prefer?", "ar": "أي جملة يفضّلها محرّر متمكّن؟" },
+      "options": ["The committee approved the budget on Tuesday morning.",
+                  "Approval of the budget was given by the committee then.",
+                  "The giving of budget approval occurred on Tuesday.",
+                  "Budget approval was a thing that the committee did."],
+      "answer": 0,
+      "explanation": { "en": "Subject, verb, object. Every other version turns the verb into a noun and adds weight.",
+        "ar": "فاعل ثم فعل ثم مفعول. أما البقية فتحوّل الفعل إلى اسم وتزيد الثقل." } },
+
+    { "id": "b2u8-15", "concept": "b2.writing.emailShape", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "You are chasing an unpaid invoice for the second time. What tone is right?",
+        "ar": "تطالب بفاتورة غير مدفوعة للمرة الثانية. ما النبرة المناسبة؟" },
+      "options": ["Firm and specific, without accusation: state the facts and the date you need.",
+                  "Apologetic and vague, so the client does not feel any pressure at all.",
+                  "Angry and direct, so that the client understands you are serious.",
+                  "Silent for another month, then escalate the matter to a lawyer."],
+      "answer": 0,
+      "explanation": { "en": "Facts plus a date is harder to ignore than either anger or apology.",
+        "ar": "ذكر الوقائع مع تحديد موعد أصعب على التجاهل من الغضب أو الاعتذار." } }
+  ]
+}

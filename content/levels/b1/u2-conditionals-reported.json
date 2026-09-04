@@ -116,7 +116,7 @@
       "explanation": { "en": "will → would, and “tomorrow” becomes “the next day” when the moment of speaking has changed.",
         "ar": "will تصير would، وtomorrow تصير the next day لأن لحظة الكلام تغيّرت." } },
 
-    { "id": "b1u2-10", "concept": "b1.reported.speech", "type": "choice", "format": "error_id", "difficulty": 4,
+    { "id": "b1u2-10", "concept": "b1.reported.speech", "type": "choice", "format": "choose_sentence", "difficulty": 4,
       "prompt": { "en": "Which reported question is correct?", "ar": "أي سؤال منقول صحيح؟" },
       "options": ["She asked where did I live.", "She asked where I lived.", "She asked where do I live.", "She asked me where did I lived."],
       "answer": 1,

@@ -1,0 +1,187 @@
+{
+  "id": "b2-u3",
+  "goal": {
+    "en": "Control how likely, how necessary and how habitual you make something sound.",
+    "ar": "أن تتحكم في درجة الاحتمال والضرورة والاعتياد التي توحي بها جملتك."
+  },
+  "concepts": [
+    {
+      "id": "b2.modal.likelihood",
+      "title": { "en": "Degrees of likelihood", "ar": "درجات الاحتمال" },
+      "teach": [
+        { "type": "table", "head": ["Expression", "Roughly", "Example"], "rows": [
+          ["is bound to", "almost certain", "Prices are bound to rise."],
+          ["is likely to", "probable", "The talks are likely to continue."],
+          ["may / might / could", "possible", "It could rain later."],
+          ["is unlikely to", "improbable", "He is unlikely to accept."],
+          ["there is no chance", "impossible", "There is no chance of that."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“May”, “might” and “could” are close in meaning here. “May not” means possibly not; “cannot” means impossible — a much stronger claim.",
+          "ar": "الأفعال may وmight وcould متقاربة في هذا المعنى. لكن may not تعني «ربما لا»، أما cannot فتعني الاستحالة، وهي أقوى بكثير." } },
+        { "type": "warn", "text": {
+          "en": "In writing, an unhedged prediction is a claim you must defend. “Prices will rise” invites disagreement; “prices are likely to rise” does not.",
+          "ar": "التنبؤ بلا تحفّظ ادعاء عليك الدفاع عنه. فجملة Prices will rise تستدعي الاعتراض، بخلاف are likely to rise." } }
+      ]
+    },
+    {
+      "id": "b2.modal.necessity",
+      "title": { "en": "Necessity in the past", "ar": "الضرورة في الماضي" },
+      "teach": [
+        { "type": "table", "head": ["Form", "Meaning"], "rows": [
+          ["I had to pay.", "It was necessary, and I paid."],
+          ["I didn't have to pay.", "It was not necessary (so probably I didn't)."],
+          ["I needn't have paid.", "I paid, but it turned out to be unnecessary."],
+          ["I should have paid.", "I didn't pay, and that was wrong."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "“Needn't have + participle” always means the action HAPPENED and was wasted. “Didn't need to” usually means it never happened.",
+          "ar": "تركيب needn't have مع التصريف الثالث يعني أن الفعل وقع فعلاً وكان بلا داعٍ، أما didn't need to فتعني غالباً أنه لم يقع أصلاً." } },
+        { "type": "examples", "items": [
+          { "en": "We needn't have hurried — the train was late anyway.", "ar": "لم يكن علينا أن نستعجل، فقد تأخر القطار على أي حال." },
+          { "en": "I didn't need to bring my passport, so I left it at home.", "ar": "لم أكن مضطراً لإحضار جواز سفري، فتركته في البيت." }
+        ] }
+      ]
+    },
+    {
+      "id": "b2.modal.habit",
+      "title": { "en": "Past habits: used to & would", "ar": "عادات الماضي" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "used to + base verb covers past habits AND past states: “I used to live in Aswan.” “Would” covers repeated actions only — never states.",
+          "ar": "used to مع الفعل المجرد تصلح للعادات والحالات الماضية معاً. أما would فتصلح للأفعال المتكررة فقط لا للحالات." } },
+        { "type": "table", "head": ["Correct", "Wrong"], "rows": [
+          ["I used to have a bike.", "I would have a bike."],
+          ["We would meet every Friday.", "—"],
+          ["Did you use to smoke?", "Did you used to smoke?"],
+          ["I'm used to the noise now.", "I used to the noise now."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Used to do” (past habit) and “be used to doing” (accustomed) are different structures. “I am used to waking up early” means it feels normal now.",
+          "ar": "تركيب used to do للعادة الماضية، وتركيب be used to doing للاعتياد الحالي. فجملة I am used to waking up early تعني أن الأمر صار مألوفاً لي الآن." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u3-01", "concept": "b2.modal.likelihood", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "With this demand, prices ___ to rise before the summer.",
+      "options": ["are likely", "are liking", "are like", "likely are"], "answer": 0,
+      "explanation": { "en": "“Be likely to + verb” is the standard hedged prediction.",
+        "ar": "تركيب be likely to هو صيغة التنبؤ المتحفّظ المعتادة." } },
+
+    { "id": "b2u3-02", "concept": "b2.modal.likelihood", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which sentence claims the strongest certainty?", "ar": "أي جملة تدّعي أعلى درجة يقين؟" },
+      "options": ["The deal is bound to go ahead.", "The deal is likely to go ahead.",
+                  "The deal could well go ahead.", "The deal may possibly go ahead."],
+      "answer": 0,
+      "explanation": { "en": "“Bound to” is near-certainty; the rest are graded possibilities.",
+        "ar": "bound to تقارب اليقين، أما البقية فدرجات من الاحتمال." } },
+
+    { "id": "b2u3-03", "concept": "b2.modal.likelihood", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "What is the difference between “He may not come” and “He cannot come”?",
+        "ar": "ما الفرق بين He may not come وHe cannot come؟" },
+      "options": ["The first is possible absence; the second is impossibility.",
+                  "The first is impossibility; the second is possible absence.",
+                  "They mean exactly the same thing in every context.",
+                  "The first refers to the past; the second to the future."],
+      "answer": 0,
+      "explanation": { "en": "“May not” hedges; “cannot” rules the option out entirely.",
+        "ar": "may not تتحفّظ، أما cannot فتستبعد الاحتمال تماماً." } },
+
+    { "id": "b2u3-04", "concept": "b2.modal.likelihood", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is safest in a report where the evidence is thin?",
+        "ar": "أي جملة أسلم في تقرير أدلته ضعيفة؟" },
+      "options": ["The change may partly explain the fall in sales.",
+                  "The change is the reason for the fall in sales.",
+                  "The change definitely caused the fall in sales.",
+                  "Everyone knows the change caused the fall."],
+      "answer": 0,
+      "explanation": { "en": "“May partly explain” matches a weak evidence base; the others overclaim.",
+        "ar": "عبارة may partly explain تناسب ضعف الدليل، أما البقية فمبالغة في الجزم." } },
+
+    { "id": "b2u3-05", "concept": "b2.modal.necessity", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“We needn't have booked a table.” What happened?", "ar": "«We needn't have booked a table» ماذا حدث؟" },
+      "options": ["We booked one, and it turned out to be unnecessary.",
+                  "We did not book, and that caused a problem.",
+                  "We were not allowed to book a table at all.",
+                  "We will book a table if it becomes necessary."],
+      "answer": 0,
+      "explanation": { "en": "“Needn't have + participle” always means the action happened and was wasted.",
+        "ar": "needn't have مع التصريف الثالث تعني دائماً أن الفعل وقع وكان بلا داعٍ." } },
+
+    { "id": "b2u3-06", "concept": "b2.modal.necessity", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I ___ take my passport, so I left it in the hotel safe.",
+      "options": ["didn't need to", "needn't have", "mustn't have", "shouldn't have"], "answer": 0,
+      "explanation": { "en": "It was not necessary and it did not happen → didn't need to.",
+        "ar": "لم يكن ضرورياً ولم يحدث، فنستخدم didn't need to." } },
+
+    { "id": "b2u3-07", "concept": "b2.modal.necessity", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the form with what actually happened.", "ar": "صِل الصيغة بما حدث فعلاً." },
+      "pairs": [["I had to pay.", "necessary, and I paid"], ["I needn't have paid.", "I paid, but it was wasted"],
+                ["I didn't have to pay.", "not necessary at all"], ["I should have paid.", "I didn't pay, and I regret it"]],
+      "explanation": { "en": "These four look similar and mean four different things — this is a classic B2 trap.",
+        "ar": "هذه الصيغ الأربع متشابهة الشكل مختلفة المعنى تماماً، وهي فخّ معروف في هذا المستوى." } },
+
+    { "id": "b2u3-08", "concept": "b2.modal.necessity", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["We mustn't have worried so much about it.", "We needn't have worried so much about it.",
+                  "We shouldn't have worried so much then.", "We didn't have to worry about it at all."],
+      "answer": 0,
+      "explanation": { "en": "“Mustn't have” is not used for past necessity; “needn't have” is the form.",
+        "ar": "لا تُستعمل mustn't have للضرورة في الماضي، والصيغة الصحيحة needn't have." } },
+
+    { "id": "b2u3-09", "concept": "b2.modal.habit", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "We ___ spend every summer at my grandmother's house.",
+      "options": ["used to", "use to", "are used to", "would have"], "answer": 0,
+      "explanation": { "en": "A repeated past habit → used to + base verb.",
+        "ar": "عادة ماضية متكررة، فنستخدم used to مع الفعل المجرد." } },
+
+    { "id": "b2u3-10", "concept": "b2.modal.habit", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I would have a motorbike when I was young.", "I used to have a motorbike when I was young.",
+                  "I would ride my motorbike every weekend.", "I often rode my motorbike to the coast."],
+      "answer": 0,
+      "explanation": { "en": "“Would” works for repeated actions, not for states. Owning something is a state → used to have.",
+        "ar": "would تصلح للأفعال المتكررة لا للحالات. والملكية حالة، فنقول used to have." } },
+
+    { "id": "b2u3-11", "concept": "b2.modal.habit", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“I'm used to working nights.” What does this mean?", "ar": "ماذا تعني I'm used to working nights؟" },
+      "options": ["Night work feels normal to me now.", "I worked nights in the past but stopped.",
+                  "I have to start working nights soon.", "I have never worked at night before."],
+      "answer": 0,
+      "explanation": { "en": "“Be used to + -ing” means accustomed. “Used to work nights” would mean a past habit.",
+        "ar": "be used to مع ing تعني الاعتياد الحالي، أما used to work فتعني عادة ماضية انتهت." } },
+
+    { "id": "b2u3-12", "concept": "b2.modal.habit", "type": "choice", "format": "choose_sentence", "difficulty": 4,
+      "prompt": { "en": "Which question is correct?", "ar": "أي سؤال صحيح؟" },
+      "options": ["Did you use to live in Alexandria?", "Did you used to live in Alexandria?",
+                  "Do you used to live in Alexandria?", "Were you use to live in Alexandria?"],
+      "answer": 0,
+      "explanation": { "en": "After “did”, the verb returns to its base form: use to.",
+        "ar": "بعد did يعود الفعل مجرداً: use to." } },
+
+    { "id": "b2u3-13", "concept": "b2.modal.likelihood", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "results", "are", "unlikely", "to", "change", "the", "policy"],
+      "answer": "The results are unlikely to change the policy",
+      "explanation": { "en": "be + unlikely + to + base verb.", "ar": "فعل الكون ثم unlikely ثم to مع الفعل المجرد." } },
+
+    { "id": "b2u3-14", "concept": "b2.modal.habit", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Rewrite with “used to”: “I played football every Friday, but I stopped years ago.” → “I ___ football every Friday.”",
+        "ar": "أعد الصياغة باستخدام used to: I ___ football every Friday." },
+      "answer": "used to play",
+      "explanation": { "en": "“Used to” marks a habit that has now ended — the “but not any more” is built in.",
+        "ar": "used to تدل على عادة انتهت، ومعنى «لم يعد» مضمَّن فيها." } },
+
+    { "id": "b2u3-15", "concept": "b2.modal.likelihood", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "A colleague asks whether the project will finish on time. Which reply is most professional?",
+        "ar": "سألك زميل إن كان المشروع سينتهي في موعده. أي رد أكثر مهنية؟" },
+      "options": ["It's possible, though the testing phase could still delay us.",
+                  "Yes, definitely, there is absolutely no risk at all here.",
+                  "I have no idea about that, ask somebody else instead.",
+                  "Maybe yes, maybe no, it is really hard to say anything."],
+      "answer": 0,
+      "explanation": { "en": "It commits to a position and names the risk. Overclaiming and shrugging are both weaker.",
+        "ar": "الرد الأول يلتزم بموقف ويسمّي المخاطرة، أما المبالغة والتهرب فكلاهما أضعف." } }
+  ]
+}

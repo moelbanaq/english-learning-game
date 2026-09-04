@@ -1,0 +1,168 @@
+{
+  "id": "b2-u5",
+  "goal": {
+    "en": "Build the word you need from the word you know, and stop confusing the pairs that look alike.",
+    "ar": "أن تشتق الكلمة التي تحتاجها من كلمة تعرفها، وأن تكفّ عن الخلط بين المتشابهات."
+  },
+  "concepts": [
+    {
+      "id": "b2.word.suffix",
+      "title": { "en": "Suffixes: changing the word class", "ar": "اللواحق وتغيير نوع الكلمة" },
+      "teach": [
+        { "type": "table", "head": ["Verb", "Noun", "Adjective"], "rows": [
+          ["decide", "decision", "decisive"],
+          ["analyse", "analysis", "analytical"],
+          ["succeed", "success", "successful"],
+          ["depend", "dependence", "dependent"],
+          ["explain", "explanation", "explanatory"],
+          ["compete", "competition", "competitive"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The slot in the sentence decides the form you need. After “a/an/the” or an adjective, you need a noun; after “be” or before a noun, you need an adjective.",
+          "ar": "موضع الكلمة في الجملة هو ما يحدد صيغتها. فبعد a/the أو بعد صفة نحتاج اسماً، وبعد فعل الكون أو قبل الاسم نحتاج صفة." } },
+        { "type": "warn", "text": {
+          "en": "Watch the spelling shifts: succeed → success (one c, two s), analyse → analysis, maintain → maintenance.",
+          "ar": "انتبه لتغيّر الهجاء: succeed تصير success، وanalyse تصير analysis، وmaintain تصير maintenance." } }
+      ]
+    },
+    {
+      "id": "b2.word.prefix",
+      "title": { "en": "Prefixes: changing the meaning", "ar": "السوابق وتغيير المعنى" },
+      "teach": [
+        { "type": "table", "head": ["Prefix", "Meaning", "Example"], "rows": [
+          ["un- / in- / im- / ir-", "not", "unfair, inaccurate, impossible, irrelevant"],
+          ["mis-", "wrongly", "misunderstand, misjudge"],
+          ["over- / under-", "too much / too little", "overestimate, underpaid"],
+          ["re-", "again", "reconsider, rewrite"],
+          ["dis-", "opposite", "disagree, disapprove"]
+        ] },
+        { "type": "tip", "text": {
+          "en": "The negative prefix is fixed by the word, not by a rule you can apply: it is “impossible” but “unlikely”, “irregular” but “inaccurate”. Learn each one with its word.",
+          "ar": "السابقة النافية مرتبطة بالكلمة نفسها لا بقاعدة عامة: نقول impossible وunlikely، وirregular وinaccurate. فاحفظ السابقة مع كلمتها." } }
+      ]
+    },
+    {
+      "id": "b2.word.confusable",
+      "title": { "en": "Pairs that trip people up", "ar": "أزواج توقع في الخطأ" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Means", "Example"], "rows": [
+          ["affect (verb)", "to influence", "The delay affected sales."],
+          ["effect (noun)", "the result", "The delay had a bad effect."],
+          ["economic", "about the economy", "economic growth"],
+          ["economical", "not wasteful", "an economical car"],
+          ["sensible", "showing good judgement", "a sensible decision"],
+          ["sensitive", "easily affected or hurt", "sensitive data"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Also: “advice” is the noun and “advise” the verb; “practice” is the noun and “practise” the verb in British English.",
+          "ar": "كذلك: advice اسم وadvise فعل، وفي البريطانية practice اسم وpractise فعل." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u5-01", "concept": "b2.word.suffix", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "Complete with the noun from “decide”: “It was a difficult ___ to make.”",
+        "ar": "أكمل بالاسم المشتق من decide: It was a difficult ___ to make." },
+      "answer": "decision",
+      "explanation": { "en": "After “a difficult” the slot needs a noun.",
+        "ar": "بعد a difficult يحتاج الموضع إلى اسم." } },
+
+    { "id": "b2u5-02", "concept": "b2.word.suffix", "type": "text", "format": "write", "difficulty": 4,
+      "prompt": { "en": "Complete with the adjective from “compete”: “The market is highly ___ .”",
+        "ar": "أكمل بالصفة المشتقة من compete: The market is highly ___" },
+      "answer": "competitive",
+      "explanation": { "en": "After “is highly” the slot needs an adjective.",
+        "ar": "بعد is highly يحتاج الموضع إلى صفة." } },
+
+    { "id": "b2u5-03", "concept": "b2.word.suffix", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Her ___ of the data was thorough and convincing.",
+      "options": ["analysis", "analyse", "analytical", "analysing"], "answer": 0,
+      "explanation": { "en": "After the possessive “her” the slot needs a noun: analysis.",
+        "ar": "بعد ضمير الملكية her يحتاج الموضع إلى اسم: analysis." } },
+
+    { "id": "b2u5-04", "concept": "b2.word.suffix", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The project was a great successful for us.", "The project was very successful this year.",
+                  "The project succeeded beyond all our hopes.", "The project's success surprised everyone here."],
+      "answer": 0,
+      "explanation": { "en": "After “a great” the slot needs a noun: “a great success”. “Successful” is the adjective and cannot follow an article.",
+        "ar": "بعد a great يحتاج الموضع إلى اسم: a great success. أما successful فصفة ولا تأتي بعد أداة النكرة." },
+      "commonMistake": { "en": "Both words exist and both are common, so the ear does not catch it. Check the slot: article + adjective + noun.",
+        "ar": "الكلمتان موجودتان وشائعتان، فلا تلتقط الأذن الخطأ. تحقّق من الموضع: أداة ثم صفة ثم اسم." } },
+
+    { "id": "b2u5-05", "concept": "b2.word.prefix", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "That figure is ___ — the real total is much higher.",
+      "options": ["inaccurate", "unaccurate", "disaccurate", "misaccurate"], "answer": 0,
+      "explanation": { "en": "“Accurate” takes “in-”. The prefix is fixed by the word, not by a rule.",
+        "ar": "كلمة accurate تأخذ in-، والسابقة مرتبطة بالكلمة نفسها لا بقاعدة عامة." } },
+
+    { "id": "b2u5-06", "concept": "b2.word.prefix", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I think you have ___ what I meant — I wasn't complaining.",
+      "options": ["misunderstood", "disunderstood", "ununderstood", "overunderstood"], "answer": 0,
+      "explanation": { "en": "“Mis-” means wrongly: to understand incorrectly.",
+        "ar": "السابقة mis- تعني «على نحو خاطئ»، أي أن الفهم وقع خطأ." } },
+
+    { "id": "b2u5-07", "concept": "b2.word.prefix", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the prefix with its meaning.", "ar": "صِل السابقة بمعناها." },
+      "pairs": [["mis-", "wrongly"], ["over-", "too much"], ["re-", "again"], ["dis-", "the opposite"]],
+      "explanation": { "en": "Prefixes change meaning; suffixes change word class. Both are how English builds vocabulary.",
+        "ar": "السوابق تغيّر المعنى، واللواحق تغيّر نوع الكلمة، وبهما تبني الإنجليزية مفرداتها." } },
+
+    { "id": "b2u5-08", "concept": "b2.word.prefix", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The committee decided to ___ the proposal after the new figures arrived.",
+      "options": ["reconsider", "unconsider", "misconsider", "disconsider"], "answer": 0,
+      "explanation": { "en": "“Re-” means to do it again — to look at it a second time.",
+        "ar": "السابقة re- تعني إعادة الفعل، أي النظر فيه مرة أخرى." } },
+
+    { "id": "b2u5-09", "concept": "b2.word.confusable", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The strike will ___ deliveries across the whole region.",
+      "options": ["affect", "effect", "affection", "effective"], "answer": 0,
+      "explanation": { "en": "A verb is needed here: “affect” = to influence. “Effect” is the noun.",
+        "ar": "الموضع يحتاج فعلاً: affect بمعنى «يؤثر في»، أما effect فاسم." } },
+
+    { "id": "b2u5-10", "concept": "b2.word.confusable", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The new rules had little ___ on the number of accidents.",
+      "options": ["effect", "affect", "affected", "effective"], "answer": 0,
+      "explanation": { "en": "After “little” a noun is needed: effect.",
+        "ar": "بعد little يحتاج الموضع إلى اسم: effect." } },
+
+    { "id": "b2u5-11", "concept": "b2.word.confusable", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence describes a car that uses little fuel?", "ar": "أي جملة تصف سيارة قليلة استهلاك الوقود؟" },
+      "options": ["It is a very economical car.", "It is a very economic car.",
+                  "It is a very economy car indeed.", "It is a very economics car."],
+      "answer": 0,
+      "explanation": { "en": "“Economical” means not wasteful; “economic” relates to the economy.",
+        "ar": "economical تعني «غير مبذّر»، أما economic فتتعلق بالاقتصاد." } },
+
+    { "id": "b2u5-12", "concept": "b2.word.confusable", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Can you advice me on this matter?", "Can you advise me on this matter?",
+                  "Your advice was extremely helpful.", "She advised us to wait a week."],
+      "answer": 0,
+      "explanation": { "en": "“Advice” is the noun; the verb is “advise”.",
+        "ar": "advice اسم، والفعل هو advise." } },
+
+    { "id": "b2u5-13", "concept": "b2.word.confusable", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence describes information that must be protected?",
+        "ar": "أي جملة تصف معلومات يجب حمايتها؟" },
+      "options": ["This is sensitive data.", "This is sensible data.",
+                  "This is a sensitive decision.", "This is a sensible decision."],
+      "answer": 0,
+      "explanation": { "en": "“Sensitive” = easily affected or needing care; “sensible” = showing good judgement.",
+        "ar": "sensitive تعني «حسّاس/يحتاج عناية»، وsensible تعني «معقول/رشيد»." } },
+
+    { "id": "b2u5-14", "concept": "b2.word.suffix", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": { "en": "Complete with the noun from “maintain”: “The ___ of the building costs a fortune.”",
+        "ar": "أكمل بالاسم المشتق من maintain: The ___ of the building costs a fortune." },
+      "answer": "maintenance",
+      "explanation": { "en": "maintain → maintenance. The spelling changes, which is why it is worth learning as a pair.",
+        "ar": "من maintain نشتق maintenance، والهجاء يتغير، ولذلك يُحفظ الزوجان معاً." } },
+
+    { "id": "b2u5-15", "concept": "b2.word.suffix", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "Their ___ on a single supplier makes the business ___ .",
+      "options": ["dependence / vulnerable", "dependent / vulnerability", "depend / vulnerable", "dependence / vulnerability"],
+      "answer": 0,
+      "explanation": { "en": "After “their” a noun is needed, and after “makes the business” an adjective.",
+        "ar": "بعد their يحتاج الموضع اسماً، وبعد makes the business يحتاج صفة." } }
+  ]
+}

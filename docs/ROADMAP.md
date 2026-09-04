@@ -35,33 +35,39 @@ modals of deduction with `should have` regret, linking words and paragraph shape
 phrasal verbs with object placement, and opinion/argument language — the last three
 built around longer reading passages with inference questions.
 
+### Phase 7 — B2 completion ✅
+Seven more units taking B2 to eight: wishes and the unreal past (including inversion
+without `if`), graded likelihood with `needn't have` versus `didn't need to`, cohesion
+and reference, word formation and confusable pairs, emphasis through clefts and end
+focus, reading a longer argument for attitude and evidence, and writing emails and
+reports that are formal without being padded.
+
 | Level | Units | Concepts | Questions |
 | --- | --- | --- | --- |
 | A1 | 8 | 23 | 141 |
 | A2 | 8 | 24 | 127 |
 | B1 | 8 | 24 | 120 |
-| B2 | 1 | 4 | 15 |
+| B2 | 8 | 26 | 120 |
 | C1 | 1 | 4 | 15 |
 | C2 | 1 | 4 | 15 |
-| **Total** | **27** | **83** | **433** |
+| **Total** | **34** | **105** | **538** |
 
 Plus a 24-question placement test spanning all six levels.
 
-A1, A2 and B1 are now complete levels. A learner can go from no English to independent
-intermediate competence entirely inside the app, unlocking each level by finishing 75%
-of the one below.
+Four complete levels. A learner can go from no English to confident upper-intermediate
+competence entirely inside the app, unlocking each level by finishing 75% of the one
+below. The B2 units deliberately shift the question away from "is this grammatical?"
+towards "is this the right choice here?" — the step C1 then builds on.
 
 ## Next
 
-### Phase 7 — B2 completion (next up)
+### Phase 8 — C1 completion (next up)
+6–8 units: academic and professional precision, collocation depth, hedging and stance,
+inference, and register control across longer texts.
 
-8 units: advanced conditionals and inversion, nuanced modality, cohesion, formal vs
-informal register, extended reading, structured writing prompts.
-
-### Phase 8–9 — C1 and C2 depth
-6–8 units each. C1: academic and professional precision, collocation depth, hedging,
-inference. C2: naturalness judgement, idiom in register, tone and irony, rhetorical
-structure, discourse management.
+### Phase 9 — C2 depth
+6–8 units: naturalness judgement, idiom in register, tone and irony, rhetorical
+structure, and discourse management.
 
 ### Phase 10 — Content and pedagogy expansion
 - A vocabulary track (word families, collocations, phrasal verbs) alongside grammar.

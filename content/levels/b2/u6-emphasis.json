@@ -1,0 +1,186 @@
+{
+  "id": "b2-u6",
+  "goal": {
+    "en": "Control where the emphasis falls, so the reader notices what you want them to notice.",
+    "ar": "أن تتحكم في موضع التركيز، فيلتفت القارئ إلى ما تريده أن يلتفت إليه."
+  },
+  "concepts": [
+    {
+      "id": "b2.emphasis.cleft",
+      "title": { "en": "Cleft sentences: It was … that", "ar": "الجملة المشطورة" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Split one sentence into two parts to spotlight an element: “Ali broke the window” → “It was Ali who broke the window.”",
+          "ar": "نشطر الجملة إلى جزأين لتسليط الضوء على عنصر بعينه: Ali broke the window تصير It was Ali who broke the window." } },
+        { "type": "table", "head": ["Emphasis on", "Cleft"], "rows": [
+          ["the person", "It was Ali who called."],
+          ["the thing", "It was the cost that worried us."],
+          ["the time", "It was in March that we agreed."],
+          ["the action", "What we need is more time."]
+        ] },
+        { "type": "tip", "text": {
+          "en": "“What … is/was …” clefts are common in speech: “What surprised me was the price.”",
+          "ar": "الصيغة What… is/was شائعة في الحديث: What surprised me was the price." } },
+        { "type": "warn", "text": {
+          "en": "Do not overuse clefts. One in a paragraph lands; three in a row sound theatrical.",
+          "ar": "لا تُكثر منها. واحدة في الفقرة تؤدي غرضها، وثلاث متتالية تبدو متكلَّفة." } }
+      ]
+    },
+    {
+      "id": "b2.emphasis.endFocus",
+      "title": { "en": "New information goes last", "ar": "الجديد في الآخر" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "English puts what the reader already knows first and the new point at the end, where the stress falls.",
+          "ar": "تضع الإنجليزية المعلوم أولاً والجديد في النهاية، حيث يقع التركيز الطبيعي." } },
+        { "type": "examples", "items": [
+          { "en": "A supplier problem caused the delay. (the delay is the news)", "ar": "مشكلة عند المورّد سبّبت التأخير — الجديد هنا هو التأخير." },
+          { "en": "The delay was caused by a supplier problem. (the supplier is the news)", "ar": "التأخير سببه مشكلة عند المورّد — الجديد هنا هو المورّد." }
+        ] },
+        { "type": "p", "text": {
+          "en": "This is the real reason the passive exists: it lets you reorder a sentence so the new information lands last.",
+          "ar": "وهذا هو السبب الحقيقي لوجود المبني للمجهول: فهو يتيح إعادة ترتيب الجملة ليقع الجديد في آخرها." } }
+      ]
+    },
+    {
+      "id": "b2.emphasis.inversion",
+      "title": { "en": "Inversion after negative adverbials", "ar": "القلب بعد الظروف المنفية" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "When a sentence opens with a negative or restrictive adverbial, the subject and auxiliary swap: “Never have I seen …”, “Not only did they refuse …”, “Rarely does he complain.”",
+          "ar": "إذا بدأت الجملة بظرف منفي أو حاصر، تبادل الفاعل والفعل المساعد موضعيهما: Never have I seen وNot only did they refuse وRarely does he complain." } },
+        { "type": "table", "head": ["Normal", "Inverted (emphatic)"], "rows": [
+          ["I have never seen such a mess.", "Never have I seen such a mess."],
+          ["They not only refused, they complained.", "Not only did they refuse, they complained."],
+          ["He rarely complains about anything.", "Rarely does he complain about anything."],
+          ["We realised the risk only later.", "Only later did we realise the risk."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "This is formal and emphatic. It belongs in writing and speeches, not in every sentence — and it is far more useful to recognise than to produce.",
+          "ar": "هذا أسلوب رسمي توكيدي، محلّه الكتابة والخطابة لا كل جملة. والتعرّف عليه أنفع من إنتاجه." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u6-01", "concept": "b2.emphasis.cleft", "type": "choice", "format": "transform", "difficulty": 4,
+      "prompt": { "en": "Emphasise the person: “Sara found the mistake.”", "ar": "ركّز على الشخص: Sara found the mistake." },
+      "options": ["It was Sara who found the mistake.", "It was Sara found the mistake there.",
+                  "There was Sara who found the mistake.", "Sara it was that found the mistake."],
+      "answer": 0,
+      "explanation": { "en": "It + be + the element + who/that + the rest.",
+        "ar": "التركيب: It مع فعل الكون ثم العنصر المُبرَز ثم who/that ثم بقية الجملة." } },
+
+    { "id": "b2u6-02", "concept": "b2.emphasis.cleft", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "___ worried the board was the cost, not the timing.",
+      "options": ["What", "That", "Which", "It that"], "answer": 0,
+      "explanation": { "en": "A “what” cleft: What worried the board was the cost.",
+        "ar": "صيغة الشطر بـ what: What worried the board was the cost." } },
+
+    { "id": "b2u6-03", "concept": "b2.emphasis.cleft", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“It was on Tuesday that the system failed.” What is being emphasised?",
+        "ar": "ما العنصر المُبرَز في هذه الجملة؟" },
+      "options": ["The day it happened.", "The system that failed.",
+                  "The person who reported it.", "The reason for the failure."],
+      "answer": 0,
+      "explanation": { "en": "Whatever sits between “It was” and “that” is the spotlight.",
+        "ar": "ما يقع بين It was وthat هو محل التركيز." } },
+
+    { "id": "b2u6-04", "concept": "b2.emphasis.cleft", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Emphasise the cost: “The cost stopped the project.” Begin “It was ___”",
+        "ar": "ركّز على التكلفة، وابدأ بـ It was" },
+      "answer": "the cost that stopped the project",
+      "accept": ["the cost which stopped the project"],
+      "explanation": { "en": "The element you move into the cleft is the one the reader will notice.",
+        "ar": "العنصر الذي تنقله إلى موضع الشطر هو الذي سيلتفت إليه القارئ." } },
+
+    { "id": "b2u6-05", "concept": "b2.emphasis.endFocus", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "The paragraph has been discussing the delay. Which sentence continues it best?",
+        "ar": "الفقرة تتحدث عن التأخير. أي جملة أنسب لمتابعتها؟" },
+      "options": ["The delay was caused by a fault in the supplier's system.",
+                  "A fault in the supplier's system caused the delay in question.",
+                  "There was a fault which caused the delay in their system.",
+                  "In the supplier's system a fault caused the delay then."],
+      "answer": 0,
+      "explanation": { "en": "The known topic (the delay) opens the sentence and the new information lands at the end.",
+        "ar": "الموضوع المعلوم (التأخير) يفتتح الجملة، وتقع المعلومة الجديدة في نهايتها." } },
+
+    { "id": "b2u6-06", "concept": "b2.emphasis.endFocus", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence makes the supplier the news, rather than the delay?",
+        "ar": "أي جملة تجعل المورّد هو الخبر الجديد بدل التأخير؟" },
+      "options": ["The delay was caused by a new supplier.", "A new supplier caused the delay.",
+                  "The new supplier is causing a delay.", "There is a delay from a new supplier."],
+      "answer": 0,
+      "explanation": { "en": "Putting the supplier last gives it the stress; the active version foregrounds it instead.",
+        "ar": "وضع المورّد في النهاية يمنحه التركيز، أما الصيغة المعلومة فتقدّمه في البداية." } },
+
+    { "id": "b2u6-07", "concept": "b2.emphasis.endFocus", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "decision", "was", "taken", "by", "the", "whole", "committee"],
+      "answer": "The decision was taken by the whole committee",
+      "explanation": { "en": "Known topic first, the agent last where the emphasis falls.",
+        "ar": "الموضوع المعلوم أولاً، والفاعل في النهاية حيث يقع التركيز." } },
+
+    { "id": "b2u6-08", "concept": "b2.emphasis.inversion", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "Never ___ such a badly written report.",
+      "options": ["have I seen", "I have seen", "did I saw", "I did see"], "answer": 0,
+      "explanation": { "en": "After a negative adverbial, the auxiliary comes before the subject.",
+        "ar": "بعد الظرف المنفي يتقدّم الفعل المساعد على الفاعل." } },
+
+    { "id": "b2u6-09", "concept": "b2.emphasis.inversion", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "Not only ___ the deadline, they also went over budget.",
+      "options": ["did they miss", "they missed", "they did miss", "missed they"], "answer": 0,
+      "explanation": { "en": "“Not only” at the start forces inversion: did + subject + base verb.",
+        "ar": "وقوع Not only في البداية يوجب القلب: did ثم الفاعل ثم الفعل المجرد." } },
+
+    { "id": "b2u6-10", "concept": "b2.emphasis.inversion", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Rarely he complains about the workload.", "Rarely does he complain about the workload.",
+                  "He rarely complains about the heavy workload.", "Only later did we realise the real risk."],
+      "answer": 0,
+      "explanation": { "en": "Once “rarely” is fronted, inversion is required: Rarely does he complain.",
+        "ar": "إذا تقدّمت rarely وجب القلب: Rarely does he complain." } },
+
+    { "id": "b2u6-11", "concept": "b2.emphasis.inversion", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Where would “Never have I seen such support” fit naturally?",
+        "ar": "أين تناسب جملة Never have I seen such support؟" },
+      "options": ["In a speech or a written tribute.", "In a quick message to a friend.",
+                  "In a technical instruction manual.", "In a form asking for your address."],
+      "answer": 0,
+      "explanation": { "en": "Inversion is emphatic and formal — right for rhetoric, wrong for a text message.",
+        "ar": "القلب أسلوب توكيدي رسمي، يصلح للخطابة ولا يصلح لرسالة سريعة." } },
+
+    { "id": "b2u6-12", "concept": "b2.emphasis.inversion", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Make it emphatic: “I have never heard such nonsense.” Begin “Never ___”",
+        "ar": "اجعلها توكيدية، وابدأ بـ Never" },
+      "answer": "have i heard such nonsense",
+      "explanation": { "en": "Front the adverbial, then swap the subject and the auxiliary.",
+        "ar": "قدّم الظرف ثم بادل بين الفاعل والفعل المساعد." } },
+
+    { "id": "b2u6-13", "concept": "b2.emphasis.cleft", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the structure with what it emphasises.", "ar": "صِل التركيب بما يُبرزه." },
+      "pairs": [["It was Ali who called.", "the person"], ["It was the cost that stopped us.", "the reason"],
+                ["What we need is time.", "the thing needed"], ["It was in May that we met.", "the time"]],
+      "explanation": { "en": "Each structure moves one element into the spotlight and leaves the rest in shadow.",
+        "ar": "كل تركيب ينقل عنصراً واحداً إلى بؤرة الضوء ويترك البقية في الظل." } },
+
+    { "id": "b2u6-14", "concept": "b2.emphasis.endFocus", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which opening sentence works best for a paragraph about your team?",
+        "ar": "أي جملة افتتاحية أنسب لفقرة عن فريقك؟" },
+      "options": ["Our team has changed considerably over the past year.",
+                  "Over the past year considerable change has our team seen.",
+                  "There has been changed our team over the past year.",
+                  "Considerably changed over the past year has our team."],
+      "answer": 0,
+      "explanation": { "en": "Normal order carries most writing; save inversion for the moment you truly want emphasis.",
+        "ar": "الترتيب الطبيعي يحمل معظم الكتابة، واحفظ القلب للحظة التي تريد فيها توكيداً حقيقياً." } },
+
+    { "id": "b2u6-15", "concept": "b2.emphasis.cleft", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“It wasn't the price that put me off.” What does this imply?",
+        "ar": "ماذا تُلمح جملة It wasn't the price that put me off؟" },
+      "options": ["Something else put me off.", "Nothing put me off at all.",
+                  "The price was extremely low.", "I decided to buy it anyway."],
+      "answer": 0,
+      "explanation": { "en": "A negative cleft denies one cause and implies another — the reader expects it next.",
+        "ar": "الشطر المنفي ينفي سبباً ويُلمح إلى سبب آخر، ويتوقع القارئ ذكره بعده." } }
+  ]
+}

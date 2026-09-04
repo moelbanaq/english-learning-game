@@ -123,10 +123,10 @@
 
     { "id": "a1u4-14", "concept": "a1.some.any", "type": "choice", "format": "error_id", "difficulty": 3,
       "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
-      "options": ["There aren't any chairs.", "Do you have some information?", "I need some help.", "She doesn't want any coffee."],
+      "options": ["There aren't any chairs left.", "There aren't some chairs left.", "I need some help with this.", "She doesn't want any coffee."],
       "answer": 1,
-      "explanation": { "en": "A neutral question uses “any”: Do you have any information? (“some” is only for offers/requests.)",
-        "ar": "السؤال المحايد يستخدم any: Do you have any information? أما some فتُستخدم في العرض والطلب." } },
+      "explanation": { "en": "A negative sentence takes “any”, never “some”: there aren't any chairs.",
+        "ar": "الجملة المنفية تأخذ any ولا تأخذ some أبداً: there aren't any chairs." } },
 
     { "id": "a1u4-15", "concept": "a1.have.got", "type": "match", "format": "match", "difficulty": 2,
       "prompt": { "en": "Match the two halves.", "ar": "صِل بين نصفي الجملة." },

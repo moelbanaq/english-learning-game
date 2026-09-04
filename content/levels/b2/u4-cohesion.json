@@ -1,0 +1,185 @@
+{
+  "id": "b2-u4",
+  "goal": {
+    "en": "Write paragraphs that hold together — referring back, substituting and leaving out without confusing the reader.",
+    "ar": "أن تكتب فقرات متماسكة: تحيل إلى ما سبق، وتستبدل، وتحذف، دون أن تُربك القارئ."
+  },
+  "passages": {
+    "memo": {
+      "title": "An internal memo",
+      "text": "Two options were put to the committee. The first would replace the whole system next year; the second would upgrade it in stages over three years. The latter is cheaper in the short term, but it leaves us running two systems at once, and that has caused problems before.\n\nThe committee has asked for costings on both. These should be ready by the end of the month. If they are not, the decision will slip into the next financial year, which nobody wants."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b2.cohesion.reference",
+      "title": { "en": "Referring back clearly", "ar": "الإحالة الواضحة إلى ما سبق" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Points to", "Example"], "rows": [
+          ["this / these", "something just mentioned", "Sales fell. This worried the board."],
+          ["that / those", "something more distant", "Those were difficult years."],
+          ["such", "a whole category", "We cannot accept such delays."],
+          ["the former / the latter", "the first / the second of two", "The latter is cheaper."],
+          ["it", "a specific thing already named", "The report is late. It runs to 90 pages."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "A reference word must have exactly one possible antecedent. If a reader has to guess what “this” means, add the noun: “this delay”, “this decision”.",
+          "ar": "يجب أن تكون للكلمة المُحيلة مرجع واحد لا لبس فيه. فإن اضطر القارئ إلى التخمين فأضف الاسم: this delay أو this decision." } },
+        { "type": "warn", "text": {
+          "en": "Do not use “the same” as a pronoun in normal English: “Please sign the form and return the same” is legal jargon. Say “return it”.",
+          "ar": "لا تستخدم the same ضميراً في الإنجليزية العادية، فهي من لغة العقود. قل return it." } }
+      ]
+    },
+    {
+      "id": "b2.cohesion.substitution",
+      "title": { "en": "Substitution: one, do so, so", "ar": "الاستبدال" },
+      "teach": [
+        { "type": "table", "head": ["Substitute", "Replaces", "Example"], "rows": [
+          ["one / ones", "a countable noun", "I need a pen. Have you got one?"],
+          ["do so / do it", "a whole verb phrase", "He promised to call, and he did so."],
+          ["so", "a clause after think, hope, expect", "Is it ready? — I think so."],
+          ["neither / nor", "a negative agreement", "I can't drive. — Neither can I."]
+        ] },
+        { "type": "rule", "text": {
+          "en": "English dislikes repeating a phrase it has just used. Substituting is not laziness — it is what a fluent reader expects.",
+          "ar": "الإنجليزية تكره تكرار العبارة التي قيلت للتو، والاستبدال ليس كسلاً بل هو ما يتوقعه القارئ المتمكّن." } },
+        { "type": "warn", "text": {
+          "en": "“I think yes” is not English. After think, hope, expect, suppose, use “so”: I think so, I hope so.",
+          "ar": "عبارة I think yes ليست إنجليزية. بعد think وhope وexpect نستخدم so: I think so." } }
+      ]
+    },
+    {
+      "id": "b2.cohesion.ellipsis",
+      "title": { "en": "Leaving words out", "ar": "الحذف" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "When the meaning is already clear, English drops the repeated part: “She can swim and (she can) dive.” Keep the auxiliary: “I haven't finished, but he has.”",
+          "ar": "حين يكون المعنى واضحاً تحذف الإنجليزية الجزء المكرر: She can swim and dive. مع الإبقاء على الفعل المساعد: I haven't finished, but he has." } },
+        { "type": "examples", "items": [
+          { "en": "Some of the files were saved, others weren't.", "ar": "بعض الملفات حُفظ وبعضها لا." },
+          { "en": "I'd like to help, but I can't.", "ar": "أودّ المساعدة لكنني لا أستطيع." },
+          { "en": "He said he would call, and he did.", "ar": "قال إنه سيتصل، وقد فعل." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "Ellipsis is what makes writing sound native. Repeating the full phrase every time reads like a translation.",
+          "ar": "الحذف هو ما يجعل الكتابة تبدو أصيلة، وتكرار العبارة كاملة في كل مرة يجعلها تبدو ترجمة." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u4-01", "concept": "b2.cohesion.reference", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Costs rose sharply last quarter. ___ was not in the forecast.",
+      "options": ["This", "These", "Such", "Those"], "answer": 0,
+      "explanation": { "en": "“This” refers back to the single fact just stated.",
+        "ar": "تشير this إلى الحقيقة المفردة التي ذُكرت للتو." } },
+
+    { "id": "b2u4-02", "concept": "b2.cohesion.reference", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "We were offered tea and coffee; I chose ___ because I don't sleep well.",
+      "options": ["the former", "the latter", "the last", "the other one there"], "answer": 0,
+      "explanation": { "en": "“The former” is the first of the two mentioned — tea.",
+        "ar": "the former تعني الأول من الاثنين المذكورين، وهو الشاي." } },
+
+    { "id": "b2u4-03", "concept": "b2.cohesion.reference", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence leaves the reader guessing?", "ar": "أي جملة تترك القارئ في حيرة؟" },
+      "options": ["The team missed the deadline and the client complained. This was discussed.",
+                  "The team missed the deadline and the client complained. This delay was discussed.",
+                  "The team missed the deadline, which the client then complained about.",
+                  "The client complained about the delay, and the team accepted that."],
+      "answer": 0,
+      "explanation": { "en": "“This” could mean the missed deadline or the complaint. Adding a noun removes the ambiguity.",
+        "ar": "قد تشير this إلى تفويت الموعد أو إلى الشكوى، وإضافة الاسم تزيل اللبس." } },
+
+    { "id": "b2u4-04", "concept": "b2.cohesion.reference", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence sounds like normal modern English?", "ar": "أي جملة تبدو إنجليزية حديثة عادية؟" },
+      "options": ["Please sign the form and return it to us.",
+                  "Please sign the form and return the same to us.",
+                  "Please sign the form and return said form to us.",
+                  "Please sign the form and the form return to us."],
+      "answer": 0,
+      "explanation": { "en": "“The same” and “said form” are legal jargon; ordinary writing uses “it”.",
+        "ar": "عبارتا the same وsaid form من لغة العقود، أما الكتابة العادية فتستخدم it." } },
+
+    { "id": "b2u4-05", "concept": "b2.cohesion.substitution", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I've lost my charger. Have you got a spare ___ ?",
+      "options": ["one", "it", "some", "that one there"], "answer": 0,
+      "explanation": { "en": "“One” substitutes for a countable noun already mentioned.",
+        "ar": "تحلّ one محل الاسم المعدود المذكور سابقاً." } },
+
+    { "id": "b2u4-06", "concept": "b2.cohesion.substitution", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which reply is not English?", "ar": "أي رد ليس إنجليزياً؟" },
+      "options": ["Is the room booked? — I think yes.", "Is the room booked? — I think so.",
+                  "Is the room booked? — I hope so.", "Is the room booked? — I expect so."],
+      "answer": 0,
+      "explanation": { "en": "After think, hope and expect, English uses “so”, never “yes”.",
+        "ar": "بعد think وhope وexpect نستخدم so ولا نستخدم yes." } },
+
+    { "id": "b2u4-07", "concept": "b2.cohesion.substitution", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "He was asked to revise the figures, and he ___ within the hour.",
+      "options": ["did so", "did it so", "made so", "did that thing"], "answer": 0,
+      "explanation": { "en": "“Do so” replaces the whole verb phrase and is slightly formal.",
+        "ar": "تحلّ do so محل العبارة الفعلية كاملة، وهي أميل إلى الرسمية." } },
+
+    { "id": "b2u4-08", "concept": "b2.cohesion.substitution", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "— I've never been to Oman. — ___ have I.",
+      "options": ["Neither", "Either", "Nor am", "So"], "answer": 0,
+      "explanation": { "en": "“Neither have I” agrees with a negative statement; “So have I” agrees with a positive one.",
+        "ar": "Neither have I توافق الجملة المنفية، وSo have I توافق المثبتة." } },
+
+    { "id": "b2u4-09", "concept": "b2.cohesion.ellipsis", "type": "choice", "format": "natural", "difficulty": 4,
+      "prompt": { "en": "Which sentence sounds most natural?", "ar": "أي جملة أكثر طبيعية؟" },
+      "options": ["I wanted to help, but I couldn't.", "I wanted to help, but I couldn't help.",
+                  "I wanted to help, but I was not able to help them.", "I wanted to help them, but to help was not possible."],
+      "answer": 0,
+      "explanation": { "en": "The repeated verb is dropped; keeping it reads like a translation.",
+        "ar": "يُحذف الفعل المكرر، وإبقاؤه يجعل الجملة تبدو ترجمة حرفية." } },
+
+    { "id": "b2u4-10", "concept": "b2.cohesion.ellipsis", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Some of the reports were finished on time; others ___ .",
+      "options": ["weren't", "weren't finished on time too", "not were", "didn't were"], "answer": 0,
+      "explanation": { "en": "The auxiliary alone carries the meaning; repeating the rest is redundant.",
+        "ar": "الفعل المساعد وحده يحمل المعنى، وتكرار البقية حشو." } },
+
+    { "id": "b2u4-11", "concept": "b2.cohesion.reference", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "memo",
+      "prompt": { "en": "Which option does “the latter” refer to?", "ar": "إلى أي خيار تشير the latter؟" },
+      "options": ["Upgrading the system in stages.", "Replacing the whole system next year.",
+                  "Running two systems at the same time.", "Delaying the decision to next year."],
+      "answer": 0,
+      "explanation": { "en": "“The latter” is the second of the two options listed — the staged upgrade.",
+        "ar": "تشير the latter إلى الثاني من الخيارين، أي الترقية على مراحل." } },
+
+    { "id": "b2u4-12", "concept": "b2.cohesion.reference", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "memo",
+      "prompt": { "en": "What does “These” refer to in the second paragraph?", "ar": "إلى ماذا تشير These في الفقرة الثانية؟" },
+      "options": ["The costings the committee asked for.", "The two options put to the committee.",
+                  "The problems caused in the past.", "The members of the committee itself."],
+      "answer": 0,
+      "explanation": { "en": "It points at the nearest plural noun that makes sense — the costings.",
+        "ar": "تشير إلى أقرب اسم جمع يستقيم به المعنى، وهو تقديرات التكلفة." } },
+
+    { "id": "b2u4-13", "concept": "b2.cohesion.reference", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "memo",
+      "prompt": { "en": "What is the writer's attitude to the staged upgrade?", "ar": "ما موقف الكاتب من الترقية على مراحل؟" },
+      "options": ["Cheaper now, but risky because of past experience.",
+                  "Clearly the better of the two available options.",
+                  "Impossible to cost before the end of the month.",
+                  "Already rejected by the committee last year."],
+      "answer": 0,
+      "explanation": { "en": "“Cheaper in the short term, but … that has caused problems before” is a warning, not a recommendation.",
+        "ar": "عبارة «أرخص على المدى القصير لكن… تسبّب مشكلات من قبل» تحذير لا توصية." } },
+
+    { "id": "b2u4-14", "concept": "b2.cohesion.substitution", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the substitute with what it replaces.", "ar": "صِل أداة الاستبدال بما تحلّ محله." },
+      "pairs": [["one", "a countable noun"], ["do so", "a whole verb phrase"],
+                ["so", "a clause after 'I think'"], ["neither", "a negative agreement"]],
+      "explanation": { "en": "Each substitute has one job; using the wrong one is immediately noticeable.",
+        "ar": "لكل أداة وظيفة واحدة، واستعمال الخطأ منها ملحوظ فوراً." } },
+
+    { "id": "b2u4-15", "concept": "b2.cohesion.ellipsis", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Remove the repetition: “She has finished her part, but I have not finished my part.” → “She has finished her part, but I ___ .”",
+        "ar": "احذف التكرار: … but I ___" },
+      "answer": "haven't", "accept": ["have not"],
+      "explanation": { "en": "The auxiliary alone completes the contrast — that is ellipsis doing its job.",
+        "ar": "الفعل المساعد وحده يُتمّ المقابلة، وهذا هو عمل الحذف." } }
+  ]
+}

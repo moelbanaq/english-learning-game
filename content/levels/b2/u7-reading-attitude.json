@@ -1,0 +1,232 @@
+{
+  "id": "b2-u7",
+  "goal": {
+    "en": "Read a longer argument and identify not just what it says, but what it thinks.",
+    "ar": "أن تقرأ حجّة أطول وتتبيّن لا ما تقوله فحسب، بل ما ترى وتعتقد."
+  },
+  "passages": {
+    "review": {
+      "title": "A newspaper column on school phone bans",
+      "text": "Every few years a policy arrives that is supposed to fix schools, and this year it is the phone ban. Supporters point to a handful of studies showing improved concentration after phones were removed. Those studies are real, and their findings are worth taking seriously.\n\nWhat is less often mentioned is that most of them ran for a single term, in schools that volunteered for the trial. Schools that volunteer for something are rarely typical. Whether the effect survives beyond a term, and in schools that did not choose to take part, nobody yet knows.\n\nNone of this means the ban is wrong. A rule that removes an obvious distraction has an argument in its favour whatever the research says. But there is a difference between a sensible rule and a proven remedy, and ministers announcing the policy have been careless about which one they are selling."
+    },
+    "email": {
+      "title": "An email to a project team",
+      "text": "Thanks everyone for turning things around so quickly last week — the client noticed, and said so.\n\nOn the new timeline: I've had another look at the schedule and I think the testing window is tighter than we'd want. It may well be fine. But if anything slips in the build phase, we have nowhere to absorb it, and we'd be asking the QA team to sign off work they haven't properly seen. I'd rather we had that conversation now than in the last week of March.\n\nCould we spend twenty minutes on Thursday looking at whether the launch date still has to be the 31st? I'm not assuming it doesn't."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b2.reading.attitude",
+      "title": { "en": "Finding the writer's position", "ar": "تحديد موقف الكاتب" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A skilled writer rarely announces their view. They signal it through what they choose to question, what they concede, and which words carry a judgement.",
+          "ar": "نادراً ما يعلن الكاتب الماهر رأيه صراحة، بل يشير إليه بما يختار التشكيك فيه، وبما يقرّ به، وبالكلمات التي تحمل حكماً." } },
+        { "type": "table", "head": ["Signal", "What it tells you"], "rows": [
+          ["“is supposed to fix”", "the writer doubts it will"],
+          ["“What is less often mentioned”", "a criticism is coming"],
+          ["“None of this means …”", "a concession before the real point"],
+          ["“careless about”", "an explicit judgement"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Ask three questions of any argument: what is the claim, what is the evidence, and where does the writer stop short of claiming more?",
+          "ar": "اسأل عن أي حجّة ثلاثة أسئلة: ما الدعوى؟ وما الدليل؟ وأين توقّف الكاتب عن ادعاء ما هو أكثر؟" } }
+      ]
+    },
+    {
+      "id": "b2.reading.evidence",
+      "title": { "en": "Weighing the evidence", "ar": "وزن الأدلة" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Advanced reading means noticing the limits of a study, not just its result: how long did it run, who took part, and did they choose to?",
+          "ar": "القراءة المتقدمة تعني ملاحظة حدود الدراسة لا نتيجتها فقط: كم استمرت؟ ومن شارك فيها؟ وهل شاركوا باختيارهم؟" } },
+        { "type": "table", "head": ["Phrase", "Warning it carries"], "rows": [
+          ["a handful of studies", "the evidence base is small"],
+          ["schools that volunteered", "the sample may not be typical"],
+          ["for a single term", "we do not know if it lasts"],
+          ["nobody yet knows", "the question is genuinely open"]
+        ] }
+      ]
+    },
+    {
+      "id": "b2.reading.tone",
+      "title": { "en": "Tone in professional writing", "ar": "النبرة في الكتابة المهنية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "In work emails, disagreement is usually wrapped: praise first, the problem stated as a possibility, and a request framed as a question. The wrapping does not make it optional.",
+          "ar": "في رسائل العمل يُغلَّف الاعتراض عادةً: ثناء أولاً، ثم عرض المشكلة كاحتمال، ثم طلب في صورة سؤال. والتغليف لا يجعل الأمر اختيارياً." } },
+        { "type": "table", "head": ["Written", "Meant"], "rows": [
+          ["It may well be fine.", "I think there is a real risk."],
+          ["I'd rather we had that conversation now.", "We need to discuss this now."],
+          ["Could we spend twenty minutes …?", "Please put this on the agenda."],
+          ["I'm not assuming it doesn't.", "I am open, but I want an answer."]
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u7-01", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "review",
+      "prompt": { "en": "What is the writer's overall position on the phone ban?", "ar": "ما موقف الكاتب العام من حظر الهواتف؟" },
+      "options": ["It may be a sensible rule, but it has not been proven to work.",
+                  "It is a harmful policy that schools should refuse to apply.",
+                  "It is proven by research and should be adopted everywhere.",
+                  "It is unimportant compared with other problems in schools."],
+      "answer": 0,
+      "explanation": { "en": "The final paragraph says it directly: a sensible rule and a proven remedy are not the same thing.",
+        "ar": "تقول الفقرة الأخيرة ذلك صراحة: القاعدة المعقولة ليست هي العلاج المثبت." } },
+
+    { "id": "b2u7-02", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "What does “is supposed to fix schools” signal?", "ar": "ماذا تشير إليه عبارة is supposed to fix schools؟" },
+      "options": ["Scepticism about the claim being made.", "Strong support for the policy.",
+                  "That the policy is required by law.", "That schools requested the policy."],
+      "answer": 0,
+      "explanation": { "en": "“Supposed to” distances the writer from the claim — they are reporting it, not endorsing it.",
+        "ar": "عبارة supposed to تُبعد الكاتب عن الادعاء، فهو ينقله لا يتبنّاه." } },
+
+    { "id": "b2u7-03", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "Why does the writer say “Those studies are real, and their findings are worth taking seriously”?",
+        "ar": "لماذا قال الكاتب إن تلك الدراسات حقيقية وتستحق الأخذ بجدية؟" },
+      "options": ["To concede a point before questioning its limits.",
+                  "To announce that the argument is now finished.",
+                  "To show that the studies settle the question.",
+                  "To criticise the researchers who carried them out."],
+      "answer": 0,
+      "explanation": { "en": "Conceding the strongest part of the other side makes the following criticism harder to dismiss.",
+        "ar": "الإقرار بأقوى ما لدى الطرف الآخر يجعل النقد التالي أصعب على الرفض." } },
+
+    { "id": "b2u7-04", "concept": "b2.reading.evidence", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "review",
+      "prompt": { "en": "What is the writer's main objection to the studies?", "ar": "ما اعتراض الكاتب الرئيسي على الدراسات؟" },
+      "options": ["They were short and used schools that volunteered.",
+                  "They were carried out by the government itself.",
+                  "They measured the wrong thing entirely.",
+                  "They were never actually published anywhere."],
+      "answer": 0,
+      "explanation": { "en": "One term, and volunteering schools — both limit how far the results generalise.",
+        "ar": "فصل دراسي واحد، ومدارس تطوّعت للتجربة — وكلاهما يحدّ من إمكان التعميم." } },
+
+    { "id": "b2u7-05", "concept": "b2.reading.evidence", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "Why does it matter that the schools volunteered?", "ar": "لماذا يهمّ أن المدارس تطوّعت؟" },
+      "options": ["Volunteers are unlikely to represent schools in general.",
+                  "Volunteers are always more honest in their reporting.",
+                  "Volunteering makes a study illegal to publish.",
+                  "Volunteers are usually paid for taking part."],
+      "answer": 0,
+      "explanation": { "en": "The text says it plainly: “Schools that volunteer for something are rarely typical.”",
+        "ar": "يقول النص صراحة إن المدارس المتطوعة نادراً ما تكون نموذجية." } },
+
+    { "id": "b2u7-06", "concept": "b2.reading.evidence", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "According to the writer, what is still unknown?", "ar": "ما الذي لا يزال مجهولاً بحسب الكاتب؟" },
+      "options": ["Whether the effect lasts beyond one term in ordinary schools.",
+                  "Whether phones distract students during lessons at all.",
+                  "Whether any studies on the subject have been done.",
+                  "Whether ministers actually announced the policy."],
+      "answer": 0,
+      "explanation": { "en": "“Whether the effect survives beyond a term … nobody yet knows.”",
+        "ar": "«هل يستمر الأثر بعد فصل دراسي… لا أحد يعلم بعد»." } },
+
+    { "id": "b2u7-07", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "What is the writer criticising ministers for?", "ar": "علام يعيب الكاتب على الوزراء؟" },
+      "options": ["Presenting a reasonable rule as if it were proven science.",
+                  "Refusing to introduce the phone ban in schools.",
+                  "Funding studies that were too long and expensive.",
+                  "Allowing schools to decide the policy for themselves."],
+      "answer": 0,
+      "explanation": { "en": "“Careless about which one they are selling” — a sensible rule versus a proven remedy.",
+        "ar": "«لم يتحرّوا أيّهما يبيعون» — أي الخلط بين قاعدة معقولة وعلاج مثبت." } },
+
+    { "id": "b2u7-08", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "“None of this means the ban is wrong.” Why is this sentence here?",
+        "ar": "لماذا وردت هذه الجملة في النص؟" },
+      "options": ["To stop the criticism being read as outright opposition.",
+                  "To withdraw everything argued in the previous paragraph.",
+                  "To introduce a new and unrelated topic.",
+                  "To agree fully with the ministers' position."],
+      "answer": 0,
+      "explanation": { "en": "It limits the scope of the criticism without weakening it — a standard rhetorical move.",
+        "ar": "تحدّ من مدى النقد دون أن تُضعفه، وهي حركة بلاغية معتادة." } },
+
+    { "id": "b2u7-09", "concept": "b2.reading.tone", "type": "choice", "format": "inference", "difficulty": 4,
+      "passageId": "email",
+      "prompt": { "en": "What is the writer of the email actually saying about the timeline?",
+        "ar": "ماذا يقول كاتب البريد فعلاً عن الجدول الزمني؟" },
+      "options": ["The testing window is too tight and the date may need to move.",
+                  "The timeline is comfortable and needs no further discussion.",
+                  "The QA team has already refused to sign off the work.",
+                  "The build phase has already slipped by several weeks."],
+      "answer": 0,
+      "explanation": { "en": "“Tighter than we'd want”, “nowhere to absorb it”, and a request to revisit the date add up to a clear position.",
+        "ar": "عبارات «أضيق مما نريد» و«لا مجال لاستيعاب أي تأخير» وطلب إعادة النظر في الموعد تشكّل موقفاً واضحاً." } },
+
+    { "id": "b2u7-10", "concept": "b2.reading.tone", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "email",
+      "prompt": { "en": "“It may well be fine.” What is the writer doing with this sentence?",
+        "ar": "ما وظيفة جملة It may well be fine؟" },
+      "options": ["Softening a warning they are about to make.",
+                  "Confirming that there is no problem at all.",
+                  "Blaming the QA team for the delay.",
+                  "Agreeing to keep the launch date fixed."],
+      "answer": 0,
+      "explanation": { "en": "The “but” immediately after shows the concession was preparation, not reassurance.",
+        "ar": "وجود but بعدها مباشرة يبيّن أن التنازل كان تمهيداً لا طمأنة." } },
+
+    { "id": "b2u7-11", "concept": "b2.reading.tone", "type": "choice", "format": "register", "difficulty": 5,
+      "passageId": "email",
+      "prompt": { "en": "Why does the writer open with thanks?", "ar": "لماذا بدأ الكاتب بالشكر؟" },
+      "options": ["To keep the relationship intact before raising a problem.",
+                  "Because the email is only about last week's success.",
+                  "Because thanks are required in every work email.",
+                  "To suggest the team should work faster in future."],
+      "answer": 0,
+      "explanation": { "en": "Genuine praise first makes a challenge easier to hear — and it is genuine here, which matters.",
+        "ar": "الثناء الصادق أولاً يجعل الاعتراض أسهل قبولاً، وهو صادق هنا، وذلك مهم." } },
+
+    { "id": "b2u7-12", "concept": "b2.reading.tone", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "email",
+      "prompt": { "en": "“I'm not assuming it doesn't.” What does this add?", "ar": "ماذا تضيف هذه الجملة؟" },
+      "options": ["It shows the writer is genuinely open to keeping the date.",
+                  "It states that the date has already been changed.",
+                  "It criticises whoever chose the launch date.",
+                  "It withdraws the request for a meeting."],
+      "answer": 0,
+      "explanation": { "en": "It signals a real question rather than a decision dressed up as one — which makes the request harder to refuse.",
+        "ar": "تشير إلى أن السؤال حقيقي لا قرار متنكّر في صورة سؤال، وهذا يجعل الطلب أصعب على الرفض." } },
+
+    { "id": "b2u7-13", "concept": "b2.reading.tone", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the wrapped phrase with what it means.", "ar": "صِل العبارة المغلَّفة بمعناها." },
+      "pairs": [["It may well be fine.", "I think there is a real risk."],
+                ["Could we spend twenty minutes?", "Please put this on the agenda."],
+                ["I'd rather we had that conversation now.", "We need to discuss this now."],
+                ["The client noticed, and said so.", "You did well, and it was seen."]],
+      "explanation": { "en": "Professional English understates. Reading it literally will make you miss the message.",
+        "ar": "الإنجليزية المهنية تميل إلى التخفيف، وقراءتها حرفياً تُفقدك الرسالة." } },
+
+    { "id": "b2u7-14", "concept": "b2.reading.evidence", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence describes evidence most honestly?", "ar": "أي جملة تصف الأدلة بأمانة أكبر؟" },
+      "options": ["Two short studies suggest a benefit, though neither followed students for long.",
+                  "Studies prove beyond any doubt that the policy works in every single school.",
+                  "Research shows that the policy has been a complete failure in every setting.",
+                  "Some people say that it works and other people say that it does not work."],
+      "answer": 0,
+      "explanation": { "en": "It states what was found and names the limit. The rest overclaim or say nothing at all.",
+        "ar": "الجملة الأولى تذكر النتيجة وتسمّي حدودها، أما البقية فمبالغة أو خالية من المضمون." } },
+
+    { "id": "b2u7-15", "concept": "b2.reading.attitude", "type": "choice", "format": "inference", "difficulty": 5,
+      "passageId": "review",
+      "prompt": { "en": "Which sentence best sums up the column's argument?", "ar": "أي جملة تلخّص حجّة المقال؟" },
+      "options": ["Act on judgement if you like, but do not call it proof.",
+                  "Never introduce a policy without complete evidence first.",
+                  "Research on schools is generally not worth reading.",
+                  "Phones should be banned in every school immediately."],
+      "answer": 0,
+      "explanation": { "en": "The distinction between a sensible rule and a proven remedy is the whole point of the piece.",
+        "ar": "التمييز بين القاعدة المعقولة والعلاج المثبت هو جوهر المقال كله." } }
+  ]
+}

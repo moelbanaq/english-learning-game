@@ -90,7 +90,21 @@
       },
       "units": [
         { "id": "b2-u1", "file": "levels/b2/u1-structures.json", "title": { "en": "Complex structures & register", "ar": "التراكيب المتقدمة ومستوى اللغة" }, "questions": 15,
-          "concepts": ["b2.passive", "b2.conditional.mixed", "b2.linking", "b2.register"] }
+          "concepts": ["b2.passive", "b2.conditional.mixed", "b2.linking", "b2.register"] },
+        { "id": "b2-u2", "file": "levels/b2/u2-wishes-unreal.json", "title": { "en": "Wishes & the unreal past", "ar": "التمني والماضي غير الواقعي" }, "questions": 15,
+          "concepts": ["b2.wish.present", "b2.wish.past", "b2.unreal.prefer", "b2.inversion.conditional"] },
+        { "id": "b2-u3", "file": "levels/b2/u3-modality.json", "title": { "en": "Likelihood, necessity & habit", "ar": "الاحتمال والضرورة والاعتياد" }, "questions": 15,
+          "concepts": ["b2.modal.likelihood", "b2.modal.necessity", "b2.modal.habit"] },
+        { "id": "b2-u4", "file": "levels/b2/u4-cohesion.json", "title": { "en": "Cohesion & reference", "ar": "التماسك والإحالة" }, "questions": 15,
+          "concepts": ["b2.cohesion.reference", "b2.cohesion.substitution", "b2.cohesion.ellipsis"] },
+        { "id": "b2-u5", "file": "levels/b2/u5-word-formation.json", "title": { "en": "Word formation & confusables", "ar": "الاشتقاق والكلمات المتشابهة" }, "questions": 15,
+          "concepts": ["b2.word.suffix", "b2.word.prefix", "b2.word.confusable"] },
+        { "id": "b2-u6", "file": "levels/b2/u6-emphasis.json", "title": { "en": "Emphasis & word order", "ar": "التوكيد وترتيب المعلومة" }, "questions": 15,
+          "concepts": ["b2.emphasis.cleft", "b2.emphasis.endFocus", "b2.emphasis.inversion"] },
+        { "id": "b2-u7", "file": "levels/b2/u7-reading-attitude.json", "title": { "en": "Reading for attitude", "ar": "قراءة الموقف والنبرة" }, "questions": 15,
+          "concepts": ["b2.reading.attitude", "b2.reading.evidence", "b2.reading.tone"] },
+        { "id": "b2-u8", "file": "levels/b2/u8-formal-writing.json", "title": { "en": "Emails & reports", "ar": "الرسائل والتقارير" }, "questions": 15,
+          "concepts": ["b2.writing.concise", "b2.writing.nominalisation", "b2.writing.emailShape"] }
       ]
     },
     {

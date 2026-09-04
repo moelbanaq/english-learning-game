@@ -1,0 +1,198 @@
+{
+  "id": "b2-u2",
+  "goal": {
+    "en": "Talk about what did not happen, what you regret, and what you would prefer — the unreal past.",
+    "ar": "أن تتحدث عمّا لم يحدث، وعمّا تندم عليه، وعمّا تفضّله — أي الماضي غير الواقعي."
+  },
+  "concepts": [
+    {
+      "id": "b2.wish.present",
+      "title": { "en": "wish & if only — now", "ar": "wish و if only في الحاضر" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "wish + past simple describes a present situation you want to be different: “I wish I had more time.” The past form signals distance from reality, not past time.",
+          "ar": "wish مع الماضي البسيط تصف وضعاً حاضراً تتمنى لو كان غيره: I wish I had more time. وصيغة الماضي هنا تدل على البعد عن الواقع لا على الزمن الماضي." } },
+        { "type": "table", "head": ["Sentence", "Reality"], "rows": [
+          ["I wish I lived closer.", "I don't live close."],
+          ["I wish I could drive.", "I can't drive."],
+          ["I wish he were here.", "He isn't here."],
+          ["If only it wasn't so far.", "It is very far."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Never use “wish” + will for the present: “I wish I will be rich” is wrong. Say “I wish I were rich.”",
+          "ar": "لا نستخدم wish مع will للحاضر. فجملة I wish I will be rich خطأ، والصواب I wish I were rich." } },
+        { "type": "tip", "text": {
+          "en": "“I wish you would…” is different: it complains about someone else's behaviour. “I wish you would listen.”",
+          "ar": "أما I wish you would فمختلفة: تشكو من سلوك شخص آخر، مثل I wish you would listen." } }
+      ]
+    },
+    {
+      "id": "b2.wish.past",
+      "title": { "en": "Regret about the past", "ar": "الندم على الماضي" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "wish + past perfect regrets something already finished: “I wish I had studied medicine.” One step further back than the present wish.",
+          "ar": "wish مع الماضي التام تعبّر عن ندم على أمر انتهى: I wish I had studied medicine، أي خطوة أبعد في الماضي من التمني الحاضر." } },
+        { "type": "examples", "items": [
+          { "en": "I wish I hadn't said that.", "ar": "ليتني لم أقل ذلك." },
+          { "en": "She wishes she had taken the job.", "ar": "تتمنى لو أنها قبلت الوظيفة." },
+          { "en": "If only we had left earlier!", "ar": "ليتنا غادرنا مبكراً!" }
+        ] },
+        { "type": "table", "head": ["Form", "Time"], "rows": [
+          ["I wish I knew.", "now — I don't know"],
+          ["I wish I had known.", "then — I didn't know"],
+          ["I wish you would call.", "future behaviour of someone else"]
+        ] }
+      ]
+    },
+    {
+      "id": "b2.unreal.prefer",
+      "title": { "en": "would rather · it's time", "ar": "would rather و it's time" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "About yourself: would rather + base verb (“I'd rather stay”). About someone else: would rather + past (“I'd rather you stayed”).",
+          "ar": "عن نفسك: would rather مع الفعل المجرد مثل I'd rather stay. وعن غيرك: would rather مع الماضي مثل I'd rather you stayed." } },
+        { "type": "rule", "text": {
+          "en": "“It's time” + past simple means it should already be happening: “It's time we left.” (Not “It's time we leave.”)",
+          "ar": "عبارة It's time مع الماضي البسيط تعني أن الأمر كان ينبغي أن يحدث: It's time we left، ولا نقول It's time we leave." } },
+        { "type": "warn", "text": {
+          "en": "These past forms never refer to past time. They mark unreality, exactly like the second conditional.",
+          "ar": "صيغ الماضي هنا لا تدل على الزمن الماضي أبداً، بل على عدم الواقعية، تماماً كالشرط الثاني." } }
+      ]
+    },
+    {
+      "id": "b2.inversion.conditional",
+      "title": { "en": "Conditionals without “if”", "ar": "الشرط بلا if" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Formal English can drop “if” and invert: Had I known → If I had known. Were she here → If she were here. Should you need help → If you need help.",
+          "ar": "يمكن في الإنجليزية الرسمية حذف if والقلب: Had I known بدل If I had known، وWere she here بدل If she were here، وShould you need help بدل If you need help." } },
+        { "type": "examples", "items": [
+          { "en": "Had we booked earlier, we would have paid less.", "ar": "لو كنا حجزنا مبكراً لدفعنا أقل." },
+          { "en": "Should you have any questions, please contact us.", "ar": "إن كانت لديك أي أسئلة فتواصل معنا." }
+        ] },
+        { "type": "tip", "text": {
+          "en": "This is common in business writing and news. Recognising it matters more than producing it.",
+          "ar": "هذا الأسلوب شائع في المراسلات المهنية والأخبار، والتعرّف عليه أهم من إنتاجه." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2u2-01", "concept": "b2.wish.present", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I wish I ___ more free time during the week.",
+      "options": ["had", "have", "will have", "am having"], "answer": 0,
+      "explanation": { "en": "A present wish takes the past simple.", "ar": "التمني في الحاضر يأخذ الماضي البسيط." } },
+
+    { "id": "b2u2-02", "concept": "b2.wish.present", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“I wish I lived in the city centre.” What is true now?",
+        "ar": "«I wish I lived in the city centre» ما الواقع الآن؟" },
+      "options": ["I do not live in the centre.", "I used to live in the centre.",
+                  "I will move to the centre soon.", "I have always lived in the centre."],
+      "answer": 0,
+      "explanation": { "en": "A wish states the opposite of the present reality.",
+        "ar": "التمني يذكر عكس الواقع الحاضر." } },
+
+    { "id": "b2u2-03", "concept": "b2.wish.present", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I wish I will speak better English.", "I wish I spoke better English than this.",
+                  "I wish I could speak French as well.", "I wish my English was a little better."],
+      "answer": 0,
+      "explanation": { "en": "“Wish” is never followed by “will” for a present state; use the past simple.",
+        "ar": "لا تأتي will بعد wish للتعبير عن حال حاضرة، بل الماضي البسيط." } },
+
+    { "id": "b2u2-04", "concept": "b2.wish.present", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence complains about someone else's behaviour?",
+        "ar": "أي جملة تشكو من سلوك شخص آخر؟" },
+      "options": ["I wish you would answer your phone.", "I wish I answered my phone more often.",
+                  "I wish I had answered the phone then.", "I wish my phone worked properly here."],
+      "answer": 0,
+      "explanation": { "en": "“Wish + would” is aimed at another person's habit, and carries irritation.",
+        "ar": "تركيب wish + would يوجَّه إلى عادة شخص آخر ويحمل نبرة تذمّر." } },
+
+    { "id": "b2u2-05", "concept": "b2.wish.past", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I wish I ___ that email — it caused a lot of trouble.",
+      "options": ["hadn't sent", "didn't send", "wouldn't send", "haven't sent"], "answer": 0,
+      "explanation": { "en": "Regret about a finished action → wish + past perfect.",
+        "ar": "الندم على فعل انتهى يقتضي wish مع الماضي التام." } },
+
+    { "id": "b2u2-06", "concept": "b2.wish.past", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which sentence regrets something that already happened?",
+        "ar": "أي جملة تندم على أمر وقع فعلاً؟" },
+      "options": ["I wish I had accepted their offer.", "I wish I accepted more invitations.",
+                  "I wish they would make me an offer.", "I wish their offer was more generous."],
+      "answer": 0,
+      "explanation": { "en": "Past perfect after “wish” points at a finished event; the others describe the present.",
+        "ar": "الماضي التام بعد wish يشير إلى حدث منتهٍ، أما البقية فتصف الحاضر." } },
+
+    { "id": "b2u2-07", "concept": "b2.wish.past", "type": "text", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Express regret: “I didn't book the tickets early.” → “I wish I ___ the tickets early.”",
+        "ar": "عبّر عن الندم: I didn't book the tickets early ← I wish I ___ the tickets early." },
+      "answer": "had booked", "accept": ["'d booked", "had booked"],
+      "explanation": { "en": "wish + past perfect converts a past fact into a regret.",
+        "ar": "wish مع الماضي التام تحوّل الحقيقة الماضية إلى ندم." } },
+
+    { "id": "b2u2-08", "concept": "b2.wish.past", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["If", "only", "we", "had", "left", "an", "hour", "earlier"],
+      "answer": "If only we had left an hour earlier",
+      "explanation": { "en": "“If only” works like “wish” but is more emphatic.",
+        "ar": "تعمل If only عمل wish لكنها أشد توكيداً." } },
+
+    { "id": "b2u2-09", "concept": "b2.unreal.prefer", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I'd rather you ___ anything to her about this.",
+      "options": ["didn't say", "don't say", "won't say", "not saying"], "answer": 0,
+      "explanation": { "en": "“Would rather” about ANOTHER person takes the past simple.",
+        "ar": "would rather حين تتعلق بشخص آخر تأخذ الماضي البسيط." } },
+
+    { "id": "b2u2-10", "concept": "b2.unreal.prefer", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I'd rather to stay at home tonight.", "I'd rather stay at home this evening.",
+                  "I'd rather you stayed at home tonight.", "I would rather not discuss it now."],
+      "answer": 0,
+      "explanation": { "en": "No “to” after “would rather” when the subject is the same.",
+        "ar": "لا نضع to بعد would rather حين يكون الفاعل واحداً." } },
+
+    { "id": "b2u2-11", "concept": "b2.unreal.prefer", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "It's time we ___ about the budget seriously.",
+      "options": ["talked", "talk", "will talk", "are talking"], "answer": 0,
+      "explanation": { "en": "“It's time” + past simple means it is already overdue.",
+        "ar": "It's time مع الماضي البسيط تعني أن الوقت قد تأخر فعلاً." } },
+
+    { "id": "b2u2-12", "concept": "b2.unreal.prefer", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the structure with its meaning.", "ar": "صِل التركيب بمعناه." },
+      "pairs": [["I'd rather stay.", "my own preference"], ["I'd rather you stayed.", "a preference about you"],
+                ["It's time we left.", "we should already be going"], ["I wish you would stay.", "a complaint or a plea"]],
+      "explanation": { "en": "All four use unreal forms, but each points at a different person or time.",
+        "ar": "الأربعة تستخدم صيغاً غير واقعية، لكن كلاً منها يشير إلى شخص أو زمن مختلف." } },
+
+    { "id": "b2u2-13", "concept": "b2.inversion.conditional", "type": "choice", "format": "transform", "difficulty": 5,
+      "prompt": { "en": "Rewrite without “if”: “If I had known, I would have called.”",
+        "ar": "أعد الصياغة بحذف if: If I had known, I would have called." },
+      "options": ["Had I known, I would have called.", "Did I know, I would have called.",
+                  "Have I known, I would have called.", "Was I known, I would have called."],
+      "answer": 0,
+      "explanation": { "en": "Drop “if” and move “had” in front of the subject.",
+        "ar": "نحذف if ونقدّم had على الفاعل." } },
+
+    { "id": "b2u2-14", "concept": "b2.inversion.conditional", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence fits a formal customer email?", "ar": "أي جملة تناسب بريداً رسمياً للعملاء؟" },
+      "options": ["Should you require further assistance, please contact us.",
+                  "If you want more help then just write to us again.",
+                  "You need more help? Contact us whenever you like.",
+                  "Want help again? Just send us another message."],
+      "answer": 0,
+      "explanation": { "en": "“Should you require …” is the standard formal conditional in business writing.",
+        "ar": "صيغة Should you require هي الشرط الرسمي المعتاد في المراسلات المهنية." } },
+
+    { "id": "b2u2-15", "concept": "b2.inversion.conditional", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Had the report been ready, the decision would have been easier.” What happened?",
+        "ar": "ماذا حدث في الواقع بحسب هذه الجملة؟" },
+      "options": ["The report was not ready, so the decision was hard.",
+                  "The report was ready and the decision was easy.",
+                  "The report will be ready before the decision.",
+                  "The decision was taken before the report existed."],
+      "answer": 0,
+      "explanation": { "en": "An inverted third conditional states the opposite of what really happened.",
+        "ar": "الشرط الثالث بصيغة القلب يفيد أن الواقع كان خلاف ذلك." } }
+  ]
+}
