@@ -130,12 +130,31 @@ export async function getPlacementTest() {
   return test;
 }
 
-/** Cached lookup of a concept title from any loaded unit. */
+let conceptIndex = null;
+
+/**
+ * The id → title map for every concept in the curriculum. Views that name concepts
+ * (dashboard, stats, review, results) await this once instead of downloading the unit
+ * files those concepts happen to live in.
+ */
+export async function loadConceptIndex() {
+  if (!conceptIndex) {
+    if (!inflight.has('concept-index')) {
+      inflight.set('concept-index', loadJSON('concept-index.json')
+        .then((data) => { conceptIndex = data; inflight.delete('concept-index'); return data; })
+        .catch(() => { conceptIndex = {}; inflight.delete('concept-index'); return {}; }));
+    }
+    await inflight.get('concept-index');
+  }
+  return conceptIndex;
+}
+
+/** Concept title from a loaded unit, falling back to the index. */
 export function findConceptTitle(conceptId) {
   for (const unit of unitCache.values()) {
     if (unit.conceptById && unit.conceptById.has(conceptId)) {
       return unit.conceptById.get(conceptId).title;
     }
   }
-  return null;
+  return (conceptIndex && conceptIndex[conceptId]) || null;
 }

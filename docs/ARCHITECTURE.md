@@ -22,6 +22,14 @@ site — and a static site, done properly, is genuinely enough for this product.
 **Total runtime dependencies: zero.** Playwright is used only by the browser test and is
 never installed for the app itself.
 
+### Generated content
+
+`content/concept-index.json` is the one generated file: an id → title map for all 147
+concepts, built by `tools/build-concept-index.mjs`. The dashboard, stats and review
+screens name concepts the learner has studied, and without it they would have to
+download every unit file those concepts happen to live in. `npm test` fails if the index
+drifts from the units.
+
 ## Layers
 
 ```

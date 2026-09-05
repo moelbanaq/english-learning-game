@@ -1,0 +1,884 @@
+{
+ "a1.be.affirmative": {
+  "en": "am · is · are",
+  "ar": "am و is و are",
+  "unit": "a1-u1",
+  "level": "A1"
+ },
+ "a1.be.negative": {
+  "en": "Making it negative",
+  "ar": "النفي مع be",
+  "unit": "a1-u1",
+  "level": "A1"
+ },
+ "a1.be.questions": {
+  "en": "Asking questions",
+  "ar": "السؤال بـ be",
+  "unit": "a1-u1",
+  "level": "A1"
+ },
+ "a1.pronouns.subject": {
+  "en": "Subject pronouns",
+  "ar": "ضمائر الفاعل",
+  "unit": "a1-u2",
+  "level": "A1"
+ },
+ "a1.articles.aan": {
+  "en": "a / an",
+  "ar": "أداة النكرة a / an",
+  "unit": "a1-u2",
+  "level": "A1"
+ },
+ "a1.nouns.plural": {
+  "en": "Singular & plural",
+  "ar": "المفرد والجمع",
+  "unit": "a1-u2",
+  "level": "A1"
+ },
+ "a1.present.affirmative": {
+  "en": "Present simple: I work / she works",
+  "ar": "المضارع البسيط في الإثبات",
+  "unit": "a1-u3",
+  "level": "A1"
+ },
+ "a1.present.negative": {
+  "en": "don't / doesn't",
+  "ar": "النفي بـ don't و doesn't",
+  "unit": "a1-u3",
+  "level": "A1"
+ },
+ "a1.present.questions": {
+  "en": "Do you…? Does he…?",
+  "ar": "السؤال بـ Do و Does",
+  "unit": "a1-u3",
+  "level": "A1"
+ },
+ "a1.have.got": {
+  "en": "have / have got",
+  "ar": "التعبير عن الملكية",
+  "unit": "a1-u4",
+  "level": "A1"
+ },
+ "a1.there.isare": {
+  "en": "there is / there are",
+  "ar": "there is و there are",
+  "unit": "a1-u4",
+  "level": "A1"
+ },
+ "a1.some.any": {
+  "en": "some / any",
+  "ar": "some و any",
+  "unit": "a1-u4",
+  "level": "A1"
+ },
+ "a1.continuous.form": {
+  "en": "am / is / are + -ing",
+  "ar": "تكوين المضارع المستمر",
+  "unit": "a1-u5",
+  "level": "A1"
+ },
+ "a1.continuous.vs.simple": {
+  "en": "Now or usually?",
+  "ar": "الآن أم عادةً؟",
+  "unit": "a1-u5",
+  "level": "A1"
+ },
+ "a1.past.wasWere": {
+  "en": "was / were",
+  "ar": "was و were",
+  "unit": "a1-u6",
+  "level": "A1"
+ },
+ "a1.past.regular": {
+  "en": "Regular past: -ed",
+  "ar": "الماضي القياسي بـ ed",
+  "unit": "a1-u6",
+  "level": "A1"
+ },
+ "a1.past.questions": {
+  "en": "did / didn't",
+  "ar": "السؤال والنفي بـ did",
+  "unit": "a1-u6",
+  "level": "A1"
+ },
+ "a1.prep.time": {
+  "en": "in / on / at — time",
+  "ar": "حروف الجر مع الزمن",
+  "unit": "a1-u7",
+  "level": "A1"
+ },
+ "a1.prep.place": {
+  "en": "in / on / at — place",
+  "ar": "حروف الجر مع المكان",
+  "unit": "a1-u7",
+  "level": "A1"
+ },
+ "a1.adverbs.frequency": {
+  "en": "always, usually, never",
+  "ar": "ظروف التكرار",
+  "unit": "a1-u7",
+  "level": "A1"
+ },
+ "a1.modal.can": {
+  "en": "can / can't",
+  "ar": "القدرة بـ can",
+  "unit": "a1-u8",
+  "level": "A1"
+ },
+ "a1.future.goingTo": {
+  "en": "be going to",
+  "ar": "المستقبل بـ going to",
+  "unit": "a1-u8",
+  "level": "A1"
+ },
+ "a1.everyday.phrases": {
+  "en": "Everyday English",
+  "ar": "تعبيرات الحياة اليومية",
+  "unit": "a1-u8",
+  "level": "A1"
+ },
+ "a2.past.irregular": {
+  "en": "Irregular past verbs",
+  "ar": "الأفعال الشاذة في الماضي",
+  "unit": "a2-u1",
+  "level": "A2"
+ },
+ "a2.past.continuous": {
+  "en": "Past continuous",
+  "ar": "الماضي المستمر",
+  "unit": "a2-u1",
+  "level": "A2"
+ },
+ "a2.past.when.while": {
+  "en": "when & while",
+  "ar": "when و while",
+  "unit": "a2-u1",
+  "level": "A2"
+ },
+ "a2.comparatives": {
+  "en": "Comparatives",
+  "ar": "اسم التفضيل (المقارنة)",
+  "unit": "a2-u2",
+  "level": "A2"
+ },
+ "a2.superlatives": {
+  "en": "Superlatives",
+  "ar": "صيغة التفضيل العليا",
+  "unit": "a2-u2",
+  "level": "A2"
+ },
+ "a2.quantifiers": {
+  "en": "much, many, a lot of, a few",
+  "ar": "ألفاظ الكمية",
+  "unit": "a2-u2",
+  "level": "A2"
+ },
+ "a2.modal.mustHaveTo": {
+  "en": "must / have to",
+  "ar": "الواجب: must و have to",
+  "unit": "a2-u3",
+  "level": "A2"
+ },
+ "a2.modal.should": {
+  "en": "should / shouldn't",
+  "ar": "النصيحة بـ should",
+  "unit": "a2-u3",
+  "level": "A2"
+ },
+ "a2.modal.permission": {
+  "en": "can / could / may",
+  "ar": "الإذن والطلب",
+  "unit": "a2-u3",
+  "level": "A2"
+ },
+ "a2.perfect.experience": {
+  "en": "have / has + past participle",
+  "ar": "تكوين المضارع التام",
+  "unit": "a2-u4",
+  "level": "A2"
+ },
+ "a2.perfect.everYet": {
+  "en": "ever, never, already, yet",
+  "ar": "ever و never و already و yet",
+  "unit": "a2-u4",
+  "level": "A2"
+ },
+ "a2.phrasal.common": {
+  "en": "Everyday phrasal verbs",
+  "ar": "الأفعال المركّبة الشائعة",
+  "unit": "a2-u4",
+  "level": "A2"
+ },
+ "a2.future.will": {
+  "en": "will: decisions, offers, predictions",
+  "ar": "will للقرار والعرض والتوقع",
+  "unit": "a2-u5",
+  "level": "A2"
+ },
+ "a2.future.willVsGoingTo": {
+  "en": "will or going to?",
+  "ar": "will أم going to؟",
+  "unit": "a2-u5",
+  "level": "A2"
+ },
+ "a2.future.arrangements": {
+  "en": "Arrangements & timetables",
+  "ar": "المواعيد المرتّبة والجداول",
+  "unit": "a2-u5",
+  "level": "A2"
+ },
+ "a2.adjectives.edIng": {
+  "en": "bored or boring?",
+  "ar": "bored أم boring؟",
+  "unit": "a2-u6",
+  "level": "A2"
+ },
+ "a2.adverbs.manner": {
+  "en": "Adverbs of manner",
+  "ar": "ظروف الحال (كيف؟)",
+  "unit": "a2-u6",
+  "level": "A2"
+ },
+ "a2.word.order": {
+  "en": "Where words go",
+  "ar": "ترتيب الكلمات في الجملة",
+  "unit": "a2-u6",
+  "level": "A2"
+ },
+ "a2.collocation.makeDo": {
+  "en": "make or do?",
+  "ar": "make أم do؟",
+  "unit": "a2-u7",
+  "level": "A2"
+ },
+ "a2.collocation.haveTake": {
+  "en": "have & take",
+  "ar": "have و take",
+  "unit": "a2-u7",
+  "level": "A2"
+ },
+ "a2.collocation.get": {
+  "en": "the many jobs of “get”",
+  "ar": "استعمالات الفعل get",
+  "unit": "a2-u7",
+  "level": "A2"
+ },
+ "a2.reading.everyday": {
+  "en": "Reading real-world texts",
+  "ar": "قراءة النصوص الواقعية",
+  "unit": "a2-u8",
+  "level": "A2"
+ },
+ "a2.functions.social": {
+  "en": "Requests, apologies, suggestions",
+  "ar": "الطلب والاعتذار والاقتراح",
+  "unit": "a2-u8",
+  "level": "A2"
+ },
+ "a2.connectors.basic": {
+  "en": "Joining ideas: so, because, but",
+  "ar": "ربط الأفكار",
+  "unit": "a2-u8",
+  "level": "A2"
+ },
+ "b1.perfect.vs.past": {
+  "en": "Present perfect or past simple?",
+  "ar": "المضارع التام أم الماضي البسيط؟",
+  "unit": "b1-u1",
+  "level": "B1"
+ },
+ "b1.sinceFor": {
+  "en": "since & for",
+  "ar": "since و for",
+  "unit": "b1-u1",
+  "level": "B1"
+ },
+ "b1.perfect.continuous": {
+  "en": "have been + -ing",
+  "ar": "المضارع التام المستمر",
+  "unit": "b1-u1",
+  "level": "B1"
+ },
+ "b1.conditional.first": {
+  "en": "First conditional: real possibility",
+  "ar": "الشرط الأول: احتمال واقعي",
+  "unit": "b1-u2",
+  "level": "B1"
+ },
+ "b1.conditional.second": {
+  "en": "Second conditional: imagined",
+  "ar": "الشرط الثاني: موقف متخيَّل",
+  "unit": "b1-u2",
+  "level": "B1"
+ },
+ "b1.reported.speech": {
+  "en": "Reported speech",
+  "ar": "الكلام المنقول",
+  "unit": "b1-u2",
+  "level": "B1"
+ },
+ "b1.passive.present": {
+  "en": "Present passive",
+  "ar": "المجهول في المضارع",
+  "unit": "b1-u3",
+  "level": "B1"
+ },
+ "b1.passive.past": {
+  "en": "Past passive",
+  "ar": "المجهول في الماضي",
+  "unit": "b1-u3",
+  "level": "B1"
+ },
+ "b1.passive.use": {
+  "en": "Why choose the passive?",
+  "ar": "لماذا نختار المجهول؟",
+  "unit": "b1-u3",
+  "level": "B1"
+ },
+ "b1.relative.defining": {
+  "en": "who, which, that",
+  "ar": "who و which و that",
+  "unit": "b1-u4",
+  "level": "B1"
+ },
+ "b1.relative.omit": {
+  "en": "When you can leave it out",
+  "ar": "متى يمكن حذف الاسم الموصول",
+  "unit": "b1-u4",
+  "level": "B1"
+ },
+ "b1.relative.nondefining": {
+  "en": "Extra information, in commas",
+  "ar": "المعلومة الإضافية بين فاصلتين",
+  "unit": "b1-u4",
+  "level": "B1"
+ },
+ "b1.modal.deduction": {
+  "en": "must be, might be, can't be",
+  "ar": "درجات اليقين",
+  "unit": "b1-u5",
+  "level": "B1"
+ },
+ "b1.modal.pastDeduction": {
+  "en": "must have, might have, can't have",
+  "ar": "اليقين في الماضي",
+  "unit": "b1-u5",
+  "level": "B1"
+ },
+ "b1.modal.regret": {
+  "en": "should have — looking back",
+  "ar": "should have للندم والنقد",
+  "unit": "b1-u5",
+  "level": "B1"
+ },
+ "b1.linking.contrast": {
+  "en": "Showing contrast",
+  "ar": "إظهار التضاد",
+  "unit": "b1-u6",
+  "level": "B1"
+ },
+ "b1.linking.addResult": {
+  "en": "Adding and concluding",
+  "ar": "الإضافة والنتيجة",
+  "unit": "b1-u6",
+  "level": "B1"
+ },
+ "b1.linking.paragraph": {
+  "en": "Shaping a paragraph",
+  "ar": "بناء الفقرة",
+  "unit": "b1-u6",
+  "level": "B1"
+ },
+ "b1.phrasal.meaning": {
+  "en": "Phrasal verbs you cannot guess",
+  "ar": "أفعال مركّبة لا يمكن تخمينها",
+  "unit": "b1-u7",
+  "level": "B1"
+ },
+ "b1.phrasal.separable": {
+  "en": "Where does the object go?",
+  "ar": "أين يقع المفعول؟",
+  "unit": "b1-u7",
+  "level": "B1"
+ },
+ "b1.collocation.verbNoun": {
+  "en": "Verb + noun partnerships",
+  "ar": "اقتران الفعل بالاسم",
+  "unit": "b1-u7",
+  "level": "B1"
+ },
+ "b1.opinion.language": {
+  "en": "Giving an opinion",
+  "ar": "إبداء الرأي",
+  "unit": "b1-u8",
+  "level": "B1"
+ },
+ "b1.argument.structure": {
+  "en": "Supporting and conceding",
+  "ar": "الدعم والتنازل",
+  "unit": "b1-u8",
+  "level": "B1"
+ },
+ "b1.opinion.disagree": {
+  "en": "Disagreeing politely",
+  "ar": "الاعتراض بلباقة",
+  "unit": "b1-u8",
+  "level": "B1"
+ },
+ "b2.passive": {
+  "en": "The passive and why it exists",
+  "ar": "المبني للمجهول ولماذا نستخدمه",
+  "unit": "b2-u1",
+  "level": "B2"
+ },
+ "b2.conditional.mixed": {
+  "en": "Third & mixed conditionals",
+  "ar": "الشرط الثالث والمختلط",
+  "unit": "b2-u1",
+  "level": "B2"
+ },
+ "b2.linking": {
+  "en": "Linking ideas precisely",
+  "ar": "الربط الدقيق بين الأفكار",
+  "unit": "b2-u1",
+  "level": "B2"
+ },
+ "b2.register": {
+  "en": "Register: formal vs informal",
+  "ar": "مستوى اللغة: رسمي وغير رسمي",
+  "unit": "b2-u1",
+  "level": "B2"
+ },
+ "b2.wish.present": {
+  "en": "wish & if only — now",
+  "ar": "wish و if only في الحاضر",
+  "unit": "b2-u2",
+  "level": "B2"
+ },
+ "b2.wish.past": {
+  "en": "Regret about the past",
+  "ar": "الندم على الماضي",
+  "unit": "b2-u2",
+  "level": "B2"
+ },
+ "b2.unreal.prefer": {
+  "en": "would rather · it's time",
+  "ar": "would rather و it's time",
+  "unit": "b2-u2",
+  "level": "B2"
+ },
+ "b2.inversion.conditional": {
+  "en": "Conditionals without “if”",
+  "ar": "الشرط بلا if",
+  "unit": "b2-u2",
+  "level": "B2"
+ },
+ "b2.modal.likelihood": {
+  "en": "Degrees of likelihood",
+  "ar": "درجات الاحتمال",
+  "unit": "b2-u3",
+  "level": "B2"
+ },
+ "b2.modal.necessity": {
+  "en": "Necessity in the past",
+  "ar": "الضرورة في الماضي",
+  "unit": "b2-u3",
+  "level": "B2"
+ },
+ "b2.modal.habit": {
+  "en": "Past habits: used to & would",
+  "ar": "عادات الماضي",
+  "unit": "b2-u3",
+  "level": "B2"
+ },
+ "b2.cohesion.reference": {
+  "en": "Referring back clearly",
+  "ar": "الإحالة الواضحة إلى ما سبق",
+  "unit": "b2-u4",
+  "level": "B2"
+ },
+ "b2.cohesion.substitution": {
+  "en": "Substitution: one, do so, so",
+  "ar": "الاستبدال",
+  "unit": "b2-u4",
+  "level": "B2"
+ },
+ "b2.cohesion.ellipsis": {
+  "en": "Leaving words out",
+  "ar": "الحذف",
+  "unit": "b2-u4",
+  "level": "B2"
+ },
+ "b2.word.suffix": {
+  "en": "Suffixes: changing the word class",
+  "ar": "اللواحق وتغيير نوع الكلمة",
+  "unit": "b2-u5",
+  "level": "B2"
+ },
+ "b2.word.prefix": {
+  "en": "Prefixes: changing the meaning",
+  "ar": "السوابق وتغيير المعنى",
+  "unit": "b2-u5",
+  "level": "B2"
+ },
+ "b2.word.confusable": {
+  "en": "Pairs that trip people up",
+  "ar": "أزواج توقع في الخطأ",
+  "unit": "b2-u5",
+  "level": "B2"
+ },
+ "b2.emphasis.cleft": {
+  "en": "Cleft sentences: It was … that",
+  "ar": "الجملة المشطورة",
+  "unit": "b2-u6",
+  "level": "B2"
+ },
+ "b2.emphasis.endFocus": {
+  "en": "New information goes last",
+  "ar": "الجديد في الآخر",
+  "unit": "b2-u6",
+  "level": "B2"
+ },
+ "b2.emphasis.inversion": {
+  "en": "Inversion after negative adverbials",
+  "ar": "القلب بعد الظروف المنفية",
+  "unit": "b2-u6",
+  "level": "B2"
+ },
+ "b2.reading.attitude": {
+  "en": "Finding the writer's position",
+  "ar": "تحديد موقف الكاتب",
+  "unit": "b2-u7",
+  "level": "B2"
+ },
+ "b2.reading.evidence": {
+  "en": "Weighing the evidence",
+  "ar": "وزن الأدلة",
+  "unit": "b2-u7",
+  "level": "B2"
+ },
+ "b2.reading.tone": {
+  "en": "Tone in professional writing",
+  "ar": "النبرة في الكتابة المهنية",
+  "unit": "b2-u7",
+  "level": "B2"
+ },
+ "b2.writing.concise": {
+  "en": "Formal is not the same as wordy",
+  "ar": "الرسمية ليست إطالة",
+  "unit": "b2-u8",
+  "level": "B2"
+ },
+ "b2.writing.nominalisation": {
+  "en": "Verbs beat noun phrases",
+  "ar": "الفعل أقوى من المصدر",
+  "unit": "b2-u8",
+  "level": "B2"
+ },
+ "b2.writing.emailShape": {
+  "en": "The shape of a professional email",
+  "ar": "بنية البريد المهني",
+  "unit": "b2-u8",
+  "level": "B2"
+ },
+ "c1.collocation": {
+  "en": "Collocation: words that travel together",
+  "ar": "التلازم اللفظي",
+  "unit": "c1-u1",
+  "level": "C1"
+ },
+ "c1.nuance": {
+  "en": "Near-synonyms are not equal",
+  "ar": "المترادفات ليست متساوية",
+  "unit": "c1-u1",
+  "level": "C1"
+ },
+ "c1.hedging": {
+  "en": "Hedging: controlled certainty",
+  "ar": "التحوّط: التحكم في درجة اليقين",
+  "unit": "c1-u1",
+  "level": "C1"
+ },
+ "c1.inference": {
+  "en": "Reading what is implied",
+  "ar": "قراءة المعنى الضمني",
+  "unit": "c1-u1",
+  "level": "C1"
+ },
+ "c1.stance.reporting": {
+  "en": "Reporting verbs carry an opinion",
+  "ar": "أفعال النقل تحمل موقفاً",
+  "unit": "c1-u2",
+  "level": "C1"
+ },
+ "c1.stance.impersonal": {
+  "en": "Taking yourself out of the sentence",
+  "ar": "إخراج الذات من الجملة",
+  "unit": "c1-u2",
+  "level": "C1"
+ },
+ "c1.stance.generalising": {
+  "en": "Generalising safely",
+  "ar": "التعميم الآمن",
+  "unit": "c1-u2",
+  "level": "C1"
+ },
+ "c1.lex.support": {
+  "en": "Support verbs in formal use",
+  "ar": "الأفعال المساندة في السياق الرسمي",
+  "unit": "c1-u3",
+  "level": "C1"
+ },
+ "c1.lex.intensifier": {
+  "en": "Intensifiers are not interchangeable",
+  "ar": "أدوات التوكيد ليست متبادلة",
+  "unit": "c1-u3",
+  "level": "C1"
+ },
+ "c1.lex.precision": {
+  "en": "Near-synonyms carry different pictures",
+  "ar": "المترادفات تحمل صوراً مختلفة",
+  "unit": "c1-u3",
+  "level": "C1"
+ },
+ "c1.np.premod": {
+  "en": "Stacked modifiers before the noun",
+  "ar": "تراكم الوصف قبل الاسم",
+  "unit": "c1-u4",
+  "level": "C1"
+ },
+ "c1.np.reduced": {
+  "en": "Reduced relative clauses",
+  "ar": "الجمل الموصولة المختصرة",
+  "unit": "c1-u4",
+  "level": "C1"
+ },
+ "c1.np.participle": {
+  "en": "Participle clauses that open a sentence",
+  "ar": "جمل اسم الفاعل في مطلع الجملة",
+  "unit": "c1-u4",
+  "level": "C1"
+ },
+ "c1.discourse.signpost": {
+  "en": "Telling the reader what is coming",
+  "ar": "إخبار القارئ بما هو آت",
+  "unit": "c1-u5",
+  "level": "C1"
+ },
+ "c1.discourse.concession": {
+  "en": "Conceding without surrendering",
+  "ar": "التنازل دون استسلام",
+  "unit": "c1-u5",
+  "level": "C1"
+ },
+ "c1.discourse.hedgeScope": {
+  "en": "Limiting a claim precisely",
+  "ar": "تحديد نطاق الادعاء بدقة",
+  "unit": "c1-u5",
+  "level": "C1"
+ },
+ "c1.implication.damning": {
+  "en": "Praise that is not praise",
+  "ar": "مدحٌ ليس بمدح",
+  "unit": "c1-u6",
+  "level": "C1"
+ },
+ "c1.implication.presupposition": {
+  "en": "What a sentence takes for granted",
+  "ar": "ما تفترضه الجملة سلفاً",
+  "unit": "c1-u6",
+  "level": "C1"
+ },
+ "c1.implication.institutional": {
+  "en": "The language of institutions",
+  "ar": "لغة المؤسسات",
+  "unit": "c1-u6",
+  "level": "C1"
+ },
+ "c1.register.shift": {
+  "en": "One message, three registers",
+  "ar": "رسالة واحدة بثلاثة مستويات",
+  "unit": "c1-u7",
+  "level": "C1"
+ },
+ "c1.register.euphemism": {
+  "en": "Euphemism: kindness and evasion",
+  "ar": "التلطيف بين المراعاة والتهرّب",
+  "unit": "c1-u7",
+  "level": "C1"
+ },
+ "c1.register.directness": {
+  "en": "Calibrating directness",
+  "ar": "معايرة الصراحة",
+  "unit": "c1-u7",
+  "level": "C1"
+ },
+ "c1.critique.claims": {
+  "en": "Claim, evidence, assumption",
+  "ar": "الدعوى والدليل والافتراض",
+  "unit": "c1-u8",
+  "level": "C1"
+ },
+ "c1.critique.reasoning": {
+  "en": "Moves that look like arguments",
+  "ar": "حركات تبدو حجّة وليست كذلك",
+  "unit": "c1-u8",
+  "level": "C1"
+ },
+ "c1.critique.writing": {
+  "en": "Writing a critique people accept",
+  "ar": "كتابة نقد يُقبل",
+  "unit": "c1-u8",
+  "level": "C1"
+ },
+ "c2.naturalness": {
+  "en": "Correct is not the same as natural",
+  "ar": "الصحيح ليس بالضرورة طبيعياً",
+  "unit": "c2-u1",
+  "level": "C2"
+ },
+ "c2.idiom": {
+  "en": "Idiom used well — and badly",
+  "ar": "استخدام التعبير الاصطلاحي",
+  "unit": "c2-u1",
+  "level": "C2"
+ },
+ "c2.tone": {
+  "en": "Tone: distance, hedging and irony",
+  "ar": "النبرة: المسافة والتحفظ والسخرية",
+  "unit": "c2-u1",
+  "level": "C2"
+ },
+ "c2.discourse": {
+  "en": "Shaping a paragraph",
+  "ar": "بناء الفقرة",
+  "unit": "c2-u1",
+  "level": "C2"
+ },
+ "c2.connotation.loaded": {
+  "en": "The same fact, a different word",
+  "ar": "الحقيقة ذاتها بكلمة مختلفة",
+  "unit": "c2-u2",
+  "level": "C2"
+ },
+ "c2.connotation.agency": {
+  "en": "Who is doing what to whom",
+  "ar": "من يفعل بمن",
+  "unit": "c2-u2",
+  "level": "C2"
+ },
+ "c2.connotation.numbers": {
+  "en": "Framing without adjectives",
+  "ar": "التأطير بلا صفات",
+  "unit": "c2-u2",
+  "level": "C2"
+ },
+ "c2.irony.understatement": {
+  "en": "Saying less to mean more",
+  "ar": "أن تقول أقل لتعني أكثر",
+  "unit": "c2-u3",
+  "level": "C2"
+ },
+ "c2.irony.markers": {
+  "en": "How irony announces itself",
+  "ar": "كيف تُعلن السخرية عن نفسها",
+  "unit": "c2-u3",
+  "level": "C2"
+ },
+ "c2.irony.deadpan": {
+  "en": "Deadpan and the risks it carries",
+  "ar": "الدعابة الجافة ومخاطرها",
+  "unit": "c2-u3",
+  "level": "C2"
+ },
+ "c2.ambiguity.structural": {
+  "en": "Sentences that mean two things",
+  "ar": "جمل تحتمل معنيين",
+  "unit": "c2-u4",
+  "level": "C2"
+ },
+ "c2.ambiguity.scope": {
+  "en": "What “only” and “not” cover",
+  "ar": "مدى كلمتي only و not",
+  "unit": "c2-u4",
+  "level": "C2"
+ },
+ "c2.ambiguity.deliberate": {
+  "en": "When ambiguity is the point",
+  "ar": "حين يكون اللبس مقصوداً",
+  "unit": "c2-u4",
+  "level": "C2"
+ },
+ "c2.rhetoric.parallel": {
+  "en": "Parallel structure",
+  "ar": "التوازي في البناء",
+  "unit": "c2-u5",
+  "level": "C2"
+ },
+ "c2.rhetoric.antithesis": {
+  "en": "Contrast that sharpens",
+  "ar": "التقابل الذي يُحدّ المعنى",
+  "unit": "c2-u5",
+  "level": "C2"
+ },
+ "c2.rhetoric.cadence": {
+  "en": "Sentence length as rhythm",
+  "ar": "طول الجملة إيقاعاً",
+  "unit": "c2-u5",
+  "level": "C2"
+ },
+ "c2.cliche.dead": {
+  "en": "Dead metaphors",
+  "ar": "الاستعارات الميتة",
+  "unit": "c2-u6",
+  "level": "C2"
+ },
+ "c2.cliche.mixed": {
+  "en": "Mixed metaphors",
+  "ar": "خلط الاستعارات",
+  "unit": "c2-u6",
+  "level": "C2"
+ },
+ "c2.cliche.freshness": {
+  "en": "When a cliché is the right choice",
+  "ar": "متى يكون المبتذل هو الصواب",
+  "unit": "c2-u6",
+  "level": "C2"
+ },
+ "c2.voice.free": {
+  "en": "Whose thought is this?",
+  "ar": "فكرةُ مَن هذه؟",
+  "unit": "c2-u7",
+  "level": "C2"
+ },
+ "c2.voice.attribution": {
+  "en": "Reporting without endorsing",
+  "ar": "النقل دون تبنٍّ",
+  "unit": "c2-u7",
+  "level": "C2"
+ },
+ "c2.voice.distance": {
+  "en": "Authorial distance",
+  "ar": "مسافة الكاتب",
+  "unit": "c2-u7",
+  "level": "C2"
+ },
+ "c2.edit.cutting": {
+  "en": "What to cut first",
+  "ar": "ما تحذفه أولاً",
+  "unit": "c2-u8",
+  "level": "C2"
+ },
+ "c2.edit.precision": {
+  "en": "Vagueness is the real enemy",
+  "ar": "الغموض هو العدو الحقيقي",
+  "unit": "c2-u8",
+  "level": "C2"
+ },
+ "c2.edit.stranger": {
+  "en": "Reading it as a stranger",
+  "ar": "أن تقرأه كغريب",
+  "unit": "c2-u8",
+  "level": "C2"
+ }
+}

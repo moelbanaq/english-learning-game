@@ -21,8 +21,8 @@
 .next-card, .next-card * { text-decoration: none; }
 .next-card:active { transform: translateY(1px); }
 .next-card__icon { font-size: 1.6rem; }
-.next-card__title { font-weight: 800; font-size: 1.05rem; }
-.next-card__sub { opacity: .9; font-size: .87rem; }
+.next-card__title { font-weight: 800; font-size: 1.05rem; display: block; }
+.next-card__sub { opacity: .9; font-size: .87rem; display: block; }
 
 .mission { display: grid; gap: .45rem; }
 .mission__item { display: flex; align-items: center; gap: .6rem; font-size: .93rem; }
@@ -51,8 +51,8 @@
   font-weight: 800; font-size: .95rem; border: 1px solid color-mix(in srgb, var(--lvl) 35%, transparent);
 }
 .level-card__body { flex: 1; min-width: 0; }
-.level-card__name { font-weight: 700; }
-.level-card__meta { font-size: .82rem; color: var(--text-muted); }
+.level-card__name { font-weight: 700; display: block; }
+.level-card__meta { font-size: .82rem; color: var(--text-muted); display: block; margin-bottom: .3rem; }
 .level-card__units { border-block-start: 1px solid var(--border); padding: .6rem; display: grid; gap: .45rem; background: var(--bg); }
 
 .unit-row { display: flex; align-items: center; gap: .7rem; width: 100%; text-align: start;
@@ -63,8 +63,8 @@
 .unit-row.is-done .unit-row__n { background: var(--success); color: #fff; }
 .unit-row.is-current { border-color: var(--accent); background: var(--accent-soft); }
 .unit-row__body { flex: 1; min-width: 0; }
-.unit-row__title { font-weight: 650; font-size: .96rem; }
-.unit-row__meta { font-size: .78rem; color: var(--text-muted); }
+.unit-row__title { font-weight: 650; font-size: .96rem; display: block; }
+.unit-row__meta { font-size: .78rem; color: var(--text-muted); display: block; }
 
 /* ---------- Lesson (teach) ---------- */
 .lesson__nav { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-top: 1rem; }

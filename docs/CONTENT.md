@@ -132,11 +132,23 @@ is still answered one at a time, with the passage shown above it.
 Selection targets difficulty to the learner's current strength, so a unit needs a spread —
 not all 2s.
 
-## 6. Checklist before committing
+## 6. After adding or renaming a concept
+
+Regenerate the concept index, which lets the dashboard, stats and review screens name a
+concept without downloading the unit file it lives in:
 
 ```bash
-npm test          # content validity + engine tests
-npm start         # click through the new unit yourself
+node tools/build-concept-index.mjs
+```
+
+`npm test` fails if the index has drifted, and tells you to run this.
+
+## 7. Checklist before committing
+
+```bash
+node tools/build-concept-index.mjs   # if you added or renamed a concept
+npm test                             # content validity + engine tests
+npm start                            # click through the new unit yourself
 ```
 
 Then play the unit as a learner: study it, practise it, deliberately answer wrongly, and

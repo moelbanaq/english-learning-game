@@ -214,6 +214,9 @@ main { flex: 1; }
 .tiny { font-size: .78rem; }
 .center { text-align: center; }
 .hidden { display: none !important; }
+/* A class like `display: grid` outranks the browser's own [hidden] rule, so any
+   element toggled with `el.hidden = true` stays on screen. Restore the intent. */
+[hidden] { display: none !important; }
 .nowrap { white-space: nowrap; }
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 

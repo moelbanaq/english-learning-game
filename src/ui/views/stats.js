@@ -6,9 +6,10 @@ import { bar, emptyState } from '../components/bits.js';
 import { getState, dayKey } from '../../core/store.js';
 import { stateFor, STATE_LABEL, masteryBreakdown } from '../../engine/mastery.js';
 import { ACHIEVEMENTS, totalAnswered, totalCorrect, rankProgress } from '../../engine/xp.js';
-import { findConceptTitle, LEVEL_META } from '../../data/content.js';
+import { findConceptTitle, LEVEL_META, loadConceptIndex } from '../../data/content.js';
 
 export async function statsView() {
+  await loadConceptIndex();
   const state = getState();
   const answered = totalAnswered(state);
   const correct = totalCorrect(state);
@@ -17,7 +18,11 @@ export async function statsView() {
   const concepts = Object.values(state.concepts);
   const breakdown = masteryBreakdown(concepts);
 
-  if (!answered) {
+  // Gate on any evidence of activity, not just question records: an imported backup or a
+  // pruned history should never hide a learner's XP, streak and completed units.
+  const hasActivity = answered > 0 || concepts.length > 0 || state.history.length > 0
+    || state.profile.xp > 0 || Object.keys(state.units).length > 0;
+  if (!hasActivity) {
     setView(page([pageHead(t('stats.title')), emptyState('📈', t('stats.noData'),
       el('a.btn.btn--primary', { href: '#/learn' }, t('nav.learn')))]));
     return;

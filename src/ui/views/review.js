@@ -4,12 +4,13 @@ import { t, lang } from '../../core/i18n.js';
 import { setView, page, pageHead, confirmDialog } from '../app.js';
 import { bilingual, emptyState, loading } from '../components/bits.js';
 import { getState, update } from '../../core/store.js';
-import { getUnits, findConceptTitle } from '../../data/content.js';
+import { getUnits, findConceptTitle, loadConceptIndex } from '../../data/content.js';
 import { dueConceptIds } from '../../engine/select.js';
 import { correctText } from '../../engine/grade.js';
 
 export async function reviewView() {
   setView(page(loading()));
+  await loadConceptIndex();
   const state = getState();
   const all = Object.values(state.mistakes);
   const open = all.filter((m) => m.status === 'open');

@@ -196,7 +196,60 @@ try {
   await page.waitForSelector('.runner');
   check('placement test produces a recommended level', await playSession(page, 60));
 
-  /* ---------- 10. Shuffled options still grade correctly ---------- */
+  /* ---------- 10. The app at full content scale ---------- */
+  // These four all regressed once the curriculum grew to 48 units and were invisible
+  // until the app was driven with a realistic mid-course profile.
+  {
+    const scale = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await scale.addInitScript(() => {
+      const now = Date.now();
+      const s = { version: 1, createdAt: now, updatedAt: now, onboarded: true,
+        settings: { uiLang: 'en', explainLang: 'both', theme: 'system', dailyGoal: 30, sound: false },
+        profile: { level: 'B2', unlocked: ['A1', 'A2', 'B1', 'B2'], xp: 4200, placement: null },
+        streak: { current: 12, best: 19, lastDay: new Date().toISOString().slice(0, 10), days: {} },
+        daily: { day: null, learned: 0, answered: 0, reviewed: 0, tests: 0, xp: 0, claimed: false },
+        units: {}, concepts: {}, questions: {}, mistakes: {}, history: [], achievements: {} };
+      // A learner with XP, units and concepts but no per-question records — the shape an
+      // imported or migrated backup takes.
+      s.units['b1-u1'] = { started: now, conceptsSeen: ['x'], practiced: 2, testBest: 82,
+        testLast: 82, attempts: 1, completedAt: now };
+      s.concepts['a1.be.affirmative'] = { seen: 6, correct: 3, wrong: 3, strength: 40,
+        state: 'familiar', streak: 1, reps: 2, ease: 2.3, intervalDays: 2, dueAt: now - 86400000, lastSeen: now };
+      s.history.push({ at: now, type: 'test', unitId: 'b1-u1', level: 'B1', correct: 8, total: 10, xp: 95 });
+      localStorage.setItem('masar.v1.progress', JSON.stringify(s));
+    });
+    const sp = await scale.newPage();
+
+    await sp.goto(base + '#/learn', { waitUntil: 'networkidle' });
+    await sleep(700);
+    const openUnits = await sp.locator('.unit-row:visible').count();
+    check('the learning path opens one level, not all six', openUnits > 0 && openUnits <= 10,
+      `${openUnits} unit rows visible`);
+
+    const runTogether = await sp.evaluate(() => {
+      const row = document.querySelector('.unit-row__body');
+      if (!row) return 'no row';
+      const title = row.querySelector('.unit-row__title');
+      const meta = row.querySelector('.unit-row__meta');
+      return title && meta ? (title.getBoundingClientRect().bottom <= meta.getBoundingClientRect().top + 1) : 'missing';
+    });
+    check('unit title and question count are on separate lines', runTogether === true, String(runTogether));
+
+    await sp.goto(base + '#/', { waitUntil: 'networkidle' });
+    await sleep(800);
+    const weakNames = await sp.locator('.rowcard__title').allInnerTexts();
+    check('concept names are titles, not raw ids', !weakNames.some((n) => /^[a-c][12]\.[a-z]/.test(n.trim())),
+      weakNames.slice(0, 2).join(' | '));
+
+    await sp.goto(base + '#/stats', { waitUntil: 'networkidle' });
+    await sleep(800);
+    const statsBody = await sp.locator('.page').innerText();
+    check('stats show progress for a learner with XP but no question records',
+      !statsBody.includes('Answer a few questions'), statsBody.slice(0, 60));
+    await scale.close();
+  }
+
+  /* ---------- 11. Shuffled options still grade correctly ---------- */
   // Authors naturally put the correct answer first, so the UI shuffles options. This
   // proves the shuffle does not break the mapping back to the content file, and that
   // the correct answer really does move around.
@@ -247,7 +300,7 @@ try {
       `appeared in ${positions.size} distinct positions`);
   }
 
-  /* ---------- 11. Desktop layout ---------- */
+  /* ---------- 12. Desktop layout ---------- */
   const wide = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const desk = await wide.newPage();
   await desk.goto(base, { waitUntil: 'networkidle' });

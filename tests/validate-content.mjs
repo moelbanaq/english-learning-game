@@ -186,6 +186,24 @@ for (const level of curriculum.levels) {
   }
 }
 
+// The generated concept index must match the units exactly, or the dashboard, stats and
+// review screens will show raw ids like "a1.be.affirmative" instead of a title.
+if (!existsSync(join(CONTENT, 'concept-index.json'))) {
+  err('concept-index', 'concept-index.json is missing — run: node tools/build-concept-index.mjs');
+} else {
+  const index = readJSON('concept-index.json');
+  const built = (await import('../tools/build-concept-index.mjs')).buildIndex();
+  const inIndex = new Set(Object.keys(index));
+  const inUnits = new Set(Object.keys(built));
+  for (const id of inUnits) {
+    if (!inIndex.has(id)) err('concept-index', `missing "${id}" — run: node tools/build-concept-index.mjs`);
+    else if (index[id].en !== built[id].en) err('concept-index', `stale title for "${id}" — run: node tools/build-concept-index.mjs`);
+  }
+  for (const id of inIndex) {
+    if (!inUnits.has(id)) err('concept-index', `"${id}" no longer exists — run: node tools/build-concept-index.mjs`);
+  }
+}
+
 // Placement test
 if (!existsSync(join(CONTENT, 'placement.json'))) err('placement', 'placement.json is missing');
 else {

@@ -7,7 +7,7 @@ import { renderQuestion } from '../components/question.js';
 import { navigate } from '../../core/router.js';
 import { recordAnswer, recordSession, PASS_MARK } from '../../engine/record.js';
 import { buildPractice, buildTest, buildReview, buildDaily } from '../../data/sessions.js';
-import { findConceptTitle } from '../../data/content.js';
+import { findConceptTitle, loadConceptIndex } from '../../data/content.js';
 import { correctText } from '../../engine/grade.js';
 
 const TITLES = {
@@ -110,6 +110,7 @@ export function runSession(session) {
 
   async function finish() {
     if (activeQuestion) activeQuestion.destroy();
+    await loadConceptIndex();
     const correct = answers.filter((a) => a.correct).length;
     const units = session.unit ? await unitsOfLevel(session.unit.level) : [];
     const outcome = recordSession({

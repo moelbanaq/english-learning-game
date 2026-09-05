@@ -7,7 +7,7 @@ import { getState, ensureToday, update } from '../../core/store.js';
 import { rankProgress, dailyTasks } from '../../engine/xp.js';
 import { weakConcepts, dueConceptIds } from '../../engine/select.js';
 import { nextAction } from '../../data/sessions.js';
-import { findConceptTitle, LEVEL_META, getLevelUnitMetas } from '../../data/content.js';
+import { findConceptTitle, LEVEL_META, getLevelUnitMetas, loadConceptIndex } from '../../data/content.js';
 import { stateFor } from '../../engine/mastery.js';
 
 const NEXT_COPY = {
@@ -23,6 +23,7 @@ export async function homeView() {
   update((s) => { ensureToday(s); }, 'day-roll');
 
   const state = getState();
+  await loadConceptIndex();
   const action = await nextAction(state);
   const units = await getLevelUnitMetas(state.profile.level);
   const doneUnits = units.filter((u) => state.units[u.id] && state.units[u.id].completedAt).length;
@@ -66,7 +67,6 @@ export async function homeView() {
       el('span.next-card__icon', { 'aria-hidden': 'true' }, copy.icon),
       el('span', [
         el('span.next-card__title', copy[lang()] || copy.en),
-        el('br'),
         el('span.next-card__sub', sub),
       ]),
     ]),
