@@ -2,6 +2,10 @@
  * Placement test — estimates a starting level from real questions.
  * It deliberately does not write concept/mistake progress: it is a measurement,
  * not a lesson, and a bad guess here should not poison the learner's history.
+ *
+ * The flow is adaptive (see src/engine/placement.js): one block of questions per
+ * level, walking up from A1 and stopping at the first block the learner cannot
+ * clear. A beginner answers four questions instead of the whole bank.
  */
 import { el, mount } from '../../core/dom.js';
 import { t, lang } from '../../core/i18n.js';
@@ -12,6 +16,9 @@ import { getPlacementTest, LEVELS, LEVEL_META } from '../../data/content.js';
 import { recordPlacement } from '../../engine/record.js';
 import { update } from '../../core/store.js';
 import { navigate } from '../../core/router.js';
+import {
+  BLOCK_SIZE, blockFor, afterBlock, recommendLevel, securedLevels,
+} from '../../engine/placement.js';
 
 export async function placementView() {
   setView(page(loading()), { hideNav: true });
@@ -32,16 +39,19 @@ export async function placementView() {
 }
 
 function run(test) {
-  // Ordered easiest → hardest so the learner meets their ceiling naturally.
-  const questions = test.questions.slice().sort(
-    (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || (a.difficulty || 2) - (b.difficulty || 2),
-  );
-  const results = [];
+  // One seed for the whole test, so a block is stable if the view re-renders.
+  const seed = Date.now();
+  /** @type {Array<{level: string, correct: number, asked: number}>} */
+  const blocks = [];
+  let level = LEVELS[0];
+  let queue = blockFor(test.questions, level, seed);
   let i = 0;
+  let blockCorrect = 0;
+  let totalCorrect = 0;
   let active = null;
 
   const host = el('div');
-  const counter = el('span.chip', `1/${questions.length}`);
+  const counter = el('span.chip', { dataset: { level } }, [el('span.level-dot'), `1/${BLOCK_SIZE}`]);
   const progress = el('div.bar', el('div.bar__fill', { style: { width: '0%' } }));
 
   setView(page([
@@ -57,80 +67,92 @@ function run(test) {
 
   function show() {
     if (active) active.destroy();
-    const q = questions[i];
-    counter.textContent = `${i + 1}/${questions.length}`;
-    progress.querySelector('.bar__fill').style.width = `${(i / questions.length) * 100}%`;
+    const q = queue[i];
+    // The bar tracks the current block, not the whole test: the test can end after
+    // any block, so a bar promising six blocks would be a lie for most learners.
+    mount(counter, [el('span.level-dot'), `${level} · ${i + 1}/${queue.length}`]);
+    counter.dataset.level = level;
+    progress.querySelector('.bar__fill').style.width = `${(i / queue.length) * 100}%`;
 
     active = renderQuestion({
       question: q,
       index: i,
-      total: questions.length,
-      onCheck: (r) => results.push({ level: q.level, correct: r.correct }),
-      onNext: () => { i += 1; if (i >= questions.length) finish(); else show(); },
+      total: queue.length,
+      onCheck: (r) => { if (r.correct) { blockCorrect += 1; totalCorrect += 1; } },
+      onNext: advance,
     });
 
     const skip = el('button.btn.btn--ghost.btn--block', {
       type: 'button',
-      onClick: () => {
-        results.push({ level: q.level, correct: false });
-        i += 1;
-        if (i >= questions.length) finish(); else show();
-      },
+      onClick: advance,
     }, t('place.dontKnow'));
 
     mount(host, [active.node, el('div', { style: { marginTop: '.4rem' } }, skip)]);
   }
 
+  function advance() {
+    i += 1;
+    if (i < queue.length) { show(); return; }
+    endBlock();
+  }
+
+  function endBlock() {
+    if (active) { active.destroy(); active = null; }
+    blocks.push({ level, correct: blockCorrect, asked: queue.length });
+    const { passed, next } = afterBlock(level, blockCorrect);
+    if (!passed || !next) { finish(); return; }
+    const cleared = level;
+    level = next;
+    queue = blockFor(test.questions, level, seed);
+    i = 0;
+    blockCorrect = 0;
+    if (!queue.length) { finish(); return; }
+    interstitial(cleared, level);
+  }
+
+  function interstitial(cleared, upcoming) {
+    progress.querySelector('.bar__fill').style.width = '100%';
+    mount(host, el('div.card.place-step', [
+      el('div.place-step__level', { dataset: { level: cleared }, style: { color: 'var(--lvl)' } }, cleared),
+      el('h2', { style: { marginTop: '.5rem' } }, t('place.cleared', { lvl: cleared })),
+      el('p.muted', t('place.clearedSub', { lvl: upcoming })),
+      el('button.btn.btn--primary.btn--lg.btn--block', {
+        type: 'button', style: { marginTop: '.8rem' }, onClick: show,
+      }, t('place.continue')),
+    ]));
+  }
+
   function finish() {
-    if (active) active.destroy();
-    const level = estimateLevel(results);
-    const correct = results.filter((r) => r.correct).length;
-    showResult(level, correct, results.length, results);
+    const asked = blocks.reduce((n, b) => n + b.asked, 0);
+    showResult(recommendLevel(blocks), totalCorrect, asked, blocks);
   }
 }
 
-/**
- * Walk up the levels; the recommended start is the first level the learner has
- * not yet secured (>=60% correct). Ace everything and you land on C2.
- */
-export function estimateLevel(results) {
-  const byLevel = new Map();
-  for (const r of results) {
-    const item = byLevel.get(r.level) || { correct: 0, total: 0 };
-    item.total += 1;
-    if (r.correct) item.correct += 1;
-    byLevel.set(r.level, item);
-  }
-  for (const lv of LEVELS) {
-    const item = byLevel.get(lv);
-    if (!item || !item.total) continue;
-    if (item.correct / item.total < 0.6) return lv;
-  }
-  return LEVELS[LEVELS.length - 1];
-}
-
-function showResult(level, correct, total, results) {
-  const perLevel = LEVELS.map((lv) => {
-    const items = results.filter((r) => r.level === lv);
-    if (!items.length) return null;
-    const c = items.filter((r) => r.correct).length;
-    return { lv, c, n: items.length };
-  }).filter(Boolean);
+function showResult(level, correct, total, blocks) {
+  const secured = securedLevels(blocks);
+  // "Topped out" means every level in the bank was cleared; otherwise the recommended
+  // level is exactly the block that stopped them, and saying so makes the number mean something.
+  const toppedOut = secured.length === LEVELS.length;
+  const summary = secured.length
+    ? t('place.secured', { levels: secured.join(', ') })
+    : t('place.securedNone');
 
   setView(page([
     el('div.card.result-hero', [
       el('div.result-hero__score', { dataset: { level }, style: { color: 'var(--lvl)' } }, level),
       el('h2', { style: { marginTop: '.5rem' } }, t('place.result', { lvl: level })),
       el('p.muted', `${correct}/${total} · ${LEVEL_META[level].name[lang()] || level}`),
+      el('p.small.muted', toppedOut ? t('place.ceilingTop') : t('place.ceiling', { lvl: level })),
       el('p.small.muted', t('place.resultSub')),
     ]),
 
     el('div.card', { style: { marginTop: '.8rem' } }, [
-      el('div.card__label', t('stats.accuracy')),
-      el('div', { style: { marginTop: '.4rem' } }, perLevel.map((p) => el('div.concept-row', [
-        el('span.chip', { dataset: { level: p.lv } }, [el('span.level-dot'), p.lv]),
-        el('span.concept-row__name.small.muted', `${p.c}/${p.n}`),
-        el('span.concept-row__bar', el('div.bar.bar--thin', el('div.bar__fill', { style: { width: `${(p.c / p.n) * 100}%` } }))),
+      el('div.card__label', t('place.byLevel')),
+      el('p.small.muted', { style: { marginTop: '.2rem' } }, summary),
+      el('div', { style: { marginTop: '.4rem' } }, blocks.map((b) => el('div.concept-row', [
+        el('span.chip', { dataset: { level: b.level } }, [el('span.level-dot'), b.level]),
+        el('span.concept-row__name.small.muted', `${b.correct}/${b.asked}`),
+        el('span.concept-row__bar', el('div.bar.bar--thin', el('div.bar__fill', { style: { width: `${(b.correct / b.asked) * 100}%` } }))),
       ]))),
     ]),
 

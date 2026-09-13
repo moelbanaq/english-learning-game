@@ -215,7 +215,10 @@ else {
   }
   for (const lv of levels) {
     const n = (placement.questions || []).filter((q) => q.level === lv).length;
-    if (n < 3) err('placement', `level ${lv} has only ${n} question(s) — needs at least 3`);
+    // The placement test draws a block of four per level; a short level would be
+    // easier to clear than the others, which quietly skews the recommendation.
+    if (n < 4) err('placement', `level ${lv} has only ${n} question(s) — a block needs 4`);
+    else if (n < 6) warn('placement', `level ${lv} has ${n} questions — with only 4 drawn, 6+ keeps retakes from repeating`);
   }
 }
 

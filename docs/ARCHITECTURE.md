@@ -36,7 +36,7 @@ drifts from the units.
 content/*.json          ← curriculum, teaching text, question banks
       ↓  data/content.js (lazy loader + hydration)
       ↓  data/sessions.js (what goes into a session)
-engine/*                ← pure logic: grading, mastery, SRS, selection, XP
+engine/*                ← pure logic: grading, mastery, SRS, selection, placement, XP
       ↓  engine/record.js (the only writer of learner progress)
 core/store.js           ← versioned state + persistence + migrations
       ↓
@@ -91,6 +91,21 @@ on one idea) and ordered easy → hard so a session starts winnable.
 
 Mini tests use a different picker: even coverage of every concept in the unit, shuffled,
 because a test measures rather than teaches.
+
+### Placement (`engine/placement.js`)
+The placement test is a ladder, not a questionnaire. It asks a block of four questions at
+A1 and moves up only if the learner gets three of them right; the first block they cannot
+clear ends the test and becomes the recommended starting level.
+
+Two decisions are deliberate:
+
+- **2 of 4 fails.** Placing someone slightly low is recoverable — they can move up in one
+  tap, and the early material feels easy. Placing them too high is where people quit.
+- **Early stop.** A beginner answers four questions instead of thirty-six. Only a learner
+  heading for C2 sees the full twenty-four, and by then they are enjoying it.
+
+The module is pure: it takes the question bank and a list of finished blocks and returns
+which block comes next and what to recommend. The view owns the DOM and nothing else.
 
 ### Mistakes
 A wrong answer creates a mistake record holding the question, concept, unit and how many

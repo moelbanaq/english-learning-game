@@ -71,9 +71,56 @@ async function answerCurrent(page, wrongly = false) {
 }
 
 /** Play a whole session through to the results screen. */
+/**
+ * Drive the placement test deliberately, rather than by clicking the first option:
+ * the runner shuffles options, so "right" and "wrong" have to be looked up in the
+ * bank. Questions are identified by their option set, which is unique per question.
+ */
+async function playPlacement(page, questions, correctly, max) {
+  const key = (opts) => opts.map((o) => String(o).trim()).sort().join('\u0000');
+  const byOptions = new Map(questions.filter((q) => q.options).map((q) => [key(q.options), q]));
+  let answered = 0;
+  let steps = 0;
+
+  for (let i = 0; i < max; i++) {
+    if (await page.locator('.result-hero').isVisible().catch(() => false)) break;
+    if (await page.locator('.place-step').isVisible().catch(() => false)) {
+      steps += 1;
+      await page.locator('.place-step button').first().click();
+      await sleep(120);
+      continue;
+    }
+    if (await page.locator('.feedback').isVisible().catch(() => false)) {
+      await page.locator('.runner__footer button:not(.hidden)').last().click();
+      await sleep(80);
+      continue;
+    }
+    const shown = await page.locator('.opt .opt__text').allInnerTexts();
+    const q = byOptions.get(key(shown));
+    if (!q) throw new Error(`placement: no bank question matches [${shown.join(' | ')}]`);
+    const wanted = correctly
+      ? q.options[q.answer]
+      : q.options.find((_, idx) => idx !== q.answer);
+    const idx = shown.findIndex((text) => text.trim() === String(wanted).trim());
+    await page.locator('.opt').nth(idx).click();
+    await page.locator('.runner__footer button:not(.hidden)').first().click();
+    answered += 1;
+    await sleep(80);
+  }
+
+  const level = (await page.locator('.result-hero__score').innerText().catch(() => '')).trim();
+  const rows = await page.locator('.concept-row').count();
+  return { answered, steps, level, rows };
+}
+
 async function playSession(page, max = 40, wrongly = false) {
   for (let i = 0; i < max; i++) {
     if (await page.locator('.result-hero').isVisible().catch(() => false)) return true;
+    if (await page.locator('.place-step').isVisible().catch(() => false)) {
+      await page.locator('.place-step button').first().click();
+      await sleep(80);
+      continue;
+    }
     if (await page.locator('.feedback').isVisible().catch(() => false)) {
       const next = page.locator('.runner__footer button:not(.hidden)').last();
       if (await next.isVisible().catch(() => false)) await next.click();
@@ -191,10 +238,29 @@ try {
   await sleep(200);
 
   /* ---------- 9. Placement test ---------- */
+  // The test is adaptive, so the two runs worth checking are the extremes: someone
+  // who cannot clear A1 must not be marched through 36 questions, and someone who
+  // clears everything must actually reach C2.
+  const bank = await page.evaluate(() => fetch('content/placement.json').then((r) => r.json()));
+
   await page.goto(base + '#/placement', { waitUntil: 'networkidle' });
   await page.locator('button.btn--primary').first().click();
   await page.waitForSelector('.runner');
-  check('placement test produces a recommended level', await playSession(page, 60));
+  const wrongRun = await playPlacement(page, bank.questions, false, 30);
+  check('failing the first block ends the test', wrongRun.answered === 4, `${wrongRun.answered} questions`);
+  check('a learner who fails A1 is placed at A1', wrongRun.level === 'A1', wrongRun.level);
+  check('no level-cleared screen is shown after a failed block', wrongRun.steps === 0, `${wrongRun.steps} shown`);
+
+  // A second goto to the same hash would not re-render, so leave the route first.
+  await page.goto(base + '#/', { waitUntil: 'networkidle' });
+  await page.goto(base + '#/placement', { waitUntil: 'networkidle' });
+  await page.locator('button.btn--primary').first().click();
+  await page.waitForSelector('.runner');
+  const rightRun = await playPlacement(page, bank.questions, true, 120);
+  check('answering everything correctly reaches C2', rightRun.level === 'C2', rightRun.level);
+  check('every level is tested on the way up', rightRun.answered === 24, `${rightRun.answered} questions`);
+  check('each cleared level is announced', rightRun.steps === 5, `${rightRun.steps} shown`);
+  check('the result breaks the score down by level', rightRun.rows === 6, `${rightRun.rows} rows`);
 
   /* ---------- 10. The app at full content scale ---------- */
   // These four all regressed once the curriculum grew to 48 units and were invisible

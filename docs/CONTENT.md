@@ -143,7 +143,26 @@ node tools/build-concept-index.mjs
 
 `npm test` fails if the index has drifted, and tells you to run this.
 
-## 7. Checklist before committing
+## 7. The placement test
+
+`content/placement.json` is a separate bank with its own rules. The test is adaptive: it
+draws a block of four questions per level, starting at A1, and stops at the first block
+the learner cannot clear (3 of 4 correct). Someone who cannot handle A1 answers four
+questions; only a C2 candidate sees all twenty-four.
+
+That shape constrains the content:
+
+- **Every level needs at least four questions**, or its block would be short and therefore
+  easier to clear than the rest. The validator fails on fewer than four and warns below six.
+- **Six or more per level** is the target, so a retake is not the same four questions.
+- **Every question must be answerable from the level it is tagged with.** A B1 question that
+  quietly needs B2 vocabulary pushes a learner down a level for the wrong reason.
+- **No teaching.** Placement questions are a measurement; a short explanation is still
+  required, but the learner sees it only in review.
+
+Difficulty inside a block ramps 1→5, so tag `difficulty` honestly — the block is sorted by it.
+
+## 8. Checklist before committing
 
 ```bash
 node tools/build-concept-index.mjs   # if you added or renamed a concept

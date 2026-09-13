@@ -45,7 +45,7 @@ index.html                 the whole app shell
 assets/css/                design tokens, components, view styles
 src/
   core/       dom, router, store (progress), storage adapter, i18n
-  engine/     grading, mastery + spaced repetition, adaptive selection, XP, recording
+  engine/     grading, mastery + spaced repetition, adaptive selection, placement, XP, recording
   data/       content loader, session builders
   ui/         app shell, question renderer, views
 content/

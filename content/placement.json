@@ -2,8 +2,8 @@
   "id": "placement",
   "title": { "en": "Placement test", "ar": "اختبار تحديد المستوى" },
   "description": {
-    "en": "24 questions from A1 to C2. Your answers estimate the best level to start from.",
-    "ar": "٢٤ سؤالاً من A1 إلى C2، وتُقدّر إجاباتك أنسب مستوى تبدأ منه."
+    "en": "Four questions per level, starting at A1. The test stops as soon as a level is too hard, so most learners answer far fewer than the full set.",
+    "ar": "أربعة أسئلة لكل مستوى، تبدأ من A1. يتوقف الاختبار فور بلوغك مستوى أصعب مما تتقنه، فيجيب معظم المتعلمين عن عدد أقل بكثير من الأسئلة."
   },
   "questions": [
     { "id": "pl-a1-1", "level": "A1", "concept": "placement.a1", "type": "choice", "format": "fill_blank", "difficulty": 1,
@@ -18,6 +18,12 @@
     { "id": "pl-a1-4", "level": "A1", "concept": "placement.a1", "type": "choice", "format": "fill_blank", "difficulty": 2,
       "sentence": "I ___ like coffee in the evening.", "options": ["don't", "doesn't", "am not", "not"], "answer": 0,
       "explanation": { "en": "Negative with I → don't.", "ar": "النفي مع I يكون بـ don't." } },
+    { "id": "pl-a1-5", "level": "A1", "concept": "placement.a1", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I have two ___ at school.", "options": ["children", "childrens", "childs", "child"], "answer": 0,
+      "explanation": { "en": "“Child” has the irregular plural “children”.", "ar": "جمع child غير قياسي وهو children." } },
+    { "id": "pl-a1-6", "level": "A1", "concept": "placement.a1", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "The meeting is ___ Monday morning.", "options": ["on", "in", "at", "of"], "answer": 0,
+      "explanation": { "en": "Days take “on”, even with a part of the day attached.", "ar": "أيام الأسبوع تأخذ on حتى مع إضافة جزء من اليوم." } },
 
     { "id": "pl-a2-1", "level": "A2", "concept": "placement.a2", "type": "choice", "format": "fill_blank", "difficulty": 2,
       "sentence": "We ___ to Istanbul last summer.", "options": ["went", "goed", "have gone", "go"], "answer": 0,
@@ -31,6 +37,12 @@
     { "id": "pl-a2-4", "level": "A2", "concept": "placement.a2", "type": "choice", "format": "phrasal", "difficulty": 3,
       "sentence": "I'm ___ my glasses. Have you seen them?", "options": ["looking for", "looking after", "looking at", "giving up"], "answer": 0,
       "explanation": { "en": "look for = search for.", "ar": "look for تعني البحث عن." } },
+    { "id": "pl-a2-5", "level": "A2", "concept": "placement.a2", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Be quiet — the baby ___ right now.", "options": ["is sleeping", "sleeps", "will sleep", "has slept"], "answer": 0,
+      "explanation": { "en": "Something happening at this moment → present continuous.", "ar": "الحدث الجاري الآن يأخذ المضارع المستمر." } },
+    { "id": "pl-a2-6", "level": "A2", "concept": "placement.a2", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "There isn't ___ milk left in the fridge.", "options": ["much", "many", "a few", "several"], "answer": 0,
+      "explanation": { "en": "“Milk” is uncountable, and negatives take “much”.", "ar": "milk اسم غير معدود، والنفي يأخذ much." } },
 
     { "id": "pl-b1-1", "level": "B1", "concept": "placement.b1", "type": "choice", "format": "fill_blank", "difficulty": 3,
       "sentence": "I ___ here since 2020.", "options": ["have worked", "work", "worked", "am working"], "answer": 0,
@@ -50,6 +62,12 @@
       "answer": 0,
       "explanation": { "en": "A finished past time cannot take the present perfect.",
         "ar": "الزمن الماضي المنتهي لا يجتمع مع المضارع التام." } },
+    { "id": "pl-b1-5", "level": "B1", "concept": "placement.b1", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The man ___ car was stolen called the police.", "options": ["whose", "who", "which", "that"], "answer": 0,
+      "explanation": { "en": "The car belongs to the man → possessive relative “whose”.", "ar": "السيارة ملك للرجل، فنستخدم whose للملكية." } },
+    { "id": "pl-b1-6", "level": "B1", "concept": "placement.b1", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "I'm not used to ___ this early.", "options": ["getting up", "get up", "have got up", "got up"], "answer": 0,
+      "explanation": { "en": "“Used to” as an adjective is followed by -ing, not the bare verb.", "ar": "be used to يليها الفعل بصيغة -ing لا المصدر." } },
 
     { "id": "pl-b2-1", "level": "B2", "concept": "placement.b2", "type": "choice", "format": "fill_blank", "difficulty": 4,
       "sentence": "___ the delay, the team met the deadline.", "options": ["Despite", "Although", "However", "Because"], "answer": 0,
@@ -69,6 +87,12 @@
       "options": ["We apologise for the delay and will confirm a new date shortly.", "Sorry, things got messed up on our side but we'll fix it soon.", "The delay is not really our problem, so please contact the courier.", "Hey, sorry about that, will fix it soon and let you know, ok?"],
       "answer": 0,
       "explanation": { "en": "Formal, specific and accountable.", "ar": "رسمية ومحددة وتتحمّل المسؤولية." } },
+    { "id": "pl-b2-5", "level": "B2", "concept": "placement.b2", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "She suggested ___ the meeting until Friday.", "options": ["postponing", "to postpone", "postpone for", "that postpone"], "answer": 0,
+      "explanation": { "en": "“Suggest” takes -ing, never “suggest to do”.", "ar": "الفعل suggest يليه -ing ولا يقال suggest to do." } },
+    { "id": "pl-b2-6", "level": "B2", "concept": "placement.b2", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "No sooner ___ the door than the phone rang.", "options": ["had I opened", "I had opened", "did I opened", "I have opened"], "answer": 0,
+      "explanation": { "en": "A negative adverbial at the front forces inversion: auxiliary before subject.", "ar": "الظرف المنفي في أول الجملة يوجب القلب: الفعل المساعد قبل الفاعل." } },
 
     { "id": "pl-c1-1", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "collocation", "difficulty": 5,
       "sentence": "The committee will ___ a decision at its next meeting.", "options": ["make", "do", "give", "put"], "answer": 0,
@@ -89,6 +113,14 @@
       "options": ["He did a strong contribution to the debate.", "He made a valuable contribution to the debate.", "She raised an important objection to the plan.", "They drew a firm conclusion from the evidence."],
       "answer": 0,
       "explanation": { "en": "We “make” a contribution, not “do” one.", "ar": "نقول make a contribution لا do a contribution." } },
+    { "id": "pl-c1-5", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“The scheme is unlikely to have had much effect.” Which restatement keeps the same strength?", "ar": "أي إعادة صياغة تحافظ على القوة نفسها؟" },
+      "options": ["It probably had little effect.", "It definitely had no effect at all.", "It certainly had a very large effect.", "It may well have had a large effect."],
+      "answer": 0,
+      "explanation": { "en": "“Unlikely” is a hedge, so the restatement must stay hedged too.", "ar": "unlikely تعبير متحفظ، فيجب أن تبقى إعادة الصياغة متحفظة." } },
+    { "id": "pl-c1-6", "level": "C1", "concept": "placement.c1", "type": "choice", "format": "collocation", "difficulty": 5,
+      "sentence": "The auditors ___ serious doubts about the timetable.", "options": ["raised", "made", "told", "brought"], "answer": 0,
+      "explanation": { "en": "Doubts are “raised”; “made a doubt” is not English.", "ar": "الشكوك تُثار raise doubts ولا يقال make a doubt." } },
 
     { "id": "pl-c2-1", "level": "C2", "concept": "placement.c2", "type": "choice", "format": "natural", "difficulty": 5,
       "prompt": { "en": "Which sentence sounds most natural?", "ar": "أي جملة أكثر طبيعية؟" },
@@ -117,6 +149,16 @@
       "prompt": { "en": "Which opening best prepares a reader for an objection?", "ar": "أي افتتاحية تهيّئ القارئ لاعتراض؟" },
       "options": ["There is much to admire here. That said, …", "This is great and well argued. Moreover, …", "I read it carefully last night. Therefore, …", "It is fine and clearly written. Similarly, …"],
       "answer": 0,
-      "explanation": { "en": "Concede, then pivot with “that said”.", "ar": "أقرّ أولاً ثم انعطف بـ that said." } }
+      "explanation": { "en": "Concede, then pivot with “that said”.", "ar": "أقرّ أولاً ثم انعطف بـ that said." } },
+    { "id": "pl-c2-5", "level": "C2", "concept": "placement.c2", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A reviewer writes: “The author is to be commended for her ambition.” What is the likely subtext?", "ar": "ما المعنى الضمني الأرجح لهذه العبارة؟" },
+      "options": ["The ambition outran the execution.", "The book succeeds on every level.", "The author showed no real ambition.", "The reviewer never read the book."],
+      "answer": 0,
+      "explanation": { "en": "Praising only the intention is a standard way of withholding praise for the result.", "ar": "مدح النية وحدها أسلوب معروف لحجب المدح عن النتيجة." } },
+    { "id": "pl-c2-6", "level": "C2", "concept": "placement.c2", "type": "choice", "format": "choose_sentence", "difficulty": 5,
+      "prompt": { "en": "Which sentence is correct?", "ar": "أي جملة صحيحة؟" },
+      "options": ["Were it not for her, the project would have failed.", "If it were not for her, the project will have failed.", "Was it not for her, the project would have failed.", "Had it not for her, the project would have failed."],
+      "answer": 0,
+      "explanation": { "en": "Formal inversion of “if it were not for” drops “if” and fronts “were”.", "ar": "القلب الرسمي لـ if it were not for يحذف if ويقدّم were." } }
   ]
 }

@@ -3,6 +3,7 @@
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 
 import { normalize, grade, correctText, splitBlank, shuffle } from '../src/engine/grade.js';
 import { applyAnswer, stateFor, isDue, needScore, masteryBreakdown } from '../src/engine/mastery.js';
@@ -244,4 +245,71 @@ test('splitBlank handles none, one and two gaps', async () => {
   assert.deepEqual(splitBlank('She ___ happy.'), ['She ', ' happy.']);
   assert.deepEqual(splitBlank('My name ___ Layla and I ___ nineteen.'),
     ['My name ', ' Layla and I ', ' nineteen.']);
+});
+
+/* ---------------- placement ---------------- */
+
+test('a failed block ends the test and recommends that level', async () => {
+  const { afterBlock, recommendLevel } = await import('../src/engine/placement.js');
+  assert.deepEqual(afterBlock('A1', 1), { passed: false, next: null });
+  assert.equal(recommendLevel([{ level: 'A1', correct: 1, asked: 4 }]), 'A1');
+});
+
+test('a borderline block counts as a fail, placing the learner lower', async () => {
+  const { afterBlock } = await import('../src/engine/placement.js');
+  assert.equal(afterBlock('B1', 2).passed, false, '2 of 4 must not pass');
+  assert.equal(afterBlock('B1', 3).passed, true, '3 of 4 passes');
+});
+
+test('passing a block moves up, and the recommendation is the first level not secured', async () => {
+  const { afterBlock, recommendLevel, securedLevels } = await import('../src/engine/placement.js');
+  assert.deepEqual(afterBlock('A1', 4), { passed: true, next: 'A2' });
+  const blocks = [
+    { level: 'A1', correct: 4, asked: 4 },
+    { level: 'A2', correct: 3, asked: 4 },
+    { level: 'B1', correct: 1, asked: 4 },
+  ];
+  assert.equal(recommendLevel(blocks), 'B1');
+  assert.deepEqual(securedLevels(blocks), ['A1', 'A2']);
+});
+
+test('passing every block recommends C2 and stops', async () => {
+  const { afterBlock, recommendLevel } = await import('../src/engine/placement.js');
+  assert.deepEqual(afterBlock('C2', 4), { passed: true, next: null });
+  const all = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map((level) => ({ level, correct: 4, asked: 4 }));
+  assert.equal(recommendLevel(all), 'C2');
+});
+
+test('a block draws four questions of the right level, easiest first', async () => {
+  const { blockFor, BLOCK_SIZE } = await import('../src/engine/placement.js');
+  const bank = [];
+  for (const level of ['A1', 'B1']) {
+    for (let i = 0; i < 6; i++) bank.push({ id: `${level}-${i}`, level, difficulty: (i % 5) + 1 });
+  }
+  const block = blockFor(bank, 'B1', 42);
+  assert.equal(block.length, BLOCK_SIZE);
+  assert.ok(block.every((q) => q.level === 'B1'));
+  const diffs = block.map((q) => q.difficulty);
+  assert.deepEqual(diffs, [...diffs].sort((a, b) => a - b));
+});
+
+test('every level in the real bank can fill a full block', async () => {
+  const { BLOCK_SIZE, blockFor } = await import('../src/engine/placement.js');
+  const { LEVELS } = await import('../src/data/content.js');
+  const bank = JSON.parse(readFileSync(new URL('../content/placement.json', import.meta.url), 'utf8')).questions;
+  for (const level of LEVELS) {
+    // A short block would silently make that level easier to clear than the rest.
+    assert.equal(blockFor(bank, level, 7).length, BLOCK_SIZE, `${level} block is short`);
+  }
+});
+
+/* ---------------- i18n ---------------- */
+
+test('the Arabic and English string tables cover the same keys', async () => {
+  const { STRINGS } = await import('../src/core/i18n.js');
+  const en = Object.keys(STRINGS.en).sort();
+  const ar = Object.keys(STRINGS.ar).sort();
+  // A missing key falls back to English silently, so only a test catches it.
+  assert.deepEqual(ar.filter((k) => !STRINGS.en[k]), [], 'Arabic keys with no English original');
+  assert.deepEqual(en.filter((k) => !STRINGS.ar[k]), [], 'English keys with no Arabic translation');
 });

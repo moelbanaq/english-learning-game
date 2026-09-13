@@ -4,7 +4,7 @@
  */
 import { getState, update } from './store.js';
 
-const STRINGS = {
+export const STRINGS = {
   en: {
     'app.name': 'Masar English',
     'app.tagline': 'Learn English from A1 to C2 — free, no account.',
@@ -99,8 +99,16 @@ const STRINGS = {
     'welcome.begin': 'Start learning',
 
     'place.title': 'Placement test',
-    'place.sub': '~20 questions, from easy to hard. Skip anything you do not know — that is useful information too.',
+    'place.sub': 'Four questions per level, starting at A1. The test stops as soon as a level is too hard, so most people answer far fewer than the full set. Skip anything you do not know — that is useful information too.',
     'place.begin': 'Begin test',
+    'place.cleared': '{lvl} cleared',
+    'place.clearedSub': 'The next four questions step up to {lvl}.',
+    'place.continue': 'Continue',
+    'place.byLevel': 'Level by level',
+    'place.secured': 'Handled comfortably: {levels}',
+    'place.securedNone': 'A1 is the right place to build the foundations.',
+    'place.ceiling': '{lvl} is where it started to get hard, so that is where the learning begins.',
+    'place.ceilingTop': 'You cleared every level in the test.',
     'place.result': 'We recommend starting at {lvl}',
     'place.resultSub': 'You can start anywhere you like — this is only a suggestion.',
     'place.accept': 'Start at {lvl}', 'place.choose': 'Choose a different level',
@@ -207,8 +215,16 @@ const STRINGS = {
     'welcome.begin': 'ابدأ التعلّم',
 
     'place.title': 'اختبار تحديد المستوى',
-    'place.sub': 'نحو ٢٠ سؤالاً من الأسهل إلى الأصعب. تخطَّ ما لا تعرفه — هذه معلومة مفيدة أيضاً.',
+    'place.sub': 'أربعة أسئلة لكل مستوى، تبدأ من A1. يتوقف الاختبار فور بلوغك مستوى أصعب مما تتقنه، فيجيب معظم الناس عن عدد أقل بكثير من الأسئلة. تخطَّ ما لا تعرفه — هذه معلومة مفيدة أيضاً.',
     'place.begin': 'ابدأ الاختبار',
+    'place.cleared': 'اجتزت المستوى {lvl}',
+    'place.clearedSub': 'الأسئلة الأربعة التالية ترتقي إلى المستوى {lvl}.',
+    'place.continue': 'تابع',
+    'place.byLevel': 'النتيجة مستوىً مستوى',
+    'place.secured': 'أتقنتها بارتياح: {levels}',
+    'place.securedNone': 'المستوى A1 هو المكان الصحيح لبناء الأساس.',
+    'place.ceiling': 'عند المستوى {lvl} بدأت الصعوبة، ومن هناك يبدأ التعلّم.',
+    'place.ceilingTop': 'اجتزت كل مستويات الاختبار.',
     'place.result': 'نقترح أن تبدأ من المستوى {lvl}',
     'place.resultSub': 'يمكنك البدء من أي مستوى تريده — هذا اقتراح فقط.',
     'place.accept': 'ابدأ من {lvl}', 'place.choose': 'اختر مستوى آخر',

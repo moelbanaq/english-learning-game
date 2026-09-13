@@ -65,7 +65,9 @@ authorial distance, and editing your own prose as a stranger would read it.
 | C2 | 8 | 25 | 120 |
 | **Total** | **48** | **147** | **748** |
 
-Plus a 24-question placement test spanning all six levels.
+Plus a 36-question adaptive placement test: a block of four per level walking up from A1,
+stopping at the first block the learner cannot clear, so a beginner answers four questions
+and only a C2 candidate sees twenty-four.
 
 **All six CEFR levels are now complete at eight units each.** A learner can start from no
 English and work through to C2 without leaving the app. The levels are deliberately
