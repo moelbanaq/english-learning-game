@@ -1,0 +1,289 @@
+{
+  "id": "c2-v2",
+  "goal": {
+    "en": "Read and use figurative language accurately, and recognise when a metaphor is doing an argument's work for it.",
+    "ar": "أن تقرأ اللغة المجازية وتستعملها بدقة، وأن تدرك متى يقوم الاستعارة بعمل الحجة نيابةً عنها."
+  },
+  "passages": {
+    "c2read": {
+      "title": "From a newspaper column",
+      "text": "The government has declared war on waste. The phrase is doing a great deal of work, and it is worth pausing on it before we agree.\nWars have enemies, and the enemy here turns out to be a list of departmental budgets. Wars have fronts, and the front is a spreadsheet. Wars also have deserters, which is what anyone who questions the campaign is now quietly understood to be. That last consequence is not incidental; it is the reason the metaphor was chosen.\nAt the end of the day, we are told, savings must be found. Going forward, tough decisions will be taken. These sentences have the shape of arguments without being arguments: nobody has said which savings, or who will find them, or what will stop being done. The minister is by no means the first to discover that a strong image and a tired phrase, used together, can carry a policy a long way before anyone asks what is in it."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c2.vocab.figurative",
+      "title": {
+        "en": "Literal words, figurative jobs",
+        "ar": "كلمات حقيقية بوظائف مجازية"
+      },
+      "teach": [
+        {
+          "type": "p",
+          "text": {
+            "en": "Most everyday abstraction in English is dead metaphor. Arguments are wars, time is money, ideas are objects you grasp, hold or drop. The images are invisible until you look, and they shape what sounds sensible.",
+            "ar": "معظم التجريد اليومي في الإنجليزية استعارات ميتة: الحجاج حرب، والوقت مال، والأفكار أشياء تُمسك وتُترك. الصور غير مرئية حتى تتأملها، وهي تحدد ما يبدو معقولاً."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Frame",
+            "Language it produces"
+          ],
+          "rows": [
+            [
+              "Argument is war",
+              "attack a claim, defend a position, shoot down an idea"
+            ],
+            [
+              "Time is money",
+              "spend time, save an hour, it wasn't worth it"
+            ],
+            [
+              "Ideas are objects",
+              "grasp a concept, hold a view, drop the subject"
+            ],
+            [
+              "Discussion is a journey",
+              "move on, go over it, get somewhere, a dead end"
+            ],
+            [
+              "Understanding is sight",
+              "I see, that's clear, a blind spot"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": {
+            "en": "Once you notice a frame you can extend it deliberately: “that argument won't survive contact with the data” works because the war frame is already there.",
+            "ar": "متى لاحظت القالب أمكنك مدّه عن قصد، فجملة that argument won't survive contact with the data تعمل لأن قالب الحرب حاضر أصلاً."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "Mixing two frames in one sentence produces the classic mixed metaphor: “we'll have to shoulder the burden of navigating these waters”. It is a real error, and it makes readers stop reading.",
+            "ar": "خلط قالبين في جملة واحدة ينتج الاستعارة المختلطة الشهيرة، وهو خطأ حقيقي يجعل القارئ يتوقف عن القراءة."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2.vocab.idiomAccuracy",
+      "title": {
+        "en": "Idioms are fixed, or they are wrong",
+        "ar": "التعابير الاصطلاحية ثابتة وإلا صارت خطأً"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Correct",
+            "Common error"
+          ],
+          "rows": [
+            [
+              "the ball is in your court",
+              "the ball is in your field"
+            ],
+            [
+              "a blessing in disguise",
+              "a blessing in disguises"
+            ],
+            [
+              "beat around the bush",
+              "beat around the trees"
+            ],
+            [
+              "cut corners",
+              "cut angles"
+            ],
+            [
+              "the tip of the iceberg",
+              "the top of the iceberg"
+            ],
+            [
+              "on the same page",
+              "in the same page"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "An idiom is a single lexical item that happens to be spelled with spaces. You cannot change a word, a number or a preposition inside it any more than you can inside an ordinary word.",
+            "ar": "التعبير الاصطلاحي وحدة معجمية واحدة كُتبت بمسافات، فلا يمكن تغيير كلمة أو عدد أو حرف جر داخله كما لا يمكن ذلك داخل الكلمة الواحدة."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "Near-miss idioms are worse than plain language. A learner who says “the ball is in your field” is understood, but marked as a learner in a way plain English never does.",
+            "ar": "التعبير الاصطلاحي شبه الصحيح أسوأ من اللغة العادية. فمن يقول the ball is in your field يُفهم لكنه يُصنَّف متعلماً، وهو ما لا تفعله اللغة العادية أبداً."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2.vocab.cliche",
+      "title": {
+        "en": "Cliché and the tired phrase",
+        "ar": "الكليشيه والعبارة المستهلكة"
+      },
+      "teach": [
+        {
+          "type": "p",
+          "text": {
+            "en": "A cliché is a phrase that was once vivid and now passes through the reader without leaving anything. It is not wrong; it is empty, and in a piece of argument that emptiness reads as a lack of thought.",
+            "ar": "الكليشيه عبارة كانت حيّة يوماً وصارت تمرّ بالقارئ دون أن تترك أثراً. ليست خطأً بل فارغة، وفي نص حجاجي يُقرأ هذا الفراغ على أنه قلة تفكير."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cliché",
+            "What it usually replaces"
+          ],
+          "rows": [
+            [
+              "at the end of the day",
+              "finally / in the end / nothing"
+            ],
+            [
+              "think outside the box",
+              "a specific new idea"
+            ],
+            [
+              "going forward",
+              "from now on / nothing"
+            ],
+            [
+              "a perfect storm",
+              "the named causes themselves"
+            ],
+            [
+              "it is what it is",
+              "an explanation the speaker will not give"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": {
+            "en": "Test: delete the phrase. If the sentence loses nothing, it was carrying nothing. Most clichés fail this test.",
+            "ar": "اختبار: احذف العبارة. إن لم تخسر الجملة شيئاً فهي لم تكن تحمل شيئاً، ومعظم الكليشيهات ترسب في هذا الاختبار."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "Clichés cluster in exactly the places where the writer has least to say, which is why editors read them as a warning sign rather than a style choice.",
+            "ar": "تتجمع الكليشيهات في المواضع التي لا يملك فيها الكاتب ما يقوله، ولهذا يقرؤها المحررون علامة تحذير لا اختياراً أسلوبياً."
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2v2-01", "concept": "c2.vocab.figurative", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“I can't quite grasp the argument.” Which frame is at work?", "ar": "أي قالب استعاري يعمل في هذه الجملة؟"},
+      "options": ["Ideas are objects you hold.", "Argument is a kind of war.", "Time is a kind of money.", "Discussion is a journey."],
+      "answer": 0,
+      "explanation": {"en": "Grasp, hold and drop all treat the idea as a physical thing in the hand.", "ar": "أفعال grasp وhold وdrop تعامل الفكرة كشيء مادي في اليد."} },
+    { "id": "c2v2-02", "concept": "c2.vocab.figurative", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“She demolished his case in three minutes.” Which frame is this?", "ar": "أي قالب استعاري في هذه الجملة؟"},
+      "options": ["Argument is war.", "Ideas are objects.", "Understanding is sight.", "Time is money."],
+      "answer": 0,
+      "explanation": {"en": "Attack, defend, demolish and shoot down all come from the war frame.", "ar": "أفعال attack وdefend وdemolish وshoot down كلها من قالب الحرب."} },
+    { "id": "c2v2-03", "concept": "c2.vocab.figurative", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": {"en": "Which sentence mixes two metaphors?", "ar": "أي جملة تخلط استعارتين؟"},
+      "options": ["We must shoulder the burden of navigating these waters.", "We must shoulder the burden of the extra costs.", "We must navigate these waters with great care.", "We must carry the extra costs for another year."],
+      "answer": 0,
+      "explanation": {"en": "A burden sits on a shoulder and waters are sailed. You cannot do both at once, and the picture collapses.", "ar": "الحمل يُوضع على الكتف والمياه تُبحَر، ولا يجتمعان معاً فتنهار الصورة."} },
+    { "id": "c2v2-04", "concept": "c2.vocab.figurative", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": {"en": "Match the phrase to its frame.", "ar": "طابق العبارة بقالبها."},
+      "pairs": [["a blind spot", "understanding is sight"], ["a dead end", "discussion is a journey"], ["spend an hour", "time is money"], ["defend a position", "argument is war"]],
+      "explanation": {"en": "Each frame quietly licenses a whole vocabulary, which is why the phrases feel natural.", "ar": "كل قالب يُجيز ضمناً معجماً كاملاً، ولهذا تبدو العبارات طبيعية."} },
+    { "id": "c2v2-05", "concept": "c2.vocab.idiomAccuracy", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": {"en": "Which idiom is written incorrectly?", "ar": "أي تعبير اصطلاحي كُتب خطأً؟"},
+      "options": ["Stop beating around the trees.", "Stop beating around the bush.", "Stop cutting corners on this.", "Stop sitting on the fence here."],
+      "answer": 0,
+      "explanation": {"en": "The fixed form is “around the bush”. Any substitute word breaks the idiom.", "ar": "الصيغة الثابتة هي around the bush، وأي بديل يكسر التعبير."} },
+    { "id": "c2v2-06", "concept": "c2.vocab.idiomAccuracy", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": {"en": "Which sentence gets the fixed phrase wrong?", "ar": "أي جملة أخطأت في التعبير الثابت؟"},
+      "options": ["We need to be in the same page on this.", "We need to be on the same page on this.", "We are not on the same page yet.", "Are we all on the same page now?"],
+      "answer": 0,
+      "explanation": {"en": "The preposition is “on”. “In the same page” is a word-for-word logic that English does not use here.", "ar": "حرف الجر هو on، أما in the same page فمنطق حرفي لا تستعمله الإنجليزية هنا."} },
+    { "id": "c2v2-07", "concept": "c2.vocab.idiomAccuracy", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“That's just the tip of the iceberg.” What is being said?", "ar": "ماذا يُقال في هذه الجملة؟"},
+      "options": ["Most of the problem is still unseen.", "The problem is small and manageable.", "The problem has finally been solved.", "The problem is at its coldest point."],
+      "answer": 0,
+      "explanation": {"en": "The image works because most of an iceberg is under the water.", "ar": "الصورة تعمل لأن معظم الجبل الجليدي تحت الماء."} },
+    { "id": "c2v2-08", "concept": "c2.vocab.idiomAccuracy", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": {"en": "Complete the idiom: “The ball is in your ___.”", "ar": "أكمل التعبير: The ball is in your ___"},
+      "answer": "court",
+      "accept": ["Court", "court."],
+      "explanation": {"en": "It comes from tennis: the next move is yours. “Field” and “side” both break it.", "ar": "أصلها من التنس: الدور عليك. وكلمتا field وside كلتاهما تكسران التعبير."} },
+    { "id": "c2v2-09", "concept": "c2.vocab.cliche", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": {"en": "Which sentence survives deleting its opening phrase unchanged in meaning?", "ar": "أي جملة لا يتغير معناها إذا حُذفت عبارتها الافتتاحية؟"},
+      "options": ["At the end of the day, the costs are too high.", "Despite the savings, the costs are too high.", "For three suppliers, the costs are too high.", "Without the subsidy, the costs are too high."],
+      "answer": 0,
+      "explanation": {"en": "The other three openings add a condition or a contrast. “At the end of the day” adds nothing.", "ar": "الافتتاحيات الثلاث الأخرى تضيف شرطاً أو تقابلاً، أما at the end of the day فلا تضيف شيئاً."} },
+    { "id": "c2v2-10", "concept": "c2.vocab.cliche", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "A manager says “It is what it is.” What is usually being avoided?", "ar": "ماذا يُتفادى عادةً بقول It is what it is؟"},
+      "options": ["An explanation they will not give.", "A decision they have already made.", "A compliment they do not mean.", "A question nobody has asked."],
+      "answer": 0,
+      "explanation": {"en": "The phrase closes a subject without accounting for it, which is precisely its social function.", "ar": "العبارة تُغلق الموضوع دون تفسيره، وهذه بالضبط وظيفتها الاجتماعية."} },
+    { "id": "c2v2-11", "concept": "c2.vocab.cliche", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": {"en": "Which sentence gives the reader actual information?", "ar": "أي جملة تعطي القارئ معلومة فعلية؟"},
+      "options": ["Demand fell because two suppliers withdrew.", "Demand fell because of a perfect storm.", "Demand fell, and it is what it is really.", "Demand fell, going forward, quite sharply."],
+      "answer": 0,
+      "explanation": {"en": "“A perfect storm” names no cause. Replacing the cliché with the causes is the whole repair.", "ar": "عبارة a perfect storm لا تسمّي سبباً، والإصلاح كله أن تستبدل بالكليشيه الأسبابَ نفسها."} },
+    { "id": "c2v2-12", "concept": "c2.vocab.cliche", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": {"en": "A proposal is full of “going forward”, “think outside the box” and “at the end of the day”. What does an editor infer?", "ar": "مقترح مليء بهذه العبارات. ماذا يستنتج المحرر؟"},
+      "options": ["There is little specific content.", "The writer is highly experienced.", "The subject is unusually technical.", "The proposal was written in a hurry."],
+      "answer": 0,
+      "explanation": {"en": "Clichés gather where specifics are missing, so their density is a reliable signal.", "ar": "تتجمع الكليشيهات حيث تغيب التفاصيل، فكثافتها إشارة موثوقة."} },
+    { "id": "c2v2-13", "concept": "c2.vocab.figurative", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": {"en": "A report calls a policy “a war on waste”. What does the metaphor do to the argument?", "ar": "ماذا تفعل استعارة a war on waste بالحجة؟"},
+      "options": ["It makes opposing the policy sound like disloyalty.", "It makes the policy's costs explicit and clear.", "It shows the policy is temporary and limited.", "It signals that the writer opposes the policy."],
+      "answer": 0,
+      "explanation": {"en": "War frames divide people into sides, so the metaphor argues before any evidence is offered.", "ar": "قوالب الحرب تقسّم الناس إلى أطراف، فالاستعارة تُحاجج قبل تقديم أي دليل."} },
+    { "id": "c2v2-14", "concept": "c2.vocab.idiomAccuracy", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["Losing", "that", "contract", "was", "a", "blessing", "in", "disguise"],
+      "answer": "Losing that contract was a blessing in disguise",
+      "explanation": {"en": "Singular “disguise”, always. The phrase means a misfortune that turned out well.", "ar": "الكلمة مفردة disguise دائماً، والتعبير يعني مصيبة انقلبت خيراً."} },
+    { "id": "c2v2-15", "concept": "c2.vocab.cliche", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": {"en": "Which revision improves the sentence most?", "ar": "أي تنقيح يحسّن الجملة أكثر؟"},
+      "options": ["Original: “We need to think outside the box.” → “We should test a two-week trial instead.”", "Original: “We need to think outside the box.” → “We need to think creatively outside the box.”", "Original: “We need to think outside the box.” → “We need some genuine outside-the-box thinking.”", "Original: “We need to think outside the box.” → “We need to think a little more outside the box.”"],
+      "answer": 0,
+      "explanation": {"en": "Only the first replaces the cliché with a proposal. The others decorate it.", "ar": "الأول وحده يستبدل بالكليشيه اقتراحاً محدداً، أما البقية فتزيّنه."} },
+    { "id": "c2v2-r1", "concept": "c2.vocab.figurative", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c2read",
+      "prompt": {"en": "According to the writer, what does the war metaphor achieve?", "ar": "بحسب الكاتب، ماذا تحقق استعارة الحرب؟"},
+      "options": ["It recasts questioning the policy as disloyalty.", "It clarifies exactly which budgets are affected.", "It makes the savings sound smaller than they are.", "It signals the campaign will be short-lived."],
+      "answer": 0,
+      "explanation": {"en": "“Wars also have deserters… That last consequence is not incidental; it is the reason the metaphor was chosen.”", "ar": "يقول النص إن للحروب فارّين، وإن هذه النتيجة ليست عرضية بل هي سبب اختيار الاستعارة."} },
+    { "id": "c2v2-r2", "concept": "c2.vocab.cliche", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c2read",
+      "prompt": {"en": "Why does the writer quote “at the end of the day” and “going forward”?", "ar": "لماذا يقتبس الكاتب هاتين العبارتين؟"},
+      "options": ["To show sentences shaped like arguments that contain none.", "To praise the minister's unusually plain and direct style.", "To date the speech to one particular political decade.", "To suggest that the minister is not a native speaker."],
+      "answer": 0,
+      "explanation": {"en": "The next sentence says so directly: “the shape of arguments without being arguments”.", "ar": "الجملة التالية تقولها صراحةً: لها شكل الحجج دون أن تكون حججاً."} },
+    { "id": "c2v2-r3", "concept": "c2.vocab.idiomAccuracy", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c2read",
+      "prompt": {"en": "“The minister is by no means the first…” — what does this say?", "ar": "ماذا تعني عبارة by no means the first؟"},
+      "options": ["Many others have done the same.", "The minister was the first to do it.", "Nobody has ever done this before.", "It is unclear who did it first."],
+      "answer": 0,
+      "explanation": {"en": "“By no means” is emphatic negation, so the minister is far from the first.", "ar": "by no means نفي مؤكد، فالوزير أبعد ما يكون عن أن يكون الأول."} },
+    { "id": "c2v2-r4", "concept": "c2.vocab.figurative", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c2read",
+      "prompt": {"en": "What is the writer's own position on the policy?", "ar": "ما موقف الكاتب نفسه من السياسة؟"},
+      "options": ["Unstated — the criticism is of the language, not the plan.", "Strongly opposed to any reduction in public spending.", "Fully supportive of the government's savings campaign.", "Undecided, because the savings are far too small."],
+      "answer": 0,
+      "explanation": {"en": "The column never says whether the savings are a good idea. Its complaint is that the language prevents the question from being asked.", "ar": "لا يقول العمود قط إن كانت الوفورات فكرة جيدة، وشكواه أن اللغة تمنع طرح السؤال أصلاً."} }
+  ]
+}

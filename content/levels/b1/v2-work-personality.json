@@ -1,0 +1,305 @@
+{
+  "id": "b1-v2",
+  "goal": {
+    "en": "Describe what people are like, and handle the English of applying for and doing a job.",
+    "ar": "أن تصف طباع الناس، وتتعامل مع لغة التقدّم للوظيفة وأداء العمل."
+  },
+  "passages": {
+    "b1read": {
+      "title": "A reference letter",
+      "text": "To whom it may concern,\nHana worked in my team for four years, first as an assistant and later as a project coordinator. She applied for the coordinator role internally and was shortlisted from eleven candidates.\nShe is exceptionally reliable. In four years she missed one deadline, and she told me about it three weeks in advance rather than on the day. She gets on well with colleagues, though she is direct and some people need a week to get used to that.\nShe was not made redundant and she was not dismissed: she handed in her notice in March because her family is moving to another city. I would take her back tomorrow.\nKarim Adel, Operations Manager"
+    }
+  },
+  "concepts": [
+    {
+      "id": "b1.vocab.personality",
+      "title": {
+        "en": "What someone is like",
+        "ar": "وصف الطباع"
+      },
+      "teach": [
+        {
+          "type": "rule",
+          "text": {
+            "en": "“What is she like?” asks about character. “What does she like?” asks about preferences. One word of difference, two different questions.",
+            "ar": "سؤال What is she like؟ عن الطباع، وWhat does she like؟ عن التفضيلات. كلمة واحدة تفصل بين سؤالين مختلفين."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Positive",
+            "Negative",
+            "Depends"
+          ],
+          "rows": [
+            [
+              "reliable",
+              "careless",
+              "quiet"
+            ],
+            [
+              "hard-working",
+              "lazy",
+              "ambitious"
+            ],
+            [
+              "patient",
+              "impatient",
+              "serious"
+            ],
+            [
+              "generous",
+              "mean",
+              "direct"
+            ],
+            [
+              "easy-going",
+              "stubborn",
+              "sensitive"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Sympathetic” does not mean nice. It means feeling sorry for someone's trouble. The word for generally pleasant is “likeable” or just “nice”.",
+            "ar": "sympathetic لا تعني «لطيف»، بل «متعاطف مع مصيبة أحد». وكلمة اللطف العامة هي likeable أو nice."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Sensible” means having good judgement. “Sensitive” means easily affected by feelings. They are not the same word.",
+            "ar": "sensible تعني «عاقل حسن التقدير»، وsensitive تعني «سريع التأثر بالمشاعر». وهما كلمتان مختلفتان."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1.vocab.workplace",
+      "title": {
+        "en": "Applying and working",
+        "ar": "التقدّم للوظيفة والعمل"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Phrase",
+            "Means"
+          ],
+          "rows": [
+            [
+              "apply for a job",
+              "send in your application"
+            ],
+            [
+              "a CV (UK) / résumé (US)",
+              "your work history on paper"
+            ],
+            [
+              "be shortlisted",
+              "chosen for interview"
+            ],
+            [
+              "get promoted",
+              "move up a level"
+            ],
+            [
+              "hand in your notice",
+              "tell them you are leaving"
+            ],
+            [
+              "be made redundant",
+              "lose the job because the role ended"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "Being fired means you did something wrong. Being made redundant means the job disappeared. Mixing them up misdescribes someone's record.",
+            "ar": "fired تعني الفصل بسبب خطأ، وmade redundant تعني إلغاء الوظيفة نفسها. والخلط بينهما يشوّه سجل الشخص المهني."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Deadlines are met, missed or extended — never “finished”. You meet a deadline the way you meet a target.",
+            "ar": "المواعيد النهائية تُحقَّق meet أو تُفوَّت miss أو تُمدَّد extend، ولا يقال عنها finished."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "She was shortlisted for two roles.",
+              "ar": "وقع الاختيار عليها ضمن القائمة القصيرة لوظيفتين."
+            },
+            {
+              "en": "We met the deadline with a day to spare.",
+              "ar": "أنجزنا قبل الموعد النهائي بيوم."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1.vocab.relationships",
+      "title": {
+        "en": "People and relationships",
+        "ar": "العلاقات بين الناس"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Phrasal verb",
+            "Means"
+          ],
+          "rows": [
+            [
+              "get on with someone",
+              "have a good relationship"
+            ],
+            [
+              "fall out with someone",
+              "argue and stop speaking"
+            ],
+            [
+              "make up",
+              "become friends again"
+            ],
+            [
+              "look up to someone",
+              "admire"
+            ],
+            [
+              "put up with someone",
+              "tolerate"
+            ],
+            [
+              "let someone down",
+              "disappoint"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Get on with someone” = have a good relationship. “Get on with something” = continue doing it. Same phrasal verb, and only the object tells you which meaning is intended.",
+            "ar": "get on with someone تعني حسن العلاقة، وget on with something تعني المضي في العمل. الفعل واحد والمفعول وحده يحدد المعنى."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "“Marry” takes no preposition: he married her. “Get married to” does: he got married to her.",
+            "ar": "الفعل marry لا يأخذ حرف جر: he married her. أما get married فتأخذ to: he got married to her."
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1v2-01", "concept": "b1.vocab.personality", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": {"en": "Someone asks “What's your manager like?” What do they want to know?", "ar": "سُئلت What's your manager like؟ فما المطلوب؟"},
+      "options": ["What kind of person she is.", "Which things she enjoys.", "What she looks like exactly.", "Which job title she holds."],
+      "answer": 0,
+      "explanation": {"en": "“Be like” asks about character. Preferences would be “What does she like?”", "ar": "be like تسأل عن الطباع، أما التفضيلات فسؤالها What does she like؟"} },
+    { "id": "b1v2-02", "concept": "b1.vocab.personality", "type": "choice", "format": "meaning", "difficulty": 3,
+      "sentence": "He never forgets a promise. He's very ___.",
+      "options": ["reliable", "sensitive", "ambitious", "generous"],
+      "answer": 0,
+      "explanation": {"en": "Reliable = you can depend on them to do what they said.", "ar": "reliable تعني «يُعتمد عليه» في تنفيذ ما وعد به."} },
+    { "id": "b1v2-03", "concept": "b1.vocab.personality", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": {"en": "Which sentence uses the word wrongly?", "ar": "أي جملة استُعملت فيها الكلمة خطأً؟"},
+      "options": ["My neighbour is very sympathetic and always smiles.", "My neighbour was sympathetic when my father died.", "My neighbour is very friendly and always smiles.", "My neighbour is a likeable man."],
+      "answer": 0,
+      "explanation": {"en": "Sympathetic is about sharing someone's difficulty, not about being pleasant. Smiling calls for friendly.", "ar": "sympathetic تتعلق بمشاركة الشدة لا باللطف العام، فالابتسام يناسبه friendly."} },
+    { "id": "b1v2-04", "concept": "b1.vocab.personality", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": {"en": "“She was sensible about it.” What does this say about her?", "ar": "ماذا تقول هذه الجملة عنها؟"},
+      "options": ["She showed good judgement.", "She was easily upset by it.", "She reacted very emotionally.", "She was extremely gentle."],
+      "answer": 0,
+      "explanation": {"en": "Sensible = reasonable and practical. Easily upset would be sensitive.", "ar": "sensible تعني «عاقل عملي»، أما سريع التأثر فهو sensitive."} },
+    { "id": "b1v2-05", "concept": "b1.vocab.personality", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": {"en": "Match the adjective to its opposite.", "ar": "طابق الصفة بضدها."},
+      "pairs": [["patient", "impatient"], ["generous", "mean"], ["hard-working", "lazy"], ["easy-going", "stubborn"]],
+      "explanation": {"en": "Only some opposites use a prefix; the rest are separate words you have to know.", "ar": "بعض الأضداد تُبنى بسابقة، وبقيتها كلمات مستقلة لا بد من حفظها."} },
+    { "id": "b1v2-06", "concept": "b1.vocab.workplace", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "We have to ___ the deadline, whatever happens.",
+      "options": ["meet", "finish", "arrive", "reach to"],
+      "answer": 0,
+      "explanation": {"en": "Deadlines are met or missed. “Finish the deadline” is not English.", "ar": "المواعيد النهائية تُحقَّق meet أو تُفوَّت miss، ولا يقال finish the deadline."} },
+    { "id": "b1v2-07", "concept": "b1.vocab.workplace", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": {"en": "Ali was made redundant. What happened?", "ar": "قيل إن علياً made redundant. ماذا حدث؟"},
+      "options": ["His role was cut, so he lost the job.", "He was dismissed for poor conduct.", "He resigned to take another job.", "He was moved to a higher position."],
+      "answer": 0,
+      "explanation": {"en": "Redundancy is about the job disappearing, not about the person's performance.", "ar": "redundancy تعني اختفاء الوظيفة نفسها لا سوء أداء الشخص."} },
+    { "id": "b1v2-08", "concept": "b1.vocab.workplace", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "She ___ for the position and was invited to interview.",
+      "options": ["applied", "asked", "requested", "wanted"],
+      "answer": 0,
+      "explanation": {"en": "Apply for is the fixed phrase for jobs and courses.", "ar": "apply for هو التعبير الثابت مع الوظائف والدورات."} },
+    { "id": "b1v2-09", "concept": "b1.vocab.workplace", "type": "order", "format": "order", "difficulty": 4,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["He", "handed", "in", "his", "notice", "last", "month"],
+      "answer": "He handed in his notice last month",
+      "explanation": {"en": "Hand in your notice = formally tell your employer you are leaving.", "ar": "hand in your notice تعني تقديم الاستقالة رسمياً."} },
+    { "id": "b1v2-10", "concept": "b1.vocab.workplace", "type": "text", "format": "write", "difficulty": 4,
+      "prompt": {"en": "Two words: to be moved to a more senior job is to ___.", "ar": "كلمتان: الانتقال إلى وظيفة أعلى يُقال له ___"},
+      "answer": "get promoted",
+      "accept": ["be promoted", "get a promotion"],
+      "explanation": {"en": "Promotion is the noun; get or be promoted is how you say it happened to you.", "ar": "promotion هو الاسم، وget promoted أو be promoted هي صيغة وقوعه لك."} },
+    { "id": "b1v2-11", "concept": "b1.vocab.relationships", "type": "choice", "format": "phrasal", "difficulty": 3,
+      "sentence": "I ___ my colleagues really well — we never argue.",
+      "options": ["get on with", "get over", "get through", "get round to"],
+      "answer": 0,
+      "explanation": {"en": "Get on with someone = have a good relationship with them.", "ar": "get on with someone تعني حسن العلاقة به."} },
+    { "id": "b1v2-12", "concept": "b1.vocab.relationships", "type": "choice", "format": "phrasal", "difficulty": 4,
+      "sentence": "They fell out three years ago and still haven't ___.",
+      "options": ["made up", "made out", "made over", "made off"],
+      "answer": 0,
+      "explanation": {"en": "Make up = become friends again after an argument.", "ar": "make up تعني عودة الصلح بعد خلاف."} },
+    { "id": "b1v2-13", "concept": "b1.vocab.relationships", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": {"en": "“Let's get on with it.” What does “it” refer to?", "ar": "إلامَ يعود الضمير it في هذه العبارة؟"},
+      "options": ["A task they should continue.", "A person they both like.", "A place they plan to visit.", "A quarrel they want to end."],
+      "answer": 0,
+      "explanation": {"en": "With a thing, get on with means continue. Only with a person does it mean have a good relationship.", "ar": "مع شيء تعني get on with «يواصل»، ومع شخص فقط تعني حسن العلاقة."} },
+    { "id": "b1v2-14", "concept": "b1.vocab.relationships", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["He married with my cousin in June.", "He married my cousin in June.", "He got married to my cousin in June.", "He and my cousin married in June."],
+      "answer": 0,
+      "explanation": {"en": "“Marry” takes a direct object with no preposition. Only “get married” adds “to”.", "ar": "الفعل marry يأخذ مفعولاً مباشراً بلا حرف جر، وget married وحدها تأخذ to."} },
+    { "id": "b1v2-15", "concept": "b1.vocab.relationships", "type": "choice", "format": "phrasal", "difficulty": 4,
+      "sentence": "I promised I'd help, and I don't want to ___ her ___.",
+      "options": ["let / down", "put / off", "take / on", "bring / up"],
+      "answer": 0,
+      "explanation": {"en": "Let someone down = fail to do what they were counting on. The object sits between the two parts.", "ar": "let someone down تعني خذلان من اعتمد عليك، والمفعول يقع بين جزأي الفعل."} },
+    { "id": "b1v2-r1", "concept": "b1.vocab.workplace", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "b1read",
+      "prompt": {"en": "Why did Hana leave the job?", "ar": "لماذا تركت هناء العمل؟"},
+      "options": ["She resigned for family reasons.", "Her role was cut by the company.", "She was dismissed for poor work.", "She was moved to another team."],
+      "answer": 0,
+      "explanation": {"en": "“She handed in her notice… because her family is moving.” The letter rules out the other two explicitly.", "ar": "قدّمت استقالتها لانتقال أسرتها، والخطاب ينفي التفسيرين الآخرين صراحةً."} },
+    { "id": "b1v2-r2", "concept": "b1.vocab.workplace", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "b1read",
+      "prompt": {"en": "What does “shortlisted from eleven candidates” tell you?", "ar": "ماذا تعني عبارة shortlisted from eleven candidates؟"},
+      "options": ["She reached the interview stage.", "She was rejected at the first stage.", "She was the only person who applied.", "She was appointed without an interview."],
+      "answer": 0,
+      "explanation": {"en": "Being shortlisted means being chosen for interview from a larger field.", "ar": "الإدراج في القائمة القصيرة يعني الاختيار للمقابلة من بين عدد أكبر."} },
+    { "id": "b1v2-r3", "concept": "b1.vocab.personality", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b1read",
+      "prompt": {"en": "What is the writer hinting at with “she is direct and some people need a week to get used to that”?", "ar": "إلامَ يلمّح الكاتب بهذه العبارة؟"},
+      "options": ["Her frankness can be uncomfortable at first.", "She is unfriendly towards her colleagues.", "She takes a week to learn any new task.", "She avoids saying what she really thinks."],
+      "answer": 0,
+      "explanation": {"en": "It is a mild warning wrapped in praise — the writer is being honest without withdrawing the recommendation.", "ar": "تحذير لطيف مغلّف بالمدح، فالكاتب صادق دون أن يسحب توصيته."} },
+    { "id": "b1v2-r4", "concept": "b1.vocab.workplace", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b1read",
+      "prompt": {"en": "Why does the writer mention the one missed deadline?", "ar": "لماذا يذكر الكاتب الموعد النهائي الوحيد الذي فات؟"},
+      "options": ["To make the praise credible with a specific fact.", "To warn the reader that she is unreliable.", "To explain why she left the company.", "To show the deadlines were unreasonable."],
+      "answer": 0,
+      "explanation": {"en": "One admitted flaw, handled well, is stronger evidence of reliability than a page of adjectives.", "ar": "الاعتراف بعيب واحد أُحسن التعامل معه دليل على الموثوقية أقوى من صفحة من الصفات."} }
+  ]
+}

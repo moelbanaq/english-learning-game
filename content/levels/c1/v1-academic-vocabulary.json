@@ -1,0 +1,162 @@
+{
+  "id": "c1-v1",
+  "goal": {
+    "en": "Use the vocabulary that carries academic and analytical writing, with the precision it demands.",
+    "ar": "أن تستخدم مفردات الكتابة الأكاديمية والتحليلية بالدقة التي تتطلبها."
+  },
+  "concepts": [
+    {
+      "id": "c1.vocab.academic",
+      "title": { "en": "The academic core", "ar": "نواة المفردات الأكاديمية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "A few hundred words do most of the work in academic English. They are not difficult words; they are precise ones, and using the wrong one changes the argument rather than only the tone.",
+          "ar": "بضع مئات من الكلمات تؤدي معظم العمل في الإنجليزية الأكاديمية. وهي ليست كلمات صعبة بل دقيقة، واستعمال الخطأ منها يغيّر الحجة نفسها لا النبرة فقط." } },
+        { "type": "table", "head": ["Word", "Means", "Not"], "rows": [
+          ["constitute", "make up, form", "set up"],
+          ["derive from", "come from, originate in", "deprive"],
+          ["underlying", "beneath the surface, basic", "obvious"],
+          ["substantial", "large and significant", "real / physical"],
+          ["subsequent", "coming after", "consequent (= resulting)"],
+          ["comprise", "consist of, be made up of", "compose"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Comprise” already means “consist of”, so “is comprised of” is redundant to careful readers. Write “comprises” or “consists of”.",
+          "ar": "comprise تعني أصلاً «يتألف من»، فعبارة is comprised of زائدة عند القارئ المدقّق. اكتب comprises أو consists of." } },
+        { "type": "warn", "text": {
+          "en": "“Subsequent” means later in time; “consequent” means caused by. A subsequent fall came afterwards; a consequent fall was caused by what came before.",
+          "ar": "subsequent تعني «لاحق زمنياً»، وconsequent تعني «ناتج عن». فالانخفاض subsequent جاء بعد، والانخفاض consequent سببه ما قبله." } }
+      ]
+    },
+    {
+      "id": "c1.vocab.nominalisation",
+      "title": { "en": "Turning verbs into nouns", "ar": "تحويل الأفعال إلى أسماء" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Academic English packs actions into nouns so they can be counted, qualified and made the subject of a sentence. This is a tool, not an ornament — and overused it becomes fog.",
+          "ar": "الإنجليزية الأكاديمية تكثّف الأفعال في أسماء لتُعدّ وتُوصف وتصير فاعلاً للجملة. وهي أداة لا زخرفة، وإفراطها يصنع ضباباً." } },
+        { "type": "table", "head": ["Verb", "Noun", "Used as"], "rows": [
+          ["analyse", "analysis", "a detailed analysis of…"],
+          ["assume", "assumption", "the underlying assumption"],
+          ["imply", "implication", "the wider implications"],
+          ["interpret", "interpretation", "an alternative interpretation"],
+          ["acquire", "acquisition", "language acquisition"],
+          ["distinguish", "distinction", "a useful distinction"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "The plural of “analysis” is “analyses”, and the same pattern covers hypothesis, thesis and crisis. The -is becomes -es.",
+          "ar": "جمع analysis هو analyses، وينطبق النمط نفسه على hypothesis وthesis وcrisis، فتصير is إلى es." } },
+        { "type": "warn", "text": {
+          "en": "Two nominalisations in a row usually hide who did what: “the implementation of the evaluation of the policy”. Put one action back into a verb.",
+          "ar": "توالي اسمين مشتقين يُخفي عادةً من فعل ماذا، مثل the implementation of the evaluation of the policy. أعِد أحد الأفعال إلى صيغته الفعلية." } }
+      ]
+    },
+    {
+      "id": "c1.vocab.hedging",
+      "title": { "en": "Hedging and strength", "ar": "التحفّظ ودرجات القوة" },
+      "teach": [
+        { "type": "table", "head": ["Strong", "Middle", "Cautious"], "rows": [
+          ["demonstrates", "indicates", "suggests"],
+          ["shows", "points to", "may point to"],
+          ["will", "is likely to", "may / might"],
+          ["all", "most", "a number of"],
+          ["proves", "supports", "is consistent with"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "Match the verb to the evidence, not to how strongly you feel. A single study cannot demonstrate anything; it can indicate.",
+          "ar": "طابق الفعل بقوة الدليل لا بقوة اقتناعك. فدراسة واحدة لا تُثبت demonstrate بل تُشير indicate." } },
+        { "type": "warn", "text": {
+          "en": "Hedging is not weakness. Overclaiming is the error a reader punishes, because one overclaim makes every other claim suspect.",
+          "ar": "التحفّظ ليس ضعفاً، بل المبالغة هي الخطأ الذي يعاقب عليه القارئ، لأن مبالغة واحدة تجعل بقية الدعاوى موضع شك." } },
+        { "type": "examples", "items": [
+          { "en": "The findings are consistent with earlier work.", "ar": "تتسق النتائج مع أعمال سابقة." },
+          { "en": "A number of participants reported the same effect.", "ar": "أبلغ عدد من المشاركين عن الأثر نفسه." }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1v1-01", "concept": "c1.vocab.academic", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Women ___ 58% of the sample.", "options": ["constituted", "consisted", "comprised of", "contained of"], "answer": 0,
+      "explanation": { "en": "Constitute = make up. Consist needs “of”, and “comprised of” is the redundant form.",
+        "ar": "constitute تعني «يشكّل»، وconsist تحتاج of، أما comprised of فصيغة زائدة." } },
+    { "id": "c1v1-02", "concept": "c1.vocab.academic", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“The subsequent decline” tells you the decline was…", "ar": "عبارة the subsequent decline تعني أن الانخفاض…" },
+      "options": ["later in time than that.", "caused by the event.", "larger than expected.", "smaller than reported."],
+      "answer": 0,
+      "explanation": { "en": "Subsequent is purely about order in time. Caused by would be “consequent”.",
+        "ar": "subsequent تتعلق بالترتيب الزمني فقط، أما الناتج عن الحدث فهو consequent." } },
+    { "id": "c1v1-03", "concept": "c1.vocab.academic", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The term ___ from a Latin root meaning “to carry”.", "options": ["derives", "deprives", "deviates", "departs"], "answer": 0,
+      "explanation": { "en": "Derive from = originate in. Deprive means take away from someone.",
+        "ar": "derive from تعني «ينحدر من»، أما deprive فتعني الحرمان." } },
+    { "id": "c1v1-04", "concept": "c1.vocab.academic", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "An “underlying assumption” is one that is…", "ar": "الافتراض underlying هو الذي…" },
+      "options": ["unstated but doing the work.", "stated openly at the start.", "already proved by the data.", "rejected later in the text."],
+      "answer": 0,
+      "explanation": { "en": "Underlying means beneath the surface — present and load-bearing, but not said.",
+        "ar": "underlying تعني «كامن تحت السطح»: موجود وحامل للمعنى لكنه غير مصرَّح به." } },
+    { "id": "c1v1-05", "concept": "c1.vocab.academic", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence contains a redundancy?", "ar": "أي جملة فيها حشو؟" },
+      "options": ["The board is comprised of nine members.", "The board comprises nine members.", "The board consists of nine members.", "Nine members make up the board."],
+      "answer": 0,
+      "explanation": { "en": "Comprise already contains “of”, so adding it repeats the meaning.",
+        "ar": "comprise تتضمن معنى of أصلاً، فإضافتها تكرار للمعنى." } },
+    { "id": "c1v1-06", "concept": "c1.vocab.nominalisation", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "Her ___ of the results differs from mine.", "options": ["interpretation", "interpret", "interpreting of", "interpreted"], "answer": 0,
+      "explanation": { "en": "After a possessive you need the noun form.",
+        "ar": "بعد الملكية نحتاج صيغة الاسم." } },
+    { "id": "c1v1-07", "concept": "c1.vocab.nominalisation", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "Three separate ___ produced the same result.", "options": ["analyses", "analysises", "analysis", "analyzes of"], "answer": 0,
+      "explanation": { "en": "Words ending -is take -es in the plural: analysis → analyses.",
+        "ar": "الكلمات المنتهية بـ is تُجمع بـ es: analysis تصير analyses." } },
+    { "id": "c1v1-08", "concept": "c1.vocab.nominalisation", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": { "en": "Give the noun from the verb “acquire”.", "ar": "هات الاسم من الفعل acquire." },
+      "answer": "acquisition", "accept": ["Acquisition", "an acquisition"],
+      "explanation": { "en": "Acquire → acquisition, as in “second language acquisition”.",
+        "ar": "acquire تصير acquisition كما في second language acquisition." } },
+    { "id": "c1v1-09", "concept": "c1.vocab.nominalisation", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is clearer without losing formality?", "ar": "أي جملة أوضح دون أن تفقد الرسمية؟" },
+      "options": ["We evaluated the policy before implementing it.", "The implementation of the evaluation of the policy occurred.", "There was an implementation of the policy evaluation.", "The policy evaluation implementation was carried out."],
+      "answer": 0,
+      "explanation": { "en": "One verb restores the actor and the order of events. Stacked nouns hide both.",
+        "ar": "فعل واحد يعيد الفاعل وترتيب الأحداث، أما تكديس الأسماء فيُخفي الاثنين." } },
+    { "id": "c1v1-10", "concept": "c1.vocab.nominalisation", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the verb to its noun.", "ar": "طابق الفعل باسمه." },
+      "pairs": [
+        ["assume", "assumption"],
+        ["imply", "implication"],
+        ["distinguish", "distinction"],
+        ["analyse", "analysis"]
+      ],
+      "explanation": { "en": "None of these endings is predictable from the verb, which is why they are worth memorising as pairs.",
+        "ar": "لا يمكن توقّع أي من هذه اللواحق من الفعل، ولهذا تُحفظ أزواجاً." } },
+    { "id": "c1v1-11", "concept": "c1.vocab.hedging", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "A single small study found an effect. Which sentence reports it responsibly?", "ar": "دراسة صغيرة واحدة وجدت أثراً. أي جملة تنقل ذلك بمسؤولية؟" },
+      "options": ["These findings indicate a possible effect.", "These findings prove the effect is real.", "These findings demonstrate the effect clearly.", "These findings settle the question entirely."],
+      "answer": 0,
+      "explanation": { "en": "One small study can indicate; only a body of work can demonstrate.",
+        "ar": "دراسة صغيرة واحدة تُشير indicate، ولا يُثبت demonstrate إلا تراكم الأعمال." } },
+    { "id": "c1v1-12", "concept": "c1.vocab.hedging", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "Which phrase makes the weakest claim?", "ar": "أي عبارة تحمل أضعف دعوى؟" },
+      "options": ["is consistent with", "clearly supports", "reliably shows", "demonstrates"], "answer": 0,
+      "explanation": { "en": "“Consistent with” only says the evidence does not contradict the claim.",
+        "ar": "consistent with تقول فقط إن الدليل لا يناقض الدعوى." } },
+    { "id": "c1v1-13", "concept": "c1.vocab.hedging", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "___ participants reported mild side effects, though most did not.", "options": ["A number of", "All of the", "Every one of the", "The majority of"], "answer": 0,
+      "explanation": { "en": "The second clause says most did not, so only a vague minority quantifier fits.",
+        "ar": "الشطر الثاني يقول إن الأغلبية لم تُبلغ، فلا يناسب إلا لفظ أقلية غير محدد." } },
+    { "id": "c1v1-14", "concept": "c1.vocab.hedging", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence overclaims?", "ar": "أي جملة تبالغ في الادعاء؟" },
+      "options": ["This one experiment proves the theory.", "This experiment supports the theory.", "This experiment is consistent with the theory.", "This experiment points towards the theory."],
+      "answer": 0,
+      "explanation": { "en": "A single experiment cannot prove a theory, and saying so costs the writer credibility everywhere else.",
+        "ar": "تجربة واحدة لا تُثبت نظرية، والادعاء بذلك يكلّف الكاتب مصداقيته في بقية النص." } },
+    { "id": "c1v1-15", "concept": "c1.vocab.academic", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["The", "study", "revealed", "a", "substantial", "gap", "between", "the", "two", "groups"],
+      "answer": "The study revealed a substantial gap between the two groups",
+      "explanation": { "en": "“Substantial” means large and significant here — not “physical”.",
+        "ar": "substantial تعني هنا «كبير وذو دلالة» لا «مادي»." } }
+  ]
+}

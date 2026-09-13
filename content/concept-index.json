@@ -137,6 +137,42 @@
   "unit": "a1-u8",
   "level": "A1"
  },
+ "a1.vocab.family": {
+  "en": "Family words",
+  "ar": "كلمات العائلة",
+  "unit": "a1-v1",
+  "level": "A1"
+ },
+ "a1.vocab.appearance": {
+  "en": "Describing people",
+  "ar": "وصف الأشخاص",
+  "unit": "a1-v1",
+  "level": "A1"
+ },
+ "a1.vocab.feelings": {
+  "en": "How you feel",
+  "ar": "التعبير عن الشعور",
+  "unit": "a1-v1",
+  "level": "A1"
+ },
+ "a1.vocab.home": {
+  "en": "Home and rooms",
+  "ar": "البيت والغرف",
+  "unit": "a1-v2",
+  "level": "A1"
+ },
+ "a1.vocab.food": {
+  "en": "Food and drink",
+  "ar": "الطعام والشراب",
+  "unit": "a1-v2",
+  "level": "A1"
+ },
+ "a1.vocab.town": {
+  "en": "Places and getting around",
+  "ar": "الأماكن والتنقل",
+  "unit": "a1-v2",
+  "level": "A1"
+ },
  "a2.past.irregular": {
   "en": "Irregular past verbs",
   "ar": "الأفعال الشاذة في الماضي",
@@ -281,6 +317,42 @@
   "unit": "a2-u8",
   "level": "A2"
  },
+ "a2.vocab.jobs": {
+  "en": "Jobs and the workplace",
+  "ar": "الوظائف ومكان العمل",
+  "unit": "a2-v1",
+  "level": "A2"
+ },
+ "a2.vocab.study": {
+  "en": "Study and learning",
+  "ar": "الدراسة والتعلّم",
+  "unit": "a2-v1",
+  "level": "A2"
+ },
+ "a2.vocab.money": {
+  "en": "Money and shopping",
+  "ar": "المال والتسوق",
+  "unit": "a2-v1",
+  "level": "A2"
+ },
+ "a2.vocab.travel": {
+  "en": "Travel and journeys",
+  "ar": "السفر والرحلات",
+  "unit": "a2-v2",
+  "level": "A2"
+ },
+ "a2.vocab.weather": {
+  "en": "Weather",
+  "ar": "الطقس",
+  "unit": "a2-v2",
+  "level": "A2"
+ },
+ "a2.vocab.leisure": {
+  "en": "Free time",
+  "ar": "وقت الفراغ",
+  "unit": "a2-v2",
+  "level": "A2"
+ },
  "b1.perfect.vs.past": {
   "en": "Present perfect or past simple?",
   "ar": "المضارع التام أم الماضي البسيط؟",
@@ -423,6 +495,42 @@
   "en": "Disagreeing politely",
   "ar": "الاعتراض بلباقة",
   "unit": "b1-u8",
+  "level": "B1"
+ },
+ "b1.vocab.health": {
+  "en": "Health and illness",
+  "ar": "الصحة والمرض",
+  "unit": "b1-v1",
+  "level": "B1"
+ },
+ "b1.vocab.tech": {
+  "en": "Devices and the internet",
+  "ar": "الأجهزة والإنترنت",
+  "unit": "b1-v1",
+  "level": "B1"
+ },
+ "b1.vocab.wordfamily": {
+  "en": "One root, four words",
+  "ar": "جذر واحد وأربع كلمات",
+  "unit": "b1-v1",
+  "level": "B1"
+ },
+ "b1.vocab.personality": {
+  "en": "What someone is like",
+  "ar": "وصف الطباع",
+  "unit": "b1-v2",
+  "level": "B1"
+ },
+ "b1.vocab.workplace": {
+  "en": "Applying and working",
+  "ar": "التقدّم للوظيفة والعمل",
+  "unit": "b1-v2",
+  "level": "B1"
+ },
+ "b1.vocab.relationships": {
+  "en": "People and relationships",
+  "ar": "العلاقات بين الناس",
+  "unit": "b1-v2",
   "level": "B1"
  },
  "b2.passive": {
@@ -581,6 +689,42 @@
   "unit": "b2-u8",
   "level": "B2"
  },
+ "b2.vocab.news": {
+  "en": "News and media",
+  "ar": "الأخبار والإعلام",
+  "unit": "b2-v1",
+  "level": "B2"
+ },
+ "b2.vocab.society": {
+  "en": "Society, law and false friends",
+  "ar": "المجتمع والقانون والكلمات الخادعة",
+  "unit": "b2-v1",
+  "level": "B2"
+ },
+ "b2.vocab.environment": {
+  "en": "Environment and change",
+  "ar": "البيئة والتغيّر",
+  "unit": "b2-v1",
+  "level": "B2"
+ },
+ "b2.vocab.trends": {
+  "en": "Describing a trend",
+  "ar": "وصف الاتجاه",
+  "unit": "b2-v2",
+  "level": "B2"
+ },
+ "b2.vocab.business": {
+  "en": "Business and money at work",
+  "ar": "لغة الأعمال والمال",
+  "unit": "b2-v2",
+  "level": "B2"
+ },
+ "b2.vocab.cause": {
+  "en": "Cause, effect and hedging",
+  "ar": "السبب والنتيجة والتحفّظ",
+  "unit": "b2-v2",
+  "level": "B2"
+ },
  "c1.collocation": {
   "en": "Collocation: words that travel together",
   "ar": "التلازم اللفظي",
@@ -731,6 +875,42 @@
   "unit": "c1-u8",
   "level": "C1"
  },
+ "c1.vocab.academic": {
+  "en": "The academic core",
+  "ar": "نواة المفردات الأكاديمية",
+  "unit": "c1-v1",
+  "level": "C1"
+ },
+ "c1.vocab.nominalisation": {
+  "en": "Turning verbs into nouns",
+  "ar": "تحويل الأفعال إلى أسماء",
+  "unit": "c1-v1",
+  "level": "C1"
+ },
+ "c1.vocab.hedging": {
+  "en": "Hedging and strength",
+  "ar": "التحفّظ ودرجات القوة",
+  "unit": "c1-v1",
+  "level": "C1"
+ },
+ "c1.vocab.governance": {
+  "en": "Institutions and power",
+  "ar": "المؤسسات والسلطة",
+  "unit": "c1-v2",
+  "level": "C1"
+ },
+ "c1.vocab.rights": {
+  "en": "Rights and obligations",
+  "ar": "الحقوق والالتزامات",
+  "unit": "c1-v2",
+  "level": "C1"
+ },
+ "c1.vocab.ethics": {
+  "en": "Ethical vocabulary",
+  "ar": "مفردات الأخلاق",
+  "unit": "c1-v2",
+  "level": "C1"
+ },
  "c2.naturalness": {
   "en": "Correct is not the same as natural",
   "ar": "الصحيح ليس بالضرورة طبيعياً",
@@ -879,6 +1059,42 @@
   "en": "Reading it as a stranger",
   "ar": "أن تقرأه كغريب",
   "unit": "c2-u8",
+  "level": "C2"
+ },
+ "c2.vocab.latinate": {
+  "en": "The two layers of English",
+  "ar": "طبقتا الإنجليزية",
+  "unit": "c2-v1",
+  "level": "C2"
+ },
+ "c2.vocab.connotation": {
+  "en": "Same meaning, different verdict",
+  "ar": "معنى واحد وحكم مختلف",
+  "unit": "c2-v1",
+  "level": "C2"
+ },
+ "c2.vocab.delexical": {
+  "en": "Words that only live in frames",
+  "ar": "كلمات لا تعيش إلا في قوالب",
+  "unit": "c2-v1",
+  "level": "C2"
+ },
+ "c2.vocab.figurative": {
+  "en": "Literal words, figurative jobs",
+  "ar": "كلمات حقيقية بوظائف مجازية",
+  "unit": "c2-v2",
+  "level": "C2"
+ },
+ "c2.vocab.idiomAccuracy": {
+  "en": "Idioms are fixed, or they are wrong",
+  "ar": "التعابير الاصطلاحية ثابتة وإلا صارت خطأً",
+  "unit": "c2-v2",
+  "level": "C2"
+ },
+ "c2.vocab.cliche": {
+  "en": "Cliché and the tired phrase",
+  "ar": "الكليشيه والعبارة المستهلكة",
+  "unit": "c2-v2",
   "level": "C2"
  }
 }

@@ -37,6 +37,7 @@ route('/session/:kind/:arg?', lazy(() => import('./ui/views/session.js'), 'sessi
 route('/review', lazy(() => import('./ui/views/review.js'), 'reviewView'));
 route('/stats', lazy(() => import('./ui/views/stats.js'), 'statsView'));
 route('/settings', lazy(() => import('./ui/views/settings.js'), 'settingsView'));
+route('/write/:id', lazy(() => import('./ui/views/write.js'), 'writeView'));
 route('/placement', lazy(() => import('./ui/views/placement.js'), 'placementView'));
 setNotFound(() => navigate('/', { replace: true }));
 

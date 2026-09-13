@@ -8,6 +8,7 @@ import { getUnit } from '../../data/content.js';
 import { recordConceptStudied, PASS_MARK } from '../../engine/record.js';
 import { navigate } from '../../core/router.js';
 import { stateFor, STATE_LABEL } from '../../engine/mastery.js';
+import { unitWritingProgress } from '../../engine/writing.js';
 
 export async function unitView({ params }) {
   setView(page(loading()));
@@ -20,6 +21,8 @@ export async function unitView({ params }) {
   const studied = p ? p.conceptsSeen.length : 0;
   const canPractice = studied > 0;
   const canTest = p && (p.practiced > 0 || studied >= unit.concepts.length);
+  const writingProgress = (unit.writing || []).length
+    ? unitWritingProgress(unit.writing, state.writing) : null;
 
   setView(page([
     backLink(() => navigate('/learn'), t('nav.learn')),
@@ -56,6 +59,12 @@ export async function unitView({ params }) {
         p && p.practiced ? `×${p.practiced}` : '', () => navigate(`/session/practice/${unit.id}`)),
       actionRow('🎯', t('unit.test'), canTest ? t('unit.testDesc', { n: PASS_MARK }) : t('unit.locked.test'), canTest,
         p && p.testBest !== null && p.testBest !== undefined ? `${p.testBest}%` : '', () => navigate(`/session/test/${unit.id}`)),
+      // Writing is always open: it is practice, not a checkpoint, and gating it behind a
+      // test score would only stop the learners who most need to write.
+      writingProgress
+        ? actionRow('🖊️', t('unit.write'), t('unit.writeDesc'), true,
+          `${writingProgress.done}/${writingProgress.total}`, () => navigate(`/write/${unit.id}`))
+        : null,
     ]),
 
     p && p.attempts ? el('p.small.muted.center', { style: { marginTop: '.8rem' } },

@@ -1,0 +1,171 @@
+{
+  "id": "c2-v1",
+  "goal": {
+    "en": "Choose between near-synonyms on register and connotation, not on meaning alone.",
+    "ar": "أن تختار بين المترادفات المتقاربة بحسب الأسلوب والإيحاء لا بحسب المعنى وحده."
+  },
+  "concepts": [
+    {
+      "id": "c2.vocab.latinate",
+      "title": { "en": "The two layers of English", "ar": "طبقتا الإنجليزية" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English kept its old Germanic words and borrowed a Latin and French layer on top. Most ideas therefore have two names: a short plain one and a long formal one. Choosing between them is choosing a register.",
+          "ar": "احتفظت الإنجليزية بكلماتها الجرمانية القديمة واستعارت فوقها طبقة لاتينية وفرنسية، فصار لأكثر المعاني اسمان: قصير عادي وطويل رسمي. والاختيار بينهما اختيار لمستوى الأسلوب." } },
+        { "type": "table", "head": ["Plain (Germanic)", "Formal (Latinate)"], "rows": [
+          ["start", "commence"],
+          ["end", "terminate"],
+          ["ask for", "request"],
+          ["get", "obtain"],
+          ["buy", "purchase"],
+          ["show", "demonstrate"],
+          ["help", "assist"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Longer is not better. “We commenced the meal” is comic. The formal word belongs where the situation is formal, not wherever you want to sound educated.",
+          "ar": "الأطول ليس الأفضل، فجملة We commenced the meal مضحكة. الكلمة الرسمية موضعها المقام الرسمي لا كل موضع تريد أن تبدو فيه متعلماً." } },
+        { "type": "tip", "text": {
+          "en": "A reliable test: would you say it out loud to a friend? If not, and you are writing to a friend, pick the plain word.",
+          "ar": "اختبار موثوق: هل تقولها بصوتك لصديق؟ إن كان لا وأنت تكتب لصديق، فاختر الكلمة العادية." } }
+      ]
+    },
+    {
+      "id": "c2.vocab.connotation",
+      "title": { "en": "Same meaning, different verdict", "ar": "معنى واحد وحكم مختلف" },
+      "teach": [
+        { "type": "table", "head": ["Approving", "Neutral", "Disapproving"], "rows": [
+          ["thrifty", "careful with money", "stingy"],
+          ["confident", "self-assured", "arrogant"],
+          ["determined", "persistent", "stubborn"],
+          ["slender", "thin", "skinny"],
+          ["curious", "interested", "nosy"],
+          ["frank", "direct", "blunt"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "These trios describe the same behaviour. The word you choose reports your judgement of it, and readers hear that judgement whether or not you intended it.",
+          "ar": "هذه الثلاثيات تصف السلوك نفسه، والكلمة التي تختارها تنقل حكمك عليه، ويسمع القارئ هذا الحكم قصدته أم لم تقصده." } },
+        { "type": "warn", "text": {
+          "en": "A dictionary that lists “stubborn = determined” is not wrong about meaning and useless about connotation. Never pick a synonym from a list without checking how it lands.",
+          "ar": "القاموس الذي يذكر stubborn مرادفةً لـ determined ليس مخطئاً في المعنى لكنه عديم الفائدة في الإيحاء. فلا تختر مرادفاً من قائمة دون التحقق من وقعه." } }
+      ]
+    },
+    {
+      "id": "c2.vocab.delexical",
+      "title": { "en": "Words that only live in frames", "ar": "كلمات لا تعيش إلا في قوالب" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "Some words have almost no meaning alone and exist only inside fixed frames. They are invisible to a dictionary and obvious to a native reader, which is why they mark proficiency so sharply.",
+          "ar": "بعض الكلمات لا معنى لها تقريباً بمفردها ولا توجد إلا داخل قوالب ثابتة. لا يراها القاموس ويراها القارئ الأصلي فوراً، ولذلك تكشف مستوى الإتقان بوضوح." } },
+        { "type": "table", "head": ["Frame", "Meaning"], "rows": [
+          ["a foregone conclusion", "decided before it happened"],
+          ["a moot point", "arguable, or no longer relevant"],
+          ["to all intents and purposes", "effectively"],
+          ["by no means", "not at all"],
+          ["far from", "the opposite of"],
+          ["to say the least", "and that is an understatement"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "These frames do not accept substitution. “A gone conclusion” and “by no ways” are not variants; they are errors that a reader notices instantly.",
+          "ar": "هذه القوالب لا تقبل الاستبدال. فـ a gone conclusion وby no ways ليستا صيغتين بديلتين بل خطأ يلحظه القارئ فوراً." } },
+        { "type": "examples", "items": [
+          { "en": "The result was by no means certain.", "ar": "لم تكن النتيجة مؤكدة على الإطلاق." },
+          { "en": "His account was, to say the least, incomplete.", "ar": "كانت روايته ناقصة، وهذا أقل ما يقال." }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c2v1-01", "concept": "c2.vocab.latinate", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "You are texting a friend about dinner. Which sounds right?", "ar": "ترسل رسالة لصديق عن العشاء. أيها مناسب؟" },
+      "options": ["Shall we start at eight?", "Shall we commence at eight?", "Shall we initiate at eight?", "Shall we undertake at eight?"],
+      "answer": 0,
+      "explanation": { "en": "The Latinate verbs are correct English but absurdly formal for a text message.",
+        "ar": "الأفعال اللاتينية صحيحة لغوياً لكنها رسمية بشكل عبثي في رسالة لصديق." } },
+    { "id": "c2v1-02", "concept": "c2.vocab.latinate", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which is right for a contract clause?", "ar": "أيها مناسب لبند في عقد؟" },
+      "options": ["Either party may terminate this agreement.", "Either party can just end this whole thing.", "Either side is able to stop this agreement.", "Any of you two can finish this agreement."],
+      "answer": 0,
+      "explanation": { "en": "Legal writing is the one place the Latinate word is the plain one: terminate is the term of art.",
+        "ar": "الكتابة القانونية هي الموضع الذي تكون فيه الكلمة اللاتينية هي العادية، فـ terminate مصطلح فني." } },
+    { "id": "c2v1-03", "concept": "c2.vocab.latinate", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence is wrong for its situation?", "ar": "أي جملة لا تناسب موقفها؟" },
+      "options": ["My mother requested that I purchase bread.", "My mother asked me to buy some bread.", "The committee requested further documents.", "The department purchased new equipment."],
+      "answer": 0,
+      "explanation": { "en": "Nothing is ungrammatical here — the register is wrong. A mother asks; she does not request.",
+        "ar": "لا خطأ نحوياً هنا بل خطأ في المستوى الأسلوبي. الأم تطلب ask ولا تقدّم طلباً request." } },
+    { "id": "c2v1-04", "concept": "c2.vocab.latinate", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": { "en": "Match the plain word to its formal partner.", "ar": "طابق الكلمة العادية بنظيرتها الرسمية." },
+      "pairs": [
+        ["buy", "purchase"],
+        ["get", "obtain"],
+        ["show", "demonstrate"],
+        ["end", "terminate"]
+      ],
+      "explanation": { "en": "Knowing both halves lets you move up or down the register deliberately.",
+        "ar": "معرفة الطرفين تتيح لك رفع مستوى الأسلوب أو خفضه عن قصد." } },
+    { "id": "c2v1-05", "concept": "c2.vocab.connotation", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "You admire how carefully your colleague spends. Which word do you use?", "ar": "تعجبك دقة زميلك في الإنفاق. أي كلمة تستعمل؟" },
+      "options": ["thrifty", "stingy", "mean", "tight-fisted"], "answer": 0,
+      "explanation": { "en": "All four describe the same behaviour; only “thrifty” approves of it.",
+        "ar": "الأربع تصف السلوك نفسه، وthrifty وحدها تمدحه." } },
+    { "id": "c2v1-06", "concept": "c2.vocab.connotation", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“She is very stubborn about it.” What does the speaker think?", "ar": "ماذا يرى المتحدث في هذه الجملة؟" },
+      "options": ["Her persistence is unreasonable.", "Her persistence is admirable.", "She changes her mind often.", "She has not decided yet."],
+      "answer": 0,
+      "explanation": { "en": "Stubborn is the disapproving member of the trio; determined is the approving one.",
+        "ar": "stubborn هي الطرف الذامّ في الثلاثية، وdetermined هي المادحة." } },
+    { "id": "c2v1-07", "concept": "c2.vocab.connotation", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence praises the person described?", "ar": "أي جملة تمدح الشخص الموصوف؟" },
+      "options": ["He is refreshingly frank with clients.", "He is unnecessarily blunt with clients.", "He is quite tactless with the clients.", "He is rather abrupt with most clients."],
+      "answer": 0,
+      "explanation": { "en": "Frank, blunt, tactless and abrupt describe the same directness on a falling scale of approval.",
+        "ar": "frank وblunt وtactless وabrupt تصف الصراحة نفسها على سُلّم نازل من الاستحسان." } },
+    { "id": "c2v1-08", "concept": "c2.vocab.connotation", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": { "en": "Give the approving word for someone who asks a lot of questions (not “nosy”).", "ar": "هات الكلمة المادحة لمن يكثر السؤال (غير nosy)." },
+      "answer": "curious", "accept": ["Curious", "inquisitive"],
+      "explanation": { "en": "Curious and nosy describe identical behaviour and opposite verdicts.",
+        "ar": "curious وnosy تصفان السلوك نفسه وتحملان حكمين متعاكسين." } },
+    { "id": "c2v1-09", "concept": "c2.vocab.delexical", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“The outcome was a foregone conclusion.” What does this say?", "ar": "ماذا تعني هذه الجملة؟" },
+      "options": ["It was certain before it happened.", "It was decided by a narrow margin.", "It was reversed after the event.", "It was never properly concluded."],
+      "answer": 0,
+      "explanation": { "en": "A foregone conclusion is one nobody had to wait for.",
+        "ar": "foregone conclusion نتيجة لم يكن أحد بحاجة لانتظارها." } },
+    { "id": "c2v1-10", "concept": "c2.vocab.delexical", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which fixed phrase is written incorrectly?", "ar": "أي تعبير ثابت كُتب خطأً؟" },
+      "options": ["The result was by no ways certain.", "The result was by no means certain.", "The result was far from certain.", "The result was anything but certain."],
+      "answer": 0,
+      "explanation": { "en": "“By no means” is fixed. Changing “means” to “ways” breaks it, though the logic seems the same.",
+        "ar": "by no means تعبير ثابت، وتغيير means إلى ways يكسره وإن بدا المنطق واحداً." } },
+    { "id": "c2v1-11", "concept": "c2.vocab.delexical", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "“Whether he resigns is now a moot point.” Why?", "ar": "لماذا صارت المسألة moot point؟" },
+      "options": ["Events have made it irrelevant.", "Everyone has already agreed on it.", "It is the most important question left.", "It has been settled by a formal vote."],
+      "answer": 0,
+      "explanation": { "en": "In current usage a moot point is one there is no longer any use in debating.",
+        "ar": "في الاستعمال الحديث، moot point مسألة لم يعد في مناقشتها فائدة." } },
+    { "id": "c2v1-12", "concept": "c2.vocab.delexical", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence uses understatement to criticise?", "ar": "أي جملة تنتقد عبر التقليل من الشأن؟" },
+      "options": ["The report was, to say the least, incomplete.", "The report was incomplete in several places.", "The report was completely and utterly useless.", "The report was missing three important sections."],
+      "answer": 0,
+      "explanation": { "en": "“To say the least” signals that the polite word chosen is far weaker than the truth.",
+        "ar": "عبارة to say the least تُنبّه إلى أن الكلمة المهذبة المختارة أضعف بكثير من الحقيقة." } },
+    { "id": "c2v1-13", "concept": "c2.vocab.delexical", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["To", "all", "intents", "and", "purposes", "the", "project", "has", "ended"],
+      "answer": "To all intents and purposes the project has ended",
+      "explanation": { "en": "The phrase means “effectively”, and its five words never change order or number.",
+        "ar": "العبارة تعني «عملياً»، وكلماتها الخمس لا يتغير ترتيبها ولا عددها." } },
+    { "id": "c2v1-14", "concept": "c2.vocab.latinate", "type": "choice", "format": "natural", "difficulty": 5,
+      "prompt": { "en": "Which sentence would a careful editor leave alone?", "ar": "أي جملة يتركها المحرر المدقّق كما هي؟" },
+      "options": ["We need to get the data before Friday.", "We need to obtain the data prior to Friday.", "We necessitate the data in advance of Friday.", "We require obtainment of the data by Friday."],
+      "answer": 0,
+      "explanation": { "en": "The plain version says the same thing with no loss. The others add syllables, not meaning.",
+        "ar": "الصيغة العادية تقول الشيء نفسه دون خسارة، والبقية تضيف مقاطع لا معنى." } },
+    { "id": "c2v1-15", "concept": "c2.vocab.connotation", "type": "choice", "format": "inference", "difficulty": 5,
+      "prompt": { "en": "A reference says: “He is confident in his own abilities.” What is being hinted at?", "ar": "قيل في توصية He is confident in his own abilities. فما التلميح؟" },
+      "options": ["Possibly more confident than justified.", "That he is an unusually modest person.", "That his technical skills are outstanding.", "That he lacks any belief in himself."],
+      "answer": 0,
+      "explanation": { "en": "“In his own abilities” narrows the confidence to his own view of himself, which is faint praise.",
+        "ar": "عبارة in his own abilities تحصر الثقة في رأيه عن نفسه، وهذا مدح فاتر." } }
+  ]
+}

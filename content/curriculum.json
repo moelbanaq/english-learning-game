@@ -26,7 +26,12 @@
         { "id": "a1-u7", "file": "levels/a1/u7-prepositions.json", "title": { "en": "Prepositions & how often", "ar": "حروف الجر وتكرار الأفعال" }, "questions": 17,
           "concepts": ["a1.prep.time", "a1.prep.place", "a1.adverbs.frequency"] },
         { "id": "a1-u8", "file": "levels/a1/u8-can-future.json", "title": { "en": "can, going to & everyday English", "ar": "القدرة والمستقبل والتعبيرات اليومية" }, "questions": 18,
-          "concepts": ["a1.modal.can", "a1.future.goingTo", "a1.everyday.phrases"] }
+          "concepts": ["a1.modal.can", "a1.future.goingTo", "a1.everyday.phrases"] },
+
+        { "id": "a1-v1", "track": "vocab", "file": "levels/a1/v1-people-family.json", "title": { "en": "People, family & feelings", "ar": "الناس والعائلة والمشاعر" }, "questions": 15,
+          "concepts": ["a1.vocab.family", "a1.vocab.appearance", "a1.vocab.feelings"] },
+        { "id": "a1-v2", "track": "vocab", "file": "levels/a1/v2-home-food-town.json", "title": { "en": "Home, food & getting around", "ar": "البيت والطعام والتنقل" }, "questions": 19,
+          "concepts": ["a1.vocab.home", "a1.vocab.food", "a1.vocab.town"] }
       ]
     },
     {
@@ -52,7 +57,12 @@
         { "id": "a2-u7", "file": "levels/a2/u7-word-partners.json", "title": { "en": "Word partners: make, do, have, get", "ar": "التلازم اللفظي: make وdo وhave وget" }, "questions": 16,
           "concepts": ["a2.collocation.makeDo", "a2.collocation.haveTake", "a2.collocation.get"] },
         { "id": "a2-u8", "file": "levels/a2/u8-everyday-reading.json", "title": { "en": "Everyday reading & replies", "ar": "قراءة يومية وردود مناسبة" }, "questions": 16,
-          "concepts": ["a2.reading.everyday", "a2.functions.social", "a2.connectors.basic"] }
+          "concepts": ["a2.reading.everyday", "a2.functions.social", "a2.connectors.basic"] },
+
+        { "id": "a2-v1", "track": "vocab", "file": "levels/a2/v1-work-study-money.json", "title": { "en": "Work, study & money", "ar": "العمل والدراسة والمال" }, "questions": 15,
+          "concepts": ["a2.vocab.jobs", "a2.vocab.study", "a2.vocab.money"] },
+        { "id": "a2-v2", "track": "vocab", "file": "levels/a2/v2-travel-weather-leisure.json", "title": { "en": "Travel, weather & free time", "ar": "السفر والطقس ووقت الفراغ" }, "questions": 19,
+          "concepts": ["a2.vocab.travel", "a2.vocab.weather", "a2.vocab.leisure"] }
       ]
     },
     {
@@ -78,7 +88,12 @@
         { "id": "b1-u7", "file": "levels/b1/u7-phrasal-verbs.json", "title": { "en": "Phrasal verbs & word partners", "ar": "الأفعال المركّبة والتلازم اللفظي" }, "questions": 15,
           "concepts": ["b1.phrasal.meaning", "b1.phrasal.separable", "b1.collocation.verbNoun"] },
         { "id": "b1-u8", "file": "levels/b1/u8-opinion.json", "title": { "en": "Opinion & argument", "ar": "الرأي والحِجاج" }, "questions": 15,
-          "concepts": ["b1.opinion.language", "b1.argument.structure", "b1.opinion.disagree"] }
+          "concepts": ["b1.opinion.language", "b1.argument.structure", "b1.opinion.disagree"] },
+
+        { "id": "b1-v1", "track": "vocab", "file": "levels/b1/v1-health-tech.json", "title": { "en": "Health, devices & word families", "ar": "الصحة والأجهزة وعائلات الكلمات" }, "questions": 15,
+          "concepts": ["b1.vocab.health", "b1.vocab.tech", "b1.vocab.wordfamily"] },
+        { "id": "b1-v2", "track": "vocab", "file": "levels/b1/v2-work-personality.json", "title": { "en": "Character & working life", "ar": "الطباع والحياة المهنية" }, "questions": 19,
+          "concepts": ["b1.vocab.personality", "b1.vocab.workplace", "b1.vocab.relationships"] }
       ]
     },
     {
@@ -104,7 +119,12 @@
         { "id": "b2-u7", "file": "levels/b2/u7-reading-attitude.json", "title": { "en": "Reading for attitude", "ar": "قراءة الموقف والنبرة" }, "questions": 15,
           "concepts": ["b2.reading.attitude", "b2.reading.evidence", "b2.reading.tone"] },
         { "id": "b2-u8", "file": "levels/b2/u8-formal-writing.json", "title": { "en": "Emails & reports", "ar": "الرسائل والتقارير" }, "questions": 15,
-          "concepts": ["b2.writing.concise", "b2.writing.nominalisation", "b2.writing.emailShape"] }
+          "concepts": ["b2.writing.concise", "b2.writing.nominalisation", "b2.writing.emailShape"] },
+
+        { "id": "b2-v1", "track": "vocab", "file": "levels/b2/v1-society-media-environment.json", "title": { "en": "News, society & the environment", "ar": "الأخبار والمجتمع والبيئة" }, "questions": 15,
+          "concepts": ["b2.vocab.news", "b2.vocab.society", "b2.vocab.environment"] },
+        { "id": "b2-v2", "track": "vocab", "file": "levels/b2/v2-business-data-change.json", "title": { "en": "Business, data & cause", "ar": "الأعمال والبيانات والسببية" }, "questions": 19,
+          "concepts": ["b2.vocab.trends", "b2.vocab.business", "b2.vocab.cause"] }
       ]
     },
     {
@@ -130,7 +150,12 @@
         { "id": "c1-u7", "file": "levels/c1/u7-register-shift.json", "title": { "en": "Shifting register", "ar": "تغيير مستوى اللغة" }, "questions": 15,
           "concepts": ["c1.register.shift", "c1.register.euphemism", "c1.register.directness"] },
         { "id": "c1-u8", "file": "levels/c1/u8-critique.json", "title": { "en": "Argument & critique", "ar": "الحجاج والنقد" }, "questions": 15,
-          "concepts": ["c1.critique.claims", "c1.critique.reasoning", "c1.critique.writing"] }
+          "concepts": ["c1.critique.claims", "c1.critique.reasoning", "c1.critique.writing"] },
+
+        { "id": "c1-v1", "track": "vocab", "file": "levels/c1/v1-academic-vocabulary.json", "title": { "en": "Academic vocabulary", "ar": "المفردات الأكاديمية" }, "questions": 15,
+          "concepts": ["c1.vocab.academic", "c1.vocab.nominalisation", "c1.vocab.hedging"] },
+        { "id": "c1-v2", "track": "vocab", "file": "levels/c1/v2-politics-ethics-abstraction.json", "title": { "en": "Institutions, rights & ethics", "ar": "المؤسسات والحقوق والأخلاق" }, "questions": 19,
+          "concepts": ["c1.vocab.governance", "c1.vocab.rights", "c1.vocab.ethics"] }
       ]
     },
     {
@@ -156,7 +181,12 @@
         { "id": "c2-u7", "file": "levels/c2/u7-voice.json", "title": { "en": "Voice & distance", "ar": "الصوت والمسافة" }, "questions": 15,
           "concepts": ["c2.voice.free", "c2.voice.attribution", "c2.voice.distance"] },
         { "id": "c2-u8", "file": "levels/c2/u8-editing.json", "title": { "en": "Editing your own prose", "ar": "تحرير نصّك بنفسك" }, "questions": 15,
-          "concepts": ["c2.edit.cutting", "c2.edit.precision", "c2.edit.stranger"] }
+          "concepts": ["c2.edit.cutting", "c2.edit.precision", "c2.edit.stranger"] },
+
+        { "id": "c2-v1", "track": "vocab", "file": "levels/c2/v1-register-synonyms.json", "title": { "en": "Register & the near-synonym", "ar": "المستوى الأسلوبي والمترادفات المتقاربة" }, "questions": 15,
+          "concepts": ["c2.vocab.latinate", "c2.vocab.connotation", "c2.vocab.delexical"] },
+        { "id": "c2-v2", "track": "vocab", "file": "levels/c2/v2-idiom-metaphor-frames.json", "title": { "en": "Idiom, metaphor & cliché", "ar": "التعبير الاصطلاحي والاستعارة والكليشيه" }, "questions": 19,
+          "concepts": ["c2.vocab.figurative", "c2.vocab.idiomAccuracy", "c2.vocab.cliche"] }
       ]
     }
   ]

@@ -377,7 +377,116 @@ try {
   check('navigation moves out of the way on desktop', navBottom !== 'fixed', `position=${navBottom}`);
   await wide.close();
 
-  /* ---------- 13. Offline ---------- */
+  /* ---------- 13. The vocabulary track ---------- */
+  // Vocabulary sits beside grammar but must not gate progress, so the level counter
+  // and the unlock rule both have to keep ignoring it.
+  {
+    const trk = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const tp = await trk.newPage();
+    await tp.goto(base + '#/learn', { waitUntil: 'networkidle' });
+    await tp.waitForSelector('.level-card', { timeout: 5000 });
+    // innerText is what the reader sees, and CSS upper-cases these headings.
+    const heads = (await tp.locator('.level-card[data-level="A1"] .track-head__name').allInnerTexts())
+      .map((x) => x.trim().toLowerCase());
+    check('a level shows both tracks', heads.length === 2 && heads.includes('grammar') && heads.includes('vocabulary'),
+      heads.join(' | '));
+    const a1meta = await tp.locator('.level-card[data-level="A1"] .level-card__meta').innerText();
+    check('level progress counts grammar only', /\b8\b/.test(a1meta) && !/\b10\b/.test(a1meta), a1meta);
+    const rows = await tp.locator('.level-card[data-level="A1"] .unit-row').count();
+    check('vocabulary units are listed too', rows === 10, `${rows} rows`);
+
+    await tp.goto(base + '#/unit/a1-v1', { waitUntil: 'networkidle' });
+    // Wait for the unit's own content, not just the page shell: the shell renders a
+    // spinner first and the assertion would read that instead.
+    await tp.waitForSelector('.rowcard--static', { timeout: 8000 }).catch(() => {});
+    const vocabText = await tp.locator('.page').innerText();
+    check('a vocabulary unit opens like any other', /family/i.test(vocabText), vocabText.slice(0, 80).replace(/\n/g, ' '));
+    await trk.close();
+  }
+
+  /* ---------- 14. Writing practice ---------- */
+  // The order of the three stages is the whole point: a model answer shown before the
+  // learner has marked their own work is just something to copy.
+  {
+    const wctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const wp = await wctx.newPage();
+    await wp.goto(base + '#/unit/a1-u8', { waitUntil: 'networkidle' });
+    await wp.waitForSelector('.rowcard--static', { timeout: 8000 });
+    const hasWrite = await wp.locator('.rowcard', { hasText: 'Write' }).first().isVisible();
+    check('a unit with prompts offers writing practice', hasWrite);
+
+    await wp.goto(base + '#/write/a1-u8', { waitUntil: 'networkidle' });
+    await wp.waitForSelector('.rowcard', { timeout: 8000 });
+    await wp.locator('.rowcard').first().click();
+    await wp.waitForSelector('textarea.field', { timeout: 5000 });
+    check('no model answer is visible before writing', (await wp.locator('.write__model').count()) === 0);
+
+    await wp.locator('textarea.field').fill('On Friday I am going to visit my grandmother in the morning. '
+      + 'In the afternoon I am going to meet two friends at a cafe near the market. '
+      + 'We are going to watch a football match together. On Saturday I am going to rest.');
+    const counted = await wp.locator('.row--between .small').first().innerText();
+    check('the word counter tracks the draft', /\b4[0-9]\b/.test(counted), counted);
+
+    await wp.locator('button', { hasText: "I've finished" }).first().click();
+    await wp.waitForSelector('.check', { timeout: 5000 });
+    check('the checklist appears before the model', (await wp.locator('.check').count()) >= 3);
+    check('still no model answer at the checklist stage', (await wp.locator('.write__model').count()) === 0);
+
+    const boxes = wp.locator('.check__box');
+    for (const i of [0, 1, 2]) await boxes.nth(i).check();
+    await wp.locator('button', { hasText: 'Show a model answer' }).first().click();
+    await wp.waitForSelector('.write__model', { timeout: 5000 });
+    check('the model answer appears last', await wp.locator('.write__model').isVisible());
+    const scored = await wp.locator('.write__score').innerText();
+    check('self-marking is reported back', scored.trim() === '60%', scored);
+
+    await sleep(400); // the store batches writes on a short timer
+    const stored = await wp.evaluate(() => {
+      const s = JSON.parse(localStorage.getItem('masar.v1.progress'));
+      const rec = s.writing['a1u8-w1'];
+      return { xp: s.profile.xp, words: (rec.text || '').split(/\s+/).length, done: Boolean(rec.completedAt) };
+    });
+    check('the draft is saved locally', stored.words > 30 && stored.done, JSON.stringify(stored));
+    check('finishing a prompt earns XP', stored.xp >= 20, `xp=${stored.xp}`);
+
+    // Writing is self-marked, so it must never feed the mastery model.
+    const noMastery = await wp.evaluate(() => {
+      const s = JSON.parse(localStorage.getItem('masar.v1.progress'));
+      return Object.keys(s.concepts).length === 0 && Object.keys(s.questions).length === 0;
+    });
+    check('self-marked writing does not touch concept mastery', noMastery);
+    await wctx.close();
+  }
+
+  /* ---------- 15. Reading passages ---------- */
+  {
+    const rctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const rp = await rctx.newPage();
+    // A relative fetch inside the page only resolves once the page has a real URL.
+    await rp.goto(base, { waitUntil: 'domcontentloaded' });
+    const levels = ['a1-v2', 'a2-v2', 'b1-v2', 'b2-v2', 'c1-v2', 'c2-v2'];
+    let withPassage = 0;
+    for (const id of levels) {
+      const unit = await rp.evaluate(async (u) => {
+        const map = {
+          'a1-v2': 'levels/a1/v2-home-food-town.json',
+          'a2-v2': 'levels/a2/v2-travel-weather-leisure.json',
+          'b1-v2': 'levels/b1/v2-work-personality.json',
+          'b2-v2': 'levels/b2/v2-business-data-change.json',
+          'c1-v2': 'levels/c1/v2-politics-ethics-abstraction.json',
+          'c2-v2': 'levels/c2/v2-idiom-metaphor-frames.json',
+        };
+        return (await fetch('content/' + map[u])).json();
+      }, id);
+      const passages = Object.keys(unit.passages || {});
+      const linked = (unit.questions || []).filter((q) => q.passageId).length;
+      if (passages.length && linked >= 4) withPassage += 1;
+    }
+    check('every level has a graded reading passage', withPassage === 6, `${withPassage}/6`);
+    await rctx.close();
+  }
+
+  /* ---------- 16. Offline ---------- */
   // The point of the service worker is a learner on a train, so the check is the real
   // thing: visit online once, kill the network, reload, and expect the app to work.
   {

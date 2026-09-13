@@ -119,12 +119,21 @@ function validateQuestion(q, where, opts = {}) {
   }
 }
 
+const TRACKS = new Set(['grammar', 'vocab']);
+const SPINE = 'grammar';
+
 const curriculum = readJSON('curriculum.json');
 const allConceptIds = new Set();
 
 for (const level of curriculum.levels) {
+  // Level progress and unlocking are driven by the grammar spine, so a level without
+  // one would be impossible to finish.
+  if (!level.units.some((u) => (u.track || SPINE) === SPINE && u.status !== 'planned')) {
+    err(level.id, `level has no published "${SPINE}" units`);
+  }
   for (const meta of level.units) {
     const where = `${level.id}/${meta.id}`;
+    if (meta.track && !TRACKS.has(meta.track)) err(where, `unknown track "${meta.track}"`);
     if (!meta.file) { err(where, 'unit has no file'); continue; }
     if (!existsSync(join(CONTENT, meta.file))) { err(where, `missing file ${meta.file}`); continue; }
 
@@ -155,6 +164,24 @@ for (const level of curriculum.levels) {
     const declared = new Set(meta.concepts || []);
     for (const id of conceptIds) if (!declared.has(id)) err(where, `concept "${id}" missing from curriculum.json concepts list`);
     for (const id of declared) if (!conceptIds.has(id)) err(where, `curriculum lists concept "${id}" which the unit file does not define`);
+
+    // Writing prompts are optional, but a half-written one is worse than none: without a
+    // checklist and a model answer the learner has no way to mark their own work.
+    for (const w of unit.writing || []) {
+      const at = `${where} [${w.id || '?'}]`;
+      if (!w.id) err(where, 'writing prompt has no id');
+      else if (seenQuestionIds.has(w.id)) err(at, 'duplicate id');
+      else seenQuestionIds.add(w.id);
+      if (!w.prompt || !w.prompt.en) err(at, 'writing prompt has no English prompt');
+      else if (!w.prompt.ar) warn(at, 'writing prompt has no Arabic prompt');
+      if (!Array.isArray(w.checklist) || w.checklist.length < 3) err(at, 'writing prompt needs at least 3 checklist items');
+      for (const c of w.checklist || []) {
+        if (!c || !c.en) err(at, 'checklist item has no English text');
+        else if (!c.ar) warn(at, 'checklist item has no Arabic text');
+      }
+      if (!w.model || !w.model.en) err(at, 'writing prompt needs a model answer to compare against');
+      if (typeof w.minWords !== 'number' || w.minWords < 10) err(at, 'writing prompt needs a minWords target of at least 10');
+    }
 
     if (!Array.isArray(unit.questions) || unit.questions.length < 8) err(where, 'a unit needs at least 8 questions');
     for (const q of unit.questions || []) validateQuestion(q, where, { conceptIds, passages: unit.passages });

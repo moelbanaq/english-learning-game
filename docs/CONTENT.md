@@ -143,7 +143,60 @@ node tools/build-concept-index.mjs
 
 `npm test` fails if the index has drifted, and tells you to run this.
 
-## 7. The placement test
+## 7. Tracks
+
+A unit entry in `curriculum.json` may carry `"track": "vocab"`. Leave it out and the
+unit is grammar, which is the spine: only grammar units count towards level progress
+and towards unlocking the next level.
+
+```json
+{ "id": "a1-v1", "track": "vocab", "file": "levels/a1/v1-people-family.json", … }
+```
+
+Write vocabulary units around a topic, not around a part of speech. Word families,
+collocations and phrasal verbs belong inside the topic that uses them — a list of
+phrasal verbs with no situation attached is the least memorable thing you can write.
+
+## 8. Reading passages
+
+Put the text in the unit's `passages` map and point questions at it with `passageId`:
+
+```json
+"passages": { "a1read": { "title": "A note on the kitchen table", "text": "…" } }
+```
+
+Grade the passage to the level, and prefer a real text type — a note, a message, a
+reference letter, a report extract, a column — over a paragraph written to be an
+exercise. Give it at least four questions, and attach each one to the concept it
+actually tests, so comprehension work still feeds mastery.
+
+## 9. Writing prompts
+
+A unit may carry a `writing` array. Each prompt needs all four of these or the validator
+rejects it — a prompt without a checklist gives the learner no way to mark their own
+work, and one without a model gives them nothing to compare against:
+
+```json
+"writing": [{
+  "id": "a1u8-w1",
+  "prompt":   { "en": "…", "ar": "…" },
+  "context":  { "en": "How long, and who you are writing to", "ar": "…" },
+  "minWords": 35,
+  "checklist": [ { "en": "I used “going to” at least twice.", "ar": "…" } ],
+  "model":    { "en": "A model answer in full.", "ar": "…" },
+  "notes":    { "en": "Why the model does what it does.", "ar": "…" }
+}]
+```
+
+Write checklist items the learner can actually check by re-reading their own text.
+"I used the past continuous at least once" is checkable; "my writing flows well" is not.
+Three items is the minimum; five or six is usually right.
+
+The model answer is shown only after the learner has marked themselves, so write it to
+be compared against, not copied: the `notes` field should say what the model is doing
+and why, not praise it.
+
+## 10. The placement test
 
 `content/placement.json` is a separate bank with its own rules. The test is adaptive: it
 draws a block of four questions per level, starting at A1, and stops at the first block
@@ -162,7 +215,7 @@ That shape constrains the content:
 
 Difficulty inside a block ramps 1→5, so tag `difficulty` honestly — the block is sorted by it.
 
-## 8. Checklist before committing
+## 11. Checklist before committing
 
 ```bash
 node tools/build-concept-index.mjs   # if you added or renamed a concept

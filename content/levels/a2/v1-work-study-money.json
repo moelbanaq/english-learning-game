@@ -1,0 +1,157 @@
+{
+  "id": "a2-v1",
+  "goal": {
+    "en": "Talk about jobs, study and money — including the verbs English insists on for each.",
+    "ar": "أن تتحدث عن العمل والدراسة والمال، مع الأفعال التي تصرّ الإنجليزية على استعمالها مع كل منها."
+  },
+  "concepts": [
+    {
+      "id": "a2.vocab.jobs",
+      "title": { "en": "Jobs and the workplace", "ar": "الوظائف ومكان العمل" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "A job needs “a”: she is a nurse. Dropping it — “she is nurse” — is the single most common Arabic-speaker slip here, because Arabic needs no article.",
+          "ar": "المهنة تأخذ a فنقول she is a nurse. وحذفها كما في she is nurse أشيع خطأ عند الناطقين بالعربية لأن العربية لا تحتاج أداة." } },
+        { "type": "table", "head": ["Word", "Means"], "rows": [
+          ["employer", "the company or person who pays you"],
+          ["employee", "the person who is paid"],
+          ["colleague", "someone you work with"],
+          ["manager / boss", "the person in charge of you"],
+          ["salary", "money paid monthly"],
+          ["shift", "a block of working hours"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Work” is uncountable: I have a lot of work. “Job” is countable: I have two jobs. “I have a work” is always wrong.",
+          "ar": "كلمة work غير معدودة فنقول a lot of work، أما job فمعدودة فنقول two jobs. وجملة I have a work خطأ دائماً." } },
+        { "type": "examples", "items": [
+          { "en": "My sister is an engineer at a small company.", "ar": "أختي مهندسة في شركة صغيرة." },
+          { "en": "I work night shifts twice a week.", "ar": "أعمل نوبات ليلية مرتين أسبوعياً." }
+        ] }
+      ]
+    },
+    {
+      "id": "a2.vocab.study",
+      "title": { "en": "Study and learning", "ar": "الدراسة والتعلّم" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Study = the activity of reading and revising. Learn = the result, actually knowing it. You study for an exam so that you learn the material.",
+          "ar": "study هو فعل المذاكرة نفسه، وlearn هي النتيجة أي أن تعرف المادة فعلاً. تذاكر study للامتحان لكي تتعلم learn المحتوى." } },
+        { "type": "table", "head": ["Verb", "Goes with"], "rows": [
+          ["take / sit", "an exam"],
+          ["pass", "an exam (= succeed)"],
+          ["fail", "an exam"],
+          ["revise (UK) / review (US)", "your notes"],
+          ["hand in", "your homework"],
+          ["get", "a mark, a grade, a degree"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“I passed the exam” means you succeeded, not that you sat it. To say only that you attended it, use “I took the exam”.",
+          "ar": "I passed the exam تعني «نجحت» لا «أدّيت». وللدلالة على مجرد الجلوس للامتحان قل I took the exam." } },
+        { "type": "examples", "items": [
+          { "en": "I studied all night and still failed.", "ar": "ذاكرت طوال الليل ومع ذلك رسبت." },
+          { "en": "She got a good mark in maths.", "ar": "حصلت على درجة جيدة في الرياضيات." }
+        ] }
+      ]
+    },
+    {
+      "id": "a2.vocab.money",
+      "title": { "en": "Money and shopping", "ar": "المال والتسوق" },
+      "teach": [
+        { "type": "table", "head": ["Verb", "Pattern", "Example"], "rows": [
+          ["spend", "spend money on something", "I spent 200 on books."],
+          ["pay", "pay for something", "I paid for the taxi."],
+          ["cost", "something costs an amount", "It costs 50 pounds."],
+          ["afford", "can / can't afford something", "I can't afford it."],
+          ["save", "save money", "I save a little each month."],
+          ["borrow / lend", "borrow from · lend to", "He lent me his car."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Borrow means take; lend means give. «استعار» and «أعار» are two different verbs in Arabic too, so the trap is only which English word is which: you borrow FROM a person, you lend TO a person.",
+          "ar": "borrow تعني «يستعير» وlend تعني «يُعير»، والفرق موجود في العربية أيضاً. المهم اتجاه الحرف: تستعير from شخص، وتُعير to شخص." } },
+        { "type": "rule", "text": {
+          "en": "“Pay” takes “for” before the thing bought, but no “for” before the money or the person: I paid the driver 50 pounds for the ride.",
+          "ar": "pay تأخذ for قبل الشيء المشترى، ولا تأخذها قبل المبلغ ولا قبل الشخص: I paid the driver 50 pounds for the ride." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2v1-01", "concept": "a2.vocab.jobs", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "My mother is ___ teacher.", "options": ["a", "the", "one", "an"], "answer": 0,
+      "explanation": { "en": "Jobs take a/an in English even though Arabic needs no article.",
+        "ar": "المهن تأخذ a أو an في الإنجليزية وإن كانت العربية لا تحتاج أداة." } },
+    { "id": "a2v1-02", "concept": "a2.vocab.jobs", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have a work tomorrow morning.", "I have a lot of work tomorrow.", "I have a job interview tomorrow.", "I have two jobs at the moment."],
+      "answer": 0,
+      "explanation": { "en": "Work is uncountable, so it cannot take “a”. Job is countable and can.",
+        "ar": "كلمة work غير معدودة فلا تأخذ a، أما job فمعدودة وتأخذها." } },
+    { "id": "a2v1-03", "concept": "a2.vocab.jobs", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": { "en": "The people you work with, at your own level, are your…", "ar": "من تعمل معهم في مستواك نفسه هم…" },
+      "options": ["colleagues", "employers", "customers", "managers"], "answer": 0,
+      "explanation": { "en": "Colleagues work alongside you; an employer pays you.",
+        "ar": "colleagues زملاء العمل، أما employer فهو رب العمل الذي يدفع لك." } },
+    { "id": "a2v1-04", "concept": "a2.vocab.jobs", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the word to its meaning.", "ar": "طابق الكلمة بمعناها." },
+      "pairs": [
+        ["salary", "money paid every month"],
+        ["shift", "a block of working hours"],
+        ["employee", "the person who is paid"],
+        ["employer", "the company that pays"]
+      ],
+      "explanation": { "en": "Employer and employee differ by two letters and mean opposite things — worth learning as a pair.",
+        "ar": "employer وemployee يفترقان بحرفين ويحملان معنيين متقابلين، فاحفظهما معاً." } },
+    { "id": "a2v1-05", "concept": "a2.vocab.study", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ for three hours last night.", "options": ["studied", "learned", "taught", "knew"], "answer": 0,
+      "explanation": { "en": "The activity of working through material is “study”; “learn” is the result.",
+        "ar": "فعل المذاكرة نفسه study، أما learn فهي النتيجة." } },
+    { "id": "a2v1-06", "concept": "a2.vocab.study", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I passed the exam but I failed.", "I took the exam but I failed.", "I passed the exam, so I was happy.", "I failed the exam and took it again."],
+      "answer": 0,
+      "explanation": { "en": "“Passed” already means succeeded, so it cannot be followed by “failed”. The neutral verb is “took”.",
+        "ar": "passed تعني «نجح» أصلاً فلا يصح أن يتبعها failed. الفعل المحايد هو took." } },
+    { "id": "a2v1-07", "concept": "a2.vocab.study", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "You have to ___ your homework by Friday.", "options": ["hand in", "hand out", "hand over", "hand off"], "answer": 0,
+      "explanation": { "en": "Hand in = give to a teacher. Hand out = distribute to many people.",
+        "ar": "hand in تعني التسليم للمعلم، وhand out تعني التوزيع على كثيرين." } },
+    { "id": "a2v1-08", "concept": "a2.vocab.study", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "One word: to look at your notes again before an exam is to ___ (British English).", "ar": "كلمة واحدة: مراجعة الملاحظات قبل الامتحان في البريطانية تُسمّى ___" },
+      "answer": "revise", "accept": ["to revise", "revising"],
+      "explanation": { "en": "British “revise” = American “review”. Neither means “change” here.",
+        "ar": "revise البريطانية تقابل review الأمريكية، ولا تعني «يعدّل» في هذا السياق." } },
+    { "id": "a2v1-09", "concept": "a2.vocab.money", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I ___ fifty pounds on a new jacket.", "options": ["spent", "paid", "cost", "bought"], "answer": 0,
+      "explanation": { "en": "Spend takes the money as its object: spend money on something.",
+        "ar": "spend يأخذ المبلغ مفعولاً: spend money on something." } },
+    { "id": "a2v1-10", "concept": "a2.vocab.money", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Who ___ for the meal last night?", "options": ["paid", "spent", "cost", "bought for"], "answer": 0,
+      "explanation": { "en": "You pay FOR a thing. Spend needs an amount of money, not a meal.",
+        "ar": "نقول pay for قبل الشيء، أما spend فتحتاج مبلغاً لا وجبة." } },
+    { "id": "a2v1-11", "concept": "a2.vocab.money", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Can you borrow me your pen?", "Can you lend me your pen?", "Can I borrow your pen?", "I borrowed a pen from Sara."],
+      "answer": 0,
+      "explanation": { "en": "You borrow from someone; you lend to someone. Here the speaker wants to receive, so the other person must lend.",
+        "ar": "borrow تعني «يستعير» وlend تعني «يُعير». المتحدث هنا يريد أن يأخذ، فالفعل المطلوب من الآخر هو lend." } },
+    { "id": "a2v1-12", "concept": "a2.vocab.money", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The car is nice, but we can't ___ it this year.", "options": ["afford", "pay", "cost", "spend"], "answer": 0,
+      "explanation": { "en": "Afford = have enough money for. It almost always appears with can or can't.",
+        "ar": "afford تعني «يقدر مالياً»، وتأتي دائماً تقريباً مع can أو can't." } },
+    { "id": "a2v1-13", "concept": "a2.vocab.money", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["How", "much", "did", "the", "tickets", "cost"],
+      "answer": "How much did the tickets cost",
+      "explanation": { "en": "Cost takes the thing as subject: the tickets cost, not “you cost”.",
+        "ar": "cost يجعل الشيء فاعلاً: the tickets cost لا you cost." } },
+    { "id": "a2v1-14", "concept": "a2.vocab.money", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "“I'm saving up for a laptop.” What is the speaker doing?", "ar": "ماذا يفعل المتحدث في هذه الجملة؟" },
+      "options": ["Keeping money aside to buy it later.", "Buying it in monthly instalments.", "Selling a laptop to get money.", "Looking for the cheapest laptop."],
+      "answer": 0,
+      "explanation": { "en": "Save up = collect money over time towards a specific purchase.",
+        "ar": "save up تعني ادّخار المال تدريجياً لشراء شيء محدد." } },
+    { "id": "a2v1-15", "concept": "a2.vocab.jobs", "type": "choice", "format": "collocation", "difficulty": 3,
+      "sentence": "She ___ for the job last week and got an interview.", "options": ["applied", "asked", "requested", "demanded"], "answer": 0,
+      "explanation": { "en": "The fixed phrase is “apply for a job”. Ask and request take different objects.",
+        "ar": "التعبير الثابت هو apply for a job، أما ask وrequest فتأخذان مفاعيل أخرى." } }
+  ]
+}

@@ -328,3 +328,53 @@ test('the offline prefetch list covers every file the app can ask for', async ()
   }
   assert.equal(new Set(files).size, files.length, 'the offline list downloads a file twice');
 });
+
+/* ---------------- writing ---------------- */
+
+test('word count matches what a learner would count', async () => {
+  const { wordCount, meetsLength } = await import('../src/engine/writing.js');
+  assert.equal(wordCount(''), 0);
+  assert.equal(wordCount('   '), 0);
+  assert.equal(wordCount('one'), 1);
+  assert.equal(wordCount('  two   words \n here '), 3);
+  assert.ok(meetsLength('a b c d e', 5));
+  assert.ok(!meetsLength('a b c d', 5));
+});
+
+test('a writing prompt moves new → draft → done', async () => {
+  const { promptState } = await import('../src/engine/writing.js');
+  assert.equal(promptState(undefined), 'new');
+  assert.equal(promptState({ text: '' }), 'new');
+  assert.equal(promptState({ text: 'a start' }), 'draft');
+  assert.equal(promptState({ text: 'a start', completedAt: 1 }), 'done');
+});
+
+test('self-assessment scores the boxes actually ticked', async () => {
+  const { selfScore } = await import('../src/engine/writing.js');
+  const list = [{}, {}, {}, {}];
+  assert.equal(selfScore([], list), 0);
+  assert.equal(selfScore(['0', '1'], list), 50);
+  assert.equal(selfScore(['0', '1', '2', '3'], list), 100);
+  // An id outside the list must not inflate the score.
+  assert.equal(selfScore(['0', '99'], list), 25);
+  assert.equal(selfScore(['0'], []), 0);
+});
+
+test('every writing prompt in the content has a checklist and a model', async () => {
+  const { readdirSync } = await import('node:fs');
+  const root = new URL('../content/levels/', import.meta.url);
+  let prompts = 0;
+  for (const level of readdirSync(root)) {
+    for (const file of readdirSync(new URL(`${level}/`, root))) {
+      const unit = JSON.parse(readFileSync(new URL(`${level}/${file}`, root), 'utf8'));
+      for (const w of unit.writing || []) {
+        prompts += 1;
+        // Without both of these the learner has no way to mark their own work.
+        assert.ok(w.checklist && w.checklist.length >= 3, `${w.id} has too short a checklist`);
+        assert.ok(w.model && w.model.en, `${w.id} has no model answer`);
+        assert.ok(w.minWords >= 10, `${w.id} has no length target`);
+      }
+    }
+  }
+  assert.ok(prompts >= 12, `only ${prompts} writing prompts found`);
+});

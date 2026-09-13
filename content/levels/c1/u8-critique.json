@@ -224,5 +224,39 @@
       "answer": "assumes", "accept": ["presumes", "takes for granted that"],
       "explanation": { "en": "Naming the assumption is the move that makes a critique constructive rather than dismissive.",
         "ar": "تسمية الافتراض هي الحركة التي تجعل النقد بنّاءً لا رافضاً." } }
+  ],
+  "writing": [
+    {
+      "id": "c1u8-w1",
+      "prompt": {"en": "Take a claim you believe and write the strongest case against it.", "ar": "خذ دعوى تؤمن بها واكتب أقوى حجة ضدها."},
+      "context": {"en": "Two paragraphs. You are not required to be convinced by your own argument.", "ar": "فقرتان، ولست مطالباً بأن تقتنع بحجتك."},
+      "minWords": 140,
+      "checklist": [
+        {"en": "I stated the claim fairly before attacking it.", "ar": "عرضت الدعوى بإنصاف قبل نقدها."},
+        {"en": "I attacked the strongest version, not a weaker one I invented.", "ar": "نقدت أقوى صورة للدعوى لا صورة أضعف اخترعتها."},
+        {"en": "At least one objection is about evidence, not about motives.", "ar": "اعتراض واحد على الأقل يتعلق بالدليل لا بالنوايا."},
+        {"en": "I used hedges that match the strength of what I can show.", "ar": "استخدمت تحفظات تناسب قوة ما أستطيع إثباته."},
+        {"en": "I did not use a rhetorical question to replace an argument.", "ar": "لم أستخدم سؤالاً استنكارياً بديلاً عن الحجة."},
+        {"en": "Someone who holds the claim would recognise their own view in my summary.", "ar": "من يتبنى الدعوى سيتعرف على رأيه في تلخيصي له."}
+      ],
+      "model": {"en": "The claim is that remote work makes teams more productive, and the strongest form of it is not about hours saved on commuting but about attention: uninterrupted time is the scarcest resource in knowledge work, and an office is an interruption machine. That version deserves an answer rather than a joke about pyjamas.\n\nThe difficulty is that the evidence measures the wrong thing. Most studies report individual output on well-defined tasks, which is precisely where uninterrupted attention helps most, and precisely where teams need each other least. The work that suffers is the kind nobody logs: the half-formed question asked across a desk, the correction that happens because someone overheard. These do not appear in productivity data because they prevent work rather than producing it, and prevented work leaves no trace. This does not show that remote work is worse. It shows that the measurements we have are systematically blind to its main cost, which is a weaker position than the claim needs.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The last two sentences do the real work: they state exactly how strong the objection is, and no stronger. That precision is what separates critique from contradiction.", "ar": "الجملتان الأخيرتان هما جوهر العمل، إذ تحددان قوة الاعتراض بالضبط دون مبالغة، وهذه الدقة هي ما يفصل النقد عن مجرد المخالفة."}
+    },
+    {
+      "id": "c1u8-w2",
+      "prompt": {"en": "Review a book, film or article you know well — for a reader who has not seen it.", "ar": "اكتب مراجعة لكتاب أو فيلم أو مقال تعرفه جيداً، لقارئ لم يطّلع عليه."},
+      "context": {"en": "One or two paragraphs. Describe, judge, and justify the judgement.", "ar": "فقرة أو فقرتان: وصف، ثم حكم، ثم تبرير للحكم."},
+      "minWords": 130,
+      "checklist": [
+        {"en": "A reader who does not know the work can follow me.", "ar": "يستطيع من لا يعرف العمل أن يتابعني."},
+        {"en": "My judgement is stated, not hidden behind description.", "ar": "حكمي مُصرَّح به ولا يختبئ خلف الوصف."},
+        {"en": "Each judgement is tied to something specific in the work.", "ar": "كل حكم مربوط بشيء محدد في العمل."},
+        {"en": "I avoided empty praise words: amazing, brilliant, incredible.", "ar": "تجنبت ألفاظ المدح الفارغة مثل amazing وbrilliant."},
+        {"en": "I used at least one evaluative word precisely rather than loosely.", "ar": "استخدمت كلمة تقييمية واحدة على الأقل بدقة لا بتراخٍ."},
+        {"en": "The review would still make sense to me in a year.", "ar": "ستظل المراجعة مفهومة لي بعد عام."}
+      ],
+      "model": {"en": "Orwell's essay “Politics and the English Language” argues that bad prose and bad politics feed each other: vague writing lets vague thinking pass, and vague thinking is what makes cruelty sayable. The essay is short, angry and full of examples, most of them from writers Orwell does not name.\n\nIts diagnosis has aged better than its cure. The catalogue of dying metaphors and ready-made phrases is still the most useful checklist in English, and the argument that euphemism does political work is difficult to answer. The six rules at the end, however, assume that clarity is always available if the writer is honest enough, and that assumption does not survive contact with genuinely difficult subjects, where a plain sentence can be plainly wrong. The essay is at its strongest when it is describing what it has read, and weakest when it is legislating.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "“Its diagnosis has aged better than its cure” is the whole review in one sentence, and everything after it is evidence. A review that cannot be compressed to one such sentence usually has no judgement in it.", "ar": "جملة واحدة تلخّص المراجعة كلها وما بعدها دليل عليها. والمراجعة التي لا يمكن اختصارها في جملة كهذه غالباً لا تحمل حكماً."}
+    }
   ]
 }

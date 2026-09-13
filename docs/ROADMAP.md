@@ -55,15 +55,18 @@ Seven more units taking C2 to eight: connotation and framing, irony and understa
 ambiguity (chosen and accidental), rhythm and rhetoric, idiom and cliché, voice and
 authorial distance, and editing your own prose as a stranger would read it.
 
-| Level | Units | Concepts | Questions |
-| --- | --- | --- | --- |
-| A1 | 8 | 23 | 141 |
-| A2 | 8 | 24 | 127 |
-| B1 | 8 | 24 | 120 |
-| B2 | 8 | 26 | 120 |
-| C1 | 8 | 25 | 120 |
-| C2 | 8 | 25 | 120 |
-| **Total** | **48** | **147** | **748** |
+| Level | Grammar units | Vocabulary units | Concepts | Questions |
+| --- | --- | --- | --- | --- |
+| A1 | 8 | 2 | 29 | 175 |
+| A2 | 8 | 2 | 30 | 161 |
+| B1 | 8 | 2 | 30 | 154 |
+| B2 | 8 | 2 | 32 | 154 |
+| C1 | 8 | 2 | 31 | 154 |
+| C2 | 8 | 2 | 31 | 154 |
+| **Total** | **48** | **12** | **183** | **952** |
+
+Plus 12 writing prompts with self-assessment checklists, and a graded reading passage in
+every level.
 
 Plus a 36-question adaptive placement test: a block of four per level walking up from A1,
 stopping at the first block the learner cannot clear, so a beginner answers four questions
@@ -76,11 +79,26 @@ what a sentence commits you to, and C2 asks what it does to a reader who did not
 
 ## Next
 
-### Phase 10 — Content and pedagogy expansion (next up)
-- A vocabulary track (word families, collocations, phrasal verbs) alongside grammar.
-- More reading passages per level, with graded difficulty.
-- Optional writing prompts with self-assessment checklists (no AI needed).
-- Audio, if a free and licence-clean source can be found — this is a *want*, not a blocker.
+### Phase 10 — Content and pedagogy expansion
+**Done:**
+
+- **A vocabulary track**, two units per level, twelve in all. Topic word banks — family,
+  food, work, money, health, technology, news, business, academic and evaluative
+  language, register and idiom — with word families, collocations and phrasal verbs
+  threaded through each topic rather than taught as separate lists. Vocabulary sits
+  beside grammar and never gates it: skipping a word bank must not hold anyone out of
+  the next level.
+- **A graded reading passage in every level**, placed in the second vocabulary unit so
+  the text recycles the words the unit has just taught. Four comprehension questions
+  each, graded from a note on a kitchen table at A1 to a newspaper column about
+  political metaphor at C2.
+- **Writing prompts with self-assessment**, two per level. Write, then mark your own
+  work against a checklist, and only then see a model answer. That order is the
+  pedagogy — a model shown first is copied, and a checklist read after the model is
+  just agreement.
+
+**Not done:** audio. It stays a *want*: it needs a free, licence-clean source that
+covers all six levels, and none has been found that does.
 
 ### Phase 11 — Public polish
 **Done:** offline support via a service worker, and a one-tap download of the whole

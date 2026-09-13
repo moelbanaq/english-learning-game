@@ -1,0 +1,319 @@
+{
+  "id": "a2-v2",
+  "goal": {
+    "en": "Handle travel, describe the weather, and talk about what you do with your free time.",
+    "ar": "أن تتعامل مع السفر، وتصف الطقس، وتتحدث عمّا تفعله في وقت فراغك."
+  },
+  "passages": {
+    "a2read": {
+      "title": "A message from a friend",
+      "text": "Hi Omar,\nWe got back from Türkiye last night. The journey was long — nine hours by bus from the airport — but the trip itself was wonderful.\nWe booked the hotel two months in advance, which saved us a lot. It rained on the first two days, so we stayed in and played cards. After that it was sunny every day and we went swimming before breakfast.\nOne small disaster: my brother left one piece of luggage at the station and we spent a whole morning getting it back. He does yoga now to stay calm, but it did not help.\nAre you free on Friday? I have photos.\nLina"
+    }
+  },
+  "concepts": [
+    {
+      "id": "a2.vocab.travel",
+      "title": {
+        "en": "Travel and journeys",
+        "ar": "السفر والرحلات"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "Means"
+          ],
+          "rows": [
+            [
+              "trip",
+              "going somewhere and coming back"
+            ],
+            [
+              "journey",
+              "the travelling itself"
+            ],
+            [
+              "flight",
+              "one plane journey"
+            ],
+            [
+              "luggage",
+              "your bags (uncountable)"
+            ],
+            [
+              "book",
+              "reserve in advance"
+            ],
+            [
+              "check in",
+              "register at the airport or hotel"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Travel” is not a countable noun. “I had a nice travel” is wrong — say “a nice trip” or “a nice journey”.",
+            "ar": "كلمة travel ليست اسماً معدوداً، فجملة I had a nice travel خطأ. قل a nice trip أو a nice journey."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Luggage and baggage never take a plural -s. Count the pieces: two pieces of luggage, three bags.",
+            "ar": "كلمتا luggage وbaggage لا تُجمعان بإضافة s، بل نعدّ القطع: two pieces of luggage."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "We booked the flight two months ago.",
+              "ar": "حجزنا الرحلة قبل شهرين."
+            },
+            {
+              "en": "The journey took nine hours.",
+              "ar": "استغرقت الرحلة تسع ساعات."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2.vocab.weather",
+      "title": {
+        "en": "Weather",
+        "ar": "الطقس"
+      },
+      "teach": [
+        {
+          "type": "rule",
+          "text": {
+            "en": "Weather uses an empty “it”: it is raining, it was cold. English needs a subject even when there is nobody doing anything.",
+            "ar": "الطقس يأخذ الضمير الفارغ it: it is raining. فالإنجليزية تحتاج فاعلاً حتى حين لا يوجد فاعل حقيقي."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Noun",
+            "Adjective",
+            "Verb"
+          ],
+          "rows": [
+            [
+              "rain",
+              "rainy",
+              "it rains"
+            ],
+            [
+              "sun",
+              "sunny",
+              "the sun shines"
+            ],
+            [
+              "wind",
+              "windy",
+              "the wind blows"
+            ],
+            [
+              "cloud",
+              "cloudy",
+              "—"
+            ],
+            [
+              "snow",
+              "snowy",
+              "it snows"
+            ],
+            [
+              "fog",
+              "foggy",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“The weather is raining” is wrong — rain is already the verb. Say “it's raining”.",
+            "ar": "جملة The weather is raining خطأ لأن rain فعل بذاته. الصواب it's raining."
+          }
+        },
+        {
+          "type": "tip",
+          "text": {
+            "en": "Notice the word family: rain → rainy → rains. Learning one word gives you three, and this pattern repeats across the whole topic.",
+            "ar": "لاحظ عائلة الكلمة: rain ثم rainy ثم rains. تعلُّم كلمة يمنحك ثلاثاً، وهذا النمط يتكرر في الموضوع كله."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a2.vocab.leisure",
+      "title": {
+        "en": "Free time",
+        "ar": "وقت الفراغ"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Verb",
+            "Goes with"
+          ],
+          "rows": [
+            [
+              "play",
+              "football, chess, the guitar"
+            ],
+            [
+              "do",
+              "yoga, exercise, karate"
+            ],
+            [
+              "go",
+              "swimming, running, shopping"
+            ],
+            [
+              "watch",
+              "a film, a match, TV"
+            ],
+            [
+              "listen to",
+              "music, a podcast"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Play for games with rules and teams, go + -ing for activities you go out to do, do for the rest.",
+            "ar": "نستخدم play للألعاب ذات القواعد والفرق، وgo مع -ing للأنشطة التي تخرج لممارستها، وdo لما عدا ذلك."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Listen music” is missing “to”. English hears things AT something: listen to music, look at a picture.",
+            "ar": "جملة listen music ينقصها to. فالإنجليزية تستخدم حرف جر بعد هذه الأفعال: listen to music وlook at a picture."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I go swimming every Tuesday.",
+              "ar": "أذهب للسباحة كل ثلاثاء."
+            },
+            {
+              "en": "He plays the guitar quite well.",
+              "ar": "يعزف الغيتار بمهارة لا بأس بها."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a2v2-01", "concept": "a2.vocab.travel", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["We had a lovely travel to Aswan.", "We had a lovely trip to Aswan.", "The journey to Aswan was long.", "We travelled to Aswan by train."],
+      "answer": 0,
+      "explanation": {"en": "“Travel” works as a verb, not as a countable noun. The noun is trip or journey.", "ar": "travel فعل لا اسم معدود، والاسم المناسب هو trip أو journey."} },
+    { "id": "a2v2-02", "concept": "a2.vocab.travel", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "We ___ the hotel three weeks in advance.",
+      "options": ["booked", "ordered", "reserved for", "asked"],
+      "answer": 0,
+      "explanation": {"en": "You book a hotel, a flight or a table. Order is for things you buy.", "ar": "نحجز book فندقاً أو رحلة أو طاولة، أما order فللأشياء التي تشتريها."} },
+    { "id": "a2v2-03", "concept": "a2.vocab.travel", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "I only have one piece of ___ with me.",
+      "options": ["luggage", "luggages", "a luggage", "baggages"],
+      "answer": 0,
+      "explanation": {"en": "Luggage is uncountable, so the piece is what gets counted.", "ar": "luggage غير معدودة، فالمعدود هو القطعة piece."} },
+    { "id": "a2v2-04", "concept": "a2.vocab.travel", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": {"en": "Match the airport step to what happens.", "ar": "طابق خطوة المطار بما يحدث فيها."},
+      "pairs": [["check in", "You show your ticket and leave your bags."], ["board", "You get on the plane."], ["take off", "The plane leaves the ground."], ["land", "The plane arrives on the ground."]],
+      "explanation": {"en": "These four verbs cover a whole flight, in order.", "ar": "هذه الأفعال الأربعة تغطي الرحلة كاملة بالترتيب."} },
+    { "id": "a2v2-05", "concept": "a2.vocab.weather", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "Take an umbrella — ___ raining.",
+      "options": ["it's", "there's", "the weather", "is"],
+      "answer": 0,
+      "explanation": {"en": "Weather takes the empty subject “it”.", "ar": "الطقس يأخذ الفاعل الفارغ it."} },
+    { "id": "a2v2-06", "concept": "a2.vocab.weather", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["The weather is raining today.", "It is raining today.", "The weather is bad today.", "It is a rainy day today."],
+      "answer": 0,
+      "explanation": {"en": "Rain is already a verb, so the weather cannot “do” it. Weather can only be described: the weather is bad.", "ar": "rain فعل بذاته فلا يصح أن يقوم به الطقس. يمكن وصف الطقس فقط: the weather is bad."} },
+    { "id": "a2v2-07", "concept": "a2.vocab.weather", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": {"en": "Which word describes air moving strongly?", "ar": "أي كلمة تصف هبوب الهواء بقوة؟"},
+      "options": ["windy", "cloudy", "foggy", "snowy"],
+      "answer": 0,
+      "explanation": {"en": "Wind is moving air; windy is the adjective.", "ar": "wind هو الهواء المتحرك، وwindy صفته."} },
+    { "id": "a2v2-08", "concept": "a2.vocab.weather", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": {"en": "Give the adjective from the noun “sun”.", "ar": "هات الصفة من الاسم sun."},
+      "answer": "sunny",
+      "accept": ["Sunny"],
+      "explanation": {"en": "Most weather nouns add -y: sun → sunny, cloud → cloudy, fog → foggy.", "ar": "معظم أسماء الطقس تضيف y لتصير صفات: sun تصير sunny وcloud تصير cloudy."} },
+    { "id": "a2v2-09", "concept": "a2.vocab.leisure", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "My brother ___ football every Friday.",
+      "options": ["plays", "does", "goes", "makes"],
+      "answer": 0,
+      "explanation": {"en": "Team games with rules take “play”.", "ar": "الألعاب الجماعية ذات القواعد تأخذ play."} },
+    { "id": "a2v2-10", "concept": "a2.vocab.leisure", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "She ___ yoga three times a week.",
+      "options": ["does", "plays", "makes", "plays at"],
+      "answer": 0,
+      "explanation": {"en": "Yoga has no opponent and you do not go out for it, so it takes “do”.", "ar": "اليوغا بلا خصم ولا تخرج لممارستها، فتأخذ do."} },
+    { "id": "a2v2-11", "concept": "a2.vocab.leisure", "type": "choice", "format": "collocation", "difficulty": 2,
+      "sentence": "We usually ___ swimming at the weekend.",
+      "options": ["go", "do", "play", "make"],
+      "answer": 0,
+      "explanation": {"en": "Activities you leave the house for take go + -ing.", "ar": "الأنشطة التي تخرج من البيت لأجلها تأخذ go مع -ing."} },
+    { "id": "a2v2-12", "concept": "a2.vocab.leisure", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["I listen music every evening.", "I listen to music every evening.", "I watch films every evening.", "I look at old photos sometimes."],
+      "answer": 0,
+      "explanation": {"en": "Listen needs “to”; watch and see do not. The preposition is part of the verb, not optional.", "ar": "الفعل listen يحتاج to، أما watch وsee فلا. وحرف الجر جزء من الفعل لا زيادة اختيارية."} },
+    { "id": "a2v2-13", "concept": "a2.vocab.leisure", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["I", "go", "running", "before", "work", "every", "morning"],
+      "answer": "I go running before work every morning",
+      "explanation": {"en": "go + -ing, then the time expressions from smaller to larger.", "ar": "go مع -ing ثم عبارات الزمن من الأصغر إلى الأكبر."} },
+    { "id": "a2v2-14", "concept": "a2.vocab.travel", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": {"en": "A sign says “Departures”. What happens here?", "ar": "لافتة كُتب عليها Departures. ماذا يحدث هنا؟"},
+      "options": ["Planes leave from here.", "Planes arrive here.", "You collect your bags here.", "You buy tickets here."],
+      "answer": 0,
+      "explanation": {"en": "Depart = leave. Its opposite on the other sign is Arrivals.", "ar": "depart تعني «يغادر»، ونقيضها في اللافتة الأخرى Arrivals أي الوصول."} },
+    { "id": "a2v2-15", "concept": "a2.vocab.weather", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": {"en": "“It's freezing out there.” What is the speaker saying?", "ar": "ماذا يقصد المتحدث بهذه العبارة؟"},
+      "options": ["It is extremely cold.", "It is pleasantly cool.", "There is heavy rain.", "There is thick fog."],
+      "answer": 0,
+      "explanation": {"en": "Freezing is the everyday exaggeration for very cold, used well above 0°C.", "ar": "freezing مبالغة يومية تعني «برد شديد»، وتُستعمل حتى فوق الصفر بكثير."} },
+    { "id": "a2v2-r1", "concept": "a2.vocab.travel", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "a2read",
+      "prompt": {"en": "How long was the bus journey from the airport?", "ar": "كم استغرقت رحلة الحافلة من المطار؟"},
+      "options": ["Nine hours.", "Two months.", "Two days.", "One morning."],
+      "answer": 0,
+      "explanation": {"en": "“Nine hours by bus from the airport” — the other numbers belong to other facts.", "ar": "النص يقول تسع ساعات بالحافلة من المطار، وبقية الأرقام تخص وقائع أخرى."} },
+    { "id": "a2v2-r2", "concept": "a2.vocab.weather", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "a2read",
+      "prompt": {"en": "Why did they stay in at the start?", "ar": "لماذا بقوا في الداخل في البداية؟"},
+      "options": ["It was raining.", "It was too hot.", "They were ill.", "The hotel was full."],
+      "answer": 0,
+      "explanation": {"en": "“It rained on the first two days, so we stayed in.”", "ar": "يقول النص إنها أمطرت أول يومين فبقوا في الداخل."} },
+    { "id": "a2v2-r3", "concept": "a2.vocab.travel", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "a2read",
+      "prompt": {"en": "What went wrong on the trip?", "ar": "ما الذي ساء في الرحلة؟"},
+      "options": ["A bag was left behind at the station.", "The hotel cancelled their booking.", "The flight home was cancelled.", "They lost their passports at the airport."],
+      "answer": 0,
+      "explanation": {"en": "“My brother left one piece of luggage at the station.”", "ar": "يقول النص إن أخاها ترك قطعة أمتعة في المحطة."} },
+    { "id": "a2v2-r4", "concept": "a2.vocab.leisure", "type": "choice", "format": "comprehension", "difficulty": 4,
+      "passageId": "a2read",
+      "prompt": {"en": "Which activity does the brother do?", "ar": "أي نشاط يمارسه الأخ؟"},
+      "options": ["Yoga.", "Swimming.", "Football.", "Running."],
+      "answer": 0,
+      "explanation": {"en": "He “does yoga now to stay calm”. Swimming is what the writer and others did.", "ar": "يمارس اليوغا ليهدأ، أما السباحة فقد مارسها الكاتب وغيره."} }
+  ]
+}

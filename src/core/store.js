@@ -51,6 +51,7 @@ export function defaultState() {
     mistakes: {},   // questionId -> { qid, conceptId, unitId, level, times, lastAt, fixStreak, status }
     history: [],    // last N sessions: { at, type, unitId, level, correct, total, xp }
     achievements: {}, // id -> earnedAt
+    writing: {},    // promptId -> { text, checked:[], completedAt, updatedAt } — drafts stay local
   };
 }
 

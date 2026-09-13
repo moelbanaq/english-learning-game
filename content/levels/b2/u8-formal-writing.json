@@ -210,5 +210,39 @@
       "answer": 0,
       "explanation": { "en": "Facts plus a date is harder to ignore than either anger or apology.",
         "ar": "ذكر الوقائع مع تحديد موعد أصعب على التجاهل من الغضب أو الاعتذار." } }
+  ],
+  "writing": [
+    {
+      "id": "b2u8-w1",
+      "prompt": {"en": "Your team will miss a deadline by one week. Write the email to the client.", "ar": "سيتأخر فريقك عن الموعد النهائي أسبوعاً. اكتب البريد إلى العميل."},
+      "context": {"en": "Formal but human. Say it early, explain briefly, give a new date, say what you are doing about it.", "ar": "رسمي لكن إنساني: صرّح مبكراً، واشرح باختصار، واذكر موعداً جديداً، وما تفعله لمعالجة الأمر."},
+      "minWords": 100,
+      "checklist": [
+        {"en": "The delay is stated in the first two sentences, not buried at the end.", "ar": "التأخير مذكور في أول جملتين لا مدفوناً في النهاية."},
+        {"en": "I gave a specific new date, not “as soon as possible”.", "ar": "ذكرت تاريخاً جديداً محدداً لا as soon as possible."},
+        {"en": "I took responsibility without a long list of excuses.", "ar": "تحملت المسؤولية دون سرد أعذار طويلة."},
+        {"en": "I said what changes to stop it happening again.", "ar": "ذكرت ما سيتغير لمنع تكرار الأمر."},
+        {"en": "No blame is placed on a named individual.", "ar": "لم أُلقِ اللوم على شخص بعينه."},
+        {"en": "I removed every sentence that only softened without adding information.", "ar": "حذفت كل جملة تلطّف الكلام دون أن تضيف معلومة."}
+      ],
+      "model": {"en": "I am writing to let you know that we will not meet the 14 April deadline. We now expect to deliver on 21 April. The delay comes from the data migration, which turned out to involve three legacy formats rather than the one we were told to expect. We should have verified that before committing to the date, and we did not. Two additional engineers joined the task on Monday, and the remaining work is now scheduled day by day; I will send a short progress note each Friday until delivery. If the new date causes a problem at your end, please tell me this week and we will look at what can be delivered in stages.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "“We should have verified that, and we did not” costs one sentence and buys back most of the trust. Notice there is no “unfortunately due to circumstances beyond our control”.", "ar": "جملة الاعتراف بالتقصير تكلّف سطراً وتستعيد معظم الثقة. ولاحظ غياب عبارات مثل «لظروف خارجة عن إرادتنا»."}
+    },
+    {
+      "id": "b2u8-w2",
+      "prompt": {"en": "Summarise a change at your work or study, and recommend what to do next.", "ar": "لخّص تغييراً في عملك أو دراستك، واقترح الخطوة التالية."},
+      "context": {"en": "A short report: situation, evidence, recommendation.", "ar": "تقرير قصير: الوضع، والدليل، والتوصية."},
+      "minWords": 110,
+      "checklist": [
+        {"en": "The recommendation is stated, not left for the reader to infer.", "ar": "التوصية مُصرَّح بها ولم أترك القارئ يستنتجها."},
+        {"en": "Every claim is followed by the evidence for it.", "ar": "كل دعوى يتبعها دليلها."},
+        {"en": "I hedged claims that the evidence does not fully support.", "ar": "تحفّظت في الدعاوى التي لا يدعمها الدليل تماماً."},
+        {"en": "I used “because of” before nouns and “because” before clauses.", "ar": "استخدمت because of قبل الأسماء وbecause قبل الجمل."},
+        {"en": "I cut at least three words that added nothing.", "ar": "حذفت ثلاث كلمات على الأقل لا تضيف شيئاً."},
+        {"en": "A reader in a hurry could read the first and last sentence and still act.", "ar": "يستطيع القارئ المستعجل قراءة الجملة الأولى والأخيرة والتصرف بناءً عليهما."}
+      ],
+      "model": {"en": "Attendance at the Tuesday workshop has fallen from an average of 22 to 9 over the last two months. Two things appear to be driving this. First, the session was moved to 8am in January, and the drop begins in the same week; second, the three most recent topics repeated material already covered in the online modules. We recommend moving the session back to midday and asking participants to choose the next four topics by vote. If attendance has not recovered within six weeks, the workshop should be replaced with a monthly clinic rather than continued at low numbers.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "“Appear to be driving” is deliberately hedged — the timing is suggestive, not proof. Notice the recommendation includes what to do if it does not work.", "ar": "عبارة appear to be driving متحفظة عمداً، فالتزامن مُرجِّح لا دليل قاطع. ولاحظ أن التوصية تتضمن ما يُفعل إن لم تنجح."}
+    }
   ]
 }

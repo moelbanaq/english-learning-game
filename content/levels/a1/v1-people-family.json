@@ -1,0 +1,155 @@
+{
+  "id": "a1-v1",
+  "goal": {
+    "en": "Name the people around you, describe how someone looks, and say how you feel.",
+    "ar": "أن تسمّي من حولك، وتصف شكل الشخص، وتعبّر عن شعورك."
+  },
+  "concepts": [
+    {
+      "id": "a1.vocab.family",
+      "title": { "en": "Family words", "ar": "كلمات العائلة" },
+      "teach": [
+        { "type": "table", "head": ["Male", "Female", "Both"], "rows": [
+          ["father / dad", "mother / mum", "parents"],
+          ["brother", "sister", "siblings"],
+          ["son", "daughter", "children"],
+          ["husband", "wife", "—"],
+          ["uncle", "aunt", "—"],
+          ["grandfather", "grandmother", "grandparents"],
+          ["cousin", "cousin", "cousins"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "Arabic separates «ابن عم» from «ابن خال»; English does not. One word — cousin — covers every child of any uncle or aunt, male or female.",
+          "ar": "العربية تفرّق بين ابن العم وابن الخال وبنت العمة وغيرها، أما الإنجليزية فتكتفي بكلمة واحدة: cousin لأي ابن أو ابنة عمّ أو خال أو عمة أو خالة." } },
+        { "type": "rule", "text": {
+          "en": "Say a relationship with “my”: my brother, my aunt. English almost never leaves the possessive out the way Arabic does with «أخي».",
+          "ar": "تُذكر صلة القرابة مع my دائماً: my brother. فالإنجليزية لا تدمج الملكية داخل الكلمة كما تفعل العربية في «أخي»." } },
+        { "type": "examples", "items": [
+          { "en": "I have two brothers and one sister.", "ar": "لديّ أخوان وأخت." },
+          { "en": "My parents live in Alexandria.", "ar": "والداي يعيشان في الإسكندرية." },
+          { "en": "She is my father's cousin.", "ar": "هي ابنة عمّ أبي." }
+        ] }
+      ]
+    },
+    {
+      "id": "a1.vocab.appearance",
+      "title": { "en": "Describing people", "ar": "وصف الأشخاص" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Height and build use “be”: she is tall. Hair and eyes use “have”: she has long hair.",
+          "ar": "الطول والبنية تأخذ الفعل be، أما الشعر والعينان فيأخذان have." } },
+        { "type": "table", "head": ["Area", "Words"], "rows": [
+          ["Height", "tall · short · of medium height"],
+          ["Build", "thin · slim · heavy · strong"],
+          ["Hair", "long · short · straight · curly · dark · fair"],
+          ["Age", "young · middle-aged · old"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“She has 25 years” is a direct translation of «عندها ٢٥ سنة» and is wrong. Age uses be: she is 25.",
+          "ar": "جملة She has 25 years ترجمة حرفية لـ«عندها ٢٥ سنة» وهي خطأ. العمر يأخذ be فنقول she is 25." } },
+        { "type": "tip", "text": {
+          "en": "“Fat” is rude about a person. Say “heavy”, or better, describe something else.",
+          "ar": "كلمة fat جارحة في وصف الأشخاص، فاستخدم heavy أو تجنّب الوصف أصلاً." } }
+      ]
+    },
+    {
+      "id": "a1.vocab.feelings",
+      "title": { "en": "How you feel", "ar": "التعبير عن الشعور" },
+      "teach": [
+        { "type": "rule", "text": {
+          "en": "Feelings take “be”: I am tired, I am hungry, I am cold.",
+          "ar": "المشاعر والأحاسيس تأخذ الفعل be: I am tired وI am hungry." } },
+        { "type": "warn", "text": {
+          "en": "«عندي برد» becomes “I am cold”, not “I have cold”. Only illnesses use have: I have a cold (= the illness), I have a headache.",
+          "ar": "«أشعر بالبرد» تُقال I am cold لا I have cold. أما have فتُستخدم للأمراض: I have a cold أي «مصاب بالزكام»، وI have a headache." } },
+        { "type": "table", "head": ["Good", "Bad", "In between"], "rows": [
+          ["happy", "sad", "fine"],
+          ["excited", "angry", "tired"],
+          ["relaxed", "worried", "busy"],
+          ["proud", "afraid", "surprised"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "I'm tired today.", "ar": "أنا متعب اليوم." },
+          { "en": "Are you hungry?", "ar": "هل أنت جائع؟" },
+          { "en": "She's worried about the exam.", "ar": "هي قلقة بشأن الامتحان." }
+        ] }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1v1-01", "concept": "a1.vocab.family", "type": "choice", "format": "meaning", "difficulty": 1,
+      "sentence": "My mother's sister is my ___.", "options": ["aunt", "uncle", "niece", "cousin"], "answer": 0,
+      "explanation": { "en": "The sister of a parent is an aunt.", "ar": "أخت أحد الوالدين تُسمّى aunt." } },
+    { "id": "a1v1-02", "concept": "a1.vocab.family", "type": "choice", "format": "meaning", "difficulty": 1,
+      "sentence": "My father and my mother are my ___.", "options": ["parents", "relatives", "brothers", "cousins"], "answer": 0,
+      "explanation": { "en": "Mother + father = parents.", "ar": "الأب والأم معاً هما parents." } },
+    { "id": "a1v1-03", "concept": "a1.vocab.family", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": { "en": "Your uncle's daughter is your…", "ar": "بنت عمّك هي…" },
+      "options": ["cousin", "sister", "aunt", "niece"], "answer": 0,
+      "explanation": { "en": "English has one word for every child of an uncle or aunt: cousin.",
+        "ar": "الإنجليزية تستخدم كلمة واحدة لكل أبناء الأعمام والأخوال: cousin." } },
+    { "id": "a1v1-04", "concept": "a1.vocab.family", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have three brother.", "I have three brothers.", "I have one brother.", "My brother is tall."],
+      "answer": 0,
+      "explanation": { "en": "After a number above one, the noun must be plural: three brothers.",
+        "ar": "بعد عدد أكبر من واحد يجب جمع الاسم: three brothers." } },
+    { "id": "a1v1-05", "concept": "a1.vocab.family", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Complete: My brother's son is my ___ (one word).", "ar": "أكمل: ابن أخي هو ___ (كلمة واحدة)." },
+      "answer": "nephew", "accept": ["a nephew", "my nephew"],
+      "explanation": { "en": "A brother's or sister's son is a nephew; a daughter is a niece.",
+        "ar": "ابن الأخ أو الأخت nephew، وابنتهما niece." } },
+    { "id": "a1v1-06", "concept": "a1.vocab.appearance", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "My sister ___ long dark hair.", "options": ["has", "is", "have", "are"], "answer": 0,
+      "explanation": { "en": "Hair goes with have, and “my sister” is singular → has.",
+        "ar": "الشعر يأخذ have، و«أختي» مفرد فيصير has." } },
+    { "id": "a1v1-07", "concept": "a1.vocab.appearance", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "My father ___ very tall.", "options": ["is", "has", "have", "does"], "answer": 0,
+      "explanation": { "en": "Height uses be, not have.", "ar": "الطول يأخذ be لا have." } },
+    { "id": "a1v1-08", "concept": "a1.vocab.appearance", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["My cousin has 25 years.", "My cousin is 25 years old.", "My cousin is 25.", "My cousin has curly hair."],
+      "answer": 0,
+      "explanation": { "en": "Age uses be in English, however natural “have” feels in Arabic.",
+        "ar": "العمر يأخذ be في الإنجليزية مهما بدا استعمال have طبيعياً في العربية." } },
+    { "id": "a1v1-09", "concept": "a1.vocab.appearance", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": { "en": "Which word describes hair, not height?", "ar": "أي كلمة تصف الشعر لا الطول؟" },
+      "options": ["curly", "tall", "short", "medium"], "answer": 0,
+      "explanation": { "en": "“Curly” only describes hair. Short can describe either, so it is not the safe answer.",
+        "ar": "curly تصف الشعر وحده، أما short فتصف الاثنين فليست الجواب المضمون." } },
+    { "id": "a1v1-10", "concept": "a1.vocab.appearance", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["She", "has", "short", "straight", "hair"], "answer": "She has short straight hair",
+      "explanation": { "en": "Length comes before style: short straight hair.",
+        "ar": "الطول يسبق الشكل: short straight hair." } },
+    { "id": "a1v1-11", "concept": "a1.vocab.feelings", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I ___ hungry. Let's eat.", "options": ["am", "have", "do", "get"], "answer": 0,
+      "explanation": { "en": "Hunger takes be: I am hungry.", "ar": "الجوع يأخذ be فنقول I am hungry." } },
+    { "id": "a1v1-12", "concept": "a1.vocab.feelings", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["I have cold today.", "I am cold today.", "I have a cold today.", "I am tired today."],
+      "answer": 0,
+      "explanation": { "en": "Without “a”, it is neither the feeling nor the illness. Say “I am cold” or “I have a cold”.",
+        "ar": "بدون a لا تدل على الشعور ولا على المرض. قل I am cold للشعور أو I have a cold للزكام." } },
+    { "id": "a1v1-13", "concept": "a1.vocab.feelings", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": { "en": "Match the feeling to the situation.", "ar": "طابق الشعور بالموقف." },
+      "pairs": [
+        ["worried", "You have an exam tomorrow."],
+        ["excited", "You are going on holiday."],
+        ["tired", "You slept for three hours."],
+        ["proud", "Your daughter passed her test."]
+      ],
+      "explanation": { "en": "These four cover most everyday feelings you will need to report.",
+        "ar": "هذه الأربع تغطي معظم المشاعر اليومية التي ستحتاج للتعبير عنها." } },
+    { "id": "a1v1-14", "concept": "a1.vocab.feelings", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "Your friend says: “I'm not feeling well.” What do they mean?", "ar": "ماذا يقصد صديقك بهذه العبارة؟" },
+      "options": ["They are a little ill.", "They are angry with you.", "They are extremely busy.", "They are feeling very happy."],
+      "answer": 0,
+      "explanation": { "en": "“Not feeling well” is the everyday way of saying slightly ill.",
+        "ar": "عبارة not feeling well هي الطريقة اليومية لقول «متوعّك قليلاً»." } },
+    { "id": "a1v1-15", "concept": "a1.vocab.feelings", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": { "en": "Translate the feeling: «أنا قلق». Start with “I”.", "ar": "عبّر عن «أنا قلق» بالإنجليزية بادئاً بـ I." },
+      "answer": "I am worried", "accept": ["I'm worried", "I am worried."],
+      "explanation": { "en": "Worry is a state, so it takes be.", "ar": "القلق حالة فيأخذ be." } }
+  ]
+}

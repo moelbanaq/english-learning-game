@@ -225,5 +225,39 @@
       "answer": 0,
       "explanation": { "en": "Proofreading makes a sentence correct. Editing decides whether it should exist.",
         "ar": "التدقيق يجعل الجملة صحيحة، أما التحرير فيقرر ما إذا كانت تستحق الوجود." } }
+  ],
+  "writing": [
+    {
+      "id": "c2u8-w1",
+      "prompt": {"en": "Write a paragraph, then rewrite it thirty per cent shorter without losing anything.", "ar": "اكتب فقرة ثم أعد كتابتها أقصر بثلاثين بالمئة دون أن تفقد شيئاً."},
+      "context": {"en": "Submit both versions. The second one is the exercise.", "ar": "قدّم النسختين، والنسخة الثانية هي التمرين."},
+      "minWords": 120,
+      "checklist": [
+        {"en": "The second version really is about a third shorter.", "ar": "النسخة الثانية أقصر فعلاً بنحو الثلث."},
+        {"en": "Nothing a reader needed has been lost.", "ar": "لم يُفقد شيء يحتاجه القارئ."},
+        {"en": "I removed intensifiers that added nothing: very, really, quite.", "ar": "حذفت المؤكدات التي لا تضيف شيئاً مثل very وreally وquite."},
+        {"en": "I turned at least one noun phrase back into a verb.", "ar": "أعدت عبارة اسمية واحدة على الأقل إلى صيغة فعلية."},
+        {"en": "I cut every phrase that only announced what I was about to say.", "ar": "حذفت كل عبارة تُعلن ما سأقوله دون أن تقوله."},
+        {"en": "The shorter version reads better, not merely faster.", "ar": "النسخة الأقصر أفضل قراءةً لا أسرع فحسب."}
+      ],
+      "model": {"en": "Before: It is important to note that there are a number of different factors which may potentially have an impact on the final outcome of the project, and it is therefore necessary for us to undertake a careful consideration of each of them in turn before any final decision is arrived at.\n\nAfter: Several factors could change the outcome, so we should weigh each before deciding.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "Forty-nine words to twelve. Nothing was cut except announcements (“it is important to note”), hedges stacked on hedges (“may potentially”), and nouns that were verbs in hiding (“undertake a careful consideration” → “weigh”).", "ar": "من تسع وأربعين كلمة إلى اثنتي عشرة. لم يُحذف سوى الإعلانات والتحفظات المتراكمة والأسماء التي كانت أفعالاً متخفية."}
+    },
+    {
+      "id": "c2u8-w2",
+      "prompt": {"en": "Write the same message twice: once to a close colleague, once to a regulator.", "ar": "اكتب الرسالة نفسها مرتين: لزميل مقرّب، ثم لجهة رقابية."},
+      "context": {"en": "Same facts, same decisions, two registers. The content must not change.", "ar": "الوقائع نفسها والقرارات نفسها، بمستويين أسلوبيين مختلفين، دون تغيير المضمون."},
+      "minWords": 150,
+      "checklist": [
+        {"en": "Both versions state the same facts — I did not soften one of them.", "ar": "النسختان تذكران الوقائع نفسها ولم ألطّف إحداهما."},
+        {"en": "The formal version has no contractions and no idioms.", "ar": "النسخة الرسمية بلا صيغ مختصرة ولا تعبيرات اصطلاحية."},
+        {"en": "The informal version is not merely the formal one with “hi” at the top.", "ar": "النسخة غير الرسمية ليست الرسمية نفسها مع hi في أولها."},
+        {"en": "I chose Latinate words only where the situation actually calls for them.", "ar": "استخدمت الكلمات اللاتينية حيث يقتضيها المقام فعلاً."},
+        {"en": "Neither version contains a cliché.", "ar": "لا تحتوي أي نسخة على كليشيه."},
+        {"en": "If both landed in the wrong inbox, only the tone would be wrong — never the facts.", "ar": "لو وصلت كل نسخة إلى الصندوق الخطأ لكان الخلل في النبرة فقط لا في الوقائع."}
+      ],
+      "model": {"en": "To a colleague: Quick heads-up — we found the logging gap on Tuesday. It goes back about six weeks, so roughly 4,000 events were never written. Nothing was lost from the main store, but the audit trail has a hole in it. I have turned on the backup logger and Rania is writing the incident note today. We will have to declare it. Shout if you think I have the dates wrong.\n\nTo a regulator: We identified a logging failure on 4 March affecting approximately 4,000 events over a six-week period. No primary records were lost; the gap affects the audit trail only. A secondary logger was enabled on the day of discovery, and a full incident report will be submitted within five working days. We are treating this as a reportable event and will provide the affected date range on request.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The facts are identical down to the number. What changes is who is assumed to be reading: the colleague gets a request to check the dates, the regulator gets the dates. Register is about the relationship, never about hiding anything.", "ar": "الوقائع متطابقة حتى في الأرقام. ما يتغير هو افتراض من يقرأ: الزميل يُطلب منه التحقق من التواريخ، والجهة الرقابية تُعطى التواريخ. فالمستوى الأسلوبي شأن علاقة لا وسيلة إخفاء."}
+    }
   ]
 }

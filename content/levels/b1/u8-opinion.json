@@ -201,5 +201,39 @@
                  "that's correct about the cost", "about the cost"],
       "explanation": { "en": "Hedging turns a personal accusation into a point that can be discussed.",
         "ar": "التلطيف يحوّل الاتهام الشخصي إلى نقطة قابلة للنقاش." } }
+  ],
+  "writing": [
+    {
+      "id": "b1u8-w1",
+      "prompt": {"en": "Should students be allowed to use phones in class? Give your opinion and two reasons.", "ar": "هل يُسمح للطلاب باستخدام الهواتف في الفصل؟ اذكر رأيك وسببين."},
+      "context": {"en": "One paragraph, eight to ten sentences.", "ar": "فقرة واحدة من ثماني إلى عشر جمل."},
+      "minWords": 90,
+      "checklist": [
+        {"en": "My first sentence states my position clearly.", "ar": "الجملة الأولى تعلن موقفي بوضوح."},
+        {"en": "I gave two separate reasons, not the same reason twice.", "ar": "قدمت سببين مختلفين لا سبباً واحداً مكرراً."},
+        {"en": "Each reason has an example or a consequence.", "ar": "كل سبب مصحوب بمثال أو نتيجة."},
+        {"en": "I acknowledged the other side once, then answered it.", "ar": "اعترفت بالرأي المقابل مرة ثم رددت عليه."},
+        {"en": "I used linkers: however, for example, as a result.", "ar": "استخدمت روابط مثل however وfor example وas a result."},
+        {"en": "I did not start with “In my opinion I think”, which says it twice.", "ar": "لم أبدأ بـ In my opinion I think لأنها تكرار للمعنى نفسه."}
+      ],
+      "model": {"en": "Phones should be allowed in class, but only under clear rules. The first reason is practical: a phone is now the fastest dictionary, calculator and camera a student has, and banning it means banning three useful tools at once. Secondly, learning to use a phone responsibly is itself a skill, and school is where difficult skills are supposed to be practised rather than avoided. Critics argue that phones are simply a distraction, and they are right that an unsupervised classroom becomes a silent scrolling contest. However, that is an argument for supervision, not for prohibition. A rule such as “phones face down until the teacher asks for them” solves most of the problem without losing the benefits.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The concession (“Critics argue…”) is not weakness — it is what makes the answer to it land. An argument that never names the other side reads as if it has not met it.", "ar": "الاعتراف بالرأي المقابل ليس ضعفاً بل هو ما يجعل الرد عليه مؤثراً. فالحجة التي لا تذكر الطرف الآخر تبدو كأنها لم تلتقِ به."}
+    },
+    {
+      "id": "b1u8-w2",
+      "prompt": {"en": "Write a complaint about a product or service that disappointed you.", "ar": "اكتب شكوى بشأن منتج أو خدمة خيّبت ظنك."},
+      "context": {"en": "A short formal message: what you bought, what went wrong, what you want done.", "ar": "رسالة رسمية قصيرة: ماذا اشتريت، وما الخطأ، وماذا تريد."},
+      "minWords": 80,
+      "checklist": [
+        {"en": "I said what and when, with specific facts.", "ar": "ذكرت ماذا ومتى بوقائع محددة."},
+        {"en": "I described the problem without insulting anyone.", "ar": "وصفت المشكلة دون إهانة أحد."},
+        {"en": "I said clearly what I want: a refund, a repair, a reply.", "ar": "حددت بوضوح ما أريده: استرداداً أو إصلاحاً أو رداً."},
+        {"en": "I used the passive at least once where the actor does not matter.", "ar": "استخدمت المبني للمجهول مرة حيث لا يهمّ الفاعل."},
+        {"en": "There are no contractions like “don't” — a formal complaint spells them out.", "ar": "لا توجد صيغ مختصرة مثل don't، فالشكوى الرسمية تكتبها كاملة."},
+        {"en": "I would be comfortable if my own name were on this message.", "ar": "لا أمانع أن يُنشر اسمي على هذه الرسالة."}
+      ],
+      "model": {"en": "I am writing about an order placed on 3 March, reference 84120. The package arrived four days late, and when it was opened, one of the two items was missing. I contacted your support line twice and was promised a reply within 24 hours, but no reply has been received. I would like the missing item to be sent this week, or the amount refunded if it is no longer in stock. I would be grateful for confirmation of which of the two you intend to do.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "Every sentence carries a fact: a date, a reference, a number of days. Anger is easy to ignore; a dated record is not.", "ar": "كل جملة تحمل واقعة: تاريخاً أو رقماً مرجعياً أو عدد أيام. فالغضب يسهل تجاهله، أما السجل المؤرّخ فلا."}
+    }
   ]
 }

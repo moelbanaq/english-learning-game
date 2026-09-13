@@ -1,0 +1,164 @@
+{
+  "id": "b1-v1",
+  "goal": {
+    "en": "Describe health problems accurately and talk about devices and life online.",
+    "ar": "أن تصف المشكلات الصحية بدقة، وتتحدث عن الأجهزة والحياة الرقمية."
+  },
+  "concepts": [
+    {
+      "id": "b1.vocab.health",
+      "title": { "en": "Health and illness", "ar": "الصحة والمرض" },
+      "teach": [
+        { "type": "table", "head": ["Pattern", "Example"], "rows": [
+          ["have + a + illness", "I have a headache / a cold / a temperature."],
+          ["have + uncountable", "I have flu / toothache (UK)."],
+          ["feel + adjective", "I feel dizzy / sick / weak."],
+          ["hurt", "My back hurts."],
+          ["be in pain", "She is in a lot of pain."]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Sick” in British English usually means about to vomit; “ill” means unwell generally. Americans use “sick” for both. If you are unsure, “I'm not feeling well” is always safe.",
+          "ar": "sick في البريطانية تعني غالباً «على وشك التقيؤ»، وill تعني «مريض» عموماً. أما الأمريكية فتستخدم sick للاثنين. وعند الشك فعبارة I'm not feeling well آمنة دائماً." } },
+        { "type": "rule", "text": {
+          "en": "The verb is “hurt”, not “pain”: my head hurts. “Pain” is a noun — I have a pain in my head.",
+          "ar": "الفعل هو hurt لا pain، فنقول my head hurts. أما pain فاسم: I have a pain in my head." } },
+        { "type": "examples", "items": [
+          { "en": "I've had a sore throat since Tuesday.", "ar": "أعاني من التهاب في الحلق منذ الثلاثاء." },
+          { "en": "The doctor prescribed antibiotics.", "ar": "وصف الطبيب مضادات حيوية." }
+        ] }
+      ]
+    },
+    {
+      "id": "b1.vocab.tech",
+      "title": { "en": "Devices and the internet", "ar": "الأجهزة والإنترنت" },
+      "teach": [
+        { "type": "table", "head": ["Verb", "Goes with"], "rows": [
+          ["download / upload", "a file, a photo"],
+          ["install / uninstall", "an app"],
+          ["update", "software, your phone"],
+          ["charge", "a battery, your phone"],
+          ["log in / log out", "an account"],
+          ["back up", "your data"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Open the light” and “close the phone” are word-for-word from Arabic. English says “turn on the light” and “turn off the phone” — or “switch on/off”.",
+          "ar": "«افتح النور» و«اقفل الموبايل» تُترجمان حرفياً فتصيران خطأ. الإنجليزية تقول turn on the light وturn off the phone أو switch on/off." } },
+        { "type": "rule", "text": {
+          "en": "Online life uses “on”: on the internet, on a website, on social media — but “in an email” and “in a message”.",
+          "ar": "الحياة الرقمية تأخذ on: on the internet وon a website وon social media، أما البريد والرسالة فتأخذان in." } },
+        { "type": "tip", "text": {
+          "en": "Notice how many of these are phrasal: turn on, log in, back up, set up. The particle carries the meaning, so learn the whole phrase.",
+          "ar": "لاحظ أن كثيراً منها أفعال مركّبة: turn on وlog in وback up وset up. الحرف هو حامل المعنى، فاحفظ العبارة كاملة." } }
+      ]
+    },
+    {
+      "id": "b1.vocab.wordfamily",
+      "title": { "en": "One root, four words", "ar": "جذر واحد وأربع كلمات" },
+      "teach": [
+        { "type": "p", "text": {
+          "en": "English builds families from a root the way Arabic builds them from a triliteral root — but with endings rather than internal patterns. Learning the family multiplies one word into four.",
+          "ar": "الإنجليزية تبني عائلات الكلمات من جذر كما تبني العربية من الجذر الثلاثي، لكن بالزوائد لا بالأوزان الداخلية. فتعلُّم العائلة يحوّل الكلمة الواحدة إلى أربع." } },
+        { "type": "table", "head": ["Noun", "Verb", "Adjective", "Adverb"], "rows": [
+          ["health", "—", "healthy", "healthily"],
+          ["safety", "save", "safe", "safely"],
+          ["success", "succeed", "successful", "successfully"],
+          ["decision", "decide", "decisive", "decisively"],
+          ["strength", "strengthen", "strong", "strongly"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "The noun and the adjective are not interchangeable. “She is success” should be “She is successful”, and “her successful” should be “her success”.",
+          "ar": "الاسم والصفة لا يتبادلان. فجملة She is success صوابها She is successful، وher successful صوابها her success." } },
+        { "type": "tip", "text": {
+          "en": "-tion, -ment, -ness and -ity almost always make nouns. -ful, -ive, -ous and -al almost always make adjectives.",
+          "ar": "اللواحق tion وment وness وity تصنع أسماء في الغالب، واللواحق ful وive وous وal تصنع صفات." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b1v1-01", "concept": "b1.vocab.health", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I can't come in today — I ___ a temperature.", "options": ["have", "am", "feel", "do"], "answer": 0,
+      "explanation": { "en": "Symptoms you can measure take have: have a temperature, have a cough.",
+        "ar": "الأعراض التي تُقاس تأخذ have: have a temperature وhave a cough." } },
+    { "id": "b1v1-02", "concept": "b1.vocab.health", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["My head is paining me a lot.", "My head hurts a lot.", "I have a bad headache.", "I have a pain in my head."],
+      "answer": 0,
+      "explanation": { "en": "“Pain” is a noun in English. The verb is hurt, or ache.",
+        "ar": "pain اسم في الإنجليزية، والفعل هو hurt أو ache." } },
+    { "id": "b1v1-03", "concept": "b1.vocab.health", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "A British colleague says “I was sick this morning.” What most likely happened?", "ar": "قال زميل بريطاني I was sick this morning. ما الأرجح أنه حدث؟" },
+      "options": ["They vomited.", "They had a mild cold.", "They were tired.", "They had a headache."],
+      "answer": 0,
+      "explanation": { "en": "In British English “be sick” usually means vomit; general unwellness is “ill”.",
+        "ar": "في البريطانية تعني be sick التقيؤ غالباً، أما المرض العام فيقال له ill." } },
+    { "id": "b1v1-04", "concept": "b1.vocab.health", "type": "match", "format": "match", "difficulty": 3,
+      "prompt": { "en": "Match the symptom to the body part.", "ar": "طابق العَرَض بالعضو." },
+      "pairs": [
+        ["a sore throat", "throat"],
+        ["a runny nose", "nose"],
+        ["a rash", "skin"],
+        ["blurred vision", "eyes"]
+      ],
+      "explanation": { "en": "Symptom phrases are fixed: “sore throat” never becomes “painful throat”.",
+        "ar": "عبارات الأعراض ثابتة، فلا تتحول sore throat إلى painful throat." } },
+    { "id": "b1v1-05", "concept": "b1.vocab.health", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "One word: what a doctor writes so you can get medicine.", "ar": "كلمة واحدة: ما يكتبه الطبيب لتحصل على الدواء." },
+      "answer": "prescription", "accept": ["a prescription"],
+      "explanation": { "en": "The doctor prescribes (verb) and gives you a prescription (noun).",
+        "ar": "الطبيب يصف prescribe، ويعطيك وصفة prescription." } },
+    { "id": "b1v1-06", "concept": "b1.vocab.tech", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Can you open the light, please?", "Can you turn on the light, please?", "Can you switch off the light?", "Can you turn the light off?"],
+      "answer": 0,
+      "explanation": { "en": "«افتح النور» translates word for word into a mistake. Lights and devices turn on and off.",
+        "ar": "«افتح النور» تُترجم حرفياً فتصير خطأ. الأنوار والأجهزة تأخذ turn on وturn off." } },
+    { "id": "b1v1-07", "concept": "b1.vocab.tech", "type": "choice", "format": "phrasal", "difficulty": 3,
+      "sentence": "Remember to ___ your files before you reinstall the system.", "options": ["back up", "back off", "back down", "back over"], "answer": 0,
+      "explanation": { "en": "Back up = make a safety copy. Back down = stop insisting on something.",
+        "ar": "back up تعني عمل نسخة احتياطية، وback down تعني التراجع عن موقف." } },
+    { "id": "b1v1-08", "concept": "b1.vocab.tech", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "I read about it ___ a news website.", "options": ["on", "in", "at", "into"], "answer": 0,
+      "explanation": { "en": "Websites and the internet take “on”; emails and messages take “in”.",
+        "ar": "المواقع والإنترنت تأخذ on، أما الرسائل والبريد فتأخذ in." } },
+    { "id": "b1v1-09", "concept": "b1.vocab.tech", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": { "en": "Which pair are opposites?", "ar": "أي زوج متضاد؟" },
+      "options": ["download / upload", "install / update", "charge / plug in", "log in / sign in"], "answer": 0,
+      "explanation": { "en": "Down and up mark the direction of the transfer. The other pairs are near-synonyms or unrelated.",
+        "ar": "down وup تحددان اتجاه النقل، أما الأزواج الأخرى فمترادفة أو غير متصلة." } },
+    { "id": "b1v1-10", "concept": "b1.vocab.tech", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["I", "couldn't", "log", "in", "to", "my", "account", "yesterday"],
+      "answer": "I couldn't log in to my account yesterday",
+      "explanation": { "en": "Log in is the phrasal verb; “to” then introduces the account.",
+        "ar": "log in فعل مركّب، ثم تأتي to لتقديم الحساب." } },
+    { "id": "b1v1-11", "concept": "b1.vocab.wordfamily", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "The project was a great ___.", "options": ["success", "successful", "succeed", "successfully"], "answer": 0,
+      "explanation": { "en": "After “a great” you need a noun, and the noun is success.",
+        "ar": "بعد a great نحتاج اسماً، والاسم هو success." } },
+    { "id": "b1v1-12", "concept": "b1.vocab.wordfamily", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "She handled the crisis very ___.", "options": ["decisively", "decisive", "decision", "decide"], "answer": 0,
+      "explanation": { "en": "The word describes how she handled it, so it must be an adverb.",
+        "ar": "الكلمة تصف كيفية تعاملها، فلا بد أن تكون ظرفاً adverb." } },
+    { "id": "b1v1-13", "concept": "b1.vocab.wordfamily", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The company had a very succeed year.", "The company had a very successful year.", "The company succeeded last year.", "The company's success was clear."],
+      "answer": 0,
+      "explanation": { "en": "“Succeed” is the verb. Before a noun you need the adjective: a successful year.",
+        "ar": "succeed فعل، وقبل الاسم نحتاج الصفة: a successful year." } },
+    { "id": "b1v1-14", "concept": "b1.vocab.wordfamily", "type": "text", "format": "write", "difficulty": 3,
+      "prompt": { "en": "Give the noun from the adjective “strong”.", "ar": "هات الاسم من الصفة strong." },
+      "answer": "strength", "accept": ["Strength"],
+      "explanation": { "en": "Strong → strength, like long → length and wide → width. The vowel changes, so it cannot be guessed from the ending alone.",
+        "ar": "strong تصير strength كما تصير long إلى length وwide إلى width. الحرف المتحرك يتغير فلا يمكن تخمينها من اللاحقة وحدها." } },
+    { "id": "b1v1-15", "concept": "b1.vocab.wordfamily", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the noun to its verb.", "ar": "طابق الاسم بفعله." },
+      "pairs": [
+        ["decision", "decide"],
+        ["strength", "strengthen"],
+        ["safety", "save"],
+        ["choice", "choose"]
+      ],
+      "explanation": { "en": "Some pairs change the ending, some change the vowel. Both kinds have to be learned, not derived.",
+        "ar": "بعض الأزواج تتغير لاحقتها وبعضها يتغير حرفها المتحرك، وكلاهما يُحفظ ولا يُشتق بقاعدة." } }
+  ]
+}

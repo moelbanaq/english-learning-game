@@ -4,7 +4,7 @@ import { t, lang } from '../../core/i18n.js';
 import { setView, page, pageHead } from '../app.js';
 import { bar, loading } from '../components/bits.js';
 import { getState } from '../../core/store.js';
-import { getCurriculum, LEVEL_META } from '../../data/content.js';
+import { getCurriculum, LEVEL_META, TRACKS, SPINE } from '../../data/content.js';
 import { setLevel } from '../../engine/record.js';
 import { navigate } from '../../core/router.js';
 
@@ -24,15 +24,26 @@ export async function learnView() {
 function renderLevel(lv, state) {
   const unlocked = state.profile.unlocked.includes(lv.id);
   const published = lv.units.filter((u) => u.status !== 'planned');
-  const done = published.filter((u) => state.units[u.id] && state.units[u.id].completedAt).length;
+  // Level progress is the spine's progress. Vocabulary is optional, so counting it here
+  // would make the bar move without the learner getting any closer to the next level.
+  const spine = published.filter((u) => u.track === SPINE);
+  const done = spine.filter((u) => state.units[u.id] && state.units[u.id].completedAt).length;
   const open = lv.id === state.profile.level;
+
+  const groups = TRACKS
+    .map((track) => [track, published.filter((u) => u.track === track)])
+    .filter(([, units]) => units.length);
 
   const unitsHost = el('div.level-card__units', { hidden: !open }, [
     !unlocked && published.length
       ? el('p.tiny.muted', { style: { padding: '.2rem .3rem' } }, t('learn.lockedNote'))
       : null,
     ...(published.length
-      ? published.map((u) => unitRow(u, state, unlocked))
+      ? groups.flatMap(([track, units]) => [
+        // A single-track level needs no heading; two tracks do.
+        groups.length > 1 ? trackHead(track, units, state) : null,
+        ...units.map((u) => unitRow(u, state, unlocked)),
+      ])
       : [el('p.small.muted.center', { style: { padding: '.6rem' } }, t('learn.soon'))]),
   ]);
 
@@ -48,15 +59,23 @@ function renderLevel(lv, state) {
     el('span.level-card__badge', lv.id),
     el('span.level-card__body', [
       el('span.level-card__name', LEVEL_META[lv.id].name[lang()] || lv.id),
-      el('span.level-card__meta', published.length
-        ? t('learn.units', { done, total: published.length })
+      el('span.level-card__meta', spine.length
+        ? t('learn.units', { done, total: spine.length })
         : t('learn.soon')),
-      published.length ? bar((done / published.length) * 100, { thin: true, level: true, levelId: lv.id }) : null,
+      spine.length ? bar((done / spine.length) * 100, { thin: true, level: true, levelId: lv.id }) : null,
     ]),
     el('span.rowcard__end', unlocked ? (open ? '▾' : '▸') : '🔒'),
   ]);
 
   return el('div.level-card', { dataset: { level: lv.id } }, [head, unitsHost]);
+}
+
+function trackHead(track, units, state) {
+  const done = units.filter((u) => state.units[u.id] && state.units[u.id].completedAt).length;
+  return el('div.track-head', [
+    el('span.track-head__name', t(`track.${track}`)),
+    el('span.track-head__count', `${done}/${units.length}`),
+  ]);
 }
 
 function unitRow(u, state, levelUnlocked) {

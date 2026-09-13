@@ -37,7 +37,7 @@ drifts from the units.
 content/*.json          ← curriculum, teaching text, question banks
       ↓  data/content.js (lazy loader + hydration)
       ↓  data/sessions.js (what goes into a session)
-engine/*                ← pure logic: grading, mastery, SRS, selection, placement, XP
+engine/*                ← pure logic: grading, mastery, SRS, selection, placement, writing, XP
       ↓  engine/record.js (the only writer of learner progress)
 core/store.js           ← versioned state + persistence + migrations
       ↓
@@ -124,6 +124,35 @@ every request, so nothing in the app needs to know how caching works.
 
 The browser suite proves it the way a learner would experience it: load online, cut the
 network, reload, and open a unit that was never visited.
+
+### Tracks (`data/content.js`)
+A unit belongs to a track: `grammar` (the default) or `vocab`. Grammar is the spine — it
+decides level progress, what the dashboard suggests next, and when the next level
+unlocks. Vocabulary sits beside it as optional enrichment.
+
+That asymmetry is deliberate. Nobody should be held out of B1 because they skipped a
+word bank, and the dashboard should not push vocabulary ahead of the grammar sequence.
+But vocabulary questions feed mastery, mistakes, review and XP exactly like any other,
+because that machinery works on concepts and does not care where a concept came from.
+
+Adding a track means adding a string to `TRACKS` and units that name it. No engine
+changes.
+
+### Writing (`engine/writing.js`, `ui/views/write.js`)
+Free writing cannot be graded without a model, and this app must work with no API key
+and no account. The offline substitute is a checklist written by whoever wrote the
+exercise: it tells the learner exactly what to look for, which is most of what feedback
+does anyway.
+
+The three stages run in one order and no other — **write, mark yourself, then see the
+model**. A model answer shown first is copied; a checklist read after the model is just
+agreement.
+
+Because the marking is self-reported, writing earns a flat XP award for finishing and
+**never touches concept mastery**. Ticking more boxes earns nothing extra: paying for a
+better self-assessment would teach people to flatter themselves for points and would
+corrupt the mastery model at the same time. Drafts are saved locally as the learner
+types and travel in the export like everything else.
 
 ### Mistakes
 A wrong answer creates a mistake record holding the question, concept, unit and how many

@@ -31,8 +31,12 @@ served over HTTP (not opened as `file://`) because it loads content with `fetch`
 | **Mastery** | Concepts move New → Learning → Familiar → Strong → Mastered based on real performance |
 | **Adaptive practice** | Weak and overdue concepts appear more often; solid ones fade out |
 | **Game layer** | XP, ranks, streaks, a daily mission and achievements — tied to learning, not to noise |
-| **Placement** | 24 real questions estimate the right starting level |
-| **Coverage** | All six CEFR levels complete — 8 units each, 748 questions in total |
+| **Vocabulary** | A second track beside grammar: topic word banks, word families, collocations and phrasal verbs |
+| **Reading** | A graded passage in every level, recycling the words that level has just taught |
+| **Writing** | Free writing marked against a checklist by the learner, with a model answer shown afterwards — no AI needed |
+| **Placement** | An adaptive test: four questions per level, stopping where it gets hard |
+| **Offline** | Works with no connection, and the whole course downloads in one tap |
+| **Coverage** | All six CEFR levels complete — 60 units, 952 questions in total |
 | **Bilingual UI** | Full English and Arabic interface, with proper LTR/RTL handling |
 
 Progress lives in `localStorage`, so a learner can close the tab and come back later.
@@ -47,12 +51,14 @@ manifest.webmanifest       install-to-home-screen
 assets/css/                design tokens, components, view styles
 src/
   core/       dom, router, store (progress), storage adapter, i18n
-  engine/     grading, mastery + spaced repetition, adaptive selection, placement, XP, recording
+  engine/     grading, mastery + spaced repetition, adaptive selection, placement,
+              writing self-assessment, XP, recording
   data/       content loader, session builders, offline prefetch
   ui/         app shell, question renderer, views
 content/
   curriculum.json          the CEFR spine: levels → units → files
-  levels/<level>/*.json    teaching content + question banks
+  levels/<level>/*.json    teaching content, question banks, reading passages,
+                           writing prompts — grammar (uN) and vocabulary (vN) units
   placement.json           the placement test
   schema/                  JSON Schema for units and questions
 docs/                      architecture, content authoring, roadmap, deployment

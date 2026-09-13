@@ -7,7 +7,7 @@ import { getState, ensureToday, update } from '../../core/store.js';
 import { rankProgress, dailyTasks } from '../../engine/xp.js';
 import { weakConcepts, dueConceptIds } from '../../engine/select.js';
 import { nextAction } from '../../data/sessions.js';
-import { findConceptTitle, LEVEL_META, getLevelUnitMetas, loadConceptIndex } from '../../data/content.js';
+import { findConceptTitle, LEVEL_META, getLevelUnitMetas, loadConceptIndex, SPINE } from '../../data/content.js';
 import { stateFor } from '../../engine/mastery.js';
 
 const NEXT_COPY = {
@@ -25,7 +25,7 @@ export async function homeView() {
   const state = getState();
   await loadConceptIndex();
   const action = await nextAction(state);
-  const units = await getLevelUnitMetas(state.profile.level);
+  const units = await getLevelUnitMetas(state.profile.level, SPINE);
   const doneUnits = units.filter((u) => state.units[u.id] && state.units[u.id].completedAt).length;
   const rank = rankProgress(state.profile.xp);
   const tasks = dailyTasks(state);

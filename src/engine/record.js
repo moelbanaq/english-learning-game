@@ -6,6 +6,7 @@ import { update, ensureConcept, ensureQuestion, ensureUnit, ensureToday, pushHis
 import { applyAnswer } from './mastery.js';
 import { xpForAnswer, touchStreak, checkAchievements } from './xp.js';
 import { LEVELS } from '../data/content.js';
+import { XP_PER_PROMPT } from './writing.js';
 
 export const PASS_MARK = 75;
 
@@ -72,6 +73,43 @@ export function recordConceptStudied(unitId, conceptId) {
     }
     return u;
   }, 'study');
+}
+
+/** Save a draft as the learner types. Cheap, local, and included in the export. */
+export function saveDraft(promptId, text) {
+  return update((s) => {
+    const w = s.writing[promptId] || { text: '', checked: [], completedAt: null };
+    w.text = text;
+    w.updatedAt = Date.now();
+    s.writing[promptId] = w;
+    return w;
+  }, 'draft');
+}
+
+/**
+ * Mark a writing prompt finished.
+ *
+ * XP is flat and paid once. It deliberately does not scale with how many checklist
+ * boxes the learner ticked: the marking is self-reported, and paying more for a better
+ * self-assessment would teach people to lie to themselves for points. Writing also
+ * never touches concept mastery, for the same reason.
+ */
+export function recordWriting(promptId, checked = []) {
+  return update((s) => {
+    ensureToday(s);
+    const w = s.writing[promptId] || { text: '', checked: [], completedAt: null };
+    w.checked = checked.slice();
+    w.updatedAt = Date.now();
+    const first = !w.completedAt;
+    if (first) {
+      w.completedAt = Date.now();
+      s.profile.xp += XP_PER_PROMPT;
+      s.daily.xp += XP_PER_PROMPT;
+      touchStreak(s, XP_PER_PROMPT);
+    }
+    s.writing[promptId] = w;
+    return { first, xp: first ? XP_PER_PROMPT : 0, record: w };
+  }, 'writing');
 }
 
 /**

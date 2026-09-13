@@ -8,6 +8,16 @@
 
 export const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
+/**
+ * Units belong to a track. Grammar is the spine: it decides level progress, what the
+ * dashboard suggests next, and when the next level unlocks. Vocabulary sits beside it
+ * as optional enrichment — nobody should be held out of B1 for skipping a word bank.
+ * Both tracks feed mastery, mistakes, review and XP identically, because that machinery
+ * works on concepts and does not care which track a concept came from.
+ */
+export const TRACKS = ['grammar', 'vocab'];
+export const SPINE = 'grammar';
+
 export const LEVEL_META = {
   A1: { name: { en: 'A1 · Beginner', ar: 'A1 · مبتدئ' } },
   A2: { name: { en: 'A2 · Elementary', ar: 'A2 · أساسي' } },
@@ -48,10 +58,19 @@ export async function getCurriculum() {
 }
 
 function normaliseCurriculum(data) {
-  const levels = data.levels.map((lv) => ({
-    ...lv,
-    units: (lv.units || []).map((u, i) => ({ ...u, level: lv.id, index: i + 1 })),
-  }));
+  const levels = data.levels.map((lv) => {
+    // Each track numbers its own units, so a level reads "Grammar 1-8, Vocabulary 1-2"
+    // rather than a single run of numbers across two unrelated sequences.
+    const counts = {};
+    return {
+      ...lv,
+      units: (lv.units || []).map((u) => {
+        const track = u.track || SPINE;
+        counts[track] = (counts[track] || 0) + 1;
+        return { ...u, level: lv.id, track, index: counts[track] };
+      }),
+    };
+  });
   const unitsById = new Map();
   levels.forEach((lv) => lv.units.forEach((u) => unitsById.set(u.id, u)));
   return { ...data, levels, unitsById };
@@ -97,6 +116,7 @@ function hydrateUnit(raw, meta) {
     concept: q.concept || (unit.concepts[0] && unit.concepts[0].id) || unit.id,
     passage: q.passageId ? (raw.passages || {})[q.passageId] : undefined,
   }));
+  unit.writing = (raw.writing || []).map((w) => ({ ...w, unit: unit.id, level: unit.level }));
   unit.conceptById = new Map(unit.concepts.map((c) => [c.id, c]));
   return unit;
 }
@@ -108,17 +128,20 @@ export async function getUnits(unitIds) {
   return loaded.filter(Boolean);
 }
 
-/** Unit metadata for a level, straight from curriculum.json — no unit files fetched. */
-export async function getLevelUnitMetas(levelId) {
+/**
+ * Unit metadata for a level, straight from curriculum.json — no unit files fetched.
+ * Pass a track to narrow it; omit it to get every published unit of the level.
+ */
+export async function getLevelUnitMetas(levelId, track) {
   const lv = await getLevel(levelId);
-  return lv ? lv.units.filter((u) => u.status !== 'planned') : [];
+  if (!lv) return [];
+  return lv.units.filter((u) => u.status !== 'planned' && (!track || u.track === track));
 }
 
 /** Every published unit of a level, fully loaded. */
-export async function getLevelUnits(levelId) {
-  const lv = await getLevel(levelId);
-  if (!lv) return [];
-  return getUnits(lv.units.filter((u) => u.status !== 'planned').map((u) => u.id));
+export async function getLevelUnits(levelId, track) {
+  const metas = await getLevelUnitMetas(levelId, track);
+  return getUnits(metas.map((u) => u.id));
 }
 
 export async function getPlacementTest() {

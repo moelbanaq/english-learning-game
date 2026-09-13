@@ -1,0 +1,314 @@
+{
+  "id": "a1-v2",
+  "goal": {
+    "en": "Talk about where you live, what you eat, and how you get around your town.",
+    "ar": "أن تتحدث عن مسكنك وطعامك وكيف تتنقل في مدينتك."
+  },
+  "passages": {
+    "a1read": {
+      "title": "A note on the kitchen table",
+      "text": "Mum,\nI am at the market. I need tomatoes, bread and some rice for tonight. The pharmacy next to the bank is closed today, so I will get your medicine tomorrow.\nThere is tea in the kitchen and there are eggs in the fridge. Please do not use the last two eggs — they are for breakfast.\nI am going on foot, so I will be home at six.\nNadia"
+    }
+  },
+  "concepts": [
+    {
+      "id": "a1.vocab.home",
+      "title": {
+        "en": "Home and rooms",
+        "ar": "البيت والغرف"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Room",
+            "You do this there"
+          ],
+          "rows": [
+            [
+              "kitchen",
+              "cook, wash up"
+            ],
+            [
+              "bedroom",
+              "sleep"
+            ],
+            [
+              "bathroom",
+              "wash, have a shower"
+            ],
+            [
+              "living room",
+              "sit, watch TV"
+            ],
+            [
+              "balcony",
+              "sit outside"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Rooms take “in”: in the kitchen. Floors take “on”: on the third floor.",
+            "ar": "الغرف تأخذ in فنقول in the kitchen، والطوابق تأخذ on فنقول on the third floor."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“House” is a building you live in alone; “flat” (UK) or “apartment” (US) is one home inside a bigger building. Most city dwellers live in a flat, not a house.",
+            "ar": "house بيت مستقل، أما الشقة داخل عمارة فهي flat في البريطانية وapartment في الأمريكية. فمعظم سكان المدن يعيشون في flat لا house."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "We live in a flat on the fourth floor.",
+              "ar": "نعيش في شقة في الطابق الرابع."
+            },
+            {
+              "en": "The kitchen is small but bright.",
+              "ar": "المطبخ صغير لكنه مضيء."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.vocab.food",
+      "title": {
+        "en": "Food and drink",
+        "ar": "الطعام والشراب"
+      },
+      "teach": [
+        {
+          "type": "rule",
+          "text": {
+            "en": "Meals take no “the”: I have breakfast at seven. Never “the breakfast”.",
+            "ar": "أسماء الوجبات لا تأخذ the فنقول I have breakfast at seven ولا نقول the breakfast."
+          }
+        },
+        {
+          "type": "table",
+          "head": [
+            "Countable (a / plural)",
+            "Uncountable (no a, no plural)"
+          ],
+          "rows": [
+            [
+              "an apple, two apples",
+              "rice"
+            ],
+            [
+              "an egg, six eggs",
+              "bread"
+            ],
+            [
+              "a tomato, tomatoes",
+              "water"
+            ],
+            [
+              "a sandwich, sandwiches",
+              "cheese"
+            ],
+            [
+              "a bottle, bottles",
+              "coffee"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "«خبز» and «أرز» are ordinary nouns in Arabic, so “I ate two breads” feels natural — but bread and rice are uncountable. Say “two loaves of bread”, “some rice”.",
+            "ar": "«الخبز» و«الأرز» أسماء عادية في العربية، لذا تبدو two breads طبيعية، لكنها في الإنجليزية غير معدودة. قل two loaves of bread أو some rice."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I usually have eggs and bread for breakfast.",
+              "ar": "أتناول عادةً البيض والخبز في الفطور."
+            },
+            {
+              "en": "Would you like some tea?",
+              "ar": "هل تريد بعض الشاي؟"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1.vocab.town",
+      "title": {
+        "en": "Places and getting around",
+        "ar": "الأماكن والتنقل"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Place",
+            "Why you go"
+          ],
+          "rows": [
+            [
+              "pharmacy / chemist",
+              "medicine"
+            ],
+            [
+              "market",
+              "fruit and vegetables"
+            ],
+            [
+              "post office",
+              "letters and parcels"
+            ],
+            [
+              "bank",
+              "money"
+            ],
+            [
+              "bus stop",
+              "to catch a bus"
+            ],
+            [
+              "station",
+              "trains"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Transport takes “by” with no “the”: by bus, by car, by train. The exception is walking: on foot.",
+            "ar": "وسائل النقل تأخذ by بلا the: by bus وby car. والاستثناء المشي فيقال on foot."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“I go to the work by the bus” has two extra “the”s. Say “I go to work by bus”. Work, school and home drop the article.",
+            "ar": "جملة I go to the work by the bus فيها the زائدة مرتين. الصواب I go to work by bus، فكلمات work وschool وhome تُحذف معها أداة التعريف."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The pharmacy is next to the bank.",
+              "ar": "الصيدلية بجوار البنك."
+            },
+            {
+              "en": "I go to school on foot.",
+              "ar": "أذهب إلى المدرسة سيراً."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "a1v2-01", "concept": "a1.vocab.home", "type": "choice", "format": "meaning", "difficulty": 1,
+      "sentence": "We cook dinner in the ___.",
+      "options": ["kitchen", "bedroom", "bathroom", "balcony"],
+      "answer": 0,
+      "explanation": {"en": "Cooking happens in the kitchen.", "ar": "الطبخ يكون في المطبخ kitchen."} },
+    { "id": "a1v2-02", "concept": "a1.vocab.home", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "Our flat is ___ the third floor.",
+      "options": ["on", "in", "at", "to"],
+      "answer": 0,
+      "explanation": {"en": "Floors take “on”, even though rooms take “in”.", "ar": "الطوابق تأخذ on مع أن الغرف تأخذ in."} },
+    { "id": "a1v2-03", "concept": "a1.vocab.home", "type": "choice", "format": "meaning", "difficulty": 2,
+      "prompt": {"en": "You live on the fifth floor of a big building. What is your home?", "ar": "تسكن في الطابق الخامس من عمارة كبيرة. ماذا يسمى مسكنك؟"},
+      "options": ["a flat", "a house", "a garden", "a village"],
+      "answer": 0,
+      "explanation": {"en": "One home inside a larger building is a flat (UK) or apartment (US).", "ar": "المسكن داخل عمارة أكبر يسمى flat بالبريطانية أو apartment بالأمريكية."} },
+    { "id": "a1v2-04", "concept": "a1.vocab.home", "type": "order", "format": "order", "difficulty": 2,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["There", "are", "two", "bedrooms", "in", "our", "flat"],
+      "answer": "There are two bedrooms in our flat",
+      "explanation": {"en": "“There are” for plural, then the place at the end.", "ar": "نبدأ بـ There are للجمع ثم المكان في النهاية."} },
+    { "id": "a1v2-05", "concept": "a1.vocab.food", "type": "choice", "format": "fill_blank", "difficulty": 1,
+      "sentence": "I have ___ at seven o'clock every morning.",
+      "options": ["breakfast", "the breakfast", "a breakfast", "breakfasts"],
+      "answer": 0,
+      "explanation": {"en": "Meal names take no article: have breakfast.", "ar": "أسماء الوجبات بلا أداة تعريف: have breakfast."} },
+    { "id": "a1v2-06", "concept": "a1.vocab.food", "type": "choice", "format": "error_id", "difficulty": 2,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["I bought two breads.", "I bought two loaves of bread.", "I bought some bread.", "I bought two apples."],
+      "answer": 0,
+      "explanation": {"en": "Bread is uncountable, so it has no plural. Count the loaves instead.", "ar": "كلمة bread غير معدودة فلا تُجمع، بل نعدّ الأرغفة loaves."} },
+    { "id": "a1v2-07", "concept": "a1.vocab.food", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "How ___ rice do you want?",
+      "options": ["much", "many", "a few", "several"],
+      "answer": 0,
+      "explanation": {"en": "Rice is uncountable, so it takes “much”.", "ar": "الأرز غير معدود فيأخذ much."} },
+    { "id": "a1v2-08", "concept": "a1.vocab.food", "type": "match", "format": "match", "difficulty": 2,
+      "prompt": {"en": "Match the food to its group.", "ar": "طابق الطعام بمجموعته."},
+      "pairs": [["tomato", "vegetable"], ["banana", "fruit"], ["chicken", "meat"], ["cheese", "dairy"]],
+      "explanation": {"en": "Grouping words together makes them much easier to remember than a long list.", "ar": "تجميع الكلمات في فئات يسهّل حفظها أكثر من القائمة الطويلة."} },
+    { "id": "a1v2-09", "concept": "a1.vocab.food", "type": "text", "format": "write", "difficulty": 2,
+      "prompt": {"en": "Complete politely: “___ you like some tea?” (one word)", "ar": "أكمل بأدب: «___ you like some tea؟» (كلمة واحدة)"},
+      "answer": "would",
+      "accept": ["Would"],
+      "explanation": {"en": "“Would you like…?” is the polite offer. “Do you want…?” is direct and can sound blunt.", "ar": "Would you like هي صيغة العرض المهذبة، أما Do you want فمباشرة وقد تبدو جافة."} },
+    { "id": "a1v2-10", "concept": "a1.vocab.town", "type": "choice", "format": "meaning", "difficulty": 1,
+      "sentence": "I need medicine, so I'm going to the ___.",
+      "options": ["pharmacy", "post office", "bank", "station"],
+      "answer": 0,
+      "explanation": {"en": "Medicine comes from a pharmacy (also called a chemist in Britain).", "ar": "الدواء يُشترى من pharmacy، وتسمى chemist في بريطانيا."} },
+    { "id": "a1v2-11", "concept": "a1.vocab.town", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "She goes to work ___ bus.",
+      "options": ["by", "with", "on the", "in a"],
+      "answer": 0,
+      "explanation": {"en": "Transport takes “by” with no article: by bus.", "ar": "وسائل النقل تأخذ by بلا أداة تعريف: by bus."} },
+    { "id": "a1v2-12", "concept": "a1.vocab.town", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["I go to the work every day.", "I go to work every day.", "I go to the office every day.", "I go home every day."],
+      "answer": 0,
+      "explanation": {"en": "“Work” drops the article; “the office” keeps it because it is a specific place.", "ar": "كلمة work تُحذف معها أداة التعريف، أما the office فتبقى لأنها مكان محدد."} },
+    { "id": "a1v2-13", "concept": "a1.vocab.town", "type": "choice", "format": "fill_blank", "difficulty": 2,
+      "sentence": "The market is ___ to the bank.",
+      "options": ["next", "near of", "beside of", "close"],
+      "answer": 0,
+      "explanation": {"en": "The fixed phrase is “next to”. “Close” needs “to” as well: close to the bank.", "ar": "التعبير الثابت هو next to، وclose تحتاج to أيضاً: close to the bank."} },
+    { "id": "a1v2-14", "concept": "a1.vocab.town", "type": "order", "format": "order", "difficulty": 3,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["I", "usually", "go", "to", "the", "market", "on", "Friday"],
+      "answer": "I usually go to the market on Friday",
+      "explanation": {"en": "Frequency word before the verb, place before time.", "ar": "ظرف التكرار قبل الفعل، والمكان قبل الزمان."} },
+    { "id": "a1v2-15", "concept": "a1.vocab.town", "type": "choice", "format": "meaning", "difficulty": 3,
+      "prompt": {"en": "Someone says “It's five minutes on foot.” How are they travelling?", "ar": "قال أحدهم It's five minutes on foot. كيف سينتقل؟"},
+      "options": ["Walking.", "By taxi.", "By bus.", "By bicycle."],
+      "answer": 0,
+      "explanation": {"en": "“On foot” is the fixed phrase for walking — the one form of transport that does not take “by”.", "ar": "on foot تعبير ثابت يعني المشي، وهو الوسيلة الوحيدة التي لا تأخذ by."} },
+    { "id": "a1v2-r1", "concept": "a1.vocab.town", "type": "choice", "format": "comprehension", "difficulty": 2,
+      "passageId": "a1read",
+      "prompt": {"en": "Where is Nadia?", "ar": "أين نادية؟"},
+      "options": ["At the market.", "At the bank.", "At the pharmacy.", "At home."],
+      "answer": 0,
+      "explanation": {"en": "The first line says “I am at the market.”", "ar": "يقول السطر الأول I am at the market."} },
+    { "id": "a1v2-r2", "concept": "a1.vocab.town", "type": "choice", "format": "comprehension", "difficulty": 2,
+      "passageId": "a1read",
+      "prompt": {"en": "Why will she get the medicine tomorrow?", "ar": "لماذا ستحضر الدواء غداً؟"},
+      "options": ["The pharmacy is closed today.", "The bank is closed today.", "She has no money today.", "The market is far away."],
+      "answer": 0,
+      "explanation": {"en": "“The pharmacy… is closed today, so I will get your medicine tomorrow.”", "ar": "النص يقول إن الصيدلية مغلقة اليوم، لذلك ستحضر الدواء غداً."} },
+    { "id": "a1v2-r3", "concept": "a1.vocab.food", "type": "choice", "format": "comprehension", "difficulty": 2,
+      "passageId": "a1read",
+      "prompt": {"en": "What must nobody use?", "ar": "ما الذي يجب ألا يستعمله أحد؟"},
+      "options": ["The last two eggs.", "The bread on the table.", "The tea in the kitchen.", "The rice for tonight."],
+      "answer": 0,
+      "explanation": {"en": "“Please do not use the last two eggs — they are for breakfast.”", "ar": "يقول النص: لا تستعملوا آخر بيضتين فهما للفطور."} },
+    { "id": "a1v2-r4", "concept": "a1.vocab.town", "type": "choice", "format": "comprehension", "difficulty": 3,
+      "passageId": "a1read",
+      "prompt": {"en": "How is Nadia travelling?", "ar": "كيف تنتقل نادية؟"},
+      "options": ["She is walking.", "She is taking a bus.", "She is driving a car.", "She is taking a taxi."],
+      "answer": 0,
+      "explanation": {"en": "“On foot” is the fixed phrase for walking.", "ar": "on foot تعبير ثابت يعني المشي."} }
+  ]
+}

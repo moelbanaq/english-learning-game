@@ -1,0 +1,307 @@
+{
+  "id": "b2-v2",
+  "goal": {
+    "en": "Describe numbers, trends and cause in the register a report or a meeting expects.",
+    "ar": "أن تصف الأرقام والاتجاهات والأسباب بالأسلوب الذي يتوقعه التقرير أو الاجتماع."
+  },
+  "passages": {
+    "b2read": {
+      "title": "Extract from a quarterly report",
+      "text": "Revenue rose by 12% to 4.6 million in the third quarter, the fourth consecutive quarterly increase. Profit, however, fell by 3%, largely due to a sharp rise in shipping costs following the closure of the northern route.\nDemand levelled off in September after peaking in August, and the forecast for the final quarter has been revised downwards. Two factors appear to be contributing: a competitor entered the market in July, and our own delivery times lengthened from three days to nine.\nThe board has approved a budget of 300,000 to open a second warehouse. Costs will be cut elsewhere; no decision has yet been taken on where."
+    }
+  },
+  "concepts": [
+    {
+      "id": "b2.vocab.trends",
+      "title": {
+        "en": "Describing a trend",
+        "ar": "وصف الاتجاه"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Verb",
+            "Noun",
+            "Direction"
+          ],
+          "rows": [
+            [
+              "rise / increase",
+              "a rise / an increase",
+              "up"
+            ],
+            [
+              "fall / decline / drop",
+              "a fall / a decline",
+              "down"
+            ],
+            [
+              "peak",
+              "a peak",
+              "the highest point"
+            ],
+            [
+              "level off",
+              "—",
+              "stop changing"
+            ],
+            [
+              "fluctuate",
+              "a fluctuation",
+              "up and down"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Size and speed go in different places. As a verb: rose sharply. As a noun: a sharp rise. Adverb with the verb, adjective with the noun.",
+            "ar": "الحجم والسرعة يختلف موضعهما. مع الفعل ظرف: rose sharply، ومع الاسم صفة: a sharp rise."
+          }
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Increase” and “decrease” take “by” for the size of the change and “to” for the final figure: it rose by 5% to 45%. Mixing them reports a different number.",
+            "ar": "increase وdecrease تأخذان by لمقدار التغيّر وto للرقم النهائي: rose by 5% to 45%. والخلط بينهما ينقل رقماً مختلفاً."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Sales fell sharply in the third quarter.",
+              "ar": "انخفضت المبيعات بحدة في الربع الثالث."
+            },
+            {
+              "en": "There was a slight increase in demand.",
+              "ar": "كان هناك ارتفاع طفيف في الطلب."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2.vocab.business",
+      "title": {
+        "en": "Business and money at work",
+        "ar": "لغة الأعمال والمال"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "Means"
+          ],
+          "rows": [
+            [
+              "revenue",
+              "money coming in"
+            ],
+            [
+              "profit",
+              "what is left after costs"
+            ],
+            [
+              "margin",
+              "profit as a share of revenue"
+            ],
+            [
+              "stakeholder",
+              "anyone affected by the decision"
+            ],
+            [
+              "budget",
+              "money set aside in advance"
+            ],
+            [
+              "forecast",
+              "a prediction of future figures"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "Revenue is not profit. A company can double its revenue and still lose money. Using them interchangeably in a report is a factual error, not a style one.",
+            "ar": "الإيراد revenue ليس الربح profit. فقد تضاعف الشركة إيرادها وتظل خاسرة. والخلط بينهما في تقرير خطأ في المعلومة لا في الأسلوب."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Costs are cut, budgets are approved or exceeded, forecasts are revised. Each noun has its own small set of verbs.",
+            "ar": "التكاليف تُخفَّض cut، والميزانيات تُعتمد أو تُتجاوز، والتوقعات تُراجَع. ولكل اسم مجموعة أفعال خاصة به."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2.vocab.cause",
+      "title": {
+        "en": "Cause, effect and hedging",
+        "ar": "السبب والنتيجة والتحفّظ"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "What follows it"
+          ],
+          "rows": [
+            [
+              "because of / due to",
+              "a noun phrase"
+            ],
+            [
+              "because / since",
+              "a full clause"
+            ],
+            [
+              "result in / lead to",
+              "the effect"
+            ],
+            [
+              "result from / stem from",
+              "the cause"
+            ],
+            [
+              "contribute to",
+              "one cause among several"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Result in” and “result from” point in opposite directions. The delay resulted IN losses; the losses resulted FROM the delay. Reverse them and you reverse the argument.",
+            "ar": "result in وresult from متعاكستان في الاتجاه. فالتأخير resulted in خسائر، والخسائر resulted from التأخير. وعكسهما يعكس الحجة كلها."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Hedges match a claim to its evidence: may, appear to, suggest, tend to. “Contribute to” is itself a hedge — it claims one cause, not the whole cause.",
+            "ar": "أدوات التحفّظ تُطابق الدعوى بقوة دليلها: may وappear to وsuggest وtend to. وحتى contribute to متحفظة، فهي تدّعي سبباً واحداً لا السبب كله."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The shortage was largely due to the strike.",
+              "ar": "يعود النقص في معظمه إلى الإضراب."
+            },
+            {
+              "en": "Poor planning contributed to the delay.",
+              "ar": "أسهم سوء التخطيط في التأخير."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2v2-01", "concept": "b2.vocab.trends", "type": "choice", "format": "fill_blank", "difficulty": 3,
+      "sentence": "Profits rose ___ in the final quarter.",
+      "options": ["sharply", "sharp", "a sharp", "sharpness"],
+      "answer": 0,
+      "explanation": {"en": "“Rose” is a verb, so it needs an adverb.", "ar": "rose فعل فيحتاج ظرفاً adverb."} },
+    { "id": "b2v2-02", "concept": "b2.vocab.trends", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "There was a ___ decline in applications this year.",
+      "options": ["steady", "steadily", "steadiness", "steadying"],
+      "answer": 0,
+      "explanation": {"en": "“Decline” is a noun here, so it takes an adjective.", "ar": "decline اسم هنا فتأخذ صفة adjective."} },
+    { "id": "b2v2-03", "concept": "b2.vocab.trends", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“Unemployment rose by 3% to 11%.” What was it before?", "ar": "«ارتفعت البطالة by 3% to 11%». كم كانت قبل ذلك؟"},
+      "options": ["8%", "3%", "11%", "14%"],
+      "answer": 0,
+      "explanation": {"en": "“By” gives the size of the change and “to” the final figure, so it started at 8%.", "ar": "by تعطي مقدار التغيّر وto تعطي الرقم النهائي، فالبداية كانت 8%."} },
+    { "id": "b2v2-04", "concept": "b2.vocab.trends", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": {"en": "Prices “levelled off”. What happened?", "ar": "قيل إن الأسعار levelled off. ماذا حدث؟"},
+      "options": ["They stopped changing much.", "They fell back very sharply.", "They rose to a record high.", "They moved up and down wildly."],
+      "answer": 0,
+      "explanation": {"en": "Level off = stop rising or falling and stay roughly flat.", "ar": "level off تعني توقف الصعود أو الهبوط والاستقرار تقريباً."} },
+    { "id": "b2v2-05", "concept": "b2.vocab.trends", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": {"en": "Match the verb to the shape of the line.", "ar": "طابق الفعل بشكل المنحنى."},
+      "pairs": [["peak", "up to a high point, then down"], ["fluctuate", "up and down repeatedly"], ["level off", "flat after a change"], ["plummet", "down very fast"]],
+      "explanation": {"en": "Report writing depends on picking the verb that matches the shape exactly.", "ar": "كتابة التقارير تعتمد على اختيار الفعل المطابق تماماً لشكل المنحنى."} },
+    { "id": "b2v2-06", "concept": "b2.vocab.business", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": {"en": "A company's revenue doubled but it still lost money. Is that possible?", "ar": "تضاعف إيراد شركة ومع ذلك خسرت. هل هذا ممكن؟"},
+      "options": ["Yes — costs can exceed revenue.", "No — revenue and profit are the same.", "No — doubling revenue removes all costs.", "Yes, but only if it paid no tax."],
+      "answer": 0,
+      "explanation": {"en": "Revenue is money in; profit is what is left after costs.", "ar": "revenue هو المال الداخل، وprofit هو ما يتبقى بعد التكاليف."} },
+    { "id": "b2v2-07", "concept": "b2.vocab.business", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "We will have to ___ costs before the next quarter.",
+      "options": ["cut", "lower off", "decrease down", "shorten"],
+      "answer": 0,
+      "explanation": {"en": "Costs are cut or reduced. Shorten is about length, not amount.", "ar": "التكاليف تُخفَّض cut أو reduce، أما shorten فتتعلق بالطول لا بالمقدار."} },
+    { "id": "b2v2-08", "concept": "b2.vocab.business", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "Who counts as a “stakeholder” in a school's decision?", "ar": "من يُعدّ stakeholder في قرار مدرسي؟"},
+      "options": ["Anyone the decision affects.", "Only the people who own it.", "Only the staff it employs.", "Only the person deciding."],
+      "answer": 0,
+      "explanation": {"en": "A stakeholder has an interest in the outcome, whether or not they own anything.", "ar": "stakeholder هو صاحب مصلحة في النتيجة سواء ملك شيئاً أم لا."} },
+    { "id": "b2v2-09", "concept": "b2.vocab.business", "type": "text", "format": "write", "difficulty": 4,
+      "prompt": {"en": "One word: money coming into a business before costs are taken out.", "ar": "كلمة واحدة: المال الداخل إلى الشركة قبل خصم التكاليف."},
+      "answer": "revenue",
+      "accept": ["Revenue", "turnover"],
+      "explanation": {"en": "Revenue (or turnover in British usage) is the top line; profit is the bottom line.", "ar": "revenue أو turnover بالبريطانية هي أول السطر، والربح profit آخره."} },
+    { "id": "b2v2-10", "concept": "b2.vocab.cause", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "The flight was cancelled ___ the storm.",
+      "options": ["because of", "because", "so that", "although"],
+      "answer": 0,
+      "explanation": {"en": "“The storm” is a noun phrase, so it needs “because of”, not “because”.", "ar": "the storm عبارة اسمية فتحتاج because of لا because."} },
+    { "id": "b2v2-11", "concept": "b2.vocab.cause", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": {"en": "Which sentence reverses cause and effect?", "ar": "أي جملة تعكس السبب والنتيجة؟"},
+      "options": ["The losses resulted in the delay.", "The delay resulted in the losses.", "The losses resulted from the delay.", "The delay led to serious losses."],
+      "answer": 0,
+      "explanation": {"en": "The delay came first, so it is the cause. “Result in” must point from cause to effect.", "ar": "التأخير وقع أولاً فهو السبب، وresult in تسير من السبب إلى النتيجة."} },
+    { "id": "b2v2-12", "concept": "b2.vocab.cause", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“Poor planning contributed to the delay.” How strong is this claim?", "ar": "ما قوة هذه الدعوى؟"},
+      "options": ["One cause among several.", "The single and only cause.", "A cause that was ruled out.", "An effect, not a cause."],
+      "answer": 0,
+      "explanation": {"en": "Contribute to claims a share of the cause, deliberately leaving room for others.", "ar": "contribute to تدّعي نصيباً من السبب وتترك عمداً مجالاً لأسباب أخرى."} },
+    { "id": "b2v2-13", "concept": "b2.vocab.cause", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": {"en": "Which sentence best matches a claim to limited evidence?", "ar": "أي جملة تُطابق الدعوى بدليل محدود؟"},
+      "options": ["The data suggest a link between the two.", "The data prove a link between the two.", "The data show there is definitely a link.", "The data confirm the link beyond all doubt."],
+      "answer": 0,
+      "explanation": {"en": "Suggest matches the strength of the evidence; prove and confirm overclaim.", "ar": "suggest تناسب قوة الدليل، أما prove وconfirm فتبالغان في الادعاء."} },
+    { "id": "b2v2-14", "concept": "b2.vocab.cause", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["The", "shortage", "stemmed", "from", "a", "single", "supplier", "failure"],
+      "answer": "The shortage stemmed from a single supplier failure",
+      "explanation": {"en": "Stem from points backwards to the cause, like result from.", "ar": "stem from تشير إلى الوراء نحو السبب، مثل result from."} },
+    { "id": "b2v2-15", "concept": "b2.vocab.trends", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": {"en": "Which sentence fits a formal report?", "ar": "أي جملة تناسب تقريراً رسمياً؟"},
+      "options": ["Demand declined steadily throughout the period.", "Demand went down loads over the whole period.", "Demand basically fell off a cliff that period.", "Demand was going down and down that period."],
+      "answer": 0,
+      "explanation": {"en": "A report needs a precise verb and a neutral adverb, not conversational emphasis.", "ar": "التقرير يحتاج فعلاً دقيقاً وظرفاً محايداً لا مبالغة الحديث اليومي."} },
+    { "id": "b2v2-r1", "concept": "b2.vocab.trends", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b2read",
+      "prompt": {"en": "What was revenue before the third quarter?", "ar": "كم كان الإيراد قبل الربع الثالث؟"},
+      "options": ["About 4.1 million.", "Exactly 4.6 million.", "About 5.2 million.", "Exactly 12 million."],
+      "answer": 0,
+      "explanation": {"en": "“Rose by 12% to 4.6 million” means 4.6 is the figure after the rise, so the start was about 4.1.", "ar": "عبارة rose by 12% to 4.6 تعني أن 4.6 هو الرقم بعد الارتفاع، فالبداية نحو 4.1."} },
+    { "id": "b2v2-r2", "concept": "b2.vocab.business", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b2read",
+      "prompt": {"en": "Revenue rose and profit fell. How is that possible here?", "ar": "ارتفع الإيراد وانخفض الربح. كيف يكون ذلك هنا؟"},
+      "options": ["Shipping costs rose sharply.", "The forecast was revised down.", "A competitor entered the market.", "Delivery times became longer."],
+      "answer": 0,
+      "explanation": {"en": "The text names the cause directly: a sharp rise in shipping costs. The other three are real facts but explain the demand figures, not the profit gap.", "ar": "يذكر النص السبب مباشرةً وهو الارتفاع الحاد في تكاليف الشحن، أما الثلاثة الأخرى فوقائع تفسّر أرقام الطلب لا فجوة الربح."} },
+    { "id": "b2v2-r3", "concept": "b2.vocab.cause", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b2read",
+      "prompt": {"en": "How confident is the report about why demand stopped growing?", "ar": "ما درجة يقين التقرير بشأن سبب توقف نمو الطلب؟"},
+      "options": ["Cautious — it says two factors “appear to be contributing”.", "Certain — it names the single decisive cause.", "Silent — it offers no explanation for it at all.", "Dismissive — it says the cause does not matter here."],
+      "answer": 0,
+      "explanation": {"en": "“Appear to be contributing” hedges twice: appear, and contributing rather than causing.", "ar": "عبارة appear to be contributing متحفظة مرتين: appear، وcontributing بدلاً من causing."} },
+    { "id": "b2v2-r4", "concept": "b2.vocab.trends", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "b2read",
+      "prompt": {"en": "When was demand at its highest?", "ar": "متى بلغ الطلب ذروته؟"},
+      "options": ["August.", "September.", "July.", "The final quarter."],
+      "answer": 0,
+      "explanation": {"en": "“Levelled off in September after peaking in August” — the peak is the high point, and it came first.", "ar": "استقر الطلب في سبتمبر بعد أن بلغ ذروته في أغسطس، فالذروة هي القمة وقد سبقت."} }
+  ]
+}

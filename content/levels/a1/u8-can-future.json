@@ -177,5 +177,37 @@
       "tokens": ["What", "are", "you", "going", "to", "do", "tomorrow"], "answer": "What are you going to do tomorrow",
       "explanation": { "en": "Question word + be + subject + going to + base verb.",
         "ar": "أداة السؤال ثم فعل الكون ثم الفاعل ثم going to ثم الفعل المجرد." } }
+  ],
+  "writing": [
+    {
+      "id": "a1u8-w1",
+      "prompt": {"en": "Write about your next weekend. What are you going to do?", "ar": "اكتب عن عطلة نهاية أسبوعك القادمة. ماذا ستفعل؟"},
+      "context": {"en": "Four to six sentences. Imagine you are telling a new friend.", "ar": "من أربع إلى ست جمل، وتخيّل أنك تحدّث صديقاً جديداً."},
+      "minWords": 35,
+      "checklist": [
+        {"en": "I used “going to” at least twice.", "ar": "استخدمت going to مرتين على الأقل."},
+        {"en": "Every sentence has a subject — I did not drop “I” or “it”.", "ar": "كل جملة فيها فاعل، ولم أحذف I أو it."},
+        {"en": "I said when, using a time word like “on Friday” or “in the morning”.", "ar": "ذكرت الزمن بكلمة مثل on Friday أو in the morning."},
+        {"en": "I did not write “I will go to the shopping” — no extra “the”.", "ar": "لم أكتب the زائدة كما في I will go to the shopping."},
+        {"en": "I read it once out loud and it made sense.", "ar": "قرأته بصوت مرتفع مرة فوجدته مفهوماً."}
+      ],
+      "model": {"en": "On Friday I am going to visit my grandmother. She lives near the market, so we are going to walk there together in the morning. In the afternoon I am going to meet two friends at a cafe. We are going to watch a football match. On Saturday I am not going to do anything — I am going to sleep!", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "Notice that every sentence names who is doing the action, even when it is obvious. English cannot leave the subject out the way Arabic can.", "ar": "لاحظ أن كل جملة تذكر من يقوم بالفعل حتى حين يكون واضحاً، فالإنجليزية لا تحذف الفاعل كما تفعل العربية."}
+    },
+    {
+      "id": "a1u8-w2",
+      "prompt": {"en": "Describe one person in your family: what they look like and what they can do.", "ar": "صف شخصاً من عائلتك: كيف يبدو وماذا يستطيع أن يفعل."},
+      "context": {"en": "Four to six sentences. Use “is” for looks and “can” for ability.", "ar": "من أربع إلى ست جمل، مستخدماً is للشكل وcan للقدرة."},
+      "minWords": 35,
+      "checklist": [
+        {"en": "I used “is” or “has” correctly: he is tall, he has short hair.", "ar": "استخدمت is وhas في موضعهما: he is tall وhe has short hair."},
+        {"en": "I did not write “he has 30 years” for age.", "ar": "لم أكتب he has 30 years للعمر."},
+        {"en": "I used “can” at least twice, with no “to” after it.", "ar": "استخدمت can مرتين على الأقل، وبلا to بعدها."},
+        {"en": "I used “a” before the job: he is a driver.", "ar": "استخدمت a قبل المهنة: he is a driver."},
+        {"en": "I checked that plural nouns end in -s where they should.", "ar": "تحققت من أن الأسماء الجمع تنتهي بـ s حيث يجب."}
+      ],
+      "model": {"en": "My uncle Samir is forty-five years old. He is quite tall and he has a short grey beard. He is a driver, so he knows every street in the city. He can fix almost any car, and he can cook better than my mother — but do not tell her. He cannot swim, which is strange for someone who grew up near the sea.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The model uses “can” three times and never puts “to” after it. It also uses “a driver” with the article, which Arabic does not need.", "ar": "يستخدم النموذج can ثلاث مرات دون to بعدها، ويستخدم a driver بأداة التنكير التي لا تحتاجها العربية."}
+    }
   ]
 }

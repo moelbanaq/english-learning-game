@@ -214,5 +214,37 @@
       "answer": 0,
       "explanation": { "en": "“That works (for me)” is a common, casual way of agreeing to a proposed time.",
         "ar": "عبارة That works (for me) طريقة شائعة وغير رسمية للموافقة على موعد مقترح." } }
+  ],
+  "writing": [
+    {
+      "id": "a2u8-w1",
+      "prompt": {"en": "A friend invited you to a party on Thursday, but you cannot go. Write a short reply.", "ar": "دعاك صديق إلى حفلة يوم الخميس ولا تستطيع الحضور. اكتب رداً قصيراً."},
+      "context": {"en": "Five or six sentences. Thank them, refuse, give a reason, suggest another time.", "ar": "خمس أو ست جمل: اشكره، اعتذر، اذكر سبباً، واقترح موعداً آخر."},
+      "minWords": 45,
+      "checklist": [
+        {"en": "I thanked them before refusing.", "ar": "شكرته قبل الاعتذار."},
+        {"en": "I gave a reason using a past or future tense correctly.", "ar": "ذكرت سبباً بزمن ماضٍ أو مستقبل صحيح."},
+        {"en": "I suggested another time — the reply does not just end in a no.", "ar": "اقترحت موعداً آخر، فلم ينتهِ الرد برفض فقط."},
+        {"en": "I did not translate «إن شاء الله» as a vague “maybe” that sounds like a no.", "ar": "لم أترجم «إن شاء الله» إلى maybe غامضة تبدو رفضاً."},
+        {"en": "The tone is warm — I would be happy to receive this reply myself.", "ar": "النبرة ودودة، وكنت سأسعد لو تلقيت هذا الرد بنفسي."}
+      ],
+      "model": {"en": "Thanks so much for the invitation — that is really kind of you. Unfortunately I cannot make Thursday, because my sister is arriving from Cairo that evening and I have to pick her up. I am sorry to miss it. Are you free the following week? I would love to see you, and I can come to you if that is easier.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The refusal is one sentence in the middle, surrounded by warmth. That shape — thank, refuse, explain, offer — works in almost every language, but the English words for it have to be learned.", "ar": "الاعتذار جملة واحدة في الوسط يحيط بها الود. وهذا الشكل — شكر، اعتذار، تفسير، عرض — يعمل في كل اللغات تقريباً، لكن ألفاظه الإنجليزية تُتعلَّم."}
+    },
+    {
+      "id": "a2u8-w2",
+      "prompt": {"en": "Tell the story of a journey that went wrong.", "ar": "احكِ قصة رحلة لم تسر كما ينبغي."},
+      "context": {"en": "Six to eight sentences, in the past.", "ar": "من ست إلى ثماني جمل بصيغة الماضي."},
+      "minWords": 60,
+      "checklist": [
+        {"en": "I used the past simple for the main events.", "ar": "استخدمت الماضي البسيط للأحداث الرئيسية."},
+        {"en": "I used the past continuous at least once for background (“while we were waiting…”).", "ar": "استخدمت الماضي المستمر مرة على الأقل للخلفية مثل while we were waiting."},
+        {"en": "I checked my irregular past forms: went, took, got, left.", "ar": "راجعت صيغ الماضي الشاذة: went وtook وgot وleft."},
+        {"en": "I used a time linker: then, after that, in the end.", "ar": "استخدمت رابطاً زمنياً: then أو after that أو in the end."},
+        {"en": "The reader can tell what happened first, second and last.", "ar": "يستطيع القارئ تمييز ما حدث أولاً وثانياً وأخيراً."}
+      ],
+      "model": {"en": "Last summer we decided to drive to the coast. We left at six in the morning to avoid the traffic. About an hour later, while we were passing a small town, the car started making a strange noise. Then it stopped completely. We waited two hours for a mechanic, who told us the problem was serious. In the end we left the car there and took a bus. We arrived at nine in the evening, tired and hungry, and the hotel had given our room to someone else.", "ar": "نموذج إجابة بالإنجليزية للمقارنة."},
+      "notes": {"en": "The past continuous (“while we were passing”) sets the scene; the past simple (“started”, “stopped”) moves the story. Mixing them well is what makes a narrative readable.", "ar": "الماضي المستمر while we were passing يرسم المشهد، والماضي البسيط started وstopped يحرّك القصة، وحسن المزج بينهما هو ما يجعل السرد مقروءاً."}
+    }
   ]
 }

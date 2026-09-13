@@ -1,0 +1,303 @@
+{
+  "id": "c1-v2",
+  "goal": {
+    "en": "Discuss institutions, rights and ethics with the abstract nouns and the word partners they take.",
+    "ar": "أن تناقش المؤسسات والحقوق والأخلاق بالأسماء المجردة وما تقترن به من كلمات."
+  },
+  "passages": {
+    "c1read": {
+      "title": "From a committee's findings",
+      "text": "The committee finds that the department acted within the law. It does not find that the department acted well.\nThe legislation gives the minister a broad discretion, and the exercise of that discretion was, in the strict sense, legitimate. But the underlying assumption throughout the department's submission is that legality settles the question, and it does not. Two officials held a vested interest in the successful bidder; neither declared it, and the department's own guidance did not require them to. That the guidance permitted the omission is precisely the problem the committee was asked to examine.\nWe do not condone the practice, and we do not accept that it was inevitable. We recommend that the guidance be revised to require declaration, and that the revised guidance be enforced by an office independent of the department. Accountability that depends on the good will of the accountable is not accountability."
+    }
+  },
+  "concepts": [
+    {
+      "id": "c1.vocab.governance",
+      "title": {
+        "en": "Institutions and power",
+        "ar": "المؤسسات والسلطة"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "Means"
+          ],
+          "rows": [
+            [
+              "legislation",
+              "laws as a body (uncountable)"
+            ],
+            [
+              "regulation",
+              "a rule made by a body"
+            ],
+            [
+              "mandate",
+              "authority to act, given by others"
+            ],
+            [
+              "accountability",
+              "having to answer for what you did"
+            ],
+            [
+              "transparency",
+              "decisions visible to outsiders"
+            ],
+            [
+              "enforce",
+              "make people follow a rule"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Legislation” is uncountable: a piece of legislation, new legislation. “Legislations” is not English. A single law is “an act” or “a bill” before it passes.",
+            "ar": "legislation غير معدودة: a piece of legislation وnew legislation، أما legislations فليست إنجليزية. والقانون المفرد يُسمى act أو bill قبل إقراره."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Laws are passed, then enforced, and can be repealed. Rules are introduced, applied and relaxed. Using the wrong verb marks the writer as outside the field.",
+            "ar": "القوانين تُقَرّ pass ثم تُنفَّذ enforce وقد تُلغى repeal، والقواعد تُستحدث وتُطبَّق وتُخفَّف. واستعمال الفعل الخطأ يكشف أن الكاتب غريب عن المجال."
+          }
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The bill was passed but has not yet been enforced.",
+              "ar": "أُقرّ مشروع القانون لكنه لم يُنفَّذ بعد."
+            },
+            {
+              "en": "The inquiry called for greater transparency.",
+              "ar": "دعا التحقيق إلى مزيد من الشفافية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1.vocab.rights",
+      "title": {
+        "en": "Rights and obligations",
+        "ar": "الحقوق والالتزامات"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Collocation",
+            "Means"
+          ],
+          "rows": [
+            [
+              "uphold a right",
+              "defend and maintain it"
+            ],
+            [
+              "infringe / violate a right",
+              "break it"
+            ],
+            [
+              "waive a right",
+              "give it up voluntarily"
+            ],
+            [
+              "be entitled to",
+              "have the right to"
+            ],
+            [
+              "be obliged to",
+              "be required to"
+            ],
+            [
+              "exempt from",
+              "not required to"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Entitled to” takes a noun or an infinitive: entitled to compensation, entitled to appeal. It never takes “-ing”.",
+            "ar": "entitled to يليها اسم أو مصدر بـ to: entitled to compensation وentitled to appeal، ولا يليها ing أبداً."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Rights are held, exercised, protected and lost. The word that matches the moment matters: you exercise a right when you use it, you assert it when someone denies it.",
+            "ar": "الحقوق تُملك وتُمارَس وتُصان وتُفقَد، والكلمة المناسبة للموقف مهمة: تمارس exercise حقك حين تستعمله، وتؤكده assert حين يُنكره أحد."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c1.vocab.ethics",
+      "title": {
+        "en": "Ethical vocabulary",
+        "ar": "مفردات الأخلاق"
+      },
+      "teach": [
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "Means",
+            "Not"
+          ],
+          "rows": [
+            [
+              "ethical",
+              "morally right",
+              "legal"
+            ],
+            [
+              "legitimate",
+              "justified or lawful",
+              "genuine (only)"
+            ],
+            [
+              "justify",
+              "give good reasons for",
+              "excuse"
+            ],
+            [
+              "condone",
+              "accept something wrong",
+              "condemn"
+            ],
+            [
+              "scrupulous",
+              "carefully honest",
+              "worried"
+            ],
+            [
+              "vested interest",
+              "a stake that biases you",
+              "strong opinion"
+            ]
+          ]
+        },
+        {
+          "type": "warn",
+          "text": {
+            "en": "“Condone” and “condemn” look alike and mean opposite things. To condone is to let wrongdoing pass; to condemn is to denounce it.",
+            "ar": "condone وcondemn متشابهتان في الشكل متضادتان في المعنى: condone تعني التغاضي عن الخطأ، وcondemn تعني إدانته."
+          }
+        },
+        {
+          "type": "rule",
+          "text": {
+            "en": "Legal and ethical are not synonyms. Something can be perfectly legal and still unethical, and most interesting arguments live in that gap.",
+            "ar": "القانوني والأخلاقي ليسا مترادفين. فقد يكون الأمر قانونياً تماماً وغير أخلاقي، وفي هذه الفجوة تعيش أكثر الحجج إثارة."
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "c1v2-01", "concept": "c1.vocab.governance", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["Several new legislations were introduced.", "Several new regulations were introduced.", "A new piece of legislation was introduced.", "New legislation was introduced last year."],
+      "answer": 0,
+      "explanation": {"en": "Legislation is uncountable. Regulations, being individual rules, can be counted.", "ar": "legislation غير معدودة، أما regulations فقواعد مفردة يمكن عدّها."} },
+    { "id": "c1v2-02", "concept": "c1.vocab.governance", "type": "choice", "format": "collocation", "difficulty": 5,
+      "sentence": "The law was passed in March but has never been ___.",
+      "options": ["enforced", "obeyed by", "practised", "executed on"],
+      "answer": 0,
+      "explanation": {"en": "Authorities enforce a law; citizens obey it. The subject here is the law itself.", "ar": "السلطات تُنفّذ enforce القانون والمواطنون يطيعونه obey، والفاعل هنا هو القانون نفسه."} },
+    { "id": "c1v2-03", "concept": "c1.vocab.governance", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "A government “has no mandate” for a policy. What is missing?", "ar": "قيل إن الحكومة has no mandate لسياسة ما. ما الناقص؟"},
+      "options": ["Authority granted by voters.", "Money to pay for it.", "A written legal text.", "Support from other states."],
+      "answer": 0,
+      "explanation": {"en": "A mandate is permission to act, given by those you answer to.", "ar": "mandate تفويض بالتصرف يمنحه من تخضع لمساءلتهم."} },
+    { "id": "c1v2-04", "concept": "c1.vocab.governance", "type": "match", "format": "match", "difficulty": 5,
+      "prompt": {"en": "Match the concept to its definition.", "ar": "طابق المفهوم بتعريفه."},
+      "pairs": [["accountability", "having to answer for your decisions"], ["transparency", "decisions visible to outsiders"], ["mandate", "authority granted to act"], ["oversight", "supervision by another body"]],
+      "explanation": {"en": "These four are the standard vocabulary of any institutional critique.", "ar": "هذه الأربع هي المفردات القياسية في أي نقد مؤسسي."} },
+    { "id": "c1v2-05", "concept": "c1.vocab.rights", "type": "choice", "format": "collocation", "difficulty": 5,
+      "sentence": "The court exists to ___ the rights of the accused.",
+      "options": ["uphold", "raise", "keep up", "hold up"],
+      "answer": 0,
+      "explanation": {"en": "Rights are upheld. “Hold up” means delay, which reverses the meaning.", "ar": "الحقوق تُصان uphold، أما hold up فتعني التعطيل وهو عكس المقصود."} },
+    { "id": "c1v2-06", "concept": "c1.vocab.rights", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "Employees are entitled ___ compensation for unused leave.",
+      "options": ["to", "for", "of", "with"],
+      "answer": 0,
+      "explanation": {"en": "Entitled always takes “to”, then a noun or an infinitive.", "ar": "entitled تأخذ to دائماً ثم اسماً أو مصدراً."} },
+    { "id": "c1v2-07", "concept": "c1.vocab.rights", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "To “waive” a right is to…", "ar": "أن waive حقاً يعني…"},
+      "options": ["give it up voluntarily.", "have it taken from you.", "defend it in a court.", "extend it to more people."],
+      "answer": 0,
+      "explanation": {"en": "Waiving is a choice by the person who holds the right; being denied it is not.", "ar": "الـ waiver اختيار من صاحب الحق نفسه، أما الحرمان منه فليس اختياراً."} },
+    { "id": "c1v2-08", "concept": "c1.vocab.rights", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": {"en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟"},
+      "options": ["She is entitled to appealing the decision.", "She is entitled to appeal the decision.", "She is entitled to an appeal.", "She has the right to appeal."],
+      "answer": 0,
+      "explanation": {"en": "The “to” in “entitled to” is a preposition before a noun, but an infinitive marker before a verb — never -ing.", "ar": "حرف to في entitled to حرف جر قبل الاسم وأداة مصدر قبل الفعل، ولا يليها ing أبداً."} },
+    { "id": "c1v2-09", "concept": "c1.vocab.ethics", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "“The board would not condone the practice.” What is the board's position?", "ar": "ما موقف المجلس في هذه الجملة؟"},
+      "options": ["It refuses to let the practice pass.", "It fully approves of the practice.", "It has not yet formed a view.", "It requires the practice by rule."],
+      "answer": 0,
+      "explanation": {"en": "Condone means to accept something wrong, so refusing to condone is refusing to accept it.", "ar": "condone تعني التغاضي عن خطأ، فرفض التغاضي رفضٌ لقبوله."} },
+    { "id": "c1v2-10", "concept": "c1.vocab.ethics", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "Which sentence is possible without contradiction?", "ar": "أي جملة ممكنة دون تناقض؟"},
+      "options": ["The practice was legal but clearly unethical.", "The practice was legal but clearly illegal.", "The practice was ethical but clearly ethical.", "The practice was unlawful but clearly legal."],
+      "answer": 0,
+      "explanation": {"en": "Legal and ethical are different tests, so the two can come apart. The others repeat or contradict themselves.", "ar": "القانوني والأخلاقي معياران مختلفان فقد يفترقان، أما البقية فتكرّر نفسها أو تناقضها."} },
+    { "id": "c1v2-11", "concept": "c1.vocab.ethics", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": {"en": "A reviewer has a “vested interest” in the outcome. What does this imply?", "ar": "لمراجعٍ vested interest في النتيجة. فماذا يعني ذلك؟"},
+      "options": ["A stake that may bias the judgement.", "A strong but disinterested opinion.", "A long professional experience of it.", "A formal permission to review it."],
+      "answer": 0,
+      "explanation": {"en": "A vested interest is a personal stake — the reason conflicts of interest are declared.", "ar": "vested interest مصلحة شخصية، ولهذا يُصرَّح بتضارب المصالح."} },
+    { "id": "c1v2-12", "concept": "c1.vocab.ethics", "type": "text", "format": "write", "difficulty": 5,
+      "prompt": {"en": "One word: the opposite of “condone”, meaning to denounce publicly.", "ar": "كلمة واحدة: ضد condone بمعنى الإدانة العلنية."},
+      "answer": "condemn",
+      "accept": ["Condemn", "to condemn"],
+      "explanation": {"en": "Two letters apart, opposite in meaning — worth learning as a pair for exactly that reason.", "ar": "حرفان يفصلان بينهما ومعناهما متضاد، ولهذا السبب بالذات تُحفظان معاً."} },
+    { "id": "c1v2-13", "concept": "c1.vocab.governance", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": {"en": "Which sentence suits a formal policy briefing?", "ar": "أي جملة تناسب إحاطة سياسات رسمية؟"},
+      "options": ["The regulation has not been consistently enforced.", "Nobody has really bothered enforcing this regulation.", "The regulation is a total mess and always has been.", "This regulation is honestly not worth the paper it's on."],
+      "answer": 0,
+      "explanation": {"en": "A briefing states the finding without editorialising; the rest express irritation instead.", "ar": "الإحاطة تعرض النتيجة دون تعليق شخصي، أما البقية فتعبّر عن الضيق."} },
+    { "id": "c1v2-14", "concept": "c1.vocab.rights", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": {"en": "Put the words in order.", "ar": "رتّب الكلمات."},
+      "tokens": ["Small", "firms", "are", "exempt", "from", "the", "new", "reporting", "requirements"],
+      "answer": "Small firms are exempt from the new reporting requirements",
+      "explanation": {"en": "Exempt takes “from”, never “of” or “to”.", "ar": "exempt تأخذ from ولا تأخذ of ولا to."} },
+    { "id": "c1v2-15", "concept": "c1.vocab.ethics", "type": "choice", "format": "fill_blank", "difficulty": 5,
+      "sentence": "The cost is high, but the benefits ___ the expense.",
+      "options": ["justify", "excuse", "condone", "forgive"],
+      "answer": 0,
+      "explanation": {"en": "Justify = give good reasons for. Excuse implies the thing was still wrong.", "ar": "justify تعني تقديم مبرر وجيه، أما excuse فتُلمح إلى أن الأمر يبقى خطأً."} },
+    { "id": "c1v2-r1", "concept": "c1.vocab.ethics", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c1read",
+      "prompt": {"en": "What is the committee's central distinction?", "ar": "ما التمييز المحوري الذي تقيمه اللجنة؟"},
+      "options": ["Between what is legal and what is right.", "Between what is proven and what is alleged.", "Between the minister and the officials.", "Between old guidance and new legislation."],
+      "answer": 0,
+      "explanation": {"en": "The opening two sentences set it up, and “legality settles the question, and it does not” states it outright.", "ar": "الجملتان الافتتاحيتان تمهّدان له، وعبارة أن القانونية لا تحسم المسألة تصرّح به."} },
+    { "id": "c1v2-r2", "concept": "c1.vocab.governance", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c1read",
+      "prompt": {"en": "What does the committee actually recommend?", "ar": "بماذا توصي اللجنة فعلاً؟"},
+      "options": ["Revised guidance, enforced by an independent office.", "New legislation restricting ministerial discretion.", "The dismissal of the two officials concerned.", "Cancelling the contract with the successful bidder."],
+      "answer": 0,
+      "explanation": {"en": "The recommendation is stated in one sentence, and it is about the rule and its enforcement rather than about individuals.", "ar": "التوصية مذكورة في جملة واحدة وتتعلق بالقاعدة وتنفيذها لا بالأشخاص."} },
+    { "id": "c1v2-r3", "concept": "c1.vocab.ethics", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c1read",
+      "prompt": {"en": "Why does the committee mention that the guidance did not require declaration?", "ar": "لماذا تذكر اللجنة أن الإرشادات لم تكن توجب الإفصاح؟"},
+      "options": ["To move the fault from the officials to the rule.", "To clear the officials of any criticism at all.", "To show the officials broke a clear rule.", "To argue the guidance should be abolished."],
+      "answer": 0,
+      "explanation": {"en": "“That the guidance permitted the omission is precisely the problem” — the rule, not the two men, is the finding.", "ar": "عبارة أن الإرشادات أجازت الإغفال هي المشكلة بعينها تنقل الخلل من الشخصين إلى القاعدة."} },
+    { "id": "c1v2-r4", "concept": "c1.vocab.governance", "type": "choice", "format": "comprehension", "difficulty": 5,
+      "passageId": "c1read",
+      "prompt": {"en": "What does the last sentence claim?", "ar": "ماذا تدّعي الجملة الأخيرة؟"},
+      "options": ["Self-policing is not accountability at all.", "Accountability requires goodwill to work.", "The department has been fully accountable.", "Independent offices are usually ineffective."],
+      "answer": 0,
+      "explanation": {"en": "It is a definition disguised as an aphorism: if the accountable party can opt out, the mechanism does not exist.", "ar": "تعريف في هيئة حكمة: إذا كان بوسع الخاضع للمساءلة أن يتملّص فلا وجود للآلية أصلاً."} }
+  ]
+}

@@ -3,7 +3,7 @@
  * exactly which questions a session contains.
  */
 import { getState } from '../core/store.js';
-import { getUnit, getUnits, getLevelUnits, getLevelUnitMetas, getCurriculum } from './content.js';
+import { getUnit, getUnits, getLevelUnits, getLevelUnitMetas, getCurriculum, SPINE } from './content.js';
 import { pickQuestions, pickTest, dueConceptIds, weakConcepts } from '../engine/select.js';
 
 export const SESSION_SIZE = { practice: 10, test: 10, review: 12, daily: 12, concept: 8 };
@@ -72,8 +72,10 @@ export async function buildDaily(limit = SESSION_SIZE.daily) {
   const review = await buildReview(Math.ceil(limit * 0.45));
   const questions = [...review.questions];
 
+  // The daily mission draws questions from the whole level, vocabulary included, but
+  // the "current unit" it builds around is a grammar one.
   const levelUnits = await getLevelUnits(state.profile.level);
-  const current = pickCurrentUnit(levelUnits, state);
+  const current = pickCurrentUnit(levelUnits.filter((u) => u.track === SPINE), state);
   if (current) {
     const fresh = pickQuestions(current.questions, state, {
       count: limit - questions.length, favourNew: true, order: 'ramp',
@@ -106,7 +108,7 @@ export function pickCurrentUnit(units, state = getState()) {
 export async function nextAction(state = getState()) {
   const openMistakes = Object.values(state.mistakes).filter((m) => m.status === 'open');
   const due = dueConceptIds(state);
-  const levelUnits = await getLevelUnitMetas(state.profile.level);
+  const levelUnits = await getLevelUnitMetas(state.profile.level, SPINE);
   const current = pickCurrentUnit(levelUnits, state);
   const up = current ? state.units[current.id] : null;
 

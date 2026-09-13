@@ -1,0 +1,167 @@
+{
+  "id": "b2-v1",
+  "goal": {
+    "en": "Read and discuss news, society and the environment without falling into false friends.",
+    "ar": "أن تقرأ وتناقش الأخبار والمجتمع والبيئة دون الوقوع في فخّ الكلمات المتشابهة الخادعة."
+  },
+  "concepts": [
+    {
+      "id": "b2.vocab.news",
+      "title": { "en": "News and media", "ar": "الأخبار والإعلام" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Means"], "rows": [
+          ["coverage", "how much and how a story is reported"],
+          ["source", "where the information came from"],
+          ["claim", "state without proving"],
+          ["allege", "state that someone did wrong, unproven"],
+          ["bias", "a leaning that distorts the reporting"],
+          ["outlet", "a newspaper, channel or site"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“News” is uncountable and singular: the news is bad. “A news” and “news are” are both wrong; the countable word is “a news story” or “an item of news”.",
+          "ar": "كلمة news غير معدودة ومفردة: the news is bad. فجملتا a news وnews are خطأ، والمعدود هو a news story أو an item of news." } },
+        { "type": "rule", "text": {
+          "en": "Reporting verbs carry a stance. “Said” is neutral, “claimed” withholds agreement, “admitted” implies fault, “revealed” implies the fact was hidden and is true.",
+          "ar": "أفعال النقل تحمل موقفاً: said محايدة، وclaimed تتحفظ عن التصديق، وadmitted تُلمح إلى ذنب، وrevealed تفترض أن الأمر كان مخفياً وأنه صحيح." } },
+        { "type": "examples", "items": [
+          { "en": "The report was based on a single anonymous source.", "ar": "استند التقرير إلى مصدر واحد مجهول." },
+          { "en": "Coverage of the strike was heavily biased.", "ar": "كانت تغطية الإضراب منحازة بشدة." }
+        ] }
+      ]
+    },
+    {
+      "id": "b2.vocab.society",
+      "title": { "en": "Society, law and false friends", "ar": "المجتمع والقانون والكلمات الخادعة" },
+      "teach": [
+        { "type": "table", "head": ["Word", "Common wrong guess", "Actually means"], "rows": [
+          ["actually", "currently", "in fact"],
+          ["eventually", "possibly", "in the end"],
+          ["sensible", "sensitive", "showing good judgement"],
+          ["assist", "attend and take part", "help"],
+          ["control", "check / inspect", "direct or restrain"],
+          ["demand", "ask politely", "insist forcefully"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "These trip up learners who know French or another European language, and they also trip up anyone who guesses from the shape of the word. Check the meaning once and it stops costing you.",
+          "ar": "هذه الكلمات تخدع من يعرف الفرنسية أو لغة أوروبية أخرى، كما تخدع كل من يخمّن المعنى من شكل الكلمة. تحقّق من معناها مرة واحدة تسلم منها." } },
+        { "type": "table", "head": ["Law word", "Means"], "rows": [
+          ["crime", "the act itself"],
+          ["criminal", "the person"],
+          ["trial", "the court process"],
+          ["sentence", "the punishment decided"],
+          ["evidence", "what supports a case (uncountable)"]
+        ] },
+        { "type": "warn", "text": {
+          "en": "“Evidence” is uncountable: a piece of evidence, strong evidence. “Evidences” is not English.",
+          "ar": "كلمة evidence غير معدودة: a piece of evidence وstrong evidence. أما evidences فليست إنجليزية." } }
+      ]
+    },
+    {
+      "id": "b2.vocab.environment",
+      "title": { "en": "Environment and change", "ar": "البيئة والتغيّر" },
+      "teach": [
+        { "type": "table", "head": ["Collocation", "Means"], "rows": [
+          ["carbon emissions", "the gases released"],
+          ["renewable energy", "sun, wind, water"],
+          ["fossil fuels", "coal, oil, gas"],
+          ["single-use plastic", "used once, then thrown away"],
+          ["cut / reduce emissions", "make them smaller"],
+          ["tackle climate change", "take action against it"]
+        ] },
+        { "type": "rule", "text": {
+          "en": "This topic runs on fixed pairs. “Tackle climate change” and “cut emissions” are the natural verbs; “fight the emissions” and “solve climate change” are not what anyone writes.",
+          "ar": "هذا الموضوع يقوم على أزواج ثابتة. فالأفعال الطبيعية هي tackle climate change وcut emissions، أما fight the emissions وsolve climate change فلا يكتبهما أحد." } },
+        { "type": "warn", "text": {
+          "en": "“Environment” almost always takes “the”: damage to the environment. Dropping it sounds like a different, abstract meaning.",
+          "ar": "كلمة environment تأخذ the دائماً تقريباً: damage to the environment. وحذفها يوحي بمعنى مجرد مختلف." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": "b2v1-01", "concept": "b2.vocab.news", "type": "choice", "format": "error_id", "difficulty": 3,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The news are very worrying today.", "The news is very worrying today.", "That is a worrying news story.", "There was little news yesterday."],
+      "answer": 0,
+      "explanation": { "en": "News looks plural but is uncountable and takes a singular verb.",
+        "ar": "كلمة news تبدو جمعاً لكنها غير معدودة وتأخذ فعلاً مفرداً." } },
+    { "id": "b2v1-02", "concept": "b2.vocab.news", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“The minister claimed the figures were accurate.” What does “claimed” signal?", "ar": "ماذا تُشير إليه كلمة claimed هنا؟" },
+      "options": ["The writer is not vouching for it.", "The figures have been verified.", "The minister admitted an error.", "The statement was made under oath."],
+      "answer": 0,
+      "explanation": { "en": "Claim reports the statement while withholding agreement with it.",
+        "ar": "claim تنقل القول مع تحفّظ الكاتب عن تبنّيه." } },
+    { "id": "b2v1-03", "concept": "b2.vocab.news", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which verb implies the speaker was at fault?", "ar": "أي فعل يُلمح إلى أن المتحدث كان مخطئاً؟" },
+      "options": ["admitted", "stated", "reported", "mentioned"], "answer": 0,
+      "explanation": { "en": "You admit something you would rather not say. The others are neutral.",
+        "ar": "admit تُقال فيما يودّ المرء لو أخفاه، أما البقية فمحايدة." } },
+    { "id": "b2v1-04", "concept": "b2.vocab.news", "type": "match", "format": "match", "difficulty": 4,
+      "prompt": { "en": "Match the word to its meaning.", "ar": "طابق الكلمة بمعناها." },
+      "pairs": [
+        ["bias", "a leaning that distorts reporting"],
+        ["source", "where the information came from"],
+        ["coverage", "how much a story is reported"],
+        ["outlet", "the newspaper or channel itself"]
+      ],
+      "explanation": { "en": "These four let you talk about how a story was reported, not only what it said.",
+        "ar": "هذه الأربع تمكّنك من نقد طريقة نقل الخبر لا مضمونه فحسب." } },
+    { "id": "b2v1-05", "concept": "b2.vocab.society", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "“Actually, the meeting was cancelled.” What does “actually” do here?", "ar": "ما وظيفة كلمة actually هنا؟" },
+      "options": ["It corrects what was assumed.", "It says this is happening now.", "It softens a polite request.", "It shows the speaker is unsure."],
+      "answer": 0,
+      "explanation": { "en": "Actually means “in fact”, and usually corrects an expectation. It never means “currently”.",
+        "ar": "actually تعني «في الحقيقة» وتصحّح توقعاً سابقاً، ولا تعني «حالياً» أبداً." } },
+    { "id": "b2v1-06", "concept": "b2.vocab.society", "type": "choice", "format": "fill_blank", "difficulty": 4,
+      "sentence": "After years of appeals, he ___ won the case.", "options": ["eventually", "actually", "currently", "lately"], "answer": 0,
+      "explanation": { "en": "Eventually = in the end, after a long process. It is not about possibility.",
+        "ar": "eventually تعني «في النهاية بعد طول انتظار» ولا علاقة لها بالاحتمال." } },
+    { "id": "b2v1-07", "concept": "b2.vocab.society", "type": "choice", "format": "error_id", "difficulty": 4,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["The police collected many evidences.", "The police collected a lot of evidence.", "The police found one piece of evidence.", "The evidence against him was strong."],
+      "answer": 0,
+      "explanation": { "en": "Evidence is uncountable, so it has no plural form.",
+        "ar": "evidence غير معدودة فلا جمع لها." } },
+    { "id": "b2v1-08", "concept": "b2.vocab.society", "type": "choice", "format": "meaning", "difficulty": 5,
+      "prompt": { "en": "In a court report, what is a “sentence”?", "ar": "ما معنى sentence في تقرير قضائي؟" },
+      "options": ["The punishment the judge decides.", "The written charge against someone.", "The whole court process itself.", "The statement a witness gives."],
+      "answer": 0,
+      "explanation": { "en": "In law, sentence is the punishment. The process is the trial.",
+        "ar": "في القانون تعني sentence العقوبة، أما الإجراء نفسه فهو trial." } },
+    { "id": "b2v1-09", "concept": "b2.vocab.society", "type": "text", "format": "write", "difficulty": 4,
+      "prompt": { "en": "Replace “assist” with a plainer word of one syllable: “They came to assist us.”", "ar": "استبدل بكلمة assist كلمة أبسط من مقطع واحد في الجملة." },
+      "answer": "help", "accept": ["to help", "help us"],
+      "explanation": { "en": "Assist simply means help; it does not mean attend or be present at.",
+        "ar": "assist تعني «يساعد» فقط، ولا تعني الحضور أو المشاركة." } },
+    { "id": "b2v1-10", "concept": "b2.vocab.environment", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "Governments have promised to ___ carbon emissions by 2030.", "options": ["cut", "lower down", "descend", "diminish off"], "answer": 0,
+      "explanation": { "en": "Cut or reduce are the natural verbs with emissions.",
+        "ar": "الفعلان الطبيعيان مع emissions هما cut وreduce." } },
+    { "id": "b2v1-11", "concept": "b2.vocab.environment", "type": "choice", "format": "collocation", "difficulty": 4,
+      "sentence": "The summit is meant to ___ climate change directly.", "options": ["tackle", "solve", "cure", "repair"], "answer": 0,
+      "explanation": { "en": "Tackle = start dealing with a hard problem. Solve claims the problem is finished.",
+        "ar": "tackle تعني الشروع في معالجة مشكلة صعبة، أما solve فتزعم أن المشكلة انتهت." } },
+    { "id": "b2v1-12", "concept": "b2.vocab.environment", "type": "choice", "format": "meaning", "difficulty": 4,
+      "prompt": { "en": "Which of these is a fossil fuel?", "ar": "أي مما يلي وقود أحفوري؟" },
+      "options": ["coal", "wind", "solar power", "hydropower"], "answer": 0,
+      "explanation": { "en": "Fossil fuels are coal, oil and gas. The rest are renewable.",
+        "ar": "الوقود الأحفوري هو الفحم والنفط والغاز، وما عداها متجدد." } },
+    { "id": "b2v1-13", "concept": "b2.vocab.environment", "type": "choice", "format": "error_id", "difficulty": 5,
+      "prompt": { "en": "Which sentence has a mistake?", "ar": "أي جملة بها خطأ؟" },
+      "options": ["Plastic does great damage to environment.", "Plastic does great damage to the environment.", "Plastic harms the environment badly.", "The damage to the environment is severe."],
+      "answer": 0,
+      "explanation": { "en": "“The environment” means the natural world around us and keeps its article.",
+        "ar": "the environment تعني الطبيعة المحيطة بنا وتحتفظ بأداة التعريف." } },
+    { "id": "b2v1-14", "concept": "b2.vocab.environment", "type": "order", "format": "order", "difficulty": 5,
+      "prompt": { "en": "Put the words in order.", "ar": "رتّب الكلمات." },
+      "tokens": ["Renewable", "energy", "now", "supplies", "a", "third", "of", "our", "electricity"],
+      "answer": "Renewable energy now supplies a third of our electricity",
+      "explanation": { "en": "Adverbs of time like “now” sit between the subject and the main verb.",
+        "ar": "ظروف الزمن مثل now تقع بين الفاعل والفعل الرئيسي." } },
+    { "id": "b2v1-15", "concept": "b2.vocab.news", "type": "choice", "format": "register", "difficulty": 5,
+      "prompt": { "en": "Which sentence is appropriate in a news report about an unproven accusation?", "ar": "أي جملة تناسب تقريراً إخبارياً عن اتهام غير مثبت؟" },
+      "options": ["The company is alleged to have hidden the figures.", "The company definitely hid the figures from everyone.", "The company is obviously guilty of hiding figures.", "The company hid the figures, as we all know well."],
+      "answer": 0,
+      "explanation": { "en": "“Alleged” reports the accusation without asserting it — the only responsible option before a verdict.",
+        "ar": "alleged تنقل الاتهام دون تبنّيه، وهي الصيغة المسؤولة الوحيدة قبل صدور الحكم." } }
+  ]
+}

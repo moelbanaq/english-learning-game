@@ -122,10 +122,10 @@ export function runSession(session) {
   }
 }
 
+/** Only the spine counts towards unlocking the next level — see TRACKS in content.js. */
 async function unitsOfLevel(levelId) {
-  const { getLevel } = await import('../../data/content.js');
-  const lv = await getLevel(levelId);
-  return lv ? lv.units.filter((u) => u.status !== 'planned') : [];
+  const { getLevelUnitMetas, SPINE } = await import('../../data/content.js');
+  return getLevelUnitMetas(levelId, SPINE);
 }
 
 function resultsView({ session, answers, outcome, xpTotal }) {

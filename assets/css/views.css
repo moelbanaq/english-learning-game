@@ -97,6 +97,37 @@
 .result-line__name { flex: 1; min-width: 0; }
 .result-line__bar { width: 92px; }
 
+/* Track heading inside an expanded level. */
+.track-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .6rem;
+  padding: .55rem .3rem .2rem;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.track-head__count { font-variant-numeric: tabular-nums; }
+
+/* ---------- Writing practice ---------- */
+.write__prompt { font-size: 1.02rem; line-height: 1.55; }
+.write__score { font-size: 2.2rem; font-weight: 800; line-height: 1; margin-block: .3rem; }
+.write__model {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  padding: .7rem .8rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface-2);
+  border-radius: 0 8px 8px 0;
+}
+.check { display: flex; align-items: flex-start; gap: .6rem; padding: .45rem .2rem; cursor: pointer; }
+.check__box { margin-block-start: .2rem; width: 18px; height: 18px; flex: none; accent-color: var(--accent); }
+.check__text { flex: 1; min-width: 0; }
+.row--between { display: flex; align-items: center; justify-content: space-between; gap: .6rem; flex-wrap: wrap; }
+.small.ok { color: var(--success); }
+
 /* Between placement blocks. It looks like the result screen but must not carry
    .result-hero, which the browser suite reads as "the run has finished". */
 .place-step { text-align: center; padding: 1.4rem 1rem; }
