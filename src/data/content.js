@@ -23,6 +23,11 @@ let curriculum = null;
 const unitCache = new Map();
 const inflight = new Map();
 
+/** Absolute URL of a content file, for callers that prefetch outside these loaders. */
+export function contentUrl(relPath) {
+  return new URL(relPath, BASE).href;
+}
+
 async function loadJSON(relPath) {
   const url = new URL(relPath, BASE);
   const res = await fetch(url, { cache: 'no-cache' });

@@ -42,11 +42,13 @@ It can be exported and re-imported as a JSON backup from **Settings**.
 
 ```
 index.html                 the whole app shell
+sw.js                      service worker: offline caching
+manifest.webmanifest       install-to-home-screen
 assets/css/                design tokens, components, view styles
 src/
   core/       dom, router, store (progress), storage adapter, i18n
   engine/     grading, mastery + spaced repetition, adaptive selection, placement, XP, recording
-  data/       content loader, session builders
+  data/       content loader, session builders, offline prefetch
   ui/         app shell, question renderer, views
 content/
   curriculum.json          the CEFR spine: levels → units → files

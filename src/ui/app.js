@@ -7,6 +7,7 @@ import { navigate, currentRoute } from '../core/router.js';
 let host = null;
 let navEl = null;
 let toastHost = null;
+let offlineBar = null;
 
 const NAV = [
   { path: '/', icon: '🏠', key: 'nav.home' },
@@ -23,6 +24,9 @@ export function buildShell(root) {
   host = el('main#main', { tabindex: '-1' });
   navEl = el('nav.nav', { 'aria-label': t('nav.home') });
   toastHost = el('div.toasts', { 'aria-live': 'polite', 'aria-atomic': 'true' });
+  // Being offline is a state, not an event, so it gets a bar rather than a toast:
+  // a learner needs to know why a new unit will not open, for as long as it is true.
+  offlineBar = el('div.offline-bar', { role: 'status', hidden: navigator.onLine !== false }, t('net.offline'));
 
   const shell = el('div.shell', [
     el('header.topbar', el('div.topbar__in', [
@@ -37,6 +41,7 @@ export function buildShell(root) {
         onClick: () => { setLang(lang() === 'ar' ? 'en' : 'ar'); rerenderShell(); },
       }, lang() === 'ar' ? 'EN' : 'ع'),
     ])),
+    offlineBar,
     navEl,
     host,
     toastHost,
@@ -45,6 +50,7 @@ export function buildShell(root) {
   mount(root, shell);
   root.removeAttribute('aria-busy');
   renderNav();
+  watchConnection();
 
   // Keep the header in sync — including after the language is changed from Settings.
   subscribe(() => {
@@ -57,6 +63,16 @@ export function buildShell(root) {
   });
 
   return { host };
+}
+
+let connectionWatched = false;
+function watchConnection() {
+  // The bar is rebuilt when the language changes, so only bind the listeners once.
+  if (connectionWatched) return;
+  connectionWatched = true;
+  const sync = () => { if (offlineBar) offlineBar.hidden = navigator.onLine !== false; };
+  window.addEventListener('online', sync);
+  window.addEventListener('offline', sync);
 }
 
 function rerenderShell() {

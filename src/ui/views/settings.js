@@ -7,6 +7,7 @@ import { isPersistent } from '../../core/storage.js';
 import { LEVELS, LEVEL_META } from '../../data/content.js';
 import { setLevel } from '../../engine/record.js';
 import { navigate } from '../../core/router.js';
+import { downloadAllContent } from '../../data/offline.js';
 
 export async function settingsView() {
   const state = getState();
@@ -77,12 +78,40 @@ export async function settingsView() {
       ]),
     ]),
 
+    section(t('set.offline'), [
+      el('p.small.muted', t('set.offlineDesc')),
+      el('div.btn-row', [
+        el('button.btn.btn--sm#offline-dl', { type: 'button', onClick: (e) => doDownload(e.currentTarget) },
+          t('set.offlineGet')),
+      ]),
+      el('p.small.muted#offline-status', { style: { marginTop: '.4rem' } }, ''),
+    ]),
+
     section(t('set.about'), [
       el('p.small.muted', t('app.tagline')),
       el('p.tiny.faint', 'Masar English · open content, offline-friendly, no tracking. '
         + 'Progress lives in this browser only.'),
     ]),
   ]));
+}
+
+async function doDownload(button) {
+  const status = document.getElementById('offline-status');
+  const say = (msg) => { if (status) status.textContent = msg; };
+  button.disabled = true;
+  try {
+    const { total, failed, bytes } = await downloadAllContent(
+      (done, n) => say(t('set.offlineProgress', { done, total: n })),
+    );
+    const mb = (bytes / 1048576).toFixed(1);
+    say(failed
+      ? t('set.offlinePartial', { ok: total - failed, total })
+      : t('set.offlineDone', { total, mb }));
+  } catch {
+    say(t('common.error'));
+  } finally {
+    button.disabled = false;
+  }
 }
 
 function doExport() {

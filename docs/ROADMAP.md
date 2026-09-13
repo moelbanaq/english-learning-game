@@ -83,9 +83,12 @@ what a sentence commits you to, and C2 asks what it does to a reader who did not
 - Audio, if a free and licence-clean source can be found — this is a *want*, not a blocker.
 
 ### Phase 11 — Public polish
-Offline support via a service worker, install-to-home-screen, shareable progress cards,
-a lightweight landing page for the Learn English button, and a first accessibility audit
-with a screen reader.
+**Done:** offline support via a service worker, and a one-tap download of the whole
+course (under a megabyte) for learners who lose signal. Install-to-home-screen works
+through the existing web manifest.
+
+**Remaining:** shareable progress cards, a lightweight landing page for the Learn
+English button, and a first accessibility audit with a screen reader.
 
 ### Phase 12 — Optional accounts and sync
 Only when there is a real reason (learners asking to move between devices) and a free

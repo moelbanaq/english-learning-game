@@ -4,8 +4,8 @@ import { join, extname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
 
-const roots = ['src', 'tests'];
-const files = [];
+// sw.js lives at the root so its scope covers the whole app, but it is still ours.
+const files = ['sw.js'];
 (function walk(dir) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
@@ -13,7 +13,6 @@ const files = [];
     else if (extname(p) === '.js' || extname(p) === '.mjs') files.push(p);
   }
 })('src');
-roots.slice(1).forEach(() => {});
 
 const tmp = mkdtempSync(join(tmpdir(), 'masar-syntax-'));
 let failed = 0;

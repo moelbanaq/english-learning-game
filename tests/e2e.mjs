@@ -377,6 +377,61 @@ try {
   check('navigation moves out of the way on desktop', navBottom !== 'fixed', `position=${navBottom}`);
   await wide.close();
 
+  /* ---------- 13. Offline ---------- */
+  // The point of the service worker is a learner on a train, so the check is the real
+  // thing: visit online once, kill the network, reload, and expect the app to work.
+  {
+    const net = await browser.newContext();
+    const off = await net.newPage();
+    await off.goto(base, { waitUntil: 'networkidle' });
+    const controlled = await off.evaluate(() => navigator.serviceWorker.ready
+      .then(() => new Promise((res) => {
+        if (navigator.serviceWorker.controller) return res(true);
+        navigator.serviceWorker.addEventListener('controllerchange', () => res(true));
+        setTimeout(() => res(Boolean(navigator.serviceWorker.controller)), 3000);
+      })).catch(() => false));
+    check('a service worker installs and takes control', controlled === true);
+
+    // Warm the cache through the worker: the first load happened before it was active.
+    await off.goto(base + '#/learn', { waitUntil: 'networkidle' });
+    await off.waitForSelector('.level-card', { timeout: 5000 });
+    await sleep(500);
+
+    await net.setOffline(true);
+    await off.goto(base + '#/learn', { waitUntil: 'domcontentloaded' });
+    let booted = true;
+    try { await off.waitForSelector('.level-card', { timeout: 8000 }); }
+    catch { booted = false; }
+    check('the app opens with no network at all', booted);
+    check('all six levels are still listed offline', (await off.locator('.level-card').count()) === 6);
+    check('an offline notice is shown', await off.locator('.offline-bar').isVisible().catch(() => false));
+
+    await net.setOffline(false);
+
+    // The pre-download is the difference between "the app opens offline" and "the
+    // course works offline", so check a unit the learner never visited.
+    await off.goto(base + '#/settings', { waitUntil: 'networkidle' });
+    await off.locator('#offline-dl').click();
+    await off.waitForFunction(() => {
+      const s = document.getElementById('offline-status');
+      return s && s.textContent.includes('✓');
+    }, { timeout: 60000 }).catch(() => {});
+    const dlStatus = await off.locator('#offline-status').innerText();
+    check('every lesson can be downloaded in one tap', dlStatus.includes('✓'), dlStatus);
+
+    await net.setOffline(true);
+    await off.goto(base + '#/unit/c1-u3', { waitUntil: 'domcontentloaded' });
+    let unitOffline = true;
+    try { await off.waitForSelector('.page', { timeout: 8000 }); await sleep(600); }
+    catch { unitOffline = false; }
+    const unitText = unitOffline ? await off.locator('.page').innerText() : '';
+    check('a never-opened unit works offline after the download',
+      unitText.length > 40 && !unitText.includes('Something went wrong'), unitText.slice(0, 60));
+
+    await net.setOffline(false);
+    await net.close();
+  }
+
   check('no uncaught JavaScript errors', errors.length === 0, errors.slice(0, 3).join(' | '));
 } finally {
   await browser.close();

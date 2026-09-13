@@ -17,6 +17,7 @@ site — and a static site, done properly, is genuinely enough for this product.
 | Content | Static JSON, lazily fetched per unit | A learner downloads only the unit they open. Adding content never touches code. |
 | Storage | `localStorage` behind an adapter interface | Works offline, needs no account, costs nothing. |
 | Hosting | GitHub Pages via Actions | Free, HTTPS, custom domains, and the repo *is* the deploy artifact. |
+| Offline | A hand-written service worker | Roughly 80 lines. Learners on patchy mobile data are the point of the app, not an edge case. |
 | Tests | `node --test` + a Playwright script | No test framework dependency in the repo. |
 
 **Total runtime dependencies: zero.** Playwright is used only by the browser test and is
@@ -106,6 +107,23 @@ Two decisions are deliberate:
 
 The module is pure: it takes the question bank and a list of finished blocks and returns
 which block comes next and what to recommend. The view owns the DOM and nothing else.
+
+### Offline (`sw.js`, `data/offline.js`)
+Two caching strategies, chosen around a weak connection rather than raw speed:
+
+- `content/` is **cache first**. A unit you have opened once never costs data again; a
+  fresh copy is fetched in the background for next time.
+- Everything else is **network first** with a 4-second timeout and a cache fallback, so
+  code can never get stuck on an old version, but a dead connection falls back to the
+  last good copy instead of a blank page. A deep link opened offline is served the app
+  shell and the hash router takes it from there.
+
+The whole curriculum is under a megabyte, so Settings offers a one-tap pre-download of
+every content file. That is a plain fetch loop — the worker's rules already apply to
+every request, so nothing in the app needs to know how caching works.
+
+The browser suite proves it the way a learner would experience it: load online, cut the
+network, reload, and open a unit that was never visited.
 
 ### Mistakes
 A wrong answer creates a mistake record holding the question, concept, unit and how many

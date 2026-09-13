@@ -261,6 +261,14 @@ table.tbl th { background: var(--surface-2); font-weight: 700; }
   font-size: .88rem; font-weight: 650; box-shadow: var(--shadow-2); animation: rise .2s ease-out;
   max-width: 100%;
 }
+.offline-bar {
+  padding: .45rem 1rem;
+  text-align: center;
+  font-size: .82rem;
+  background: var(--warn);
+  color: #241a05;
+}
+
 .toast--xp { background: var(--accent); color: var(--accent-contrast); }
 .toast--gold { background: var(--warn); color: #241a05; }
 

@@ -313,3 +313,18 @@ test('the Arabic and English string tables cover the same keys', async () => {
   assert.deepEqual(ar.filter((k) => !STRINGS.en[k]), [], 'Arabic keys with no English original');
   assert.deepEqual(en.filter((k) => !STRINGS.ar[k]), [], 'English keys with no Arabic translation');
 });
+
+/* ---------------- offline ---------------- */
+
+test('the offline prefetch list covers every file the app can ask for', async () => {
+  const { contentFiles } = await import('../src/data/offline.js');
+  const curriculum = JSON.parse(readFileSync(new URL('../content/curriculum.json', import.meta.url), 'utf8'));
+  const files = contentFiles(curriculum);
+  const units = curriculum.levels.flatMap((l) => l.units).filter((u) => u.file);
+  // A unit missing from this list is a unit that silently fails to open on a train.
+  for (const u of units) assert.ok(files.includes(u.file), `${u.id} missing from the offline list`);
+  for (const meta of ['curriculum.json', 'concept-index.json', 'placement.json']) {
+    assert.ok(files.includes(meta), `${meta} missing from the offline list`);
+  }
+  assert.equal(new Set(files).size, files.length, 'the offline list downloads a file twice');
+});

@@ -43,6 +43,14 @@ setNotFound(() => navigate('/', { replace: true }));
 update((s) => { ensureToday(s); }, 'boot');
 start();
 
+// Offline support. A failed registration is not worth telling anyone about: the app
+// behaves exactly as it did before, it just needs the network.
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register(new URL('../sw.js', import.meta.url)).catch(() => {});
+  });
+}
+
 // Keep the system theme live, and never lose progress on the way out.
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
 window.addEventListener('pagehide', saveNow);
